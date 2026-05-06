@@ -14,6 +14,7 @@ from alpaca.trading.enums import OrderSide, TimeInForce
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
+import notify
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
@@ -38,9 +39,16 @@ def save_json(path, data):
 
 
 def get_current_price(data_client, symbol):
-    req = StockBarsRequest(symbol_or_symbols=symbol, timeframe=TimeFrame.Minute, limit=1)
-    bars = data_client.get_stock_bars(req).df
-    return float(bars.iloc[-1]["close"])
+    # Try minute bar first (works during market hours), fall back to daily close (pre-market)
+    for timeframe in [TimeFrame.Minute, TimeFrame.Hour, TimeFrame.Day]:
+        try:
+            req = StockBarsRequest(symbol_or_symbols=symbol, timeframe=timeframe, limit=1)
+            bars = data_client.get_stock_bars(req).df
+            if not bars.empty:
+                return float(bars.iloc[-1]["close"])
+        except Exception:
+            continue
+    raise RuntimeError(f"Could not fetch price for {symbol}")
 
 
 def calc_qty(account, price, pct):
@@ -80,6 +88,15 @@ def main():
     account = trading.get_account()
     actions = []
 
+    # Notify Discord of the weekly plan upfront
+    notify.weekly_plan(
+        week_of=plan.get("week_of", ""),
+        thesis=plan.get("week_thesis", ""),
+        buys=plan.get("buys", []),
+        holds=plan.get("hold_positions", []),
+        closes=plan.get("close_positions", []),
+    )
+
     # --- Close positions marked for exit ---
     for symbol in plan.get("close_positions", []):
         try:
@@ -87,6 +104,7 @@ def main():
             reason = plan.get("close_reasoning", {}).get(symbol, "plan exit")
             log.info(f"CLOSED {symbol} — {reason}")
             actions.append(f"CLOSED {symbol}: {reason}")
+            notify.trade_close(symbol, reason)
             memory["trade_history"].append({
                 "time": now.isoformat(),
                 "action": "CLOSE",
@@ -130,6 +148,13 @@ def main():
             ))
             log.info(f"Stop loss set for {symbol} @ ${stop_price:.2f} (-{config['stop_loss_pct']*100:.0f}%)")
 
+            account = trading.get_account()
+            notify.trade_buy(
+                symbol=symbol, qty=qty, price=price, stop_price=stop_price,
+                reasoning=trade.get("reasoning", ""), confidence=trade.get("confidence", "medium"),
+                portfolio_value=float(account.portfolio_value), buying_power=float(account.buying_power),
+            )
+
             note = f"BUY {qty} {symbol} @ ~${price:.2f} | stop ${stop_price:.2f} | {trade.get('reasoning', '')[:100]}"
             actions.append(note)
             memory["trade_history"].append({
@@ -142,8 +167,6 @@ def main():
                 "reasoning": trade.get("reasoning", ""),
                 "confidence": trade.get("confidence", ""),
             })
-
-            account = trading.get_account()
 
         except Exception as e:
             log.error(f"Failed to buy {symbol}: {e}")
