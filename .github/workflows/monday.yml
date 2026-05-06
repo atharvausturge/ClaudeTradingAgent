@@ -1,0 +1,49 @@
+name: Monday — Research & Trade
+
+on:
+  schedule:
+    - cron: "30 12 * * 1"   # 8:30am ET (UTC-4 in summer, UTC-5 in winter — adjust seasonally)
+  workflow_dispatch:         # allows manual trigger from GitHub UI
+
+jobs:
+  trade:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt anthropic
+
+      - name: Run research
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: python research.py
+
+      - name: Analyze with Claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python analyze.py
+
+      - name: Execute trades
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python execute.py
+
+      - name: Commit results
+        run: |
+          git config user.name "Trading Agent"
+          git config user.email "trading-agent@github-actions"
+          git add memory.json trade_plan.json research_data.json
+          git diff --staged --quiet || git commit -m "Week of $(date +%Y-%m-%d): research complete, trades executed"
+          git push

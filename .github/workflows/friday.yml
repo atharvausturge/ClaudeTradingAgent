@@ -1,0 +1,38 @@
+name: Friday — Close Losers
+
+on:
+  schedule:
+    - cron: "0 19 * * 5"    # 3:00pm ET
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Friday cleanup
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python monitor.py
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "Trading Agent"
+          git config user.email "trading-agent@github-actions"
+          git add memory.json
+          git diff --staged --quiet || git commit -m "Friday wrap $(date +%Y-%m-%d)"
+          git push
