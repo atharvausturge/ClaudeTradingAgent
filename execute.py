@@ -115,12 +115,24 @@ def main():
             log.error(f"Failed to close {symbol}: {e}")
 
     # --- Execute buys ---
+    max_monthly = config.get("max_entries_per_symbol_per_month", 2)
+    this_month = now.strftime("%Y-%m")
+    monthly_counts = {}
+    for t in memory.get("trade_history", []):
+        if t.get("action") == "BUY" and t.get("time", "")[:7] == this_month:
+            sym = t.get("symbol", "")
+            monthly_counts[sym] = monthly_counts.get(sym, 0) + 1
+
     for trade in plan.get("buys", []):
         symbol = trade["symbol"]
         pct = trade.get("qty_pct", config["max_position_pct"])
 
         if is_already_held(trading, symbol):
             log.info(f"{symbol}: already held, skipping buy")
+            continue
+
+        if monthly_counts.get(symbol, 0) >= max_monthly:
+            log.info(f"{symbol}: hit monthly entry cap ({max_monthly}), skipping")
             continue
 
         try:

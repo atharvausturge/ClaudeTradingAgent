@@ -1,9 +1,11 @@
 """
-Fetches news, technicals, and account state for the weekly research session.
-Outputs research_data.json for Claude to analyze and form a trade plan.
+Scans the full large-cap universe (~250 stocks), scores each on trend+dip signal,
+fetches Alpaca news + Stocktwits social sentiment for the top N candidates.
+Outputs research_data.json for Claude to analyze and pick 2-3 trades.
 """
 import os
 import json
+import time
 import requests
 import numpy as np
 import pandas as pd
@@ -15,10 +17,16 @@ from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
 
+from universe import get_universe
+
 ET = ZoneInfo("America/New_York")
 CONFIG_FILE = "config.json"
 MEMORY_FILE = "memory.json"
 OUTPUT_FILE = "research_data.json"
+BATCH_SIZE = 100
+RS_LOOKBACK = 60
+DIP_LOOKBACK = 5
+RSI_PERIOD = 14
 
 
 def load_json(path, default=None):
@@ -29,7 +37,74 @@ def load_json(path, default=None):
         return default or {}
 
 
-def fetch_news(api_key, api_secret, symbols, days=5):
+def compute_rsi(prices, period=14):
+    delta = prices.diff()
+    gain = delta.clip(lower=0).ewm(com=period - 1, adjust=False).mean()
+    loss = (-delta.clip(upper=0)).ewm(com=period - 1, adjust=False).mean()
+    rs = gain / loss.replace(0, np.nan)
+    return 100 - (100 / (1 + rs))
+
+
+def fetch_bars_batch(data_client, symbols, limit=80):
+    all_closes = {}
+    batches = [symbols[i:i + BATCH_SIZE] for i in range(0, len(symbols), BATCH_SIZE)]
+    for i, batch in enumerate(batches):
+        try:
+            req = StockBarsRequest(symbol_or_symbols=batch, timeframe=TimeFrame.Day, limit=limit)
+            raw = data_client.get_stock_bars(req).df
+            if raw.empty:
+                continue
+            if isinstance(raw.index, pd.MultiIndex):
+                raw = raw.reset_index()
+                pivot = raw.pivot(index="timestamp", columns="symbol", values="close")
+            else:
+                pivot = raw[["close"]]
+            pivot.index = pd.to_datetime(pivot.index).tz_localize(None).normalize()
+            for sym in pivot.columns:
+                all_closes[sym] = pivot[sym].dropna()
+        except Exception as e:
+            print(f"  Batch {i+1} error: {e}")
+        if i < len(batches) - 1:
+            time.sleep(0.3)
+    return all_closes
+
+
+def score_universe(closes, spy_closes):
+    scores = {}
+    min_bars = RS_LOOKBACK + RSI_PERIOD + DIP_LOOKBACK
+    spy = spy_closes.dropna()
+    if len(spy) < RS_LOOKBACK:
+        return scores
+    spy_ret_60 = float((spy.iloc[-1] - spy.iloc[-RS_LOOKBACK]) / spy.iloc[-RS_LOOKBACK])
+
+    for symbol, prices in closes.items():
+        if len(prices) < min_bars:
+            continue
+        try:
+            if float(prices.iloc[-1]) < 25:
+                continue
+            rsi_val = float(compute_rsi(prices, RSI_PERIOD).iloc[-1])
+            if pd.isna(rsi_val) or rsi_val > 65 or rsi_val < 30:
+                continue
+            sym_ret_60 = float((prices.iloc[-1] - prices.iloc[-RS_LOOKBACK]) / prices.iloc[-RS_LOOKBACK])
+            rs_60 = sym_ret_60 - spy_ret_60
+            if rs_60 < 0:
+                continue
+            dip_5d = float((prices.iloc[-1] - prices.iloc[-DIP_LOOKBACK]) / prices.iloc[-DIP_LOOKBACK])
+            score = (-dip_5d * 0.6) + (rs_60 * 0.4)
+            scores[symbol] = {
+                "score": round(score, 4),
+                "rs_60d": round(rs_60 * 100, 2),
+                "dip_5d": round(dip_5d * 100, 2),
+                "rsi": round(rsi_val, 1),
+                "price": round(float(prices.iloc[-1]), 2),
+            }
+        except Exception:
+            continue
+    return scores
+
+
+def fetch_alpaca_news(api_key, api_secret, symbols, days=5):
     start = (datetime.utcnow() - timedelta(days=days)).strftime("%Y-%m-%dT00:00:00Z")
     headers = {"APCA-API-KEY-ID": api_key, "APCA-API-SECRET-KEY": api_secret}
     result = {}
@@ -38,7 +113,7 @@ def fetch_news(api_key, api_secret, symbols, days=5):
             resp = requests.get(
                 "https://data.alpaca.markets/v1beta1/news",
                 headers=headers,
-                params={"symbols": symbol, "start": start, "limit": 15, "sort": "desc"},
+                params={"symbols": symbol, "start": start, "limit": 10, "sort": "desc"},
                 timeout=10,
             )
             articles = resp.json().get("news", [])
@@ -56,49 +131,76 @@ def fetch_news(api_key, api_secret, symbols, days=5):
     return result
 
 
-def compute_rsi(prices, period=14):
-    delta = prices.diff()
-    gain = delta.clip(lower=0).rolling(period).mean()
-    loss = (-delta.clip(upper=0)).rolling(period).mean()
-    rs = gain / loss.replace(0, np.nan)
-    rsi = 100 - (100 / (1 + rs))
-    return round(float(rsi.iloc[-1]), 1) if not rsi.empty else None
-
-
-def fetch_technicals(data_client, symbols, benchmark):
-    all_symbols = list(set([benchmark] + symbols))
-    req = StockBarsRequest(symbol_or_symbols=all_symbols, timeframe=TimeFrame.Day, limit=60)
-    bars_df = data_client.get_stock_bars(req).df
-
-    def get_closes(symbol):
-        if isinstance(bars_df.index, pd.MultiIndex):
-            return bars_df.xs(symbol, level="symbol")["close"]
-        return bars_df["close"]
-
-    spy_close = get_closes(benchmark)
-    spy_ret_20d = float((spy_close.iloc[-1] - spy_close.iloc[-20]) / spy_close.iloc[-20] * 100) if len(spy_close) >= 20 else 0
-
-    technicals = {}
+def fetch_stocktwits_sentiment(symbols):
+    """
+    Fetch social sentiment from Stocktwits — the Twitter of stock traders.
+    Returns bull/bear % and a sample of recent trader commentary per symbol.
+    """
+    result = {}
     for symbol in symbols:
         try:
-            close = get_closes(symbol)
-            price = round(float(close.iloc[-1]), 2)
-            ret_5d = round(float((close.iloc[-1] - close.iloc[-5]) / close.iloc[-5] * 100), 2) if len(close) >= 5 else None
-            ret_20d = round(float((close.iloc[-1] - close.iloc[-20]) / close.iloc[-20] * 100), 2) if len(close) >= 20 else None
-            rel_strength = round(ret_20d - spy_ret_20d, 2) if ret_20d is not None else None
-            rsi = compute_rsi(close)
-            technicals[symbol] = {
-                "price": price,
-                "rsi_14": rsi,
-                "return_5d_pct": ret_5d,
-                "return_20d_pct": ret_20d,
-                "relative_strength_vs_spy": rel_strength,
-                "rsi_signal": "overbought" if rsi and rsi > 70 else ("oversold" if rsi and rsi < 30 else "neutral"),
-            }
-        except Exception as e:
-            technicals[symbol] = {"error": str(e)}
+            resp = requests.get(
+                f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json",
+                headers={"User-Agent": "Mozilla/5.0"},
+                timeout=10,
+            )
+            if resp.status_code == 429:
+                print(f"  Stocktwits rate limit hit, pausing...")
+                time.sleep(60)
+                resp = requests.get(
+                    f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json",
+                    headers={"User-Agent": "Mozilla/5.0"},
+                    timeout=10,
+                )
+            if resp.status_code != 200:
+                result[symbol] = {"error": f"HTTP {resp.status_code}"}
+                continue
 
-    return technicals
+            messages = resp.json().get("messages", [])
+            bullish = sum(1 for m in messages if m.get("entities", {}).get("sentiment", {}).get("basic") == "Bullish")
+            bearish = sum(1 for m in messages if m.get("entities", {}).get("sentiment", {}).get("basic") == "Bearish")
+            tagged = bullish + bearish
+
+            bull_pct = round(bullish / tagged * 100, 1) if tagged > 0 else None
+            bear_pct = round(bearish / tagged * 100, 1) if tagged > 0 else None
+
+            if bull_pct is None:
+                overall = "no_data"
+            elif bull_pct >= 65:
+                overall = "strongly_bullish"
+            elif bull_pct >= 55:
+                overall = "bullish"
+            elif bear_pct >= 65:
+                overall = "strongly_bearish"
+            elif bear_pct >= 55:
+                overall = "bearish"
+            else:
+                overall = "mixed"
+
+            recent_posts = [
+                {
+                    "text": m["body"][:200],
+                    "sentiment": m.get("entities", {}).get("sentiment", {}).get("basic"),
+                    "created_at": m["created_at"],
+                }
+                for m in messages[:6]
+            ]
+
+            result[symbol] = {
+                "bull_pct": bull_pct,
+                "bear_pct": bear_pct,
+                "message_count": len(messages),
+                "sentiment_tagged_count": tagged,
+                "overall": overall,
+                "recent_posts": recent_posts,
+            }
+
+        except Exception as e:
+            result[symbol] = {"error": str(e)}
+
+        time.sleep(0.8)  # Stocktwits rate limit: ~1 req/sec unauthenticated
+
+    return result
 
 
 def main():
@@ -106,16 +208,38 @@ def main():
     api_secret = os.environ["ALPACA_SECRET_KEY"]
 
     trading = TradingClient(api_key, api_secret, paper=True)
-    data = StockHistoricalDataClient(api_key, api_secret)
+    data_client = StockHistoricalDataClient(api_key, api_secret)
 
-    config = load_json(CONFIG_FILE, {"watchlist": [], "benchmark": "SPY"})
+    config = load_json(CONFIG_FILE, {"benchmark": "SPY", "top_n_candidates": 20})
     memory = load_json(MEMORY_FILE, {})
 
-    watchlist = config["watchlist"]
+    universe = get_universe()
     benchmark = config.get("benchmark", "SPY")
+    top_n = config.get("top_n_candidates", 20)
 
+    # --- Step 1: Score entire universe on technicals ---
+    print(f"Scanning {len(universe)} stocks...")
+    all_symbols = list(set([benchmark] + universe))
+    closes = fetch_bars_batch(data_client, all_symbols, limit=RS_LOOKBACK + RSI_PERIOD + DIP_LOOKBACK + 5)
+    spy_closes = closes.pop(benchmark, pd.Series(dtype=float))
+    print(f"Bars fetched for {len(closes)} symbols. Scoring...")
+
+    scores = score_universe(closes, spy_closes)
+    ranked = sorted(scores.items(), key=lambda x: x[1]["score"], reverse=True)
+    top_candidates = [sym for sym, _ in ranked[:top_n]]
+
+    print(f"{len(scores)} stocks passed filters. Top {top_n}: {', '.join(top_candidates)}")
+
+    # --- Step 2: Fetch Alpaca news for top candidates ---
+    print(f"Fetching Alpaca news for top {top_n} candidates...")
+    news = fetch_alpaca_news(api_key, api_secret, top_candidates, days=5)
+
+    # --- Step 3: Fetch Stocktwits social sentiment for top candidates ---
+    print(f"Fetching Stocktwits social sentiment for top {top_n} candidates...")
+    stocktwits = fetch_stocktwits_sentiment(top_candidates)
+
+    # --- Step 4: Account + positions ---
     account = trading.get_account()
-    raw_positions = trading.get_all_positions()
     positions = {
         p.symbol: {
             "qty": float(p.qty),
@@ -124,17 +248,14 @@ def main():
             "unrealized_pl": float(p.unrealized_pl),
             "unrealized_pl_pct": round(float(p.unrealized_plpc) * 100, 2),
         }
-        for p in raw_positions
+        for p in trading.get_all_positions()
     }
 
-    print(f"Fetching news for {len(watchlist)} symbols...")
-    news = fetch_news(api_key, api_secret, watchlist, days=5)
-
-    print("Fetching technicals...")
-    technicals = fetch_technicals(data, watchlist, benchmark)
-
+    # --- Step 5: Build research output ---
     research = {
         "generated_at": datetime.now(ET).isoformat(),
+        "universe_size": len(universe),
+        "stocks_passing_filter": len(scores),
         "account": {
             "portfolio_value": float(account.portfolio_value),
             "buying_power": float(account.buying_power),
@@ -142,20 +263,26 @@ def main():
         },
         "current_positions": positions,
         "recent_weekly_summaries": memory.get("weekly_summaries", [])[-4:],
-        "recent_trade_history": memory.get("trade_history", [])[-20:],
-        "watchlist_data": {
+        "top_candidates": {
             symbol: {
-                "technicals": technicals.get(symbol, {}),
-                "recent_news": news.get(symbol, []),
+                "technicals": scores[symbol],
+                "news": news.get(symbol, []),
+                "stocktwits": stocktwits.get(symbol, {}),
             }
-            for symbol in watchlist
+            for symbol in top_candidates
         },
+        "full_scores": {sym: d for sym, d in ranked},
     }
 
     with open(OUTPUT_FILE, "w") as f:
         json.dump(research, f, indent=2, default=str)
 
-    print(f"Research data written to {OUTPUT_FILE}")
+    print(f"\nResearch data written to {OUTPUT_FILE}")
+    print(f"\nTop 10 by technical score:")
+    for sym, d in ranked[:10]:
+        st = stocktwits.get(sym, {})
+        bull = f"{st['bull_pct']}% bull" if st.get("bull_pct") is not None else "no ST data"
+        print(f"  {sym:<6} score={d['score']:>+.4f}  RS60={d['rs_60d']:>+.1f}%  dip5d={d['dip_5d']:>+.1f}%  RSI={d['rsi']}  [{bull}]")
 
 
 if __name__ == "__main__":

@@ -1,8 +1,11 @@
 {
-  "watchlist": ["AAPL", "MSFT", "NVDA", "GOOGL", "META", "AMZN", "JPM", "GS", "LLY", "UNH", "TSLA", "XOM"],
   "benchmark": "SPY",
   "max_position_pct": 0.20,
   "stop_loss_pct": 0.05,
   "max_positions": 3,
+  "top_n_candidates": 20,
+  "min_rs_threshold": 0.0,
+  "friday_close_threshold": -0.02,
+  "max_entries_per_symbol_per_month": 2,
   "paper": true
 }
