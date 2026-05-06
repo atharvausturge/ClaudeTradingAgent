@@ -1,0 +1,40 @@
+name: Execute trades (triggered by CCR push)
+
+on:
+  push:
+    paths:
+      - trade_plan.json
+    branches:
+      - main
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Execute trades + notify Discord
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python execute.py
+
+      - name: Commit updated memory
+        run: |
+          git config user.name "Trading Agent"
+          git config user.email "trading-agent@github-actions"
+          git add memory.json
+          git diff --staged --quiet || git commit -m "Post-execution memory update $(date +%Y-%m-%d)"
+          git push
