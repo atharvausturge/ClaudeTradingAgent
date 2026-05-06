@@ -63,13 +63,16 @@ def build_user_prompt(research: dict, memory: dict) -> str:
     today = datetime.now(ET).strftime("%Y-%m-%d")
     recent_summaries = memory.get("weekly_summaries", [])[-4:]
 
+    # Strip full_scores (254-stock dump) — top_candidates already has the pre-ranked best
+    trimmed = {k: v for k, v in research.items() if k != "full_scores"}
+
     return f"""Today is {today}. Analyze the research data below and produce a trade plan.
 
 Recent trade history (last 4 weeks):
 {json.dumps(recent_summaries, indent=2)}
 
-Full research data:
-{json.dumps(research, indent=2)}
+Research data (top 20 candidates with technicals, news, and social sentiment):
+{json.dumps(trimmed, indent=2)}
 
 Return a JSON object in exactly this shape:
 {{
@@ -116,7 +119,7 @@ def main():
 
     print("Sending research data to Claude for analysis...")
     message = client.messages.create(
-        model="claude-opus-4-7",
+        model="claude-sonnet-4-6",
         max_tokens=2048,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": build_user_prompt(research, memory)}],
