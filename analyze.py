@@ -1,6 +1,6 @@
 """
-Calls the Claude API with research_data.json and writes trade_plan.json.
-Replaces the CCR-based analysis step — runs in GitHub Actions.
+Calls the Gemini API with research_data.json and writes trade_plan.json.
+Uses Google's free tier (gemini-2.0-flash) — no cost for low-volume usage.
 """
 import json
 import os
@@ -8,7 +8,7 @@ import re
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-import anthropic
+import google.generativeai as genai
 
 ET = ZoneInfo("America/New_York")
 RESEARCH_FILE = "research_data.json"
@@ -100,14 +100,14 @@ def extract_json(text: str) -> dict:
     start = text.find("{")
     end = text.rfind("}") + 1
     if start == -1 or end == 0:
-        raise ValueError("No JSON object found in Claude response")
+        raise ValueError("No JSON object found in model response")
     return json.loads(text[start:end])
 
 
 def main():
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        raise RuntimeError("ANTHROPIC_API_KEY not set")
+        raise RuntimeError("GEMINI_API_KEY not set")
 
     research = load_json(RESEARCH_FILE)
     if not research:
@@ -115,18 +115,17 @@ def main():
 
     memory = load_json(MEMORY_FILE, {})
 
-    client = anthropic.Anthropic(api_key=api_key)
-
-    print("Sending research data to Claude for analysis...")
-    message = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=2048,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": build_user_prompt(research, memory)}],
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel(
+        model_name="gemini-2.0-flash",
+        system_instruction=SYSTEM_PROMPT,
     )
 
-    raw = message.content[0].text
-    print(f"Claude response ({len(raw)} chars)")
+    print("Sending research data to Gemini for analysis...")
+    response = model.generate_content(build_user_prompt(research, memory))
+
+    raw = response.text
+    print(f"Gemini response ({len(raw)} chars)")
 
     plan = extract_json(raw)
 
