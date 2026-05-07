@@ -8,8 +8,7 @@ import re
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-from google import genai
-from google.genai import types
+from groq import Groq
 
 ET = ZoneInfo("America/New_York")
 RESEARCH_FILE = "research_data.json"
@@ -106,9 +105,9 @@ def extract_json(text: str) -> dict:
 
 
 def main():
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
-        raise RuntimeError("GEMINI_API_KEY not set")
+        raise RuntimeError("GROQ_API_KEY not set")
 
     research = load_json(RESEARCH_FILE)
     if not research:
@@ -116,19 +115,19 @@ def main():
 
     memory = load_json(MEMORY_FILE, {})
 
-    client = genai.Client(api_key=api_key)
+    client = Groq(api_key=api_key)
 
-    print("Sending research data to Gemini for analysis...")
-    response = client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents=build_user_prompt(research, memory),
-        config=types.GenerateContentConfig(
-            system_instruction=SYSTEM_PROMPT,
-            max_output_tokens=2048,
-        ),
+    print("Sending research data to Groq (llama-3.3-70b) for analysis...")
+    response = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        max_tokens=2048,
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": build_user_prompt(research, memory)},
+        ],
     )
 
-    raw = response.text
+    raw = response.choices[0].message.content
     print(f"Gemini response ({len(raw)} chars)")
 
     plan = extract_json(raw)
