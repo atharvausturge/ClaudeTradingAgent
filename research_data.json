@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-05-07T10:57:14.136463-04:00",
+  "universe_size": 254,
+  "stocks_passing_filter": 0,
+  "account": {
+    "portfolio_value": 100000.0,
+    "buying_power": 200000.0,
+    "cash": 100000.0
+  },
+  "current_positions": {},
+  "recent_weekly_summaries": [],
+  "top_candidates": {},
+  "full_scores": {}
+}

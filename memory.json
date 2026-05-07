@@ -2,6 +2,12 @@
   "last_run": null,
   "trade_history": [],
   "weekly_summaries": [],
-  "portfolio_snapshots": [],
+  "portfolio_snapshots": [
+    {
+      "time": "2026-05-07T10:57:16.097476-04:00",
+      "portfolio_value": 100000.0,
+      "buying_power": 200000.0
+    }
+  ],
   "strategy_notes": []
 }
