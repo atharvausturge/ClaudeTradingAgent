@@ -8,7 +8,8 @@ import re
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 
 ET = ZoneInfo("America/New_York")
 RESEARCH_FILE = "research_data.json"
@@ -115,14 +116,17 @@ def main():
 
     memory = load_json(MEMORY_FILE, {})
 
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel(
-        model_name="gemini-2.0-flash",
-        system_instruction=SYSTEM_PROMPT,
-    )
+    client = genai.Client(api_key=api_key)
 
     print("Sending research data to Gemini for analysis...")
-    response = model.generate_content(build_user_prompt(research, memory))
+    response = client.models.generate_content(
+        model="gemini-2.0-flash",
+        contents=build_user_prompt(research, memory),
+        config=types.GenerateContentConfig(
+            system_instruction=SYSTEM_PROMPT,
+            max_output_tokens=2048,
+        ),
+    )
 
     raw = response.text
     print(f"Gemini response ({len(raw)} chars)")
