@@ -27,7 +27,14 @@
       "buying_power": 200000.0,
       "cash": 100000.0,
       "open_positions": 0,
-      "note": "Friday end-of-week snapshot — full cash, no trades executed this week"
+      "note": "Friday end-of-week snapshot \u2014 full cash, no trades executed this week"
+    },
+    {
+      "time": "2026-05-08T15:08:58.716223-04:00",
+      "portfolio_value": 100000.0,
+      "buying_power": 200000.0,
+      "positions": [],
+      "is_friday_close": true
     }
   ],
   "strategy_notes": []
