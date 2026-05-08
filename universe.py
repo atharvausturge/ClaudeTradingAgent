@@ -1,9 +1,22 @@
 """
-Broad US large-cap universe (~250 liquid stocks across all S&P 500 sectors).
-Used by research.py to scan for the best weekly opportunities.
+Dynamically fetches the S&P 1500 universe (S&P 500 + S&P 400 + S&P 600) from
+Wikipedia using pandas.read_html. Auto-updates on index reconstitutions.
+Falls back to a hardcoded large-cap list if the fetch fails.
 """
 
-UNIVERSE = [
+import pandas as pd
+
+_WIKI_INDEXES = [
+    "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+    "https://en.wikipedia.org/wiki/List_of_S%26P_400_companies",
+    "https://en.wikipedia.org/wiki/List_of_S%26P_600_companies",
+]
+
+# Possible column names across the three Wikipedia tables
+_SYMBOL_COLS = ["Symbol", "Ticker symbol", "Ticker"]
+
+# Fallback in case Wikipedia is unreachable
+_FALLBACK = [
     # Technology
     "AAPL", "MSFT", "NVDA", "AVGO", "ORCL", "CRM", "AMD", "CSCO", "IBM", "QCOM",
     "TXN", "MU", "AMAT", "LRCX", "KLAC", "ADI", "MRVL", "NOW", "PANW", "SNPS",
@@ -18,7 +31,7 @@ UNIVERSE = [
     "F", "GM", "APTV", "BWA",
     # Consumer Staples
     "PG", "KO", "PEP", "PM", "MO", "MDLZ", "GIS", "K", "CPB", "CL",
-    "CHD", "HRL", "SJM", "MKC", "MNST", "KHC", "STZ", "TAP", "BF.B",
+    "CHD", "HRL", "SJM", "MKC", "MNST", "KHC", "STZ", "TAP", "BF-B",
     # Financials
     "JPM", "BAC", "WFC", "GS", "MS", "C", "USB", "PNC", "TFC", "COF",
     "AXP", "V", "MA", "PYPL", "SCHW", "BLK", "BX", "KKR", "APO", "SPGI",
@@ -44,10 +57,35 @@ UNIVERSE = [
     "MOS", "IFF", "PPG", "VMC", "MLM",
     # Real Estate
     "AMT", "PLD", "CCI", "EQIX", "PSA", "SPG", "O", "VICI",
-    # Semiconductors (extra coverage — high-beta, high-opportunity)
+    # Semiconductors
     "INTC", "ON", "SWKS", "QRVO", "MPWR", "ENTG",
 ]
 
 
-def get_universe():
-    return list(dict.fromkeys(UNIVERSE))  # deduplicate while preserving order
+def _normalize(ticker: str) -> str:
+    return ticker.replace(".", "-").strip().upper()
+
+
+def fetch_sp1500() -> list:
+    symbols = set()
+    for url in _WIKI_INDEXES:
+        try:
+            tables = pd.read_html(url)
+            for df in tables:
+                for col in _SYMBOL_COLS:
+                    if col in df.columns:
+                        raw = df[col].dropna().astype(str).tolist()
+                        symbols.update(raw)
+                        break
+        except Exception as e:
+            print(f"  Warning: could not fetch {url}: {e}")
+    return sorted({_normalize(s) for s in symbols if s and s != "NAN"})
+
+
+def get_universe() -> list:
+    symbols = fetch_sp1500()
+    if len(symbols) < 100:
+        print(f"  Warning: only {len(symbols)} symbols fetched — using fallback universe")
+        return list(dict.fromkeys(_FALLBACK))
+    print(f"  Loaded {len(symbols)} symbols from S&P 1500 (Wikipedia)")
+    return symbols

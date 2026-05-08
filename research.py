@@ -47,6 +47,7 @@ def compute_rsi(prices, period=14):
 
 def fetch_bars_batch(data_client, symbols, limit=80):
     all_closes = {}
+    all_avg_volumes = {}
     batches = [symbols[i:i + BATCH_SIZE] for i in range(0, len(symbols), BATCH_SIZE)]
     for i, batch in enumerate(batches):
         try:
@@ -56,21 +57,31 @@ def fetch_bars_batch(data_client, symbols, limit=80):
                 continue
             if isinstance(raw.index, pd.MultiIndex):
                 raw = raw.reset_index()
-                pivot = raw.pivot(index="timestamp", columns="symbol", values="close")
+                close_pivot = raw.pivot(index="timestamp", columns="symbol", values="close")
+                volume_pivot = raw.pivot(index="timestamp", columns="symbol", values="volume")
             else:
-                pivot = raw[["close"]]
-            pivot.index = pd.to_datetime(pivot.index).tz_localize(None).normalize()
-            for sym in pivot.columns:
-                all_closes[sym] = pivot[sym].dropna()
+                close_pivot = raw[["close"]]
+                volume_pivot = raw[["volume"]] if "volume" in raw.columns else pd.DataFrame()
+            close_pivot.index = pd.to_datetime(close_pivot.index).tz_localize(None).normalize()
+            for sym in close_pivot.columns:
+                all_closes[sym] = close_pivot[sym].dropna()
+            if not volume_pivot.empty:
+                volume_pivot.index = pd.to_datetime(volume_pivot.index).tz_localize(None).normalize()
+                for sym in volume_pivot.columns:
+                    all_avg_volumes[sym] = float(volume_pivot[sym].dropna().mean())
         except Exception as e:
             print(f"  Batch {i+1} error: {e}")
         if i < len(batches) - 1:
             time.sleep(0.3)
-    return all_closes
+    return all_closes, all_avg_volumes
 
 
-def score_universe(closes, spy_closes):
+MIN_AVG_VOLUME = 500_000  # filter illiquid names from S&P 600 and below
+
+
+def score_universe(closes, spy_closes, avg_volumes=None):
     scores = {}
+    avg_volumes = avg_volumes or {}
     min_bars = RS_LOOKBACK + RSI_PERIOD + DIP_LOOKBACK
     spy = spy_closes.dropna()
     if len(spy) < RS_LOOKBACK:
@@ -81,6 +92,8 @@ def score_universe(closes, spy_closes):
         if len(prices) < min_bars:
             continue
         try:
+            if avg_volumes.get(symbol, MIN_AVG_VOLUME) < MIN_AVG_VOLUME:
+                continue
             if float(prices.iloc[-1]) < 25:
                 continue
             rsi_val = float(compute_rsi(prices, RSI_PERIOD).iloc[-1])
@@ -220,11 +233,12 @@ def main():
     # --- Step 1: Score entire universe on technicals ---
     print(f"Scanning {len(universe)} stocks...")
     all_symbols = list(set([benchmark] + universe))
-    closes = fetch_bars_batch(data_client, all_symbols, limit=RS_LOOKBACK + RSI_PERIOD + DIP_LOOKBACK + 5)
+    closes, avg_volumes = fetch_bars_batch(data_client, all_symbols, limit=RS_LOOKBACK + RSI_PERIOD + DIP_LOOKBACK + 5)
     spy_closes = closes.pop(benchmark, pd.Series(dtype=float))
+    avg_volumes.pop(benchmark, None)
     print(f"Bars fetched for {len(closes)} symbols. Scoring...")
 
-    scores = score_universe(closes, spy_closes)
+    scores = score_universe(closes, spy_closes, avg_volumes)
     ranked = sorted(scores.items(), key=lambda x: x[1]["score"], reverse=True)
     top_candidates = [sym for sym, _ in ranked[:top_n]]
 
