@@ -1,12 +1,33 @@
 {
-  "last_run": null,
+  "last_run": "2026-05-08T17:00:00-04:00",
   "trade_history": [],
-  "weekly_summaries": [],
+  "weekly_summaries": [
+    {
+      "week_of": "2026-05-08",
+      "thesis": "No top candidates passed the filters. Conservative cash-hold week. 0 of 254 universe stocks met entry criteria.",
+      "actions": [],
+      "positions_closed": [],
+      "positions_held": [],
+      "final_pl_per_position": {},
+      "week_pnl": 0.0,
+      "week_pnl_pct": 0.0,
+      "end_portfolio_value": 100000.0,
+      "end_cash": 100000.0
+    }
+  ],
   "portfolio_snapshots": [
     {
       "time": "2026-05-07T10:57:16.097476-04:00",
       "portfolio_value": 100000.0,
       "buying_power": 200000.0
+    },
+    {
+      "time": "2026-05-08T17:00:00.000000-04:00",
+      "portfolio_value": 100000.0,
+      "buying_power": 200000.0,
+      "cash": 100000.0,
+      "open_positions": 0,
+      "note": "Friday end-of-week snapshot — full cash, no trades executed this week"
     }
   ],
   "strategy_notes": []
