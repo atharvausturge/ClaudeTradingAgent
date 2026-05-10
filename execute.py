@@ -9,8 +9,8 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 from alpaca.trading.client import TradingClient
-from alpaca.trading.requests import MarketOrderRequest, StopOrderRequest
-from alpaca.trading.enums import OrderSide, TimeInForce
+from alpaca.trading.requests import MarketOrderRequest, TakeProfitRequest, StopLossRequest
+from alpaca.trading.enums import OrderSide, TimeInForce, OrderClass
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
@@ -72,7 +72,7 @@ def main():
     trading = TradingClient(api_key, api_secret, paper=True)
     data = StockHistoricalDataClient(api_key, api_secret)
 
-    config = load_json(CONFIG_FILE, {"max_position_pct": 0.20, "stop_loss_pct": 0.05})
+    config = load_json(CONFIG_FILE, {"max_position_pct": 0.20, "stop_loss_pct": 0.05, "take_profit_pct": 0.08})
     plan = load_json(PLAN_FILE)
     memory = load_json(MEMORY_FILE, {"trade_history": [], "weekly_summaries": [], "portfolio_snapshots": []})
 
@@ -147,27 +147,27 @@ def main():
             continue
 
         stop_price = round(price * (1 - config["stop_loss_pct"]), 2)
+        take_profit_price = round(price * (1 + config["take_profit_pct"]), 2)
 
         try:
             trading.submit_order(MarketOrderRequest(
-                symbol=symbol, qty=qty, side=OrderSide.BUY, time_in_force=TimeInForce.DAY
+                symbol=symbol, qty=qty, side=OrderSide.BUY,
+                time_in_force=TimeInForce.DAY,
+                order_class=OrderClass.BRACKET,
+                stop_loss=StopLossRequest(stop_price=stop_price),
+                take_profit=TakeProfitRequest(limit_price=take_profit_price),
             ))
-            log.info(f"BUY {qty} {symbol} @ ~${price:.2f}")
-
-            trading.submit_order(StopOrderRequest(
-                symbol=symbol, qty=qty, side=OrderSide.SELL,
-                time_in_force=TimeInForce.GTC, stop_price=stop_price
-            ))
-            log.info(f"Stop loss set for {symbol} @ ${stop_price:.2f} (-{config['stop_loss_pct']*100:.0f}%)")
+            log.info(f"BUY {qty} {symbol} @ ~${price:.2f} | stop ${stop_price:.2f} | target ${take_profit_price:.2f}")
 
             account = trading.get_account()
             notify.trade_buy(
                 symbol=symbol, qty=qty, price=price, stop_price=stop_price,
+                take_profit_price=take_profit_price,
                 reasoning=trade.get("reasoning", ""), confidence=trade.get("confidence", "medium"),
                 portfolio_value=float(account.portfolio_value), buying_power=float(account.buying_power),
             )
 
-            note = f"BUY {qty} {symbol} @ ~${price:.2f} | stop ${stop_price:.2f} | {trade.get('reasoning', '')[:100]}"
+            note = f"BUY {qty} {symbol} @ ~${price:.2f} | stop ${stop_price:.2f} | target ${take_profit_price:.2f} | {trade.get('reasoning', '')[:100]}"
             actions.append(note)
             memory["trade_history"].append({
                 "time": now.isoformat(),
@@ -176,6 +176,7 @@ def main():
                 "qty": qty,
                 "price": price,
                 "stop_price": stop_price,
+                "take_profit_price": take_profit_price,
                 "reasoning": trade.get("reasoning", ""),
                 "confidence": trade.get("confidence", ""),
             })

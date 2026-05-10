@@ -2,9 +2,16 @@
 Dynamically fetches the S&P 1500 universe (S&P 500 + S&P 400 + S&P 600) from
 Wikipedia using pandas.read_html. Auto-updates on index reconstitutions.
 Falls back to a hardcoded large-cap list if the fetch fails.
+Caches the result for 7 days to avoid re-scraping Wikipedia on every run.
 """
 
+import json
+import os
 import pandas as pd
+from datetime import datetime
+
+CACHE_FILE = "universe_cache.json"
+CACHE_TTL_DAYS = 7
 
 _WIKI_INDEXES = [
     "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
@@ -83,9 +90,27 @@ def fetch_sp1500() -> list:
 
 
 def get_universe() -> list:
+    # Serve from cache if fresh
+    if os.path.exists(CACHE_FILE):
+        try:
+            with open(CACHE_FILE) as f:
+                cache = json.load(f)
+            age = (datetime.now() - datetime.fromisoformat(cache["fetched_at"])).days
+            if age < CACHE_TTL_DAYS and len(cache.get("symbols", [])) >= 100:
+                print(f"  Using cached universe ({len(cache['symbols'])} symbols, {age}d old)")
+                return cache["symbols"]
+        except Exception:
+            pass
+
     symbols = fetch_sp1500()
     if len(symbols) < 100:
         print(f"  Warning: only {len(symbols)} symbols fetched — using fallback universe")
         return list(dict.fromkeys(_FALLBACK))
+
     print(f"  Loaded {len(symbols)} symbols from S&P 1500 (Wikipedia)")
+    try:
+        with open(CACHE_FILE, "w") as f:
+            json.dump({"fetched_at": datetime.now().isoformat(), "symbols": symbols}, f)
+    except Exception:
+        pass
     return symbols

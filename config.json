@@ -2,6 +2,7 @@
   "benchmark": "SPY",
   "max_position_pct": 0.20,
   "stop_loss_pct": 0.05,
+  "take_profit_pct": 0.08,
   "max_positions": 3,
   "top_n_candidates": 20,
   "min_rs_threshold": 0.0,

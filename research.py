@@ -17,6 +17,7 @@ from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
 
+import yfinance as yf
 from universe import get_universe
 
 ET = ZoneInfo("America/New_York")
@@ -216,6 +217,22 @@ def fetch_stocktwits_sentiment(symbols):
     return result
 
 
+def has_upcoming_earnings(symbol: str, days: int = 7) -> bool:
+    """Return True if the stock has a known earnings event within `days` calendar days."""
+    try:
+        cal = yf.Ticker(symbol).calendar
+        if not cal:
+            return False
+        dates = cal.get("Earnings Date") if isinstance(cal, dict) else None
+        if not dates:
+            return False
+        nearest = min(pd.Timestamp(d) for d in dates)
+        days_until = (nearest.normalize() - pd.Timestamp.now().normalize()).days
+        return 0 <= days_until <= days
+    except Exception:
+        return False  # if unknown, don't block
+
+
 def main():
     api_key = os.environ["ALPACA_API_KEY"]
     api_secret = os.environ["ALPACA_SECRET_KEY"]
@@ -243,6 +260,16 @@ def main():
     top_candidates = [sym for sym, _ in ranked[:top_n]]
 
     print(f"{len(scores)} stocks passed filters. Top {top_n}: {', '.join(top_candidates)}")
+
+    # --- Step 1b: Remove stocks with earnings in the next 7 days ---
+    print("Checking earnings calendar for top candidates...")
+    earnings_blackout = [sym for sym in top_candidates if has_upcoming_earnings(sym)]
+    if earnings_blackout:
+        print(f"  Earnings blackout (excluded): {', '.join(earnings_blackout)}")
+        top_candidates = [sym for sym in top_candidates if sym not in earnings_blackout]
+        # Backfill from ranked list if we have room
+        remaining = [sym for sym, _ in ranked if sym not in top_candidates and sym not in earnings_blackout]
+        top_candidates = (top_candidates + remaining)[:top_n]
 
     # --- Step 2: Fetch Alpaca news for top candidates ---
     print(f"Fetching Alpaca news for top {top_n} candidates...")

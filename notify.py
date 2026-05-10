@@ -16,10 +16,10 @@ def _send(title, description, color, fields=None):
         pass
 
 
-def trade_buy(symbol, qty, price, stop_price, reasoning, confidence, portfolio_value, buying_power):
+def trade_buy(symbol, qty, price, stop_price, take_profit_price, reasoning, confidence, portfolio_value, buying_power):
     _send(
         title="🟢 BUY ORDER PLACED",
-        description=f"**{qty} {symbol}** @ ~${price:.2f}\nStop loss: **${stop_price:.2f}** (-5%)",
+        description=f"**{qty} {symbol}** @ ~${price:.2f}\nStop loss: **${stop_price:.2f}** | Take profit: **${take_profit_price:.2f}**",
         color=3066993,
         fields=[
             {"name": "Confidence", "value": confidence.upper(), "inline": True},
@@ -51,12 +51,15 @@ def weekly_plan(week_of, thesis, buys, holds, closes):
     )
 
 
-def friday_summary(portfolio_value, held, closed):
+def friday_summary(portfolio_value, held, closed, weekly_return_pct=None, spy_return_pct=None):
     held_lines = "\n".join([f"✅ **{p['symbol']}** {p['pl_pct']:+.2f}%" for p in held]) or "None"
     closed_lines = "\n".join([f"🔴 **{p['symbol']}** {p['pl_pct']:+.2f}%" for p in closed]) or "None"
+    perf = ""
+    if weekly_return_pct is not None and spy_return_pct is not None:
+        perf = f"\nThis week: Bot **{weekly_return_pct:+.2f}%** vs SPY **{spy_return_pct:+.2f}%**"
     _send(
         title="📊 FRIDAY WRAP",
-        description=f"Portfolio: **${portfolio_value:,.2f}**",
+        description=f"Portfolio: **${portfolio_value:,.2f}**{perf}",
         color=3447003,
         fields=[
             {"name": "Held into next week", "value": held_lines, "inline": True},
