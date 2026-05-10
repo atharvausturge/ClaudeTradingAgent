@@ -16,10 +16,10 @@ def _send(title, description, color, fields=None):
         pass
 
 
-def trade_buy(symbol, qty, price, stop_price, take_profit_price, reasoning, confidence, portfolio_value, buying_power):
+def trade_buy(symbol, qty, price, stop_price, reasoning, confidence, portfolio_value, buying_power):
     _send(
         title="🟢 BUY ORDER PLACED",
-        description=f"**{qty} {symbol}** @ ~${price:.2f}\nStop loss: **${stop_price:.2f}** | Take profit: **${take_profit_price:.2f}**",
+        description=f"**{qty} {symbol}** @ ~${price:.2f}\nStop loss: **${stop_price:.2f}** (-5%)",
         color=3066993,
         fields=[
             {"name": "Confidence", "value": confidence.upper(), "inline": True},

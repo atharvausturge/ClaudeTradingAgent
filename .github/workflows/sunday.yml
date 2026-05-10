@@ -1,12 +1,12 @@
-name: Monday — Execute Trades
+name: Sunday — Research & Analysis
 
 on:
   schedule:
-    - cron: "30 13 * * 1"   # Monday 1:30pm UTC = 9:30am ET (summer) / 8:30am ET (winter)
+    - cron: "0 23 * * 0"   # Sunday 11pm UTC = 7pm ET (summer) / 6pm ET (winter)
   workflow_dispatch:         # allows manual trigger from GitHub UI
 
 jobs:
-  execute:
+  research:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -22,17 +22,22 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Execute trades
+      - name: Run research
         env:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: python execute.py
+        run: python research.py
 
-      - name: Commit memory
+      - name: Analyze with Groq + notify Discord
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python analyze.py
+
+      - name: Commit research + trade plan
         run: |
           git config user.name "Trading Agent"
           git config user.email "trading-agent@github-actions"
-          git add memory.json
-          git diff --staged --quiet || git commit -m "Monday $(date +%Y-%m-%d): trades executed"
+          git add trade_plan.json research_data.json universe_cache.json
+          git diff --staged --quiet || git commit -m "Sunday $(date +%Y-%m-%d): research + proposed plan"
           git push
