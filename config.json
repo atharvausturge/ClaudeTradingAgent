@@ -8,5 +8,7 @@
   "min_rs_threshold": 0.0,
   "friday_close_threshold": -0.02,
   "max_entries_per_symbol_per_month": 2,
+  "tech_weight": 0.5,
+  "sentiment_weight": 0.5,
   "paper": true
 }
