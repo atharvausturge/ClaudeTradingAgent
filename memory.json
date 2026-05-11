@@ -126,6 +126,11 @@
       "time": "2026-05-11T10:57:11.937687-04:00",
       "portfolio_value": 98724.61,
       "buying_power": 99136.2
+    },
+    {
+      "time": "2026-05-11T12:17:00.237702-04:00",
+      "portfolio_value": 99759.65,
+      "buying_power": 100171.24
     }
   ],
   "strategy_notes": [
