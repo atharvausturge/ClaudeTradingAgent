@@ -11,6 +11,7 @@ import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
+from dotenv import load_dotenv
 
 from alpaca.trading.client import TradingClient
 from alpaca.data.historical import StockHistoricalDataClient
@@ -78,8 +79,10 @@ def fetch_bars_batch(data_client, symbols, limit=80):
         # Keep retrying the batch, stripping one bad symbol per attempt
         while clean_batch:
             try:
-                req = StockBarsRequest(symbol_or_symbols=clean_batch, timeframe=TimeFrame.Day, limit=limit)
-                close_pivot, volume_pivot = _parse_bars(data_client.get_stock_bars(req).df)
+                bar_start = (datetime.now() - timedelta(days=int(limit * 2))).date()
+                req = StockBarsRequest(symbol_or_symbols=clean_batch, timeframe=TimeFrame.Day, start=bar_start)
+                raw_df = data_client.get_stock_bars(req).df
+                close_pivot, volume_pivot = _parse_bars(raw_df)
                 for sym in close_pivot.columns:
                     all_closes[sym] = close_pivot[sym].dropna()
                 for sym in volume_pivot.columns:
@@ -168,7 +171,7 @@ def score_universe(closes, spy_closes, avg_volumes=None, min_rs_threshold=0.0):
 
 
 def fetch_alpaca_news(api_key, api_secret, symbols, days=5):
-    start = (datetime.utcnow() - timedelta(days=days)).strftime("%Y-%m-%dT00:00:00Z")
+    start = (datetime.now(ZoneInfo("UTC")) - timedelta(days=days)).strftime("%Y-%m-%dT00:00:00Z")
     headers = {"APCA-API-KEY-ID": api_key, "APCA-API-SECRET-KEY": api_secret}
     result = {}
     for symbol in symbols:
@@ -283,6 +286,7 @@ def has_upcoming_earnings(symbol: str, days: int = 7) -> bool:
 
 
 def main():
+    load_dotenv()
     api_key = os.environ["ALPACA_API_KEY"]
     api_secret = os.environ["ALPACA_SECRET_KEY"]
 

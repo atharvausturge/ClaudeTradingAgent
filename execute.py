@@ -5,7 +5,7 @@ Attaches a GTC stop loss order to every buy automatically.
 import os
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 from alpaca.trading.client import TradingClient
@@ -13,7 +13,7 @@ import time
 from alpaca.trading.requests import MarketOrderRequest, StopOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
 from alpaca.data.historical import StockHistoricalDataClient
-from alpaca.data.requests import StockBarsRequest
+from alpaca.data.requests import StockBarsRequest, StockLatestBarRequest
 from alpaca.data.timeframe import TimeFrame
 import notify
 
@@ -40,15 +40,22 @@ def save_json(path, data):
 
 
 def get_current_price(data_client, symbol):
-    # Try minute bar first (works during market hours), fall back to daily close (pre-market)
-    for timeframe in [TimeFrame.Minute, TimeFrame.Hour, TimeFrame.Day]:
-        try:
-            req = StockBarsRequest(symbol_or_symbols=symbol, timeframe=timeframe, limit=1)
-            bars = data_client.get_stock_bars(req).df
-            if not bars.empty:
-                return float(bars.iloc[-1]["close"])
-        except Exception:
-            continue
+    # Latest bar is always available (pre-market and market hours)
+    try:
+        req = StockLatestBarRequest(symbol_or_symbols=symbol)
+        bar = data_client.get_stock_latest_bar(req)
+        return float(bar[symbol].close)
+    except Exception:
+        pass
+    # Fallback: last 5 days of daily bars
+    try:
+        start = (datetime.now() - timedelta(days=7)).date()
+        req = StockBarsRequest(symbol_or_symbols=symbol, timeframe=TimeFrame.Day, start=start)
+        bars = data_client.get_stock_bars(req).df
+        if not bars.empty:
+            return float(bars.iloc[-1]["close"])
+    except Exception:
+        pass
     raise RuntimeError(f"Could not fetch price for {symbol}")
 
 

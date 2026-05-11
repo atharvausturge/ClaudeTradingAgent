@@ -41,7 +41,8 @@ def save_json(path, data):
 
 def get_spy_weekly_return(data_client):
     try:
-        req = StockBarsRequest(symbol_or_symbols="SPY", timeframe=TimeFrame.Day, limit=6)
+        spy_start = (datetime.now(ET) - timedelta(days=15)).date()
+        req = StockBarsRequest(symbol_or_symbols="SPY", timeframe=TimeFrame.Day, start=spy_start)
         bars = data_client.get_stock_bars(req).df
         if bars.empty or len(bars) < 2:
             return None
