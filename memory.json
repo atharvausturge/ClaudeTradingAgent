@@ -1,6 +1,37 @@
 {
   "last_run": "2026-05-11",
-  "trade_history": [],
+  "trade_history": [
+    {
+      "time": "2026-05-11T10:57:11.937687-04:00",
+      "action": "BUY",
+      "symbol": "PLTR",
+      "qty": 292,
+      "price": 135.05,
+      "stop_price": 128.3,
+      "reasoning": "Palantir reported Q1 2026 on May 4: revenue $1.63B (+85% YoY, beat $1.54B estimate), US commercial $595M (+133% YoY), US gov $687M (+84% YoY), net income quadrupled to $870.5M. Raised FY2026 guidance to $7.65-7.66B (+71% YoY vs $7.27B consensus). Q2 guide $1.8B vs $1.68B expected. Algo score 0.36 (3rd overall) with 11% dip from recent high = pullback entry. No earnings this week. Bullish retail + institutional sentiment on defense AI + AIP commercial platform.",
+      "confidence": "high"
+    },
+    {
+      "time": "2026-05-11T10:57:11.937687-04:00",
+      "action": "BUY",
+      "symbol": "AMD",
+      "qty": 75,
+      "price": 458.77,
+      "stop_price": 435.83,
+      "reasoning": "AMD reported Q1 2026 on May 5: total revenue $10.3B (+38% YoY, beat), data center $5.8B (+57% YoY). Non-GAAP EPS $1.37 vs $1.18 expected. Q2 guidance $11.2B (+46% YoY). Stock soared 16% post-earnings. CNBC 'AI changing of guard' rotation (May 8). Up 66% YTD. No earnings risk this week.",
+      "confidence": "high"
+    },
+    {
+      "time": "2026-05-11T10:57:11.937687-04:00",
+      "action": "BUY",
+      "symbol": "INTC",
+      "qty": 195,
+      "price": 126.31,
+      "stop_price": 119.99,
+      "reasoning": "Intel up 430% over past year, surpassed dotcom-era market cap (~$550B), +33% in early May, 13% single-day pop. Algo score 0.41 (2nd overall) with 5.26% pullback = ideal swing entry. 'Intel and Micron poised to break major milestones' (CNBC May 5). Foundry recovery + Gaudi AI accelerators + HBM positioning driving structural re-rating. No earnings this week.",
+      "confidence": "medium"
+    }
+  ],
   "weekly_summaries": [
     {
       "week_of": "2026-05-08",
@@ -47,6 +78,15 @@
         "AMAT": "Avoided \u2014 earnings May 14"
       },
       "outcome": null
+    },
+    {
+      "week_of": "2026-05-11",
+      "thesis": "The S&P 500 has posted 6 consecutive winning weeks (now at 7,399) with Q1 2026 earnings season producing an 84% EPS beat rate and 27.7% blended growth \u2014 the strongest since Q2 2021. A key regime shift is underway: 'AI changing of the guard' per CNBC (May 8) as AI chip spending rotates from Nvidia to AMD, Intel, and Micron on data center CPU/GPU buildout. AI capex projected at $571B in 2026. Three catalysts align: (1) PLTR Q1 beat (85% revenue growth, US commercial +133%, FY guidance raised to 71% growth); (2) AMD data center momentum ($5.8B, +57% YoY, guided Q2 to $11.2B); (3) INTC secular turnaround (up 430% YoY, surpassed dotcom-era market cap, 5% off recent high). Macro backdrop is risk-on. Only earnings risk in universe this week is AMAT (May 14) \u2014 excluded.",
+      "actions": [
+        "BUY 292 PLTR @ ~$135.05 | stop $128.30 | Palantir reported Q1 2026 on May 4: revenue $1.63B (+85% YoY, beat $1.54B estimate), US commercial $",
+        "BUY 75 AMD @ ~$458.77 | stop $435.83 | AMD reported Q1 2026 on May 5: total revenue $10.3B (+38% YoY, beat), data center $5.8B (+57% YoY). ",
+        "BUY 195 INTC @ ~$126.31 | stop $119.99 | Intel up 430% over past year, surpassed dotcom-era market cap (~$550B), +33% in early May, 13% singl"
+      ]
     }
   ],
   "portfolio_snapshots": [
@@ -81,6 +121,11 @@
       "time": "2026-05-11T08:44:49.555372-04:00",
       "portfolio_value": 100000.0,
       "buying_power": 101586.46
+    },
+    {
+      "time": "2026-05-11T10:57:11.937687-04:00",
+      "portfolio_value": 98724.61,
+      "buying_power": 99136.2
     }
   ],
   "strategy_notes": [
