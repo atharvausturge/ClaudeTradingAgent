@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T10:57:14.136463-04:00",
+  "generated_at": "2026-05-10T20:40:52.317954-04:00",
   "universe_size": 254,
   "stocks_passing_filter": 0,
   "account": {
@@ -8,7 +8,20 @@
     "cash": 100000.0
   },
   "current_positions": {},
-  "recent_weekly_summaries": [],
+  "recent_weekly_summaries": [
+    {
+      "week_of": "2026-05-08",
+      "thesis": "No top candidates passed the filters. Conservative cash-hold week. 0 of 254 universe stocks met entry criteria.",
+      "actions": [],
+      "positions_closed": [],
+      "positions_held": [],
+      "final_pl_per_position": {},
+      "week_pnl": 0.0,
+      "week_pnl_pct": 0.0,
+      "end_portfolio_value": 100000.0,
+      "end_cash": 100000.0
+    }
+  ],
   "top_candidates": {},
   "full_scores": {}
 }
