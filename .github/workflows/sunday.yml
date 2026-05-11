@@ -38,6 +38,7 @@ jobs:
         run: |
           git config user.name "Trading Agent"
           git config user.email "trading-agent@github-actions"
-          git add trade_plan.json research_data.json universe_cache.json
+          git add trade_plan.json research_data.json
+          [ -f universe_cache.json ] && git add universe_cache.json || true
           git diff --staged --quiet || git commit -m "Sunday $(date +%Y-%m-%d): research + proposed plan"
           git push
