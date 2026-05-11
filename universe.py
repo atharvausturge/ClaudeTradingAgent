@@ -5,10 +5,14 @@ Falls back to a hardcoded large-cap list if the fetch fails.
 Caches the result for 7 days to avoid re-scraping Wikipedia on every run.
 """
 
+import io
 import json
 import os
+import requests
 import pandas as pd
 from datetime import datetime
+
+_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; trading-bot/1.0; +https://github.com)"}
 
 CACHE_FILE = "universe_cache.json"
 CACHE_TTL_DAYS = 7
@@ -77,15 +81,19 @@ def fetch_sp1500() -> list:
     symbols = set()
     for url in _WIKI_INDEXES:
         try:
-            tables = pd.read_html(url)
+            resp = requests.get(url, headers=_HEADERS, timeout=20)
+            resp.raise_for_status()
+            # Use html5lib (pure Python, no binary deps) so it always works
+            tables = pd.read_html(io.StringIO(resp.text), flavor="bs4")
             for df in tables:
                 for col in _SYMBOL_COLS:
                     if col in df.columns:
                         raw = df[col].dropna().astype(str).tolist()
                         symbols.update(raw)
+                        print(f"  {url.split('/')[-1][:30]}: {len(raw)} symbols via '{col}'")
                         break
         except Exception as e:
-            print(f"  Warning: could not fetch {url}: {e}")
+            print(f"  Warning: could not fetch {url.split('/')[-1]}: {e}")
     return sorted({_normalize(s) for s in symbols if s and s != "NAN"})
 
 
@@ -96,7 +104,7 @@ def get_universe() -> list:
             with open(CACHE_FILE) as f:
                 cache = json.load(f)
             age = (datetime.now() - datetime.fromisoformat(cache["fetched_at"])).days
-            if age < CACHE_TTL_DAYS and len(cache.get("symbols", [])) >= 100:
+            if age < CACHE_TTL_DAYS and len(cache.get("symbols", [])) >= 500:
                 print(f"  Using cached universe ({len(cache['symbols'])} symbols, {age}d old)")
                 return cache["symbols"]
         except Exception:
