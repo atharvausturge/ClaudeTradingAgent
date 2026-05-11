@@ -76,6 +76,11 @@
       "portfolio_value": 100000.0,
       "cash": 100000.0,
       "note": "Paper account \u2014 Alpaca API not accessible from execution environment"
+    },
+    {
+      "time": "2026-05-11T08:44:49.555372-04:00",
+      "portfolio_value": 100000.0,
+      "buying_power": 101586.46
     }
   ],
   "strategy_notes": [
