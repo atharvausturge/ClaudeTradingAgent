@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-05-08T17:00:00-04:00",
+  "last_run": "2026-05-11",
   "trade_history": [],
   "weekly_summaries": [
     {
@@ -13,6 +13,40 @@
       "week_pnl_pct": 0.0,
       "end_portfolio_value": 100000.0,
       "end_cash": 100000.0
+    },
+    {
+      "week_of": "2026-05-11",
+      "thesis": "AI infrastructure 'changing of the guard': PLTR (85% rev growth), AMD (data center +57%), INTC (up 430% YoY, 5% dip entry). S&P 500 at ATH 7,399. 84% Q1 EPS beat rate. AMAT reporting May 14 \u2014 skipped. NET avoided (15% drop + layoffs).",
+      "selected_symbols": [
+        "PLTR",
+        "AMD",
+        "INTC"
+      ],
+      "allocations": {
+        "PLTR": 0.4,
+        "AMD": 0.35,
+        "INTC": 0.25
+      },
+      "confidence": {
+        "PLTR": "high",
+        "AMD": "high",
+        "INTC": "medium"
+      },
+      "market_context": {
+        "sp500_level": 7399,
+        "consecutive_winning_weeks": 6,
+        "q1_eps_beat_rate": "84%",
+        "q1_blended_growth": "27.7%"
+      },
+      "key_data": {
+        "PLTR": "Q1 rev $1.63B (+85% YoY), US commercial +133%, FY2026 guide +71%",
+        "AMD": "Q1 rev $10.3B (+38%), data center $5.8B (+57%), Q2 guide $11.2B (+46%)",
+        "INTC": "Up 430% YoY, dotcom market cap milestone, 5% dip from high",
+        "MU": "ATH $777 skipped \u2014 no pullback entry",
+        "NET": "Avoided \u2014 down 15% on earnings + 20% layoffs",
+        "AMAT": "Avoided \u2014 earnings May 14"
+      },
+      "outcome": null
     }
   ],
   "portfolio_snapshots": [
@@ -35,7 +69,18 @@
       "buying_power": 200000.0,
       "positions": [],
       "is_friday_close": true
+    },
+    {
+      "date": "2026-05-11",
+      "account_type": "paper",
+      "portfolio_value": 100000.0,
+      "cash": 100000.0,
+      "note": "Paper account \u2014 Alpaca API not accessible from execution environment"
     }
   ],
-  "strategy_notes": []
+  "strategy_notes": [
+    "Week 2026-05-11: Alpaca/Yahoo Finance APIs blocked in CCR. Used WebSearch for fundamentals. Bars synthesized from known prices.",
+    "score_local.py: trend (SMA50, 40%) + momentum (10d+40d, 40%) + dip quality (20%). Underweights post-earnings gap-up stocks.",
+    "Consider adding earnings surprise override to mechanical scores for stocks reporting strong beats."
+  ]
 }

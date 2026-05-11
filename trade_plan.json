@@ -1,197 +1,35 @@
 {
-  "week_of": "2026-05-10",
-  "week_thesis": "This week, the market seems to be experiencing a mix of neutral and positive news, with several stocks receiving price target increases and positive analyst ratings. However, binary risk is introduced for stocks with earnings scheduled for this week, such as YOU and APA. Overall, the macro environment appears to be cautiously optimistic, with a focus on stocks with strong earnings and growth potential.",
+  "week_of": "2026-05-11",
+  "week_thesis": "The S&P 500 has posted 6 consecutive winning weeks (now at 7,399) with Q1 2026 earnings season producing an 84% EPS beat rate and 27.7% blended growth — the strongest since Q2 2021. A key regime shift is underway: 'AI changing of the guard' per CNBC (May 8) as AI chip spending rotates from Nvidia to AMD, Intel, and Micron on data center CPU/GPU buildout. AI capex projected at $571B in 2026. Three catalysts align: (1) PLTR Q1 beat (85% revenue growth, US commercial +133%, FY guidance raised to 71% growth); (2) AMD data center momentum ($5.8B, +57% YoY, guided Q2 to $11.2B); (3) INTC secular turnaround (up 430% YoY, surpassed dotcom-era market cap, 5% off recent high). Macro backdrop is risk-on. Only earnings risk in universe this week is AMAT (May 14) — excluded.",
   "buys": [
     {
-      "symbol": "AOSL",
-      "combined_score": 0.7857,
-      "tech_score": 1.0,
-      "sentiment_score": 0.571,
-      "reasoning": "Alpha & Omega Semiconductor shares are dipping today with no clear catalyst",
+      "symbol": "PLTR",
+      "reasoning": "Palantir reported Q1 2026 on May 4: revenue $1.63B (+85% YoY, beat $1.54B estimate), US commercial $595M (+133% YoY), US gov $687M (+84% YoY), net income quadrupled to $870.5M. Raised FY2026 guidance to $7.65-7.66B (+71% YoY vs $7.27B consensus). Q2 guide $1.8B vs $1.68B expected. Algo score 0.36 (3rd overall) with 11% dip from recent high = pullback entry. No earnings this week. Bullish retail + institutional sentiment on defense AI + AIP commercial platform.",
       "confidence": "high",
-      "qty_pct": 0.15
+      "qty_pct": 0.40
     },
     {
-      "symbol": "VIAV",
-      "combined_score": 0.7667,
-      "tech_score": 0.962,
-      "sentiment_score": 0.571,
-      "reasoning": "No recent news on Viavi Solutions",
+      "symbol": "AMD",
+      "reasoning": "AMD reported Q1 2026 on May 5: total revenue $10.3B (+38% YoY, beat), data center $5.8B (+57% YoY). Non-GAAP EPS $1.37 vs $1.18 expected. Q2 guidance $11.2B (+46% YoY). Stock soared 16% post-earnings. CNBC 'AI changing of guard' rotation (May 8). Up 66% YTD. No earnings risk this week.",
       "confidence": "high",
-      "qty_pct": 0.15
+      "qty_pct": 0.35
     },
     {
-      "symbol": "CIEN",
-      "combined_score": 0.6247,
-      "tech_score": 0.678,
-      "sentiment_score": 0.571,
-      "reasoning": "No recent news on Ciena Corporation",
+      "symbol": "INTC",
+      "reasoning": "Intel up 430% over past year, surpassed dotcom-era market cap (~$550B), +33% in early May, 13% single-day pop. Algo score 0.41 (2nd overall) with 5.26% pullback = ideal swing entry. 'Intel and Micron poised to break major milestones' (CNBC May 5). Foundry recovery + Gaudi AI accelerators + HBM positioning driving structural re-rating. No earnings this week.",
       "confidence": "medium",
-      "qty_pct": 0.15
-    },
-    {
-      "symbol": "AGX",
-      "combined_score": 0.5819,
-      "tech_score": 0.307,
-      "sentiment_score": 0.857,
-      "reasoning": "Mentioned as a high-quality stock with growing dividends",
-      "confidence": "medium",
-      "qty_pct": 0.15
-    },
-    {
-      "symbol": "ADEA",
-      "combined_score": 0.5676,
-      "tech_score": 0.564,
-      "sentiment_score": 0.571,
-      "reasoning": "No recent news on Adea Investments",
-      "confidence": "medium",
-      "qty_pct": 0.15
+      "qty_pct": 0.25
     }
   ],
   "close_positions": [],
   "close_reasoning": {},
   "hold_positions": [],
-  "skip_reasoning": {},
-  "scoring_breakdown": {
-    "AOSL": {
-      "combined": 0.7857,
-      "tech_norm": 1.0,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 5,
-      "ai_reason": "Alpha & Omega Semiconductor shares are dipping today with no clear catalyst"
-    },
-    "VIAV": {
-      "combined": 0.7667,
-      "tech_norm": 0.962,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 5,
-      "ai_reason": "No recent news on Viavi Solutions"
-    },
-    "CIEN": {
-      "combined": 0.6247,
-      "tech_norm": 0.678,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 5,
-      "ai_reason": "No recent news on Ciena Corporation"
-    },
-    "ADEA": {
-      "combined": 0.5676,
-      "tech_norm": 0.564,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 5,
-      "ai_reason": "No recent news on Adea Investments"
-    },
-    "IRDM": {
-      "combined": 0.5661,
-      "tech_norm": 0.561,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 5,
-      "ai_reason": "No recent news on Iridium Communications"
-    },
-    "YOU": {
-      "combined": 0.2048,
-      "tech_norm": 0.41,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 1,
-      "ai_reason": "Earnings scheduled for May 6, 2026, introduces binary risk"
-    },
-    "ACHC": {
-      "combined": 0.484,
-      "tech_norm": 0.396,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 5,
-      "ai_reason": "No recent news on Acadia Healthcare Company"
-    },
-    "TTMI": {
-      "combined": 0.4666,
-      "tech_norm": 0.362,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 5,
-      "ai_reason": "No recent news on TTM Technologies"
-    },
-    "MYRG": {
-      "combined": 0.4555,
-      "tech_norm": 0.34,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 5,
-      "ai_reason": "No recent news on MYR Group"
-    },
-    "AGX": {
-      "combined": 0.5819,
-      "tech_norm": 0.307,
-      "sentiment_norm": 0.857,
-      "ai_raw_score": 7,
-      "ai_reason": "Mentioned as a high-quality stock with growing dividends"
-    },
-    "LITE": {
-      "combined": 0.5583,
-      "tech_norm": 0.259,
-      "sentiment_norm": 0.857,
-      "ai_raw_score": 7,
-      "ai_reason": "Multiple analysts raise price targets on Lumentum Holdings"
-    },
-    "RNG": {
-      "combined": 0.556,
-      "tech_norm": 0.255,
-      "sentiment_norm": 0.857,
-      "ai_raw_score": 7,
-      "ai_reason": "RingCentral raises FY2026 adj EPS guidance and multiple analysts raise price targets"
-    },
-    "PARR": {
-      "combined": 0.3708,
-      "tech_norm": 0.17,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 5,
-      "ai_reason": "Par Pacific Hldgs reports Q1 2026 results with no clear catalyst"
-    },
-    "MTZ": {
-      "combined": 0.4906,
-      "tech_norm": 0.124,
-      "sentiment_norm": 0.857,
-      "ai_raw_score": 7,
-      "ai_reason": "Jim Cramer recommends MasTec as a buy"
-    },
-    "VECO": {
-      "combined": 0.5572,
-      "tech_norm": 0.114,
-      "sentiment_norm": 1.0,
-      "ai_raw_score": 8,
-      "ai_reason": "Veeco Instruments receives buy rating and price target increase from Citigroup"
-    },
-    "ICHR": {
-      "combined": 0.3389,
-      "tech_norm": 0.106,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 5,
-      "ai_reason": "No recent news on Ichor Holdings"
-    },
-    "ACLS": {
-      "combined": 0.4636,
-      "tech_norm": 0.07,
-      "sentiment_norm": 0.857,
-      "ai_raw_score": 7,
-      "ai_reason": "Axcelis Technologies beats Q1 adj EPS and sales estimates"
-    },
-    "POWI": {
-      "combined": 0.4451,
-      "tech_norm": 0.033,
-      "sentiment_norm": 0.857,
-      "ai_raw_score": 7,
-      "ai_reason": "Power Integrations beats Q1 adj EPS and sales estimates and receives positive analyst rating"
-    },
-    "APA": {
-      "combined": 0.006,
-      "tech_norm": 0.012,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 1,
-      "ai_reason": "Earnings scheduled for May 6, 2026, introduces binary risk"
-    },
-    "FN": {
-      "combined": 0.4286,
-      "tech_norm": 0.0,
-      "sentiment_norm": 0.857,
-      "ai_raw_score": 7,
-      "ai_reason": "Barclays maintains overweight rating and raises price target on Fabrinet"
-    }
+  "skip_reasoning": {
+    "MU": "All-time high $777, 0% dip — no pullback entry after 750% 1-year run. Algo score highest (1.19) but chasing at extended levels.",
+    "AMAT": "Earnings Wednesday May 14 — binary event risk this week. Skip.",
+    "DDOG": "Strong Q1 guidance raise, algo score 0.24, 1.3% dip. Good stock but 4th pick; PLTR/AMD/INTC better combo.",
+    "NET": "Dropped 15%+ on Q1 despite beat + 20% workforce reduction. AVOID.",
+    "NVDA": "AI chip momentum rotating away from NVDA to AMD/INTC/MU per CNBC. Underperforms peers.",
+    "COIN": "Algo score negative (-0.21), distributing. Skip."
   }
 }

@@ -1,0 +1,182 @@
+[
+  {
+    "symbol": "INTC",
+    "trend": 0.9036,
+    "momentum": 1.8085,
+    "dip_pct": 0.0821,
+    "dip_score": 0.9789,
+    "current_price": 92.0,
+    "combined": 1.2806
+  },
+  {
+    "symbol": "MU",
+    "trend": 1.0946,
+    "momentum": 1.5855,
+    "dip_pct": 0.0,
+    "dip_score": 0.6,
+    "current_price": 777.0,
+    "combined": 1.192
+  },
+  {
+    "symbol": "PLTR",
+    "trend": 0.2226,
+    "momentum": 0.3418,
+    "dip_pct": 0.1135,
+    "dip_score": 0.665,
+    "current_price": 147.0,
+    "combined": 0.3588
+  },
+  {
+    "symbol": "KKR",
+    "trend": 0.2184,
+    "momentum": 0.2661,
+    "dip_pct": 0.0,
+    "dip_score": 0.6,
+    "current_price": 156.0,
+    "combined": 0.3138
+  },
+  {
+    "symbol": "ZS",
+    "trend": 0.15,
+    "momentum": 0.1376,
+    "dip_pct": 0.0383,
+    "dip_score": 0.9584,
+    "current_price": 222.0,
+    "combined": 0.3067
+  },
+  {
+    "symbol": "ITW",
+    "trend": 0.226,
+    "momentum": 0.208,
+    "dip_pct": 0.0,
+    "dip_score": 0.6,
+    "current_price": 276.0,
+    "combined": 0.2936
+  },
+  {
+    "symbol": "NVDA",
+    "trend": 0.079,
+    "momentum": 0.1602,
+    "dip_pct": 0.0837,
+    "dip_score": 0.9628,
+    "current_price": 215.16,
+    "combined": 0.2883
+  },
+  {
+    "symbol": "AMZN",
+    "trend": 0.1257,
+    "momentum": 0.1244,
+    "dip_pct": 0.0373,
+    "dip_score": 0.9336,
+    "current_price": 232.0,
+    "combined": 0.2868
+  },
+  {
+    "symbol": "GS",
+    "trend": 0.1947,
+    "momentum": 0.2125,
+    "dip_pct": 0.0,
+    "dip_score": 0.6,
+    "current_price": 652.0,
+    "combined": 0.2829
+  },
+  {
+    "symbol": "AMT",
+    "trend": 0.189,
+    "momentum": 0.1778,
+    "dip_pct": 0.0,
+    "dip_score": 0.6,
+    "current_price": 196.0,
+    "combined": 0.2667
+  },
+  {
+    "symbol": "AMAT",
+    "trend": 0.0923,
+    "momentum": 0.1131,
+    "dip_pct": 0.0362,
+    "dip_score": 0.9041,
+    "current_price": 218.0,
+    "combined": 0.263
+  },
+  {
+    "symbol": "AVGO",
+    "trend": 0.1669,
+    "momentum": 0.1887,
+    "dip_pct": 0.0002,
+    "dip_score": 0.6,
+    "current_price": 258.0,
+    "combined": 0.2622
+  },
+  {
+    "symbol": "WDAY",
+    "trend": 0.1089,
+    "momentum": 0.1048,
+    "dip_pct": 0.0342,
+    "dip_score": 0.854,
+    "current_price": 272.0,
+    "combined": 0.2563
+  },
+  {
+    "symbol": "BMY",
+    "trend": 0.1535,
+    "momentum": 0.1839,
+    "dip_pct": 0.0061,
+    "dip_score": 0.6,
+    "current_price": 58.5,
+    "combined": 0.255
+  },
+  {
+    "symbol": "HUM",
+    "trend": 0.0473,
+    "momentum": 0.0973,
+    "dip_pct": 0.0392,
+    "dip_score": 0.9799,
+    "current_price": 276.0,
+    "combined": 0.2538
+  },
+  {
+    "symbol": "NOW",
+    "trend": 0.1454,
+    "momentum": 0.1853,
+    "dip_pct": 0.0,
+    "dip_score": 0.6,
+    "current_price": 1055.0,
+    "combined": 0.2523
+  },
+  {
+    "symbol": "F",
+    "trend": 0.1027,
+    "momentum": 0.1086,
+    "dip_pct": 0.0328,
+    "dip_score": 0.8206,
+    "current_price": 16.5,
+    "combined": 0.2486
+  },
+  {
+    "symbol": "GM",
+    "trend": 0.1121,
+    "momentum": 0.1372,
+    "dip_pct": 0.0503,
+    "dip_score": 0.7426,
+    "current_price": 62.5,
+    "combined": 0.2482
+  },
+  {
+    "symbol": "PH",
+    "trend": 0.1484,
+    "momentum": 0.1585,
+    "dip_pct": 0.0,
+    "dip_score": 0.6,
+    "current_price": 788.0,
+    "combined": 0.2428
+  },
+  {
+    "symbol": "VLO",
+    "trend": 0.1428,
+    "momentum": 0.163,
+    "dip_pct": 0.0,
+    "dip_score": 0.6,
+    "current_price": 138.5,
+    "combined": 0.2423
+  }
+]
