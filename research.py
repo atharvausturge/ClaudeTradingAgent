@@ -77,7 +77,7 @@ def fetch_bars_batch(data_client, symbols, limit=80):
     return all_closes, all_avg_volumes
 
 
-MIN_AVG_VOLUME = 500_000  # filter illiquid names from S&P 600 and below
+MIN_AVG_VOLUME = 250_000  # min daily avg volume — filters truly illiquid names
 
 
 def score_universe(closes, spy_closes, avg_volumes=None):
@@ -89,20 +89,27 @@ def score_universe(closes, spy_closes, avg_volumes=None):
         return scores
     spy_ret_60 = float((spy.iloc[-1] - spy.iloc[-RS_LOOKBACK]) / spy.iloc[-RS_LOOKBACK])
 
+    rejected = {"bars": 0, "volume": 0, "price": 0, "rsi": 0, "rs60": 0}
+
     for symbol, prices in closes.items():
         if len(prices) < min_bars:
+            rejected["bars"] += 1
             continue
         try:
             if avg_volumes.get(symbol, MIN_AVG_VOLUME) < MIN_AVG_VOLUME:
+                rejected["volume"] += 1
                 continue
             if float(prices.iloc[-1]) < 25:
+                rejected["price"] += 1
                 continue
             rsi_val = float(compute_rsi(prices, RSI_PERIOD).iloc[-1])
-            if pd.isna(rsi_val) or rsi_val > 65 or rsi_val < 30:
+            if pd.isna(rsi_val) or rsi_val > 75 or rsi_val < 25:
+                rejected["rsi"] += 1
                 continue
             sym_ret_60 = float((prices.iloc[-1] - prices.iloc[-RS_LOOKBACK]) / prices.iloc[-RS_LOOKBACK])
             rs_60 = sym_ret_60 - spy_ret_60
             if rs_60 < 0:
+                rejected["rs60"] += 1
                 continue
             dip_5d = float((prices.iloc[-1] - prices.iloc[-DIP_LOOKBACK]) / prices.iloc[-DIP_LOOKBACK])
             score = (-dip_5d * 0.6) + (rs_60 * 0.4)
@@ -115,6 +122,16 @@ def score_universe(closes, spy_closes, avg_volumes=None):
             }
         except Exception:
             continue
+
+    total = len(closes)
+    passed = len(scores)
+    print(f"  Filter breakdown ({total} symbols with bar data):")
+    print(f"    Insufficient bars : {rejected['bars']}")
+    print(f"    Low volume (<250k): {rejected['volume']}")
+    print(f"    Price < $25       : {rejected['price']}")
+    print(f"    RSI out of 25-75  : {rejected['rsi']}")
+    print(f"    RS60 < 0 (vs SPY) : {rejected['rs60']}")
+    print(f"    PASSED all filters: {passed}")
     return scores
 
 

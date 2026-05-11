@@ -12,6 +12,7 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 from groq import Groq
+import notify
 
 ET = ZoneInfo("America/New_York")
 RESEARCH_FILE = "research_data.json"
@@ -121,13 +122,14 @@ def main():
     # --- Empty market: skip Groq, write empty plan ---
     if not candidates:
         print("No candidates passed technical filters — writing empty plan.")
+        empty_thesis = "No stocks passed the technical filters this week. Capital preservation."
         with open(PLAN_FILE, "w") as f:
             json.dump({
-                "week_of": today,
-                "week_thesis": "No stocks passed the technical filters this week. Capital preservation.",
+                "week_of": today, "week_thesis": empty_thesis,
                 "buys": [], "close_positions": [], "close_reasoning": {},
                 "hold_positions": [], "skip_reasoning": {},
             }, f, indent=2)
+        notify.weekly_plan(week_of=today, thesis=empty_thesis, buys=[], holds=[], closes=[])
         return
 
     # --- Step 1: Groq scores each candidate's news + sentiment (1–10) ---
@@ -237,6 +239,8 @@ def main():
     print(f"  Buys: {[b['symbol'] for b in buys]}")
     if skip_reasoning:
         print(f"  Skipped: {skip_reasoning}")
+
+    notify.weekly_plan(week_of=today, thesis=week_thesis, buys=buys, holds=[], closes=[])
 
 
 if __name__ == "__main__":
