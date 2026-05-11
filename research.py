@@ -80,7 +80,7 @@ def fetch_bars_batch(data_client, symbols, limit=80):
 MIN_AVG_VOLUME = 250_000  # min daily avg volume — filters truly illiquid names
 
 
-def score_universe(closes, spy_closes, avg_volumes=None):
+def score_universe(closes, spy_closes, avg_volumes=None, min_rs_threshold=0.0):
     scores = {}
     avg_volumes = avg_volumes or {}
     min_bars = RS_LOOKBACK + RSI_PERIOD + DIP_LOOKBACK
@@ -108,7 +108,7 @@ def score_universe(closes, spy_closes, avg_volumes=None):
                 continue
             sym_ret_60 = float((prices.iloc[-1] - prices.iloc[-RS_LOOKBACK]) / prices.iloc[-RS_LOOKBACK])
             rs_60 = sym_ret_60 - spy_ret_60
-            if rs_60 < 0:
+            if rs_60 < min_rs_threshold:
                 rejected["rs60"] += 1
                 continue
             dip_5d = float((prices.iloc[-1] - prices.iloc[-DIP_LOOKBACK]) / prices.iloc[-DIP_LOOKBACK])
@@ -130,7 +130,7 @@ def score_universe(closes, spy_closes, avg_volumes=None):
     print(f"    Low volume (<250k): {rejected['volume']}")
     print(f"    Price < $25       : {rejected['price']}")
     print(f"    RSI out of 25-75  : {rejected['rsi']}")
-    print(f"    RS60 < 0 (vs SPY) : {rejected['rs60']}")
+    print(f"    RS60 < {min_rs_threshold:.0%} (vs SPY): {rejected['rs60']}")
     print(f"    PASSED all filters: {passed}")
     return scores
 
@@ -272,7 +272,8 @@ def main():
     avg_volumes.pop(benchmark, None)
     print(f"Bars fetched for {len(closes)} symbols. Scoring...")
 
-    scores = score_universe(closes, spy_closes, avg_volumes)
+    min_rs = config.get("min_rs_threshold", 0.0)
+    scores = score_universe(closes, spy_closes, avg_volumes, min_rs_threshold=min_rs)
     ranked = sorted(scores.items(), key=lambda x: x[1]["score"], reverse=True)
     top_candidates = [sym for sym, _ in ranked[:top_n]]
 
