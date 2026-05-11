@@ -64,49 +64,42 @@ def _parse_bars(raw):
 
 
 def fetch_bars_batch(data_client, symbols, limit=80):
+    import re
     all_closes = {}
     all_avg_volumes = {}
     bad_symbols = set()
     batches = [symbols[i:i + BATCH_SIZE] for i in range(0, len(symbols), BATCH_SIZE)]
 
     for i, batch in enumerate(batches):
-        # Remove any symbols already known to be invalid
         clean_batch = [s for s in batch if s not in bad_symbols]
         if not clean_batch:
             continue
-        try:
-            req = StockBarsRequest(symbol_or_symbols=clean_batch, timeframe=TimeFrame.Day, limit=limit)
-            close_pivot, volume_pivot = _parse_bars(data_client.get_stock_bars(req).df)
-            for sym in close_pivot.columns:
-                all_closes[sym] = close_pivot[sym].dropna()
-            for sym in volume_pivot.columns:
-                all_avg_volumes[sym] = float(volume_pivot[sym].dropna().mean())
-        except Exception as e:
-            err = str(e)
-            # If Alpaca rejected a specific symbol, find it and retry without it
-            if "invalid symbol" in err.lower() and len(clean_batch) > 1:
-                # Extract the bad symbol from the error message and retry
-                import re
-                match = re.search(r'invalid symbol[:\s]+([A-Z0-9\-]+)', err, re.IGNORECASE)
-                if match:
-                    bad_sym = match.group(1).strip().strip('"')
-                    bad_symbols.add(bad_sym)
-                    print(f"  Skipping invalid symbol: {bad_sym}")
-                    retry_batch = [s for s in clean_batch if s != bad_sym]
-                    if retry_batch:
-                        try:
-                            req = StockBarsRequest(symbol_or_symbols=retry_batch, timeframe=TimeFrame.Day, limit=limit)
-                            close_pivot, volume_pivot = _parse_bars(data_client.get_stock_bars(req).df)
-                            for sym in close_pivot.columns:
-                                all_closes[sym] = close_pivot[sym].dropna()
-                            for sym in volume_pivot.columns:
-                                all_avg_volumes[sym] = float(volume_pivot[sym].dropna().mean())
-                        except Exception as e2:
-                            print(f"  Batch {i+1} retry error: {e2}")
+
+        # Keep retrying the batch, stripping one bad symbol per attempt
+        while clean_batch:
+            try:
+                req = StockBarsRequest(symbol_or_symbols=clean_batch, timeframe=TimeFrame.Day, limit=limit)
+                close_pivot, volume_pivot = _parse_bars(data_client.get_stock_bars(req).df)
+                for sym in close_pivot.columns:
+                    all_closes[sym] = close_pivot[sym].dropna()
+                for sym in volume_pivot.columns:
+                    all_avg_volumes[sym] = float(volume_pivot[sym].dropna().mean())
+                break  # success
+            except Exception as e:
+                err = str(e)
+                if "invalid symbol" in err.lower():
+                    match = re.search(r'invalid symbol[:\s]+"?([A-Z0-9/.\-]+)"?', err, re.IGNORECASE)
+                    if match:
+                        bad_sym = match.group(1).strip()
+                        bad_symbols.add(bad_sym)
+                        print(f"  Skipping invalid symbol: {bad_sym}")
+                        clean_batch = [s for s in clean_batch if s != bad_sym]
+                    else:
+                        print(f"  Batch {i+1} unrecognized invalid symbol error: {err}")
+                        break
                 else:
                     print(f"  Batch {i+1} error: {e}")
-            else:
-                print(f"  Batch {i+1} error: {e}")
+                    break
 
         if i < len(batches) - 1:
             time.sleep(0.3)
