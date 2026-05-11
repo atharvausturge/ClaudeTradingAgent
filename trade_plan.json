@@ -1,9 +1,179 @@
 {
   "week_of": "2026-05-10",
-  "week_thesis": "No stocks passed the technical filters this week. Capital preservation.",
-  "buys": [],
+  "week_thesis": "This week's macro environment is neutral, with no clear trends or catalysts across the candidates. However, some stocks like LITE, RNG, and VECO show positive sentiment with analyst upgrades and raised price targets. The technology and industrials sectors appear to be relatively strong, with some stocks like AGX and POWI showing promise as high-quality stocks with growing dividends and beating estimates.",
+  "buys": [
+    {
+      "symbol": "VIAV",
+      "combined_score": 0.8143,
+      "tech_score": 0.962,
+      "sentiment_score": 0.667,
+      "reasoning": "No recent news, neutral sentiment",
+      "confidence": "high",
+      "qty_pct": 0.2
+    },
+    {
+      "symbol": "CIEN",
+      "combined_score": 0.6724,
+      "tech_score": 0.678,
+      "sentiment_score": 0.667,
+      "reasoning": "No recent news, neutral sentiment",
+      "confidence": "high",
+      "qty_pct": 0.2
+    },
+    {
+      "symbol": "AOSL",
+      "combined_score": 0.6667,
+      "tech_score": 1.0,
+      "sentiment_score": 0.333,
+      "reasoning": "Shares are dipping with no clear positive catalyst",
+      "confidence": "high",
+      "qty_pct": 0.2
+    }
+  ],
   "close_positions": [],
   "close_reasoning": {},
   "hold_positions": [],
-  "skip_reasoning": {}
+  "skip_reasoning": {},
+  "scoring_breakdown": {
+    "AOSL": {
+      "combined": 0.6667,
+      "tech_norm": 1.0,
+      "sentiment_norm": 0.333,
+      "ai_raw_score": 3,
+      "ai_reason": "Shares are dipping with no clear positive catalyst"
+    },
+    "VIAV": {
+      "combined": 0.8143,
+      "tech_norm": 0.962,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 5,
+      "ai_reason": "No recent news, neutral sentiment"
+    },
+    "CIEN": {
+      "combined": 0.6724,
+      "tech_norm": 0.678,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 5,
+      "ai_reason": "No recent news, neutral sentiment"
+    },
+    "ADEA": {
+      "combined": 0.6152,
+      "tech_norm": 0.564,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 5,
+      "ai_reason": "No recent news, neutral sentiment"
+    },
+    "IRDM": {
+      "combined": 0.6138,
+      "tech_norm": 0.561,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 5,
+      "ai_reason": "No recent news, neutral sentiment"
+    },
+    "YOU": {
+      "combined": 0.2048,
+      "tech_norm": 0.41,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 1,
+      "ai_reason": "Earnings scheduled for this week, binary risk"
+    },
+    "ACHC": {
+      "combined": 0.5316,
+      "tech_norm": 0.396,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 5,
+      "ai_reason": "No recent news, neutral sentiment"
+    },
+    "TTMI": {
+      "combined": 0.5142,
+      "tech_norm": 0.362,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 5,
+      "ai_reason": "No recent news, neutral sentiment"
+    },
+    "MYRG": {
+      "combined": 0.5031,
+      "tech_norm": 0.34,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 5,
+      "ai_reason": "No recent news, neutral sentiment"
+    },
+    "AGX": {
+      "combined": 0.6533,
+      "tech_norm": 0.307,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 7,
+      "ai_reason": "Mentioned as a high quality stock with growing dividends"
+    },
+    "LITE": {
+      "combined": 0.6297,
+      "tech_norm": 0.259,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 7,
+      "ai_reason": "Analysts raise price targets, positive sentiment"
+    },
+    "RNG": {
+      "combined": 0.6274,
+      "tech_norm": 0.255,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 7,
+      "ai_reason": "Raises FY2026 Adj EPS guidance, positive sentiment"
+    },
+    "PARR": {
+      "combined": 0.4184,
+      "tech_norm": 0.17,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 5,
+      "ai_reason": "Reports Q1 results, no clear positive or negative catalyst"
+    },
+    "MTZ": {
+      "combined": 0.562,
+      "tech_norm": 0.124,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 7,
+      "ai_reason": "Jim Cramer recommends as a buy"
+    },
+    "VECO": {
+      "combined": 0.5572,
+      "tech_norm": 0.114,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 7,
+      "ai_reason": "Shares trading higher, analyst raises price target"
+    },
+    "ICHR": {
+      "combined": 0.3865,
+      "tech_norm": 0.106,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 5,
+      "ai_reason": "No recent news, neutral sentiment"
+    },
+    "ACLS": {
+      "combined": 0.535,
+      "tech_norm": 0.07,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 7,
+      "ai_reason": "Beats Q1 estimates, positive sentiment"
+    },
+    "POWI": {
+      "combined": 0.5165,
+      "tech_norm": 0.033,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 7,
+      "ai_reason": "Beats Q1 estimates, analyst raises price target"
+    },
+    "APA": {
+      "combined": 0.006,
+      "tech_norm": 0.012,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 1,
+      "ai_reason": "Earnings scheduled for this week, binary risk"
+    },
+    "FN": {
+      "combined": 0.5,
+      "tech_norm": 0.0,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 7,
+      "ai_reason": "Analyst raises price target, positive sentiment"
+    }
+  }
 }
