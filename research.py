@@ -46,34 +46,73 @@ def compute_rsi(prices, period=14):
     return 100 - (100 / (1 + rs))
 
 
+def _parse_bars(raw):
+    """Extract close and volume pivots from a bars DataFrame."""
+    if raw.empty:
+        return pd.DataFrame(), pd.DataFrame()
+    if isinstance(raw.index, pd.MultiIndex):
+        raw = raw.reset_index()
+        close_pivot = raw.pivot(index="timestamp", columns="symbol", values="close")
+        volume_pivot = raw.pivot(index="timestamp", columns="symbol", values="volume")
+    else:
+        close_pivot = raw[["close"]]
+        volume_pivot = raw[["volume"]] if "volume" in raw.columns else pd.DataFrame()
+    close_pivot.index = pd.to_datetime(close_pivot.index).tz_localize(None).normalize()
+    if not volume_pivot.empty:
+        volume_pivot.index = pd.to_datetime(volume_pivot.index).tz_localize(None).normalize()
+    return close_pivot, volume_pivot
+
+
 def fetch_bars_batch(data_client, symbols, limit=80):
     all_closes = {}
     all_avg_volumes = {}
+    bad_symbols = set()
     batches = [symbols[i:i + BATCH_SIZE] for i in range(0, len(symbols), BATCH_SIZE)]
+
     for i, batch in enumerate(batches):
+        # Remove any symbols already known to be invalid
+        clean_batch = [s for s in batch if s not in bad_symbols]
+        if not clean_batch:
+            continue
         try:
-            req = StockBarsRequest(symbol_or_symbols=batch, timeframe=TimeFrame.Day, limit=limit)
-            raw = data_client.get_stock_bars(req).df
-            if raw.empty:
-                continue
-            if isinstance(raw.index, pd.MultiIndex):
-                raw = raw.reset_index()
-                close_pivot = raw.pivot(index="timestamp", columns="symbol", values="close")
-                volume_pivot = raw.pivot(index="timestamp", columns="symbol", values="volume")
-            else:
-                close_pivot = raw[["close"]]
-                volume_pivot = raw[["volume"]] if "volume" in raw.columns else pd.DataFrame()
-            close_pivot.index = pd.to_datetime(close_pivot.index).tz_localize(None).normalize()
+            req = StockBarsRequest(symbol_or_symbols=clean_batch, timeframe=TimeFrame.Day, limit=limit)
+            close_pivot, volume_pivot = _parse_bars(data_client.get_stock_bars(req).df)
             for sym in close_pivot.columns:
                 all_closes[sym] = close_pivot[sym].dropna()
-            if not volume_pivot.empty:
-                volume_pivot.index = pd.to_datetime(volume_pivot.index).tz_localize(None).normalize()
-                for sym in volume_pivot.columns:
-                    all_avg_volumes[sym] = float(volume_pivot[sym].dropna().mean())
+            for sym in volume_pivot.columns:
+                all_avg_volumes[sym] = float(volume_pivot[sym].dropna().mean())
         except Exception as e:
-            print(f"  Batch {i+1} error: {e}")
+            err = str(e)
+            # If Alpaca rejected a specific symbol, find it and retry without it
+            if "invalid symbol" in err.lower() and len(clean_batch) > 1:
+                # Extract the bad symbol from the error message and retry
+                import re
+                match = re.search(r'invalid symbol[:\s]+([A-Z0-9\-]+)', err, re.IGNORECASE)
+                if match:
+                    bad_sym = match.group(1).strip().strip('"')
+                    bad_symbols.add(bad_sym)
+                    print(f"  Skipping invalid symbol: {bad_sym}")
+                    retry_batch = [s for s in clean_batch if s != bad_sym]
+                    if retry_batch:
+                        try:
+                            req = StockBarsRequest(symbol_or_symbols=retry_batch, timeframe=TimeFrame.Day, limit=limit)
+                            close_pivot, volume_pivot = _parse_bars(data_client.get_stock_bars(req).df)
+                            for sym in close_pivot.columns:
+                                all_closes[sym] = close_pivot[sym].dropna()
+                            for sym in volume_pivot.columns:
+                                all_avg_volumes[sym] = float(volume_pivot[sym].dropna().mean())
+                        except Exception as e2:
+                            print(f"  Batch {i+1} retry error: {e2}")
+                else:
+                    print(f"  Batch {i+1} error: {e}")
+            else:
+                print(f"  Batch {i+1} error: {e}")
+
         if i < len(batches) - 1:
             time.sleep(0.3)
+
+    if bad_symbols:
+        print(f"  Removed {len(bad_symbols)} invalid symbol(s): {', '.join(sorted(bad_symbols))}")
     return all_closes, all_avg_volumes
 
 
