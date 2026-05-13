@@ -131,6 +131,19 @@
       "time": "2026-05-11T12:17:00.237702-04:00",
       "portfolio_value": 99759.65,
       "buying_power": 100171.24
+    },
+    {
+      "time": "2026-05-13T12:02:07.938409-04:00",
+      "portfolio_value": 94501.11,
+      "buying_power": 150945.89,
+      "positions": [
+        {
+          "symbol": "PLTR",
+          "pl_pct": -3.52,
+          "pl_dollar": -1387.91
+        }
+      ],
+      "is_friday_close": false
     }
   ],
   "strategy_notes": [
