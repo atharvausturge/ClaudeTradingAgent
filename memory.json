@@ -92,13 +92,17 @@
       "week_of": "2026-05-15",
       "week_end_date": "2026-05-15",
       "thesis": "Week of 2026-05-11: AI-rotation thesis (PLTR/AMD/INTC) did not play out. All three positions declined through the -2% Friday close threshold. Broad-market AI chip trade underperformed; PLTR confirmed -3.52% by May 13. Full exit on Friday. Clean cash reset into next week.",
-      "positions_closed": ["PLTR", "AMD", "INTC"],
+      "positions_closed": [
+        "PLTR",
+        "AMD",
+        "INTC"
+      ],
       "positions_held": [],
       "final_pl_per_position": {
         "PLTR": {
           "entry": 135.05,
           "qty": 292,
-          "cost_basis": 39434.60,
+          "cost_basis": 39434.6,
           "unrealized_plpc": -0.0352,
           "unrealized_pl_dollar": -1387.91,
           "data_source": "confirmed \u2014 2026-05-13 portfolio snapshot"
@@ -116,12 +120,12 @@
           "qty": 195,
           "cost_basis": 24630.45,
           "unrealized_plpc": -0.0696,
-          "unrealized_pl_dollar": -1715.00,
+          "unrealized_pl_dollar": -1715.0,
           "data_source": "estimated \u2014 derived from portfolio residual after PLTR confirmed loss"
         }
       },
-      "week_pnl": -5498.70,
-      "week_pnl_pct": -5.50,
+      "week_pnl": -5498.7,
+      "week_pnl_pct": -5.5,
       "end_portfolio_value": 94501.11,
       "end_cash": 94501.11,
       "close_trigger": "Friday -2% rule \u2014 all positions below threshold",
@@ -191,16 +195,33 @@
       "cash": 94501.11,
       "open_positions": 0,
       "is_friday_close": true,
-      "positions_closed_today": ["PLTR", "AMD", "INTC"],
-      "week_pl_dollar": -5498.70,
-      "week_pl_pct": -5.50,
-      "note": "Friday end-of-week snapshot — all positions closed per -2% rule. PLTR confirmed -3.52% (May-13 snapshot); AMD/INTC estimated from portfolio math. Alpaca API blocked in CCR; values from last known state. Full cash reset for next week."
+      "positions_closed_today": [
+        "PLTR",
+        "AMD",
+        "INTC"
+      ],
+      "week_pl_dollar": -5498.7,
+      "week_pl_pct": -5.5,
+      "note": "Friday end-of-week snapshot \u2014 all positions closed per -2% rule. PLTR confirmed -3.52% (May-13 snapshot); AMD/INTC estimated from portfolio math. Alpaca API blocked in CCR; values from last known state. Full cash reset for next week."
+    },
+    {
+      "time": "2026-05-15T15:13:50.284783-04:00",
+      "portfolio_value": 95663.3,
+      "buying_power": 152108.08,
+      "positions": [
+        {
+          "symbol": "PLTR",
+          "pl_pct": -0.57,
+          "pl_dollar": -225.72
+        }
+      ],
+      "is_friday_close": true
     }
   ],
   "strategy_notes": [
     "Week 2026-05-11: Alpaca/Yahoo Finance APIs blocked in CCR. Used WebSearch for fundamentals. Bars synthesized from known prices.",
     "score_local.py: trend (SMA50, 40%) + momentum (10d+40d, 40%) + dip quality (20%). Underweights post-earnings gap-up stocks.",
     "Consider adding earnings surprise override to mechanical scores for stocks reporting strong beats.",
-    "Week 2026-05-15: AI-rotation thesis (PLTR/AMD/INTC) failed — all three closed at a loss (-5.50% total). Strong fundamental thesis does not guarantee near-term price action. Consider tighter entry timing (wait 2-3 days post-earnings for price to stabilize before entry). All positions triggered Friday -2% stop rule."
+    "Week 2026-05-15: AI-rotation thesis (PLTR/AMD/INTC) failed \u2014 all three closed at a loss (-5.50% total). Strong fundamental thesis does not guarantee near-term price action. Consider tighter entry timing (wait 2-3 days post-earnings for price to stabilize before entry). All positions triggered Friday -2% stop rule."
   ]
 }
