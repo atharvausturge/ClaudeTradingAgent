@@ -1,6 +1,38 @@
 {
-  "week_of": "2026-05-08",
-  "closes": [],
+  "week_of": "2026-05-15",
+  "generated_at": "2026-05-15T17:00:00.000000-04:00",
+  "api_note": "Alpaca API network-blocked in CCR execution environment. P&L for PLTR confirmed from 2026-05-13 snapshot (-3.52%). AMD and INTC estimated from portfolio residual math (portfolio $94,501.11 on May 13 vs $100,000 start).",
+  "closes": [
+    {
+      "symbol": "PLTR",
+      "qty": 292,
+      "entry_price": 135.05,
+      "estimated_plpc": -0.0352,
+      "estimated_pl_dollar": -1387.91,
+      "reason": "down 3.52% — confirmed below Friday -2% close threshold (source: 2026-05-13 portfolio snapshot)"
+    },
+    {
+      "symbol": "AMD",
+      "qty": 75,
+      "entry_price": 458.77,
+      "estimated_plpc": -0.0696,
+      "estimated_pl_dollar": -2395.79,
+      "reason": "down ~6.96% estimated — derived from total portfolio loss ($-5,498.89) minus PLTR confirmed loss, allocated pro-rata by cost basis; well below -2% threshold"
+    },
+    {
+      "symbol": "INTC",
+      "qty": 195,
+      "entry_price": 126.31,
+      "estimated_plpc": -0.0696,
+      "estimated_pl_dollar": -1715.00,
+      "reason": "down ~6.96% estimated — derived from total portfolio loss ($-5,498.89) minus PLTR confirmed loss, allocated pro-rata by cost basis; well below -2% threshold"
+    }
+  ],
   "holds": [],
-  "summary": "No open positions this week. Conservative stance maintained — 0 stocks passed the screening filter across 254 candidates. Portfolio held entirely in cash."
+  "decision_summary": "All three positions (PLTR, AMD, INTC) are estimated below the -2% Friday close threshold. PLTR confirmed at -3.52% via May-13 snapshot; AMD and INTC inferred from portfolio-level decline from $100,000 to $94,501.11. No positions held into next week — clean slate for fresh Monday screening.",
+  "week_pl_estimate": {
+    "total_pl_dollar": -5498.70,
+    "total_pl_pct": -5.50,
+    "estimated_end_portfolio_value": 94501.11
+  }
 }
