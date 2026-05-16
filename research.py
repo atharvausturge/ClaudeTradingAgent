@@ -202,78 +202,6 @@ def fetch_alpaca_news(api_key, api_secret, symbols, days=5):
     return result
 
 
-def fetch_stocktwits_sentiment(symbols):
-    """
-    Fetch social sentiment from Stocktwits — the Twitter of stock traders.
-    Returns bull/bear % and a sample of recent trader commentary per symbol.
-    """
-    result = {}
-    for symbol in symbols:
-        try:
-            resp = requests.get(
-                f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json",
-                headers={"User-Agent": "Mozilla/5.0"},
-                timeout=10,
-            )
-            if resp.status_code == 429:
-                print(f"  Stocktwits rate limit hit, pausing...")
-                time.sleep(60)
-                resp = requests.get(
-                    f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json",
-                    headers={"User-Agent": "Mozilla/5.0"},
-                    timeout=10,
-                )
-            if resp.status_code != 200:
-                result[symbol] = {"error": f"HTTP {resp.status_code}"}
-                continue
-
-            messages = resp.json().get("messages", [])
-            bullish = sum(1 for m in messages if m.get("entities", {}).get("sentiment", {}).get("basic") == "Bullish")
-            bearish = sum(1 for m in messages if m.get("entities", {}).get("sentiment", {}).get("basic") == "Bearish")
-            tagged = bullish + bearish
-
-            bull_pct = round(bullish / tagged * 100, 1) if tagged > 0 else None
-            bear_pct = round(bearish / tagged * 100, 1) if tagged > 0 else None
-
-            if bull_pct is None:
-                overall = "no_data"
-            elif bull_pct >= 65:
-                overall = "strongly_bullish"
-            elif bull_pct >= 55:
-                overall = "bullish"
-            elif bear_pct >= 65:
-                overall = "strongly_bearish"
-            elif bear_pct >= 55:
-                overall = "bearish"
-            else:
-                overall = "mixed"
-
-            recent_posts = [
-                {
-                    "text": m["body"][:200],
-                    "sentiment": m.get("entities", {}).get("sentiment", {}).get("basic"),
-                    "created_at": m["created_at"],
-                }
-                for m in messages[:6]
-            ]
-
-            result[symbol] = {
-                "bull_pct": bull_pct,
-                "bear_pct": bear_pct,
-                "message_count": len(messages),
-                "sentiment_tagged_count": tagged,
-                "overall": overall,
-                "recent_posts": recent_posts,
-            }
-
-        except Exception as e:
-            result[symbol] = {"error": str(e)}
-
-        time.sleep(0.8)  # Stocktwits rate limit: ~1 req/sec unauthenticated
-
-    return result
-
-
 def has_upcoming_earnings(symbol: str, days: int = 7) -> bool:
     """Return True if the stock has a known earnings event within `days` calendar days."""
     try:
@@ -306,17 +234,28 @@ def main():
     top_n = config.get("top_n_candidates", 20)
 
     # --- Step 1: Score entire universe on technicals ---
-    print(f"Scanning {len(universe)} stocks...")
-    all_symbols = list(set([benchmark] + universe))
+    from market_research import get_all_sector_etfs, compute_sector_momentum, enrich_candidate
+    sector_etfs = get_all_sector_etfs()
+    print(f"Scanning {len(universe)} stocks + {len(sector_etfs)} sector ETFs...")
+    all_symbols = list(set([benchmark] + universe + sector_etfs))
     closes, avg_volumes = fetch_bars_batch(data_client, all_symbols, limit=RS_LOOKBACK + RSI_PERIOD + DIP_LOOKBACK + 5)
     spy_closes = closes.pop(benchmark, pd.Series(dtype=float))
     avg_volumes.pop(benchmark, None)
+
+    # Pull sector ETFs out of the scored universe — they're context, not candidates
+    sector_closes = {etf: closes.pop(etf) for etf in sector_etfs if etf in closes}
+    for etf in sector_etfs:
+        avg_volumes.pop(etf, None)
     print(f"Bars fetched for {len(closes)} symbols. Scoring...")
 
     min_rs = config.get("min_rs_threshold", 0.0)
     scores = score_universe(closes, spy_closes, avg_volumes, min_rs_threshold=min_rs)
     ranked = sorted(scores.items(), key=lambda x: x[1]["score"], reverse=True)
     top_candidates = [sym for sym, _ in ranked[:top_n]]
+
+    # Compute sector ETF returns vs SPY for the market researcher
+    spy_60d_return = float((spy_closes.iloc[-1] - spy_closes.iloc[-RS_LOOKBACK]) / spy_closes.iloc[-RS_LOOKBACK])
+    sector_momentum = compute_sector_momentum(sector_closes, spy_60d_return, lookback=RS_LOOKBACK)
 
     print(f"{len(scores)} stocks passed filters. Top {top_n}: {', '.join(top_candidates)}")
 
@@ -352,13 +291,34 @@ def main():
                 print(f"  {sym} backfill REJECTED: {v['reason']}")
         top_candidates = top_candidates[:top_n]
 
+    # --- Step 1d: Market research per candidate (sector, analyst targets, earnings recency) ---
+    print(f"Enriching {len(top_candidates)} candidates with market context (sector / analyst / earnings)...")
+    market_context = {}
+    for sym in top_candidates:
+        current_price = scores[sym]["price"] if sym in scores else None
+        market_context[sym] = enrich_candidate(sym, current_price, sector_momentum)
+        ctx = market_context[sym]
+        an = ctx.get("analyst", {})
+        ea = ctx.get("earnings", {})
+        flags = []
+        if an.get("pct_vs_current") is not None and an["pct_vs_current"] < -10:
+            flags.append(f"analyst -{abs(an['pct_vs_current']):.0f}% downside")
+        if ea.get("chase_risk"):
+            flags.append(f"post-earnings d+{ea['days_since']}")
+        if ctx.get("sector_vs_spy_60d_pct") is not None and ctx["sector_vs_spy_60d_pct"] < -3:
+            flags.append(f"sector lagging ({ctx['sector_vs_spy_60d_pct']:+.1f}% vs SPY)")
+        flag_str = f"  ⚠ {', '.join(flags)}" if flags else ""
+        sec = ctx.get("sector_etf") or "?"
+        print(f"  {sym:<6} {sec:<5} target={an.get('mean_target')} ({an.get('pct_vs_current')}%) earnings d+{ea.get('days_since')}{flag_str}")
+
     # --- Step 2: Fetch Alpaca news for top candidates ---
     print(f"Fetching Alpaca news for top {top_n} candidates...")
     news = fetch_alpaca_news(api_key, api_secret, top_candidates, days=5)
 
-    # --- Step 3: Fetch Stocktwits social sentiment for top candidates ---
-    print(f"Fetching Stocktwits social sentiment for top {top_n} candidates...")
-    stocktwits = fetch_stocktwits_sentiment(top_candidates)
+    # --- Step 3: Fetch Reddit social sentiment for top candidates ---
+    from reddit_sentiment import fetch_reddit_sentiment
+    print(f"Fetching Reddit sentiment (wsb/stocks/investing/StockMarket) for top {top_n} candidates...")
+    reddit = fetch_reddit_sentiment(top_candidates)
 
     # --- Step 4: Account + positions ---
     account = trading.get_account()
@@ -385,12 +345,14 @@ def main():
         },
         "current_positions": positions,
         "recent_weekly_summaries": memory.get("weekly_summaries", [])[-4:],
+        "sector_momentum": sector_momentum,
         "top_candidates": {
             symbol: {
                 "technicals": scores[symbol],
                 "valuation": valuation_results.get(symbol, {}),
+                "market_context": market_context.get(symbol, {}),
                 "news": news.get(symbol, []),
-                "stocktwits": stocktwits.get(symbol, {}),
+                "reddit": reddit.get(symbol, {}),
             }
             for symbol in top_candidates
         },
@@ -407,9 +369,12 @@ def main():
     print(f"\nResearch data written to {OUTPUT_FILE}")
     print(f"\nTop 10 by technical score:")
     for sym, d in ranked[:10]:
-        st = stocktwits.get(sym, {})
-        bull = f"{st['bull_pct']}% bull" if st.get("bull_pct") is not None else "no ST data"
-        print(f"  {sym:<6} score={d['score']:>+.4f}  RS60={d['rs_60d']:>+.1f}%  dip5d={d['dip_5d']:>+.1f}%  RSI={d['rsi']}  [{bull}]")
+        r = reddit.get(sym, {})
+        if r.get("bull_pct") is not None:
+            sent = f"{r['mention_count']}p {r['overall']}"
+        else:
+            sent = f"{r.get('mention_count', 0)}p {r.get('overall', 'no_data')}"
+        print(f"  {sym:<6} score={d['score']:>+.4f}  RS60={d['rs_60d']:>+.1f}%  dip5d={d['dip_5d']:>+.1f}%  RSI={d['rsi']}  [{sent}]")
 
 
 if __name__ == "__main__":

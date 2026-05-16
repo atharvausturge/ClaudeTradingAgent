@@ -29,28 +29,40 @@ def load_json(path, default=None):
         return default or {}
 
 
-SYSTEM_PROMPT = """You are a financial news and sentiment analyst. For each stock ticker provided, score its news and social sentiment from 1 to 10.
+SYSTEM_PROMPT = """You are a buy-side equity analyst. For each stock you receive structured fields plus headlines and social sentiment. Score each stock 1-10 on near-term swing-trade attractiveness (1-2 week hold).
+
+Each input line contains, in order:
+  - Valuation (P/S vs sector median)
+  - Sector momentum (its SPDR ETF's 60-day return vs SPY)
+  - Analyst consensus target ($, % upside or downside from current)
+  - Earnings recency (days since last report, surprise %, CHASE RISK flag if <10d)
+  - Recent news headlines
+  - Stocktwits sentiment
 
 Scoring guide:
-- 9-10: Strong positive catalyst with bullish confirmation (earnings beat, major upgrade, buyback, new contract) + bullish Stocktwits
-- 7-8: Positive lean — good news or good sentiment, no red flags
-- 5-6: Neutral or mixed — no clear catalyst, sentiment split, market noise
-- 3-4: Negative lean — minor downgrade, uncertainty, bearish social, thin coverage
-- 1-2: Hard avoid — earnings THIS week (binary risk), major downgrade, scandal, regulatory action, CEO departure
+  9-10  Strong catalyst, sector leading, analyst upside, no chase risk, bullish sentiment
+  7-8   Good setup with mild concerns (modest sector, neutral targets, etc.)
+  5-6   Mixed — no clear edge; pass unless nothing better is available
+  3-4   Multiple red flags (sector lagging, trades above analyst targets, post-earnings chase)
+  1-2   Hard avoid (earnings this week, scandal, sector breakdown, analyst -20%+ downside)
 
-Rules:
-- If a stock has earnings announced for this week, score it 1 regardless of anything else
-- Absence of news is neutral (score 5), not negative
-- Stocktwits bull% above 60 adds +1, below 30 subtracts -1
-- Weight professional news (analyst actions, earnings) over retail chatter
+Weighting rules — apply these mechanically, then add news/sentiment color:
+  - Stock trades >10% ABOVE mean analyst target → max score 5 (Wall Street thinks it's overvalued)
+  - Stock trades >15% BELOW mean analyst target → +1 (analyst upside)
+  - CHASE RISK flag (within 10 days of earnings, even if beat) → max score 6
+  - Sector ETF -3% or worse vs SPY (60d) → max score 6 (don't fight a falling sector)
+  - Sector ETF +5% or better vs SPY → +1 (riding the wave)
+  - Reddit sentiment: strongly_bullish with ≥10 mentions → +1; strongly_bearish with ≥10 mentions → -1
+  - Reddit thin_data or no_data → ignore (no signal)
+  - Absence of news is neutral (score 5), not negative
 
-Return ONLY a valid JSON object, no markdown, no explanation outside the JSON:
+Return ONLY a valid JSON object, no markdown:
 {
   "scores": {
-    "TICKER": {"score": 7, "reason": "one concise sentence citing the specific news or sentiment"},
+    "TICKER": {"score": 7, "reason": "one sentence citing the SPECIFIC signals you weighted"},
     ...
   },
-  "week_thesis": "2-3 sentences: what is the macro environment this week and what themes stand out across the candidates"
+  "week_thesis": "2-3 sentences: what's the macro this week, which sectors are leading, what themes stand out"
 }"""
 
 
@@ -58,24 +70,52 @@ def build_scoring_prompt(candidates: dict, recent_summaries: list) -> str:
     lines = []
     for symbol, data in candidates.items():
         news = data.get("news", [])
-        st = data.get("stocktwits", {})
+        rd = data.get("reddit", {})
         val = data.get("valuation", {})
+        mc = data.get("market_context", {})
+        an = mc.get("analyst", {}) or {}
+        ea = mc.get("earnings", {}) or {}
 
         headlines = " | ".join(
             a["headline"] for a in news[:5] if "headline" in a
         ) or "No recent news"
 
-        if st.get("bull_pct") is not None:
-            sentiment_str = f"{st.get('overall', 'unknown')} ({st['bull_pct']}% bull / {st.get('bear_pct', 0)}% bear, {st.get('message_count', 0)} posts)"
+        if rd.get("bull_pct") is not None:
+            sentiment_str = (
+                f"reddit {rd['overall']} "
+                f"({rd['bull_pct']}% bull / {rd.get('bear_pct')}% bear, "
+                f"{rd['mention_count']} mentions)"
+            )
+        elif rd.get("mention_count", 0) > 0:
+            sentiment_str = f"reddit {rd.get('overall', 'thin_data')} ({rd['mention_count']} mentions, low signal)"
         else:
-            sentiment_str = st.get("overall", "no_data")
+            sentiment_str = "reddit no_data"
 
-        if val.get("ps") is not None and val.get("sector_median"):
-            val_str = f"P/S {val['ps']} ({val['ratio']}x {val['sector']} median)"
+        val_str = f"P/S {val['ps']} ({val['ratio']}x {val['sector']} median)" if val.get("ps") and val.get("sector_median") else "P/S n/a"
+
+        sector_str = (
+            f"{mc.get('sector_etf', '?')} sector {mc.get('sector_vs_spy_60d_pct', 0):+.1f}% vs SPY 60d"
+            if mc.get("sector_vs_spy_60d_pct") is not None else "sector n/a"
+        )
+
+        if an.get("mean_target") and an.get("pct_vs_current") is not None:
+            arrow = "upside" if an["pct_vs_current"] > 0 else "downside"
+            analyst_str = f"analyst target ${an['mean_target']} ({an['pct_vs_current']:+.1f}% {arrow}, n={an.get('analyst_count', '?')})"
         else:
-            val_str = "valuation unknown"
+            analyst_str = "analyst target n/a"
 
-        lines.append(f"{symbol}: {val_str} | news=\"{headlines[:300]}\" | stocktwits={sentiment_str}")
+        if ea.get("days_since") is not None:
+            chase = " [CHASE RISK]" if ea.get("chase_risk") else ""
+            surp = f", surprise {ea['surprise_pct']:+.1f}%" if ea.get("surprise_pct") is not None else ""
+            earnings_str = f"earnings d+{ea['days_since']}{surp}{chase}"
+        else:
+            earnings_str = "earnings n/a"
+
+        lines.append(
+            f"{symbol}: {val_str} | {sector_str} | {analyst_str} | {earnings_str}\n"
+            f"   news: {headlines[:250]}\n"
+            f"   social: {sentiment_str}"
+        )
 
     history_str = json.dumps(recent_summaries, indent=2) if recent_summaries else "None"
 
