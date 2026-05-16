@@ -59,6 +59,7 @@ def build_scoring_prompt(candidates: dict, recent_summaries: list) -> str:
     for symbol, data in candidates.items():
         news = data.get("news", [])
         st = data.get("stocktwits", {})
+        val = data.get("valuation", {})
 
         headlines = " | ".join(
             a["headline"] for a in news[:5] if "headline" in a
@@ -69,7 +70,12 @@ def build_scoring_prompt(candidates: dict, recent_summaries: list) -> str:
         else:
             sentiment_str = st.get("overall", "no_data")
 
-        lines.append(f"{symbol}: news=\"{headlines[:350]}\" | stocktwits={sentiment_str}")
+        if val.get("ps") is not None and val.get("sector_median"):
+            val_str = f"P/S {val['ps']} ({val['ratio']}x {val['sector']} median)"
+        else:
+            val_str = "valuation unknown"
+
+        lines.append(f"{symbol}: {val_str} | news=\"{headlines[:300]}\" | stocktwits={sentiment_str}")
 
     history_str = json.dumps(recent_summaries, indent=2) if recent_summaries else "None"
 

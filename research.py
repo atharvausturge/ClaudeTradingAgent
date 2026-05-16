@@ -326,9 +326,31 @@ def main():
     if earnings_blackout:
         print(f"  Earnings blackout (excluded): {', '.join(earnings_blackout)}")
         top_candidates = [sym for sym in top_candidates if sym not in earnings_blackout]
-        # Backfill from ranked list if we have room
         remaining = [sym for sym, _ in ranked if sym not in top_candidates and sym not in earnings_blackout]
         top_candidates = (top_candidates + remaining)[:top_n]
+
+    # --- Step 1c: Reject overvalued stocks (P/S > 2.5x sector median) ---
+    print("Reviewing valuations for top candidates...")
+    from valuation import assess_valuation
+    valuation_results = {sym: assess_valuation(sym) for sym in top_candidates}
+    valuation_blackout = [sym for sym, v in valuation_results.items() if v["verdict"] == "reject"]
+    if valuation_blackout:
+        for sym in valuation_blackout:
+            print(f"  {sym} REJECTED: {valuation_results[sym]['reason']}")
+        top_candidates = [sym for sym in top_candidates if sym not in valuation_blackout]
+        already_excluded = set(top_candidates) | set(earnings_blackout) | set(valuation_blackout)
+        remaining = [sym for sym, _ in ranked if sym not in already_excluded]
+        # Also valuation-check the backfill candidates so we don't just replace bad with bad
+        for sym in remaining:
+            if len(top_candidates) >= top_n:
+                break
+            v = assess_valuation(sym)
+            valuation_results[sym] = v
+            if v["verdict"] != "reject":
+                top_candidates.append(sym)
+            else:
+                print(f"  {sym} backfill REJECTED: {v['reason']}")
+        top_candidates = top_candidates[:top_n]
 
     # --- Step 2: Fetch Alpaca news for top candidates ---
     print(f"Fetching Alpaca news for top {top_n} candidates...")
@@ -366,12 +388,17 @@ def main():
         "top_candidates": {
             symbol: {
                 "technicals": scores[symbol],
+                "valuation": valuation_results.get(symbol, {}),
                 "news": news.get(symbol, []),
                 "stocktwits": stocktwits.get(symbol, {}),
             }
             for symbol in top_candidates
         },
         "full_scores": {sym: d for sym, d in ranked},
+        "valuation_rejected": [
+            {"symbol": sym, **valuation_results[sym]}
+            for sym in valuation_blackout
+        ],
     }
 
     with open(OUTPUT_FILE, "w") as f:
