@@ -112,6 +112,63 @@ def move_stop_to_breakeven(trading, symbol, entry_price, qty):
     return False
 
 
+def detect_auto_closed_positions(trading, memory, now):
+    """
+    Find SELL orders that filled since last monitor run and weren't initiated by our code.
+    These are typically stop-loss triggers — fire a Discord notification for each.
+    """
+    last_run = memory.get("last_monitor_run")
+    if last_run:
+        since = datetime.fromisoformat(last_run)
+    else:
+        since = now - timedelta(days=3)
+
+    already_notified = {
+        t.get("symbol") for t in memory.get("trade_history", [])
+        if t.get("action") in ("STOP_TRIGGERED", "CLOSE", "FRIDAY_CLOSE")
+        and t.get("time", "") > since.isoformat()
+    }
+
+    try:
+        orders = trading.get_orders(filter=GetOrdersRequest(
+            status="closed", after=since, limit=200,
+        ))
+    except Exception as e:
+        log.warning(f"Could not fetch recent orders: {e}")
+        return []
+
+    triggered = []
+    for order in orders:
+        if str(order.side) != "OrderSide.SELL" and str(order.side) != "sell":
+            continue
+        if str(order.status) not in ("filled", "OrderStatus.FILLED"):
+            continue
+        symbol = order.symbol
+        if symbol in already_notified:
+            continue
+        # Find the buy entry price to compute realized P&L
+        entry_price = get_entry_price(memory, symbol)
+        fill_price = float(order.filled_avg_price or 0)
+        qty = float(order.filled_qty or 0)
+        pl_pct = round((fill_price - entry_price) / entry_price * 100, 2) if entry_price else None
+        pl_dollar = round((fill_price - entry_price) * qty, 2) if entry_price else None
+
+        reason = "stop loss triggered" if str(order.order_type) in ("stop", "OrderType.STOP") else "auto-closed"
+        log.info(f"  {symbol}: {reason} @ ${fill_price:.2f} ({pl_pct:+.2f}% | ${pl_dollar:+.2f})")
+        notify.trade_close(symbol, reason, pl_pct)
+        memory["trade_history"].append({
+            "time": now.isoformat(),
+            "action": "STOP_TRIGGERED",
+            "symbol": symbol,
+            "fill_price": fill_price,
+            "pl_pct": pl_pct,
+            "pl_dollar": pl_dollar,
+            "reason": reason,
+        })
+        triggered.append(symbol)
+    return triggered
+
+
 def main():
     api_key = os.environ["ALPACA_API_KEY"]
     api_secret = os.environ["ALPACA_SECRET_KEY"]
@@ -127,6 +184,11 @@ def main():
         return
 
     now = datetime.now(ET)
+
+    # Notify on any stop-losses that triggered since the last run
+    auto_closed = detect_auto_closed_positions(trading, memory, now)
+    if auto_closed:
+        log.info(f"Auto-closed positions detected: {', '.join(auto_closed)}")
     is_friday = now.weekday() == 4
     close_threshold = config.get("friday_close_threshold", -0.02)
     account = trading.get_account()
@@ -199,6 +261,7 @@ def main():
         "is_friday_close": is_friday,
     })
     memory["portfolio_snapshots"] = memory["portfolio_snapshots"][-500:]
+    memory["last_monitor_run"] = now.isoformat()
 
     save_json(MEMORY_FILE, memory)
     log.info("Monitor complete. Memory updated.")

@@ -124,7 +124,7 @@ def score_universe(closes, spy_closes, avg_volumes=None, min_rs_threshold=0.0):
         return scores
     spy_ret_60 = float((spy.iloc[-1] - spy.iloc[-RS_LOOKBACK]) / spy.iloc[-RS_LOOKBACK])
 
-    rejected = {"bars": 0, "volume": 0, "price": 0, "rsi": 0, "rs60": 0}
+    rejected = {"bars": 0, "volume": 0, "price": 0, "rsi": 0, "rs60": 0, "chase": 0}
 
     for symbol, prices in closes.items():
         if len(prices) < min_bars:
@@ -147,6 +147,10 @@ def score_universe(closes, spy_closes, avg_volumes=None, min_rs_threshold=0.0):
                 rejected["rs60"] += 1
                 continue
             dip_5d = float((prices.iloc[-1] - prices.iloc[-DIP_LOOKBACK]) / prices.iloc[-DIP_LOOKBACK])
+            # Anti-chase: skip stocks that just popped >10% in 5 days (post-earnings gap risk)
+            if dip_5d > 0.10:
+                rejected["chase"] += 1
+                continue
             score = (-dip_5d * 0.6) + (rs_60 * 0.4)
             scores[symbol] = {
                 "score": round(score, 4),
@@ -166,6 +170,7 @@ def score_universe(closes, spy_closes, avg_volumes=None, min_rs_threshold=0.0):
     print(f"    Price < $25       : {rejected['price']}")
     print(f"    RSI out of 25-75  : {rejected['rsi']}")
     print(f"    RS60 < {min_rs_threshold:.0%} (vs SPY): {rejected['rs60']}")
+    print(f"    5d pop > +10% (chase): {rejected['chase']}")
     print(f"    PASSED all filters: {passed}")
     return scores
 
