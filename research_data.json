@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T14:51:31.564292-04:00",
+  "generated_at": "2026-05-17T19:51:05.973957-04:00",
   "universe_size": 1506,
   "stocks_passing_filter": 388,
   "account": {
@@ -192,11 +192,18 @@
           "low_target": 20.4
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 24,
+          "surprise_pct": 2108.68,
+          "chase_risk": false
         }
       },
       "news": [
+        {
+          "headline": "Tim Cook Finds Purpose, OpenAI-Apple Relationship Sours, Intel Strikes Deal: This Week In Appleverse",
+          "summary": "Weekend tech news included Tim Cook reflecting on purpose, tensions between Apple and OpenAI and Apple securing a new supply deal with Intel.",
+          "published": "2026-05-17T11:00:33Z",
+          "source": "benzinga"
+        },
         {
           "headline": "NVIDIA Earnings Preview: Wall Street Pros Boost Stock Targets Amid AI Boom",
           "summary": "This NVIDIA earnings preview explains what to expect as top Wall Street pros have boosted their targets ahead of its earnings report",
@@ -250,64 +257,15 @@
           "summary": "CME FedWatch now prices a Fed hike at 56% by December 2026. Polymarket sits at 33%. AI stocks, gold and silver are paying for the repricing.",
           "published": "2026-05-15T12:54:04Z",
           "source": "benzinga"
-        },
-        {
-          "headline": "Intel's Explosive Rally Vs Taiwan Semiconductor's Steady Dominance: Which AI Chip Giant Wins?",
-          "summary": "TSMC&#39;s 66% margin dominance meets Intel&#39;s high-flying AI turnaround. Read our analysis of INTC vs TSM Q1 2026 earnings and stock technicals.",
-          "published": "2026-05-15T12:30:28Z",
-          "source": "benzinga"
         }
       ],
       "reddit": {
-        "mention_count": 12,
-        "bull_pct": 50.0,
-        "bear_pct": 50.0,
-        "neutral_count": 4,
-        "avg_upvote_ratio": 0.74,
-        "subreddit_breakdown": {
-          "stocks": 4,
-          "wallstreetbets": 6,
-          "investing": 1,
-          "StockMarket": 1
-        },
-        "overall": "mixed",
-        "top_posts": [
-          {
-            "title": "Trump left Beijing with no deal, just \"fantastic\" conversations... and the market punished tech immediately!",
-            "subreddit": "stocks",
-            "score": 2697,
-            "upvote_ratio": 0.91,
-            "num_comments": 233
-          },
-          {
-            "title": "INTC 32k gains, I am out!",
-            "subreddit": "wallstreetbets",
-            "score": 542,
-            "upvote_ratio": 0.93,
-            "num_comments": 85
-          },
-          {
-            "title": "INTC and AMD took me to 200k",
-            "subreddit": "wallstreetbets",
-            "score": 388,
-            "upvote_ratio": 0.94,
-            "num_comments": 48
-          },
-          {
-            "title": "Does the stock performance of Micron (MU) destroy the efficient market hypnosis?",
-            "subreddit": "StockMarket",
-            "score": 309,
-            "upvote_ratio": 0.92,
-            "num_comments": 81
-          },
-          {
-            "title": "Up 250k in the last month from 17k initial\u2026 INTC AMD 90% of what I played.",
-            "subreddit": "wallstreetbets",
-            "score": 286,
-            "upvote_ratio": 0.9,
-            "num_comments": 56
-          }
-        ]
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
       }
     },
     "VECO": {
@@ -339,8 +297,9 @@
           "low_target": 30.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 12,
+          "surprise_pct": -140.0,
+          "chase_risk": false
         }
       },
       "news": [
@@ -352,24 +311,12 @@
         }
       ],
       "reddit": {
-        "mention_count": 1,
+        "mention_count": 0,
         "bull_pct": null,
         "bear_pct": null,
-        "neutral_count": 1,
-        "avg_upvote_ratio": 0.5,
-        "subreddit_breakdown": {
-          "investing": 1
-        },
-        "overall": "thin_data",
-        "top_posts": [
-          {
-            "title": "Why is VECO exhibiting price bumps?",
-            "subreddit": "investing",
-            "score": 0,
-            "upvote_ratio": 0.5,
-            "num_comments": 3
-          }
-        ]
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
       }
     },
     "ACLS": {
@@ -401,8 +348,9 @@
           "low_target": 130.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 10,
+          "surprise_pct": 1.41,
+          "chase_risk": true
         }
       },
       "news": [],
@@ -437,15 +385,16 @@
         "sector_vs_spy_60d_pct": 17.9,
         "sector_return_60d_pct": 25.11,
         "analyst": {
-          "mean_target": 197.04,
-          "pct_vs_current": -18.57,
+          "mean_target": 200.3,
+          "pct_vs_current": -17.23,
           "analyst_count": 23,
           "high_target": 300.0,
           "low_target": 110.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 80,
+          "surprise_pct": 10.74,
+          "chase_risk": false
         }
       },
       "news": [
@@ -483,18 +432,6 @@
           "headline": "Mizuho Maintains Outperform on Dell Technologies, Raises Price Target to $300",
           "summary": "",
           "published": "2026-05-12T12:32:33Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "This Trade Desk Analyst Turns Bearish; Here Are Top 5 Downgrades For Monday",
-          "summary": "Top analysts changed ratings on top names. View all changes, including upgrades/downgrades/initiations, on our analyst ratings page.",
-          "published": "2026-05-11T13:41:26Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "UBS Downgrades Dell Technologies to Neutral, Raises Price Target to $243",
-          "summary": "",
-          "published": "2026-05-11T12:52:36Z",
           "source": "benzinga"
         }
       ],
@@ -536,8 +473,9 @@
           "low_target": 60.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 18,
+          "surprise_pct": 17.01,
+          "chase_risk": false
         }
       },
       "news": [
@@ -586,8 +524,9 @@
           "low_target": 37.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 10,
+          "surprise_pct": 13.85,
+          "chase_risk": true
         }
       },
       "news": [
@@ -601,18 +540,6 @@
           "headline": "TD Cowen Maintains Buy on Astrana Health, Raises Price Target to $45",
           "summary": "",
           "published": "2026-05-12T15:08:33Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Physician Association Of California And Astrana Health Collaborate To Help Independent Primary Care Physicians Remain Independent In Complex Healthcare System",
-          "summary": "",
-          "published": "2026-05-11T20:26:12Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Barclays Maintains Equal-Weight on Astrana Health, Raises Price Target to $37",
-          "summary": "",
-          "published": "2026-05-11T13:16:28Z",
           "source": "benzinga"
         }
       ],
@@ -654,8 +581,9 @@
           "low_target": 16.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 24,
+          "surprise_pct": -27.55,
+          "chase_risk": false
         }
       },
       "news": [
@@ -704,11 +632,24 @@
           "low_target": 249.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 60,
+          "surprise_pct": 33.21,
+          "chase_risk": false
         }
       },
       "news": [
+        {
+          "headline": "Cisco Stock Is Up 55% This Year, But Two Key Risks May Trigger Reversal",
+          "summary": "Cisco stock has jumped by 55% this year, but its extreme overbought conditions and elevated valuations means that a reversal is possible.",
+          "published": "2026-05-17T15:04:07Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Memory Boom Fuels DRAM ETF's Sprint To $10 Billion, But Risks Remain",
+          "summary": "The Roundhill Memory ETF (CBOE: DRAM) continued its strong momentum last week, helped by the strong demand for memory products as the artificial intelligence (AI) boom continued.\u00a0",
+          "published": "2026-05-16T20:00:37Z",
+          "source": "benzinga"
+        },
         {
           "headline": "Benzinga Bulls And Bears: Nvidia, Cisco, Virgin Galactic \u2014 And Inflation Fears Rattle Investors",
           "summary": "Benzinga examined the prospects for many investors&#39; favorite stocks over the last week \u2014 here&#39;s a look at some of our top stories.",
@@ -756,69 +697,15 @@
           "summary": "Semiconductor stocks like NVDA and AMD fell Friday as profit-taking and hot CPI data hit AI-driven gains. Get the latest chip sector news.",
           "published": "2026-05-15T10:59:23Z",
           "source": "benzinga"
-        },
-        {
-          "headline": "AI Demand Pushes Applied Materials To Highest Margins In 25 Years",
-          "summary": "Applied Materials (AMAT) beats Q2 estimates &amp; raises guidance as AI demand surges. Get the latest on revenue, margins, and analyst forecasts.",
-          "published": "2026-05-15T10:01:52Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Exploring The Competitive Space: Micron Technology Versus Industry Peers In Semiconductors &amp; Semiconductor Equipment",
-          "summary": " ",
-          "published": "2026-05-15T09:58:45Z",
-          "source": "benzinga"
         }
       ],
       "reddit": {
-        "mention_count": 13,
-        "bull_pct": 71.4,
-        "bear_pct": 28.6,
-        "neutral_count": 6,
-        "avg_upvote_ratio": 0.83,
-        "subreddit_breakdown": {
-          "wallstreetbets": 8,
-          "stocks": 4,
-          "StockMarket": 1
-        },
-        "overall": "strongly_bullish",
-        "top_posts": [
-          {
-            "title": "Trump left Beijing with no deal, just \"fantastic\" conversations... and the market punished tech immediately!",
-            "subreddit": "stocks",
-            "score": 2702,
-            "upvote_ratio": 0.91,
-            "num_comments": 233
-          },
-          {
-            "title": "Advanced MU technical analysis for tomorrow\u2019s session",
-            "subreddit": "wallstreetbets",
-            "score": 2491,
-            "upvote_ratio": 0.97,
-            "num_comments": 97
-          },
-          {
-            "title": "MU is the cleanest play on the imminent Samsung strike",
-            "subreddit": "wallstreetbets",
-            "score": 841,
-            "upvote_ratio": 0.93,
-            "num_comments": 213
-          },
-          {
-            "title": "The rally continues\u2026 MU",
-            "subreddit": "wallstreetbets",
-            "score": 646,
-            "upvote_ratio": 0.96,
-            "num_comments": 100
-          },
-          {
-            "title": "Does the stock performance of Micron (MU) destroy the efficient market hypnosis?",
-            "subreddit": "StockMarket",
-            "score": 307,
-            "upvote_ratio": 0.92,
-            "num_comments": 81
-          }
-        ]
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
       }
     },
     "HIMS": {
@@ -850,8 +737,9 @@
           "low_target": 18.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 6,
+          "surprise_pct": -1267.88,
+          "chase_risk": true
         }
       },
       "news": [
@@ -917,32 +805,12 @@
         }
       ],
       "reddit": {
-        "mention_count": 2,
-        "bull_pct": 50.0,
-        "bear_pct": 50.0,
-        "neutral_count": 0,
-        "avg_upvote_ratio": 0.66,
-        "subreddit_breakdown": {
-          "investing": 1,
-          "stocks": 1
-        },
-        "overall": "thin_data",
-        "top_posts": [
-          {
-            "title": "$HIMS - Earnings Report",
-            "subreddit": "stocks",
-            "score": 28,
-            "upvote_ratio": 0.82,
-            "num_comments": 17
-          },
-          {
-            "title": "Hims &amp; Hers (HIMS) What Moves Hims From Here?",
-            "subreddit": "investing",
-            "score": 0,
-            "upvote_ratio": 0.5,
-            "num_comments": 1
-          }
-        ]
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
       }
     },
     "WDC": {
@@ -967,15 +835,16 @@
         "sector_vs_spy_60d_pct": 17.9,
         "sector_return_60d_pct": 25.11,
         "analyst": {
-          "mean_target": 505.0,
-          "pct_vs_current": 4.77,
+          "mean_target": 507.61,
+          "pct_vs_current": 5.31,
           "analyst_count": 23,
           "high_target": 660.0,
           "low_target": 360.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 17,
+          "surprise_pct": 283.63,
+          "chase_risk": false
         }
       },
       "news": [
@@ -1032,33 +901,15 @@
           "summary": "Jim Cramer says investors are aggressively favoring AI stocks while heavily punishing companies that disappoint Wall Street.",
           "published": "2026-05-12T11:00:13Z",
           "source": "benzinga"
-        },
-        {
-          "headline": "SanDisk's 4,000% Moonshot Just Made Its Parent The Underdog",
-          "summary": "SanDisk&#39;s post-spin rally has turned a separation story into a market-cap upset, with SNDK stock outperforming former parent WDC.",
-          "published": "2026-05-11T19:46:18Z",
-          "source": "benzinga"
         }
       ],
       "reddit": {
-        "mention_count": 1,
+        "mention_count": 0,
         "bull_pct": null,
         "bear_pct": null,
-        "neutral_count": 1,
-        "avg_upvote_ratio": 0.67,
-        "subreddit_breakdown": {
-          "wallstreetbets": 1
-        },
-        "overall": "thin_data",
-        "top_posts": [
-          {
-            "title": "WDC will run higher next!!! FU Money!",
-            "subreddit": "wallstreetbets",
-            "score": 17,
-            "upvote_ratio": 0.67,
-            "num_comments": 32
-          }
-        ]
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
       }
     },
     "TWLO": {
@@ -1090,8 +941,9 @@
           "low_target": 120.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 17,
+          "surprise_pct": 18.02,
+          "chase_risk": false
         }
       },
       "news": [
@@ -1099,18 +951,6 @@
           "headline": "BTIG Reiterates Buy on Twilio, Maintains $215 Price Target",
           "summary": "",
           "published": "2026-05-12T11:11:17Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Twilio To Rally Over 25%? Here Are 10 Top Analyst Forecasts For Monday",
-          "summary": "Analysts changed outlook on top names, RBC raised CC price target, DA Davidson lowered MSA target, Oppenheimer cut CRNX target, Macquarie raised IREN target, JP Morgan cut MCD target, Citi slashed WHR target, Susquehanna raised NET target, Scotiabank raised NTR target.",
-          "published": "2026-05-11T16:25:34Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Needham Maintains Buy on Twilio, Raises Price Target to $250",
-          "summary": "",
-          "published": "2026-05-11T09:50:40Z",
           "source": "benzinga"
         }
       ],
@@ -1152,8 +992,9 @@
           "low_target": 22.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 11,
+          "surprise_pct": 22.22,
+          "chase_risk": false
         }
       },
       "news": [
@@ -1202,30 +1043,19 @@
           "low_target": 28.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 18,
+          "surprise_pct": -98.96,
+          "chase_risk": false
         }
       },
       "news": [],
       "reddit": {
-        "mention_count": 1,
-        "bull_pct": 0.0,
-        "bear_pct": 100.0,
-        "neutral_count": 0,
-        "avg_upvote_ratio": 0.78,
-        "subreddit_breakdown": {
-          "stocks": 1
-        },
-        "overall": "thin_data",
-        "top_posts": [
-          {
-            "title": "Thoughts on CVI as a stock in the long term?",
-            "subreddit": "stocks",
-            "score": 7,
-            "upvote_ratio": 0.78,
-            "num_comments": 4
-          }
-        ]
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
       }
     },
     "YOU": {
@@ -1257,8 +1087,9 @@
           "low_target": 40.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 11,
+          "surprise_pct": 32.03,
+          "chase_risk": false
         }
       },
       "news": [
@@ -1307,8 +1138,9 @@
           "low_target": 30.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 13,
+          "surprise_pct": 15.77,
+          "chase_risk": false
         }
       },
       "news": [
@@ -1363,8 +1195,9 @@
           "low_target": 50.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 10,
+          "surprise_pct": 33.33,
+          "chase_risk": true
         }
       },
       "news": [
@@ -1443,11 +1276,18 @@
           "low_target": 100.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 18,
+          "surprise_pct": 3.58,
+          "chase_risk": false
         }
       },
       "news": [
+        {
+          "headline": "SCHD ETF Stock C&H Pattern Points To A Rebound As Inflows Hit $8.2B",
+          "summary": "The Schwab US Dividend Equity ETF has moved sideways in the past few weeks, underperforming the broader market.",
+          "published": "2026-05-16T19:25:42Z",
+          "source": "benzinga"
+        },
         {
           "headline": "Appaloosa Management Decreases Stake In Lam Research Decreases Stake To 382,500 Shares; Lyft Decreases Stake To 2,700,000 Shares; Meta Platforms Decreases Stake To 436,500 Shares; Micron Technology Decreases Stake To 1,665,000 Shares; Microsoft Decreases Stake To 90,000 Shares; MPLX Decreases Stake To 502,460 Shares; NVIDIA Decreases Stake To 1,471,500 Shares; PDD Decreases Stake To 900,000 Shares; Qualcomm Decreases Stake To 498,613 Shares; RTX Decreases Stake To 342,000 Shares",
           "summary": "",
@@ -1501,12 +1341,6 @@
           "summary": "(Editor\u2019s note: The future prices of benchmark tracking ETFs, and the headline, the lede and the economic were updated in the story.)\n\n\n\nU.S. stock futures were mixed on Wednesday after Monday\u2019s mostly lower close. Dow Jones futures fell, whereas S&amp;P 500 and Nasdaq 100 indices were rising.",
           "published": "2026-05-13T12:52:55Z",
           "source": "benzinga"
-        },
-        {
-          "headline": "Trump Personally Calls Nvidia CEO Jensen Huang To Join China Trip At Last Minute Amid Backlash Over AI Chip Sales To Beijing: Report",
-          "summary": "Trump reportedly personally urged Nvidia CEO Jensen Huang to join his China trip at the last minute amid backlash.",
-          "published": "2026-05-13T05:35:46Z",
-          "source": "benzinga"
         }
       ],
       "reddit": {
@@ -1547,8 +1381,9 @@
           "low_target": 185.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 20,
+          "surprise_pct": 31.8,
+          "chase_risk": false
         }
       },
       "news": [
@@ -1603,18 +1438,12 @@
           "low_target": 295.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 18,
+          "surprise_pct": 45.65,
+          "chase_risk": false
         }
       },
-      "news": [
-        {
-          "headline": "Cantor Fitzgerald Maintains Overweight on MYR Group, Raises Price Target to $564",
-          "summary": "",
-          "published": "2026-05-11T13:42:28Z",
-          "source": "benzinga"
-        }
-      ],
+      "news": [],
       "reddit": {
         "mention_count": 0,
         "bull_pct": null,
@@ -1653,8 +1482,9 @@
           "low_target": 46.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 10,
+          "surprise_pct": 5.86,
+          "chase_risk": true
         }
       },
       "news": [],
@@ -2376,19 +2206,19 @@
       "rsi": 69.3,
       "price": 228.77
     },
-    "NUE": {
-      "score": 0.0885,
-      "rs_60d": 18.9,
-      "dip_5d": -2.15,
-      "rsi": 64.1,
-      "price": 227.02
-    },
     "LYB": {
       "score": 0.0885,
       "rs_60d": 25.24,
       "dip_5d": 2.08,
       "rsi": 54.5,
       "price": 75.06
+    },
+    "NUE": {
+      "score": 0.0885,
+      "rs_60d": 18.9,
+      "dip_5d": -2.15,
+      "rsi": 64.1,
+      "price": 227.02
     },
     "AVGO": {
       "score": 0.087,
@@ -2572,19 +2402,19 @@
       "rsi": 48.4,
       "price": 53.98
     },
-    "LBRT": {
-      "score": 0.0699,
-      "rs_60d": 15.5,
-      "dip_5d": -1.32,
-      "rsi": 57.7,
-      "price": 32.95
-    },
     "MKSI": {
       "score": 0.0699,
       "rs_60d": 9.72,
       "dip_5d": -5.17,
       "rsi": 59.7,
       "price": 303.17
+    },
+    "LBRT": {
+      "score": 0.0699,
+      "rs_60d": 15.5,
+      "dip_5d": -1.32,
+      "rsi": 57.7,
+      "price": 32.95
     },
     "MP": {
       "score": 0.0687,
@@ -2635,19 +2465,19 @@
       "rsi": 50.5,
       "price": 42.3
     },
-    "SAH": {
-      "score": 0.0661,
-      "rs_60d": 3.79,
-      "dip_5d": -8.49,
-      "rsi": 49.9,
-      "price": 73.96
-    },
     "SCHL": {
       "score": 0.0661,
       "rs_60d": 15.17,
       "dip_5d": -0.9,
       "rsi": 52.4,
       "price": 39.7
+    },
+    "SAH": {
+      "score": 0.0661,
+      "rs_60d": 3.79,
+      "dip_5d": -8.49,
+      "rsi": 49.9,
+      "price": 73.96
     },
     "NSA": {
       "score": 0.065,
@@ -2852,19 +2682,19 @@
       "rsi": 61.4,
       "price": 696.53
     },
-    "AMAT": {
-      "score": 0.0459,
-      "rs_60d": 9.1,
-      "dip_5d": -1.58,
-      "rsi": 61.7,
-      "price": 436.62
-    },
     "OLN": {
       "score": 0.0459,
       "rs_60d": 2.81,
       "dip_5d": -5.77,
       "rsi": 45.5,
       "price": 26.78
+    },
+    "AMAT": {
+      "score": 0.0459,
+      "rs_60d": 9.1,
+      "dip_5d": -1.58,
+      "rsi": 61.7,
+      "price": 436.62
     },
     "SNPS": {
       "score": 0.044,
@@ -3468,19 +3298,19 @@
       "rsi": 57.0,
       "price": 114.49
     },
-    "EXPE": {
-      "score": 0.0093,
-      "rs_60d": -0.21,
-      "dip_5d": -1.68,
-      "rsi": 35.6,
-      "price": 217.73
-    },
     "APD": {
       "score": 0.0093,
       "rs_60d": -2.16,
       "dip_5d": -3.0,
       "rsi": 46.7,
       "price": 295.38
+    },
+    "EXPE": {
+      "score": 0.0093,
+      "rs_60d": -0.21,
+      "dip_5d": -1.68,
+      "rsi": 35.6,
+      "price": 217.73
     },
     "OKTA": {
       "score": 0.0089,
@@ -3496,19 +3326,19 @@
       "rsi": 45.6,
       "price": 123.42
     },
-    "OII": {
-      "score": 0.0076,
-      "rs_60d": 1.55,
-      "dip_5d": -0.24,
-      "rsi": 53.5,
-      "price": 37.84
-    },
     "MSCI": {
       "score": 0.0076,
       "rs_60d": -3.98,
       "dip_5d": -3.92,
       "rsi": 40.9,
       "price": 561.72
+    },
+    "OII": {
+      "score": 0.0076,
+      "rs_60d": 1.55,
+      "dip_5d": -0.24,
+      "rsi": 53.5,
+      "price": 37.84
     },
     "ANDE": {
       "score": 0.0075,
@@ -3566,19 +3396,19 @@
       "rsi": 52.4,
       "price": 134.33
     },
-    "KFY": {
-      "score": 0.0064,
-      "rs_60d": -4.64,
-      "dip_5d": -4.16,
-      "rsi": 41.7,
-      "price": 63.8
-    },
     "PYPL": {
       "score": 0.0064,
       "rs_60d": -0.59,
       "dip_5d": -1.46,
       "rsi": 35.0,
       "price": 44.41
+    },
+    "KFY": {
+      "score": 0.0064,
+      "rs_60d": -4.64,
+      "dip_5d": -4.16,
+      "rsi": 41.7,
+      "price": 63.8
     },
     "MS": {
       "score": 0.0057,
@@ -3671,19 +3501,19 @@
       "rsi": 59.5,
       "price": 43.12
     },
-    "CATY": {
-      "score": 0.0019,
-      "rs_60d": -3.29,
-      "dip_5d": -2.51,
-      "rsi": 53.8,
-      "price": 55.61
-    },
     "SLB": {
       "score": 0.0019,
       "rs_60d": 1.69,
       "dip_5d": 0.82,
       "rsi": 56.3,
       "price": 55.38
+    },
+    "CATY": {
+      "score": 0.0019,
+      "rs_60d": -3.29,
+      "dip_5d": -2.51,
+      "rsi": 53.8,
+      "price": 55.61
     },
     "DKS": {
       "score": 0.0013,
@@ -3699,19 +3529,19 @@
       "rsi": 56.5,
       "price": 39.5
     },
-    "APO": {
-      "score": 0.0008,
-      "rs_60d": 5.87,
-      "dip_5d": 3.77,
-      "rsi": 67.3,
-      "price": 135.38
-    },
     "VNO": {
       "score": 0.0008,
       "rs_60d": -2.02,
       "dip_5d": -1.48,
       "rsi": 55.7,
       "price": 30.58
+    },
+    "APO": {
+      "score": 0.0008,
+      "rs_60d": 5.87,
+      "dip_5d": 3.77,
+      "rsi": 67.3,
+      "price": 135.38
     },
     "GWW": {
       "score": 0.0,
@@ -3734,19 +3564,19 @@
       "rsi": 57.6,
       "price": 27.12
     },
-    "SAIA": {
-      "score": -0.0006,
-      "rs_60d": 4.63,
-      "dip_5d": 3.18,
-      "rsi": 61.7,
-      "price": 460.38
-    },
     "AIZ": {
       "score": -0.0006,
       "rs_60d": 6.29,
       "dip_5d": 4.29,
       "rsi": 74.1,
       "price": 254.61
+    },
+    "SAIA": {
+      "score": -0.0006,
+      "rs_60d": 4.63,
+      "dip_5d": 3.18,
+      "rsi": 61.7,
+      "price": 460.38
     },
     "THG": {
       "score": -0.0013,
@@ -3860,19 +3690,19 @@
       "rsi": 58.7,
       "price": 267.06
     },
-    "OFG": {
-      "score": -0.0066,
-      "rs_60d": -4.14,
-      "dip_5d": -1.66,
-      "rsi": 48.2,
-      "price": 43.97
-    },
     "WSFS": {
       "score": -0.0066,
       "rs_60d": -3.92,
       "dip_5d": -1.51,
       "rsi": 48.9,
       "price": 69.89
+    },
+    "OFG": {
+      "score": -0.0066,
+      "rs_60d": -4.14,
+      "dip_5d": -1.66,
+      "rsi": 48.2,
+      "price": 43.97
     },
     "LRN": {
       "score": -0.0077,
@@ -3958,19 +3788,19 @@
       "rsi": 43.0,
       "price": 32.67
     },
-    "BKR": {
-      "score": -0.0121,
-      "rs_60d": -4.14,
-      "dip_5d": -0.74,
-      "rsi": 48.1,
-      "price": 64.12
-    },
     "OTTR": {
       "score": -0.0121,
       "rs_60d": -3.86,
       "dip_5d": -0.55,
       "rsi": 46.7,
       "price": 87.8
+    },
+    "BKR": {
+      "score": -0.0121,
+      "rs_60d": -4.14,
+      "dip_5d": -0.74,
+      "rsi": 48.1,
+      "price": 64.12
     },
     "R": {
       "score": -0.0126,
@@ -3979,19 +3809,19 @@
       "rsi": 49.7,
       "price": 230.91
     },
-    "ADSK": {
-      "score": -0.0133,
-      "rs_60d": -2.97,
-      "dip_5d": 0.23,
-      "rsi": 47.6,
-      "price": 236.62
-    },
     "ORA": {
       "score": -0.0133,
       "rs_60d": 6.24,
       "dip_5d": 6.38,
       "rsi": 68.7,
       "price": 131.52
+    },
+    "ADSK": {
+      "score": -0.0133,
+      "rs_60d": -2.97,
+      "dip_5d": 0.23,
+      "rsi": 47.6,
+      "price": 236.62
     },
     "PZZA": {
       "score": -0.0134,
@@ -4070,19 +3900,19 @@
       "rsi": 60.4,
       "price": 51.72
     },
-    "MSFT": {
-      "score": -0.0175,
-      "rs_60d": -1.0,
-      "dip_5d": 2.24,
-      "rsi": 57.9,
-      "price": 421.92
-    },
     "NSIT": {
       "score": -0.0175,
       "rs_60d": -3.24,
       "dip_5d": 0.76,
       "rsi": 70.8,
       "price": 88.9
+    },
+    "MSFT": {
+      "score": -0.0175,
+      "rs_60d": -1.0,
+      "dip_5d": 2.24,
+      "rsi": 57.9,
+      "price": 421.92
     },
     "OXY": {
       "score": -0.0176,
