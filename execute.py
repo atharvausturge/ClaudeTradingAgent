@@ -147,51 +147,71 @@ def main():
 
         stop_price = round(price * (1 - config["stop_loss_pct"]), 2)
 
+        # --- Submit buy ---
         try:
             buy_order = trading.submit_order(MarketOrderRequest(
                 symbol=symbol, qty=qty, side=OrderSide.BUY, time_in_force=TimeInForce.DAY,
             ))
+        except Exception as e:
+            log.error(f"Failed to submit buy for {symbol}: {e}")
+            continue
 
-            # --- Verify the order was accepted before recording it ---
+        # --- Wait for the buy to actually FILL (up to ~20s) ---
+        fill_price = price
+        filled = False
+        for attempt in range(10):
             time.sleep(2)
             try:
-                status = str(trading.get_order_by_id(buy_order.id).status)
-                if status in ("rejected", "suspended", "canceled"):
-                    log.error(f"{symbol}: buy order was {status} — skipping")
-                    continue
-                log.info(f"BUY {qty} {symbol} @ ~${price:.2f} accepted (status: {status})")
+                order = trading.get_order_by_id(buy_order.id)
+                status = str(order.status).lower()
+                if "filled" in status:
+                    fill_price = float(order.filled_avg_price or price)
+                    filled = True
+                    log.info(f"BUY FILLED: {qty} {symbol} @ ${fill_price:.2f}")
+                    break
+                if any(s in status for s in ("rejected", "canceled", "expired")):
+                    log.error(f"{symbol}: buy {status} — aborting")
+                    break
             except Exception as e:
-                log.warning(f"{symbol}: could not verify order status ({e}) — continuing")
+                log.warning(f"{symbol}: status check failed ({e}); retrying")
 
-            # Attach GTC stop loss
-            trading.submit_order(StopOrderRequest(
-                symbol=symbol, qty=qty, side=OrderSide.SELL,
-                time_in_force=TimeInForce.GTC, stop_price=stop_price,
-            ))
-            log.info(f"  Stop loss set @ ${stop_price:.2f} (-{config['stop_loss_pct']*100:.0f}%)")
+        if not filled:
+            log.warning(f"{symbol}: buy did not fill within 20s — skipping stop loss but notifying anyway")
 
+        # --- Notify on the buy regardless of stop outcome ---
+        try:
             account = trading.get_account()
             notify.trade_buy(
-                symbol=symbol, qty=qty, price=price, stop_price=stop_price,
+                symbol=symbol, qty=qty, price=fill_price, stop_price=stop_price,
                 reasoning=trade.get("reasoning", ""), confidence=trade.get("confidence", "medium"),
                 portfolio_value=float(account.portfolio_value), buying_power=float(account.buying_power),
             )
-
-            note = f"BUY {qty} {symbol} @ ~${price:.2f} | stop ${stop_price:.2f} | {trade.get('reasoning', '')[:100]}"
-            actions.append(note)
-            memory["trade_history"].append({
-                "time": now.isoformat(),
-                "action": "BUY",
-                "symbol": symbol,
-                "qty": qty,
-                "price": price,
-                "stop_price": stop_price,
-                "reasoning": trade.get("reasoning", ""),
-                "confidence": trade.get("confidence", ""),
-            })
-
         except Exception as e:
-            log.error(f"Failed to buy {symbol}: {e}")
+            log.error(f"Discord notify failed for {symbol}: {e}")
+
+        memory["trade_history"].append({
+            "time": now.isoformat(),
+            "action": "BUY",
+            "symbol": symbol,
+            "qty": qty,
+            "price": fill_price,
+            "stop_price": stop_price,
+            "reasoning": trade.get("reasoning", ""),
+            "confidence": trade.get("confidence", ""),
+            "filled": filled,
+        })
+        actions.append(f"BUY {qty} {symbol} @ ${fill_price:.2f} | stop ${stop_price:.2f}")
+
+        # --- Attach stop loss (isolated — failure here does NOT roll back the buy) ---
+        if filled:
+            try:
+                trading.submit_order(StopOrderRequest(
+                    symbol=symbol, qty=qty, side=OrderSide.SELL,
+                    time_in_force=TimeInForce.GTC, stop_price=stop_price,
+                ))
+                log.info(f"  Stop loss set @ ${stop_price:.2f} (-{config['stop_loss_pct']*100:.0f}%)")
+            except Exception as e:
+                log.error(f"  STOP LOSS FAILED for {symbol}: {e} — position is UNPROTECTED, please add stop manually")
 
     # --- Snapshot ---
     account = trading.get_account()

@@ -30,6 +30,42 @@
       "stop_price": 119.99,
       "reasoning": "Intel up 430% over past year, surpassed dotcom-era market cap (~$550B), +33% in early May, 13% single-day pop. Algo score 0.41 (2nd overall) with 5.26% pullback = ideal swing entry. 'Intel and Micron poised to break major milestones' (CNBC May 5). Foundry recovery + Gaudi AI accelerators + HBM positioning driving structural re-rating. No earnings this week.",
       "confidence": "medium"
+    },
+    {
+      "time": "2026-05-18T11:01:57.496486-04:00",
+      "action": "BUY",
+      "symbol": "AMAT",
+      "qty": 76,
+      "price": 431.45829,
+      "stop_price": 409.89,
+      "reasoning": "Backfilled by fix_state.py \u2014 original buy went through but execute.py did not record it",
+      "confidence": "medium",
+      "filled": true,
+      "backfilled": true
+    },
+    {
+      "time": "2026-05-18T11:01:57.496486-04:00",
+      "action": "BUY",
+      "symbol": "EOG",
+      "qty": 204,
+      "price": 138.583284,
+      "stop_price": 131.65,
+      "reasoning": "Backfilled by fix_state.py \u2014 original buy went through but execute.py did not record it",
+      "confidence": "medium",
+      "filled": true,
+      "backfilled": true
+    },
+    {
+      "time": "2026-05-18T11:01:57.496486-04:00",
+      "action": "BUY",
+      "symbol": "LLY",
+      "qty": 33,
+      "price": 992.169393,
+      "stop_price": 942.56,
+      "reasoning": "Backfilled by fix_state.py \u2014 original buy went through but execute.py did not record it",
+      "confidence": "medium",
+      "filled": true,
+      "backfilled": true
     }
   ],
   "weekly_summaries": [
