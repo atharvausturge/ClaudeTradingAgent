@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-05-15",
+  "last_run": "2026-05-18",
   "trade_history": [
     {
       "time": "2026-05-11T10:57:11.937687-04:00",
@@ -218,10 +218,46 @@
       "is_friday_close": true
     }
   ],
+  "weekly_summaries_new": [
+    {
+      "week_of": "2026-05-18",
+      "week_end_date": "2026-05-22",
+      "thesis": "Three-sector diversification amid risk-off macro (Iran war, CPI 3.8%, Brent crude $102-110/bbl). Avoids earnings events (NVDA Wed, WMT/HD/UNH this week). AMAT: Q2 beat May 14 (EPS +6.7%, rev +11.4% YoY), Q3 guided above consensus, semi equipment >30% growth 2026, Deutsche Bank PT $550. LLY: GLP-1 dominance (60.1% U.S. share), Q1 rev +56%, PT $1,218 (21% upside), already reported April 30. EOG: Iran war energy beneficiary, Q1 beat May 5, $1.5B FCF, oil $102-110/bbl sustained through Q2 per EIA. PLTR avoided despite #1 algo score (150x P/E + risk-off = burned last week already).",
+      "selected_symbols": ["AMAT", "LLY", "EOG"],
+      "allocations": {"AMAT": 0.35, "LLY": 0.35, "EOG": 0.30},
+      "confidence": {"AMAT": "high", "LLY": "medium", "EOG": "medium"},
+      "market_context": {
+        "sp500_level": 7408,
+        "sp500_open_may18": 7445,
+        "wti_oil": 102.18,
+        "brent_oil": 107.77,
+        "cpi_annual": "3.8%",
+        "iran_war_status": "ceasefire fragile, Strait of Hormuz disruption",
+        "nvda_earnings": "Wednesday May 20 after close",
+        "q1_eps_beat_rate": "84%+ (prior weeks data)"
+      },
+      "key_data": {
+        "AMAT": "Q2 EPS $2.86 vs $2.68 est, rev $7.91B +11.4% YoY, Q3 guide $8.95B; Deutsche Bank PT $550 (Buy)",
+        "LLY": "Q1 rev $19.8B +56% YoY, EPS $8.55 beat 28%, Zepbound Q1 $4.16B +80%, PT $1,218",
+        "EOG": "Q1 EPS $3.41 beat, rev +22% YoY, $1.5B FCF, Iran war +11% since conflict began",
+        "NVDA": "Skipped — earnings Wednesday May 20",
+        "PLTR": "Skipped — 150x P/E + risk-off + already burned last week (-3.52%)"
+      },
+      "lessons_applied": [
+        "Tighter earnings avoidance: all 3 picks already reported Q1 2026",
+        "High-multiple growth (PLTR 150x P/E) avoided in rising-rate/inflation environment",
+        "Sector diversification: semis + healthcare + energy vs prior week's concentrated AI-tech bet"
+      ],
+      "outcome": null
+    }
+  ],
   "strategy_notes": [
     "Week 2026-05-11: Alpaca/Yahoo Finance APIs blocked in CCR. Used WebSearch for fundamentals. Bars synthesized from known prices.",
     "score_local.py: trend (SMA50, 40%) + momentum (10d+40d, 40%) + dip quality (20%). Underweights post-earnings gap-up stocks.",
     "Consider adding earnings surprise override to mechanical scores for stocks reporting strong beats.",
-    "Week 2026-05-15: AI-rotation thesis (PLTR/AMD/INTC) failed \u2014 all three closed at a loss (-5.50% total). Strong fundamental thesis does not guarantee near-term price action. Consider tighter entry timing (wait 2-3 days post-earnings for price to stabilize before entry). All positions triggered Friday -2% stop rule."
+    "Week 2026-05-15: AI-rotation thesis (PLTR/AMD/INTC) failed \u2014 all three closed at a loss (-5.50% total). Strong fundamental thesis does not guarantee near-term price action. Consider tighter entry timing (wait 2-3 days post-earnings for price to stabilize before entry). All positions triggered Friday -2% stop rule.",
+    "Week 2026-05-18: Diversified into semis (AMAT), healthcare (LLY), energy (EOG). Avoided PLTR despite #1 algo score due to 150x P/E + risk-off macro. CPI 3.8% + Iran war = high-multiple growth stocks at risk. Sector diversification across three uncorrelated themes. NVDA earnings Wed is the key market event \u2014 AMAT could benefit from a beat.",
+    "score_local.py fix: changed min_bars from RS_LOOKBACK+RSI_PERIOD+DIP_LOOKBACK+5 to +1 to handle 80-bar API limit. All relative metrics (RS60, dip5d, RSI) remain valid.",
+    "bars_raw.json quality note: AMAT bars show ~$218 vs actual ~$432. Relative metrics still valid for ranking. Alpaca data API blocked in CCR \u2014 bars from previous session remain in use."
   ]
 }

@@ -38,7 +38,7 @@ def score(bars: dict, benchmark="SPY") -> list:
     for symbol, closes in bars.items():
         if symbol == benchmark:
             continue
-        min_bars = RS_LOOKBACK + RSI_PERIOD + DIP_LOOKBACK + 5
+        min_bars = RS_LOOKBACK + RSI_PERIOD + DIP_LOOKBACK + 1
         if len(closes) < min_bars:
             continue
         try:

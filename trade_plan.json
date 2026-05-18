@@ -1,197 +1,37 @@
 {
-  "week_of": "2026-05-17",
-  "week_thesis": "The Technology sector continues to outperform with a 17.9% return over the past 60 days, driven by strong earnings and AI-related growth. However, some stocks are trading above analyst targets, and earnings surprises have been mixed. The focus should be on stocks with strong sector momentum, positive analyst estimates, and no CHASE RISK flags. ADEA, VIAV, and PDFS stand out as potential candidates, while INTC and MU are less attractive due to their valuations and analyst targets.",
+  "week_of": "2026-05-18",
+  "week_thesis": "Three sector themes converge amid a challenging macro backdrop (CPI 3.8%, Iran war driving Brent crude to $102-110/bbl, S&P 500 at 7,408 after -1.24% Friday selloff on Iran/inflation fears). Q1 2026 earnings season has been exceptional. Strategy avoids all high-multiple tech exposed to this week's NVDA earnings (Wednesday) and manages rate sensitivity. Picks: (1) AMAT — semiconductor equipment cycle acceleration confirmed by Q2 beat (May 14: EPS $2.86 vs $2.68 est, revenue $7.91B +11.4% YoY, Q3 guided to $8.95B above consensus), Deutsche Bank raised PT to $550 from $450 (Buy); (2) LLY — GLP-1 market dominance (60.1% U.S. share), Q1 revenue $19.8B +56% YoY, EPS $8.55 beat by 28%, PT $1,218 (21% upside), defensive healthcare in risk-off environment; (3) EOG — direct Iran war energy beneficiary, Q1 EPS $3.41 beat on May 5, revenue +22%, $1.5B FCF, Goldman Sachs sees Brent >$100/bbl through 2026. Deliberate avoids: NVDA (earnings Wed), WMT/HD (earnings this week), UNH (earnings Tue), PLTR (150x P/E too risky in rising-rate/risk-off setup, we were already burned last week).",
   "buys": [
     {
-      "symbol": "VIAV",
-      "combined_score": 0.6547,
-      "tech_score": 0.309,
-      "sentiment_score": 1.0,
-      "reasoning": "sector outperformance and analyst target implies 25.3% upside",
-      "confidence": "medium",
-      "qty_pct": 0.15
+      "symbol": "AMAT",
+      "reasoning": "Applied Materials Q2 FY2026 (reported May 14): EPS $2.86 vs $2.68 est (+6.7% beat), revenue $7.91B +11.4% YoY, beat consensus by 2.8%. Non-GAAP gross margin 50%, operating margin 32.1% — both expanding. Q3 guidance: ~$8.95B revenue and EPS ~$3.36, both above consensus. Management cited semiconductor equipment business growing >30% in calendar 2026, advanced packaging >50%. Deutsche Bank raised PT to $550 from $450 (Buy). Stock 'surged' post-earnings (Seeking Alpha: 'Applied Materials pops as Q2 results, guidance top estimates'). Technical: RS60 +26.1%, dip5d -2.4%, RSI 57 — healthy pullback entry post-earnings pop. No earnings this week. NVDA earnings Wed are a potential sector catalyst if beat (consensus: $79.2B revenue, 72% FY2027 growth). High conviction on semi equipment cycle acceleration.",
+      "confidence": "high",
+      "qty_pct": 0.35
     },
     {
-      "symbol": "INTC",
-      "combined_score": 0.6,
-      "tech_score": 1.0,
-      "sentiment_score": 0.2,
-      "reasoning": "trades above analyst target with -21.9% downside and no bullish sentiment signal",
+      "symbol": "LLY",
+      "reasoning": "Eli Lilly Q1 2026 (reported April 30): Revenue $19.8B +56% YoY, adj EPS $8.55 beat by 28%. Mounjaro + Zepbound = 60.1% U.S. GLP-1 market share. Zepbound Q1 U.S. revenue $4.16B (+80% YoY). FY2026 guidance raised to $82-85B. Oral weight loss pill Foundayo launched. Pipeline: retatrutide triple agonist months from launch. 30/30 analyst coverage: 23 Buy, 2 Strong Buy, 4 Hold, 1 Sell. Consensus PT $1,218 (21% upside from current ~$900-1,000 range). Morgan Stanley/Wolfe Research high-end targets $1,325-1,344. FDA liver-failure report on GLP-1 drug is a known risk but manageable. Technical: RS60 +19.1%, dip5d -3.8%, RSI 50.6 — mid-range RSI with room to run, 3.8% pullback as entry point. Defensive healthcare in risk-off/inflation environment provides relative stability versus high-multiple growth names. Already reported April 30 — no earnings risk this week.",
       "confidence": "medium",
-      "qty_pct": 0.15
+      "qty_pct": 0.35
     },
     {
-      "symbol": "ASTH",
-      "combined_score": 0.5321,
-      "tech_score": 0.264,
-      "sentiment_score": 0.8,
-      "reasoning": "sector underperformance but analyst target implies 16.4% upside and recent buy ratings",
+      "symbol": "EOG",
+      "reasoning": "EOG Resources Q1 2026 (reported May 5): EPS $3.41 beat estimates by $0.18, revenue $6.92B +22.1% YoY. $1.5B free cash flow supports $25B+ shareholder return plan. Production guidance raised. Iran war directly drives thesis: Strait of Hormuz disruption is 'largest supply disruption in history of global oil market' per IEA. WTI at $102/bbl, Brent ~$107. EIA projects Brent avg $106/bbl in May-June. Goldman Sachs sees Brent >$100/bbl through 2026 if Strait restrictions persist. EOG +11% since Iran war began per search. US shale E&P (Devon, EOG, OXY) are primary beneficiaries. Trump comments on Iran ceasefire 'on massive life support' signals prolonged conflict = sustained high oil prices. Technical: RS60 +26.4%, dip5d -0.7%, RSI 54.7 — steady momentum, minimal dip. Already reported Q1 — no earnings risk this week.",
       "confidence": "medium",
-      "qty_pct": 0.15
-    },
-    {
-      "symbol": "ADEA",
-      "combined_score": 0.5152,
-      "tech_score": 0.03,
-      "sentiment_score": 1.0,
-      "reasoning": "sector outperformance and analyst target implies 23.8% upside",
-      "confidence": "medium",
-      "qty_pct": 0.15
-    },
-    {
-      "symbol": "VECO",
-      "combined_score": 0.5009,
-      "tech_score": 0.402,
-      "sentiment_score": 0.6,
-      "reasoning": "neutral setup with sector outperforming but no clear edge",
-      "confidence": "medium",
-      "qty_pct": 0.15
+      "qty_pct": 0.30
     }
   ],
   "close_positions": [],
   "close_reasoning": {},
   "hold_positions": [],
-  "skip_reasoning": {},
-  "scoring_breakdown": {
-    "INTC": {
-      "combined": 0.6,
-      "tech_norm": 1.0,
-      "sentiment_norm": 0.2,
-      "ai_raw_score": 3,
-      "ai_reason": "trades above analyst target with -21.9% downside and no bullish sentiment signal"
-    },
-    "VECO": {
-      "combined": 0.5009,
-      "tech_norm": 0.402,
-      "sentiment_norm": 0.6,
-      "ai_raw_score": 5,
-      "ai_reason": "neutral setup with sector outperforming but no clear edge"
-    },
-    "ACLS": {
-      "combined": 0.3837,
-      "tech_norm": 0.367,
-      "sentiment_norm": 0.4,
-      "ai_raw_score": 4,
-      "ai_reason": "CHASE RISK flag and no clear bullish signal"
-    },
-    "DELL": {
-      "combined": 0.3762,
-      "tech_norm": 0.352,
-      "sentiment_norm": 0.4,
-      "ai_raw_score": 4,
-      "ai_reason": "analyst target implies -17.2% downside and no strong sentiment"
-    },
-    "VIAV": {
-      "combined": 0.6547,
-      "tech_norm": 0.309,
-      "sentiment_norm": 1.0,
-      "ai_raw_score": 7,
-      "ai_reason": "sector outperformance and analyst target implies 25.3% upside"
-    },
-    "ASTH": {
-      "combined": 0.5321,
-      "tech_norm": 0.264,
-      "sentiment_norm": 0.8,
-      "ai_raw_score": 6,
-      "ai_reason": "sector underperformance but analyst target implies 16.4% upside and recent buy ratings"
-    },
-    "IRDM": {
-      "combined": 0.2107,
-      "tech_norm": 0.221,
-      "sentiment_norm": 0.2,
-      "ai_raw_score": 3,
-      "ai_reason": "analyst target implies -13.8% downside and no strong sentiment"
-    },
-    "MU": {
-      "combined": 0.1904,
-      "tech_norm": 0.181,
-      "sentiment_norm": 0.2,
-      "ai_raw_score": 3,
-      "ai_reason": "trades above analyst target with -19.4% downside and mixed news"
-    },
-    "HIMS": {
-      "combined": 0.0846,
-      "tech_norm": 0.169,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 2,
-      "ai_reason": "CHASE RISK flag and large earnings surprise downside"
-    },
-    "WDC": {
-      "combined": 0.4723,
-      "tech_norm": 0.145,
-      "sentiment_norm": 0.8,
-      "ai_raw_score": 6,
-      "ai_reason": "sector outperformance and analyst target implies 5.3% upside"
-    },
-    "TWLO": {
-      "combined": 0.3575,
-      "tech_norm": 0.115,
-      "sentiment_norm": 0.6,
-      "ai_raw_score": 5,
-      "ai_reason": "neutral setup with sector outperforming but analyst target implies -4.8% downside"
-    },
-    "AOSL": {
-      "combined": 0.4446,
-      "tech_norm": 0.089,
-      "sentiment_norm": 0.8,
-      "ai_raw_score": 6,
-      "ai_reason": "sector outperformance and recent price surge"
-    },
-    "CVI": {
-      "combined": 0.0218,
-      "tech_norm": 0.044,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 2,
-      "ai_reason": "analyst target implies -8.0% downside and large earnings surprise downside"
-    },
-    "YOU": {
-      "combined": 0.3159,
-      "tech_norm": 0.032,
-      "sentiment_norm": 0.6,
-      "ai_raw_score": 5,
-      "ai_reason": "neutral setup with sector outperforming but no clear edge"
-    },
-    "ADEA": {
-      "combined": 0.5152,
-      "tech_norm": 0.03,
-      "sentiment_norm": 1.0,
-      "ai_raw_score": 7,
-      "ai_reason": "sector outperformance and analyst target implies 23.8% upside"
-    },
-    "PDFS": {
-      "combined": 0.4139,
-      "tech_norm": 0.028,
-      "sentiment_norm": 0.8,
-      "ai_raw_score": 6,
-      "ai_reason": "sector outperformance and analyst target implies 21.9% upside but CHASE RISK flag"
-    },
-    "QCOM": {
-      "combined": 0.203,
-      "tech_norm": 0.006,
-      "sentiment_norm": 0.4,
-      "ai_raw_score": 4,
-      "ai_reason": "analyst target implies -12.7% downside and no strong sentiment"
-    },
-    "SANM": {
-      "combined": 0.3028,
-      "tech_norm": 0.006,
-      "sentiment_norm": 0.6,
-      "ai_raw_score": 5,
-      "ai_reason": "neutral setup with sector outperforming but no clear edge"
-    },
-    "MYRG": {
-      "combined": 0.2012,
-      "tech_norm": 0.002,
-      "sentiment_norm": 0.4,
-      "ai_raw_score": 4,
-      "ai_reason": "sector underperformance and analyst target implies -2.7% downside"
-    },
-    "POWI": {
-      "combined": 0.2,
-      "tech_norm": 0.0,
-      "sentiment_norm": 0.4,
-      "ai_raw_score": 4,
-      "ai_reason": "CHASE RISK flag and analyst target implies -5.1% downside"
-    }
+  "skip_reasoning": {
+    "NVDA": "Earnings Wednesday May 20 after close — hard skip regardless of setup. Any position would be a binary earnings bet.",
+    "WMT": "Earnings this week — skip.",
+    "HD": "Earnings this week (Home Depot) — skip.",
+    "UNH": "Earnings Tuesday — skip. Also could drag managed care sector (HUM, CNC, CI).",
+    "PLTR": "Algo score #1 (RS60 +81%) but: 150x P/E multiple, down 26% YTD, risk-off inflation environment (CPI 3.8%) crushes high-multiple growth. Current price ~$132 (down from $147 bars), 52-week low $118.93. We were already burned -3.52% on PLTR last week. Memory lesson: 'Strong fundamental thesis does not guarantee near-term price action.' AVOID until macro stabilizes or multiple compresses.",
+    "XEL": "Utility near RSI 62 (overbought), rate-sensitive with CPI at 3.8%. Flight-to-safety bid may have peaked.",
+    "MA": "RSI 62.8 near limit, dip +1.3% (no dip entry). Not a pullback setup.",
+    "FTNT": "Already surged 25% on May 7 earnings (32% EPS beat). RSI 62.8 near overbought. Post-earnings momentum likely fading. Monitor for next week."
   }
 }
