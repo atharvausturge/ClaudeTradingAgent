@@ -216,6 +216,11 @@
         }
       ],
       "is_friday_close": true
+    },
+    {
+      "time": "2026-05-18T08:44:08.784394-04:00",
+      "portfolio_value": 95378.05,
+      "buying_power": 57240.84
     }
   ],
   "weekly_summaries_new": [
@@ -223,9 +228,21 @@
       "week_of": "2026-05-18",
       "week_end_date": "2026-05-22",
       "thesis": "Three-sector diversification amid risk-off macro (Iran war, CPI 3.8%, Brent crude $102-110/bbl). Avoids earnings events (NVDA Wed, WMT/HD/UNH this week). AMAT: Q2 beat May 14 (EPS +6.7%, rev +11.4% YoY), Q3 guided above consensus, semi equipment >30% growth 2026, Deutsche Bank PT $550. LLY: GLP-1 dominance (60.1% U.S. share), Q1 rev +56%, PT $1,218 (21% upside), already reported April 30. EOG: Iran war energy beneficiary, Q1 beat May 5, $1.5B FCF, oil $102-110/bbl sustained through Q2 per EIA. PLTR avoided despite #1 algo score (150x P/E + risk-off = burned last week already).",
-      "selected_symbols": ["AMAT", "LLY", "EOG"],
-      "allocations": {"AMAT": 0.35, "LLY": 0.35, "EOG": 0.30},
-      "confidence": {"AMAT": "high", "LLY": "medium", "EOG": "medium"},
+      "selected_symbols": [
+        "AMAT",
+        "LLY",
+        "EOG"
+      ],
+      "allocations": {
+        "AMAT": 0.35,
+        "LLY": 0.35,
+        "EOG": 0.3
+      },
+      "confidence": {
+        "AMAT": "high",
+        "LLY": "medium",
+        "EOG": "medium"
+      },
       "market_context": {
         "sp500_level": 7408,
         "sp500_open_may18": 7445,
@@ -240,8 +257,8 @@
         "AMAT": "Q2 EPS $2.86 vs $2.68 est, rev $7.91B +11.4% YoY, Q3 guide $8.95B; Deutsche Bank PT $550 (Buy)",
         "LLY": "Q1 rev $19.8B +56% YoY, EPS $8.55 beat 28%, Zepbound Q1 $4.16B +80%, PT $1,218",
         "EOG": "Q1 EPS $3.41 beat, rev +22% YoY, $1.5B FCF, Iran war +11% since conflict began",
-        "NVDA": "Skipped — earnings Wednesday May 20",
-        "PLTR": "Skipped — 150x P/E + risk-off + already burned last week (-3.52%)"
+        "NVDA": "Skipped \u2014 earnings Wednesday May 20",
+        "PLTR": "Skipped \u2014 150x P/E + risk-off + already burned last week (-3.52%)"
       },
       "lessons_applied": [
         "Tighter earnings avoidance: all 3 picks already reported Q1 2026",
