@@ -66,6 +66,17 @@
       "confidence": "medium",
       "filled": true,
       "backfilled": true
+    },
+    {
+      "time": "2026-05-18T12:39:44.651328-04:00",
+      "action": "BUY",
+      "symbol": "AMAT",
+      "qty": 80,
+      "price": 411.45,
+      "stop_price": 390.56,
+      "reasoning": "Applied Materials Q2 FY2026 (reported May 14): EPS $2.86 vs $2.68 est (+6.7% beat), revenue $7.91B +11.4% YoY, beat consensus by 2.8%. Non-GAAP gross margin 50%, operating margin 32.1% \u2014 both expanding. Q3 guidance: ~$8.95B revenue and EPS ~$3.36, both above consensus. Management cited semiconductor equipment business growing >30% in calendar 2026, advanced packaging >50%. Deutsche Bank raised PT to $550 from $450 (Buy). Stock 'surged' post-earnings (Seeking Alpha: 'Applied Materials pops as Q2 results, guidance top estimates'). Technical: RS60 +26.1%, dip5d -2.4%, RSI 57 \u2014 healthy pullback entry post-earnings pop. No earnings this week. NVDA earnings Wed are a potential sector catalyst if beat (consensus: $79.2B revenue, 72% FY2027 growth). High conviction on semi equipment cycle acceleration.",
+      "confidence": "high",
+      "filled": true
     }
   ],
   "weekly_summaries": [
@@ -166,6 +177,13 @@
       "end_cash": 94501.11,
       "close_trigger": "Friday -2% rule \u2014 all positions below threshold",
       "api_note": "Alpaca API blocked in CCR; last live snapshot 2026-05-13. AMD/INTC P&L estimated from portfolio math."
+    },
+    {
+      "week_of": "2026-05-18",
+      "thesis": "Three sector themes converge amid a challenging macro backdrop (CPI 3.8%, Iran war driving Brent crude to $102-110/bbl, S&P 500 at 7,408 after -1.24% Friday selloff on Iran/inflation fears). Q1 2026 earnings season has been exceptional. Strategy avoids all high-multiple tech exposed to this week's NVDA earnings (Wednesday) and manages rate sensitivity. Picks: (1) AMAT \u2014 semiconductor equipment cycle acceleration confirmed by Q2 beat (May 14: EPS $2.86 vs $2.68 est, revenue $7.91B +11.4% YoY, Q3 guided to $8.95B above consensus), Deutsche Bank raised PT to $550 from $450 (Buy); (2) LLY \u2014 GLP-1 market dominance (60.1% U.S. share), Q1 revenue $19.8B +56% YoY, EPS $8.55 beat by 28%, PT $1,218 (21% upside), defensive healthcare in risk-off environment; (3) EOG \u2014 direct Iran war energy beneficiary, Q1 EPS $3.41 beat on May 5, revenue +22%, $1.5B FCF, Goldman Sachs sees Brent >$100/bbl through 2026. Deliberate avoids: NVDA (earnings Wed), WMT/HD (earnings this week), UNH (earnings Tue), PLTR (150x P/E too risky in rising-rate/risk-off setup, we were already burned last week).",
+      "actions": [
+        "BUY 80 AMAT @ $411.45 | stop $390.56"
+      ]
     }
   ],
   "portfolio_snapshots": [
@@ -257,6 +275,11 @@
       "time": "2026-05-18T08:44:08.784394-04:00",
       "portfolio_value": 95378.05,
       "buying_power": 57240.84
+    },
+    {
+      "time": "2026-05-18T12:39:44.651328-04:00",
+      "portfolio_value": 94619.3,
+      "buying_power": 55479.59
     }
   ],
   "weekly_summaries_new": [
