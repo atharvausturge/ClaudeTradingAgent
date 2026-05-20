@@ -422,5 +422,15 @@
     "score_local.py fix: changed min_bars from RS_LOOKBACK+RSI_PERIOD+DIP_LOOKBACK+5 to +1 to handle 80-bar API limit. All relative metrics (RS60, dip5d, RSI) remain valid.",
     "bars_raw.json quality note: AMAT bars show ~$218 vs actual ~$432. Relative metrics still valid for ranking. Alpaca data API blocked in CCR \u2014 bars from previous session remain in use."
   ],
-  "last_monitor_run": "2026-05-20T12:35:46.706379-04:00"
+  "last_monitor_run": "2026-05-20T12:35:46.706379-04:00",
+  "daily_pnl": [
+    {
+      "date": "2026-05-20",
+      "equity": 97138.17,
+      "daily_pl_dollar": 1085.45,
+      "daily_pl_pct": 1.13,
+      "open_positions": 4,
+      "realized_today_dollar": 0
+    }
+  ]
 }

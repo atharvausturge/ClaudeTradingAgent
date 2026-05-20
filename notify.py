@@ -68,6 +68,51 @@ def friday_summary(portfolio_value, held, closed, weekly_return_pct=None, spy_re
     )
 
 
+def daily_pnl(equity, daily_pl_dollar, daily_pl_pct, positions, realized_today, cash):
+    """Post-close daily snapshot. Green if up on the day, red if down."""
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    date_str = datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d")
+
+    color = 3066993 if daily_pl_dollar >= 0 else 15158332  # green / red
+    arrow = "📈" if daily_pl_dollar >= 0 else "📉"
+
+    description = (
+        f"Equity: **${equity:,.2f}**\n"
+        f"Today: {arrow} **{daily_pl_pct:+.2f}%** (${daily_pl_dollar:+,.2f})"
+    )
+
+    if positions:
+        open_lines = "\n".join(
+            f"• **{p['symbol']}** {p['qty']}sh @ ${p['current_price']:.2f} "
+            f"({p['intraday_pl_pct']:+.2f}%, ${p['intraday_pl_dollar']:+,.2f})"
+            for p in positions
+        )
+    else:
+        open_lines = "No open positions"
+
+    fields = [
+        {"name": f"Open positions ({len(positions)})", "value": open_lines, "inline": False},
+    ]
+
+    if realized_today:
+        closed_lines = "\n".join(
+            f"🔴 **{r['symbol']}** {r['qty']}sh @ ${r['exit_price']:.2f} "
+            f"({r['pl_pct']:+.2f}%, ${r['pl_dollar']:+,.2f})"
+            for r in realized_today
+        )
+        fields.append({"name": "Closed today", "value": closed_lines, "inline": False})
+
+    fields.append({"name": "Cash", "value": f"${cash:,.2f}", "inline": True})
+
+    _send(
+        title=f"📊 DAILY P&L — {date_str}",
+        description=description,
+        color=color,
+        fields=fields,
+    )
+
+
 def midweek_ok(portfolio_value, positions):
     lines = "\n".join([f"• **{p['symbol']}** {p['pl_pct']:+.2f}%" for p in positions]) or "No open positions"
     _send(
