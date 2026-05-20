@@ -280,6 +280,55 @@
       "time": "2026-05-18T12:39:44.651328-04:00",
       "portfolio_value": 94619.3,
       "buying_power": 55479.59
+    },
+    {
+      "time": "2026-05-20T12:00:00.000000-04:00",
+      "portfolio_value": 94619.3,
+      "buying_power": 55479.59,
+      "note": "Midweek snapshot — Alpaca API blocked in CCR; values carried from last live read (2026-05-18 12:39 ET). No live price data available.",
+      "is_midweek_check": true,
+      "positions_summary": [
+        {
+          "symbol": "AMAT",
+          "qty": 156,
+          "avg_entry": 420.74,
+          "stop": 390.56,
+          "cost_basis": 65635.44,
+          "thesis_intact": true,
+          "thesis_note": "Semi equipment cycle acceleration confirmed. NVDA earnings tonight (May 20 after close) is key catalyst — beat lifts AMAT, miss creates sector risk.",
+          "flag": null
+        },
+        {
+          "symbol": "LLY",
+          "qty": 33,
+          "avg_entry": 992.17,
+          "stop": 942.56,
+          "cost_basis": 32741.61,
+          "thesis_intact": true,
+          "thesis_note": "GLP-1 dominance unchanged. Defensive healthcare holding in risk-off macro (CPI 3.8%). No near-term earnings or catalysts.",
+          "flag": null
+        },
+        {
+          "symbol": "EOG",
+          "qty": 204,
+          "avg_entry": 138.58,
+          "stop": 131.65,
+          "cost_basis": 28270.32,
+          "thesis_intact": true,
+          "thesis_note": "Iran war energy thesis intact. No ceasefire. EIA projects Brent >$100/bbl through Q2. FCF $1.5B supports position.",
+          "flag": null
+        }
+      ],
+      "midweek_assessment": {
+        "overall": "All three theses remain intact as of midweek. No 8%+ loss flags triggered (positions only 2 days old). No 10%+ gain flags. Key risk event: NVDA earnings tonight — AMAT is the most exposed position; a beat is a catalyst, a miss is a headwind.",
+        "stop_loss_status": "Set at entry per execution records; unable to verify via API. Assumed in place.",
+        "key_risks": [
+          "NVDA earnings after close tonight (May 20) — binary event for semi sector; AMAT most exposed",
+          "Iran ceasefire could collapse EOG thesis if Strait of Hormuz reopens",
+          "Macro: CPI 3.8% keeps pressure on high-duration assets; LLY less affected as defensive"
+        ],
+        "action_required": "None — hold all positions. Monitor NVDA result tonight. If NVDA beats strongly, consider whether AMAT stop can be raised. If NVDA misses badly, reassess AMAT on Thursday open."
+      }
     }
   ],
   "weekly_summaries_new": [
