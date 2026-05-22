@@ -21,7 +21,7 @@ load_dotenv()
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import GetOrdersRequest, GetCalendarRequest
 
-import notify
+from . import notify
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)

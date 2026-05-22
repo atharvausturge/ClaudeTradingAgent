@@ -15,11 +15,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from groq import Groq
-import notify
+from . import notify
 
 ET = ZoneInfo("America/New_York")
-RESEARCH_FILE = "research_data.json"
-PLAN_FILE = "trade_plan.json"
+RESEARCH_FILE = "data/research_data.json"
+PLAN_FILE = "data/trade_plan.json"
 MEMORY_FILE = "memory.json"
 CONFIG_FILE = "config.json"
 

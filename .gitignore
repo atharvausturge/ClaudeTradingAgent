@@ -2,10 +2,15 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
 .env
-.gitignore
-.venv
 venv/
+.venv/
 env/
-.github
+
+# data/ artifacts that are intentionally regenerated and committed by workflows
+# stay tracked. Ignore only the backup file.
+data/*.bak
+data/memory.json.bak
+
 .gitignore

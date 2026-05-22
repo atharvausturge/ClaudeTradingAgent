@@ -14,7 +14,7 @@ from datetime import datetime
 
 _HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; trading-bot/1.0; +https://github.com)"}
 
-CACHE_FILE = "universe_cache.json"
+CACHE_FILE = "data/universe_cache.json"
 CACHE_TTL_DAYS = 7
 
 _WIKI_INDEXES = [

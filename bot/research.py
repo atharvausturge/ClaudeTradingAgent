@@ -19,12 +19,12 @@ from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
 
 import yfinance as yf
-from universe import get_universe
+from .universe import get_universe
 
 ET = ZoneInfo("America/New_York")
 CONFIG_FILE = "config.json"
 MEMORY_FILE = "memory.json"
-OUTPUT_FILE = "research_data.json"
+OUTPUT_FILE = "data/research_data.json"
 BATCH_SIZE = 100
 RS_LOOKBACK = 60
 DIP_LOOKBACK = 5
@@ -234,7 +234,7 @@ def main():
     top_n = config.get("top_n_candidates", 20)
 
     # --- Step 1: Score entire universe on technicals ---
-    from market_research import get_all_sector_etfs, compute_sector_momentum, enrich_candidate
+    from .market_research import get_all_sector_etfs, compute_sector_momentum, enrich_candidate
     sector_etfs = get_all_sector_etfs()
     print(f"Scanning {len(universe)} stocks + {len(sector_etfs)} sector ETFs...")
     all_symbols = list(set([benchmark] + universe + sector_etfs))
@@ -270,7 +270,7 @@ def main():
 
     # --- Step 1c: Reject overvalued stocks (P/S > 2.5x sector median) ---
     print("Reviewing valuations for top candidates...")
-    from valuation import assess_valuation
+    from .valuation import assess_valuation
     valuation_results = {sym: assess_valuation(sym) for sym in top_candidates}
     valuation_blackout = [sym for sym, v in valuation_results.items() if v["verdict"] == "reject"]
     if valuation_blackout:
@@ -316,7 +316,7 @@ def main():
     news = fetch_alpaca_news(api_key, api_secret, top_candidates, days=5)
 
     # --- Step 3: Fetch Reddit social sentiment for top candidates ---
-    from reddit_sentiment import fetch_reddit_sentiment
+    from .reddit_sentiment import fetch_reddit_sentiment
     print(f"Fetching Reddit sentiment (wsb/stocks/investing/StockMarket) for top {top_n} candidates...")
     reddit = fetch_reddit_sentiment(top_candidates)
 

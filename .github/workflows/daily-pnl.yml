@@ -1,12 +1,12 @@
-name: Wednesday — Midweek Check
+name: Daily P&L
 
 on:
   schedule:
-    - cron: "30 13 * * 3"   # 9:30am ET
+    - cron: "5 21 * * 1-5"   # 4:05 PM ET (standard) / 5:05 PM ET (DST), Mon-Fri
   workflow_dispatch:
 
 jobs:
-  monitor:
+  pnl:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -22,17 +22,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run midweek check
+      - name: Post daily P&L
         env:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: python -m bot.monitor
+        run: python -m bot.daily_pnl
 
       - name: Commit snapshot
         run: |
           git config user.name "Trading Agent"
           git config user.email "trading-agent@github-actions"
           git add memory.json
-          git diff --staged --quiet || git commit -m "Midweek check $(date +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "Daily P&L $(date +%Y-%m-%d)"
           git push

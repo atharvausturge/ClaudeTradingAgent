@@ -18,7 +18,7 @@ from alpaca.trading.enums import OrderSide, TimeInForce
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest, StockLatestBarRequest
 from alpaca.data.timeframe import TimeFrame
-import notify
+from . import notify
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
@@ -26,7 +26,7 @@ log = logging.getLogger(__name__)
 ET = ZoneInfo("America/New_York")
 CONFIG_FILE = "config.json"
 MEMORY_FILE = "memory.json"
-PLAN_FILE = "trade_plan.json"
+PLAN_FILE = "data/trade_plan.json"
 
 
 def load_json(path, default=None):

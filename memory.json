@@ -242,5 +242,15 @@
       "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-05-22T17:00:00.000000-04:00"
+  "last_monitor_run": "2026-05-22T17:00:00.000000-04:00",
+  "daily_pnl": [
+    {
+      "date": "2026-05-22",
+      "equity": 99068.58,
+      "daily_pl_dollar": 963.96,
+      "daily_pl_pct": 0.98,
+      "open_positions": 4,
+      "realized_today_dollar": 0
+    }
+  ]
 }

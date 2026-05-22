@@ -64,17 +64,29 @@ Friday at 3pm: closes any position down more than 2%, holds winners into next we
 ## File Structure
 
 ```
-research.py        # Scans universe, scores stocks, fetches news + sentiment
-analyze.py         # Sends research to Groq AI → writes trade_plan.json
-execute.py         # Reads trade_plan.json, places orders on Alpaca
-monitor.py         # Wed/Fri checks — closes losers, snapshots portfolio
-notify.py          # Discord webhook notifications
-score_local.py     # Pure computation — scores universe from pre-fetched bar data
-universe.py        # 254 large-cap stocks across all S&P 500 sectors
-backtest.py        # 2-year historical backtest
-config.json        # Strategy parameters
-memory.json        # Persistent trade history and weekly summaries
-trade_plan.json    # Current week's AI-generated trade plan
+bot/                       # production code (invoked via `python -m bot.<name>`)
+├── research.py            # Scans universe, scores stocks, fetches news + sentiment
+├── analyze.py             # Sends research to Groq AI → writes data/trade_plan.json
+├── execute.py             # Reads data/trade_plan.json, places orders on Alpaca
+├── monitor.py             # Wed/Fri checks — closes losers, snapshots portfolio
+├── daily_pnl.py           # Mon–Fri post-close daily P&L Discord post
+├── notify.py              # Discord webhook notifications
+├── universe.py            # 254 large-cap stocks across all S&P 500 sectors
+├── valuation.py           # Per-symbol valuation guard
+├── market_research.py     # Sector-ETF momentum + earnings-calendar enrichment
+└── reddit_sentiment.py    # Reddit (wsb/stocks/investing/StockMarket) sentiment
+
+data/                      # generated artifacts (committed by workflows)
+├── research_data.json     # Universe scan output
+├── trade_plan.json        # Current week's AI-generated trade plan
+└── universe_cache.json    # Cached S&P 500 constituents (7-day TTL)
+
+scripts/                   # one-off / dev tools (not run by workflows)
+├── clean_memory.py        # Rebuild memory.json from real Alpaca history
+└── backtest.py            # 2-year historical backtest
+
+config.json                # Strategy parameters
+memory.json                # Persistent trade history, snapshots, daily P&L
 ```
 
 ---
@@ -83,11 +95,11 @@ trade_plan.json    # Current week's AI-generated trade plan
 
 | Workflow | Schedule | Does |
 |----------|----------|------|
-| `monday.yml` | Mon 8:30am ET | Research + AI analysis + execute trades + Discord |
-| `execute-on-push.yml` | On `trade_plan.json` push | Places Alpaca orders + Discord alerts |
-| `wednesday.yml` | Wed 9:30am ET | Midweek position snapshot |
-| `friday.yml` | Fri 3pm ET | Close losers + Discord weekly wrap |
-| `friday-execute-on-push.yml` | On `friday_closes.json` push | Executes Friday closes |
+| `sunday.yml` | Sun 7pm ET | `bot.research` + `bot.analyze` → commits research + trade plan |
+| `monday.yml` | Mon 9:30am ET | `bot.execute` — places Alpaca orders + Discord alerts |
+| `wednesday.yml` | Wed 9:30am ET | `bot.monitor` — midweek snapshot + breakeven stops |
+| `friday.yml` | Fri 3pm ET | `bot.monitor` — close losers + Discord weekly wrap |
+| `daily-pnl.yml` | Mon–Fri 4:05pm ET | `bot.daily_pnl` — post-close P&L embed to Discord |
 
 ---
 
@@ -121,7 +133,7 @@ Go to **Settings → Secrets → Actions** and add:
 
 ### 4. Run a backtest
 ```bash
-python backtest.py
+python scripts/backtest.py
 ```
 
 ### 5. Trigger a manual test run
