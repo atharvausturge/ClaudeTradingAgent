@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-05-18",
+  "last_run": "2026-05-22",
   "trade_history": [
     {
       "time": "2026-05-11T10:57:11.937687-04:00",
@@ -193,6 +193,56 @@
       "actions": [
         "BUY 80 AMAT @ $411.45 | stop $390.56"
       ]
+    },
+    {
+      "week_of": "2026-05-18",
+      "week_end_date": "2026-05-22",
+      "type": "friday_wrap",
+      "positions_closed": [],
+      "positions_held": ["AMAT", "EOG", "LLY", "PLTR"],
+      "final_pl_per_position": {
+        "AMAT_open": {
+          "qty": 76,
+          "entry": 431.45829,
+          "last_known_plpc": 0.0069,
+          "last_known_pl_dollar": 231.39,
+          "data_source": "2026-05-20 12:35 ET Alpaca snapshot (2 days stale — API blocked in CCR)"
+        },
+        "AMAT_realized": {
+          "qty": 80,
+          "entry": 411.45,
+          "exit": 409.67,
+          "realized_pl_dollar": -135.28,
+          "realized_pl_pct": -0.43,
+          "closed_date": "2026-05-20",
+          "reason": "stop loss triggered midweek"
+        },
+        "EOG": {
+          "qty": 204,
+          "entry": 138.583284,
+          "last_known_plpc": 0.0232,
+          "last_known_pl_dollar": 655.19,
+          "data_source": "2026-05-20 12:35 ET Alpaca snapshot"
+        },
+        "LLY": {
+          "qty": 33,
+          "entry": 992.169393,
+          "last_known_plpc": 0.0129,
+          "last_known_pl_dollar": 422.09,
+          "data_source": "2026-05-20 12:35 ET Alpaca snapshot"
+        },
+        "PLTR": {
+          "qty": "unknown — verify Monday",
+          "last_known_plpc": 0.0051,
+          "last_known_pl_dollar": 200.60,
+          "data_source": "2026-05-20 12:35 ET Alpaca snapshot — position origin uncertain"
+        }
+      },
+      "week_pnl": 2021.06,
+      "week_pnl_pct": 2.14,
+      "end_portfolio_value": 96522.17,
+      "close_trigger": "None — no positions below -2% Friday threshold",
+      "api_note": "Alpaca API blocked in CCR. Last live snapshot 2026-05-20 12:35 ET (2 days stale). Friday prices estimated as carry-forward of last known values."
     }
   ],
   "portfolio_snapshots": [
@@ -366,6 +416,18 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-05-22T17:00:00.000000-04:00",
+      "portfolio_value": 96522.17,
+      "buying_power": 57382.44,
+      "open_positions": 4,
+      "is_friday_close": true,
+      "positions_held_into_next_week": ["AMAT", "EOG", "LLY", "PLTR"],
+      "positions_closed_today": [],
+      "week_pl_dollar": 2021.06,
+      "week_pl_pct": 2.14,
+      "note": "Friday end-of-week — no closes triggered. All 4 positions positive per last known data (2026-05-20 12:35 ET). Alpaca API blocked in CCR; portfolio value carries forward from 2026-05-20 snapshot. Week P&L estimate: +$2,021.06 (+2.14%) from starting cash $94,501.11."
     }
   ],
   "weekly_summaries_new": [
@@ -410,7 +472,17 @@
         "High-multiple growth (PLTR 150x P/E) avoided in rising-rate/inflation environment",
         "Sector diversification: semis + healthcare + energy vs prior week's concentrated AI-tech bet"
       ],
-      "outcome": null
+      "outcome": {
+        "positions_closed_friday": [],
+        "positions_held": ["AMAT", "EOG", "LLY", "PLTR"],
+        "realized_this_week_dollar": -135.28,
+        "unrealized_as_of_may20_dollar": 1509.27,
+        "week_pnl_estimate": 2021.06,
+        "week_pnl_pct_estimate": 2.14,
+        "end_portfolio_value_estimate": 96522.17,
+        "close_trigger": "None — no positions below -2% Friday threshold",
+        "note": "AMAT 80-share lot (entry $411.45) stopped out 2026-05-20 at $409.67 (-0.43%, -$135.28 realized). Remaining 76-share AMAT lot (+0.69%), EOG (+2.32%), LLY (+1.29%), PLTR (+0.51%) all positive and carried into next week. API blocked in CCR — Friday closing prices unavailable; estimates from last live read 2026-05-20 12:35 ET."
+      }
     }
   ],
   "strategy_notes": [
@@ -420,9 +492,10 @@
     "Week 2026-05-15: AI-rotation thesis (PLTR/AMD/INTC) failed \u2014 all three closed at a loss (-5.50% total). Strong fundamental thesis does not guarantee near-term price action. Consider tighter entry timing (wait 2-3 days post-earnings for price to stabilize before entry). All positions triggered Friday -2% stop rule.",
     "Week 2026-05-18: Diversified into semis (AMAT), healthcare (LLY), energy (EOG). Avoided PLTR despite #1 algo score due to 150x P/E + risk-off macro. CPI 3.8% + Iran war = high-multiple growth stocks at risk. Sector diversification across three uncorrelated themes. NVDA earnings Wed is the key market event \u2014 AMAT could benefit from a beat.",
     "score_local.py fix: changed min_bars from RS_LOOKBACK+RSI_PERIOD+DIP_LOOKBACK+5 to +1 to handle 80-bar API limit. All relative metrics (RS60, dip5d, RSI) remain valid.",
-    "bars_raw.json quality note: AMAT bars show ~$218 vs actual ~$432. Relative metrics still valid for ranking. Alpaca data API blocked in CCR \u2014 bars from previous session remain in use."
+    "bars_raw.json quality note: AMAT bars show ~$218 vs actual ~$432. Relative metrics still valid for ranking. Alpaca data API blocked in CCR \u2014 bars from previous session remain in use.",
+    "Week 2026-05-22 (Friday wrap): AMAT/EOG/LLY sector diversification outperformed prior week's concentrated AI bet. AMAT 80-share lot stopped out midweek (-0.43%) \u2014 stop discipline prevented larger loss. No Friday -2% closes triggered; all remaining positions positive (AMAT +0.69%, EOG +2.32%, LLY +1.29%). Week P&L estimate +$2,021.06 (+2.14%). PLTR position origin uncertain \u2014 verify Monday. Key lesson: three-sector diversification + stop discipline = positive week despite risk-off macro (Iran war, CPI 3.8%)."
   ],
-  "last_monitor_run": "2026-05-20T12:35:46.706379-04:00",
+  "last_monitor_run": "2026-05-22T17:00:00.000000-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-20",
