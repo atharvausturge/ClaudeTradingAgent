@@ -11,6 +11,9 @@ import re
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from groq import Groq
 import notify
 

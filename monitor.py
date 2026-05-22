@@ -9,6 +9,9 @@ import logging
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import StopOrderRequest, GetOrdersRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
