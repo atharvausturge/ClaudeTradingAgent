@@ -1,158 +1,43 @@
 {
-  "generated_at": "2026-05-22T18:14:00.820212-04:00",
-  "universe_size": 254,
-  "stocks_passing_filter": 64,
+  "generated_at": "2026-05-24T19:53:09.229716-04:00",
+  "universe_size": 1506,
+  "stocks_passing_filter": 406,
   "account": {
-    "portfolio_value": 99081.68,
-    "buying_power": 59941.95,
+    "portfolio_value": 99355.91,
+    "buying_power": 60216.18,
     "cash": -39139.73
   },
   "current_positions": {
     "AMAT": {
       "qty": 80.0,
       "avg_entry_price": 421.197628,
-      "current_price": 431.3349,
-      "unrealized_pl": 810.98176,
-      "unrealized_pl_pct": 2.41
+      "current_price": 432.16,
+      "unrealized_pl": 876.98976,
+      "unrealized_pl_pct": 2.6
     },
     "EOG": {
       "qty": 204.0,
       "avg_entry_price": 138.583284,
-      "current_price": 141.2,
-      "unrealized_pl": 533.810064,
-      "unrealized_pl_pct": 1.89
+      "current_price": 141.22,
+      "unrealized_pl": 537.890064,
+      "unrealized_pl_pct": 1.9
     },
     "LLY": {
       "qty": 33.0,
       "avg_entry_price": 992.169394,
-      "current_price": 1064.3,
-      "unrealized_pl": 2380.309998,
-      "unrealized_pl_pct": 7.27
+      "current_price": 1065.0,
+      "unrealized_pl": 2403.409998,
+      "unrealized_pl_pct": 7.34
     },
     "PLTR": {
       "qty": 292.0,
       "avg_entry_price": 135.083024,
-      "current_price": 136.26,
-      "unrealized_pl": 343.676992,
-      "unrealized_pl_pct": 0.87
+      "current_price": 136.88,
+      "unrealized_pl": 524.716992,
+      "unrealized_pl_pct": 1.33
     }
   },
-  "recent_weekly_summaries": [
-    {
-      "week_of": "2026-05-11",
-      "thesis": "The S&P 500 has posted 6 consecutive winning weeks (now at 7,399) with Q1 2026 earnings season producing an 84% EPS beat rate and 27.7% blended growth \u2014 the strongest since Q2 2021. A key regime shift is underway: 'AI changing of the guard' per CNBC (May 8) as AI chip spending rotates from Nvidia to AMD, Intel, and Micron on data center CPU/GPU buildout. AI capex projected at $571B in 2026. Three catalysts align: (1) PLTR Q1 beat (85% revenue growth, US commercial +133%, FY guidance raised to 71% growth); (2) AMD data center momentum ($5.8B, +57% YoY, guided Q2 to $11.2B); (3) INTC secular turnaround (up 430% YoY, surpassed dotcom-era market cap, 5% off recent high). Macro backdrop is risk-on. Only earnings risk in universe this week is AMAT (May 14) \u2014 excluded.",
-      "actions": [
-        "BUY 292 PLTR @ ~$135.05 | stop $128.30 | Palantir reported Q1 2026 on May 4: revenue $1.63B (+85% YoY, beat $1.54B estimate), US commercial $",
-        "BUY 75 AMD @ ~$458.77 | stop $435.83 | AMD reported Q1 2026 on May 5: total revenue $10.3B (+38% YoY, beat), data center $5.8B (+57% YoY). ",
-        "BUY 195 INTC @ ~$126.31 | stop $119.99 | Intel up 430% over past year, surpassed dotcom-era market cap (~$550B), +33% in early May, 13% singl"
-      ]
-    },
-    {
-      "week_of": "2026-05-15",
-      "week_end_date": "2026-05-15",
-      "thesis": "Week of 2026-05-11: AI-rotation thesis (PLTR/AMD/INTC) did not play out. All three positions declined through the -2% Friday close threshold. Broad-market AI chip trade underperformed; PLTR confirmed -3.52% by May 13. Full exit on Friday. Clean cash reset into next week.",
-      "positions_closed": [
-        "PLTR",
-        "AMD",
-        "INTC"
-      ],
-      "positions_held": [],
-      "final_pl_per_position": {
-        "PLTR": {
-          "entry": 135.05,
-          "qty": 292,
-          "cost_basis": 39434.6,
-          "unrealized_plpc": -0.0352,
-          "unrealized_pl_dollar": -1387.91,
-          "data_source": "confirmed \u2014 2026-05-13 portfolio snapshot"
-        },
-        "AMD": {
-          "entry": 458.77,
-          "qty": 75,
-          "cost_basis": 34407.75,
-          "unrealized_plpc": -0.0696,
-          "unrealized_pl_dollar": -2395.79,
-          "data_source": "estimated \u2014 derived from portfolio residual after PLTR confirmed loss"
-        },
-        "INTC": {
-          "entry": 126.31,
-          "qty": 195,
-          "cost_basis": 24630.45,
-          "unrealized_plpc": -0.0696,
-          "unrealized_pl_dollar": -1715.0,
-          "data_source": "estimated \u2014 derived from portfolio residual after PLTR confirmed loss"
-        }
-      },
-      "week_pnl": -5498.7,
-      "week_pnl_pct": -5.5,
-      "end_portfolio_value": 94501.11,
-      "end_cash": 94501.11,
-      "close_trigger": "Friday -2% rule \u2014 all positions below threshold",
-      "api_note": "Alpaca API blocked in CCR; last live snapshot 2026-05-13. AMD/INTC P&L estimated from portfolio math."
-    },
-    {
-      "week_of": "2026-05-18",
-      "thesis": "Three sector themes converge amid a challenging macro backdrop (CPI 3.8%, Iran war driving Brent crude to $102-110/bbl, S&P 500 at 7,408 after -1.24% Friday selloff on Iran/inflation fears). Q1 2026 earnings season has been exceptional. Strategy avoids all high-multiple tech exposed to this week's NVDA earnings (Wednesday) and manages rate sensitivity. Picks: (1) AMAT \u2014 semiconductor equipment cycle acceleration confirmed by Q2 beat (May 14: EPS $2.86 vs $2.68 est, revenue $7.91B +11.4% YoY, Q3 guided to $8.95B above consensus), Deutsche Bank raised PT to $550 from $450 (Buy); (2) LLY \u2014 GLP-1 market dominance (60.1% U.S. share), Q1 revenue $19.8B +56% YoY, EPS $8.55 beat by 28%, PT $1,218 (21% upside), defensive healthcare in risk-off environment; (3) EOG \u2014 direct Iran war energy beneficiary, Q1 EPS $3.41 beat on May 5, revenue +22%, $1.5B FCF, Goldman Sachs sees Brent >$100/bbl through 2026. Deliberate avoids: NVDA (earnings Wed), WMT/HD (earnings this week), UNH (earnings Tue), PLTR (150x P/E too risky in rising-rate/risk-off setup, we were already burned last week).",
-      "actions": [
-        "BUY 80 AMAT @ $411.45 | stop $390.56"
-      ]
-    },
-    {
-      "week_of": "2026-05-18",
-      "week_end_date": "2026-05-22",
-      "type": "friday_wrap",
-      "positions_closed": [],
-      "positions_held": [
-        "AMAT",
-        "EOG",
-        "LLY",
-        "PLTR"
-      ],
-      "final_pl_per_position": {
-        "AMAT_open": {
-          "qty": 76,
-          "entry": 431.45829,
-          "last_known_plpc": 0.0069,
-          "last_known_pl_dollar": 231.39,
-          "data_source": "2026-05-20 12:35 ET Alpaca snapshot (2 days stale \u2014 API blocked in CCR)"
-        },
-        "AMAT_realized": {
-          "qty": 80,
-          "entry": 411.45,
-          "exit": 409.67,
-          "realized_pl_dollar": -135.28,
-          "realized_pl_pct": -0.43,
-          "closed_date": "2026-05-20",
-          "reason": "stop loss triggered midweek"
-        },
-        "EOG": {
-          "qty": 204,
-          "entry": 138.583284,
-          "last_known_plpc": 0.0232,
-          "last_known_pl_dollar": 655.19,
-          "data_source": "2026-05-20 12:35 ET Alpaca snapshot"
-        },
-        "LLY": {
-          "qty": 33,
-          "entry": 992.169393,
-          "last_known_plpc": 0.0129,
-          "last_known_pl_dollar": 422.09,
-          "data_source": "2026-05-20 12:35 ET Alpaca snapshot"
-        },
-        "PLTR": {
-          "qty": "unknown \u2014 verify Monday",
-          "last_known_plpc": 0.0051,
-          "last_known_pl_dollar": 200.6,
-          "data_source": "2026-05-20 12:35 ET Alpaca snapshot \u2014 position origin uncertain"
-        }
-      },
-      "week_pnl": 2021.06,
-      "week_pnl_pct": 2.14,
-      "end_portfolio_value": 96522.17,
-      "close_trigger": "None \u2014 no positions below -2% Friday threshold",
-      "api_note": "Alpaca API blocked in CCR. Last live snapshot 2026-05-20 12:35 ET (2 days stale). Friday prices estimated as carry-forward of last known values."
-    }
-  ],
+  "recent_weekly_summaries": [],
   "sector_momentum": {
     "XLK": {
       "return_60d_pct": 30.0,
@@ -200,6 +85,390 @@
     }
   },
   "top_candidates": {
+    "FLEX": {
+      "technicals": {
+        "score": 0.3934,
+        "rs_60d": 101.51,
+        "dip_5d": 2.11,
+        "rsi": 66.2,
+        "price": 132.47
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 1.74,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.29,
+        "reason": "P/S 1.7 = 0.3x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 21.31,
+        "sector_return_60d_pct": 30.0,
+        "analyst": {
+          "mean_target": 159.0,
+          "pct_vs_current": 20.03,
+          "analyst_count": 9,
+          "high_target": 180.0,
+          "low_target": 80.0
+        },
+        "earnings": {
+          "days_since": 19,
+          "surprise_pct": 6.07,
+          "chase_risk": false
+        }
+      },
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "ASTH": {
+      "technicals": {
+        "score": 0.3273,
+        "rs_60d": 77.48,
+        "dip_5d": -2.9,
+        "rsi": 61.4,
+        "price": 37.85
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 0.53,
+        "sector": "Healthcare",
+        "sector_median": 1.8,
+        "ratio": 0.3,
+        "reason": "P/S 0.5 = 0.3x Healthcare median 1.8"
+      },
+      "market_context": {
+        "sector": "Healthcare",
+        "sector_etf": "XLV",
+        "sector_vs_spy_60d_pct": -15.13,
+        "sector_return_60d_pct": -6.44,
+        "analyst": {
+          "mean_target": 44.56,
+          "pct_vs_current": 17.72,
+          "analyst_count": 9,
+          "high_target": 50.0,
+          "low_target": 37.0
+        },
+        "earnings": {
+          "days_since": 17,
+          "surprise_pct": 13.85,
+          "chase_risk": false
+        }
+      },
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "AOSL": {
+      "technicals": {
+        "score": 0.3099,
+        "rs_60d": 89.88,
+        "dip_5d": 8.27,
+        "rsi": 57.3,
+        "price": 41.72
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 1.82,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.3,
+        "reason": "P/S 1.8 = 0.3x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 21.31,
+        "sector_return_60d_pct": 30.0,
+        "analyst": {
+          "mean_target": 36.67,
+          "pct_vs_current": -12.11,
+          "analyst_count": 3,
+          "high_target": 50.0,
+          "low_target": 22.0
+        },
+        "earnings": {
+          "days_since": 18,
+          "surprise_pct": 22.22,
+          "chase_risk": false
+        }
+      },
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "VECO": {
+      "technicals": {
+        "score": 0.3026,
+        "rs_60d": 86.17,
+        "dip_5d": 7.01,
+        "rsi": 64.3,
+        "price": 59.55
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 5.55,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.92,
+        "reason": "P/S 5.5 = 0.9x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 21.31,
+        "sector_return_60d_pct": 30.0,
+        "analyst": {
+          "mean_target": 60.33,
+          "pct_vs_current": 1.32,
+          "analyst_count": 3,
+          "high_target": 66.0,
+          "low_target": 55.0
+        },
+        "earnings": {
+          "days_since": 19,
+          "surprise_pct": -39.16,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "Barclays Maintains Equal-Weight on Veeco Instruments, Raises Price Target to $55",
+          "summary": "",
+          "published": "2026-05-19T12:47:49Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "ACLS": {
+      "technicals": {
+        "score": 0.2812,
+        "rs_60d": 81.28,
+        "dip_5d": 7.32,
+        "rsi": 61.1,
+        "price": 156.94
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 5.71,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.95,
+        "reason": "P/S 5.7 = 1.0x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 21.31,
+        "sector_return_60d_pct": 30.0,
+        "analyst": {
+          "mean_target": 161.0,
+          "pct_vs_current": 2.59,
+          "analyst_count": 3,
+          "high_target": 180.0,
+          "low_target": 130.0
+        },
+        "earnings": {
+          "days_since": 17,
+          "surprise_pct": 1.41,
+          "chase_risk": false
+        }
+      },
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "EXTR": {
+      "technicals": {
+        "score": 0.2606,
+        "rs_60d": 74.42,
+        "dip_5d": 6.18,
+        "rsi": 71.9,
+        "price": 25.6
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 2.67,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.45,
+        "reason": "P/S 2.7 = 0.4x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 21.31,
+        "sector_return_60d_pct": 30.0,
+        "analyst": {
+          "mean_target": 26.06,
+          "pct_vs_current": 1.81,
+          "analyst_count": 8,
+          "high_target": 29.0,
+          "low_target": 22.5
+        },
+        "earnings": {
+          "days_since": 25,
+          "surprise_pct": 9.57,
+          "chase_risk": false
+        }
+      },
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "VIAV": {
+      "technicals": {
+        "score": 0.2347,
+        "rs_60d": 57.95,
+        "dip_5d": -0.48,
+        "rsi": 53.4,
+        "price": 49.51
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 8.94,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 1.49,
+        "reason": "P/S 8.9 = 1.5x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 21.31,
+        "sector_return_60d_pct": 30.0,
+        "analyst": {
+          "mean_target": 64.43,
+          "pct_vs_current": 30.13,
+          "analyst_count": 7,
+          "high_target": 70.0,
+          "low_target": 60.0
+        },
+        "earnings": {
+          "days_since": 25,
+          "surprise_pct": 17.01,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "12 Information Technology Stocks Moving In Wednesday's Pre-Market Session",
+          "summary": " ",
+          "published": "2026-05-20T12:05:58Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Lowe's, ZTO Express, Viavi Solutions And Other Big Stocks Moving Lower In Wednesday's Pre-Market Session",
+          "summary": "US stock futures higher, Lowe&#39;s shares fall after reporting earnings. Other stocks declining in pre-market trading. Photo via Shutterstock",
+          "published": "2026-05-20T12:05:08Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Reported Earlier, VIAVI Solutions Prices Public Offering Of 11,111,111 Common Shares At $45.00 Each, Raising ~$500M To Repay Term Loan B",
+          "summary": "",
+          "published": "2026-05-20T06:47:25Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "VIAVI Announces ~$500M Public Offering",
+          "summary": "",
+          "published": "2026-05-19T20:13:41Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "MYRG": {
+      "technicals": {
+        "score": 0.2315,
+        "rs_60d": 56.85,
+        "dip_5d": -0.68,
+        "rsi": 62.4,
+        "price": 446.9
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 1.82,
+        "sector": "Industrials",
+        "sector_median": 1.8,
+        "ratio": 1.01,
+        "reason": "P/S 1.8 = 1.0x Industrials median 1.8"
+      },
+      "market_context": {
+        "sector": "Industrials",
+        "sector_etf": "XLI",
+        "sector_vs_spy_60d_pct": -11.73,
+        "sector_return_60d_pct": -3.03,
+        "analyst": {
+          "mean_target": 455.0,
+          "pct_vs_current": 1.81,
+          "analyst_count": 6,
+          "high_target": null,
+          "low_target": 295.0
+        },
+        "earnings": {
+          "days_since": 25,
+          "surprise_pct": 45.65,
+          "chase_risk": false
+        }
+      },
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
     "ON": {
       "technicals": {
         "score": 0.2273,
@@ -229,8 +498,9 @@
           "low_target": 68.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 20,
+          "surprise_pct": -121.28,
+          "chase_risk": false
         }
       },
       "news": [
@@ -256,335 +526,21 @@
         "top_posts": []
       }
     },
-    "UNH": {
+    "WDC": {
       "technicals": {
-        "score": 0.0991,
-        "rs_60d": 23.77,
-        "dip_5d": -0.68,
-        "rsi": 67.8,
-        "price": 388.47
+        "score": 0.2243,
+        "rs_60d": 64.45,
+        "dip_5d": 5.58,
+        "rsi": 63.6,
+        "price": 484.28
       },
       "valuation": {
         "verdict": "pass",
-        "ps": 0.78,
-        "sector": "Healthcare",
-        "sector_median": 1.8,
-        "ratio": 0.44,
-        "reason": "P/S 0.8 = 0.4x Healthcare median 1.8"
-      },
-      "market_context": {
-        "sector": "Healthcare",
-        "sector_etf": "XLV",
-        "sector_vs_spy_60d_pct": -15.13,
-        "sector_return_60d_pct": -6.44,
-        "analyst": {
-          "mean_target": 390.35,
-          "pct_vs_current": 0.48,
-          "analyst_count": 26,
-          "high_target": 444.0,
-          "low_target": 287.0
-        },
-        "earnings": {
-          "days_since": null,
-          "surprise_pct": null
-        }
-      },
-      "news": [
-        {
-          "headline": "UBS Maintains Buy on UnitedHealth Group, Raises Price Target to $460",
-          "summary": "",
-          "published": "2026-05-22T15:34:32Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Mizuho Maintains Outperform on UnitedHealth Group, Raises Price Target to $440",
-          "summary": "",
-          "published": "2026-05-20T13:13:06Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Following Buffett: Greg Abel Cuts Berkshire Holdings Dating Back To 2011  \u2014 But The Big Names Stay Put",
-          "summary": "Berkshire Hathaway changed its holdings in the first quarter, but its top 10 stocks look the same from the fourth quarter.",
-          "published": "2026-05-18T20:38:10Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Why Is UnitedHealth Stock Trading Lower On Monday?",
-          "summary": "Berkshire exits UnitedHealth stake as insurer expands AI use across claims, operations and employee training.",
-          "published": "2026-05-18T13:15:24Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Stock Market Today: Dow, S&P 500, Nasdaq Futures Drop After UAE Nuclear Plant Strike\u2014 Regeneron Pharma, NextNRG, ServiceNow In Focus (UPDATED)",
-          "summary": "Editor\u2019s note: The future prices of benchmark tracking ETFs, and the headline were updated in the story.",
-          "published": "2026-05-18T12:26:41Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "UnitedHealth, Regeneron Pharmaceuticals And Other Big Stocks Moving Lower In Monday's Pre-Market Session",
-          "summary": "U.S. stock futures were lower this morning, with the Nasdaq futures falling around 100 points on Monday.",
-          "published": "2026-05-18T12:02:08Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Market-Moving News for May 18th",
-          "summary": "",
-          "published": "2026-05-18T11:16:47Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 1,
-        "bull_pct": 0.0,
-        "bear_pct": 100.0,
-        "neutral_count": 0,
-        "avg_upvote_ratio": 0.84,
-        "subreddit_breakdown": {
-          "wallstreetbets": 1
-        },
-        "overall": "thin_data",
-        "top_posts": [
-          {
-            "title": "Space and value regard",
-            "subreddit": "wallstreetbets",
-            "score": 8,
-            "upvote_ratio": 0.84,
-            "num_comments": 4
-          }
-        ]
-      }
-    },
-    "APA": {
-      "technicals": {
-        "score": 0.0964,
-        "rs_60d": 19.06,
-        "dip_5d": -3.36,
-        "rsi": 51.1,
-        "price": 38.8
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 1.64,
-        "sector": "Energy",
-        "sector_median": 1.2,
-        "ratio": 1.37,
-        "reason": "P/S 1.6 = 1.4x Energy median 1.2"
-      },
-      "market_context": {
-        "sector": "Energy",
-        "sector_etf": "XLE",
-        "sector_vs_spy_60d_pct": -2.31,
-        "sector_return_60d_pct": 6.38,
-        "analyst": {
-          "mean_target": 42.42,
-          "pct_vs_current": 9.34,
-          "analyst_count": 26,
-          "high_target": 62.0,
-          "low_target": 32.0
-        },
-        "earnings": {
-          "days_since": null,
-          "surprise_pct": null
-        }
-      },
-      "news": [
-        {
-          "headline": "Morgan Stanley Maintains Underweight on APA, Raises Price Target to $44",
-          "summary": "",
-          "published": "2026-05-22T13:23:58Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "MPC": {
-      "technicals": {
-        "score": 0.0904,
-        "rs_60d": 19.78,
-        "dip_5d": -1.88,
-        "rsi": 57.0,
-        "price": 254.65
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 0.55,
-        "sector": "Energy",
-        "sector_median": 1.2,
-        "ratio": 0.46,
-        "reason": "P/S 0.5 = 0.5x Energy median 1.2"
-      },
-      "market_context": {
-        "sector": "Energy",
-        "sector_etf": "XLE",
-        "sector_vs_spy_60d_pct": -2.31,
-        "sector_return_60d_pct": 6.38,
-        "analyst": {
-          "mean_target": 258.78,
-          "pct_vs_current": 1.62,
-          "analyst_count": 18,
-          "high_target": 335.0,
-          "low_target": 186.0
-        },
-        "earnings": {
-          "days_since": null,
-          "surprise_pct": null
-        }
-      },
-      "news": [
-        {
-          "headline": "Is Trump Letting The Strait Of Hormuz Stay Closed? US Refiners Aren't Complaining",
-          "summary": "US refined product exports hit a record 7.92 million b/d in the four weeks ending May 8, with refinery utilization at multi-year highs and inventories at five-year lows. The Trump administration is in no rush to reopen Hormuz.",
-          "published": "2026-05-20T13:24:38Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "If You Invested $100 In Marathon Petroleum Stock 10 Years Ago, You Would Have This Much Today",
-          "summary": " ",
-          "published": "2026-05-19T14:15:40Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "APO": {
-      "technicals": {
-        "score": 0.0815,
-        "rs_60d": 14.16,
-        "dip_5d": -4.15,
-        "rsi": 51.6,
-        "price": 128.51
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 2.37,
-        "sector": "Financial Services",
-        "sector_median": 2.5,
-        "ratio": 0.95,
-        "reason": "P/S 2.4 = 0.9x Financial Services median 2.5"
-      },
-      "market_context": {
-        "sector": "Financial Services",
-        "sector_etf": "XLF",
-        "sector_vs_spy_60d_pct": -7.7,
-        "sector_return_60d_pct": 0.99,
-        "analyst": {
-          "mean_target": 149.59,
-          "pct_vs_current": 16.4,
-          "analyst_count": 17,
-          "high_target": 173.0,
-          "low_target": 125.0
-        },
-        "earnings": {
-          "days_since": null,
-          "surprise_pct": null
-        }
-      },
-      "news": [
-        {
-          "headline": "$1000 Invested In Apollo Global Management 10 Years Ago Would Be Worth This Much Today",
-          "summary": " ",
-          "published": "2026-05-22T20:00:43Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Jeffrey Gundlach Says Private Credit's 'Troubled Assets' Trade Is Full Of Contradictions",
-          "summary": "DoubleLine Capital CEO Jeffrey Gundlach criticized the private credit market, questioning the framing of the strategy in a recent post on X.",
-          "published": "2026-05-22T19:38:26Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Bodycote Confirms Receipt Of Proposed Acquisition Offer From Apollo Global Management At \u00a38.85/Share In Cash",
-          "summary": "",
-          "published": "2026-05-22T13:13:14Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "What Retirement Savers Should Examine Before Investing In Private Credit",
-          "summary": " ",
-          "published": "2026-05-21T13:53:17Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Private Equity's NFL Buying Spree Continues With Browns Deal At $9 Billion Value",
-          "summary": "The Cleveland Browns sold 10% of the club at a valuation of more than $9 billion to private equity firm Arctos Partners.",
-          "published": "2026-05-20T18:24:52Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "'Marc Rowan Accused Of Misusing Apollo Resources For Political Work' - FT",
-          "summary": "",
-          "published": "2026-05-20T08:50:59Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Private Equity's Big Four Are Starting To Crack As Exits Slow, Credit Stress Mounts",
-          "summary": "Blackstone, Apollo, Carlyle, and KKR delivered some of their weakest sentiment in years during Q1, S&amp;P Global Market Intelligence stated.",
-          "published": "2026-05-19T20:48:13Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Jim Cramer Says Private Equity Is 'Under Attack Again'",
-          "summary": "Jim Cramer says that private equity is under attack again, as some of the largest firms in the space are all experiencing declines.",
-          "published": "2026-05-19T19:24:47Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "TD Cowen Maintains Buy on Apollo Global Management, Lowers Price Target to $146",
-          "summary": "",
-          "published": "2026-05-18T15:50:13Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 1,
-        "bull_pct": 100.0,
-        "bear_pct": 0.0,
-        "neutral_count": 0,
-        "avg_upvote_ratio": 0.74,
-        "subreddit_breakdown": {
-          "stocks": 1
-        },
-        "overall": "thin_data",
-        "top_posts": [
-          {
-            "title": "Anyone looking at Apollo ($APO) down here at 15x earnings? This private credit divergence is wild.",
-            "subreddit": "stocks",
-            "score": 16,
-            "upvote_ratio": 0.74,
-            "num_comments": 13
-          }
-        ]
-      }
-    },
-    "ORCL": {
-      "technicals": {
-        "score": 0.076,
-        "rs_60d": 23.41,
-        "dip_5d": 2.93,
-        "rsi": 59.4,
-        "price": 192.08
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 8.62,
+        "ps": 14.17,
         "sector": "Technology",
         "sector_median": 6.0,
-        "ratio": 1.44,
-        "reason": "P/S 8.6 = 1.4x Technology median 6.0"
+        "ratio": 2.36,
+        "reason": "P/S 14.2 = 2.4x Technology median 6.0"
       },
       "market_context": {
         "sector": "Technology",
@@ -592,76 +548,41 @@
         "sector_vs_spy_60d_pct": 21.31,
         "sector_return_60d_pct": 30.0,
         "analyst": {
-          "mean_target": 244.03,
-          "pct_vs_current": 27.04,
-          "analyst_count": 39,
-          "high_target": 400.0,
-          "low_target": 155.0
+          "mean_target": 507.61,
+          "pct_vs_current": 4.82,
+          "analyst_count": 23,
+          "high_target": 660.0,
+          "low_target": 360.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 24,
+          "surprise_pct": 283.63,
+          "chase_risk": false
         }
       },
       "news": [
         {
-          "headline": "10 Information Technology Stocks Whale Activity In Today's Session",
-          "summary": " ",
-          "published": "2026-05-22T17:35:42Z",
+          "headline": "What Is Going On With SanDisk Stock On Tuesday?",
+          "summary": "SanDisk (SNDK) stock dips slightly on broader tech capacity fears. See why Citi targets a $2,025 as AI demand drives a 186% flash memory price explosion in 2026.",
+          "published": "2026-05-19T15:54:28Z",
           "source": "benzinga"
         },
         {
-          "headline": "Nvidia Powers 52% Of Sovereign AI Projects \u2014 So Who's Really Sovereign?",
-          "summary": "Nvidia supplies GPUs for 52% of tracked sovereign AI projects worldwide, highlighting the company&#39;s growing role in government-backed AI infrastructure initiatives.",
-          "published": "2026-05-22T17:16:05Z",
+          "headline": "GraniteShares Goes Down The AI Memory Lane, Eyes An Autocallable DRAM ETF",
+          "summary": "GraniteShares&#39; autocallable DRAM ETF plan follows a wave of leveraged DRAM-linked ETFs amid a strong rally in memory chips and tight supply conditions.",
+          "published": "2026-05-19T14:52:50Z",
           "source": "benzinga"
         },
         {
-          "headline": "Meta, Broadcom And Others Launch $125 Million UCLA AI Chip Hub",
-          "summary": "Broadcom, Meta, AMAT &amp; more partner with UCLA for a new $125M AI semiconductor hub to boost research &amp; workforce growth.",
-          "published": "2026-05-22T09:37:08Z",
+          "headline": "Seagate Leads Memory Stocks Lower Following Capacity Warning",
+          "summary": "Seagate Technology is trading lower Tuesday after the CEO raised capacity concerns on meeting AI-driven memory demand, pressuring peers.",
+          "published": "2026-05-19T14:37:46Z",
           "source": "benzinga"
         },
         {
-          "headline": "Microsoft, Oracle Stand To Benefit As AI Compute Becomes The New Oil",
-          "summary": "BNPP maintains positive ratings on MSFT and ORCL as SpaceX S-1 data points to surging AI data center revenue potential.",
-          "published": "2026-05-21T18:14:32Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "A Manufacturing Boom Is Here: Is The Driver Trump's Tariffs Or AI?",
-          "summary": "US manufacturing PMI hit a 48-month high in May. But it&#39;s AI infrastructure capex, not Trump&#39;s tariffs, driving the reshoring boom.",
-          "published": "2026-05-21T18:10:10Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-          "summary": " ",
-          "published": "2026-05-21T17:35:35Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "What Is Going On With Micron Stock On Wednesday?",
-          "summary": "Micron (MU) stock jumps 3% premarket to $721.92. See why Melius raised its target to $1,100 as accelerating AI data center demand drives unprecedented memory chip shortages in 2026.",
-          "published": "2026-05-20T13:03:02Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Trump Invests In Popular Sushi Chain, Despite His Long-Standing Hate Of Eating Raw Fish",
-          "summary": "President Donald Trump disclosed a multimillion-dollar investment in Kura Sushi USA Inc. during the first quarter of 2026.",
-          "published": "2026-05-20T08:36:00Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "The Forgotten AI Trade Is Back: Software ETFs Outpace QQQ As ServiceNow, Salesforce Rebound",
-          "summary": "Software ETFs like IGV and WCLD are outperforming QQQ over the past month as fresh momentum builds around names like NOW and CRM.",
-          "published": "2026-05-19T16:39:45Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Chamath Flags AI Compute Crunch: 8 Stocks To Watch",
-          "summary": "Chamath Palihapitiya calls out the rising cost of LLM tokens. Here are some stocks could benefit from the compute shortage.",
-          "published": "2026-05-19T16:36:48Z",
+          "headline": "Micron, Seagate, Western Digital Sink On Capacity Crunch Fears",
+          "summary": "Micron, Seagate, and Western Digital drop premarket. AI supply chain worries and capacity fears trigger a memory chip stock selloff.",
+          "published": "2026-05-19T10:33:23Z",
           "source": "benzinga"
         }
       ],
@@ -674,379 +595,38 @@
         "top_posts": []
       }
     },
-    "NUE": {
+    "TWLO": {
       "technicals": {
-        "score": 0.0752,
-        "rs_60d": 22.47,
-        "dip_5d": 2.44,
-        "rsi": 65.9,
-        "price": 232.0
+        "score": 0.2163,
+        "rs_60d": 46.63,
+        "dip_5d": -4.96,
+        "rsi": 60.5,
+        "price": 187.88
       },
       "valuation": {
         "verdict": "pass",
-        "ps": 1.55,
-        "sector": "Basic Materials",
-        "sector_median": 1.3,
-        "ratio": 1.19,
-        "reason": "P/S 1.5 = 1.2x Basic Materials median 1.3"
+        "ps": 5.38,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.9,
+        "reason": "P/S 5.4 = 0.9x Technology median 6.0"
       },
       "market_context": {
-        "sector": "Basic Materials",
-        "sector_etf": "XLB",
-        "sector_vs_spy_60d_pct": -14.54,
-        "sector_return_60d_pct": -5.84,
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 21.31,
+        "sector_return_60d_pct": 30.0,
         "analyst": {
-          "mean_target": 240.71,
-          "pct_vs_current": 3.75,
-          "analyst_count": 13,
-          "high_target": 275.0,
-          "low_target": 138.17
+          "mean_target": 195.09,
+          "pct_vs_current": 3.84,
+          "analyst_count": 28,
+          "high_target": 250.0,
+          "low_target": 120.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
-        }
-      },
-      "news": [
-        {
-          "headline": "Barclays Initiates Coverage On Nucor with Overweight Rating, Announces Price Target of $270",
-          "summary": "",
-          "published": "2026-05-22T14:22:21Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "VLO": {
-      "technicals": {
-        "score": 0.0748,
-        "rs_60d": 11.98,
-        "dip_5d": -4.47,
-        "rsi": 51.3,
-        "price": 246.96
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 0.62,
-        "sector": "Energy",
-        "sector_median": 1.2,
-        "ratio": 0.52,
-        "reason": "P/S 0.6 = 0.5x Energy median 1.2"
-      },
-      "market_context": {
-        "sector": "Energy",
-        "sector_etf": "XLE",
-        "sector_vs_spy_60d_pct": -2.31,
-        "sector_return_60d_pct": 6.38,
-        "analyst": {
-          "mean_target": 256.26,
-          "pct_vs_current": 3.77,
-          "analyst_count": 19,
-          "high_target": 300.0,
-          "low_target": 181.0
-        },
-        "earnings": {
-          "days_since": null,
-          "surprise_pct": null
-        }
-      },
-      "news": [
-        {
-          "headline": "Quanta Services Unveils $1 Billion Stock Buyback Program",
-          "summary": "Quanta Services (PWR) announces an 11\u00a2 dividend and a new $1B stock buyback. Get the latest price action and analyst updates here.",
-          "published": "2026-05-22T15:15:02Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Is Trump Letting The Strait Of Hormuz Stay Closed? US Refiners Aren't Complaining",
-          "summary": "US refined product exports hit a record 7.92 million b/d in the four weeks ending May 8, with refinery utilization at multi-year highs and inventories at five-year lows. The Trump administration is in no rush to reopen Hormuz.",
-          "published": "2026-05-20T13:24:38Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "If You Invested $1000 In Valero Energy Stock 15 Years Ago, You Would Have This Much Today",
-          "summary": " ",
-          "published": "2026-05-19T14:00:59Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "CF": {
-      "technicals": {
-        "score": 0.0711,
-        "rs_60d": 13.57,
-        "dip_5d": -2.81,
-        "rsi": 48.2,
-        "price": 121.7
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 2.52,
-        "sector": "Basic Materials",
-        "sector_median": 1.3,
-        "ratio": 1.94,
-        "reason": "P/S 2.5 = 1.9x Basic Materials median 1.3"
-      },
-      "market_context": {
-        "sector": "Basic Materials",
-        "sector_etf": "XLB",
-        "sector_vs_spy_60d_pct": -14.54,
-        "sector_return_60d_pct": -5.84,
-        "analyst": {
-          "mean_target": 125.47,
-          "pct_vs_current": 3.1,
-          "analyst_count": 19,
-          "high_target": 150.0,
-          "low_target": 86.0
-        },
-        "earnings": {
-          "days_since": null,
-          "surprise_pct": null
-        }
-      },
-      "news": [
-        {
-          "headline": "S&P 500 Rebounds Ahead Of Nvidia's Print, Oil Sinks 5% On Iran Truce Hopes: Stock Market Today",
-          "summary": "U.S. stocks halt a three-day slide as oil tumbles 5% on revived Iran truce hopes, easing inflation fears ahead of Nvidia&#39;s results after the close.",
-          "published": "2026-05-20T17:19:12Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "$100 Invested In CF Industries Holdings 10 Years Ago Would Be Worth This Much Today",
-          "summary": " ",
-          "published": "2026-05-19T20:31:36Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "ELV": {
-      "technicals": {
-        "score": 0.0576,
-        "rs_60d": 14.65,
-        "dip_5d": 0.16,
-        "rsi": 67.4,
-        "price": 394.69
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 0.43,
-        "sector": "Healthcare",
-        "sector_median": 1.8,
-        "ratio": 0.24,
-        "reason": "P/S 0.4 = 0.2x Healthcare median 1.8"
-      },
-      "market_context": {
-        "sector": "Healthcare",
-        "sector_etf": "XLV",
-        "sector_vs_spy_60d_pct": -15.13,
-        "sector_return_60d_pct": -6.44,
-        "analyst": {
-          "mean_target": 397.76,
-          "pct_vs_current": 0.78,
-          "analyst_count": 21,
-          "high_target": 498.0,
-          "low_target": 331.0
-        },
-        "earnings": {
-          "days_since": null,
-          "surprise_pct": null
-        }
-      },
-      "news": [
-        {
-          "headline": "UBS Maintains Buy on Elevance Health, Raises Price Target to $460",
-          "summary": "",
-          "published": "2026-05-22T15:40:57Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Mizuho Maintains Outperform on Elevance Health, Raises Price Target to $435",
-          "summary": "",
-          "published": "2026-05-20T13:09:09Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "This CH Robinson Analyst Turns Bullish; Here Are Top 5 Upgrades For Wednesday",
-          "summary": "Top Wall Street analysts upgraded SM Energy, Rubrik Inc, CH Robinson Worldwide Inc, Elevance Health Inc, and Centene Corp. Analysts also have a positive outlook on CHRW stock.",
-          "published": "2026-05-20T12:47:39Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Deutsche Bank Upgrades Elevance Health to Buy, Raises Price Target to $498",
-          "summary": "",
-          "published": "2026-05-20T12:38:09Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "CVS": {
-      "technicals": {
-        "score": 0.0492,
-        "rs_60d": 8.03,
-        "dip_5d": -2.84,
-        "rsi": 65.4,
-        "price": 93.26
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 0.29,
-        "sector": "Healthcare",
-        "sector_median": 1.8,
-        "ratio": 0.16,
-        "reason": "P/S 0.3 = 0.2x Healthcare median 1.8"
-      },
-      "market_context": {
-        "sector": "Healthcare",
-        "sector_etf": "XLV",
-        "sector_vs_spy_60d_pct": -15.13,
-        "sector_return_60d_pct": -6.44,
-        "analyst": {
-          "mean_target": 101.88,
-          "pct_vs_current": 9.25,
-          "analyst_count": 26,
-          "high_target": 140.0,
-          "low_target": 79.0
-        },
-        "earnings": {
-          "days_since": null,
-          "surprise_pct": null
-        }
-      },
-      "news": [
-        {
-          "headline": "Glenview Capital Reduces Holdings Of CVS Health By 3.75M Shares, No Plans For Further Rebalancing",
-          "summary": "",
-          "published": "2026-05-21T20:32:17Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Mizuho Maintains Outperform on CVS Health, Raises Price Target to $110",
-          "summary": "",
-          "published": "2026-05-20T13:04:29Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "MOH": {
-      "technicals": {
-        "score": 0.0458,
-        "rs_60d": 10.84,
-        "dip_5d": -0.4,
-        "rsi": 56.6,
-        "price": 184.14
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 0.22,
-        "sector": "Healthcare",
-        "sector_median": 1.8,
-        "ratio": 0.12,
-        "reason": "P/S 0.2 = 0.1x Healthcare median 1.8"
-      },
-      "market_context": {
-        "sector": "Healthcare",
-        "sector_etf": "XLV",
-        "sector_vs_spy_60d_pct": -15.13,
-        "sector_return_60d_pct": -6.44,
-        "analyst": {
-          "mean_target": 182.88,
-          "pct_vs_current": -0.69,
-          "analyst_count": 16,
-          "high_target": 262.0,
-          "low_target": 129.0
-        },
-        "earnings": {
-          "days_since": null,
-          "surprise_pct": null
-        }
-      },
-      "news": [
-        {
-          "headline": "UBS Maintains Neutral on Molina Healthcare, Raises Price Target to $202",
-          "summary": "",
-          "published": "2026-05-22T15:52:44Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "HAL": {
-      "technicals": {
-        "score": 0.0444,
-        "rs_60d": 6.5,
-        "dip_5d": -3.06,
-        "rsi": 54.7,
-        "price": 41.47
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 1.56,
-        "sector": "Energy",
-        "sector_median": 1.2,
-        "ratio": 1.3,
-        "reason": "P/S 1.6 = 1.3x Energy median 1.2"
-      },
-      "market_context": {
-        "sector": "Energy",
-        "sector_etf": "XLE",
-        "sector_vs_spy_60d_pct": -2.31,
-        "sector_return_60d_pct": 6.38,
-        "analyst": {
-          "mean_target": 43.52,
-          "pct_vs_current": 4.94,
-          "analyst_count": 25,
-          "high_target": 55.0,
-          "low_target": 31.0
-        },
-        "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 24,
+          "surprise_pct": 18.02,
+          "chase_risk": false
         }
       },
       "news": [],
@@ -1059,21 +639,21 @@
         "top_posts": []
       }
     },
-    "SNPS": {
+    "AKAM": {
       "technicals": {
-        "score": 0.0405,
-        "rs_60d": 18.05,
-        "dip_5d": 5.28,
-        "rsi": 68.8,
-        "price": 524.74
+        "score": 0.1779,
+        "rs_60d": 40.94,
+        "dip_5d": -2.35,
+        "rsi": 64.1,
+        "price": 147.23
       },
       "valuation": {
         "verdict": "pass",
-        "ps": 12.55,
+        "ps": 5.02,
         "sector": "Technology",
         "sector_median": 6.0,
-        "ratio": 2.09,
-        "reason": "P/S 12.6 = 2.1x Technology median 6.0"
+        "ratio": 0.84,
+        "reason": "P/S 5.0 = 0.8x Technology median 6.0"
       },
       "market_context": {
         "sector": "Technology",
@@ -1081,139 +661,16 @@
         "sector_vs_spy_60d_pct": 21.31,
         "sector_return_60d_pct": 30.0,
         "analyst": {
-          "mean_target": 537.53,
-          "pct_vs_current": 2.44,
-          "analyst_count": 26,
-          "high_target": 650.0,
-          "low_target": 403.85
+          "mean_target": 157.16,
+          "pct_vs_current": 6.74,
+          "analyst_count": 22,
+          "high_target": 195.0,
+          "low_target": 87.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
-        }
-      },
-      "news": [
-        {
-          "headline": "Meta, Broadcom And Others Launch $125 Million UCLA AI Chip Hub",
-          "summary": "Broadcom, Meta, AMAT &amp; more partner with UCLA for a new $125M AI semiconductor hub to boost research &amp; workforce growth.",
-          "published": "2026-05-22T09:37:08Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Nvidia Just Opened A $1.9 Billion Position In A Critical AI Supplier",
-          "summary": "Nvidia bought a $1.9 billion stake in Coherent, signaling a major bet on the optical networking infrastructure powering AI data centers.",
-          "published": "2026-05-21T16:58:02Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "$100 Invested In Synopsys 10 Years Ago Would Be Worth This Much Today",
-          "summary": " ",
-          "published": "2026-05-19T21:15:57Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "CMI": {
-      "technicals": {
-        "score": 0.0373,
-        "rs_60d": 0.84,
-        "dip_5d": -5.65,
-        "rsi": 44.9,
-        "price": 639.55
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 2.6,
-        "sector": "Industrials",
-        "sector_median": 1.8,
-        "ratio": 1.45,
-        "reason": "P/S 2.6 = 1.4x Industrials median 1.8"
-      },
-      "market_context": {
-        "sector": "Industrials",
-        "sector_etf": "XLI",
-        "sector_vs_spy_60d_pct": -11.73,
-        "sector_return_60d_pct": -3.03,
-        "analyst": {
-          "mean_target": 721.44,
-          "pct_vs_current": 12.8,
-          "analyst_count": 19,
-          "high_target": 845.0,
-          "low_target": 520.0
-        },
-        "earnings": {
-          "days_since": null,
-          "surprise_pct": null
-        }
-      },
-      "news": [
-        {
-          "headline": "A Manufacturing Boom Is Here: Is The Driver Trump's Tariffs Or AI?",
-          "summary": "US manufacturing PMI hit a 48-month high in May. But it&#39;s AI infrastructure capex, not Trump&#39;s tariffs, driving the reshoring boom.",
-          "published": "2026-05-21T18:10:10Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Cummins Says It Is Raising Its 2030 Financial Targets On Strong Demand, Expanded Investments, And Growth Strategy Execution",
-          "summary": "",
-          "published": "2026-05-21T15:32:49Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "C3.ai Announces Delaware Court Award Of $23.3M In Damages In Its Case Against Cummins For Misappropriation Of Trade Secrets",
-          "summary": "",
-          "published": "2026-05-20T10:03:04Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "ZS": {
-      "technicals": {
-        "score": 0.0351,
-        "rs_60d": 15.37,
-        "dip_5d": 4.4,
-        "rsi": 73.2,
-        "price": 182.37
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 9.77,
-        "sector": "Technology",
-        "sector_median": 6.0,
-        "ratio": 1.63,
-        "reason": "P/S 9.8 = 1.6x Technology median 6.0"
-      },
-      "market_context": {
-        "sector": "Technology",
-        "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 21.31,
-        "sector_return_60d_pct": 30.0,
-        "analyst": {
-          "mean_target": 223.39,
-          "pct_vs_current": 22.49,
-          "analyst_count": 45,
-          "high_target": 330.0,
-          "low_target": 155.0
-        },
-        "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 17,
+          "surprise_pct": 0.35,
+          "chase_risk": false
         }
       },
       "news": [
@@ -1224,45 +681,45 @@
           "source": "benzinga"
         },
         {
-          "headline": "Wells Fargo Maintains Overweight on Zscaler, Raises Price Target to $210",
+          "headline": "Reported Earlier, Akamai Prices Upsized $3B 0% Convertible Senior Notes, $1.5B Due 2030 And $1.5B Due 2032, Nets ~$2.96B",
           "summary": "",
-          "published": "2026-05-21T16:12:56Z",
+          "published": "2026-05-20T06:52:13Z",
           "source": "benzinga"
         },
         {
-          "headline": "Zscaler Intends To Acquire Symmetry Systems; Financial Terms Undisclosed",
+          "headline": "Home Depot, Amer Sports And 3 Stocks To Watch Heading Into Tuesday",
+          "summary": "US stock futures up, Home Depot &amp; Amer Sports report earnings. XP Inc. CFO change. Akamai to offer senior notes.",
+          "published": "2026-05-19T05:14:43Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Stock Market Today: Dow Jones, S&P 500 Futures Decline As Inflation Fears Grip Wall Street\u2014 XP, Atmos Energy, GE Aerospace In Focus (UPDATED)",
+          "summary": "(Editor\u2019s note: The future prices of benchmark tracking ETFs and the headline were updated in the story.)\n\n\n\nU.S. stock futures were lower as the Nasdaq 100 index fell on Tuesday following Monday\u2019s mixed close.",
+          "published": "2026-05-19T12:33:36Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "XP Posts Downbeat Q1 Earnings, Joins Akamai Technologies And Other Big Stocks Moving Lower In Tuesday's Pre-Market Session",
+          "summary": "U.S. stock futures lower with Nasdaq down 200 points. XP Inc (XP) falls after reporting lower-than-expected earnings and naming new CFO. Other stocks also trading lower.",
+          "published": "2026-05-19T12:32:07Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Market-Moving News for May 19th",
           "summary": "",
-          "published": "2026-05-21T12:03:59Z",
+          "published": "2026-05-19T11:09:16Z",
           "source": "benzinga"
         },
         {
-          "headline": "Zscaler Collaborates With Global System Integrators To Launch Project AI-Guardian to Help Accelerate Enterprise AI Adoption",
+          "headline": "Akamai Launches AI Brand Presence To Help Firms Optimize Their Content For AI Search And Traffic",
           "summary": "",
-          "published": "2026-05-19T13:42:34Z",
+          "published": "2026-05-19T10:36:35Z",
           "source": "benzinga"
         },
         {
-          "headline": "Nasdaq 100 Drops Over 1%, Oil Tops $106 On Iran Impasse: Stock Market Today",
-          "summary": "Nasdaq sinks 1.1% as AMAT, MU, ORCL and Vertiv crater on AI capex jitters, while WTI tops $106 and the 10-year yield hovers near 4.6% on stalled US-Iran talks.",
-          "published": "2026-05-18T17:07:47Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "B. Riley Securities Upgrades Zscaler to Buy, Lowers Price Target to $225",
+          "headline": "Home Depot, Amer Sports And 3 Stocks To Watch Heading Into Tuesday",
           "summary": "",
-          "published": "2026-05-18T16:23:52Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Nvidia To Rally More Than 33%? Here Are 10 Top Analyst Forecasts For Monday",
-          "summary": "Top analysts changed outlook on top names. Keybanc, Leerink, Wedbush, DA Davidson, Benchmark, Piper Sandler, Morgan Stanley, Evercore raised price targets.",
-          "published": "2026-05-18T13:15:33Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Keybanc Maintains Overweight on Zscaler, Raises Price Target to $190",
-          "summary": "",
-          "published": "2026-05-18T12:13:54Z",
+          "published": "2026-05-19T05:15:46Z",
           "source": "benzinga"
         }
       ],
@@ -1275,77 +732,41 @@
         "top_posts": []
       }
     },
-    "PSX": {
+    "ZD": {
       "technicals": {
-        "score": 0.0328,
-        "rs_60d": 6.44,
-        "dip_5d": -1.17,
-        "rsi": 55.3,
-        "price": 177.69
+        "score": 0.1737,
+        "rs_60d": 52.68,
+        "dip_5d": 6.17,
+        "rsi": 53.1,
+        "price": 43.7
       },
       "valuation": {
         "verdict": "pass",
-        "ps": 0.53,
-        "sector": "Energy",
-        "sector_median": 1.2,
-        "ratio": 0.44,
-        "reason": "P/S 0.5 = 0.4x Energy median 1.2"
+        "ps": 1.11,
+        "sector": "Communication Services",
+        "sector_median": 3.5,
+        "ratio": 0.32,
+        "reason": "P/S 1.1 = 0.3x Communication Services median 3.5"
       },
       "market_context": {
-        "sector": "Energy",
-        "sector_etf": "XLE",
-        "sector_vs_spy_60d_pct": -2.31,
-        "sector_return_60d_pct": 6.38,
+        "sector": "Communication Services",
+        "sector_etf": "XLC",
+        "sector_vs_spy_60d_pct": -10.89,
+        "sector_return_60d_pct": -2.19,
         "analyst": {
-          "mean_target": 187.42,
-          "pct_vs_current": 5.48,
-          "analyst_count": 19,
-          "high_target": 215.0,
-          "low_target": 138.0
+          "mean_target": 48.57,
+          "pct_vs_current": 11.15,
+          "analyst_count": 7,
+          "high_target": 61.0,
+          "low_target": 30.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 17,
+          "surprise_pct": -5.11,
+          "chase_risk": false
         }
       },
-      "news": [
-        {
-          "headline": "Is Trump Letting The Strait Of Hormuz Stay Closed? US Refiners Aren't Complaining",
-          "summary": "US refined product exports hit a record 7.92 million b/d in the four weeks ending May 8, with refinery utilization at multi-year highs and inventories at five-year lows. The Trump administration is in no rush to reopen Hormuz.",
-          "published": "2026-05-20T13:24:38Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "CrowdStrike To Rally Around 7%? Here Are 10 Top Analyst Forecasts For Wednesday",
-          "summary": "\nWall Street analysts changed outlook on top names. Goldman Sachs raised PSX target, BTIG cut DRVN target, Morgan Stanley cut NWL target, B of A raised TK target, Stifel raised PANW target, Mizuho cut HD target, Goldman Sachs raised ENPH target, B of A raised NTAP target.",
-          "published": "2026-05-20T12:31:13Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Goldman Sachs Maintains Neutral on Phillips 66, Raises Price Target to $207",
-          "summary": "",
-          "published": "2026-05-20T09:43:14Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "If You Invested $100 In Phillips 66 Stock 5 Years Ago, You Would Have This Much Today",
-          "summary": " ",
-          "published": "2026-05-18T23:15:21Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Phillips 66 Plans Major Midstream Capacity Expansion",
-          "summary": "Phillips 66 (PSX) shares rise after announcing the Zeus Gas Plant and a new Coastal Bend fractionator to expand Permian gas capacity.",
-          "published": "2026-05-18T13:06:11Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Phillips 66 Moves Forward With Zeus Gas Plant And Third Coastal Bend Fractionator, Expanding Gas Processing Capacity In Permian And NGL Fractionation Capabilities On Gulf Coast",
-          "summary": "",
-          "published": "2026-05-18T11:10:44Z",
-          "source": "benzinga"
-        }
-      ],
+      "news": [],
       "reddit": {
         "mention_count": 0,
         "bull_pct": null,
@@ -1355,47 +776,41 @@
         "top_posts": []
       }
     },
-    "STLD": {
+    "AMN": {
       "technicals": {
-        "score": 0.0323,
-        "rs_60d": 15.59,
-        "dip_5d": 5.01,
-        "rsi": 65.3,
-        "price": 240.03
+        "score": 0.1581,
+        "rs_60d": 33.3,
+        "dip_5d": -4.16,
+        "rsi": 60.6,
+        "price": 27.66
       },
       "valuation": {
         "verdict": "pass",
-        "ps": 1.82,
-        "sector": "Basic Materials",
-        "sector_median": 1.3,
-        "ratio": 1.4,
-        "reason": "P/S 1.8 = 1.4x Basic Materials median 1.3"
+        "ps": 0.31,
+        "sector": "Healthcare",
+        "sector_median": 1.8,
+        "ratio": 0.17,
+        "reason": "P/S 0.3 = 0.2x Healthcare median 1.8"
       },
       "market_context": {
-        "sector": "Basic Materials",
-        "sector_etf": "XLB",
-        "sector_vs_spy_60d_pct": -14.54,
-        "sector_return_60d_pct": -5.84,
+        "sector": "Healthcare",
+        "sector_etf": "XLV",
+        "sector_vs_spy_60d_pct": -15.13,
+        "sector_return_60d_pct": -6.44,
         "analyst": {
-          "mean_target": 238.82,
-          "pct_vs_current": -0.5,
-          "analyst_count": 11,
-          "high_target": 265.0,
-          "low_target": 210.0
+          "mean_target": 28.14,
+          "pct_vs_current": 1.75,
+          "analyst_count": 7,
+          "high_target": 36.0,
+          "low_target": 22.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 17,
+          "surprise_pct": 29.87,
+          "chase_risk": false
         }
       },
-      "news": [
-        {
-          "headline": "Here's How Much $100 Invested In Steel Dynamics 5 Years Ago Would Be Worth Today",
-          "summary": " ",
-          "published": "2026-05-20T22:15:58Z",
-          "source": "benzinga"
-        }
-      ],
+      "news": [],
       "reddit": {
         "mention_count": 0,
         "bull_pct": null,
@@ -1405,21 +820,21 @@
         "top_posts": []
       }
     },
-    "GLW": {
+    "COHU": {
       "technicals": {
-        "score": 0.0293,
-        "rs_60d": 20.34,
-        "dip_5d": 8.68,
-        "rsi": 58.7,
-        "price": 194.05
+        "score": 0.1499,
+        "rs_60d": 45.38,
+        "dip_5d": 5.27,
+        "rsi": 55.2,
+        "price": 46.53
       },
       "valuation": {
         "verdict": "pass",
-        "ps": 10.23,
+        "ps": 4.56,
         "sector": "Technology",
         "sector_median": 6.0,
-        "ratio": 1.71,
-        "reason": "P/S 10.2 = 1.7x Technology median 6.0"
+        "ratio": 0.76,
+        "reason": "P/S 4.6 = 0.8x Technology median 6.0"
       },
       "market_context": {
         "sector": "Technology",
@@ -1427,141 +842,239 @@
         "sector_vs_spy_60d_pct": 21.31,
         "sector_return_60d_pct": 30.0,
         "analyst": {
-          "mean_target": 197.67,
-          "pct_vs_current": 1.86,
-          "analyst_count": 15,
-          "high_target": 230.0,
-          "low_target": 149.0
+          "mean_target": 57.43,
+          "pct_vs_current": 23.42,
+          "analyst_count": 7,
+          "high_target": 65.0,
+          "low_target": 50.0
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 24,
+          "surprise_pct": -68.18,
+          "chase_risk": false
         }
       },
-      "news": [
-        {
-          "headline": "Stock Of The Day: Is It Time To Buy Corning?",
-          "summary": "Corning Incorporated (GLW) shares have dropped back to a former resistance level. There tends to be support at former resistance levels.",
-          "published": "2026-05-19T13:31:10Z",
-          "source": "benzinga"
-        }
-      ],
+      "news": [],
       "reddit": {
-        "mention_count": 1,
-        "bull_pct": 100.0,
-        "bear_pct": 0.0,
-        "neutral_count": 0,
-        "avg_upvote_ratio": 0.85,
-        "subreddit_breakdown": {
-          "StockMarket": 1
-        },
-        "overall": "thin_data",
-        "top_posts": [
-          {
-            "title": "NVIDIA Q1 Revenue and EPS Beat Expectations Gross Margin Hits 75%, Data Center Revenue Reaches All Time High",
-            "subreddit": "StockMarket",
-            "score": 60,
-            "upvote_ratio": 0.85,
-            "num_comments": 21
-          }
-        ]
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
       }
     },
-    "MS": {
+    "ATEN": {
       "technicals": {
-        "score": 0.0222,
-        "rs_60d": 12.04,
-        "dip_5d": 4.33,
-        "rsi": 67.5,
-        "price": 201.03
+        "score": 0.1486,
+        "rs_60d": 42.71,
+        "dip_5d": 3.7,
+        "rsi": 68.1,
+        "price": 29.16
       },
       "valuation": {
         "verdict": "pass",
-        "ps": 4.33,
-        "sector": "Financial Services",
-        "sector_median": 2.5,
-        "ratio": 1.73,
-        "reason": "P/S 4.3 = 1.7x Financial Services median 2.5"
+        "ps": 7.01,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 1.17,
+        "reason": "P/S 7.0 = 1.2x Technology median 6.0"
       },
       "market_context": {
-        "sector": "Financial Services",
-        "sector_etf": "XLF",
-        "sector_vs_spy_60d_pct": -7.7,
-        "sector_return_60d_pct": 0.99,
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 21.31,
+        "sector_return_60d_pct": 30.0,
         "analyst": {
-          "mean_target": 203.29,
-          "pct_vs_current": 1.12,
-          "analyst_count": 21,
-          "high_target": 230.0,
-          "low_target": 165.0
+          "mean_target": 30.03,
+          "pct_vs_current": 2.97,
+          "analyst_count": 5,
+          "high_target": 32.0,
+          "low_target": 28.13
         },
         "earnings": {
-          "days_since": null,
-          "surprise_pct": null
+          "days_since": 26,
+          "surprise_pct": 4.22,
+          "chase_risk": false
         }
       },
-      "news": [
-        {
-          "headline": "Ford Takes Aim At Tesla And BYD In Europe With New Electric Hatchback, SUV Roadmap",
-          "summary": "Ford CEO Jim Farley outlines automaker&#39;s plan to expand in Europe with 7 new vehicles, including Bronco and EVs.",
-          "published": "2026-05-22T07:48:49Z",
-          "source": "benzinga"
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "SNX": {
+      "technicals": {
+        "score": 0.1457,
+        "rs_60d": 42.66,
+        "dip_5d": 4.15,
+        "rsi": 67.2,
+        "price": 237.34
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 0.29,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.05,
+        "reason": "P/S 0.3 = 0.0x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 21.31,
+        "sector_return_60d_pct": 30.0,
+        "analyst": {
+          "mean_target": 234.27,
+          "pct_vs_current": -1.29,
+          "analyst_count": 11,
+          "high_target": 271.0,
+          "low_target": 166.0
         },
-        {
-          "headline": "5 High-Momentum Bank Stocks with Big Dividends",
-          "summary": "Investors should not overlook dividend-paying stocks in favor of high-flying tech stocks. Five high-momentum bank stocks with juicy dividends are TD, MS, C, JPM, and PNC.",
-          "published": "2026-05-21T19:29:59Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "If Michael Saylor Would Pay Any Price For Bitcoin, Why Do People Keep Selling At $77,000?",
-          "summary": "Strategy Inc. (NASDAQ:MSTR) CEO Michael Saylor and other Bitcoin ",
-          "published": "2026-05-21T18:03:15Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Live On CNBC, Josh Brown Hosts Segment Titled \"Josh's Best Stock Spotlight: Morgan Stanley\"",
-          "summary": "",
-          "published": "2026-05-21T16:35:58Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Elon Musk's SpaceX Reveals $28.5 Trillion Opportunity\u2014And It's Not Rockets Or Starlink",
-          "summary": "SpaceX reveals $28.5 trillion TAM for commercial space flight in latest filings, targeting $75 billion in IPO on Nasdaq under symbol SPCX.",
-          "published": "2026-05-21T04:06:27Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Goldman Sachs & Co., Morgan Stanley, BofA Securities, Citigroup, J.P. Morgan Are Underwriters To SpaceX IPO",
-          "summary": "",
-          "published": "2026-05-20T20:54:08Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "OpenAI Could File For IPO On Friday: How The Musk Lawsuit Unlocked Acceleration",
-          "summary": "OpenAI could file confidentially for an IPO as soon as Friday, eyeing a September debut. Here&#39;s what the accelerated timeline means and what traders are betting.",
-          "published": "2026-05-20T17:14:36Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "'Bankers At Goldman Sachs, Morgan Stanley Working On OpenAI's IPO Paperwork; OpenAI Preparing To File For IPO Very Soon, Sources Say' - WSJ",
-          "summary": "",
-          "published": "2026-05-20T16:23:11Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Elon Musk's SpaceX Hopes To Raise $80 Billion In IPO With Goldman Sachs's Help: What Do Prediction Markets Say?",
-          "summary": "SpaceX is targeting $80 billion or more in its IPO, which would make it the largest ever, with Goldman Sachs reportedly winning the lead role over Morgan Stanley.",
-          "published": "2026-05-20T13:31:17Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Elon Musk Says AI Datacenters In Space Are 'Much Easier' Than People Think, Targets 10,000 Launches A Year",
-          "summary": "Elon Musk discusses potential for orbital datacenters, touting the technology to facilitate increased AI compute.",
-          "published": "2026-05-20T08:43:35Z",
-          "source": "benzinga"
+        "earnings": {
+          "days_since": 54,
+          "surprise_pct": 43.04,
+          "chase_risk": false
         }
-      ],
+      },
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "MUSA": {
+      "technicals": {
+        "score": 0.1448,
+        "rs_60d": 30.21,
+        "dip_5d": -4.0,
+        "rsi": 47.3,
+        "price": 542.74
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 0.58,
+        "sector": "Consumer Cyclical",
+        "sector_median": 1.5,
+        "ratio": 0.39,
+        "reason": "P/S 0.6 = 0.4x Consumer Cyclical median 1.5"
+      },
+      "market_context": {
+        "sector": "Consumer Cyclical",
+        "sector_etf": "XLY",
+        "sector_vs_spy_60d_pct": -6.71,
+        "sector_return_60d_pct": 1.99,
+        "analyst": {
+          "mean_target": 558.0,
+          "pct_vs_current": 2.81,
+          "analyst_count": 9,
+          "high_target": 655.0,
+          "low_target": 380.0
+        },
+        "earnings": {
+          "days_since": 25,
+          "surprise_pct": 32.28,
+          "chase_risk": false
+        }
+      },
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "SANM": {
+      "technicals": {
+        "score": 0.1434,
+        "rs_60d": 50.03,
+        "dip_5d": 9.46,
+        "rsi": 69.1,
+        "price": 246.44
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 1.16,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.19,
+        "reason": "P/S 1.2 = 0.2x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 21.31,
+        "sector_return_60d_pct": 30.0,
+        "analyst": {
+          "mean_target": 212.25,
+          "pct_vs_current": -13.87,
+          "analyst_count": 4,
+          "high_target": 234.0,
+          "low_target": 185.0
+        },
+        "earnings": {
+          "days_since": 27,
+          "surprise_pct": 31.8,
+          "chase_risk": false
+        }
+      },
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "CVI": {
+      "technicals": {
+        "score": 0.1388,
+        "rs_60d": 25.62,
+        "dip_5d": -6.05,
+        "rsi": 48.0,
+        "price": 32.45
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 0.44,
+        "sector": "Energy",
+        "sector_median": 1.2,
+        "ratio": 0.36,
+        "reason": "P/S 0.4 = 0.4x Energy median 1.2"
+      },
+      "market_context": {
+        "sector": "Energy",
+        "sector_etf": "XLE",
+        "sector_vs_spy_60d_pct": -2.31,
+        "sector_return_60d_pct": 6.38,
+        "analyst": {
+          "mean_target": 31.17,
+          "pct_vs_current": -3.95,
+          "analyst_count": 6,
+          "high_target": 35.0,
+          "low_target": 28.0
+        },
+        "earnings": {
+          "days_since": 25,
+          "surprise_pct": -98.96,
+          "chase_risk": false
+        }
+      },
+      "news": [],
       "reddit": {
         "mention_count": 0,
         "bull_pct": null,
@@ -1573,12 +1086,222 @@
     }
   },
   "full_scores": {
+    "DOCN": {
+      "score": 0.651,
+      "rs_60d": 173.97,
+      "dip_5d": 7.48,
+      "rsi": 67.8,
+      "price": 158.46
+    },
+    "FLEX": {
+      "score": 0.3934,
+      "rs_60d": 101.51,
+      "dip_5d": 2.11,
+      "rsi": 66.2,
+      "price": 132.47
+    },
+    "ASTH": {
+      "score": 0.3273,
+      "rs_60d": 77.48,
+      "dip_5d": -2.9,
+      "rsi": 61.4,
+      "price": 37.85
+    },
+    "AOSL": {
+      "score": 0.3099,
+      "rs_60d": 89.88,
+      "dip_5d": 8.27,
+      "rsi": 57.3,
+      "price": 41.72
+    },
+    "STX": {
+      "score": 0.3041,
+      "rs_60d": 90.58,
+      "dip_5d": 9.7,
+      "rsi": 68.5,
+      "price": 812.73
+    },
+    "VECO": {
+      "score": 0.3026,
+      "rs_60d": 86.17,
+      "dip_5d": 7.01,
+      "rsi": 64.3,
+      "price": 59.55
+    },
+    "SITM": {
+      "score": 0.2952,
+      "rs_60d": 74.42,
+      "dip_5d": 0.41,
+      "rsi": 59.6,
+      "price": 728.56
+    },
+    "ACLS": {
+      "score": 0.2812,
+      "rs_60d": 81.28,
+      "dip_5d": 7.32,
+      "rsi": 61.1,
+      "price": 156.94
+    },
+    "STRL": {
+      "score": 0.2794,
+      "rs_60d": 62.5,
+      "dip_5d": -4.91,
+      "rsi": 55.9,
+      "price": 732.94
+    },
+    "EXTR": {
+      "score": 0.2606,
+      "rs_60d": 74.42,
+      "dip_5d": 6.18,
+      "rsi": 71.9,
+      "price": 25.6
+    },
+    "VIAV": {
+      "score": 0.2347,
+      "rs_60d": 57.95,
+      "dip_5d": -0.48,
+      "rsi": 53.4,
+      "price": 49.51
+    },
+    "MYRG": {
+      "score": 0.2315,
+      "rs_60d": 56.85,
+      "dip_5d": -0.68,
+      "rsi": 62.4,
+      "price": 446.9
+    },
     "ON": {
       "score": 0.2273,
       "rs_60d": 66.09,
       "dip_5d": 6.19,
       "rsi": 67.2,
       "price": 116.2
+    },
+    "WDC": {
+      "score": 0.2243,
+      "rs_60d": 64.45,
+      "dip_5d": 5.58,
+      "rsi": 63.6,
+      "price": 484.28
+    },
+    "TWLO": {
+      "score": 0.2163,
+      "rs_60d": 46.63,
+      "dip_5d": -4.96,
+      "rsi": 60.5,
+      "price": 187.88
+    },
+    "VSAT": {
+      "score": 0.1912,
+      "rs_60d": 54.17,
+      "dip_5d": 4.25,
+      "rsi": 62.2,
+      "price": 74.56
+    },
+    "CORT": {
+      "score": 0.1844,
+      "rs_60d": 59.99,
+      "dip_5d": 9.25,
+      "rsi": 74.5,
+      "price": 60.22
+    },
+    "AKAM": {
+      "score": 0.1779,
+      "rs_60d": 40.94,
+      "dip_5d": -2.35,
+      "rsi": 64.1,
+      "price": 147.23
+    },
+    "ZD": {
+      "score": 0.1737,
+      "rs_60d": 52.68,
+      "dip_5d": 6.17,
+      "rsi": 53.1,
+      "price": 43.7
+    },
+    "AMN": {
+      "score": 0.1581,
+      "rs_60d": 33.3,
+      "dip_5d": -4.16,
+      "rsi": 60.6,
+      "price": 27.66
+    },
+    "AGX": {
+      "score": 0.1546,
+      "rs_60d": 36.76,
+      "dip_5d": -1.27,
+      "rsi": 50.7,
+      "price": 656.35
+    },
+    "COHU": {
+      "score": 0.1499,
+      "rs_60d": 45.38,
+      "dip_5d": 5.27,
+      "rsi": 55.2,
+      "price": 46.53
+    },
+    "ATEN": {
+      "score": 0.1486,
+      "rs_60d": 42.71,
+      "dip_5d": 3.7,
+      "rsi": 68.1,
+      "price": 29.16
+    },
+    "SNX": {
+      "score": 0.1457,
+      "rs_60d": 42.66,
+      "dip_5d": 4.15,
+      "rsi": 67.2,
+      "price": 237.34
+    },
+    "MUSA": {
+      "score": 0.1448,
+      "rs_60d": 30.21,
+      "dip_5d": -4.0,
+      "rsi": 47.3,
+      "price": 542.74
+    },
+    "SANM": {
+      "score": 0.1434,
+      "rs_60d": 50.03,
+      "dip_5d": 9.46,
+      "rsi": 69.1,
+      "price": 246.44
+    },
+    "CVI": {
+      "score": 0.1388,
+      "rs_60d": 25.62,
+      "dip_5d": -6.05,
+      "rsi": 48.0,
+      "price": 32.45
+    },
+    "SM": {
+      "score": 0.1384,
+      "rs_60d": 37.31,
+      "dip_5d": 1.81,
+      "rsi": 62.7,
+      "price": 33.77
+    },
+    "MTSI": {
+      "score": 0.1374,
+      "rs_60d": 46.87,
+      "dip_5d": 8.35,
+      "rsi": 73.8,
+      "price": 385.98
+    },
+    "BHE": {
+      "score": 0.1373,
+      "rs_60d": 38.55,
+      "dip_5d": 2.81,
+      "rsi": 63.5,
+      "price": 85.12
+    },
+    "KLIC": {
+      "score": 0.1338,
+      "rs_60d": 41.05,
+      "dip_5d": 5.07,
+      "rsi": 67.9,
+      "price": 104.4
     },
     "TXN": {
       "score": 0.1311,
@@ -1587,12 +1310,166 @@
       "rsi": 71.8,
       "price": 309.21
     },
+    "NSP": {
+      "score": 0.1309,
+      "rs_60d": 35.79,
+      "dip_5d": 2.03,
+      "rsi": 55.0,
+      "price": 32.09
+    },
+    "POWI": {
+      "score": 0.128,
+      "rs_60d": 39.16,
+      "dip_5d": 4.78,
+      "rsi": 55.5,
+      "price": 70.85
+    },
+    "DINO": {
+      "score": 0.1277,
+      "rs_60d": 31.1,
+      "dip_5d": -0.55,
+      "rsi": 56.5,
+      "price": 69.91
+    },
+    "SEZL": {
+      "score": 0.1268,
+      "rs_60d": 32.22,
+      "dip_5d": 0.35,
+      "rsi": 63.1,
+      "price": 102.8
+    },
+    "COHR": {
+      "score": 0.1241,
+      "rs_60d": 37.12,
+      "dip_5d": 4.06,
+      "rsi": 59.7,
+      "price": 377.57
+    },
+    "ICHR": {
+      "score": 0.1241,
+      "rs_60d": 36.33,
+      "dip_5d": 3.54,
+      "rsi": 53.8,
+      "price": 68.96
+    },
+    "KGS": {
+      "score": 0.1219,
+      "rs_60d": 26.38,
+      "dip_5d": -2.73,
+      "rsi": 62.4,
+      "price": 73.71
+    },
+    "DIOD": {
+      "score": 0.119,
+      "rs_60d": 37.35,
+      "dip_5d": 5.07,
+      "rsi": 51.9,
+      "price": 99.65
+    },
+    "CHRD": {
+      "score": 0.119,
+      "rs_60d": 24.16,
+      "dip_5d": -3.73,
+      "rsi": 53.9,
+      "price": 143.98
+    },
+    "AMKR": {
+      "score": 0.1178,
+      "rs_60d": 28.8,
+      "dip_5d": -0.44,
+      "rsi": 46.2,
+      "price": 65.75
+    },
+    "PARR": {
+      "score": 0.1163,
+      "rs_60d": 29.18,
+      "dip_5d": 0.07,
+      "rsi": 44.5,
+      "price": 58.83
+    },
+    "COCO": {
+      "score": 0.1132,
+      "rs_60d": 22.27,
+      "dip_5d": -4.03,
+      "rsi": 68.5,
+      "price": 76.04
+    },
+    "ARW": {
+      "score": 0.1094,
+      "rs_60d": 34.13,
+      "dip_5d": 4.52,
+      "rsi": 74.8,
+      "price": 217.33
+    },
+    "NVT": {
+      "score": 0.1069,
+      "rs_60d": 30.42,
+      "dip_5d": 2.47,
+      "rsi": 60.0,
+      "price": 164.66
+    },
+    "CPRX": {
+      "score": 0.1064,
+      "rs_60d": 26.75,
+      "dip_5d": 0.1,
+      "rsi": 73.4,
+      "price": 31.26
+    },
+    "BTSG": {
+      "score": 0.1052,
+      "rs_60d": 32.51,
+      "dip_5d": 4.13,
+      "rsi": 70.4,
+      "price": 58.5
+    },
+    "ENS": {
+      "score": 0.1034,
+      "rs_60d": 31.08,
+      "dip_5d": 3.49,
+      "rsi": 59.7,
+      "price": 232.24
+    },
+    "WLY": {
+      "score": 0.1014,
+      "rs_60d": 27.8,
+      "dip_5d": 1.63,
+      "rsi": 63.2,
+      "price": 42.34
+    },
+    "VRT": {
+      "score": 0.1008,
+      "rs_60d": 19.78,
+      "dip_5d": -3.61,
+      "rsi": 49.7,
+      "price": 327.46
+    },
+    "VIRT": {
+      "score": 0.1005,
+      "rs_60d": 18.01,
+      "dip_5d": -4.74,
+      "rsi": 56.5,
+      "price": 52.47
+    },
     "UNH": {
       "score": 0.0991,
       "rs_60d": 23.77,
       "dip_5d": -0.68,
       "rsi": 67.8,
       "price": 388.47
+    },
+    "UNFI": {
+      "score": 0.0987,
+      "rs_60d": 20.35,
+      "dip_5d": -2.88,
+      "rsi": 49.5,
+      "price": 49.31
+    },
+    "PLXS": {
+      "score": 0.0969,
+      "rs_60d": 28.18,
+      "dip_5d": 2.65,
+      "rsi": 61.7,
+      "price": 265.72
     },
     "APA": {
       "score": 0.0964,
@@ -1601,6 +1478,27 @@
       "rsi": 51.1,
       "price": 38.8
     },
+    "ADEA": {
+      "score": 0.0963,
+      "rs_60d": 21.13,
+      "dip_5d": -1.97,
+      "rsi": 43.6,
+      "price": 26.86
+    },
+    "NTCT": {
+      "score": 0.0949,
+      "rs_60d": 31.7,
+      "dip_5d": 5.32,
+      "rsi": 71.3,
+      "price": 41.01
+    },
+    "AAON": {
+      "score": 0.0943,
+      "rs_60d": 24.31,
+      "dip_5d": 0.49,
+      "rsi": 66.5,
+      "price": 134.6
+    },
     "AVGO": {
       "score": 0.093,
       "rs_60d": 20.91,
@@ -1608,12 +1506,47 @@
       "rsi": 53.1,
       "price": 414.14
     },
+    "TGTX": {
+      "score": 0.0912,
+      "rs_60d": 20.48,
+      "dip_5d": -1.55,
+      "rsi": 53.3,
+      "price": 38.87
+    },
     "MPC": {
       "score": 0.0904,
       "rs_60d": 19.78,
       "dip_5d": -1.88,
       "rsi": 57.0,
       "price": 254.65
+    },
+    "CVSA": {
+      "score": 0.0887,
+      "rs_60d": 19.01,
+      "dip_5d": -2.11,
+      "rsi": 56.2,
+      "price": 125.15
+    },
+    "LYB": {
+      "score": 0.0858,
+      "rs_60d": 12.51,
+      "dip_5d": -5.95,
+      "rsi": 42.1,
+      "price": 69.72
+    },
+    "FIX": {
+      "score": 0.0853,
+      "rs_60d": 19.21,
+      "dip_5d": -1.41,
+      "rsi": 50.2,
+      "price": 1828.25
+    },
+    "MTZ": {
+      "score": 0.0835,
+      "rs_60d": 19.52,
+      "dip_5d": -0.9,
+      "rsi": 46.2,
+      "price": 382.11
     },
     "APO": {
       "score": 0.0815,
@@ -1629,12 +1562,61 @@
       "rsi": 56.5,
       "price": 1589.81
     },
+    "NXT": {
+      "score": 0.0796,
+      "rs_60d": 15.47,
+      "dip_5d": -2.96,
+      "rsi": 54.5,
+      "price": 130.5
+    },
+    "PWR": {
+      "score": 0.0788,
+      "rs_60d": 19.78,
+      "dip_5d": 0.06,
+      "rsi": 55.7,
+      "price": 723.44
+    },
+    "FN": {
+      "score": 0.0781,
+      "rs_60d": 20.3,
+      "dip_5d": 0.51,
+      "rsi": 55.1,
+      "price": 703.86
+    },
     "GOOGL": {
       "score": 0.0777,
       "rs_60d": 14.15,
       "dip_5d": -3.52,
       "rsi": 57.5,
       "price": 382.97
+    },
+    "AAMI": {
+      "score": 0.0774,
+      "rs_60d": 24.2,
+      "dip_5d": 3.23,
+      "rsi": 60.7,
+      "price": 71.58
+    },
+    "PDFS": {
+      "score": 0.0773,
+      "rs_60d": 27.75,
+      "dip_5d": 5.61,
+      "rsi": 53.6,
+      "price": 46.09
+    },
+    "DVA": {
+      "score": 0.0763,
+      "rs_60d": 18.32,
+      "dip_5d": -0.5,
+      "rsi": 70.8,
+      "price": 198.52
+    },
+    "ST": {
+      "score": 0.0761,
+      "rs_60d": 21.43,
+      "dip_5d": 1.61,
+      "rsi": 66.1,
+      "price": 48.59
     },
     "ORCL": {
       "score": 0.076,
@@ -1657,12 +1639,61 @@
       "rsi": 51.3,
       "price": 246.96
     },
+    "ARMK": {
+      "score": 0.0742,
+      "rs_60d": 13.79,
+      "dip_5d": -3.17,
+      "rsi": 67.8,
+      "price": 51.26
+    },
+    "DOW": {
+      "score": 0.0736,
+      "rs_60d": 8.49,
+      "dip_5d": -6.61,
+      "rsi": 39.2,
+      "price": 36.01
+    },
+    "GOOG": {
+      "score": 0.0734,
+      "rs_60d": 13.12,
+      "dip_5d": -3.49,
+      "rsi": 57.3,
+      "price": 379.38
+    },
+    "DGII": {
+      "score": 0.0724,
+      "rs_60d": 26.82,
+      "dip_5d": 5.82,
+      "rsi": 66.7,
+      "price": 66.16
+    },
+    "VSNT": {
+      "score": 0.0721,
+      "rs_60d": 19.37,
+      "dip_5d": 0.9,
+      "rsi": 59.6,
+      "price": 42.67
+    },
+    "NXPI": {
+      "score": 0.0719,
+      "rs_60d": 30.71,
+      "dip_5d": 8.5,
+      "rsi": 69.1,
+      "price": 316.47
+    },
     "CF": {
       "score": 0.0711,
       "rs_60d": 13.57,
       "dip_5d": -2.81,
       "rsi": 48.2,
       "price": 121.7
+    },
+    "HRB": {
+      "score": 0.0705,
+      "rs_60d": 18.31,
+      "dip_5d": 0.46,
+      "rsi": 65.0,
+      "price": 38.89
     },
     "NVDA": {
       "score": 0.0702,
@@ -1671,12 +1702,138 @@
       "rsi": 53.7,
       "price": 215.33
     },
+    "UCTT": {
+      "score": 0.0699,
+      "rs_60d": 29.75,
+      "dip_5d": 8.19,
+      "rsi": 56.9,
+      "price": 84.01
+    },
+    "VCTR": {
+      "score": 0.0699,
+      "rs_60d": 15.49,
+      "dip_5d": -1.33,
+      "rsi": 63.7,
+      "price": 85.91
+    },
+    "JBL": {
+      "score": 0.0698,
+      "rs_60d": 28.8,
+      "dip_5d": 7.56,
+      "rsi": 62.6,
+      "price": 364.35
+    },
     "AMZN": {
       "score": 0.0692,
       "rs_60d": 18.12,
       "dip_5d": 0.55,
       "rsi": 58.0,
       "price": 266.32
+    },
+    "AVT": {
+      "score": 0.0686,
+      "rs_60d": 21.79,
+      "dip_5d": 3.1,
+      "rsi": 64.4,
+      "price": 85.91
+    },
+    "KN": {
+      "score": 0.0683,
+      "rs_60d": 26.23,
+      "dip_5d": 6.11,
+      "rsi": 68.3,
+      "price": 36.66
+    },
+    "CASY": {
+      "score": 0.0682,
+      "rs_60d": 11.64,
+      "dip_5d": -3.6,
+      "rsi": 50.6,
+      "price": 825.02
+    },
+    "EBAY": {
+      "score": 0.0679,
+      "rs_60d": 18.7,
+      "dip_5d": 1.15,
+      "rsi": 64.3,
+      "price": 115.75
+    },
+    "EZPW": {
+      "score": 0.0671,
+      "rs_60d": 18.67,
+      "dip_5d": 1.26,
+      "rsi": 61.9,
+      "price": 33.79
+    },
+    "PLAB": {
+      "score": 0.0655,
+      "rs_60d": 28.79,
+      "dip_5d": 8.27,
+      "rsi": 56.1,
+      "price": 51.46
+    },
+    "LITE": {
+      "score": 0.0636,
+      "rs_60d": 26.4,
+      "dip_5d": 7.0,
+      "rsi": 53.3,
+      "price": 946.9
+    },
+    "STEP": {
+      "score": 0.0624,
+      "rs_60d": 15.88,
+      "dip_5d": 0.19,
+      "rsi": 51.8,
+      "price": 53.74
+    },
+    "CVLT": {
+      "score": 0.062,
+      "rs_60d": 17.36,
+      "dip_5d": 1.24,
+      "rsi": 63.1,
+      "price": 107.25
+    },
+    "NTNX": {
+      "score": 0.0618,
+      "rs_60d": 14.4,
+      "dip_5d": -0.7,
+      "rsi": 61.2,
+      "price": 47.12
+    },
+    "MCHP": {
+      "score": 0.0616,
+      "rs_60d": 16.48,
+      "dip_5d": 0.72,
+      "rsi": 56.3,
+      "price": 93.43
+    },
+    "LTH": {
+      "score": 0.0613,
+      "rs_60d": 10.08,
+      "dip_5d": -3.49,
+      "rsi": 57.9,
+      "price": 32.07
+    },
+    "ALKS": {
+      "score": 0.0605,
+      "rs_60d": 13.56,
+      "dip_5d": -1.05,
+      "rsi": 58.2,
+      "price": 36.8
+    },
+    "ORA": {
+      "score": 0.0604,
+      "rs_60d": 20.0,
+      "dip_5d": 3.27,
+      "rsi": 68.1,
+      "price": 133.46
+    },
+    "MUR": {
+      "score": 0.0599,
+      "rs_60d": 5.94,
+      "dip_5d": -6.03,
+      "rsi": 45.3,
+      "price": 38.0
     },
     "ELV": {
       "score": 0.0576,
@@ -1692,12 +1849,138 @@
       "rsi": 63.6,
       "price": 357.35
     },
+    "ECG": {
+      "score": 0.0563,
+      "rs_60d": 14.29,
+      "dip_5d": 0.13,
+      "rsi": 51.5,
+      "price": 148.65
+    },
+    "OPLN": {
+      "score": 0.0557,
+      "rs_60d": 15.47,
+      "dip_5d": 1.03,
+      "rsi": 61.0,
+      "price": 35.4
+    },
+    "IBKR": {
+      "score": 0.0555,
+      "rs_60d": 5.58,
+      "dip_5d": -5.54,
+      "rsi": 49.6,
+      "price": 81.35
+    },
+    "LFUS": {
+      "score": 0.0541,
+      "rs_60d": 21.95,
+      "dip_5d": 5.61,
+      "rsi": 63.5,
+      "price": 460.48
+    },
+    "EME": {
+      "score": 0.0532,
+      "rs_60d": 8.46,
+      "dip_5d": -3.22,
+      "rsi": 44.0,
+      "price": 848.91
+    },
+    "VAL": {
+      "score": 0.0522,
+      "rs_60d": -3.15,
+      "dip_5d": -10.8,
+      "rsi": 51.5,
+      "price": 101.17
+    },
+    "VICR": {
+      "score": 0.0518,
+      "rs_60d": 24.37,
+      "dip_5d": 7.62,
+      "rsi": 53.7,
+      "price": 267.99
+    },
+    "VOYA": {
+      "score": 0.0506,
+      "rs_60d": 14.5,
+      "dip_5d": 1.23,
+      "rsi": 62.5,
+      "price": 82.39
+    },
+    "BEN": {
+      "score": 0.0506,
+      "rs_60d": 8.18,
+      "dip_5d": -2.97,
+      "rsi": 60.2,
+      "price": 31.02
+    },
+    "YOU": {
+      "score": 0.0502,
+      "rs_60d": 14.78,
+      "dip_5d": 1.49,
+      "rsi": 59.7,
+      "price": 60.06
+    },
+    "BFH": {
+      "score": 0.0494,
+      "rs_60d": 13.52,
+      "dip_5d": 0.78,
+      "rsi": 53.9,
+      "price": 86.6
+    },
     "CVS": {
       "score": 0.0492,
       "rs_60d": 8.03,
       "dip_5d": -2.84,
       "rsi": 65.4,
       "price": 93.26
+    },
+    "NE": {
+      "score": 0.0492,
+      "rs_60d": 5.77,
+      "dip_5d": -4.36,
+      "rsi": 54.6,
+      "price": 52.0
+    },
+    "SATS": {
+      "score": 0.0491,
+      "rs_60d": -1.19,
+      "dip_5d": -8.98,
+      "rsi": 46.1,
+      "price": 124.2
+    },
+    "WMG": {
+      "score": 0.048,
+      "rs_60d": 12.7,
+      "dip_5d": 0.46,
+      "rsi": 71.9,
+      "price": 34.72
+    },
+    "MTDR": {
+      "score": 0.0471,
+      "rs_60d": 1.5,
+      "dip_5d": -6.86,
+      "rsi": 43.6,
+      "price": 56.64
+    },
+    "ENVA": {
+      "score": 0.0466,
+      "rs_60d": 4.58,
+      "dip_5d": -4.72,
+      "rsi": 43.9,
+      "price": 157.51
+    },
+    "SFM": {
+      "score": 0.0461,
+      "rs_60d": 8.69,
+      "dip_5d": -1.9,
+      "rsi": 59.2,
+      "price": 86.71
+    },
+    "CYTK": {
+      "score": 0.0458,
+      "rs_60d": 14.96,
+      "dip_5d": 2.34,
+      "rsi": 60.5,
+      "price": 76.94
     },
     "MOH": {
       "score": 0.0458,
@@ -1706,6 +1989,13 @@
       "rsi": 56.6,
       "price": 184.14
     },
+    "PBF": {
+      "score": 0.0445,
+      "rs_60d": 4.25,
+      "dip_5d": -4.58,
+      "rsi": 45.1,
+      "price": 40.21
+    },
     "HAL": {
       "score": 0.0444,
       "rs_60d": 6.5,
@@ -1713,12 +2003,54 @@
       "rsi": 54.7,
       "price": 41.47
     },
+    "STT": {
+      "score": 0.0432,
+      "rs_60d": 11.0,
+      "dip_5d": 0.14,
+      "rsi": 62.1,
+      "price": 153.95
+    },
+    "OVV": {
+      "score": 0.0426,
+      "rs_60d": 7.41,
+      "dip_5d": -2.15,
+      "rsi": 50.4,
+      "price": 58.74
+    },
     "ADI": {
       "score": 0.0425,
       "rs_60d": 2.91,
       "dip_5d": -5.14,
       "rsi": 50.9,
       "price": 397.07
+    },
+    "ARCB": {
+      "score": 0.0421,
+      "rs_60d": 12.65,
+      "dip_5d": 1.41,
+      "rsi": 59.0,
+      "price": 124.57
+    },
+    "HP": {
+      "score": 0.042,
+      "rs_60d": 4.54,
+      "dip_5d": -3.97,
+      "rsi": 54.9,
+      "price": 39.88
+    },
+    "NBIX": {
+      "score": 0.0411,
+      "rs_60d": 9.79,
+      "dip_5d": -0.32,
+      "rsi": 69.0,
+      "price": 156.7
+    },
+    "LBRT": {
+      "score": 0.0409,
+      "rs_60d": 4.65,
+      "dip_5d": -3.72,
+      "rsi": 49.0,
+      "price": 31.84
     },
     "FANG": {
       "score": 0.0407,
@@ -1734,6 +2066,55 @@
       "rsi": 68.8,
       "price": 524.74
     },
+    "WCC": {
+      "score": 0.0404,
+      "rs_60d": 16.89,
+      "dip_5d": 4.52,
+      "rsi": 60.7,
+      "price": 363.57
+    },
+    "DAR": {
+      "score": 0.0402,
+      "rs_60d": 1.54,
+      "dip_5d": -5.68,
+      "rsi": 39.7,
+      "price": 58.6
+    },
+    "ADM": {
+      "score": 0.0395,
+      "rs_60d": 3.59,
+      "dip_5d": -4.19,
+      "rsi": 53.8,
+      "price": 77.52
+    },
+    "MKSI": {
+      "score": 0.0393,
+      "rs_60d": 22.46,
+      "dip_5d": 8.43,
+      "rsi": 65.4,
+      "price": 320.62
+    },
+    "WST": {
+      "score": 0.0392,
+      "rs_60d": 15.71,
+      "dip_5d": 3.95,
+      "rsi": 64.6,
+      "price": 316.42
+    },
+    "ECPG": {
+      "score": 0.039,
+      "rs_60d": 8.74,
+      "dip_5d": -0.67,
+      "rsi": 49.1,
+      "price": 80.2
+    },
+    "OKTA": {
+      "score": 0.0383,
+      "rs_60d": 18.53,
+      "dip_5d": 5.97,
+      "rsi": 70.3,
+      "price": 92.24
+    },
     "CMI": {
       "score": 0.0373,
       "rs_60d": 0.84,
@@ -1741,12 +2122,33 @@
       "rsi": 44.9,
       "price": 639.55
     },
-    "ZS": {
-      "score": 0.0351,
-      "rs_60d": 15.37,
-      "dip_5d": 4.4,
-      "rsi": 73.2,
-      "price": 182.37
+    "FOXA": {
+      "score": 0.0367,
+      "rs_60d": 4.87,
+      "dip_5d": -2.87,
+      "rsi": 50.7,
+      "price": 63.98
+    },
+    "NSA": {
+      "score": 0.0357,
+      "rs_60d": 13.26,
+      "dip_5d": 2.89,
+      "rsi": 55.2,
+      "price": 42.71
+    },
+    "SPHR": {
+      "score": 0.0352,
+      "rs_60d": 0.01,
+      "dip_5d": -5.86,
+      "rsi": 46.7,
+      "price": 129.37
+    },
+    "ONTO": {
+      "score": 0.0329,
+      "rs_60d": 12.78,
+      "dip_5d": 3.03,
+      "rsi": 46.5,
+      "price": 262.25
     },
     "PSX": {
       "score": 0.0328,
@@ -1762,6 +2164,90 @@
       "rsi": 65.3,
       "price": 240.03
     },
+    "JEF": {
+      "score": 0.032,
+      "rs_60d": 8.38,
+      "dip_5d": 0.25,
+      "rsi": 60.5,
+      "price": 51.98
+    },
+    "ZBRA": {
+      "score": 0.032,
+      "rs_60d": 5.41,
+      "dip_5d": -1.73,
+      "rsi": 62.5,
+      "price": 255.55
+    },
+    "ULS": {
+      "score": 0.0319,
+      "rs_60d": 13.79,
+      "dip_5d": 3.88,
+      "rsi": 65.5,
+      "price": 102.85
+    },
+    "TTWO": {
+      "score": 0.0318,
+      "rs_60d": -1.1,
+      "dip_5d": -6.03,
+      "rsi": 53.2,
+      "price": 227.55
+    },
+    "ARWR": {
+      "score": 0.0309,
+      "rs_60d": 9.77,
+      "dip_5d": 1.35,
+      "rsi": 52.5,
+      "price": 74.95
+    },
+    "WKC": {
+      "score": 0.0305,
+      "rs_60d": 9.54,
+      "dip_5d": 1.27,
+      "rsi": 74.3,
+      "price": 29.5
+    },
+    "SAH": {
+      "score": 0.0305,
+      "rs_60d": 15.92,
+      "dip_5d": 5.54,
+      "rsi": 59.3,
+      "price": 78.16
+    },
+    "FCFS": {
+      "score": 0.0304,
+      "rs_60d": 9.36,
+      "dip_5d": 1.17,
+      "rsi": 62.9,
+      "price": 227.59
+    },
+    "SLG": {
+      "score": 0.0302,
+      "rs_60d": 8.73,
+      "dip_5d": 0.79,
+      "rsi": 53.9,
+      "price": 43.27
+    },
+    "TRGP": {
+      "score": 0.0302,
+      "rs_60d": 8.67,
+      "dip_5d": 0.75,
+      "rsi": 68.3,
+      "price": 276.75
+    },
+    "MLI": {
+      "score": 0.0297,
+      "rs_60d": 4.39,
+      "dip_5d": -2.02,
+      "rsi": 51.4,
+      "price": 133.39
+    },
+    "SCHL": {
+      "score": 0.0295,
+      "rs_60d": 8.39,
+      "dip_5d": 0.67,
+      "rsi": 57.4,
+      "price": 40.71
+    },
     "GLW": {
       "score": 0.0293,
       "rs_60d": 20.34,
@@ -1775,6 +2261,13 @@
       "dip_5d": -4.95,
       "rsi": 46.6,
       "price": 47.22
+    },
+    "Q": {
+      "score": 0.0286,
+      "rs_60d": 15.11,
+      "dip_5d": 5.3,
+      "rsi": 59.0,
+      "price": 156.93
     },
     "LRCX": {
       "score": 0.0283,
@@ -1797,12 +2290,82 @@
       "rsi": 56.7,
       "price": 141.22
     },
-    "NET": {
+    "FORM": {
+      "score": 0.0279,
+      "rs_60d": 21.76,
+      "dip_5d": 9.85,
+      "rsi": 49.4,
+      "price": 128.99
+    },
+    "INVX": {
+      "score": 0.0263,
+      "rs_60d": 5.35,
+      "dip_5d": -0.83,
+      "rsi": 66.2,
+      "price": 30.05
+    },
+    "FOX": {
+      "score": 0.0256,
+      "rs_60d": 1.96,
+      "dip_5d": -2.97,
+      "rsi": 49.7,
+      "price": 57.24
+    },
+    "GEV": {
+      "score": 0.0251,
+      "rs_60d": 10.21,
+      "dip_5d": 2.62,
+      "rsi": 50.7,
+      "price": 1038.74
+    },
+    "NTRS": {
+      "score": 0.0251,
+      "rs_60d": 8.55,
+      "dip_5d": 1.51,
+      "rsi": 65.6,
+      "price": 167.77
+    },
+    "CNO": {
       "score": 0.0245,
-      "rs_60d": 16.85,
-      "dip_5d": 7.15,
-      "rsi": 54.1,
-      "price": 216.17
+      "rs_60d": 4.41,
+      "dip_5d": -1.15,
+      "rsi": 66.6,
+      "price": 47.29
+    },
+    "KRC": {
+      "score": 0.0239,
+      "rs_60d": 5.22,
+      "dip_5d": -0.5,
+      "rsi": 55.8,
+      "price": 33.97
+    },
+    "UNM": {
+      "score": 0.0239,
+      "rs_60d": 9.14,
+      "dip_5d": 2.11,
+      "rsi": 71.5,
+      "price": 84.52
+    },
+    "HIW": {
+      "score": 0.0231,
+      "rs_60d": 5.36,
+      "dip_5d": -0.27,
+      "rsi": 59.9,
+      "price": 25.65
+    },
+    "VNO": {
+      "score": 0.0228,
+      "rs_60d": 7.26,
+      "dip_5d": 1.04,
+      "rsi": 60.7,
+      "price": 31.98
+    },
+    "DUOL": {
+      "score": 0.0226,
+      "rs_60d": -3.14,
+      "dip_5d": -5.85,
+      "rsi": 50.1,
+      "price": 106.61
     },
     "MS": {
       "score": 0.0222,
@@ -1811,12 +2374,173 @@
       "rsi": 67.5,
       "price": 201.03
     },
+    "APP": {
+      "score": 0.0214,
+      "rs_60d": 2.09,
+      "dip_5d": -2.17,
+      "rsi": 53.2,
+      "price": 481.68
+    },
+    "BNY": {
+      "score": 0.0213,
+      "rs_60d": 8.14,
+      "dip_5d": 1.88,
+      "rsi": 68.5,
+      "price": 139.15
+    },
+    "ACA": {
+      "score": 0.0213,
+      "rs_60d": 3.65,
+      "dip_5d": -1.12,
+      "rsi": 49.0,
+      "price": 120.75
+    },
+    "CE": {
+      "score": 0.021,
+      "rs_60d": -3.79,
+      "dip_5d": -6.03,
+      "rsi": 31.0,
+      "price": 52.39
+    },
+    "KEX": {
+      "score": 0.0205,
+      "rs_60d": 1.74,
+      "dip_5d": -2.26,
+      "rsi": 47.2,
+      "price": 143.34
+    },
+    "SEIC": {
+      "score": 0.0202,
+      "rs_60d": 2.63,
+      "dip_5d": -1.61,
+      "rsi": 57.1,
+      "price": 90.53
+    },
+    "IRM": {
+      "score": 0.0201,
+      "rs_60d": 8.04,
+      "dip_5d": 2.02,
+      "rsi": 58.4,
+      "price": 126.46
+    },
+    "INSW": {
+      "score": 0.0199,
+      "rs_60d": 1.88,
+      "dip_5d": -2.06,
+      "rsi": 51.1,
+      "price": 83.52
+    },
+    "MTCH": {
+      "score": 0.0197,
+      "rs_60d": 4.6,
+      "dip_5d": -0.22,
+      "rsi": 51.3,
+      "price": 35.8
+    },
+    "NWS": {
+      "score": 0.0195,
+      "rs_60d": 2.13,
+      "dip_5d": -1.82,
+      "rsi": 47.6,
+      "price": 29.68
+    },
+    "AMR": {
+      "score": 0.0194,
+      "rs_60d": -0.92,
+      "dip_5d": -3.84,
+      "rsi": 41.0,
+      "price": 175.3
+    },
+    "CUZ": {
+      "score": 0.0188,
+      "rs_60d": 5.73,
+      "dip_5d": 0.68,
+      "rsi": 61.0,
+      "price": 26.5
+    },
+    "CATY": {
+      "score": 0.0187,
+      "rs_60d": 6.51,
+      "dip_5d": 1.22,
+      "rsi": 61.5,
+      "price": 57.27
+    },
+    "RS": {
+      "score": 0.0186,
+      "rs_60d": 7.58,
+      "dip_5d": 1.94,
+      "rsi": 61.2,
+      "price": 367.0
+    },
+    "CHEF": {
+      "score": 0.0184,
+      "rs_60d": -1.59,
+      "dip_5d": -4.13,
+      "rsi": 54.6,
+      "price": 76.46
+    },
+    "UNF": {
+      "score": 0.0181,
+      "rs_60d": 4.36,
+      "dip_5d": -0.12,
+      "rsi": 63.1,
+      "price": 265.47
+    },
+    "SAIA": {
+      "score": 0.0181,
+      "rs_60d": 3.85,
+      "dip_5d": -0.45,
+      "rsi": 57.5,
+      "price": 456.23
+    },
+    "OKE": {
+      "score": 0.0179,
+      "rs_60d": 4.91,
+      "dip_5d": 0.29,
+      "rsi": 61.6,
+      "price": 94.03
+    },
     "OXY": {
       "score": 0.0173,
       "rs_60d": 2.1,
       "dip_5d": -1.49,
       "rsi": 53.0,
       "price": 58.81
+    },
+    "AIZ": {
+      "score": 0.017,
+      "rs_60d": 2.29,
+      "dip_5d": -1.3,
+      "rsi": 69.9,
+      "price": 254.82
+    },
+    "SNDR": {
+      "score": 0.0169,
+      "rs_60d": 8.99,
+      "dip_5d": 3.18,
+      "rsi": 64.3,
+      "price": 33.4
+    },
+    "EXEL": {
+      "score": 0.0168,
+      "rs_60d": 5.13,
+      "dip_5d": 0.62,
+      "rsi": 60.7,
+      "price": 50.15
+    },
+    "ESI": {
+      "score": 0.0166,
+      "rs_60d": 7.43,
+      "dip_5d": 2.18,
+      "rsi": 50.2,
+      "price": 40.75
+    },
+    "DBX": {
+      "score": 0.0161,
+      "rs_60d": 1.07,
+      "dip_5d": -1.97,
+      "rsi": 60.4,
+      "price": 27.43
     },
     "URI": {
       "score": 0.016,
@@ -1825,12 +2549,61 @@
       "rsi": 56.4,
       "price": 938.62
     },
+    "HAFC": {
+      "score": 0.0157,
+      "rs_60d": 6.85,
+      "dip_5d": 1.96,
+      "rsi": 58.7,
+      "price": 30.17
+    },
     "KLAC": {
       "score": 0.0156,
       "rs_60d": 15.17,
       "dip_5d": 7.51,
       "rsi": 59.0,
       "price": 1888.38
+    },
+    "UTHR": {
+      "score": 0.0149,
+      "rs_60d": 4.11,
+      "dip_5d": 0.25,
+      "rsi": 49.8,
+      "price": 568.43
+    },
+    "JBHT": {
+      "score": 0.0149,
+      "rs_60d": 2.17,
+      "dip_5d": -1.03,
+      "rsi": 60.3,
+      "price": 258.77
+    },
+    "WAFD": {
+      "score": 0.0147,
+      "rs_60d": 4.4,
+      "dip_5d": 0.48,
+      "rsi": 56.5,
+      "price": 35.24
+    },
+    "XYZ": {
+      "score": 0.0144,
+      "rs_60d": -1.82,
+      "dip_5d": -3.61,
+      "rsi": 46.4,
+      "price": 68.08
+    },
+    "FTI": {
+      "score": 0.0136,
+      "rs_60d": -1.64,
+      "dip_5d": -3.36,
+      "rsi": 45.5,
+      "price": 70.99
+    },
+    "SXT": {
+      "score": 0.0133,
+      "rs_60d": 4.02,
+      "dip_5d": 0.47,
+      "rsi": 57.1,
+      "price": 114.44
     },
     "CDNS": {
       "score": 0.0132,
@@ -1839,6 +2612,13 @@
       "rsi": 68.8,
       "price": 373.59
     },
+    "HASI": {
+      "score": 0.0124,
+      "rs_60d": 2.5,
+      "dip_5d": -0.39,
+      "rsi": 49.9,
+      "price": 40.61
+    },
     "MET": {
       "score": 0.0122,
       "rs_60d": 7.94,
@@ -1846,12 +2626,75 @@
       "rsi": 72.2,
       "price": 84.06
     },
+    "VC": {
+      "score": 0.0122,
+      "rs_60d": 9.91,
+      "dip_5d": 4.58,
+      "rsi": 58.8,
+      "price": 113.47
+    },
+    "MATX": {
+      "score": 0.0109,
+      "rs_60d": 0.76,
+      "dip_5d": -1.31,
+      "rsi": 54.2,
+      "price": 181.84
+    },
+    "CGNX": {
+      "score": 0.0106,
+      "rs_60d": 12.79,
+      "dip_5d": 6.76,
+      "rsi": 64.3,
+      "price": 66.09
+    },
+    "RDN": {
+      "score": 0.0103,
+      "rs_60d": -3.45,
+      "dip_5d": -4.02,
+      "rsi": 50.0,
+      "price": 36.33
+    },
+    "KNTK": {
+      "score": 0.0102,
+      "rs_60d": 2.38,
+      "dip_5d": -0.12,
+      "rsi": 58.3,
+      "price": 50.53
+    },
+    "TFIN": {
+      "score": 0.0101,
+      "rs_60d": 10.84,
+      "dip_5d": 5.55,
+      "rsi": 56.8,
+      "price": 66.77
+    },
     "SLB": {
       "score": 0.0101,
       "rs_60d": 2.87,
       "dip_5d": 0.23,
       "rsi": 62.6,
       "price": 57.28
+    },
+    "DCOM": {
+      "score": 0.01,
+      "rs_60d": 5.37,
+      "dip_5d": 1.91,
+      "rsi": 56.0,
+      "price": 36.9
+    },
+    "OFG": {
+      "score": 0.0097,
+      "rs_60d": 3.7,
+      "dip_5d": 0.85,
+      "rsi": 54.6,
+      "price": 45.05
+    },
+    "CRUS": {
+      "score": 0.0096,
+      "rs_60d": 12.6,
+      "dip_5d": 6.79,
+      "rsi": 59.7,
+      "price": 171.17
     },
     "COP": {
       "score": 0.0096,
@@ -1867,6 +2710,90 @@
       "rsi": 62.3,
       "price": 1247.79
     },
+    "PAYC": {
+      "score": 0.0092,
+      "rs_60d": 0.82,
+      "dip_5d": -0.99,
+      "rsi": 56.8,
+      "price": 137.8
+    },
+    "MCY": {
+      "score": 0.009,
+      "rs_60d": 2.84,
+      "dip_5d": 0.4,
+      "rsi": 58.6,
+      "price": 101.03
+    },
+    "MSM": {
+      "score": 0.0086,
+      "rs_60d": 4.8,
+      "dip_5d": 1.76,
+      "rsi": 63.7,
+      "price": 106.5
+    },
+    "PI": {
+      "score": 0.0085,
+      "rs_60d": 13.4,
+      "dip_5d": 7.51,
+      "rsi": 63.0,
+      "price": 149.76
+    },
+    "AROC": {
+      "score": 0.0082,
+      "rs_60d": -3.26,
+      "dip_5d": -3.55,
+      "rsi": 50.0,
+      "price": 37.25
+    },
+    "VAC": {
+      "score": 0.0081,
+      "rs_60d": 6.96,
+      "dip_5d": 3.3,
+      "rsi": 55.9,
+      "price": 75.19
+    },
+    "INDV": {
+      "score": 0.0078,
+      "rs_60d": 6.01,
+      "dip_5d": 2.71,
+      "rsi": 57.6,
+      "price": 37.53
+    },
+    "BJRI": {
+      "score": 0.0074,
+      "rs_60d": 8.6,
+      "dip_5d": 4.5,
+      "rsi": 70.8,
+      "price": 44.56
+    },
+    "WHD": {
+      "score": 0.0073,
+      "rs_60d": 6.6,
+      "dip_5d": 3.18,
+      "rsi": 70.9,
+      "price": 62.26
+    },
+    "MMI": {
+      "score": 0.0072,
+      "rs_60d": 0.47,
+      "dip_5d": -0.89,
+      "rsi": 53.6,
+      "price": 28.83
+    },
+    "NOVT": {
+      "score": 0.007,
+      "rs_60d": 10.1,
+      "dip_5d": 5.57,
+      "rsi": 68.3,
+      "price": 159.7
+    },
+    "VCYT": {
+      "score": 0.0064,
+      "rs_60d": 14.37,
+      "dip_5d": 8.51,
+      "rsi": 73.7,
+      "price": 45.03
+    },
     "KKR": {
       "score": 0.0063,
       "rs_60d": -1.44,
@@ -1881,12 +2808,12 @@
       "rsi": 51.1,
       "price": 125.09
     },
-    "SBUX": {
-      "score": 0.0056,
-      "rs_60d": -3.5,
-      "dip_5d": -3.27,
-      "rsi": 49.5,
-      "price": 103.11
+    "ARES": {
+      "score": 0.0061,
+      "rs_60d": 2.37,
+      "dip_5d": 0.57,
+      "rsi": 57.3,
+      "price": 124.41
     },
     "KEYS": {
       "score": 0.0056,
@@ -1895,12 +2822,131 @@
       "rsi": 53.1,
       "price": 346.56
     },
+    "SBUX": {
+      "score": 0.0056,
+      "rs_60d": -3.5,
+      "dip_5d": -3.27,
+      "rsi": 49.5,
+      "price": 103.11
+    },
+    "CON": {
+      "score": 0.0054,
+      "rs_60d": -3.02,
+      "dip_5d": -2.91,
+      "rsi": 63.6,
+      "price": 25.32
+    },
+    "PTGX": {
+      "score": 0.0053,
+      "rs_60d": -0.97,
+      "dip_5d": -1.54,
+      "rsi": 47.0,
+      "price": 99.19
+    },
+    "WSFS": {
+      "score": 0.005,
+      "rs_60d": 4.18,
+      "dip_5d": 1.96,
+      "rsi": 58.6,
+      "price": 71.69
+    },
+    "EWBC": {
+      "score": 0.0049,
+      "rs_60d": 3.79,
+      "dip_5d": 1.71,
+      "rsi": 57.4,
+      "price": 123.12
+    },
+    "THG": {
+      "score": 0.0046,
+      "rs_60d": -0.67,
+      "dip_5d": -1.22,
+      "rsi": 65.0,
+      "price": 195.13
+    },
+    "GNRC": {
+      "score": 0.0042,
+      "rs_60d": 11.17,
+      "dip_5d": 6.75,
+      "rsi": 63.5,
+      "price": 270.14
+    },
+    "DT": {
+      "score": 0.0037,
+      "rs_60d": 6.03,
+      "dip_5d": 3.41,
+      "rsi": 60.8,
+      "price": 41.21
+    },
+    "KNX": {
+      "score": 0.0036,
+      "rs_60d": 2.75,
+      "dip_5d": 1.23,
+      "rsi": 63.7,
+      "price": 70.12
+    },
+    "WD": {
+      "score": 0.0031,
+      "rs_60d": 0.78,
+      "dip_5d": 0.0,
+      "rsi": 47.9,
+      "price": 50.37
+    },
     "AMAT": {
       "score": 0.0026,
       "rs_60d": 7.38,
       "dip_5d": 4.5,
       "rsi": 57.9,
       "price": 432.16
+    },
+    "BOX": {
+      "score": 0.0021,
+      "rs_60d": 1.28,
+      "dip_5d": 0.5,
+      "rsi": 59.1,
+      "price": 25.9
+    },
+    "CART": {
+      "score": 0.0014,
+      "rs_60d": 1.2,
+      "dip_5d": 0.56,
+      "rsi": 52.3,
+      "price": 41.22
+    },
+    "CZR": {
+      "score": 0.0014,
+      "rs_60d": 4.96,
+      "dip_5d": 3.08,
+      "rsi": 58.3,
+      "price": 28.47
+    },
+    "OUT": {
+      "score": 0.0009,
+      "rs_60d": 7.93,
+      "dip_5d": 5.13,
+      "rsi": 65.6,
+      "price": 33.6
+    },
+    "RNG": {
+      "score": 0.0008,
+      "rs_60d": 10.76,
+      "dip_5d": 7.03,
+      "rsi": 55.4,
+      "price": 43.54
+    },
+    "CSX": {
+      "score": 0.0006,
+      "rs_60d": -2.07,
+      "dip_5d": -1.47,
+      "rsi": 57.4,
+      "price": 45.52
+    },
+    "NWSA": {
+      "score": 0.0002,
+      "rs_60d": -2.11,
+      "dip_5d": -1.45,
+      "rsi": 48.4,
+      "price": 25.89
     },
     "COIN": {
       "score": 0.0001,
@@ -1909,12 +2955,61 @@
       "rsi": 44.5,
       "price": 184.99
     },
+    "GL": {
+      "score": -0.0004,
+      "rs_60d": -1.11,
+      "dip_5d": -0.68,
+      "rsi": 58.0,
+      "price": 156.28
+    },
+    "RHP": {
+      "score": -0.0004,
+      "rs_60d": 4.68,
+      "dip_5d": 3.19,
+      "rsi": 66.8,
+      "price": 111.96
+    },
+    "ANDE": {
+      "score": -0.0007,
+      "rs_60d": -0.18,
+      "dip_5d": 0.0,
+      "rsi": 44.8,
+      "price": 70.85
+    },
+    "BANR": {
+      "score": -0.001,
+      "rs_60d": 1.16,
+      "dip_5d": 0.94,
+      "rsi": 51.6,
+      "price": 64.65
+    },
     "EQIX": {
       "score": -0.0011,
       "rs_60d": 2.14,
       "dip_5d": 1.62,
       "rsi": 55.7,
       "price": 1079.79
+    },
+    "MGY": {
+      "score": -0.0013,
+      "rs_60d": -3.59,
+      "dip_5d": -2.17,
+      "rsi": 49.0,
+      "price": 29.24
+    },
+    "INVH": {
+      "score": -0.0013,
+      "rs_60d": 2.5,
+      "dip_5d": 1.88,
+      "rsi": 65.4,
+      "price": 29.29
+    },
+    "DOCU": {
+      "score": -0.0014,
+      "rs_60d": 1.2,
+      "dip_5d": 1.04,
+      "rsi": 58.5,
+      "price": 49.53
     },
     "MSFT": {
       "score": -0.0014,
@@ -1923,6 +3018,27 @@
       "rsi": 54.4,
       "price": 418.57
     },
+    "OII": {
+      "score": -0.0015,
+      "rs_60d": 0.52,
+      "dip_5d": 0.6,
+      "rsi": 57.7,
+      "price": 38.77
+    },
+    "CNS": {
+      "score": -0.0016,
+      "rs_60d": -1.26,
+      "dip_5d": -0.58,
+      "rsi": 59.5,
+      "price": 71.84
+    },
+    "UMBF": {
+      "score": -0.0026,
+      "rs_60d": 4.53,
+      "dip_5d": 3.46,
+      "rsi": 61.6,
+      "price": 131.21
+    },
     "GS": {
       "score": -0.0029,
       "rs_60d": 7.26,
@@ -1930,12 +3046,68 @@
       "rsi": 66.4,
       "price": 996.73
     },
+    "ACIW": {
+      "score": -0.003,
+      "rs_60d": -1.03,
+      "dip_5d": -0.19,
+      "rsi": 49.9,
+      "price": 42.72
+    },
+    "TROW": {
+      "score": -0.0037,
+      "rs_60d": 0.56,
+      "dip_5d": 0.99,
+      "rsi": 60.5,
+      "price": 103.39
+    },
+    "AIT": {
+      "score": -0.0038,
+      "rs_60d": -0.02,
+      "dip_5d": 0.62,
+      "rsi": 56.4,
+      "price": 307.1
+    },
     "TGT": {
       "score": -0.004,
       "rs_60d": 1.68,
       "dip_5d": 1.78,
       "rsi": 51.8,
       "price": 125.6
+    },
+    "EXPD": {
+      "score": -0.0042,
+      "rs_60d": 0.58,
+      "dip_5d": 1.09,
+      "rsi": 61.8,
+      "price": 158.48
+    },
+    "CPAY": {
+      "score": -0.0057,
+      "rs_60d": -1.68,
+      "dip_5d": -0.17,
+      "rsi": 63.1,
+      "price": 347.9
+    },
+    "IBOC": {
+      "score": -0.0058,
+      "rs_60d": -0.25,
+      "dip_5d": 0.8,
+      "rsi": 56.3,
+      "price": 72.78
+    },
+    "ABCB": {
+      "score": -0.0064,
+      "rs_60d": 0.36,
+      "dip_5d": 1.3,
+      "rsi": 53.7,
+      "price": 84.69
+    },
+    "LRN": {
+      "score": -0.0067,
+      "rs_60d": -3.66,
+      "dip_5d": -1.32,
+      "rsi": 44.2,
+      "price": 88.63
     },
     "APD": {
       "score": -0.0069,
@@ -1951,6 +3123,20 @@
       "rsi": 65.9,
       "price": 67.67
     },
+    "CBT": {
+      "score": -0.0074,
+      "rs_60d": 0.85,
+      "dip_5d": 1.81,
+      "rsi": 60.8,
+      "price": 83.41
+    },
+    "PFG": {
+      "score": -0.0079,
+      "rs_60d": 0.14,
+      "dip_5d": 1.42,
+      "rsi": 67.9,
+      "price": 103.85
+    },
     "MO": {
       "score": -0.0081,
       "rs_60d": -1.66,
@@ -1958,12 +3144,180 @@
       "rsi": 64.5,
       "price": 73.9
     },
-    "QSR": {
+    "LSTR": {
+      "score": -0.0085,
+      "rs_60d": 10.37,
+      "dip_5d": 8.32,
+      "rsi": 68.7,
+      "price": 194.01
+    },
+    "EQH": {
+      "score": -0.0085,
+      "rs_60d": -2.83,
+      "dip_5d": -0.47,
+      "rsi": 55.2,
+      "price": 42.58
+    },
+    "CRC": {
+      "score": -0.0086,
+      "rs_60d": -3.26,
+      "dip_5d": -0.74,
+      "rsi": 46.3,
+      "price": 62.04
+    },
+    "DTM": {
+      "score": -0.0086,
+      "rs_60d": 0.15,
+      "dip_5d": 1.53,
+      "rsi": 70.5,
+      "price": 151.12
+    },
+    "ALLY": {
+      "score": -0.0087,
+      "rs_60d": -1.32,
+      "dip_5d": 0.57,
+      "rsi": 48.4,
+      "price": 42.35
+    },
+    "NDAQ": {
+      "score": -0.0088,
+      "rs_60d": -4.78,
+      "dip_5d": -1.72,
+      "rsi": 55.9,
+      "price": 91.01
+    },
+    "NJR": {
+      "score": -0.0088,
+      "rs_60d": -3.11,
+      "dip_5d": -0.61,
+      "rsi": 56.6,
+      "price": 57.27
+    },
+    "EG": {
+      "score": -0.009,
+      "rs_60d": -3.56,
+      "dip_5d": -0.87,
+      "rsi": 55.1,
+      "price": 352.71
+    },
+    "FHB": {
+      "score": -0.0092,
+      "rs_60d": 1.76,
+      "dip_5d": 2.7,
+      "rsi": 58.1,
+      "price": 27.35
+    },
+    "CRBG": {
+      "score": -0.0093,
+      "rs_60d": -1.34,
+      "dip_5d": 0.65,
+      "rsi": 57.1,
+      "price": 27.74
+    },
+    "CUBI": {
+      "score": -0.0094,
+      "rs_60d": 2.74,
+      "dip_5d": 3.4,
+      "rsi": 51.6,
+      "price": 75.15
+    },
+    "MC": {
+      "score": -0.0095,
+      "rs_60d": 2.09,
+      "dip_5d": 2.98,
+      "rsi": 56.1,
+      "price": 65.76
+    },
+    "PJT": {
+      "score": -0.0095,
+      "rs_60d": -2.68,
+      "dip_5d": -0.2,
+      "rsi": 56.0,
+      "price": 156.56
+    },
+    "PCTY": {
+      "score": -0.0105,
+      "rs_60d": -2.56,
+      "dip_5d": 0.04,
+      "rsi": 58.6,
+      "price": 113.02
+    },
+    "TFX": {
+      "score": -0.0105,
+      "rs_60d": 0.06,
+      "dip_5d": 1.79,
+      "rsi": 57.0,
+      "price": 132.75
+    },
+    "SIGI": {
+      "score": -0.0105,
+      "rs_60d": -0.77,
+      "dip_5d": 1.24,
+      "rsi": 68.4,
+      "price": 90.7
+    },
+    "HQY": {
+      "score": -0.0106,
+      "rs_60d": 6.5,
+      "dip_5d": 6.11,
+      "rsi": 62.7,
+      "price": 88.11
+    },
+    "ESS": {
+      "score": -0.0108,
+      "rs_60d": -0.23,
+      "dip_5d": 1.64,
+      "rsi": 67.9,
+      "price": 276.7
+    },
+    "MBIN": {
+      "score": -0.011,
+      "rs_60d": 0.08,
+      "dip_5d": 1.88,
+      "rsi": 49.9,
+      "price": 45.99
+    },
+    "AMH": {
+      "score": -0.0117,
+      "rs_60d": -1.13,
+      "dip_5d": 1.19,
+      "rsi": 60.9,
+      "price": 32.27
+    },
+    "WERN": {
+      "score": -0.0118,
+      "rs_60d": 4.7,
+      "dip_5d": 5.1,
+      "rsi": 71.0,
+      "price": 39.79
+    },
+    "SLAB": {
       "score": -0.0119,
-      "rs_60d": -3.58,
-      "dip_5d": -0.41,
-      "rsi": 41.8,
-      "price": 75.38
+      "rs_60d": -2.35,
+      "dip_5d": 0.42,
+      "rsi": 64.5,
+      "price": 217.5
+    },
+    "EVR": {
+      "score": -0.0122,
+      "rs_60d": 3.38,
+      "dip_5d": 4.28,
+      "rsi": 57.8,
+      "price": 346.12
+    },
+    "DLR": {
+      "score": -0.0125,
+      "rs_60d": -0.33,
+      "dip_5d": 1.87,
+      "rsi": 48.9,
+      "price": 192.03
+    },
+    "ANIP": {
+      "score": -0.0126,
+      "rs_60d": 3.24,
+      "dip_5d": 4.26,
+      "rsi": 57.8,
+      "price": 82.72
     },
     "ROK": {
       "score": -0.0127,
@@ -1972,12 +3326,82 @@
       "rsi": 61.4,
       "price": 452.29
     },
+    "LAMR": {
+      "score": -0.013,
+      "rs_60d": 2.46,
+      "dip_5d": 3.8,
+      "rsi": 67.0,
+      "price": 153.1
+    },
+    "AIN": {
+      "score": -0.0131,
+      "rs_60d": -0.92,
+      "dip_5d": 1.57,
+      "rsi": 59.9,
+      "price": 62.13
+    },
     "AFL": {
       "score": -0.0132,
       "rs_60d": -4.33,
       "dip_5d": -0.68,
-      "rsi": 61.8,
+      "rsi": 61.9,
       "price": 117.86
+    },
+    "RHI": {
+      "score": -0.0133,
+      "rs_60d": 3.14,
+      "dip_5d": 4.32,
+      "rsi": 55.9,
+      "price": 27.31
+    },
+    "GDDY": {
+      "score": -0.0135,
+      "rs_60d": -4.91,
+      "dip_5d": -1.02,
+      "rsi": 56.2,
+      "price": 90.46
+    },
+    "FFBC": {
+      "score": -0.0137,
+      "rs_60d": 0.78,
+      "dip_5d": 2.81,
+      "rsi": 60.1,
+      "price": 30.73
+    },
+    "IAC": {
+      "score": -0.0155,
+      "rs_60d": 0.99,
+      "dip_5d": 3.24,
+      "rsi": 51.6,
+      "price": 42.03
+    },
+    "SOLS": {
+      "score": -0.016,
+      "rs_60d": -4.56,
+      "dip_5d": -0.38,
+      "rsi": 50.2,
+      "price": 81.76
+    },
+    "BHF": {
+      "score": -0.016,
+      "rs_60d": -4.54,
+      "dip_5d": -0.37,
+      "rsi": 57.2,
+      "price": 62.47
+    },
+    "KRYS": {
+      "score": -0.0161,
+      "rs_60d": -0.06,
+      "dip_5d": 2.64,
+      "rsi": 56.6,
+      "price": 299.45
+    },
+    "PZZA": {
+      "score": -0.0161,
+      "rs_60d": -2.16,
+      "dip_5d": 1.24,
+      "rsi": 47.2,
+      "price": 33.4
     },
     "BWA": {
       "score": -0.0163,
@@ -1986,6 +3410,55 @@
       "rsi": 65.2,
       "price": 65.82
     },
+    "ETSY": {
+      "score": -0.0163,
+      "rs_60d": 4.97,
+      "dip_5d": 6.03,
+      "rsi": 55.3,
+      "price": 62.38
+    },
+    "ESE": {
+      "score": -0.0164,
+      "rs_60d": -2.09,
+      "dip_5d": 1.35,
+      "rsi": 43.8,
+      "price": 295.62
+    },
+    "HZO": {
+      "score": -0.017,
+      "rs_60d": 5.8,
+      "dip_5d": 6.69,
+      "rsi": 64.4,
+      "price": 34.92
+    },
+    "AVB": {
+      "score": -0.0171,
+      "rs_60d": -3.94,
+      "dip_5d": 0.22,
+      "rsi": 58.6,
+      "price": 185.65
+    },
+    "RNST": {
+      "score": -0.0174,
+      "rs_60d": 0.2,
+      "dip_5d": 3.04,
+      "rsi": 61.8,
+      "price": 41.0
+    },
+    "ILMN": {
+      "score": -0.0175,
+      "rs_60d": -1.3,
+      "dip_5d": 2.05,
+      "rsi": 62.2,
+      "price": 144.41
+    },
+    "EIG": {
+      "score": -0.0177,
+      "rs_60d": -2.53,
+      "dip_5d": 1.27,
+      "rsi": 66.1,
+      "price": 43.9
+    },
     "PRU": {
       "score": -0.0181,
       "rs_60d": -2.86,
@@ -1993,12 +3466,348 @@
       "rsi": 62.6,
       "price": 104.12
     },
+    "HRMY": {
+      "score": -0.0187,
+      "rs_60d": -3.05,
+      "dip_5d": 1.07,
+      "rsi": 47.0,
+      "price": 30.15
+    },
+    "QLYS": {
+      "score": -0.0188,
+      "rs_60d": 2.01,
+      "dip_5d": 4.48,
+      "rsi": 66.7,
+      "price": 102.37
+    },
+    "OMCL": {
+      "score": -0.0191,
+      "rs_60d": -0.64,
+      "dip_5d": 2.75,
+      "rsi": 61.9,
+      "price": 44.41
+    },
+    "MAR": {
+      "score": -0.0193,
+      "rs_60d": -0.67,
+      "dip_5d": 2.78,
+      "rsi": 61.7,
+      "price": 369.15
+    },
+    "FRT": {
+      "score": -0.0196,
+      "rs_60d": 1.4,
+      "dip_5d": 4.19,
+      "rsi": 72.1,
+      "price": 119.75
+    },
+    "HTO": {
+      "score": -0.0197,
+      "rs_60d": -0.63,
+      "dip_5d": 2.87,
+      "rsi": 53.9,
+      "price": 58.13
+    },
+    "BXP": {
+      "score": -0.0197,
+      "rs_60d": -3.99,
+      "dip_5d": 0.62,
+      "rsi": 60.6,
+      "price": 60.29
+    },
+    "SHOO": {
+      "score": -0.0199,
+      "rs_60d": 7.45,
+      "dip_5d": 8.29,
+      "rsi": 65.3,
+      "price": 41.93
+    },
+    "CRI": {
+      "score": -0.02,
+      "rs_60d": 2.27,
+      "dip_5d": 4.84,
+      "rsi": 56.7,
+      "price": 37.23
+    },
+    "H": {
+      "score": -0.0203,
+      "rs_60d": -0.86,
+      "dip_5d": 2.8,
+      "rsi": 60.3,
+      "price": 174.15
+    },
+    "BRKR": {
+      "score": -0.0204,
+      "rs_60d": 5.22,
+      "dip_5d": 6.88,
+      "rsi": 66.9,
+      "price": 45.69
+    },
+    "ADP": {
+      "score": -0.0207,
+      "rs_60d": -3.59,
+      "dip_5d": 1.06,
+      "rsi": 65.5,
+      "price": 225.31
+    },
+    "WMB": {
+      "score": -0.0207,
+      "rs_60d": -3.68,
+      "dip_5d": 1.0,
+      "rsi": 63.1,
+      "price": 78.47
+    },
+    "ZION": {
+      "score": -0.0213,
+      "rs_60d": -0.25,
+      "dip_5d": 3.38,
+      "rsi": 55.3,
+      "price": 62.12
+    },
+    "PNFP": {
+      "score": -0.0215,
+      "rs_60d": -1.65,
+      "dip_5d": 2.48,
+      "rsi": 54.8,
+      "price": 97.15
+    },
+    "DAL": {
+      "score": -0.0216,
+      "rs_60d": 7.19,
+      "dip_5d": 8.4,
+      "rsi": 64.6,
+      "price": 76.14
+    },
+    "LXP": {
+      "score": -0.0218,
+      "rs_60d": -3.29,
+      "dip_5d": 1.44,
+      "rsi": 58.5,
+      "price": 52.24
+    },
+    "ASB": {
+      "score": -0.0219,
+      "rs_60d": -2.64,
+      "dip_5d": 1.89,
+      "rsi": 53.7,
+      "price": 28.01
+    },
+    "KFY": {
+      "score": -0.022,
+      "rs_60d": -0.14,
+      "dip_5d": 3.58,
+      "rsi": 61.3,
+      "price": 68.03
+    },
+    "PRKS": {
+      "score": -0.0222,
+      "rs_60d": -2.98,
+      "dip_5d": 1.71,
+      "rsi": 55.3,
+      "price": 36.78
+    },
+    "TDC": {
+      "score": -0.0223,
+      "rs_60d": -2.5,
+      "dip_5d": 2.04,
+      "rsi": 68.0,
+      "price": 33.44
+    },
+    "NBHC": {
+      "score": -0.0228,
+      "rs_60d": -3.59,
+      "dip_5d": 1.4,
+      "rsi": 52.6,
+      "price": 42.03
+    },
+    "EQR": {
+      "score": -0.0229,
+      "rs_60d": -3.97,
+      "dip_5d": 1.18,
+      "rsi": 60.4,
+      "price": 66.2
+    },
+    "URBN": {
+      "score": -0.0229,
+      "rs_60d": 1.59,
+      "dip_5d": 4.88,
+      "rsi": 58.4,
+      "price": 73.01
+    },
     "BX": {
       "score": -0.0242,
       "rs_60d": -4.16,
       "dip_5d": 1.26,
       "rsi": 46.9,
       "price": 118.51
+    },
+    "PII": {
+      "score": -0.0242,
+      "rs_60d": 2.98,
+      "dip_5d": 6.02,
+      "rsi": 58.8,
+      "price": 67.83
+    },
+    "WAT": {
+      "score": -0.0244,
+      "rs_60d": -1.5,
+      "dip_5d": 3.06,
+      "rsi": 57.7,
+      "price": 342.37
+    },
+    "TRMK": {
+      "score": -0.0245,
+      "rs_60d": -4.45,
+      "dip_5d": 1.12,
+      "rsi": 52.8,
+      "price": 44.4
+    },
+    "TBBK": {
+      "score": -0.0248,
+      "rs_60d": -3.3,
+      "dip_5d": 1.93,
+      "rsi": 45.4,
+      "price": 55.32
+    },
+    "MRCY": {
+      "score": -0.0252,
+      "rs_60d": 2.0,
+      "dip_5d": 5.53,
+      "rsi": 70.5,
+      "price": 98.55
+    },
+    "ANET": {
+      "score": -0.0254,
+      "rs_60d": 6.68,
+      "dip_5d": 8.69,
+      "rsi": 53.7,
+      "price": 154.03
+    },
+    "SYF": {
+      "score": -0.0256,
+      "rs_60d": -4.76,
+      "dip_5d": 1.1,
+      "rsi": 47.6,
+      "price": 71.83
+    },
+    "EGP": {
+      "score": -0.0257,
+      "rs_60d": -4.19,
+      "dip_5d": 1.48,
+      "rsi": 62.3,
+      "price": 205.16
+    },
+    "UBSI": {
+      "score": -0.026,
+      "rs_60d": -3.95,
+      "dip_5d": 1.69,
+      "rsi": 53.6,
+      "price": 43.26
+    },
+    "SAIC": {
+      "score": -0.0262,
+      "rs_60d": -0.3,
+      "dip_5d": 4.17,
+      "rsi": 62.4,
+      "price": 100.01
+    },
+    "R": {
+      "score": -0.0265,
+      "rs_60d": 1.43,
+      "dip_5d": 5.38,
+      "rsi": 60.3,
+      "price": 244.0
+    },
+    "GBCI": {
+      "score": -0.0269,
+      "rs_60d": -3.93,
+      "dip_5d": 1.86,
+      "rsi": 50.7,
+      "price": 47.66
+    },
+    "FFIN": {
+      "score": -0.0271,
+      "rs_60d": -4.46,
+      "dip_5d": 1.54,
+      "rsi": 55.4,
+      "price": 32.24
+    },
+    "FDS": {
+      "score": -0.0272,
+      "rs_60d": -1.69,
+      "dip_5d": 3.41,
+      "rsi": 57.7,
+      "price": 232.0
+    },
+    "HGV": {
+      "score": -0.0274,
+      "rs_60d": -1.02,
+      "dip_5d": 3.88,
+      "rsi": 57.9,
+      "price": 48.41
+    },
+    "WELL": {
+      "score": -0.0274,
+      "rs_60d": -4.33,
+      "dip_5d": 1.67,
+      "rsi": 54.3,
+      "price": 216.17
+    },
+    "TCBI": {
+      "score": -0.0296,
+      "rs_60d": -4.4,
+      "dip_5d": 1.99,
+      "rsi": 51.6,
+      "price": 99.39
+    },
+    "LIVN": {
+      "score": -0.0298,
+      "rs_60d": -4.12,
+      "dip_5d": 2.22,
+      "rsi": 65.0,
+      "price": 73.83
+    },
+    "ETR": {
+      "score": -0.0305,
+      "rs_60d": -3.76,
+      "dip_5d": 2.57,
+      "rsi": 50.3,
+      "price": 112.4
+    },
+    "TKR": {
+      "score": -0.0305,
+      "rs_60d": 1.98,
+      "dip_5d": 6.4,
+      "rsi": 62.3,
+      "price": 119.95
+    },
+    "WTFC": {
+      "score": -0.0308,
+      "rs_60d": -4.65,
+      "dip_5d": 2.04,
+      "rsi": 55.2,
+      "price": 149.89
+    },
+    "RBA": {
+      "score": -0.0309,
+      "rs_60d": -4.97,
+      "dip_5d": 1.83,
+      "rsi": 54.6,
+      "price": 104.72
+    },
+    "IIPR": {
+      "score": -0.0311,
+      "rs_60d": -0.95,
+      "dip_5d": 4.54,
+      "rsi": 57.8,
+      "price": 57.06
+    },
+    "COLB": {
+      "score": -0.0317,
+      "rs_60d": -4.2,
+      "dip_5d": 2.48,
+      "rsi": 55.1,
+      "price": 29.73
     },
     "BAC": {
       "score": -0.0321,
@@ -2014,77 +3823,166 @@
       "rsi": 47.4,
       "price": 391.35
     },
+    "CFG": {
+      "score": -0.0338,
+      "rs_60d": -4.21,
+      "dip_5d": 2.83,
+      "rsi": 50.9,
+      "price": 62.89
+    },
+    "CW": {
+      "score": -0.0348,
+      "rs_60d": -4.28,
+      "dip_5d": 2.94,
+      "rsi": 53.6,
+      "price": 731.24
+    },
     "TSLA": {
       "score": -0.0349,
       "rs_60d": -2.86,
       "dip_5d": 3.91,
       "rsi": 58.3,
       "price": 426.01
+    },
+    "PAG": {
+      "score": -0.0352,
+      "rs_60d": -4.12,
+      "dip_5d": 3.12,
+      "rsi": 52.4,
+      "price": 164.73
+    },
+    "LNC": {
+      "score": -0.0378,
+      "rs_60d": -3.65,
+      "dip_5d": 3.86,
+      "rsi": 52.3,
+      "price": 36.03
+    },
+    "MGM": {
+      "score": -0.0393,
+      "rs_60d": -4.52,
+      "dip_5d": 3.53,
+      "rsi": 54.8,
+      "price": 38.4
+    },
+    "DKS": {
+      "score": -0.0398,
+      "rs_60d": 4.86,
+      "dip_5d": 9.88,
+      "rsi": 60.5,
+      "price": 231.24
+    },
+    "CHH": {
+      "score": -0.0417,
+      "rs_60d": -1.32,
+      "dip_5d": 6.07,
+      "rsi": 57.8,
+      "price": 113.12
+    },
+    "KRG": {
+      "score": -0.0428,
+      "rs_60d": -4.93,
+      "dip_5d": 3.84,
+      "rsi": 65.1,
+      "price": 27.03
+    },
+    "CRS": {
+      "score": -0.0429,
+      "rs_60d": 0.36,
+      "dip_5d": 7.39,
+      "rsi": 53.8,
+      "price": 434.12
+    },
+    "MAN": {
+      "score": -0.0514,
+      "rs_60d": -3.69,
+      "dip_5d": 6.11,
+      "rsi": 53.6,
+      "price": 29.37
+    },
+    "LEA": {
+      "score": -0.0522,
+      "rs_60d": -2.18,
+      "dip_5d": 7.24,
+      "rsi": 61.2,
+      "price": 139.8
+    },
+    "XPEL": {
+      "score": -0.0562,
+      "rs_60d": -3.79,
+      "dip_5d": 6.83,
+      "rsi": 51.9,
+      "price": 44.71
+    },
+    "KTB": {
+      "score": -0.0588,
+      "rs_60d": -1.49,
+      "dip_5d": 8.81,
+      "rsi": 51.2,
+      "price": 69.91
+    },
+    "OXM": {
+      "score": -0.0606,
+      "rs_60d": -3.29,
+      "dip_5d": 7.91,
+      "rsi": 51.6,
+      "price": 41.73
     }
   },
   "valuation_rejected": [
     {
-      "symbol": "TXN",
+      "symbol": "DOCN",
       "verdict": "reject",
-      "ps": 15.26,
+      "ps": 17.43,
       "sector": "Technology",
       "sector_median": 6.0,
-      "ratio": 2.54,
-      "reason": "P/S 15.3 = 2.5x Technology median 6.0 (cap 2.5x)"
+      "ratio": 2.91,
+      "reason": "P/S 17.4 = 2.9x Technology median 6.0 (cap 2.5x)"
     },
     {
-      "symbol": "AVGO",
+      "symbol": "STX",
       "verdict": "reject",
-      "ps": 28.72,
+      "ps": 16.55,
       "sector": "Technology",
       "sector_median": 6.0,
-      "ratio": 4.79,
-      "reason": "P/S 28.7 = 4.8x Technology median 6.0 (cap 2.5x)"
+      "ratio": 2.76,
+      "reason": "P/S 16.6 = 2.8x Technology median 6.0 (cap 2.5x)"
     },
     {
-      "symbol": "MPWR",
+      "symbol": "SITM",
       "verdict": "reject",
-      "ps": 26.41,
+      "ps": 50.62,
       "sector": "Technology",
       "sector_median": 6.0,
-      "ratio": 4.4,
-      "reason": "P/S 26.4 = 4.4x Technology median 6.0 (cap 2.5x)"
+      "ratio": 8.44,
+      "reason": "P/S 50.6 = 8.4x Technology median 6.0 (cap 2.5x)"
     },
     {
-      "symbol": "GOOGL",
-      "verdict": "reject",
-      "ps": 10.98,
-      "sector": "Communication Services",
-      "sector_median": 3.5,
-      "ratio": 3.14,
-      "reason": "P/S 11.0 = 3.1x Communication Services median 3.5 (cap 2.5x)"
-    },
-    {
-      "symbol": "NVDA",
-      "verdict": "reject",
-      "ps": 20.57,
-      "sector": "Technology",
-      "sector_median": 6.0,
-      "ratio": 3.43,
-      "reason": "P/S 20.6 = 3.4x Technology median 6.0 (cap 2.5x)"
-    },
-    {
-      "symbol": "AMZN",
-      "verdict": "reject",
-      "ps": 3.86,
-      "sector": "Consumer Cyclical",
-      "sector_median": 1.5,
-      "ratio": 2.57,
-      "reason": "P/S 3.9 = 2.6x Consumer Cyclical median 1.5 (cap 2.5x)"
-    },
-    {
-      "symbol": "CBOE",
+      "symbol": "STRL",
       "verdict": "reject",
       "ps": 7.8,
-      "sector": "Financial Services",
-      "sector_median": 2.5,
-      "ratio": 3.12,
-      "reason": "P/S 7.8 = 3.1x Financial Services median 2.5 (cap 2.5x)"
+      "sector": "Industrials",
+      "sector_median": 1.8,
+      "ratio": 4.33,
+      "reason": "P/S 7.8 = 4.3x Industrials median 1.8 (cap 2.5x)"
+    },
+    {
+      "symbol": "CORT",
+      "verdict": "reject",
+      "ps": 8.41,
+      "sector": "Healthcare",
+      "sector_median": 1.8,
+      "ratio": 4.67,
+      "reason": "P/S 8.4 = 4.7x Healthcare median 1.8 (cap 2.5x)"
+    },
+    {
+      "symbol": "AGX",
+      "verdict": "reject",
+      "ps": 9.7,
+      "sector": "Industrials",
+      "sector_median": 1.8,
+      "ratio": 5.39,
+      "reason": "P/S 9.7 = 5.4x Industrials median 1.8 (cap 2.5x)"
     }
   ]
 }
