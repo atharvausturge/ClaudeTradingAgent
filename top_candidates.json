@@ -1,0 +1,182 @@
+[
+  {
+    "symbol": "AMD",
+    "score": 0.2338,
+    "rs_60d": 66.0,
+    "dip_5d": 5.04,
+    "rsi": 52.8,
+    "price": 435.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "MU",
+    "score": 0.2009,
+    "rs_60d": 54.0,
+    "dip_5d": 2.52,
+    "rsi": 34.7,
+    "price": 820.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "NVDA",
+    "score": 0.1101,
+    "rs_60d": 20.99,
+    "dip_5d": -4.35,
+    "rsi": 49.8,
+    "price": 217.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "MRVL",
+    "score": 0.0504,
+    "rs_60d": 20.99,
+    "dip_5d": 5.59,
+    "rsi": 25.9,
+    "price": 115.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "CRWD",
+    "score": 0.0496,
+    "rs_60d": 11.0,
+    "dip_5d": -0.93,
+    "rsi": 53.3,
+    "price": 480.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "LRCX",
+    "score": 0.04,
+    "rs_60d": 6.0,
+    "dip_5d": -2.67,
+    "rsi": 60.6,
+    "price": 1100.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "AMAT",
+    "score": 0.0341,
+    "rs_60d": 8.0,
+    "dip_5d": -0.34,
+    "rsi": 67.1,
+    "price": 430.62,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "NEM",
+    "score": 0.0324,
+    "rs_60d": 1.01,
+    "dip_5d": -4.73,
+    "rsi": 53.6,
+    "price": 52.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "AMZN",
+    "score": 0.0278,
+    "rs_60d": -2.0,
+    "dip_5d": -5.97,
+    "rsi": 44.7,
+    "price": 225.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "META",
+    "score": 0.0245,
+    "rs_60d": 6.0,
+    "dip_5d": -0.08,
+    "rsi": 65.0,
+    "price": 645.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "GOOGL",
+    "score": 0.0138,
+    "rs_60d": 4.0,
+    "dip_5d": 0.37,
+    "rsi": 67.7,
+    "price": 195.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "EOG",
+    "score": 0.0118,
+    "rs_60d": 6.01,
+    "dip_5d": 2.03,
+    "rsi": 70.4,
+    "price": 143.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "XOM",
+    "score": 0.0115,
+    "rs_60d": -2.01,
+    "dip_5d": -3.26,
+    "rsi": 66.3,
+    "price": 122.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "KLAC",
+    "score": 0.0113,
+    "rs_60d": 1.0,
+    "dip_5d": -1.22,
+    "rsi": 40.4,
+    "price": 780.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "AVGO",
+    "score": 0.0072,
+    "rs_60d": 11.0,
+    "dip_5d": 6.13,
+    "rsi": 34.8,
+    "price": 260.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "CAT",
+    "score": 0.0013,
+    "rs_60d": -4.0,
+    "dip_5d": -2.88,
+    "rsi": 50.3,
+    "price": 365.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "ORCL",
+    "score": -0.0033,
+    "rs_60d": 1.0,
+    "dip_5d": 1.21,
+    "rsi": 27.6,
+    "price": 195.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "NOW",
+    "score": -0.0075,
+    "rs_60d": 4.0,
+    "dip_5d": 3.92,
+    "rsi": 57.4,
+    "price": 1050.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "MSFT",
+    "score": -0.017,
+    "rs_60d": -4.0,
+    "dip_5d": 0.17,
+    "rsi": 46.1,
+    "price": 455.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "LLY",
+    "score": -0.024,
+    "rs_60d": -2.0,
+    "dip_5d": 2.67,
+    "rsi": 70.3,
+    "price": 1064.59,
+    "earnings_blackout": false
+  }
+]
