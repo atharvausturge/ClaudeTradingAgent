@@ -146,36 +146,127 @@
       "qty": 80,
       "price": 411.45,
       "order_type": "market"
+    },
+    {
+      "time": "2026-05-25T12:08:21.299934-04:00",
+      "action": "BUY",
+      "symbol": "FLEX",
+      "qty": 112,
+      "price": 132.46,
+      "stop_price": 125.84,
+      "reasoning": "trades at a discount to the technology median with a strong sector momentum and 20% upside target",
+      "confidence": "high",
+      "filled": false
+    },
+    {
+      "time": "2026-05-25T12:08:21.299934-04:00",
+      "action": "BUY",
+      "symbol": "VIAV",
+      "qty": 301,
+      "price": 49.495,
+      "stop_price": 47.02,
+      "reasoning": "trades at a discount to analyst target with a strong sector momentum and high upside target",
+      "confidence": "high",
+      "filled": false
+    },
+    {
+      "time": "2026-05-25T12:08:21.299934-04:00",
+      "action": "BUY",
+      "symbol": "ASTH",
+      "qty": 393,
+      "price": 37.83,
+      "stop_price": 35.94,
+      "reasoning": "trades at a discount to the healthcare median but has a lagging sector",
+      "confidence": "medium",
+      "filled": false
+    },
+    {
+      "time": "2026-05-25T12:08:21.299934-04:00",
+      "action": "BUY",
+      "symbol": "ACLS",
+      "qty": 92,
+      "price": 157.15,
+      "stop_price": 149.29,
+      "reasoning": "trades near analyst target with a strong sector momentum but low upside target",
+      "confidence": "medium",
+      "filled": false
+    },
+    {
+      "time": "2026-05-25T12:08:21.299934-04:00",
+      "action": "BUY",
+      "symbol": "VECO",
+      "qty": 23,
+      "price": 59.48,
+      "stop_price": 56.51,
+      "reasoning": "trades near analyst target with a strong sector momentum but low upside target",
+      "confidence": "medium",
+      "filled": false
     }
   ],
   "weekly_summaries": [
     {
       "week_of": "2026-05-11",
       "summary": "Opened INTC/AMD/PLTR on Monday; stop-losses triggered on INTC (-4.94%) and AMD (-4.86%) Tuesday on market weakness. PLTR held. Re-entered AMD/INTC/PLTR at better prices but stopped out of INTC (-$1,214) and AMD (-$1,669) again. Net loss for week approximately -$3,000. Lesson: avoid chasing broad-market dip in volatile conditions; size positions smaller.",
-      "positions_opened": ["INTC", "AMD", "PLTR"],
-      "positions_closed": ["INTC", "AMD"],
+      "positions_opened": [
+        "INTC",
+        "AMD",
+        "PLTR"
+      ],
+      "positions_closed": [
+        "INTC",
+        "AMD"
+      ],
       "net_pnl_estimate": -3200,
       "portfolio_value_eow": 95663
     },
     {
       "week_of": "2026-05-18",
-      "summary": "Opened AMAT, LLY, EOG. AMAT stopped out at $409.67 (-5.05%, -$1,656) on same-day sell-off; immediately re-entered at $411.45 on confirmed support. EOG benefited from Iran war oil tailwind (+30% since war started). LLY entered on retatrutide momentum; Mounjaro Q1 revenue +125% to $8.7B. Portfolio recovered to $99,068 by May 22 (+$963 on Friday). Holds: PLTR, AMAT (re-entry), LLY, EOG — all profitable by May 22.",
-      "positions_opened": ["AMAT", "LLY", "EOG"],
-      "positions_closed": ["AMAT"],
+      "summary": "Opened AMAT, LLY, EOG. AMAT stopped out at $409.67 (-5.05%, -$1,656) on same-day sell-off; immediately re-entered at $411.45 on confirmed support. EOG benefited from Iran war oil tailwind (+30% since war started). LLY entered on retatrutide momentum; Mounjaro Q1 revenue +125% to $8.7B. Portfolio recovered to $99,068 by May 22 (+$963 on Friday). Holds: PLTR, AMAT (re-entry), LLY, EOG \u2014 all profitable by May 22.",
+      "positions_opened": [
+        "AMAT",
+        "LLY",
+        "EOG"
+      ],
+      "positions_closed": [
+        "AMAT"
+      ],
       "net_pnl_estimate": 1500,
       "portfolio_value_eow": 99068
     },
     {
       "week_of": "2026-05-25",
-      "summary": "Memorial Day Monday (market closed). Research: AI infrastructure super-cycle confirmed by NVDA blowout earnings ($81.6B +85% YoY), AMD data center surge (+38% revenue), MU HBM sold out through 2026. LLY retatrutide Phase 3 cleared (28.3% weight loss). Macro risk: PCE inflation Thursday (March was 3.5% headline, well above 2% target). Plan: CLOSE EOG (RSI 70.4 overbought, oil headwind, take 3.7% profit), HOLD AMAT/LLY/PLTR (each has 13-42% analyst upside). No new buys — stay at 3-position max and await post-PCE signal. NVDA post-earnings dip (#1 watchlist) and MU HBM (#2 watchlist) ready for next week if PCE benign.",
+      "summary": "Memorial Day Monday (market closed). Research: AI infrastructure super-cycle confirmed by NVDA blowout earnings ($81.6B +85% YoY), AMD data center surge (+38% revenue), MU HBM sold out through 2026. LLY retatrutide Phase 3 cleared (28.3% weight loss). Macro risk: PCE inflation Thursday (March was 3.5% headline, well above 2% target). Plan: CLOSE EOG (RSI 70.4 overbought, oil headwind, take 3.7% profit), HOLD AMAT/LLY/PLTR (each has 13-42% analyst upside). No new buys \u2014 stay at 3-position max and await post-PCE signal. NVDA post-earnings dip (#1 watchlist) and MU HBM (#2 watchlist) ready for next week if PCE benign.",
       "positions_opened": [],
-      "positions_closed": ["EOG"],
-      "close_reasons": {"EOG": "RSI 70.4 overbought, oil headwind, locked in ~3.7% gain ahead of PCE risk"},
-      "holds": ["PLTR", "AMAT", "LLY"],
-      "watchlist": ["NVDA", "MU", "CRWD"],
+      "positions_closed": [
+        "EOG"
+      ],
+      "close_reasons": {
+        "EOG": "RSI 70.4 overbought, oil headwind, locked in ~3.7% gain ahead of PCE risk"
+      },
+      "holds": [
+        "PLTR",
+        "AMAT",
+        "LLY"
+      ],
+      "watchlist": [
+        "NVDA",
+        "MU",
+        "CRWD"
+      ],
       "net_pnl_estimate": 950,
       "portfolio_value_eow": 99068,
       "scoring_notes": "Universe scored: 45 stocks, 23 passed filters (RS60>-5%, RSI 25-75, price>$25, no 5d pop>10%). Top by score: AMD(+0.234), MU(+0.201), NVDA(+0.110), MRVL(+0.050), CRWD(+0.050). PLTR excluded from scoring (RS60=-29% vs SPY in 60d window due to 26% YTD decline) but held on fundamental strength."
+    },
+    {
+      "week_of": "2026-05-24",
+      "thesis": "The technology sector is leading the market with a 21.3% gain over the past 60 days, driven by strong momentum in semiconductor and software stocks. The healthcare sector, on the other hand, is lagging with a 15.1% decline. Stocks with strong sector momentum and high upside targets, such as VIAV and COHU, are attractive swing trade candidates. However, stocks with lagging sector momentum and high downside targets, such as CVI, should be avoided.",
+      "actions": [
+        "BUY 112 FLEX @ $132.46 | stop $125.84",
+        "BUY 301 VIAV @ $49.49 | stop $47.02",
+        "BUY 393 ASTH @ $37.83 | stop $35.94",
+        "BUY 92 ACLS @ $157.15 | stop $149.29",
+        "BUY 23 VECO @ $59.48 | stop $56.51"
+      ]
     }
   ],
   "portfolio_snapshots": [
@@ -269,6 +360,11 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-05-25T12:08:21.299934-04:00",
+      "portfolio_value": 99355.91,
+      "buying_power": 115.07
     }
   ],
   "last_monitor_run": "2026-05-22T17:00:00.000000-04:00",
