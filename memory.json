@@ -365,6 +365,35 @@
       "time": "2026-05-25T12:08:21.299934-04:00",
       "portfolio_value": 99355.91,
       "buying_power": 115.07
+    },
+    {
+      "time": "2026-05-27T09:39:12-04:00",
+      "portfolio_value": 101607.63,
+      "buying_power": 115.07,
+      "positions_summary": {
+        "note": "Live data unavailable — Alpaca API blocked by sandbox network policy. Values derived from last known state (2026-05-26 close).",
+        "last_known_equity": 101607.63,
+        "last_known_date": "2026-05-26",
+        "open_positions_count": 8,
+        "confirmed_holds": ["PLTR", "AMAT", "LLY"],
+        "new_positions_pending_verify": ["FLEX", "VIAV", "ASTH", "ACLS", "VECO"],
+        "planned_close": "EOG (RSI 70.4 overbought, confirm closed)",
+        "thesis_intact": ["PLTR", "AMAT", "LLY", "ACLS", "VECO", "FLEX", "VIAV"],
+        "concerns": [
+          "LLY near 8% take-profit trigger ($1,071.54) — may have auto-triggered on 2026-05-26 (+2.27% day)",
+          "ASTH in lagging healthcare sector (-15.1% 60d), medium-confidence, watch closely",
+          "Cannot verify GTC stop-loss orders are active without live API access"
+        ],
+        "key_events_remaining": [
+          "CRM earnings Wed 5/27 after close (EPS est $2.96)",
+          "COST earnings Thu 5/28 (rev est $69.3B)",
+          "DELL earnings Thu 5/28",
+          "April PCE inflation Thu 5/29 — HIGH RISK (March was 3.5% headline, above 2% target)",
+          "Q1 GDP 2nd estimate Thu 5/29"
+        ],
+        "midweek_verdict": "Thesis intact for core positions. Portfolio is +1.6% from starting capital after recovering from -5.3% drawdown in May 11-12. Fully deployed with 8 positions. No action needed midweek except: (1) confirm EOG closed, (2) confirm LLY take-profit executed if triggered, (3) monitor PCE Thursday as highest-risk catalyst."
+      },
+      "is_midweek_check": true
     }
   ],
   "last_monitor_run": "2026-05-22T17:00:00.000000-04:00",
