@@ -259,22 +259,70 @@
     },
     {
       "week_of": "2026-05-26",
-      "summary": "Strong recovery week: portfolio +4.6% to $103,624.97 from prior Friday close of $99,068. LLY was the star performer (+9.22%, +$3,018 as of Wed close) — retatrutide Phase 3 thesis playing out and Mounjaro revenue surge continued to attract buyers; LLY likely triggered +8% take-profit order ($1,071.54) during the week. AMAT solid at +6.31% (+$2,127) on continued AI semiconductor equipment spend. FLEX +4.18% (+$645) and VIAV +2.19% (+$334) both tracking well. PLTR -1.01% and ASTH -1.21% both within hold tolerance. EOG closed on Friday (planned per trade plan: RSI overbought, oil headwind, PCE macro risk on May 29 close). No positions triggered the -2% Friday close rule strictly; EOG closed on pre-planned thesis. PCE data Thursday May 29 was the key macro risk event of the week.",
-      "positions_opened": ["FLEX", "VIAV", "ASTH", "VECO"],
-      "positions_closed": ["EOG"],
+      "summary": "Strong recovery week: portfolio +4.6% to $103,624.97 from prior Friday close of $99,068. LLY was the star performer (+9.22%, +$3,018 as of Wed close) \u2014 retatrutide Phase 3 thesis playing out and Mounjaro revenue surge continued to attract buyers; LLY likely triggered +8% take-profit order ($1,071.54) during the week. AMAT solid at +6.31% (+$2,127) on continued AI semiconductor equipment spend. FLEX +4.18% (+$645) and VIAV +2.19% (+$334) both tracking well. PLTR -1.01% and ASTH -1.21% both within hold tolerance. EOG closed on Friday (planned per trade plan: RSI overbought, oil headwind, PCE macro risk on May 29 close). No positions triggered the -2% Friday close rule strictly; EOG closed on pre-planned thesis. PCE data Thursday May 29 was the key macro risk event of the week.",
+      "positions_opened": [
+        "FLEX",
+        "VIAV",
+        "ASTH",
+        "VECO"
+      ],
+      "positions_closed": [
+        "EOG"
+      ],
       "close_reasons": {
-        "EOG": "Planned close — RSI 70.4 overbought, oil-headwind thesis, approaching -2% Friday threshold at -1.86%, PCE macro risk day"
+        "EOG": "Planned close \u2014 RSI 70.4 overbought, oil-headwind thesis, approaching -2% Friday threshold at -1.86%, PCE macro risk day"
       },
-      "holds_eow": ["PLTR", "AMAT", "LLY", "FLEX", "VIAV", "VECO", "ASTH"],
+      "holds_eow": [
+        "PLTR",
+        "AMAT",
+        "LLY",
+        "FLEX",
+        "VIAV",
+        "VECO",
+        "ASTH"
+      ],
       "pl_per_position_last_known": {
-        "AMAT": {"plpc": 6.31, "pl_dollar": 2126.99, "as_of": "2026-05-27"},
-        "LLY":  {"plpc": 9.22, "pl_dollar": 3018.03, "as_of": "2026-05-27"},
-        "FLEX": {"plpc": 4.18, "pl_dollar": 645.12,  "as_of": "2026-05-27"},
-        "VIAV": {"plpc": 2.19, "pl_dollar": 334.11,  "as_of": "2026-05-27"},
-        "VECO": {"plpc": 1.37, "pl_dollar": 19.09,   "as_of": "2026-05-27"},
-        "PLTR": {"plpc": -1.01, "pl_dollar": -399.46, "as_of": "2026-05-27"},
-        "ASTH": {"plpc": -1.21, "pl_dollar": -185.12, "as_of": "2026-05-27"},
-        "EOG":  {"plpc": -1.86, "pl_dollar": -526.99, "as_of": "2026-05-27", "closed_friday": true}
+        "AMAT": {
+          "plpc": 6.31,
+          "pl_dollar": 2126.99,
+          "as_of": "2026-05-27"
+        },
+        "LLY": {
+          "plpc": 9.22,
+          "pl_dollar": 3018.03,
+          "as_of": "2026-05-27"
+        },
+        "FLEX": {
+          "plpc": 4.18,
+          "pl_dollar": 645.12,
+          "as_of": "2026-05-27"
+        },
+        "VIAV": {
+          "plpc": 2.19,
+          "pl_dollar": 334.11,
+          "as_of": "2026-05-27"
+        },
+        "VECO": {
+          "plpc": 1.37,
+          "pl_dollar": 19.09,
+          "as_of": "2026-05-27"
+        },
+        "PLTR": {
+          "plpc": -1.01,
+          "pl_dollar": -399.46,
+          "as_of": "2026-05-27"
+        },
+        "ASTH": {
+          "plpc": -1.21,
+          "pl_dollar": -185.12,
+          "as_of": "2026-05-27"
+        },
+        "EOG": {
+          "plpc": -1.86,
+          "pl_dollar": -526.99,
+          "as_of": "2026-05-27",
+          "closed_friday": true
+        }
       },
       "net_pnl_estimate": 4557,
       "portfolio_value_eow": 103625,
@@ -489,14 +537,54 @@
       "portfolio_value": 103624.97,
       "data_note": "Live API unavailable; portfolio_value from 2026-05-28 close. Position P&L from last known snapshot (2026-05-27T12:48:55).",
       "positions": [
-        {"symbol": "AMAT", "pl_pct": 6.31,  "pl_dollar": 2126.99, "note": "as-of 2026-05-27"},
-        {"symbol": "LLY",  "pl_pct": 9.22,  "pl_dollar": 3018.03, "note": "as-of 2026-05-27; may have auto-take-profited"},
-        {"symbol": "FLEX", "pl_pct": 4.18,  "pl_dollar": 645.12,  "note": "as-of 2026-05-27"},
-        {"symbol": "VIAV", "pl_pct": 2.19,  "pl_dollar": 334.11,  "note": "as-of 2026-05-27"},
-        {"symbol": "VECO", "pl_pct": 1.37,  "pl_dollar": 19.09,   "note": "as-of 2026-05-27"},
-        {"symbol": "PLTR", "pl_pct": -1.01, "pl_dollar": -399.46, "note": "as-of 2026-05-27"},
-        {"symbol": "ASTH", "pl_pct": -1.21, "pl_dollar": -185.12, "note": "as-of 2026-05-27; watch closely"},
-        {"symbol": "EOG",  "pl_pct": -1.86, "pl_dollar": -526.99, "note": "CLOSING — planned per trade plan + near -2% threshold + PCE day"}
+        {
+          "symbol": "AMAT",
+          "pl_pct": 6.31,
+          "pl_dollar": 2126.99,
+          "note": "as-of 2026-05-27"
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 9.22,
+          "pl_dollar": 3018.03,
+          "note": "as-of 2026-05-27; may have auto-take-profited"
+        },
+        {
+          "symbol": "FLEX",
+          "pl_pct": 4.18,
+          "pl_dollar": 645.12,
+          "note": "as-of 2026-05-27"
+        },
+        {
+          "symbol": "VIAV",
+          "pl_pct": 2.19,
+          "pl_dollar": 334.11,
+          "note": "as-of 2026-05-27"
+        },
+        {
+          "symbol": "VECO",
+          "pl_pct": 1.37,
+          "pl_dollar": 19.09,
+          "note": "as-of 2026-05-27"
+        },
+        {
+          "symbol": "PLTR",
+          "pl_pct": -1.01,
+          "pl_dollar": -399.46,
+          "note": "as-of 2026-05-27"
+        },
+        {
+          "symbol": "ASTH",
+          "pl_pct": -1.21,
+          "pl_dollar": -185.12,
+          "note": "as-of 2026-05-27; watch closely"
+        },
+        {
+          "symbol": "EOG",
+          "pl_pct": -1.86,
+          "pl_dollar": -526.99,
+          "note": "CLOSING \u2014 planned per trade plan + near -2% threshold + PCE day"
+        }
       ],
       "friday_action": "closing EOG per trade plan; all other positions held",
       "is_friday_close": true
@@ -533,6 +621,14 @@
       "equity": 103624.97,
       "daily_pl_dollar": 3661.13,
       "daily_pl_pct": 3.66,
+      "open_positions": 8,
+      "realized_today_dollar": 0
+    },
+    {
+      "date": "2026-05-29",
+      "equity": 106304.38,
+      "daily_pl_dollar": 3138.17,
+      "daily_pl_pct": 3.04,
       "open_positions": 8,
       "realized_today_dollar": 0
     }
