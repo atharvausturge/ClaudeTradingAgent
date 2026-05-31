@@ -1,49 +1,49 @@
 {
-  "week_of": "2026-05-24",
-  "week_thesis": "The technology sector is leading the market with a 21.3% gain over the past 60 days, driven by strong momentum in semiconductor and software stocks. The healthcare sector, on the other hand, is lagging with a 15.1% decline. Stocks with strong sector momentum and high upside targets, such as VIAV and COHU, are attractive swing trade candidates. However, stocks with lagging sector momentum and high downside targets, such as CVI, should be avoided.",
+  "week_of": "2026-05-31",
+  "week_thesis": "This week, the technology sector continues to lead the market, with strong momentum in semiconductor and software stocks. Stocks with high upside targets and recent positive news, such as TTMI and VIAV, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as CAR and HUM, should be avoided. The recent PCE data and upcoming macro events will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
   "buys": [
     {
-      "symbol": "FLEX",
-      "combined_score": 0.9286,
-      "tech_score": 1.0,
-      "sentiment_score": 0.857,
-      "reasoning": "trades at a discount to the technology median with a strong sector momentum and 20% upside target",
-      "confidence": "high",
+      "symbol": "TTMI",
+      "combined_score": 0.5819,
+      "tech_score": 0.33,
+      "sentiment_score": 0.833,
+      "reasoning": "TTMI has a moderate P/S ratio, strong sector momentum, and a positive analyst target, making it an attractive choice",
+      "confidence": "medium",
       "qty_pct": 0.15
     },
     {
       "symbol": "VIAV",
-      "combined_score": 0.6883,
-      "tech_score": 0.377,
+      "combined_score": 0.5226,
+      "tech_score": 0.045,
       "sentiment_score": 1.0,
-      "reasoning": "trades at a discount to analyst target with a strong sector momentum and high upside target",
-      "confidence": "high",
-      "qty_pct": 0.15
-    },
-    {
-      "symbol": "ASTH",
-      "combined_score": 0.5845,
-      "tech_score": 0.74,
-      "sentiment_score": 0.429,
-      "reasoning": "trades at a discount to the healthcare median but has a lagging sector",
+      "reasoning": "VIAV has a high P/S ratio, strong sector momentum, and a positive analyst target, making it an attractive choice",
       "confidence": "medium",
       "qty_pct": 0.15
     },
     {
       "symbol": "ACLS",
-      "combined_score": 0.5654,
-      "tech_score": 0.559,
-      "sentiment_score": 0.571,
-      "reasoning": "trades near analyst target with a strong sector momentum but low upside target",
+      "combined_score": 0.4637,
+      "tech_score": 0.261,
+      "sentiment_score": 0.667,
+      "reasoning": "ACLS has a moderate P/S ratio, strong sector momentum, and a positive analyst target, but lacks recent news, making it a decent choice",
       "confidence": "medium",
       "qty_pct": 0.15
     },
     {
-      "symbol": "VECO",
-      "combined_score": 0.536,
-      "tech_score": 0.643,
-      "sentiment_score": 0.429,
-      "reasoning": "trades near analyst target with a strong sector momentum but low upside target",
+      "symbol": "SMTC",
+      "combined_score": 0.4534,
+      "tech_score": 0.24,
+      "sentiment_score": 0.667,
+      "reasoning": "SMTC has a high P/S ratio, strong sector momentum, and a positive analyst target, but has a CHASE RISK flag, limiting its score",
+      "confidence": "medium",
+      "qty_pct": 0.15
+    },
+    {
+      "symbol": "AOSL",
+      "combined_score": 0.4495,
+      "tech_score": 0.566,
+      "sentiment_score": 0.333,
+      "reasoning": "AOSL has a low P/S ratio and strong sector momentum, but a negative analyst target, making it a mixed bag",
       "confidence": "medium",
       "qty_pct": 0.15
     }
@@ -51,147 +51,149 @@
   "close_positions": [],
   "close_reasoning": {},
   "hold_positions": [],
-  "skip_reasoning": {},
+  "skip_reasoning": {
+    "INTC": "monthly entry cap (2) reached"
+  },
   "scoring_breakdown": {
-    "FLEX": {
-      "combined": 0.9286,
+    "INTC": {
+      "combined": 0.5833,
       "tech_norm": 1.0,
-      "sentiment_norm": 0.857,
-      "ai_raw_score": 8,
-      "ai_reason": "trades at a discount to the technology median with a strong sector momentum and 20% upside target"
-    },
-    "ASTH": {
-      "combined": 0.5845,
-      "tech_norm": 0.74,
-      "sentiment_norm": 0.429,
-      "ai_raw_score": 5,
-      "ai_reason": "trades at a discount to the healthcare median but has a lagging sector"
+      "sentiment_norm": 0.167,
+      "ai_raw_score": 3,
+      "ai_reason": "INTC has a high P/S ratio, strong sector momentum, but a significant analyst downside target, indicating a potentially overvalued stock"
     },
     "AOSL": {
-      "combined": 0.4074,
-      "tech_norm": 0.672,
-      "sentiment_norm": 0.143,
-      "ai_raw_score": 3,
-      "ai_reason": "trades above analyst target with a modest sector momentum and high downside target"
-    },
-    "VECO": {
-      "combined": 0.536,
-      "tech_norm": 0.643,
-      "sentiment_norm": 0.429,
-      "ai_raw_score": 5,
-      "ai_reason": "trades near analyst target with a strong sector momentum but low upside target"
-    },
-    "ACLS": {
-      "combined": 0.5654,
-      "tech_norm": 0.559,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 6,
-      "ai_reason": "trades near analyst target with a strong sector momentum but low upside target"
-    },
-    "EXTR": {
-      "combined": 0.5249,
-      "tech_norm": 0.478,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 6,
-      "ai_reason": "trades near analyst target with a strong sector momentum but low upside target"
-    },
-    "VIAV": {
-      "combined": 0.6883,
-      "tech_norm": 0.377,
-      "sentiment_norm": 1.0,
-      "ai_raw_score": 9,
-      "ai_reason": "trades at a discount to analyst target with a strong sector momentum and high upside target"
-    },
-    "MYRG": {
-      "combined": 0.3249,
-      "tech_norm": 0.364,
-      "sentiment_norm": 0.286,
+      "combined": 0.4495,
+      "tech_norm": 0.566,
+      "sentiment_norm": 0.333,
       "ai_raw_score": 4,
-      "ai_reason": "trades near analyst target with a lagging sector momentum and low upside target"
+      "ai_reason": "AOSL has a low P/S ratio and strong sector momentum, but a negative analyst target, making it a mixed bag"
     },
     "ON": {
-      "combined": 0.3881,
-      "tech_norm": 0.348,
-      "sentiment_norm": 0.429,
+      "combined": 0.4358,
+      "tech_norm": 0.372,
+      "sentiment_norm": 0.5,
       "ai_raw_score": 5,
-      "ai_reason": "trades above analyst target with a strong sector momentum but high downside target"
+      "ai_reason": "ON has a moderate P/S ratio, strong sector momentum, and a neutral analyst target, making it a neutral choice"
     },
-    "WDC": {
-      "combined": 0.3822,
-      "tech_norm": 0.336,
-      "sentiment_norm": 0.429,
+    "SYNA": {
+      "combined": 0.433,
+      "tech_norm": 0.366,
+      "sentiment_norm": 0.5,
       "ai_raw_score": 5,
-      "ai_reason": "trades above analyst target with a strong sector momentum but low upside target and recent negative news"
-    },
-    "TWLO": {
-      "combined": 0.4379,
-      "tech_norm": 0.304,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 6,
-      "ai_reason": "trades near analyst target with a strong sector momentum but low upside target"
-    },
-    "AKAM": {
-      "combined": 0.4339,
-      "tech_norm": 0.154,
-      "sentiment_norm": 0.714,
-      "ai_raw_score": 7,
-      "ai_reason": "trades near analyst target with a strong sector momentum and moderate upside target"
-    },
-    "ZD": {
-      "combined": 0.2828,
-      "tech_norm": 0.137,
-      "sentiment_norm": 0.429,
-      "ai_raw_score": 5,
-      "ai_reason": "trades at a discount to the communication services median but has a lagging sector"
-    },
-    "AMN": {
-      "combined": 0.2522,
-      "tech_norm": 0.076,
-      "sentiment_norm": 0.429,
-      "ai_raw_score": 5,
-      "ai_reason": "trades at a discount to the healthcare median but has a lagging sector"
-    },
-    "COHU": {
-      "combined": 0.4504,
-      "tech_norm": 0.044,
-      "sentiment_norm": 0.857,
-      "ai_raw_score": 8,
-      "ai_reason": "trades at a discount to analyst target with a strong sector momentum and high upside target"
-    },
-    "ATEN": {
-      "combined": 0.305,
-      "tech_norm": 0.038,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 6,
-      "ai_reason": "trades near analyst target with a strong sector momentum but low upside target"
-    },
-    "SNX": {
-      "combined": 0.2278,
-      "tech_norm": 0.027,
-      "sentiment_norm": 0.429,
-      "ai_raw_score": 5,
-      "ai_reason": "trades near analyst target with a strong sector momentum but low upside target"
-    },
-    "MUSA": {
-      "combined": 0.2261,
-      "tech_norm": 0.024,
-      "sentiment_norm": 0.429,
-      "ai_raw_score": 5,
-      "ai_reason": "trades at a discount to the consumer cyclical median but has a lagging sector"
+      "ai_reason": "SYNA has a moderate P/S ratio, strong sector momentum, and a neutral analyst target, but lacks recent news, making it a neutral choice"
     },
     "SANM": {
-      "combined": 0.1519,
-      "tech_norm": 0.018,
-      "sentiment_norm": 0.286,
+      "combined": 0.3462,
+      "tech_norm": 0.359,
+      "sentiment_norm": 0.333,
       "ai_raw_score": 4,
-      "ai_reason": "trades above analyst target with a strong sector momentum but high downside target"
+      "ai_reason": "SANM has a low P/S ratio, strong sector momentum, and a negative analyst target, making it a mixed bag"
     },
-    "CVI": {
-      "combined": 0.0,
-      "tech_norm": 0.0,
+    "TTMI": {
+      "combined": 0.5819,
+      "tech_norm": 0.33,
+      "sentiment_norm": 0.833,
+      "ai_raw_score": 7,
+      "ai_reason": "TTMI has a moderate P/S ratio, strong sector momentum, and a positive analyst target, making it an attractive choice"
+    },
+    "VECO": {
+      "combined": 0.4027,
+      "tech_norm": 0.305,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": 5,
+      "ai_reason": "VECO has a moderate P/S ratio, strong sector momentum, and a neutral analyst target, but lacks recent news, making it a neutral choice"
+    },
+    "ACLS": {
+      "combined": 0.4637,
+      "tech_norm": 0.261,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 6,
+      "ai_reason": "ACLS has a moderate P/S ratio, strong sector momentum, and a positive analyst target, but lacks recent news, making it a decent choice"
+    },
+    "SMTC": {
+      "combined": 0.4534,
+      "tech_norm": 0.24,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 6,
+      "ai_reason": "SMTC has a high P/S ratio, strong sector momentum, and a positive analyst target, but has a CHASE RISK flag, limiting its score"
+    },
+    "EXTR": {
+      "combined": 0.3653,
+      "tech_norm": 0.231,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": 5,
+      "ai_reason": "EXTR has a low P/S ratio, strong sector momentum, and a neutral analyst target, but lacks recent news, making it a neutral choice"
+    },
+    "QCOM": {
+      "combined": 0.1831,
+      "tech_norm": 0.2,
+      "sentiment_norm": 0.167,
+      "ai_raw_score": 3,
+      "ai_reason": "QCOM has a moderate P/S ratio, strong sector momentum, but a significant analyst downside target, indicating a potentially overvalued stock"
+    },
+    "CAR": {
+      "combined": 0.0907,
+      "tech_norm": 0.181,
       "sentiment_norm": 0.0,
       "ai_raw_score": 2,
-      "ai_reason": "trades near analyst target with a lagging sector momentum and high downside target"
+      "ai_reason": "CAR has a low P/S ratio, weak sector momentum, and a significant analyst downside target, making it an unattractive choice"
+    },
+    "HUM": {
+      "combined": 0.0754,
+      "tech_norm": 0.151,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 2,
+      "ai_reason": "HUM has a low P/S ratio, weak sector momentum, and a negative analyst target, making it an unattractive choice"
+    },
+    "MYRG": {
+      "combined": 0.2268,
+      "tech_norm": 0.12,
+      "sentiment_norm": 0.333,
+      "ai_raw_score": 4,
+      "ai_reason": "MYRG has a moderate P/S ratio, weak sector momentum, but a positive surprise and recent news, making it a mixed bag"
+    },
+    "VSAT": {
+      "combined": 0.2991,
+      "tech_norm": 0.098,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": 5,
+      "ai_reason": "VSAT has a moderate P/S ratio, strong sector momentum, and a neutral analyst target, but has a CHASE RISK flag and negative surprise, limiting its score"
+    },
+    "KLIC": {
+      "combined": 0.2953,
+      "tech_norm": 0.091,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": 5,
+      "ai_reason": "KLIC has a moderate P/S ratio, strong sector momentum, and a neutral analyst target, but lacks recent news, making it a neutral choice"
+    },
+    "VIAV": {
+      "combined": 0.5226,
+      "tech_norm": 0.045,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 8,
+      "ai_reason": "VIAV has a high P/S ratio, strong sector momentum, and a positive analyst target, making it an attractive choice"
+    },
+    "RXO": {
+      "combined": 0.0156,
+      "tech_norm": 0.031,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 2,
+      "ai_reason": "RXO has a low P/S ratio, weak sector momentum, and a significant analyst downside target, making it an unattractive choice"
+    },
+    "ICHR": {
+      "combined": 0.338,
+      "tech_norm": 0.009,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 6,
+      "ai_reason": "ICHR has a moderate P/S ratio, strong sector momentum, and a positive analyst target, making it a decent choice"
+    },
+    "DIOD": {
+      "combined": 0.4167,
+      "tech_norm": 0.0,
+      "sentiment_norm": 0.833,
+      "ai_raw_score": 7,
+      "ai_reason": "DIOD has a moderate P/S ratio, strong sector momentum, and a positive analyst target, making it an attractive choice"
     }
   }
 }
