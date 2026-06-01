@@ -36,15 +36,6 @@
     "earnings_blackout": false
   },
   {
-    "symbol": "CRWD",
-    "score": 0.0496,
-    "rs_60d": 11.0,
-    "dip_5d": -0.93,
-    "rsi": 53.3,
-    "price": 480.0,
-    "earnings_blackout": false
-  },
-  {
     "symbol": "LRCX",
     "score": 0.04,
     "rs_60d": 6.0,
@@ -126,15 +117,6 @@
     "earnings_blackout": false
   },
   {
-    "symbol": "AVGO",
-    "score": 0.0072,
-    "rs_60d": 11.0,
-    "dip_5d": 6.13,
-    "rsi": 34.8,
-    "price": 260.0,
-    "earnings_blackout": false
-  },
-  {
     "symbol": "CAT",
     "score": 0.0013,
     "rs_60d": -4.0,
@@ -149,6 +131,15 @@
     "rs_60d": 1.0,
     "dip_5d": 1.21,
     "rsi": 27.6,
+    "price": 195.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "DELL",
+    "score": -0.0036,
+    "rs_60d": 2.0,
+    "dip_5d": 1.93,
+    "rsi": 47.3,
     "price": 195.0,
     "earnings_blackout": false
   },
@@ -177,6 +168,15 @@
     "dip_5d": 2.67,
     "rsi": 70.3,
     "price": 1064.59,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "COST",
+    "score": -0.0256,
+    "rs_60d": -4.0,
+    "dip_5d": 1.6,
+    "rsi": 63.1,
+    "price": 975.0,
     "earnings_blackout": false
   }
 ]

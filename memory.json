@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-05-29",
+  "last_run": "2026-06-01",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -338,6 +338,42 @@
         "BUY 92 ACLS @ $157.15 | stop $149.29",
         "BUY 23 VECO @ $59.48 | stop $56.51"
       ]
+    },
+    {
+      "week_of": "2026-06-01",
+      "summary": "Strong momentum week entering June. PLTR surged +9% on May 29 (best single-day in a year), now at $156.54 (+15.9% from $135.14 entry) on Dell AI partnership validation and agentic AI demand confirmation. FLEX hit all-time high $154.25 on May 29 (+16.4% from $132.46 entry). EOG closed May 29 as planned. LLY likely auto-take-profited at $1,071.54 (+8% from $992.17 entry). Portfolio ~$106,304 entering June. This week: close FLEX (lock +16% profit, only 2% left to $157.50 target), VIAV (analyst target $39.25 fell below $49.50 entry), ASTH (healthcare lagging, cut risk). Buy NVDA (post-earnings dip -10% from ATH, 61-analyst Strong Buy, $297 avg target = +40% upside) and AMD (universe #1 scorer RS60=+66%, data center +57%, Meta 6GW deal). AVGO and CRWD both report June 3 \u2014 blackout both. NFP Friday is key macro risk.",
+      "positions_opened": [
+        "NVDA",
+        "AMD"
+      ],
+      "positions_closed": [
+        "FLEX",
+        "VIAV",
+        "ASTH"
+      ],
+      "close_reasons": {
+        "FLEX": "Take profit +16.4% at ATH $154.25, only ~2% upside remaining to $157.50 target; redeploy into NVDA/AMD with 40%+ upside",
+        "VIAV": "Analyst target $39.25 below entry $49.50 \u2014 thesis broken; close at ~+2% profit",
+        "ASTH": "Lagging healthcare sector (-15.1% RS60), medium conviction, proactive close ahead of stop-loss risk"
+      },
+      "holds": [
+        "PLTR",
+        "AMAT",
+        "VECO"
+      ],
+      "watchlist": [
+        "AVGO",
+        "MU",
+        "CRWD"
+      ],
+      "net_pnl_estimate": 5300,
+      "portfolio_value_entering_week": 106304,
+      "scoring_notes": "Universe scored: 45 stocks (bars data from ~May 29). 23 passed filters. Earnings blackout updated: CRWD, AVGO, HPE, LULU (all reporting June 1-5). Top by score: AMD(+0.2338), MU(+0.2009), NVDA(+0.1101). MRVL data stale ($115 in bars vs $204 actual \u2014 earnings gap), excluded. AVGO and CRWD excluded by blackout.",
+      "key_events_this_week": [
+        "AVGO Q2 earnings June 3 after close (consensus +47% YoY, AI semi ~$10.7B)",
+        "CRWD Q1 FY2027 earnings June 3 after close",
+        "NFP (Nonfarm Payrolls) Friday June 5"
+      ]
     }
   ],
   "portfolio_snapshots": [
@@ -590,7 +626,7 @@
       "is_friday_close": true
     }
   ],
-  "last_monitor_run": "2026-05-29T15:30:00-04:00",
+  "last_monitor_run": "2026-06-01T09:00:00-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
