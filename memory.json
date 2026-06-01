@@ -201,6 +201,50 @@
       "reasoning": "trades near analyst target with a strong sector momentum but low upside target",
       "confidence": "medium",
       "filled": false
+    },
+    {
+      "time": "2026-06-01T15:11:10.070988-04:00",
+      "action": "BUY",
+      "symbol": "TTMI",
+      "qty": 93,
+      "price": 173.87,
+      "stop_price": 164.99,
+      "reasoning": "TTMI has a moderate P/S ratio, strong sector momentum, and a positive analyst target, making it an attractive choice",
+      "confidence": "medium",
+      "filled": true
+    },
+    {
+      "time": "2026-06-01T15:11:10.070988-04:00",
+      "action": "BUY",
+      "symbol": "ACLS",
+      "qty": 31,
+      "price": 150.18,
+      "stop_price": 142.48,
+      "reasoning": "ACLS has a moderate P/S ratio, strong sector momentum, and a positive analyst target, but lacks recent news, making it a decent choice",
+      "confidence": "medium",
+      "filled": true
+    },
+    {
+      "time": "2026-06-01T15:11:10.070988-04:00",
+      "action": "BUY",
+      "symbol": "SMTC",
+      "qty": 2,
+      "price": 149.36,
+      "stop_price": 141.69,
+      "reasoning": "SMTC has a high P/S ratio, strong sector momentum, and a positive analyst target, but has a CHASE RISK flag, limiting its score",
+      "confidence": "medium",
+      "filled": true
+    },
+    {
+      "time": "2026-06-01T15:11:10.070988-04:00",
+      "action": "BUY",
+      "symbol": "AOSL",
+      "qty": 2,
+      "price": 43.73,
+      "stop_price": 41.65,
+      "reasoning": "AOSL has a low P/S ratio and strong sector momentum, but a negative analyst target, making it a mixed bag",
+      "confidence": "medium",
+      "filled": true
     }
   ],
   "weekly_summaries": [
@@ -373,6 +417,16 @@
         "AVGO Q2 earnings June 3 after close (consensus +47% YoY, AI semi ~$10.7B)",
         "CRWD Q1 FY2027 earnings June 3 after close",
         "NFP (Nonfarm Payrolls) Friday June 5"
+      ]
+    },
+    {
+      "week_of": "2026-05-31",
+      "thesis": "This week, the technology sector continues to lead the market, with strong momentum in semiconductor and software stocks. Stocks with high upside targets and recent positive news, such as TTMI and VIAV, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as CAR and HUM, should be avoided. The recent PCE data and upcoming macro events will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
+      "actions": [
+        "BUY 93 TTMI @ $173.87 | stop $164.99",
+        "BUY 31 ACLS @ $150.18 | stop $142.48",
+        "BUY 2 SMTC @ $149.36 | stop $141.69",
+        "BUY 2 AOSL @ $43.73 | stop $41.65"
       ]
     }
   ],
@@ -624,6 +678,11 @@
       ],
       "friday_action": "closing EOG per trade plan; all other positions held",
       "is_friday_close": true
+    },
+    {
+      "time": "2026-06-01T15:11:10.070988-04:00",
+      "portfolio_value": 107775.21,
+      "buying_power": 18.98
     }
   ],
   "last_monitor_run": "2026-06-01T09:00:00-04:00",
