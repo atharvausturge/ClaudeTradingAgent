@@ -683,9 +683,50 @@
       "time": "2026-06-01T15:11:10.070988-04:00",
       "portfolio_value": 107775.21,
       "buying_power": 18.98
+    },
+    {
+      "time": "2026-06-03T09:36:35-04:00",
+      "portfolio_value": 110588.25,
+      "buying_power": null,
+      "positions_summary": {
+        "note": "Live Alpaca API unavailable — sandbox network policy blocks paper-api.alpaca.markets. Values from last confirmed daily P&L (2026-06-02).",
+        "last_confirmed_equity": 110588.25,
+        "last_confirmed_date": "2026-06-02",
+        "pnl_from_starting_capital_dollar": 10588.25,
+        "pnl_from_starting_capital_pct": 10.59,
+        "open_positions_count_last_known": 12,
+        "estimated_open_positions": [
+          "PLTR", "NVDA", "AMD", "AMAT", "VECO", "TTMI", "ACLS", "SMTC", "AOSL", "LLY"
+        ],
+        "thesis_check": {
+          "PLTR": "INTACT — +15.9%+ gain (last known $156.54 vs $135.14 entry); agentic AI demand confirmed via Dell partnership; US commercial revenue +133% YoY; stop at $128.38. STRONG HOLD (>10%).",
+          "NVDA": "INTACT — post-earnings dip entry thesis; 61-analyst Strong Buy; $297-307 avg 12m target (+40-45%); AVGO earnings tonight are sector catalyst; stop ~$201.87.",
+          "AMD": "INTACT — universe #1 scorer (RS60=+66%), Meta 6GW GPU deal, MI450 demand exceeding forecasts; AVGO earnings tonight = positive catalyst if AI semi beats; stop ~$413.25.",
+          "AMAT": "INTACT — +6%+ gain from $411.45 entry; Mizuho target $540; semi equipment multi-year cycle; AVGO beat tonight would be direct tailwind; stop $409.38.",
+          "VECO": "INTACT — small position (23 shares), minimal capital at risk; stop $56.51 managing downside.",
+          "TTMI": "INTACT — moderate conviction, entered June 1 at $173.87; stop $164.99 (-5%); strong sector momentum.",
+          "ACLS": "INTACT — moderate conviction, entered June 1 at $150.18; stop $142.48 (-5%).",
+          "SMTC": "INTACT — tiny position (2 shares), negligible impact; stop $141.69.",
+          "AOSL": "INTACT — tiny position (2 shares), negligible impact; stop $41.65.",
+          "LLY": "STATUS UNKNOWN — last known +9.22% ($1,071.54 take-profit may have auto-triggered); if still open, thesis intact (retatrutide Phase 3, Mounjaro +125% Q1)."
+        },
+        "flags": {
+          "positions_down_gt_8pct": "NONE identified from available data",
+          "positions_up_gt_10pct": ["PLTR (+15.9%+ as of May 29)"],
+          "stop_loss_verification": "Cannot verify GTC stop-loss orders are active — API unavailable",
+          "earnings_exposure_tonight": "AVGO Q2 + CRWD Q1 FY2027 both after close — neither held (blackout maintained)"
+        },
+        "key_events_today": [
+          "AVGO Q2 earnings after close — consensus +47% YoY to $22B, AI semi ~$10.7B. If strong beat: tailwind for NVDA/AMD/AMAT. If miss: risk-off for AI semi.",
+          "CRWD Q1 FY2027 earnings after close — not held, watchlist for post-earnings entry if guidance impresses."
+        ],
+        "upcoming_risk": "NFP (Nonfarm Payrolls) Friday June 5 — primary macro event of week. Hot print = hawkish rate expectations = risk-asset headwind.",
+        "midweek_verdict": "Portfolio +10.59% from $100K starting capital. All known position theses intact. No positions flagged as down >8%. PLTR is the standout performer (>10% gain, strong hold). AVGO earnings tonight are the key binary event — we have AI semi exposure (NVDA/AMD/AMAT) with potential upside from a beat, but no direct AVGO/CRWD earnings risk. Hold all positions through tonight; reassess AVGO reaction for Friday NFP context."
+      },
+      "is_midweek_check": true
     }
   ],
-  "last_monitor_run": "2026-06-01T09:00:00-04:00",
+  "last_monitor_run": "2026-06-03T09:36:35-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
