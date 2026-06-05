@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-01",
+  "last_run": "2026-06-05",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -428,6 +428,39 @@
         "BUY 2 SMTC @ $149.36 | stop $141.69",
         "BUY 2 AOSL @ $43.73 | stop $41.65"
       ]
+    },
+    {
+      "week_of": "2026-06-01",
+      "summary_type": "friday_eow_wrap",
+      "summary": "Strong week — portfolio reached $111,418 (June 4 last confirmed equity, +$5,113 / +4.8% from $106,304 entering week). AVGO Q2 beat June 3 after close confirmed AI infrastructure super-cycle, boosting AI semi holdings across the board. AMAT surged to +19.28% (+$6,495), FLEX +20.12% (+$3,104), LLY +9.62% (+$3,149), AOSL +23.53%, SMTC +10.01%, TTMI +8.44%, PLTR +5.73%, VIAV +5.57%, ACLS +5.49%, EOG +2.38%, VECO +0.05%. Only ASTH remains negative at -5.62% (-$863) as healthcare continues to lag. Closing ASTH today per Friday -2% rule. All 11 other positions are winners — holding into next week. NFP Friday June 5 is key macro risk; stop-losses provide downside protection. NVDA and AMD buys from plan were not confirmed executed (absent from June 3 live snapshot). Portfolio is +11.4% from $100K starting capital.",
+      "positions_opened": [],
+      "positions_closed": ["ASTH"],
+      "close_reasons": {
+        "ASTH": "down 5.62% (-$863) — exceeds -2% Friday close threshold; healthcare sector lagging (-15.1% RS60); no near-term catalyst; closing ahead of NFP macro risk"
+      },
+      "holds_eow": ["ACLS", "AMAT", "AOSL", "EOG", "FLEX", "LLY", "PLTR", "SMTC", "TTMI", "VECO", "VIAV"],
+      "pl_per_position_last_known": {
+        "ACLS":  {"plpc": 5.49,  "pl_dollar": 255.59,  "as_of": "2026-06-03"},
+        "AMAT":  {"plpc": 19.28, "pl_dollar": 6494.99, "as_of": "2026-06-03"},
+        "AOSL":  {"plpc": 23.53, "pl_dollar": 20.58,   "as_of": "2026-06-03"},
+        "ASTH":  {"plpc": -5.62, "pl_dollar": -863.0,  "as_of": "2026-06-03", "closing_friday": true},
+        "EOG":   {"plpc": 2.38,  "pl_dollar": 672.53,  "as_of": "2026-06-03"},
+        "FLEX":  {"plpc": 20.12, "pl_dollar": 3104.08, "as_of": "2026-06-03"},
+        "LLY":   {"plpc": 9.62,  "pl_dollar": 3148.88, "as_of": "2026-06-03"},
+        "PLTR":  {"plpc": 5.73,  "pl_dollar": 2260.66, "as_of": "2026-06-03"},
+        "SMTC":  {"plpc": 10.01, "pl_dollar": 29.9,    "as_of": "2026-06-03"},
+        "TTMI":  {"plpc": 8.44,  "pl_dollar": 1364.78, "as_of": "2026-06-03"},
+        "VECO":  {"plpc": 0.05,  "pl_dollar": 0.69,    "as_of": "2026-06-03"},
+        "VIAV":  {"plpc": 5.57,  "pl_dollar": 848.82,  "as_of": "2026-06-03"}
+      },
+      "net_pnl_estimate": 5113,
+      "portfolio_value_eow": 111418,
+      "data_note": "Live Alpaca API unavailable (sandbox network policy). Positions and P&L from last known snapshot 2026-06-03T14:08:08-04:00. June 4 equity $111,417.54 from daily P&L log. Friday NFP reaction (June 5) will determine final EOW value.",
+      "key_events": [
+        "AVGO Q2 beat June 3 after close — AI semi revenue above consensus — strong catalyst for AI hardware cohort (AMAT, NVDA, AMD)",
+        "CRWD Q1 FY2027 June 3 after close — maintained blackout, monitoring for post-earnings entry next week",
+        "NFP Friday June 5 — primary macro risk; hot print = hawkish rate expectations = risk-asset headwind"
+      ]
     }
   ],
   "portfolio_snapshots": [
@@ -803,9 +836,31 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-06-05T15:30:00-04:00",
+      "portfolio_value": 111418,
+      "buying_power": null,
+      "data_note": "Live Alpaca API unavailable (sandbox network policy). Estimated from last confirmed daily equity 2026-06-04: $111,417.54. Actual Friday close value will reflect NFP reaction.",
+      "positions": [
+        {"symbol": "ACLS",  "pl_pct": 5.49,  "pl_dollar": 255.59,  "note": "as-of 2026-06-03"},
+        {"symbol": "AMAT",  "pl_pct": 19.28, "pl_dollar": 6494.99, "note": "as-of 2026-06-03"},
+        {"symbol": "AOSL",  "pl_pct": 23.53, "pl_dollar": 20.58,   "note": "as-of 2026-06-03"},
+        {"symbol": "ASTH",  "pl_pct": -5.62, "pl_dollar": -863.0,  "note": "CLOSING — down 5.62%, below -2% Friday threshold; queued via friday_closes.json for GA execution"},
+        {"symbol": "EOG",   "pl_pct": 2.38,  "pl_dollar": 672.53,  "note": "as-of 2026-06-03"},
+        {"symbol": "FLEX",  "pl_pct": 20.12, "pl_dollar": 3104.08, "note": "as-of 2026-06-03"},
+        {"symbol": "LLY",   "pl_pct": 9.62,  "pl_dollar": 3148.88, "note": "as-of 2026-06-03"},
+        {"symbol": "PLTR",  "pl_pct": 5.73,  "pl_dollar": 2260.66, "note": "as-of 2026-06-03"},
+        {"symbol": "SMTC",  "pl_pct": 10.01, "pl_dollar": 29.9,    "note": "as-of 2026-06-03"},
+        {"symbol": "TTMI",  "pl_pct": 8.44,  "pl_dollar": 1364.78, "note": "as-of 2026-06-03"},
+        {"symbol": "VECO",  "pl_pct": 0.05,  "pl_dollar": 0.69,    "note": "as-of 2026-06-03"},
+        {"symbol": "VIAV",  "pl_pct": 5.57,  "pl_dollar": 848.82,  "note": "as-of 2026-06-03"}
+      ],
+      "friday_action": "closing ASTH per -2% rule; all other 11 positions held into next week",
+      "is_friday_close": true
     }
   ],
-  "last_monitor_run": "2026-06-03T14:08:08.107015-04:00",
+  "last_monitor_run": "2026-06-05T15:30:00-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",

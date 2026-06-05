@@ -1,57 +1,81 @@
 {
-  "generated_at": "2026-05-29",
-  "week_of": "2026-05-26",
-  "data_source": "last known positions snapshot 2026-05-27T12:48:55-04:00; Alpaca API blocked by sandbox network policy",
+  "generated_at": "2026-06-05",
+  "week_of": "2026-06-01",
+  "data_source": "last known positions snapshot 2026-06-03T14:08:08-04:00; Alpaca API blocked by sandbox network policy",
   "closes": [
     {
-      "symbol": "EOG",
-      "last_known_plpc": -1.86,
-      "last_known_pl_dollar": -526.99,
-      "reason": "Planned close per trade_plan.json — RSI 70.4 overbought, oil headwind thesis intact, approaching -2% Friday threshold at -1.86%. Closing on PCE data day (May 29) avoids inflation-driven energy volatility. Original thesis: lock in ~3.7% gain after Iran-war oil pop; that window has passed and position is now negative."
+      "symbol": "ASTH",
+      "last_known_plpc": -5.62,
+      "last_known_pl_dollar": -863.0,
+      "reason": "down 5.62% — exceeds -2% Friday close threshold; healthcare sector lagging (-15.1% RS60 vs SPY); medium-conviction position with no near-term catalyst; closing ahead of NFP macro risk (June 5); stop at $35.94 at risk"
     }
   ],
   "holds": [
     {
       "symbol": "AMAT",
-      "last_known_plpc": 6.31,
-      "last_known_pl_dollar": 2126.99,
-      "reason": "up 6.31% — semiconductor equipment cycle thesis intact (record Q2, 30%+ systems growth, AI capex buildout); hold into next week"
-    },
-    {
-      "symbol": "LLY",
-      "last_known_plpc": 9.22,
-      "last_known_pl_dollar": 3018.03,
-      "reason": "up 9.22% — past +8% take-profit trigger ($1,071.54); GTC take-profit order may have auto-executed; confirm status next week. Retatrutide Phase 3 thesis intact."
+      "last_known_plpc": 19.28,
+      "last_known_pl_dollar": 6494.99,
+      "reason": "up 19.28% — record Q2 results ($7.91B +11% YoY); Mizuho target $540; AI semiconductor equipment cycle multi-year thesis intact; AVGO beat June 3 confirms AI capex buildout; hold into next week"
     },
     {
       "symbol": "FLEX",
-      "last_known_plpc": 4.18,
-      "last_known_pl_dollar": 645.12,
-      "reason": "up 4.18% — tech sector momentum intact; trading at discount to median with strong sector RS; hold into next week"
+      "last_known_plpc": 20.12,
+      "last_known_pl_dollar": 3104.08,
+      "reason": "up 20.12% — strong tech sector momentum; Cloud & Power Infrastructure spin-off catalyst; hold into next week"
+    },
+    {
+      "symbol": "LLY",
+      "last_known_plpc": 9.62,
+      "last_known_pl_dollar": 3148.88,
+      "reason": "up 9.62% — retatrutide Phase 3 TRIUMPH-1 cleared (28.3% weight loss); Mounjaro +125% Q1 revenue; 31 analysts Buy; $1,211 consensus target (+13.7% upside); hold"
+    },
+    {
+      "symbol": "AOSL",
+      "last_known_plpc": 23.53,
+      "last_known_pl_dollar": 20.58,
+      "reason": "up 23.53% — strong AI semiconductor sector momentum; small position (2 shares); hold into next week"
+    },
+    {
+      "symbol": "SMTC",
+      "last_known_plpc": 10.01,
+      "last_known_pl_dollar": 29.9,
+      "reason": "up 10.01% — strong sector momentum; tiny position (2 shares); hold into next week"
+    },
+    {
+      "symbol": "TTMI",
+      "last_known_plpc": 8.44,
+      "last_known_pl_dollar": 1364.78,
+      "reason": "up 8.44% — moderate conviction, strong sector momentum; entered June 1 at $173.87; thesis intact; hold"
     },
     {
       "symbol": "PLTR",
-      "last_known_plpc": -1.01,
-      "last_known_pl_dollar": -399.46,
-      "reason": "down 1.01% — within tolerance, above -2% threshold; fundamental thesis intact (US commercial revenue +133%, largest-ever guidance raise, agentic AI adoption accelerating); hold"
+      "last_known_plpc": 5.73,
+      "last_known_pl_dollar": 2260.66,
+      "reason": "up 5.73% — US commercial revenue +133% YoY; agentic AI demand confirmed via Dell partnership; analyst mean target $193 (+23% upside from last known price); hold"
     },
     {
       "symbol": "VIAV",
-      "last_known_plpc": 2.19,
-      "last_known_pl_dollar": 334.11,
-      "reason": "up 2.19% — strong sector momentum; hold into next week"
+      "last_known_plpc": 5.57,
+      "last_known_pl_dollar": 848.82,
+      "reason": "up 5.57% — strong sector momentum; hold into next week"
+    },
+    {
+      "symbol": "ACLS",
+      "last_known_plpc": 5.49,
+      "last_known_pl_dollar": 255.59,
+      "reason": "up 5.49% — moderate conviction; strong sector momentum; entered June 1 at $150.18; hold"
+    },
+    {
+      "symbol": "EOG",
+      "last_known_plpc": 2.38,
+      "last_known_pl_dollar": 672.53,
+      "reason": "up 2.38% — above -2% threshold; hold into next week"
     },
     {
       "symbol": "VECO",
-      "last_known_plpc": 1.37,
-      "last_known_pl_dollar": 19.09,
-      "reason": "up 1.37% — hold into next week; small position, thesis intact"
-    },
-    {
-      "symbol": "ASTH",
-      "last_known_plpc": -1.21,
-      "last_known_pl_dollar": -185.12,
-      "reason": "down 1.21% — above -2% Friday close threshold; hold but watch closely next week; healthcare sector lagging (-15.1% 60d), medium-confidence position; stop at $35.94"
+      "last_known_plpc": 0.05,
+      "last_known_pl_dollar": 0.69,
+      "reason": "up 0.05% — barely positive, above -2% threshold; small position (23 shares); AI semiconductor equipment thesis; hold with existing stop at $56.51"
     }
   ]
 }
