@@ -1,49 +1,49 @@
 {
-  "week_of": "2026-05-31",
-  "week_thesis": "This week, the technology sector continues to lead the market, with strong momentum in semiconductor and software stocks. Stocks with high upside targets and recent positive news, such as TTMI and VIAV, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as CAR and HUM, should be avoided. The recent PCE data and upcoming macro events will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
+  "week_of": "2026-06-07",
+  "week_thesis": "This week, the technology sector continues to lead the market with a strong momentum of +20.1% vs SPY 60d. Stocks with high upside targets and recent positive news, such as TTMI and COHU, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as RXO and SEDG, should be avoided. The recent macro events and upcoming earnings reports will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
   "buys": [
     {
+      "symbol": "MXL",
+      "combined_score": 0.5833,
+      "tech_score": 1.0,
+      "sentiment_score": 0.167,
+      "reasoning": "Stock trades above analyst target and has high downside target of -15.5%",
+      "confidence": "medium",
+      "qty_pct": 0.15
+    },
+    {
       "symbol": "TTMI",
-      "combined_score": 0.5819,
-      "tech_score": 0.33,
-      "sentiment_score": 0.833,
-      "reasoning": "TTMI has a moderate P/S ratio, strong sector momentum, and a positive analyst target, making it an attractive choice",
-      "confidence": "medium",
-      "qty_pct": 0.15
-    },
-    {
-      "symbol": "VIAV",
-      "combined_score": 0.5226,
-      "tech_score": 0.045,
+      "combined_score": 0.5129,
+      "tech_score": 0.026,
       "sentiment_score": 1.0,
-      "reasoning": "VIAV has a high P/S ratio, strong sector momentum, and a positive analyst target, making it an attractive choice",
+      "reasoning": "Stock has strong sector momentum, high upside target of +24.7%, and recent positive news",
       "confidence": "medium",
       "qty_pct": 0.15
     },
     {
-      "symbol": "ACLS",
-      "combined_score": 0.4637,
-      "tech_score": 0.261,
+      "symbol": "FLEX",
+      "combined_score": 0.5029,
+      "tech_score": 0.173,
+      "sentiment_score": 0.833,
+      "reasoning": "Stock has strong sector momentum, recent positive news, and moderate upside target of +5.6%",
+      "confidence": "medium",
+      "qty_pct": 0.15
+    },
+    {
+      "symbol": "DELL",
+      "combined_score": 0.4982,
+      "tech_score": 0.33,
       "sentiment_score": 0.667,
-      "reasoning": "ACLS has a moderate P/S ratio, strong sector momentum, and a positive analyst target, but lacks recent news, making it a decent choice",
+      "reasoning": "Stock has CHASE RISK flag due to recent earnings and high upside target of +22.7%",
       "confidence": "medium",
       "qty_pct": 0.15
     },
     {
-      "symbol": "SMTC",
-      "combined_score": 0.4534,
-      "tech_score": 0.24,
-      "sentiment_score": 0.667,
-      "reasoning": "SMTC has a high P/S ratio, strong sector momentum, and a positive analyst target, but has a CHASE RISK flag, limiting its score",
-      "confidence": "medium",
-      "qty_pct": 0.15
-    },
-    {
-      "symbol": "AOSL",
-      "combined_score": 0.4495,
-      "tech_score": 0.566,
-      "sentiment_score": 0.333,
-      "reasoning": "AOSL has a low P/S ratio and strong sector momentum, but a negative analyst target, making it a mixed bag",
+      "symbol": "COHU",
+      "combined_score": 0.4372,
+      "tech_score": 0.041,
+      "sentiment_score": 0.833,
+      "reasoning": "Stock has strong sector momentum, moderate upside target of +15.3%, and no CHASE RISK flag",
       "confidence": "medium",
       "qty_pct": 0.15
     }
@@ -51,149 +51,147 @@
   "close_positions": [],
   "close_reasoning": {},
   "hold_positions": [],
-  "skip_reasoning": {
-    "INTC": "monthly entry cap (2) reached"
-  },
+  "skip_reasoning": {},
   "scoring_breakdown": {
-    "INTC": {
+    "MXL": {
       "combined": 0.5833,
       "tech_norm": 1.0,
       "sentiment_norm": 0.167,
       "ai_raw_score": 3,
-      "ai_reason": "INTC has a high P/S ratio, strong sector momentum, but a significant analyst downside target, indicating a potentially overvalued stock"
+      "ai_reason": "Stock trades above analyst target and has high downside target of -15.5%"
     },
-    "AOSL": {
-      "combined": 0.4495,
-      "tech_norm": 0.566,
-      "sentiment_norm": 0.333,
-      "ai_raw_score": 4,
-      "ai_reason": "AOSL has a low P/S ratio and strong sector momentum, but a negative analyst target, making it a mixed bag"
-    },
-    "ON": {
-      "combined": 0.4358,
-      "tech_norm": 0.372,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "ON has a moderate P/S ratio, strong sector momentum, and a neutral analyst target, making it a neutral choice"
-    },
-    "SYNA": {
-      "combined": 0.433,
-      "tech_norm": 0.366,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "SYNA has a moderate P/S ratio, strong sector momentum, and a neutral analyst target, but lacks recent news, making it a neutral choice"
-    },
-    "SANM": {
-      "combined": 0.3462,
-      "tech_norm": 0.359,
-      "sentiment_norm": 0.333,
-      "ai_raw_score": 4,
-      "ai_reason": "SANM has a low P/S ratio, strong sector momentum, and a negative analyst target, making it a mixed bag"
-    },
-    "TTMI": {
-      "combined": 0.5819,
-      "tech_norm": 0.33,
-      "sentiment_norm": 0.833,
-      "ai_raw_score": 7,
-      "ai_reason": "TTMI has a moderate P/S ratio, strong sector momentum, and a positive analyst target, making it an attractive choice"
-    },
-    "VECO": {
-      "combined": 0.4027,
-      "tech_norm": 0.305,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "VECO has a moderate P/S ratio, strong sector momentum, and a neutral analyst target, but lacks recent news, making it a neutral choice"
-    },
-    "ACLS": {
-      "combined": 0.4637,
-      "tech_norm": 0.261,
-      "sentiment_norm": 0.667,
-      "ai_raw_score": 6,
-      "ai_reason": "ACLS has a moderate P/S ratio, strong sector momentum, and a positive analyst target, but lacks recent news, making it a decent choice"
-    },
-    "SMTC": {
-      "combined": 0.4534,
-      "tech_norm": 0.24,
-      "sentiment_norm": 0.667,
-      "ai_raw_score": 6,
-      "ai_reason": "SMTC has a high P/S ratio, strong sector momentum, and a positive analyst target, but has a CHASE RISK flag, limiting its score"
-    },
-    "EXTR": {
-      "combined": 0.3653,
-      "tech_norm": 0.231,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "EXTR has a low P/S ratio, strong sector momentum, and a neutral analyst target, but lacks recent news, making it a neutral choice"
-    },
-    "QCOM": {
-      "combined": 0.1831,
-      "tech_norm": 0.2,
+    "PENG": {
+      "combined": 0.3272,
+      "tech_norm": 0.488,
       "sentiment_norm": 0.167,
       "ai_raw_score": 3,
-      "ai_reason": "QCOM has a moderate P/S ratio, strong sector momentum, but a significant analyst downside target, indicating a potentially overvalued stock"
+      "ai_reason": "Stock trades above analyst target and has high downside target of -16.2%"
     },
-    "CAR": {
-      "combined": 0.0907,
-      "tech_norm": 0.181,
+    "VSH": {
+      "combined": 0.2342,
+      "tech_norm": 0.468,
       "sentiment_norm": 0.0,
       "ai_raw_score": 2,
-      "ai_reason": "CAR has a low P/S ratio, weak sector momentum, and a significant analyst downside target, making it an unattractive choice"
+      "ai_reason": "Stock has very high downside target of -40.6% and no strong catalysts"
     },
-    "HUM": {
-      "combined": 0.0754,
-      "tech_norm": 0.151,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 2,
-      "ai_reason": "HUM has a low P/S ratio, weak sector momentum, and a negative analyst target, making it an unattractive choice"
-    },
-    "MYRG": {
-      "combined": 0.2268,
-      "tech_norm": 0.12,
-      "sentiment_norm": 0.333,
-      "ai_raw_score": 4,
-      "ai_reason": "MYRG has a moderate P/S ratio, weak sector momentum, but a positive surprise and recent news, making it a mixed bag"
-    },
-    "VSAT": {
-      "combined": 0.2991,
-      "tech_norm": 0.098,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "VSAT has a moderate P/S ratio, strong sector momentum, and a neutral analyst target, but has a CHASE RISK flag and negative surprise, limiting its score"
-    },
-    "KLIC": {
-      "combined": 0.2953,
-      "tech_norm": 0.091,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "KLIC has a moderate P/S ratio, strong sector momentum, and a neutral analyst target, but lacks recent news, making it a neutral choice"
-    },
-    "VIAV": {
-      "combined": 0.5226,
-      "tech_norm": 0.045,
-      "sentiment_norm": 1.0,
-      "ai_raw_score": 8,
-      "ai_reason": "VIAV has a high P/S ratio, strong sector momentum, and a positive analyst target, making it an attractive choice"
-    },
-    "RXO": {
-      "combined": 0.0156,
-      "tech_norm": 0.031,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 2,
-      "ai_reason": "RXO has a low P/S ratio, weak sector momentum, and a significant analyst downside target, making it an unattractive choice"
-    },
-    "ICHR": {
-      "combined": 0.338,
-      "tech_norm": 0.009,
+    "DELL": {
+      "combined": 0.4982,
+      "tech_norm": 0.33,
       "sentiment_norm": 0.667,
       "ai_raw_score": 6,
-      "ai_reason": "ICHR has a moderate P/S ratio, strong sector momentum, and a positive analyst target, making it a decent choice"
+      "ai_reason": "Stock has CHASE RISK flag due to recent earnings and high upside target of +22.7%"
     },
-    "DIOD": {
-      "combined": 0.4167,
-      "tech_norm": 0.0,
+    "FLEX": {
+      "combined": 0.5029,
+      "tech_norm": 0.173,
       "sentiment_norm": 0.833,
       "ai_raw_score": 7,
-      "ai_reason": "DIOD has a moderate P/S ratio, strong sector momentum, and a positive analyst target, making it an attractive choice"
+      "ai_reason": "Stock has strong sector momentum, recent positive news, and moderate upside target of +5.6%"
+    },
+    "INTC": {
+      "combined": 0.2483,
+      "tech_norm": 0.163,
+      "sentiment_norm": 0.333,
+      "ai_raw_score": 4,
+      "ai_reason": "Stock has high downside target of -9.9% despite strong sector momentum"
+    },
+    "RXO": {
+      "combined": 0.0646,
+      "tech_norm": 0.129,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 2,
+      "ai_reason": "Stock has high downside target of -20.8% and weak sector momentum"
+    },
+    "HPE": {
+      "combined": 0.3959,
+      "tech_norm": 0.125,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 6,
+      "ai_reason": "Stock has CHASE RISK flag due to recent earnings and high upside target of +23.5%"
+    },
+    "ON": {
+      "combined": 0.2086,
+      "tech_norm": 0.084,
+      "sentiment_norm": 0.333,
+      "ai_raw_score": 4,
+      "ai_reason": "Stock has high downside target of -10.1% despite strong sector momentum"
+    },
+    "SANM": {
+      "combined": 0.207,
+      "tech_norm": 0.081,
+      "sentiment_norm": 0.333,
+      "ai_raw_score": 4,
+      "ai_reason": "Stock has high downside target of -11.2% despite strong sector momentum"
+    },
+    "WDC": {
+      "combined": 0.2881,
+      "tech_norm": 0.076,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": 5,
+      "ai_reason": "Stock has moderate upside target of +3.5% and strong sector momentum"
+    },
+    "AOSL": {
+      "combined": 0.2035,
+      "tech_norm": 0.074,
+      "sentiment_norm": 0.333,
+      "ai_raw_score": 4,
+      "ai_reason": "Stock has high downside target of -12.7% despite strong sector momentum"
+    },
+    "SEDG": {
+      "combined": 0.0368,
+      "tech_norm": 0.074,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 2,
+      "ai_reason": "Stock has very high downside target of -31.3% and no strong catalysts"
+    },
+    "EXTR": {
+      "combined": 0.2751,
+      "tech_norm": 0.05,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": 5,
+      "ai_reason": "Stock has moderate downside target of -7.0% and strong sector momentum"
+    },
+    "COHU": {
+      "combined": 0.4372,
+      "tech_norm": 0.041,
+      "sentiment_norm": 0.833,
+      "ai_raw_score": 7,
+      "ai_reason": "Stock has strong sector momentum, moderate upside target of +15.3%, and no CHASE RISK flag"
+    },
+    "IRDM": {
+      "combined": 0.1013,
+      "tech_norm": 0.036,
+      "sentiment_norm": 0.167,
+      "ai_raw_score": 3,
+      "ai_reason": "Stock has high downside target of -20.0% and weak sector momentum"
+    },
+    "TTMI": {
+      "combined": 0.5129,
+      "tech_norm": 0.026,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 8,
+      "ai_reason": "Stock has strong sector momentum, high upside target of +24.7%, and recent positive news"
+    },
+    "NTAP": {
+      "combined": 0.3362,
+      "tech_norm": 0.006,
+      "sentiment_norm": 0.667,
+      "ai_raw_score": 6,
+      "ai_reason": "Stock has CHASE RISK flag due to recent earnings and moderate upside target of +1.7%"
+    },
+    "VECO": {
+      "combined": 0.2524,
+      "tech_norm": 0.005,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": 5,
+      "ai_reason": "Stock has moderate upside target of +3.2% and strong sector momentum"
+    },
+    "TWLO": {
+      "combined": 0.1667,
+      "tech_norm": 0.0,
+      "sentiment_norm": 0.333,
+      "ai_raw_score": 4,
+      "ai_reason": "Stock has high downside target of -13.5% despite strong sector momentum"
     }
   }
 }
