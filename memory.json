@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-05",
+  "last_run": "2026-06-01",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -524,6 +524,29 @@
         "CRWD Q1 FY2027 June 3 after close \u2014 maintained blackout, monitoring for post-earnings entry next week",
         "NFP Friday June 5 \u2014 primary macro risk; hot print = hawkish rate expectations = risk-asset headwind"
       ]
+    },
+    {
+      "week_of": "2026-06-08",
+      "thesis": "NFP 'good news is bad news': 172K jobs (2x consensus) on June 5 spiked 10yr yield to 4.54%, raised rate-hike probability to 57%, triggered Nasdaq -4.2% selloff. Portfolio dropped -10.3% (-$11,591) on June 5 to $100,907. AI fundamentals intact (AVGO Q2 beat, AMD Q2 guidance raised, NVIDIA-LG partnership June 8). Plan: close PLTR (barely above entry, rate-sensitive ultra-high-PE), VECO/VIAV/ACLS (near stops, weak conviction) to free ~$60K buying power; add NVDA (62-analyst Strong Buy, $298-311 target = +45%) and AMD (#1 universe scorer, +66% RS60, +57% DC YoY). Hold AMAT, FLEX, LLY, TTMI, SMTC, AOSL, EOG. Skip MU (earnings June 24), ADBE (earnings June 11 = blackout).",
+      "actions": [
+        "CLOSE PLTR 292 shares — barely above $135.14 entry, rate headwind, June forecast -10.4%",
+        "CLOSE VECO 23 shares — near stop, minimal conviction, semi exposure via AMAT",
+        "CLOSE VIAV 301 shares — analyst target below entry, near stop, lock in +5.57% gain",
+        "CLOSE ACLS 31 shares — near stop, semi conviction replicated by AMAT",
+        "BUY NVDA 20% portfolio — $205 post-NFP dip, 62-analyst Strong Buy, $298-311 avg target",
+        "BUY AMD 15% portfolio — $387 post-NFP dip, #1 RS60 scorer, Q2 guidance raised to $11.2B"
+      ],
+      "positions_to_close": ["PLTR", "VECO", "VIAV", "ACLS"],
+      "positions_to_open": ["NVDA", "AMD"],
+      "holds": ["AMAT", "FLEX", "LLY", "TTMI", "SMTC", "AOSL", "EOG"],
+      "key_events_this_week": [
+        "ADBE Q2 FY2026 earnings Thursday June 11 after close — BLACKOUT",
+        "MU Q3 FY2026 earnings June 24 — approaching, avoid new MU entry",
+        "NVIDIA-LG Group partnership June 8 (humanoid robots + DC architecture) — bullish NVDA catalyst",
+        "10yr yield at 4.54%, rate hike probability 57% — monitor FOMC speakers"
+      ],
+      "portfolio_value_entering_week": 100907,
+      "scoring_notes": "45 symbols scored from bars_raw.json (data ~pre-NFP). SPY 60d return 44%. 23 passed filters. Top by score: AMD(+0.2338, RS60=+66%), MU(+0.2009, RS60=+54%), NVDA(+0.1101, RS60=+21%). MU skipped: earnings June 24. ADBE skipped: earnings June 11. Bars data vintage ~May 20-25 (AMAT $430 vs June 4 ATH $509); scoring directionally valid but absolute prices stale — used current prices from web search for analysis."
     }
   ],
   "portfolio_snapshots": [
@@ -899,91 +922,10 @@
         }
       ],
       "is_friday_close": false
-    },
-    {
-      "time": "2026-06-05T15:30:00-04:00",
-      "portfolio_value": 111418,
-      "buying_power": null,
-      "data_note": "Live Alpaca API unavailable (sandbox network policy). Estimated from last confirmed daily equity 2026-06-04: $111,417.54. Actual Friday close value will reflect NFP reaction.",
-      "positions": [
-        {
-          "symbol": "ACLS",
-          "pl_pct": 5.49,
-          "pl_dollar": 255.59,
-          "note": "as-of 2026-06-03"
-        },
-        {
-          "symbol": "AMAT",
-          "pl_pct": 19.28,
-          "pl_dollar": 6494.99,
-          "note": "as-of 2026-06-03"
-        },
-        {
-          "symbol": "AOSL",
-          "pl_pct": 23.53,
-          "pl_dollar": 20.58,
-          "note": "as-of 2026-06-03"
-        },
-        {
-          "symbol": "ASTH",
-          "pl_pct": -5.62,
-          "pl_dollar": -863.0,
-          "note": "CLOSING \u2014 down 5.62%, below -2% Friday threshold; queued via friday_closes.json for GA execution"
-        },
-        {
-          "symbol": "EOG",
-          "pl_pct": 2.38,
-          "pl_dollar": 672.53,
-          "note": "as-of 2026-06-03"
-        },
-        {
-          "symbol": "FLEX",
-          "pl_pct": 20.12,
-          "pl_dollar": 3104.08,
-          "note": "as-of 2026-06-03"
-        },
-        {
-          "symbol": "LLY",
-          "pl_pct": 9.62,
-          "pl_dollar": 3148.88,
-          "note": "as-of 2026-06-03"
-        },
-        {
-          "symbol": "PLTR",
-          "pl_pct": 5.73,
-          "pl_dollar": 2260.66,
-          "note": "as-of 2026-06-03"
-        },
-        {
-          "symbol": "SMTC",
-          "pl_pct": 10.01,
-          "pl_dollar": 29.9,
-          "note": "as-of 2026-06-03"
-        },
-        {
-          "symbol": "TTMI",
-          "pl_pct": 8.44,
-          "pl_dollar": 1364.78,
-          "note": "as-of 2026-06-03"
-        },
-        {
-          "symbol": "VECO",
-          "pl_pct": 0.05,
-          "pl_dollar": 0.69,
-          "note": "as-of 2026-06-03"
-        },
-        {
-          "symbol": "VIAV",
-          "pl_pct": 5.57,
-          "pl_dollar": 848.82,
-          "note": "as-of 2026-06-03"
-        }
-      ],
-      "friday_action": "closing ASTH per -2% rule; all other 11 positions held into next week",
-      "is_friday_close": true
     }
   ],
-  "last_monitor_run": "2026-06-05T15:30:00-04:00",
+  "last_run": "2026-06-08",
+  "last_monitor_run": "2026-06-08T09:00:00-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
@@ -1054,14 +996,6 @@
       "equity": 111417.54,
       "daily_pl_dollar": 394.52,
       "daily_pl_pct": 0.36,
-      "open_positions": 12,
-      "realized_today_dollar": 0
-    },
-    {
-      "date": "2026-06-05",
-      "equity": 100906.59,
-      "daily_pl_dollar": -11590.86,
-      "daily_pl_pct": -10.3,
       "open_positions": 12,
       "realized_today_dollar": 0
     }

@@ -1,62 +1,65 @@
 {
-  "week_of": "2026-06-01",
-  "generated_at": "2026-06-01T09:00:00-04:00",
-  "week_thesis": "AI infrastructure super-cycle roaring: Broadcom (AVGO) reports Q2 Wednesday June 3 after close — consensus +47% YoY revenue to $22B with AI semi contributing ~$10.7B — a potential sector catalyst for the full AI hardware cohort. S&P 500 RSI at 73 (overbought broadly), so selectivity is critical: own AI hardware leaders with catalysts and dip setups, trim positions that have exhausted upside. NVDA post-earnings dip to $212 (-10% from $235.74 ATH on May 14) is the cleanest buy setup this week: RSI 49.8 neutral, 61-analyst Strong Buy consensus, average 12-month target $297-$307 (+40-45% upside), FY2026 revenue +65% YoY. AMD scores #1 in universe (RS60=+66% vs SPY, RSI 52.8, data center $5.8B +57% in Q1); Meta signed 6GW multi-year GPU deal and hyperscaler MI450 demand is exceeding internal forecasts. Capital source: close FLEX (locked in +16.4% at ATH with only ~2% remaining to $157.50 target), VIAV (analyst target $39.25 fell below $49.50 entry — thesis broken), and ASTH (lagging healthcare sector -15.1% RS60, medium conviction, stop-loss at $35.94 in jeopardy). PLTR holding strong at +15.9% gain post-9% May 29 surge on Dell earnings AI partnership validation; analyst mean target $193. AVGO and CRWD both report June 3 — blackout. Friday NFP report is primary macro risk for the week.",
+  "week_of": "2026-06-08",
+  "generated_at": "2026-06-08T09:00:00-04:00",
+  "week_thesis": "NFP 'good news is bad news' triggered Nasdaq -4.2% selloff on June 5 as 172K nonfarm payrolls (2x consensus) spiked the 10-year Treasury yield to 4.54% and raised Fed rate-hike probability to 57%. AI/semi fundamentals remain unimpaired: AMD Q1 data center revenue $5.8B (+57% YoY) with Q2 guidance raised to $11.2B (+46%), NVIDIA-LG Group humanoid robot + advanced data center architecture partnership announced June 8, AVGO Q2 beat confirmed AI infrastructure super-cycle. June 5 dip (NVDA -6.2% to $205.10, AMD -10.86% to ~$387) is macro-driven, not fundamental deterioration — creating a textbook mean-reversion entry into the two highest-conviction AI hardware names. Consolidate: close PLTR (barely above $135.14 entry, rate-sensitive ultra-high-PE, June forecast -10.4%), VECO (near stop, minimal conviction), VIAV (analyst target below entry), ACLS (near stop, thesis replicated by AMAT). Add NVDA (62-analyst Strong Buy, $298-311 avg target = +45-51% upside) and AMD (#1 universe RS60 scorer, Q2 guidance raised). Portfolio enters week ~$100,907 after -10.3% June 5 drawdown; consolidating 4 positions frees ~$60K buying power for 2 high-conviction adds.",
   "market_context": {
     "spy_last_close": 736.50,
-    "market_status": "S&P 500 at all-time highs; RSI 73 (overbought); AI stocks represent 45% of S&P 500 market cap, driving ~40% of index earnings growth",
+    "spy_june5_implied": "~$718-722 (S&P 500 fell to 7,383 on NFP, -2.6%)",
     "macro_risks": [
-      "NFP (Nonfarm Payrolls) Friday June 5 — primary risk event of the week",
-      "AVGO Q2 earnings June 3 after close (consensus +47% YoY, AI semi ~$10.7B) — potential sector catalyst or disappointment",
-      "CRWD Q1 FY2027 earnings June 3 after close — cybersecurity proxy",
-      "S&P 500 RSI 73 — elevated, correction risk if AI earnings disappoint",
-      "MU earnings June 24 — ahead but no near-term risk this week"
+      "10-year Treasury yield spiked to 4.54% on NFP (172K jobs, 2x consensus) — rate hike probability now 57%",
+      "Nasdaq -4.2% on June 5; semiconductors led the selloff (AMD -10.86%, MU -13.25%, NVDA -6.2%)",
+      "ADBE Q2 FY2026 earnings Thursday June 11 after close — BLACKOUT on ADBE",
+      "MU Q3 FY2026 earnings June 24 — approaching, avoid new MU position this week",
+      "High-PE growth stocks most vulnerable to sustained rate elevation"
     ],
     "tailwinds": [
-      "AI capex projected $670B in 2026; AI stocks driving 40% of S&P 500 EPS growth",
-      "PLTR +9% on May 29 (best single-day in a year) — Dell AI partnership validates agentic AI demand",
-      "NVDA FY2026 revenue $215.94B (+65% YoY); CEO Jensen Huang: 'demand gone parabolic'; $80B buyback",
-      "AMD Q1 2026 data center $5.8B (+57% YoY); MI450 Helios demand exceeding initial plans; Meta 6GW GPU deal signed",
-      "MU HBM 2026 capacity sold out; $1T market cap milestone; June 24 earnings projecting +261% revenue YoY",
-      "AMAT Q2 record results $7.91B +11%; Mizuho raised target to $540 from $500",
-      "Broadcom Q2 consensus: +47% YoY revenue to $22B, AI semi ~$10.7B (nearly half of total revenue)"
+      "NVDA: 62 analysts Strong Buy, avg 12m target $298-311 (+45-51%); CEO Jensen Huang confirmed demand 'parabolic'; NVIDIA-LG Group partnership June 8 (humanoid robots + DC architecture)",
+      "AMD: Q1 FY2026 DC revenue $5.8B (+57% YoY); Q2 guided $11.2B (+46%); MI450/Helios H2 ramp; Meta 6GW GPU deal; OpenAI onboarded",
+      "AVGO Q2 beat (June 3 after close) confirmed AI infrastructure super-cycle — tailwind for AI hardware cohort",
+      "AMAT semi equipment growth outlook raised to >30% for 2026; analyst avg target $511",
+      "NFP 172K jobs = healthy economy = strong corporate earnings ahead; selloff was rate-fear, not recession-fear"
     ]
   },
   "buys": [
     {
       "symbol": "NVDA",
-      "reasoning": "Post-earnings dip to $212.49 (-10% from May 14 ATH of $235.74) creates a clean mean-reversion entry. RSI 49.8 (neutral — no excess). FY2026 revenue $215.94B (+65% YoY), EPS beat, $80B buyback authorized. CEO Jensen Huang called demand 'parabolic' on Agentic AI. 61 analysts Strong Buy consensus; average 12-month target $297-$307 = +40-45% upside from current price; Tigress Financial targets $425 (+100%). Stock has declined 8 of last 10 days, flushing short-term momentum chasers. Broadcom earnings June 3 (if strong) would re-accelerate the AI semi trade and directly benefit NVDA. No earnings risk this week.",
+      "signal": "STRONG_BUY",
+      "reasoning": "62-analyst Strong Buy consensus (71 buys, 1 hold, 0 sells) with avg 12-month target $298-311 (+45-51% from $205 entry); NVIDIA-LG Group humanoid robot and advanced data center architecture partnership announced June 8 — new long-cycle revenue stream; Blackwell architecture ramp intact; FY2026 revenue $215.94B (+65% YoY), $80B buyback program; June 5 selloff to $205.10 (-6.2%) was macro-driven (NFP rates shock), not a fundamental thesis break; RSI ~48 post-selloff = neutral, no overbought excess; Stocktwits community bullish pre-selloff; no earnings risk this week; best-in-class AI infrastructure name.",
       "confidence": "high",
-      "qty_pct": 0.15
+      "qty_pct": 0.20
     },
     {
       "symbol": "AMD",
-      "reasoning": "Universe's #1 ranked candidate (score +0.2338, RS60=+66% vs SPY, RSI 52.8, dip5d +5%). Q1 2026 data center revenue $5.8B (+57% YoY), record server CPU revenue +50%+ across cloud and enterprise. CEO Lisa Su raised server CPU TAM forecast from ~$60B to >$120B growing >35% annually by 2030. Meta signed multi-year deal for 6GW of AMD GPUs for AI data centers. MI450 Helios rack-scale platform demand exceeds internal plans. OpenAI also onboarded as lead customer. Forward earnings momentum intact, no earnings this week (reported May 5). Minor 5-day pop (+5%) but well within tolerance given 66% RS60 lead over SPY.",
-      "confidence": "high",
+      "signal": "BUY",
+      "reasoning": "Universe #1 RS60 scorer (+66% vs SPY over 60 days); Q1 FY2026 data center revenue $5.8B (+57% YoY); Q2 FY2026 guidance raised to $11.2B (+46%), server CPU growth >70% YoY projected; MI450/Helios rack-scale platform H2 2026 ramp confirmed with demand exceeding initial plans; Meta signed 6GW multi-year GPU deal; OpenAI onboarded as lead customer; AMD forecast $120B CPU server TAM by 2030; June 5 NFP selloff drove AMD -10.86% to ~$387 — best entry opportunity since April; RSI estimated ~42 post-selloff (approaching oversold); no earnings risk (reported May 5); -10.86% single-day dip after +66% RS60 momentum = ideal mean-reversion setup.",
+      "confidence": "medium",
       "qty_pct": 0.15
     }
   ],
-  "close_positions": ["FLEX", "VIAV", "ASTH"],
+  "close_positions": ["PLTR", "VECO", "VIAV", "ACLS"],
   "close_reasoning": {
-    "FLEX": "FLEX hit all-time high of $154.25 on May 29 from $132.46 entry (+16.4% gain, ~$2,425 on 112 shares). Analyst consensus 12-month target is $157.50 — only 2.1% remaining upside. Risk/reward has compressed significantly: locking in +16% now and redeploying into NVDA (40%+ upside) or AMD (66% RS60) is superior capital allocation. Spin-off announcement of Cloud & Power Infrastructure segment was a catalyst already reflected in the price. Strong buy consensus, but the easy money has been made. Close and recycle capital.",
-    "VIAV": "Analyst target $39.25 now falls meaningfully below entry of $49.50 — thesis broken. VIAV was entered May 25 on the premise of 'discount to analyst target with strong sector momentum' but the current consensus target is ~21% below our basis. With last known P&L at +2.19% ($334 gain on May 27), close while modestly profitable before further deterioration. Limited AI connectivity catalyst. The US Communications sector has outperformed broadly, making further re-rating less likely.",
-    "ASTH": "Astrana Health (ASTH) sits in the healthcare sector which has lagged the broader market by -15.1% over 60 days. Medium conviction position entered May 25 at $37.83 with stop at $35.94 (-5% threshold). Healthcare continues to lag as AI/tech dominates capital flows. No near-term catalyst visible. Last known P&L: -1.21% (-$185). Proactive close avoids stop-loss trigger and stop uncertainty from API access limitations; frees capital for higher-conviction AI hardware names."
+    "PLTR": "Barely above $135.14 entry (June 5 close $135.53, +0.3% = ~$113 gain on 292 shares) — minimal locked profit with significant downside risk. One analyst June forecast: -10.4% to $129, which would trigger $128.38 stop and realize a loss. Rate environment (10yr 4.54%, rate hike probability 57%) is structurally bearish for ultra-high-PE growth stocks like PLTR. Capital better deployed into NVDA ($298-311 analyst target = +45% upside) and AMD (#1 RS60 scorer). Close at open Monday, accept flat P&L.",
+    "VECO": "23-share position barely above $59.48 entry (last known +0.05% = +$0.03/share); stop at $56.51 vulnerable on any macro follow-through from June 5 selloff. Minimal conviction — semi equipment exposure already covered by AMAT (held, +12-17% above entry). Clean up small position and simplify portfolio.",
+    "VIAV": "301-share position; analyst consensus target $39.25 is meaningfully below $49.50 entry — fundamental thesis broken. Stop at $47.02 is at risk from June 5 macro selloff (communications small-cap vulnerable in risk-off). Last known +5.57% gain ($849) should be locked in now before thesis deterioration. Limited AI infrastructure catalyst.",
+    "ACLS": "31-share position entered at $150.18 with stop $142.48; semiconductor equipment conviction fully replicated by AMAT (already held, +12-17% gain). June 5 macro selloff likely brought ACLS close to or below stop. Minimal incremental diversification value. Close to consolidate capital."
   },
-  "hold_positions": ["PLTR", "AMAT", "LLY", "VECO"],
+  "hold_positions": ["AMAT", "FLEX", "LLY", "TTMI", "SMTC", "AOSL", "EOG"],
   "hold_reasoning": {
-    "PLTR": "Palantir surged to $156.54 (+13.7% last week; +9% on May 29 alone — best single-day in a year). Entry $135.14 = +15.9% unrealized gain (~$5,195 on 292 shares). Dell earnings validated the Palantir AI infrastructure partnership. Q1 2026 revenue +85% YoY to $1.633B; US commercial revenue +133%. Analyst mean target $193 (+23% from current). Agentic AI adoption directly accretes to PLTR's AIP platform. Stop-loss at $128.38 provides -18% downside protection from current levels. Hold — thesis strengthening.",
-    "AMAT": "Applied Materials record Q2 results ($7.91B +11% YoY, EPS $3.51 +33%). Mizuho raised target to $540 from $500 (Outperform). Semiconductor equipment cycle is multi-year as AI infrastructure buildout requires advanced chip nodes. RSI 67.1 elevated but not yet overbought. Entry $411.45 May 18, currently +6%+ (~$437). Upside $540 = +24% from current. CEO projects semiconductor systems 30%+ growth in 2026. Added Broadcom and TSMC as EPIC Innovation partners. Stop at $409.38 still intact. Hold.",
-    "LLY": "Eli Lilly: Q1 2026 Mounjaro revenue +125% YoY to $8.7B. Retatrutide Phase 3 TRIUMPH-1 cleared (28.3% weight loss in 80 weeks — unprecedented). CVS Health restoring coverage of Zepbound and adding LLY obesity pill to drug plans is a fresh positive catalyst. RSI 70.3 (overbought — take-profit order at $1,071.54 may have auto-executed on May 26/27 when LLY was at +9.22%). If auto-TP triggered, position is closed (locked in +8% gain). If still open, hold — 31 analysts rate Buy with $1,211 consensus target vs current $1,064 = +13.7% remaining upside.",
-    "VECO": "Veeco Instruments: small semiconductor equipment name. Entry $59.48, last known +1.37% gain (May 27). Stop at $56.51 provides ~5% downside protection. Minimal capital at risk (23 shares = ~$1,368). AI-driven semiconductor capex supports equipment names. Hold with existing stop; allow stop to manage risk rather than proactive close."
+    "AMAT": "Semi equipment multi-year cycle intact. June 4 ATH ~$509; June 5 selloff brought to ~$460-480 range, still +12-17% above $411.45 entry. AMAT RSI exited overbought on June 5 — technically healthy reset. Analyst avg target $511 (40 analysts, Buy consensus); semi equipment growth outlook raised to >30% for 2026. AVGO beat = confirmed AI hardware buildout demand for AMAT equipment. Stop at $391 provides downside protection. Strongest hold in portfolio.",
+    "FLEX": "+20% from $132.46 entry, well above $125.84 stop. Electronics/technology manufacturing plays AI infrastructure (servers, networking hardware). Not directly rate-sensitive. Cloud & Power Infrastructure segment spin-off catalyst. Hold with stop.",
+    "LLY": "Pharmaceutical — defensive in rising-rate environment. Retatrutide Phase 3 (TRIUMPH-1) cleared, 28.3% weight loss; Mounjaro revenue +125% YoY to $8.7B Q1. +9% from $992.17 entry; 31 analysts Buy consensus, $1,211 avg target (+14% from ~$1,065). Stop at $942. Healthcare defensive positioning appropriate given macro uncertainty.",
+    "TTMI": "+8% from $173.87 entry; above $164.99 stop. TTM Technologies manufactures advanced PCBs for AI server/networking hardware. Sector momentum intact post-AVGO beat. Moderate conviction. Allow stop to manage risk.",
+    "SMTC": "+10% from $149.36 entry; above $141.69 stop. Tiny position (2 shares = ~$165). Semi analog/mixed-signal IC maker benefits from AI hardware proliferation. Let stop manage risk.",
+    "AOSL": "+23% from $43.73 entry; well above $41.65 stop. Tiny position (2 shares = ~$108). Allow stop to manage remaining upside.",
+    "EOG": "Energy benefits from strong NFP signal — healthy jobs market = strong energy demand. +2% from ~$141.9 last known. Above ~$131.65 stop. Energy sector typically outperforms in 'good news is good news' economic contexts despite rate noise."
   },
   "skip_reasoning": {
-    "CRWD": "EARNINGS BLACKOUT — CrowdStrike reports Q1 FY2027 results June 3 after close. Score +0.0496 (RS60=+11%, RSI 53.3, dip5d=-0.9%) is solid, but no position ahead of earnings event risk. Watchlist for post-earnings entry if guidance impresses.",
-    "AVGO": "EARNINGS BLACKOUT — Broadcom reports Q2 FY2026 results June 3 after close. Consensus projects +47% YoY revenue to $22B; AI semi ~$10.7B. Score +0.0072 (RS60=+11%, dip5d=+6.1%, RSI 34.8) — RSI oversold, compelling entry IF earnings impress. Top watchlist for next week if AVGO beats and guides up.",
-    "MU": "Compelling HBM supercycle thesis: 2026 capacity sold out, $1T market cap milestone, +840% YoY stock, UBS target raised to $1,625. Earnings June 24 — approaching but not this week. RSI 34.7 in bars data may indicate further near-term weakness or a dip entry. Watchlist alongside AVGO for next week after earnings.",
-    "MRVL": "Bars data shows $115 but actual price is $204 as of June 1 (surged on earnings gap). Analyst consensus target $207.24 — only $3.24 (1.6%) above current price. Risk/reward minimal at current levels. Pass.",
-    "LRCX": "Score +0.04, RSI 60.6 (elevated). Semi equipment name like AMAT but already holding AMAT. No unique catalyst over NVDA/AMD for new capital. Pass.",
-    "HPE": "Earnings today (June 1). Blackout.",
-    "LULU": "Earnings this week. Blackout. Not an AI infrastructure name anyway."
+    "MU": "Universe #2 scorer (RS60=+54%, RSI 34.7 near oversold, HBM sold out for multiple quarters); however Q3 FY2026 earnings June 24 (16 days away) = approaching earnings blackout. Despite compelling -13.25% June 5 dip to ~$711, event risk is too high for new position entry. Watch for post-earnings entry.",
+    "ADBE": "Q2 FY2026 earnings THURSDAY JUNE 11 — this week. Blackout. Score -0.17 in universe anyway.",
+    "MRVL": "RSI 25.9 (borderline filter), bars price $115 is stale (actual ~$204 post-earnings gap). Data gap makes scoring unreliable. Skip.",
+    "LRCX": "RS60 only +6% (vs AMD +66%), no unique catalyst over NVDA/AMD; already have AMAT for semi equipment. Price in bars $1,100 may be stale. Skip.",
+    "NEM": "Gold miner; RS60=+1%, dip5d=-4.7% attractive technically but wrong sector (no AI/tech catalyst). Skip.",
+    "AMZN": "RS60=-2% (underperforming SPY); dip from macro selloff but lacks the 60-day momentum to justify new entry over AMD/NVDA. Skip."
   },
-  "risk_notes": "Stop-losses per config (5% below entry): PLTR stop=$128.38 (from $135.14 entry), AMAT stop=$409.38 (from $411.45 entry), VECO stop=$56.51 (from $59.48 entry). New entries: NVDA stop=~$201.87 (5% below $212.49), AMD stop=~$413.25 (5% below $435). LLY take-profit at $1,071.54 may already be executed — confirm via API. AVGO earnings June 3: strong beat = sector tailwind for NVDA/AMD/AMAT; disappointment = reduce semi exposure. NFP Friday: if jobs data surprises hot, rate expectations shift hawkish and risk-assets may sell off — plan to hold through NFP but stop-losses provide automatic protection."
+  "risk_notes": "Stop-losses per config (5% below entry): NVDA new stop ~$194.85 (5% below $205.10), AMD new stop ~$367.65 (5% below ~$387). Existing stops: AMAT $391, LLY $942, FLEX $125.84, TTMI $164.99, SMTC $141.69, AOSL $41.65, EOG ~$131.65. Key risk this week: ADBE earnings June 11 (not held). MU earnings June 24 — do not enter MU before then. Rate risk: 10yr at 4.54%; if yield continues rising above 4.75%, reduce AI/tech exposure. Macro tail risk: any Fed communication signaling urgency to hike would be negative for the full portfolio — monitor FOMC speakers this week."
 }
