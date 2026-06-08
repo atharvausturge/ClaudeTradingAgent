@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-01",
+  "last_run": "2026-06-08",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -243,6 +243,39 @@
       "price": 43.73,
       "stop_price": 41.65,
       "reasoning": "AOSL has a low P/S ratio and strong sector momentum, but a negative analyst target, making it a mixed bag",
+      "confidence": "medium",
+      "filled": true
+    },
+    {
+      "time": "2026-06-08T12:57:00.722628-04:00",
+      "action": "BUY",
+      "symbol": "MXL",
+      "qty": 201,
+      "price": 80.8,
+      "stop_price": 76.66,
+      "reasoning": "Stock trades above analyst target and has high downside target of -15.5%",
+      "confidence": "medium",
+      "filled": true
+    },
+    {
+      "time": "2026-06-08T12:57:00.722628-04:00",
+      "action": "BUY",
+      "symbol": "DELL",
+      "qty": 40,
+      "price": 400.58,
+      "stop_price": 380.16,
+      "reasoning": "Stock has CHASE RISK flag due to recent earnings and high upside target of +22.7%",
+      "confidence": "medium",
+      "filled": true
+    },
+    {
+      "time": "2026-06-08T12:57:00.722628-04:00",
+      "action": "BUY",
+      "symbol": "COHU",
+      "qty": 301,
+      "price": 53.83,
+      "stop_price": 51.1,
+      "reasoning": "Stock has strong sector momentum, moderate upside target of +15.3%, and no CHASE RISK flag",
       "confidence": "medium",
       "filled": true
     }
@@ -529,24 +562,49 @@
       "week_of": "2026-06-08",
       "thesis": "NFP 'good news is bad news': 172K jobs (2x consensus) on June 5 spiked 10yr yield to 4.54%, raised rate-hike probability to 57%, triggered Nasdaq -4.2% selloff. Portfolio dropped -10.3% (-$11,591) on June 5 to $100,907. AI fundamentals intact (AVGO Q2 beat, AMD Q2 guidance raised, NVIDIA-LG partnership June 8). Plan: close PLTR (barely above entry, rate-sensitive ultra-high-PE), VECO/VIAV/ACLS (near stops, weak conviction) to free ~$60K buying power; add NVDA (62-analyst Strong Buy, $298-311 target = +45%) and AMD (#1 universe scorer, +66% RS60, +57% DC YoY). Hold AMAT, FLEX, LLY, TTMI, SMTC, AOSL, EOG. Skip MU (earnings June 24), ADBE (earnings June 11 = blackout).",
       "actions": [
-        "CLOSE PLTR 292 shares — barely above $135.14 entry, rate headwind, June forecast -10.4%",
-        "CLOSE VECO 23 shares — near stop, minimal conviction, semi exposure via AMAT",
-        "CLOSE VIAV 301 shares — analyst target below entry, near stop, lock in +5.57% gain",
-        "CLOSE ACLS 31 shares — near stop, semi conviction replicated by AMAT",
-        "BUY NVDA 20% portfolio — $205 post-NFP dip, 62-analyst Strong Buy, $298-311 avg target",
-        "BUY AMD 15% portfolio — $387 post-NFP dip, #1 RS60 scorer, Q2 guidance raised to $11.2B"
+        "CLOSE PLTR 292 shares \u2014 barely above $135.14 entry, rate headwind, June forecast -10.4%",
+        "CLOSE VECO 23 shares \u2014 near stop, minimal conviction, semi exposure via AMAT",
+        "CLOSE VIAV 301 shares \u2014 analyst target below entry, near stop, lock in +5.57% gain",
+        "CLOSE ACLS 31 shares \u2014 near stop, semi conviction replicated by AMAT",
+        "BUY NVDA 20% portfolio \u2014 $205 post-NFP dip, 62-analyst Strong Buy, $298-311 avg target",
+        "BUY AMD 15% portfolio \u2014 $387 post-NFP dip, #1 RS60 scorer, Q2 guidance raised to $11.2B"
       ],
-      "positions_to_close": ["PLTR", "VECO", "VIAV", "ACLS"],
-      "positions_to_open": ["NVDA", "AMD"],
-      "holds": ["AMAT", "FLEX", "LLY", "TTMI", "SMTC", "AOSL", "EOG"],
+      "positions_to_close": [
+        "PLTR",
+        "VECO",
+        "VIAV",
+        "ACLS"
+      ],
+      "positions_to_open": [
+        "NVDA",
+        "AMD"
+      ],
+      "holds": [
+        "AMAT",
+        "FLEX",
+        "LLY",
+        "TTMI",
+        "SMTC",
+        "AOSL",
+        "EOG"
+      ],
       "key_events_this_week": [
-        "ADBE Q2 FY2026 earnings Thursday June 11 after close — BLACKOUT",
-        "MU Q3 FY2026 earnings June 24 — approaching, avoid new MU entry",
-        "NVIDIA-LG Group partnership June 8 (humanoid robots + DC architecture) — bullish NVDA catalyst",
-        "10yr yield at 4.54%, rate hike probability 57% — monitor FOMC speakers"
+        "ADBE Q2 FY2026 earnings Thursday June 11 after close \u2014 BLACKOUT",
+        "MU Q3 FY2026 earnings June 24 \u2014 approaching, avoid new MU entry",
+        "NVIDIA-LG Group partnership June 8 (humanoid robots + DC architecture) \u2014 bullish NVDA catalyst",
+        "10yr yield at 4.54%, rate hike probability 57% \u2014 monitor FOMC speakers"
       ],
       "portfolio_value_entering_week": 100907,
-      "scoring_notes": "45 symbols scored from bars_raw.json (data ~pre-NFP). SPY 60d return 44%. 23 passed filters. Top by score: AMD(+0.2338, RS60=+66%), MU(+0.2009, RS60=+54%), NVDA(+0.1101, RS60=+21%). MU skipped: earnings June 24. ADBE skipped: earnings June 11. Bars data vintage ~May 20-25 (AMAT $430 vs June 4 ATH $509); scoring directionally valid but absolute prices stale — used current prices from web search for analysis."
+      "scoring_notes": "45 symbols scored from bars_raw.json (data ~pre-NFP). SPY 60d return 44%. 23 passed filters. Top by score: AMD(+0.2338, RS60=+66%), MU(+0.2009, RS60=+54%), NVDA(+0.1101, RS60=+21%). MU skipped: earnings June 24. ADBE skipped: earnings June 11. Bars data vintage ~May 20-25 (AMAT $430 vs June 4 ATH $509); scoring directionally valid but absolute prices stale \u2014 used current prices from web search for analysis."
+    },
+    {
+      "week_of": "2026-06-07",
+      "thesis": "This week, the technology sector continues to lead the market with a strong momentum of +20.1% vs SPY 60d. Stocks with high upside targets and recent positive news, such as TTMI and COHU, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as RXO and SEDG, should be avoided. The recent macro events and upcoming earnings reports will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
+      "actions": [
+        "BUY 201 MXL @ $80.80 | stop $76.66",
+        "BUY 40 DELL @ $400.58 | stop $380.16",
+        "BUY 301 COHU @ $53.83 | stop $51.10"
+      ]
     }
   ],
   "portfolio_snapshots": [
@@ -922,9 +980,13 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-06-08T12:57:00.722628-04:00",
+      "portfolio_value": 108204.81,
+      "buying_power": 115505.8
     }
   ],
-  "last_run": "2026-06-08",
   "last_monitor_run": "2026-06-08T09:00:00-04:00",
   "daily_pnl": [
     {
