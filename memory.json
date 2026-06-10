@@ -1229,6 +1229,14 @@
       "daily_pl_pct": -5.19,
       "open_positions": 10,
       "realized_today_dollar": 0
+    },
+    {
+      "date": "2026-06-10",
+      "equity": 100975.4,
+      "daily_pl_dollar": -986.09,
+      "daily_pl_pct": -0.97,
+      "open_positions": 10,
+      "realized_today_dollar": 0
     }
   ]
 }
