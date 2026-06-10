@@ -985,6 +985,83 @@
       "time": "2026-06-08T12:57:00.722628-04:00",
       "portfolio_value": 108204.81,
       "buying_power": 115505.8
+    },
+    {
+      "time": "2026-06-10T09:00:00-04:00",
+      "portfolio_value": null,
+      "buying_power": null,
+      "positions_summary": {
+        "note": "Live Alpaca API unavailable \u2014 sandbox network policy blocks paper-api.alpaca.markets. Values from last confirmed data (2026-06-09 daily P&L).",
+        "last_confirmed_equity": 101573.01,
+        "last_confirmed_date": "2026-06-09",
+        "pnl_from_starting_capital_dollar": 1573.01,
+        "pnl_from_starting_capital_pct": 1.57,
+        "open_positions_count_last_known": 10,
+        "context": {
+          "june5_nfp_shock": "NFP June 5 printed 172K (2x consensus); 10yr yield spiked to 4.54%; rate-hike probability rose to 57%; Nasdaq -4.2%; portfolio dropped ~-11K to ~100907.",
+          "june8_recovery": "AVGO Q2 beat + NVIDIA-LG partnership June 8 drove partial recovery. New positions added: MXL (201 @ 80.80), DELL (40 @ 400.58), COHU (301 @ 53.83). Portfolio recovered to 107659 (15 positions).",
+          "june9_further_stops": "Additional stops triggered June 9 \u2014 portfolio dropped to 101573 with 10 positions (5 closed from 15). Closed per June 8 plan: PLTR, VECO, VIAV, ACLS; ASTH stop also triggered (-5.62% on June 3 = below 35.94 stop)."
+        },
+        "inferred_open_positions": [
+          "AMAT",
+          "FLEX",
+          "LLY",
+          "TTMI",
+          "SMTC",
+          "AOSL",
+          "EOG",
+          "MXL",
+          "DELL",
+          "COHU"
+        ],
+        "inferred_closed_since_jun3": [
+          "PLTR (rate headwind, near entry \u2014 planned close June 8)",
+          "VECO (near stop, closed June 8/9)",
+          "VIAV (stale thesis, closed June 8/9)",
+          "ACLS (near stop, closed June 8/9)",
+          "ASTH (stop triggered, -5.62% at 35.94 stop level)"
+        ],
+        "thesis_check": {
+          "AMAT": "INTACT / STRONG HOLD \u2014 last known +19.28% from 411.45 entry. AI semi equipment cycle multi-year. Mizuho target 540. Rate headwind from NFP is a risk but AI capex thesis unchanged. Stop 409.38.",
+          "FLEX": "INTACT / STRONG HOLD \u2014 last known +20.12% from 132.46 entry. Well past original 157.50 analyst target. Trailing stop advisable to protect significant gains.",
+          "LLY": "INTACT \u2014 last known +9.62% from 992.17 entry. Retatrutide Phase 3 + Mounjaro +125% YoY thesis intact. Low rate sensitivity. 31 analysts Buy, 1211 target.",
+          "TTMI": "INTACT \u2014 last known +8.44% from 173.87 entry. Approaching 10% threshold. Strong sector momentum. Stop 164.99.",
+          "SMTC": "INTACT \u2014 tiny position (2 shares). Last known +10.01%. Negligible capital.",
+          "AOSL": "INTACT \u2014 tiny position (2 shares). Last known +23.53%. Negligible capital.",
+          "EOG": "STALE THESIS \u2014 last known +2.38%; planned to close multiple times. Oil-headwind thesis. Recommend closing on next accessible session.",
+          "MXL": "NEW (June 8, 80.80, stop 76.66) \u2014 entered post-NFP dip. Semi sector momentum. Status after June 9 drop unknown.",
+          "DELL": "NEW (June 8, 400.58, stop 380.16) \u2014 AI server infrastructure demand. NVIDIA-LG partnership catalyst. Status after June 9 drop unknown.",
+          "COHU": "NEW (June 8, 53.83, stop 51.10) \u2014 semiconductor test equipment. Status after June 9 drop unknown."
+        },
+        "flags": {
+          "positions_down_gt_8pct": "NONE confirmed \u2014 MXL/DELL/COHU are new June 8 entries; status after June 9 -5.7% portfolio day unknown",
+          "positions_up_gt_10pct": [
+            "AMAT (+19.28% last known \u2014 strong hold)",
+            "FLEX (+20.12% last known \u2014 strong hold, consider trailing stop)",
+            "AOSL (+23.53% last known \u2014 tiny position)",
+            "SMTC (+10.01% last known \u2014 tiny position)"
+          ],
+          "stop_loss_verification": "Cannot verify GTC stop-loss orders active \u2014 API network blocked",
+          "rate_environment_risk": "10yr yield 4.54%, rate-hike probability 57% \u2014 headwind for high-PE tech; DELL/MXL/COHU more value-oriented, may be more resilient",
+          "upcoming_earnings_blackout": "ADBE Q2 FY2026 earnings Thursday June 11 after close \u2014 not held, no direct exposure"
+        },
+        "key_events_since_last_check": [
+          "NFP June 5: 172K (2x consensus), Nasdaq -4.2%, portfolio -11K single day",
+          "AVGO Q2 beat June 3 after close \u2014 AI semi sector tailwind confirmed",
+          "NVIDIA-LG partnership June 8 \u2014 humanoid robots + DC architecture, bullish AI infra",
+          "AMD Q2 guidance raised to 11.2B \u2014 AI semi demand intact",
+          "June 8-9: 5 positions closed per plan + stops (PLTR, VECO, VIAV, ACLS, ASTH)"
+        ],
+        "midweek_verdict": "Portfolio at 101573 (+1.6% from 100K starting capital) on June 9 \u2014 weathered the NFP shock and -9.8% drawdown from the June 3 peak of 112351. Core AI infra thesis (AMAT, FLEX) intact with strong unrealized gains. New positions (MXL, DELL, COHU) added June 8 at post-NFP dip prices; June 9 drop of -5.7% may have stressed these. Rate environment is the primary macro risk: 10yr at 4.54%, 57% hike probability. ADBE earnings Thursday June 11 \u2014 not held, no direct exposure. Priority: verify new position health when API accessible.",
+        "action_items_for_next_session": [
+          "Verify MXL, DELL, COHU current P&L \u2014 new June 8 entries after June 9 -5.7% drop",
+          "Close EOG \u2014 stale oil thesis, was planned to close in May",
+          "Consider trailing stop on FLEX (+20%) to protect profits",
+          "Monitor 10yr yield \u2014 primary macro risk at 4.54%",
+          "Post-ADBE earnings June 11: assess sector read-through for NVDA/AMD watchlist"
+        ]
+      },
+      "is_midweek_check": true
     }
   ],
   "last_monitor_run": "2026-06-08T09:00:00-04:00",
