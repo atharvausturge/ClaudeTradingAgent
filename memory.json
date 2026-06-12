@@ -627,42 +627,117 @@
     {
       "week_of": "2026-06-08",
       "summary_type": "friday_eow_wrap",
-      "summary": "Volatile recovery week — portfolio entered at $100,907 after June 5 NFP shock (-10.3%). Monday June 8 surged +6.13% to $107,659 on NVIDIA-LG partnership + AVGO Q2 beat tailwind; added MXL (201 @ $80.80), DELL (40 @ $400.58), COHU (301 @ $53.83) at post-NFP dip prices. Tuesday June 9 gave back -5.19% to $101,573 in volatile session. Wednesday June 10 saw DELL stop triggered ($379.69, -5.21%, -$835) and MXL stop triggered ($76.63, -5.16%, -$838), portfolio slipped to $100,975. Thursday June 11 staged massive +9.81% single-day recovery (+$9,924) to $111,049 — best day of the year. Closing VIAV (thesis broken: analyst target $39.25 below $49.50 entry; -7.80% June 10) and ASTH (healthcare lagging -15.1% RS60; -5.10% June 10; flagged since June 3). Strong holds: AMAT (+19.34%), LLY (+15.14%), VECO (+10.75%), ACLS (+6.21%). Portfolio +11.1% from $100K starting capital.",
-      "positions_opened": ["MXL", "DELL", "COHU"],
-      "positions_closed_stops": ["DELL", "MXL"],
-      "positions_closed_friday_rule": ["VIAV", "ASTH"],
+      "summary": "Volatile recovery week \u2014 portfolio entered at $100,907 after June 5 NFP shock (-10.3%). Monday June 8 surged +6.13% to $107,659 on NVIDIA-LG partnership + AVGO Q2 beat tailwind; added MXL (201 @ $80.80), DELL (40 @ $400.58), COHU (301 @ $53.83) at post-NFP dip prices. Tuesday June 9 gave back -5.19% to $101,573 in volatile session. Wednesday June 10 saw DELL stop triggered ($379.69, -5.21%, -$835) and MXL stop triggered ($76.63, -5.16%, -$838), portfolio slipped to $100,975. Thursday June 11 staged massive +9.81% single-day recovery (+$9,924) to $111,049 \u2014 best day of the year. Closing VIAV (thesis broken: analyst target $39.25 below $49.50 entry; -7.80% June 10) and ASTH (healthcare lagging -15.1% RS60; -5.10% June 10; flagged since June 3). Strong holds: AMAT (+19.34%), LLY (+15.14%), VECO (+10.75%), ACLS (+6.21%). Portfolio +11.1% from $100K starting capital.",
+      "positions_opened": [
+        "MXL",
+        "DELL",
+        "COHU"
+      ],
+      "positions_closed_stops": [
+        "DELL",
+        "MXL"
+      ],
+      "positions_closed_friday_rule": [
+        "VIAV",
+        "ASTH"
+      ],
       "close_reasons": {
-        "DELL": "Stop triggered June 10 at $379.69 (stop $380.16) — -5.21% / -$835.45; rate environment (10yr 4.54%) pressured name",
-        "MXL": "Stop triggered June 10 at $76.63 (stop $76.66) — -5.16% / -$838.17; post-NFP dip entry did not hold above stop level",
-        "VIAV": "Friday -2% rule: down 7.80% as of June 10; analyst target $39.25 below $49.50 entry — thesis broken; was in June 8 trade plan close_positions list",
+        "DELL": "Stop triggered June 10 at $379.69 (stop $380.16) \u2014 -5.21% / -$835.45; rate environment (10yr 4.54%) pressured name",
+        "MXL": "Stop triggered June 10 at $76.63 (stop $76.66) \u2014 -5.16% / -$838.17; post-NFP dip entry did not hold above stop level",
+        "VIAV": "Friday -2% rule: down 7.80% as of June 10; analyst target $39.25 below $49.50 entry \u2014 thesis broken; was in June 8 trade plan close_positions list",
         "ASTH": "Friday -2% rule: down 5.10% as of June 10; healthcare sector lagging (-15.1% RS60); no catalyst; flagged for closing since June 3"
       },
-      "holds_eow": ["AMAT", "LLY", "VECO", "ACLS", "EOG", "FLEX", "COHU", "SMTC"],
+      "holds_eow": [
+        "AMAT",
+        "LLY",
+        "VECO",
+        "ACLS",
+        "EOG",
+        "FLEX",
+        "COHU",
+        "SMTC"
+      ],
       "pl_per_position_last_known": {
-        "AMAT":  {"plpc": 19.34,  "pl_dollar": 6516.59,  "as_of": "2026-06-10"},
-        "LLY":   {"plpc": 15.14,  "pl_dollar": 4955.30,  "as_of": "2026-06-10"},
-        "VECO":  {"plpc": 10.75,  "pl_dollar": 149.73,   "as_of": "2026-06-10"},
-        "ACLS":  {"plpc": 6.21,   "pl_dollar": 289.23,   "as_of": "2026-06-10"},
-        "EOG":   {"plpc": 2.65,   "pl_dollar": 748.01,   "as_of": "2026-06-10"},
-        "SMTC":  {"plpc": 2.73,   "pl_dollar": 8.16,     "as_of": "2026-06-10"},
-        "FLEX":  {"plpc": 1.56,   "pl_dollar": 240.80,   "as_of": "2026-06-10"},
-        "COHU":  {"plpc": 1.31,   "pl_dollar": 212.21,   "as_of": "2026-06-10"},
-        "VIAV":  {"plpc": -7.80,  "pl_dollar": -1188.95, "as_of": "2026-06-10", "closing_friday": true},
-        "ASTH":  {"plpc": -5.10,  "pl_dollar": -782.44,  "as_of": "2026-06-10", "closing_friday": true},
-        "DELL":  {"plpc": -5.21,  "pl_dollar": -835.45,  "stop_triggered": true, "fill_price": 379.693751},
-        "MXL":   {"plpc": -5.16,  "pl_dollar": -838.17,  "stop_triggered": true, "fill_price": 76.63}
+        "AMAT": {
+          "plpc": 19.34,
+          "pl_dollar": 6516.59,
+          "as_of": "2026-06-10"
+        },
+        "LLY": {
+          "plpc": 15.14,
+          "pl_dollar": 4955.3,
+          "as_of": "2026-06-10"
+        },
+        "VECO": {
+          "plpc": 10.75,
+          "pl_dollar": 149.73,
+          "as_of": "2026-06-10"
+        },
+        "ACLS": {
+          "plpc": 6.21,
+          "pl_dollar": 289.23,
+          "as_of": "2026-06-10"
+        },
+        "EOG": {
+          "plpc": 2.65,
+          "pl_dollar": 748.01,
+          "as_of": "2026-06-10"
+        },
+        "SMTC": {
+          "plpc": 2.73,
+          "pl_dollar": 8.16,
+          "as_of": "2026-06-10"
+        },
+        "FLEX": {
+          "plpc": 1.56,
+          "pl_dollar": 240.8,
+          "as_of": "2026-06-10"
+        },
+        "COHU": {
+          "plpc": 1.31,
+          "pl_dollar": 212.21,
+          "as_of": "2026-06-10"
+        },
+        "VIAV": {
+          "plpc": -7.8,
+          "pl_dollar": -1188.95,
+          "as_of": "2026-06-10",
+          "closing_friday": true
+        },
+        "ASTH": {
+          "plpc": -5.1,
+          "pl_dollar": -782.44,
+          "as_of": "2026-06-10",
+          "closing_friday": true
+        },
+        "DELL": {
+          "plpc": -5.21,
+          "pl_dollar": -835.45,
+          "stop_triggered": true,
+          "fill_price": 379.693751
+        },
+        "MXL": {
+          "plpc": -5.16,
+          "pl_dollar": -838.17,
+          "stop_triggered": true,
+          "fill_price": 76.63
+        }
       },
-      "realized_this_week": {"DELL": -835.45, "MXL": -838.17, "total_realized": -1673.62},
+      "realized_this_week": {
+        "DELL": -835.45,
+        "MXL": -838.17,
+        "total_realized": -1673.62
+      },
       "net_pnl_estimate": 10142,
       "portfolio_value_entering_week": 100907,
       "portfolio_value_eow": 111049,
       "data_note": "Live Alpaca API unavailable (sandbox network policy). Position P&L from last known snapshot 2026-06-10T12:47:13-04:00. June 11 equity $111,049.73 from daily P&L log. June 12 (Friday) intraday P&L unknown.",
       "key_events": [
-        "June 8: NVIDIA-LG Group partnership (humanoid robots + DC architecture) — bullish AI infra catalyst; added MXL, DELL, COHU at post-NFP dip prices",
-        "June 9-10: Volatility wave — stops triggered on DELL (-5.21%, -$835) and MXL (-5.16%, -$838)",
-        "June 11: +9.81% portfolio recovery (+$9,924) to $111,049 — strongest single-day gain of the year",
-        "ADBE Q2 FY2026 earnings June 11 after close — not held, no direct exposure",
-        "MU Q3 FY2026 earnings June 24 — approaching blackout window, avoid new MU entry next week"
+        "June 8: NVIDIA-LG Group partnership (humanoid robots + DC architecture) \u2014 bullish AI infra catalyst; added MXL, DELL, COHU at post-NFP dip prices",
+        "June 9-10: Volatility wave \u2014 stops triggered on DELL (-5.21%, -$835) and MXL (-5.16%, -$838)",
+        "June 11: +9.81% portfolio recovery (+$9,924) to $111,049 \u2014 strongest single-day gain of the year",
+        "ADBE Q2 FY2026 earnings June 11 after close \u2014 not held, no direct exposure",
+        "MU Q3 FY2026 earnings June 24 \u2014 approaching blackout window, avoid new MU entry next week"
       ]
     }
   ],
@@ -1185,28 +1260,43 @@
       "portfolio_value": null,
       "buying_power": null,
       "positions_summary": {
-        "note": "Live Alpaca API unavailable — sandbox network policy blocks paper-api.alpaca.markets. Values from last confirmed snapshot 2026-06-10T12:47:13-04:00 and June 11 daily P&L.",
+        "note": "Live Alpaca API unavailable \u2014 sandbox network policy blocks paper-api.alpaca.markets. Values from last confirmed snapshot 2026-06-10T12:47:13-04:00 and June 11 daily P&L.",
         "last_confirmed_equity": 111049.73,
         "last_confirmed_date": "2026-06-11",
         "pnl_from_starting_capital_dollar": 11049.73,
         "pnl_from_starting_capital_pct": 11.05,
-        "open_positions_after_friday_closes": ["AMAT", "LLY", "VECO", "ACLS", "EOG", "FLEX", "COHU", "SMTC"],
-        "friday_closes_today": ["VIAV", "ASTH"],
+        "open_positions_after_friday_closes": [
+          "AMAT",
+          "LLY",
+          "VECO",
+          "ACLS",
+          "EOG",
+          "FLEX",
+          "COHU",
+          "SMTC"
+        ],
+        "friday_closes_today": [
+          "VIAV",
+          "ASTH"
+        ],
         "pl_highlights_last_known": {
-          "AMAT":  "+19.34% (+$6,517) — strongest position, AI semi equipment multi-year cycle",
-          "LLY":   "+15.14% (+$4,955) — retatrutide Phase 3 thesis delivering, defensive sector",
-          "VECO":  "+10.75% (+$150) — recovered strongly",
-          "ACLS":  "+6.21% (+$289) — solid conviction",
-          "EOG":   "+2.65% (+$748) — energy exposure, above threshold",
-          "SMTC":  "+2.73% (+$8) — tiny position, above threshold",
-          "FLEX":  "+1.56% (+$241) — above threshold, hold",
-          "COHU":  "+1.31% (+$212) — new June 8 entry, above threshold",
-          "VIAV":  "-7.80% (-$1,189) — CLOSING: thesis broken (analyst target < entry)",
-          "ASTH":  "-5.10% (-$782) — CLOSING: healthcare lagging, repeated flag"
+          "AMAT": "+19.34% (+$6,517) \u2014 strongest position, AI semi equipment multi-year cycle",
+          "LLY": "+15.14% (+$4,955) \u2014 retatrutide Phase 3 thesis delivering, defensive sector",
+          "VECO": "+10.75% (+$150) \u2014 recovered strongly",
+          "ACLS": "+6.21% (+$289) \u2014 solid conviction",
+          "EOG": "+2.65% (+$748) \u2014 energy exposure, above threshold",
+          "SMTC": "+2.73% (+$8) \u2014 tiny position, above threshold",
+          "FLEX": "+1.56% (+$241) \u2014 above threshold, hold",
+          "COHU": "+1.31% (+$212) \u2014 new June 8 entry, above threshold",
+          "VIAV": "-7.80% (-$1,189) \u2014 CLOSING: thesis broken (analyst target < entry)",
+          "ASTH": "-5.10% (-$782) \u2014 CLOSING: healthcare lagging, repeated flag"
         }
       },
       "is_friday_close": true,
-      "friday_close_symbols": ["VIAV", "ASTH"]
+      "friday_close_symbols": [
+        "VIAV",
+        "ASTH"
+      ]
     }
   ],
   "last_monitor_run": "2026-06-10T12:47:13.281326-04:00",
@@ -1312,6 +1402,14 @@
       "equity": 111049.73,
       "daily_pl_dollar": 9924.09,
       "daily_pl_pct": 9.81,
+      "open_positions": 10,
+      "realized_today_dollar": 0
+    },
+    {
+      "date": "2026-06-12",
+      "equity": 112331.16,
+      "daily_pl_dollar": 1957.35,
+      "daily_pl_pct": 1.77,
       "open_positions": 10,
       "realized_today_dollar": 0
     }
