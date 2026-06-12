@@ -1,81 +1,79 @@
 {
-  "generated_at": "2026-06-05",
-  "week_of": "2026-06-01",
-  "data_source": "last known positions snapshot 2026-06-03T14:08:08-04:00; Alpaca API blocked by sandbox network policy",
+  "generated_at": "2026-06-12",
+  "week_of": "2026-06-08",
+  "data_source": "last known positions snapshot 2026-06-10T12:47:13-04:00; Alpaca API blocked by sandbox network policy; June 11 equity $111,049.73 (+9.81%) from daily P&L log",
   "closes": [
     {
+      "symbol": "VIAV",
+      "last_known_plpc": -7.80,
+      "last_known_pl_dollar": -1188.95,
+      "last_known_as_of": "2026-06-10",
+      "reason": "down 7.80% as of June 10 — below -2% Friday threshold; analyst consensus target $39.25 is below $49.50 entry price (thesis broken); listed in June 8 trade plan close_positions; close to cut loss or lock any June 11 recovery"
+    },
+    {
       "symbol": "ASTH",
-      "last_known_plpc": -5.62,
-      "last_known_pl_dollar": -863.0,
-      "reason": "down 5.62% — exceeds -2% Friday close threshold; healthcare sector lagging (-15.1% RS60 vs SPY); medium-conviction position with no near-term catalyst; closing ahead of NFP macro risk (June 5); stop at $35.94 at risk"
+      "last_known_plpc": -5.10,
+      "last_known_pl_dollar": -782.44,
+      "last_known_as_of": "2026-06-10",
+      "reason": "down 5.10% as of June 10 — below -2% Friday threshold; healthcare sector lagging (-15.1% RS60 vs SPY); no near-term catalyst; flagged for closing across multiple prior sessions (June 3, June 5, June 8); closing to protect capital into weekend"
     }
   ],
   "holds": [
     {
       "symbol": "AMAT",
-      "last_known_plpc": 19.28,
-      "last_known_pl_dollar": 6494.99,
-      "reason": "up 19.28% — record Q2 results ($7.91B +11% YoY); Mizuho target $540; AI semiconductor equipment cycle multi-year thesis intact; AVGO beat June 3 confirms AI capex buildout; hold into next week"
-    },
-    {
-      "symbol": "FLEX",
-      "last_known_plpc": 20.12,
-      "last_known_pl_dollar": 3104.08,
-      "reason": "up 20.12% — strong tech sector momentum; Cloud & Power Infrastructure spin-off catalyst; hold into next week"
+      "last_known_plpc": 19.34,
+      "last_known_pl_dollar": 6516.59,
+      "last_known_as_of": "2026-06-10",
+      "reason": "up 19.34% — AI semiconductor equipment multi-year cycle intact; Mizuho target $540; strongest position in portfolio; AVGO Q2 beat confirms AI capex buildout; hold into next week"
     },
     {
       "symbol": "LLY",
-      "last_known_plpc": 9.62,
-      "last_known_pl_dollar": 3148.88,
-      "reason": "up 9.62% — retatrutide Phase 3 TRIUMPH-1 cleared (28.3% weight loss); Mounjaro +125% Q1 revenue; 31 analysts Buy; $1,211 consensus target (+13.7% upside); hold"
-    },
-    {
-      "symbol": "AOSL",
-      "last_known_plpc": 23.53,
-      "last_known_pl_dollar": 20.58,
-      "reason": "up 23.53% — strong AI semiconductor sector momentum; small position (2 shares); hold into next week"
-    },
-    {
-      "symbol": "SMTC",
-      "last_known_plpc": 10.01,
-      "last_known_pl_dollar": 29.9,
-      "reason": "up 10.01% — strong sector momentum; tiny position (2 shares); hold into next week"
-    },
-    {
-      "symbol": "TTMI",
-      "last_known_plpc": 8.44,
-      "last_known_pl_dollar": 1364.78,
-      "reason": "up 8.44% — moderate conviction, strong sector momentum; entered June 1 at $173.87; thesis intact; hold"
-    },
-    {
-      "symbol": "PLTR",
-      "last_known_plpc": 5.73,
-      "last_known_pl_dollar": 2260.66,
-      "reason": "up 5.73% — US commercial revenue +133% YoY; agentic AI demand confirmed via Dell partnership; analyst mean target $193 (+23% upside from last known price); hold"
-    },
-    {
-      "symbol": "VIAV",
-      "last_known_plpc": 5.57,
-      "last_known_pl_dollar": 848.82,
-      "reason": "up 5.57% — strong sector momentum; hold into next week"
-    },
-    {
-      "symbol": "ACLS",
-      "last_known_plpc": 5.49,
-      "last_known_pl_dollar": 255.59,
-      "reason": "up 5.49% — moderate conviction; strong sector momentum; entered June 1 at $150.18; hold"
-    },
-    {
-      "symbol": "EOG",
-      "last_known_plpc": 2.38,
-      "last_known_pl_dollar": 672.53,
-      "reason": "up 2.38% — above -2% threshold; hold into next week"
+      "last_known_plpc": 15.14,
+      "last_known_pl_dollar": 4955.30,
+      "last_known_as_of": "2026-06-10",
+      "reason": "up 15.14% — retatrutide Phase 3 TRIUMPH-1 cleared (28.3% weight loss); Mounjaro +125% Q1 revenue; 31 analysts Buy, $1,211 consensus target; defensive pharmaceutical sector; low rate sensitivity; hold"
     },
     {
       "symbol": "VECO",
-      "last_known_plpc": 0.05,
-      "last_known_pl_dollar": 0.69,
-      "reason": "up 0.05% — barely positive, above -2% threshold; small position (23 shares); AI semiconductor equipment thesis; hold with existing stop at $56.51"
+      "last_known_plpc": 10.75,
+      "last_known_pl_dollar": 149.73,
+      "last_known_as_of": "2026-06-10",
+      "reason": "up 10.75% — strong gain; AI semiconductor laser equipment thesis intact; above stop at $56.51; hold into next week"
+    },
+    {
+      "symbol": "ACLS",
+      "last_known_plpc": 6.21,
+      "last_known_pl_dollar": 289.23,
+      "last_known_as_of": "2026-06-10",
+      "reason": "up 6.21% — moderate conviction; semiconductor ion implant equipment momentum; above -2% threshold; hold"
+    },
+    {
+      "symbol": "EOG",
+      "last_known_plpc": 2.65,
+      "last_known_pl_dollar": 748.01,
+      "last_known_as_of": "2026-06-10",
+      "reason": "up 2.65% — energy sector exposure; healthy economy (NFP 172K jobs) = strong demand; above -2% threshold; hold"
+    },
+    {
+      "symbol": "FLEX",
+      "last_known_plpc": 1.56,
+      "last_known_pl_dollar": 240.80,
+      "last_known_as_of": "2026-06-10",
+      "reason": "up 1.56% — above -2% threshold; Cloud & Power Infrastructure spin-off catalyst; technology manufacturing exposure to AI server build-out; hold"
+    },
+    {
+      "symbol": "COHU",
+      "last_known_plpc": 1.31,
+      "last_known_pl_dollar": 212.21,
+      "last_known_as_of": "2026-06-10",
+      "reason": "up 1.31% — new June 8 entry at post-NFP dip; semiconductor test equipment; above -2% threshold; strong sector momentum; hold"
+    },
+    {
+      "symbol": "SMTC",
+      "last_known_plpc": 2.73,
+      "last_known_pl_dollar": 8.16,
+      "last_known_as_of": "2026-06-10",
+      "reason": "up 2.73% — above -2% threshold; tiny position (2 shares); analog/mixed-signal IC benefits from AI hardware proliferation; hold"
     }
   ]
 }
