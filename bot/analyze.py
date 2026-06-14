@@ -15,6 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from groq import Groq
+from alpaca.trading.client import TradingClient
 from . import notify
 
 ET = ZoneInfo("America/New_York")
@@ -162,7 +163,23 @@ def main():
 
     candidates = research.get("top_candidates", {})
     today = datetime.now(ET).strftime("%Y-%m-%d")
-    max_positions = config.get("max_positions", 3)
+    max_positions = config.get("max_positions", 5)
+
+    # Count what we already hold so we only plan buys for the OPEN slots and
+    # never re-propose a name we're already in. execute.py is the hard gate;
+    # this just keeps the weekly Discord plan honest. Degrades gracefully if
+    # Alpaca is unreachable (falls back to the full position cap).
+    held_symbols: set = set()
+    open_slots = max_positions
+    try:
+        trading = TradingClient(os.environ["ALPACA_API_KEY"], os.environ["ALPACA_SECRET_KEY"], paper=True)
+        held = trading.get_all_positions()
+        held_symbols = {p.symbol for p in held}
+        open_slots = max(max_positions - len(held), 0)
+        print(f"Currently holding {len(held)} position(s): {sorted(held_symbols) or 'none'} → {open_slots} open slot(s)")
+    except Exception as e:
+        print(f"Could not fetch current positions ({e}) — planning against full cap of {max_positions}")
+
     tech_weight = config.get("tech_weight", 0.5)
     sentiment_weight = config.get("sentiment_weight", 0.5)
     max_monthly = config.get("max_entries_per_symbol_per_month", 2)
@@ -244,8 +261,11 @@ def main():
     buys = []
     skip_reasoning = {}
     for sym, score in ranked:
-        if len(buys) >= max_positions:
+        if len(buys) >= open_slots:
             break
+        if sym in held_symbols:
+            skip_reasoning[sym] = "already held"
+            continue
         if monthly_counts.get(sym, 0) >= max_monthly:
             skip_reasoning[sym] = f"monthly entry cap ({max_monthly}) reached"
             continue

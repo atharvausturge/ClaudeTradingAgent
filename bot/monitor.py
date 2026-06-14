@@ -199,6 +199,21 @@ def main():
 
     log.info(f"{'FRIDAY CLEANUP' if is_friday else 'MID-WEEK CHECK'} | {len(positions)} position(s) | Portfolio: ${float(account.portfolio_value):,.2f}")
 
+    # Exposure tripwire: warn if gross invested has drifted over the ceiling.
+    equity = float(account.portfolio_value)
+    gross_invested = sum(float(p.market_value or 0) for p in positions)
+    invested_pct = (gross_invested / equity * 100) if equity else 0.0
+    max_gross = config.get("max_gross_exposure", 0.95)
+    if equity and gross_invested > equity * max_gross:
+        log.warning(f"OVER EXPOSURE CAP: invested {invested_pct:.0f}% > {max_gross:.0%}")
+        notify._send(
+            title="⚠️ OVER EXPOSURE CAP",
+            description=(f"Invested **{invested_pct:.0f}%** of equity "
+                        f"({invested_pct/100:.2f}× gross) — above the {max_gross:.0%} ceiling.\n"
+                        f"Run `python scripts/deleverage.py` to trim back."),
+            color=15158332,
+        )
+
     position_snapshot = []
     held, closed = [], []
 

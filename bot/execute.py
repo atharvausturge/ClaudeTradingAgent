@@ -62,10 +62,12 @@ def get_current_price(data_client, symbol):
     raise RuntimeError(f"Could not fetch price for {symbol}")
 
 
-def calc_qty(account, price, pct):
-    max_value = float(account.portfolio_value) * pct
-    affordable = min(float(account.buying_power) * 0.95, max_value)
-    return max(int(affordable / price), 0)
+def calc_qty(equity, price, pct, remaining_budget):
+    """Cash-aware sizing: a position targets `pct` of equity, but is never
+    allowed to exceed `remaining_budget` (the dollars left under the gross
+    exposure ceiling). This is what keeps the account off margin."""
+    target_value = min(equity * pct, remaining_budget)
+    return max(int(target_value / price), 0)
 
 
 def is_already_held(trading_client, symbol):
@@ -125,9 +127,33 @@ def main():
             sym = t.get("symbol", "")
             monthly_counts[sym] = monthly_counts.get(sym, 0) + 1
 
+    # --- Guardrails: position cap + gross-exposure budget (no margin) ---
+    # Re-fetch after any closes above so the budget reflects freed-up cash.
+    account = trading.get_account()
+    equity = float(account.portfolio_value)
+    positions = trading.get_all_positions()
+    gross_invested = sum(float(p.market_value) for p in positions)
+    max_positions = config.get("max_positions", 5)
+    max_gross = config.get("max_gross_exposure", 0.95)
+    open_slots = max_positions - len(positions)
+    remaining_budget = max(equity * max_gross - gross_invested, 0.0)
+    log.info(
+        f"Budget: equity ${equity:,.0f} | invested ${gross_invested:,.0f} "
+        f"({gross_invested / equity * 100 if equity else 0:.0f}%) | "
+        f"open slots {open_slots} | room ${remaining_budget:,.0f}"
+    )
+
     for trade in plan.get("buys", []):
         symbol = trade["symbol"]
         pct = trade.get("qty_pct", config["max_position_pct"])
+
+        if open_slots <= 0:
+            log.info(f"Position cap reached ({max_positions}) — skipping remaining buys")
+            break
+
+        if remaining_budget <= 0:
+            log.info(f"Gross-exposure cap reached ({max_gross:.0%}) — skipping remaining buys")
+            break
 
         if is_already_held(trading, symbol):
             log.info(f"{symbol}: already held, skipping buy")
@@ -143,9 +169,9 @@ def main():
             log.error(f"{symbol}: could not fetch price — {e}")
             continue
 
-        qty = calc_qty(account, price, pct)
+        qty = calc_qty(equity, price, pct, remaining_budget)
         if qty == 0:
-            log.warning(f"{symbol}: insufficient buying power for a {pct*100:.0f}% position, skipping")
+            log.warning(f"{symbol}: not enough room under the {max_gross:.0%} exposure cap, skipping")
             continue
 
         stop_price = round(price * (1 - config["stop_loss_pct"]), 2)
@@ -180,6 +206,11 @@ def main():
 
         if not filled:
             log.warning(f"{symbol}: buy did not fill within 20s — skipping stop loss but notifying anyway")
+        else:
+            # Consume a slot and shrink the remaining exposure budget so later
+            # buys in this run respect the position cap and gross-exposure ceiling.
+            open_slots -= 1
+            remaining_budget = max(remaining_budget - qty * fill_price, 0.0)
 
         # --- Notify on the buy regardless of stop outcome ---
         try:

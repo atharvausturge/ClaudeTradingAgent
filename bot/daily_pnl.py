@@ -139,10 +139,13 @@ def main():
 
     cash = float(account.cash)
     realized_today_dollar = round(sum(r["pl_dollar"] for r in realized), 2)
+    gross_invested = sum(float(p.market_value or 0) for p in positions_raw)
+    invested_pct = (gross_invested / equity * 100) if equity else 0.0
 
     log.info(
         f"Equity ${equity:,.2f} ({daily_pl_pct:+.2f}%, ${daily_pl_dollar:+,.2f}) | "
-        f"{len(positions)} open | {len(realized)} closed today"
+        f"{len(positions)} open | {len(realized)} closed today | "
+        f"invested {invested_pct:.0f}%"
     )
 
     notify.daily_pnl(
@@ -152,6 +155,7 @@ def main():
         positions=positions,
         realized_today=realized,
         cash=cash,
+        invested_pct=invested_pct,
     )
 
     memory.setdefault("daily_pnl", []).append({
@@ -161,6 +165,7 @@ def main():
         "daily_pl_pct": round(daily_pl_pct, 2),
         "open_positions": len(positions),
         "realized_today_dollar": realized_today_dollar,
+        "invested_pct": round(invested_pct, 1),
     })
     memory["daily_pnl"] = memory["daily_pnl"][-MAX_DAILY_HISTORY:]
     save_json(MEMORY_FILE, memory)

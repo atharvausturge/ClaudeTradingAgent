@@ -1,9 +1,11 @@
 {
   "benchmark": "SPY",
-  "max_position_pct": 0.15,
+  "max_position_pct": 0.18,
   "stop_loss_pct": 0.05,
   "take_profit_pct": 0.08,
   "max_positions": 5,
+  "max_gross_exposure": 0.95,
+  "allow_margin": false,
   "top_n_candidates": 20,
   "min_rs_threshold": -0.05,
   "friday_close_threshold": -0.02,

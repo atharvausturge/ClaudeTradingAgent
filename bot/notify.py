@@ -68,7 +68,7 @@ def friday_summary(portfolio_value, held, closed, weekly_return_pct=None, spy_re
     )
 
 
-def daily_pnl(equity, daily_pl_dollar, daily_pl_pct, positions, realized_today, cash):
+def daily_pnl(equity, daily_pl_dollar, daily_pl_pct, positions, realized_today, cash, invested_pct=None):
     """Post-close daily snapshot. Green if up on the day, red if down."""
     from datetime import datetime
     from zoneinfo import ZoneInfo
@@ -81,6 +81,9 @@ def daily_pnl(equity, daily_pl_dollar, daily_pl_pct, positions, realized_today, 
         f"Equity: **${equity:,.2f}**\n"
         f"Today: {arrow} **{daily_pl_pct:+.2f}%** (${daily_pl_dollar:+,.2f})"
     )
+    if invested_pct is not None:
+        flag = " ⚠️ ON MARGIN" if invested_pct > 100 else ""
+        description += f"\nInvested: **{invested_pct:.0f}%** of equity ({invested_pct/100:.2f}× gross){flag}"
 
     if positions:
         open_lines = "\n".join(
