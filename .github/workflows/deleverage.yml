@@ -1,0 +1,34 @@
+name: Deleverage (one-time)
+
+# One-shot: trim the account back to <=5 positions and <=95% gross exposure,
+# right after Monday's open. Fires once on 2026-06-15 at 13:35 UTC (09:35 ET, EDT).
+# scripts/deleverage.py self-aborts if the market is closed, so a scheduler delay
+# is harmless. Also runnable on demand via the "Run workflow" button.
+#
+# Safe to delete after it has run once.
+on:
+  schedule:
+    - cron: "35 13 15 6 *"   # Jun 15, 13:35 UTC = 09:35 AM ET (EDT)
+  workflow_dispatch:
+
+jobs:
+  deleverage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run deleverage
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python scripts/deleverage.py
