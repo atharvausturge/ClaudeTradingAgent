@@ -12,7 +12,7 @@ Also appends a tiny snapshot to memory["daily_pnl"] for trend tracking.
 import os
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
@@ -20,6 +20,9 @@ load_dotenv()
 
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import GetOrdersRequest, GetCalendarRequest
+from alpaca.data.historical import StockHistoricalDataClient
+from alpaca.data.requests import StockBarsRequest
+from alpaca.data.timeframe import TimeFrame
 
 from . import notify
 
@@ -42,6 +45,21 @@ def load_json(path, default=None):
 def save_json(path, data):
     with open(path, "w") as f:
         json.dump(data, f, indent=2, default=str)
+
+
+def get_spy_daily_return(data_client):
+    """Today's S&P 500 move, via SPY's last two daily closes. None on failure."""
+    try:
+        start = (datetime.now(ET) - timedelta(days=8)).date()
+        req = StockBarsRequest(symbol_or_symbols="SPY", timeframe=TimeFrame.Day, start=start)
+        bars = data_client.get_stock_bars(req).df
+        if bars.empty or len(bars) < 2:
+            return None
+        closes = bars["close"].values
+        return round((closes[-1] - closes[-2]) / closes[-2] * 100, 2)
+    except Exception as e:
+        log.warning(f"Could not fetch SPY daily return: {e}")
+        return None
 
 
 def _avg_entry_for(symbol, trade_history):
@@ -107,6 +125,7 @@ def main():
     api_key = os.environ["ALPACA_API_KEY"]
     api_secret = os.environ["ALPACA_SECRET_KEY"]
     trading = TradingClient(api_key, api_secret, paper=True)
+    data_client = StockHistoricalDataClient(api_key, api_secret)
 
     now = datetime.now(ET)
     today = now.date()
@@ -141,11 +160,14 @@ def main():
     realized_today_dollar = round(sum(r["pl_dollar"] for r in realized), 2)
     gross_invested = sum(float(p.market_value or 0) for p in positions_raw)
     invested_pct = (gross_invested / equity * 100) if equity else 0.0
+    spy_daily_pct = get_spy_daily_return(data_client)
 
+    vs_spy = f" | vs SPY {daily_pl_pct - spy_daily_pct:+.2f}%" if spy_daily_pct is not None else ""
     log.info(
         f"Equity ${equity:,.2f} ({daily_pl_pct:+.2f}%, ${daily_pl_dollar:+,.2f}) | "
         f"{len(positions)} open | {len(realized)} closed today | "
-        f"invested {invested_pct:.0f}%"
+        f"invested {invested_pct:.0f}% | "
+        f"SPY {spy_daily_pct if spy_daily_pct is not None else 'n/a'}%{vs_spy}"
     )
 
     notify.daily_pnl(
@@ -156,6 +178,7 @@ def main():
         realized_today=realized,
         cash=cash,
         invested_pct=invested_pct,
+        spy_daily_pct=spy_daily_pct,
     )
 
     memory.setdefault("daily_pnl", []).append({
@@ -166,6 +189,8 @@ def main():
         "open_positions": len(positions),
         "realized_today_dollar": realized_today_dollar,
         "invested_pct": round(invested_pct, 1),
+        "spy_daily_pct": spy_daily_pct,
+        "vs_spy_pct": round(daily_pl_pct - spy_daily_pct, 2) if spy_daily_pct is not None else None,
     })
     memory["daily_pnl"] = memory["daily_pnl"][-MAX_DAILY_HISTORY:]
     save_json(MEMORY_FILE, memory)

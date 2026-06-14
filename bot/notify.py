@@ -68,7 +68,7 @@ def friday_summary(portfolio_value, held, closed, weekly_return_pct=None, spy_re
     )
 
 
-def daily_pnl(equity, daily_pl_dollar, daily_pl_pct, positions, realized_today, cash, invested_pct=None):
+def daily_pnl(equity, daily_pl_dollar, daily_pl_pct, positions, realized_today, cash, invested_pct=None, spy_daily_pct=None):
     """Post-close daily snapshot. Green if up on the day, red if down."""
     from datetime import datetime
     from zoneinfo import ZoneInfo
@@ -81,6 +81,14 @@ def daily_pnl(equity, daily_pl_dollar, daily_pl_pct, positions, realized_today, 
         f"Equity: **${equity:,.2f}**\n"
         f"Today: {arrow} **{daily_pl_pct:+.2f}%** (${daily_pl_dollar:+,.2f})"
     )
+    if spy_daily_pct is not None:
+        spy_arrow = "📈" if spy_daily_pct >= 0 else "📉"
+        diff = daily_pl_pct - spy_daily_pct
+        verdict = "🟢 beat" if diff >= 0 else "🔴 lagged"
+        description += (
+            f"\nS&P 500: {spy_arrow} {spy_daily_pct:+.2f}%"
+            f"\nvs S&P 500: **{diff:+.2f}%** ({verdict})"
+        )
     if invested_pct is not None:
         flag = " ⚠️ ON MARGIN" if invested_pct > 100 else ""
         description += f"\nInvested: **{invested_pct:.0f}%** of equity ({invested_pct/100:.2f}× gross){flag}"
