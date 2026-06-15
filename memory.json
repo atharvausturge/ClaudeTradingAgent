@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-12",
+  "last_run": "2026-06-15",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -1413,5 +1413,30 @@
       "open_positions": 10,
       "realized_today_dollar": 0
     }
-  ]
+  ],
+  "weekly_summary_2026_06_15": {
+    "week_of": "2026-06-15",
+    "thesis": "U.S.-Iran peace deal (signed June 14-15, ceremony June 19 Switzerland) reopens Strait of Hormuz. Oil crashes to $80 (-$4.64, -5.5%), Nasdaq +2.17%, SPY +0.54%. Portfolio pivots: close EOG (oil thesis destroyed), close VECO/ACLS/FLEX/COHU/SMTC (simplify to max 3 positions), add NVDA (relative underperformance entry at $205 — only +0.16% vs Nasdaq +2.17%; 38-analyst Strong Buy; ~$300 avg target = 46% upside; no earnings this week). AMAT (+44%) and LLY (+14.6%) held as portfolio anchors. AMD skipped (5% above $486 consensus). MU skipped (earnings June 24 blackout). Market closed Friday June 19 (Juneteenth).",
+    "positions_opened": ["NVDA"],
+    "positions_closed": ["EOG", "VECO", "ACLS", "FLEX", "COHU", "SMTC"],
+    "close_reasons": {
+      "EOG": "Iran peace deal drops oil to $80 (-5.5%), destroys oil/energy thesis permanently",
+      "VECO": "Planned closure since June 8 plan; lock ATH gains; simplify to 3-position max",
+      "ACLS": "Planned closure since June 8 plan; thesis covered by AMAT; simplify",
+      "FLEX": "Gave back most gains (+20% → +1.56%); lower conviction than NVDA",
+      "COHU": "Only +1.31% gain since June 8 entry; insufficient conviction; simplify",
+      "SMTC": "2-share position ($300 notional); simplify to 3-position max"
+    },
+    "holds": ["AMAT", "LLY"],
+    "target_positions_eow": ["AMAT", "LLY", "NVDA"],
+    "portfolio_value_entering_week": 112331,
+    "key_events_this_week": [
+      "U.S.-Iran peace deal — immediate Strait of Hormuz reopening; oil -5.5% to $80; Nasdaq +2.17%",
+      "NVDA entry at $205.19 — relative weakness in market rally = accumulation opportunity",
+      "MU Q3 FY2026 earnings June 24 — blackout this week and next",
+      "Market CLOSED Friday June 19 (Juneteenth) — 4-day trading week",
+      "AMD: $511.57 — 5% above $486 consensus target; skip"
+    ],
+    "scoring_notes": "Universe: 45 symbols, 80 bars from bars_raw.json (data vintage ~June 10). 23 passed filters. Top by score: AMD(+0.2338, RS60=+66%), MU(+0.2009, RS60=+54%), NVDA(+0.1101, RS60=+21%). MRVL stale ($115 bars vs $279 actual, post-earnings gap). EARNINGS_BLACKOUT for this week: no universe names; MU earnings June 24 (blackout applied). AMD skipped: current $511 = 5% above $486 consensus. NVDA selected despite rank #3 due to relative underperformance on Iran rally day = best risk/reward entry."
+  }
 }
