@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-15",
+  "last_run": "2026-06-17",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -1302,9 +1302,43 @@
       "time": "2026-06-15T14:10:40.481053-04:00",
       "portfolio_value": 113245.81,
       "buying_power": 261666.57
+    },
+    {
+      "time": "2026-06-17T12:00:00-04:00",
+      "portfolio_value": null,
+      "buying_power": null,
+      "positions_summary": {
+        "note": "Live Alpaca API unavailable — sandbox network policy blocks paper-api.alpaca.markets. Values from last confirmed daily P&L (2026-06-16).",
+        "last_confirmed_equity": 110962.32,
+        "last_confirmed_date": "2026-06-16",
+        "pnl_from_starting_capital_dollar": 10962.32,
+        "pnl_from_starting_capital_pct": 10.96,
+        "open_positions": ["AMAT", "LLY", "NVDA"],
+        "thesis_check": {
+          "AMAT": "INTACT / STRONG HOLD — ~+43.7% from $411.45 entry (last known $591 pre-market June 15). AI semi equipment multi-year super-cycle; SCREEN Semiconductor partnership intact. Stop ~$508 trailing (5% below ~$534 mid-Jun range). Cannot verify GTC stop active.",
+          "LLY": "INTACT / STRONG HOLD — ~+14.6% from $992.17 entry (last known $1,137 June 15). Retatrutide Phase 3 TRIUMPH-1 cleared (28.3% weight loss, class-best); Mounjaro Q1 revenue +125% YoY. 31 analysts Buy, $1,211 avg target. Defensive sector — low rate sensitivity. Stop ~$942. Cannot verify GTC stop active.",
+          "NVDA": "NEW / MONITOR — entered June 15 at $205.19 (stop $194.93). 38-analyst Strong Buy consensus, $300 avg 12m target (+46% upside). AI infrastructure secular leader. SharonAI 6-year AI compute partnership. Iran peace deal removed geopolitical risk to global AI capex. Portfolio dropped -1.84% June 16 vs SPY -0.6% — NVDA's first full day likely a partial driver. Not yet near -8% concern threshold."
+        },
+        "flags": {
+          "positions_down_gt_8pct": "NONE — no position confirmed below -8% threshold",
+          "positions_up_gt_10pct": [
+            "AMAT (~+43.7% from $411.45 entry — STRONG HOLD, AI semi equipment multi-year cycle)",
+            "LLY (~+14.6% from $992.17 entry — STRONG HOLD, GLP-1/pharma thesis delivering)"
+          ],
+          "stop_loss_verification": "Cannot verify GTC stop-loss orders active — Alpaca API blocked by sandbox network policy",
+          "june16_underperformance": "Portfolio -1.84% on June 16 vs SPY -0.6% = -1.24% relative lag. With only 3 positions, NVDA's first full day likely the driver. Acceptable given NVDA is a new entry."
+        },
+        "key_risk_flags": {
+          "rate_environment": "10yr yield ~4.54%, rate-hike probability ~57% — primary headwind for NVDA (high-PE growth). Monitor FOMC speaker commentary.",
+          "market_closure": "Market CLOSED Friday June 19 (Juneteenth) — effective 4-day week; today (Wednesday) is day 3 of 4.",
+          "mu_blackout": "MU Q3 FY2026 earnings June 24 — blackout maintained, no MU entry before earnings."
+        },
+        "midweek_verdict": "Portfolio +10.96% from $100K starting capital as of June 16 close. Streamlined to 3 high-conviction positions after Iran peace deal simplified the thesis June 15. AMAT (+44%) and LLY (+15%) are dominant winners and STRONG HOLDs — both well above the +10% threshold. NVDA is a new entry (June 15, $205.19) with 46% analyst upside; first full day June 16 may have dragged the -1.84% daily result but no position is near the -8% concern threshold. Core thesis intact. No action required midweek. Priorities: (1) confirm NVDA not testing stop $194.93; (2) monitor 10yr yield for rate-hike signals; (3) plan for 4-day week closing Friday June 20 (Juneteenth = market closed June 19)."
+      },
+      "is_midweek_check": true
     }
   ],
-  "last_monitor_run": "2026-06-10T12:47:13.281326-04:00",
+  "last_monitor_run": "2026-06-17T12:00:00-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
