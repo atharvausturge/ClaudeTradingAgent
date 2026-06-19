@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-17",
+  "last_run": "2026-06-19",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -1342,6 +1342,24 @@
       "is_midweek_check": true
     },
     {
+      "time": "2026-06-19T12:00:00-04:00",
+      "portfolio_value": 115818.82,
+      "buying_power": null,
+      "is_friday_close": true,
+      "market_closed": true,
+      "market_close_reason": "Juneteenth (Federal Holiday)",
+      "positions_summary": {
+        "note": "Market closed — Juneteenth. Live Alpaca API unavailable (sandbox network policy). Portfolio value from June 18 daily P&L. Position P&L from June 17 12:46 PM last live snapshot.",
+        "last_confirmed_equity": 115818.82,
+        "last_confirmed_date": "2026-06-18",
+        "pnl_from_starting_capital_dollar": 15818.82,
+        "pnl_from_starting_capital_pct": 15.82,
+        "open_positions": ["AMAT", "LLY", "VECO", "ACLS", "COHU", "FLEX", "SMTC"],
+        "friday_close_rule_triggered": false,
+        "friday_close_symbols": []
+      }
+    },
+    {
       "time": "2026-06-17T12:46:03.106110-04:00",
       "portfolio_value": 114309.02,
       "buying_power": 328446.8,
@@ -1385,7 +1403,7 @@
       "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-06-17T12:46:03.106110-04:00",
+  "last_monitor_run": "2026-06-19T12:00:00-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
@@ -1542,8 +1560,47 @@
       "invested_pct": 87.5,
       "spy_daily_pct": 0.78,
       "vs_spy_pct": 1.56
+    },
+    {
+      "date": "2026-06-19",
+      "equity": 115818.82,
+      "daily_pl_dollar": 0,
+      "daily_pl_pct": 0,
+      "open_positions": 7,
+      "realized_today_dollar": 0,
+      "market_closed": true,
+      "market_close_reason": "Juneteenth (Federal Holiday)",
+      "note": "No trading. Equity carried forward from June 18 close."
     }
   ],
+  "weekly_summary_2026_06_15_eow_wrap": {
+    "week_of": "2026-06-15",
+    "summary_type": "friday_eow_wrap",
+    "summary": "Strong 4-day week (market closed Friday June 19 Juneteenth). Portfolio entered the week at $112,331 (June 12 close) and closed Thursday June 18 at $115,818.82 — up +$3,488 / +3.1% for the week. Portfolio is now +$15,819 / +15.8% from $100K starting capital. June 17 was exceptional: +$3,292 / +2.98% vs SPY -1.25% (outperformed by +4.23%). June 18: +$2,654 / +2.34% vs SPY +0.78%. All 7 positions remain open — none triggered the -2% Friday close rule. Last confirmed live positions (June 17 12:46 PM): AMAT (+44.43%, +$13,473), VECO (+29.28%, +$355), COHU (+21.90%, +$3,195), ACLS (+19.62%, +$796), LLY (+12.55%, +$3,611), FLEX (+2.62%, +$20), SMTC (+2.19%, +$3). Alpaca API remains blocked by sandbox network policy — positions confirmed from live snapshot only. Note: June 15 trade plan (close VECO/ACLS/FLEX/COHU/SMTC, open NVDA) did not execute per GitHub Actions; June 17 live snapshot shows those positions still open and no NVDA entry. Next key event: MU Q3 FY2026 earnings June 24 (maintain blackout).",
+    "positions_closed_friday_rule": [],
+    "holds_eow": ["AMAT", "LLY", "VECO", "ACLS", "COHU", "FLEX", "SMTC"],
+    "pl_per_position_last_known": {
+      "AMAT": { "plpc": 44.43, "pl_dollar": 13472.81, "as_of": "2026-06-17" },
+      "VECO": { "plpc": 29.28, "pl_dollar": 354.80, "as_of": "2026-06-17" },
+      "COHU": { "plpc": 21.90, "pl_dollar": 3195.09, "as_of": "2026-06-17" },
+      "ACLS": { "plpc": 19.62, "pl_dollar": 795.69, "as_of": "2026-06-17" },
+      "LLY":  { "plpc": 12.55, "pl_dollar": 3610.81, "as_of": "2026-06-17" },
+      "FLEX": { "plpc": 2.62,  "pl_dollar": 19.50,   "as_of": "2026-06-17" },
+      "SMTC": { "plpc": 2.19,  "pl_dollar": 3.27,    "as_of": "2026-06-17" }
+    },
+    "net_pnl_estimate_week": 3488,
+    "portfolio_value_entering_week": 112331,
+    "portfolio_value_eow": 115819,
+    "portfolio_value_from_starting_capital_pct": 15.8,
+    "key_events": [
+      "June 17: Portfolio +2.98% vs SPY -1.25% (outperformed +4.23%) — best relative performance day this cycle",
+      "June 18: Portfolio +2.34% vs SPY +0.78% (outperformed +1.56%)",
+      "June 19: Market CLOSED (Juneteenth) — 4-day trading week as planned",
+      "June 15 trade plan (close 6 positions, open NVDA) did not execute — GitHub Actions could not reach Alpaca API",
+      "MU Q3 FY2026 earnings June 24 — blackout maintained, no MU entry before then"
+    ],
+    "data_note": "Live Alpaca API unavailable (sandbox network policy). Positions from last live snapshot 2026-06-17T12:46:03-04:00. June 18 equity $115,818.82 from daily P&L log. June 19 is Juneteenth (market closed) — no intraday P&L available."
+  },
   "weekly_summary_2026_06_15": {
     "week_of": "2026-06-15",
     "thesis": "U.S.-Iran peace deal (signed June 14-15, ceremony June 19 Switzerland) reopens Strait of Hormuz. Oil crashes to $80 (-$4.64, -5.5%), Nasdaq +2.17%, SPY +0.54%. Portfolio pivots: close EOG (oil thesis destroyed), close VECO/ACLS/FLEX/COHU/SMTC (simplify to max 3 positions), add NVDA (relative underperformance entry at $205 \u2014 only +0.16% vs Nasdaq +2.17%; 38-analyst Strong Buy; ~$300 avg target = 46% upside; no earnings this week). AMAT (+44%) and LLY (+14.6%) held as portfolio anchors. AMD skipped (5% above $486 consensus). MU skipped (earnings June 24 blackout). Market closed Friday June 19 (Juneteenth).",

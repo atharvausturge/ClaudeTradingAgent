@@ -1,79 +1,60 @@
 {
-  "generated_at": "2026-06-12",
-  "week_of": "2026-06-08",
-  "data_source": "last known positions snapshot 2026-06-10T12:47:13-04:00; Alpaca API blocked by sandbox network policy; June 11 equity $111,049.73 (+9.81%) from daily P&L log",
-  "closes": [
-    {
-      "symbol": "VIAV",
-      "last_known_plpc": -7.80,
-      "last_known_pl_dollar": -1188.95,
-      "last_known_as_of": "2026-06-10",
-      "reason": "down 7.80% as of June 10 — below -2% Friday threshold; analyst consensus target $39.25 is below $49.50 entry price (thesis broken); listed in June 8 trade plan close_positions; close to cut loss or lock any June 11 recovery"
-    },
-    {
-      "symbol": "ASTH",
-      "last_known_plpc": -5.10,
-      "last_known_pl_dollar": -782.44,
-      "last_known_as_of": "2026-06-10",
-      "reason": "down 5.10% as of June 10 — below -2% Friday threshold; healthcare sector lagging (-15.1% RS60 vs SPY); no near-term catalyst; flagged for closing across multiple prior sessions (June 3, June 5, June 8); closing to protect capital into weekend"
-    }
-  ],
+  "generated_at": "2026-06-19",
+  "week_of": "2026-06-15",
+  "data_source": "last known live snapshot 2026-06-17T12:46:03-04:00; Alpaca API blocked by sandbox network policy; June 18 equity $115,818.82 (+2.34%) from daily P&L log",
+  "market_note": "Market CLOSED today (Juneteenth, June 19). No intraday prices available. Closing rule applied to June 17 last known P&L data. Any queued closes would execute on Monday June 23.",
+  "close_rule": "unrealized_plpc < -0.02 (down more than 2%)",
+  "closes": [],
   "holds": [
     {
       "symbol": "AMAT",
-      "last_known_plpc": 19.34,
-      "last_known_pl_dollar": 6516.59,
-      "last_known_as_of": "2026-06-10",
-      "reason": "up 19.34% — AI semiconductor equipment multi-year cycle intact; Mizuho target $540; strongest position in portfolio; AVGO Q2 beat confirms AI capex buildout; hold into next week"
-    },
-    {
-      "symbol": "LLY",
-      "last_known_plpc": 15.14,
-      "last_known_pl_dollar": 4955.30,
-      "last_known_as_of": "2026-06-10",
-      "reason": "up 15.14% — retatrutide Phase 3 TRIUMPH-1 cleared (28.3% weight loss); Mounjaro +125% Q1 revenue; 31 analysts Buy, $1,211 consensus target; defensive pharmaceutical sector; low rate sensitivity; hold"
+      "last_known_plpc": 44.43,
+      "last_known_pl_dollar": 13472.81,
+      "last_known_as_of": "2026-06-17",
+      "reason": "up 44.43% — AI semiconductor equipment multi-year super-cycle; SCREEN Semiconductor partnership; Mizuho target $540+; dominant portfolio winner; far above -2% threshold; STRONG HOLD"
     },
     {
       "symbol": "VECO",
-      "last_known_plpc": 10.75,
-      "last_known_pl_dollar": 149.73,
-      "last_known_as_of": "2026-06-10",
-      "reason": "up 10.75% — strong gain; AI semiconductor laser equipment thesis intact; above stop at $56.51; hold into next week"
-    },
-    {
-      "symbol": "ACLS",
-      "last_known_plpc": 6.21,
-      "last_known_pl_dollar": 289.23,
-      "last_known_as_of": "2026-06-10",
-      "reason": "up 6.21% — moderate conviction; semiconductor ion implant equipment momentum; above -2% threshold; hold"
-    },
-    {
-      "symbol": "EOG",
-      "last_known_plpc": 2.65,
-      "last_known_pl_dollar": 748.01,
-      "last_known_as_of": "2026-06-10",
-      "reason": "up 2.65% — energy sector exposure; healthy economy (NFP 172K jobs) = strong demand; above -2% threshold; hold"
-    },
-    {
-      "symbol": "FLEX",
-      "last_known_plpc": 1.56,
-      "last_known_pl_dollar": 240.80,
-      "last_known_as_of": "2026-06-10",
-      "reason": "up 1.56% — above -2% threshold; Cloud & Power Infrastructure spin-off catalyst; technology manufacturing exposure to AI server build-out; hold"
+      "last_known_plpc": 29.28,
+      "last_known_pl_dollar": 354.80,
+      "last_known_as_of": "2026-06-17",
+      "reason": "up 29.28% — AI semiconductor laser equipment; strong recovery from prior dips; well above -2% threshold; hold into next week"
     },
     {
       "symbol": "COHU",
-      "last_known_plpc": 1.31,
-      "last_known_pl_dollar": 212.21,
-      "last_known_as_of": "2026-06-10",
-      "reason": "up 1.31% — new June 8 entry at post-NFP dip; semiconductor test equipment; above -2% threshold; strong sector momentum; hold"
+      "last_known_plpc": 21.90,
+      "last_known_pl_dollar": 3195.09,
+      "last_known_as_of": "2026-06-17",
+      "reason": "up 21.90% — semiconductor test equipment; entered June 8 at post-NFP dip; strong recovery; above -2% threshold; hold"
+    },
+    {
+      "symbol": "ACLS",
+      "last_known_plpc": 19.62,
+      "last_known_pl_dollar": 795.69,
+      "last_known_as_of": "2026-06-17",
+      "reason": "up 19.62% — semiconductor ion implant equipment; thesis intact; strong gain from June 1 entry at $150.18; above -2% threshold; hold"
+    },
+    {
+      "symbol": "LLY",
+      "last_known_plpc": 12.55,
+      "last_known_pl_dollar": 3610.81,
+      "last_known_as_of": "2026-06-17",
+      "reason": "up 12.55% — retatrutide Phase 3 TRIUMPH-1 cleared (28.3% weight loss class-best); Mounjaro Q1 revenue +125% YoY; 31 analysts Buy, $1,211 consensus target; defensive pharmaceutical; low rate sensitivity; hold"
+    },
+    {
+      "symbol": "FLEX",
+      "last_known_plpc": 2.62,
+      "last_known_pl_dollar": 19.50,
+      "last_known_as_of": "2026-06-17",
+      "reason": "up 2.62% — above -2% Friday threshold; AI server manufacturing exposure; hold into next week"
     },
     {
       "symbol": "SMTC",
-      "last_known_plpc": 2.73,
-      "last_known_pl_dollar": 8.16,
-      "last_known_as_of": "2026-06-10",
-      "reason": "up 2.73% — above -2% threshold; tiny position (2 shares); analog/mixed-signal IC benefits from AI hardware proliferation; hold"
+      "last_known_plpc": 2.19,
+      "last_known_pl_dollar": 3.27,
+      "last_known_as_of": "2026-06-17",
+      "reason": "up 2.19% — above -2% Friday threshold; tiny 2-share position; negligible capital; hold"
     }
-  ]
+  ],
+  "summary": "No closes triggered. All 7 positions are above the -2% Friday threshold based on June 17 last known data. Portfolio is having a strong week. Market closed today (Juneteenth) — GitHub Actions friday-execute will find no closes to execute."
 }
