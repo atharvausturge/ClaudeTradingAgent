@@ -1612,6 +1612,17 @@
       "market_closed": true,
       "market_close_reason": "Juneteenth (Federal Holiday)",
       "note": "No trading. Equity carried forward from June 18 close."
+    },
+    {
+      "date": "2026-06-22",
+      "equity": 116987.23,
+      "daily_pl_dollar": 1314.63,
+      "daily_pl_pct": 1.14,
+      "open_positions": 7,
+      "realized_today_dollar": 0,
+      "invested_pct": 87.6,
+      "spy_daily_pct": -0.31,
+      "vs_spy_pct": 1.45
     }
   ],
   "weekly_summary_2026_06_15_eow_wrap": {
