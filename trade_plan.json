@@ -1,65 +1,65 @@
 {
-  "week_of": "2026-06-15",
-  "generated_at": "2026-06-15T09:00:00-04:00",
-  "week_thesis": "U.S.-Iran peace deal signed June 14-15 (ceremony June 19 in Switzerland) is the dominant macro event: Strait of Hormuz reopens, oil crashes to $80 (-$4.64, -5.5%), Nasdaq surges +2.17%, SPY +0.54%. This geo-political resolution destroys the oil/energy thesis (EOG close) and rotates capital decisively into AI/tech infrastructure. Portfolio streamlines to max 3 high-conviction positions. AMAT ($591 pre-mkt, +44% from entry) and LLY ($1,137, +14.6%) are proven winners with intact theses. NVDA adds as a STRONG_BUY: $205.19 today — only +0.16% when Nasdaq is +2.17% — textbook relative-underperformance entry; 38 analysts Strong Buy; $300 avg target (+46% upside); AI infrastructure secular leader; no earnings this week. AMD skipped: $511 already 5% ABOVE consensus $486 — no margin of safety. MU: earnings June 24 = blackout. Market closed Friday June 19 (Juneteenth).",
+  "week_of": "2026-06-22",
+  "generated_at": "2026-06-22T09:00:00-04:00",
+  "week_thesis": "Fed's hawkish June 17 pivot (rate hike fully priced October 2026; PCE inflation forecast revised up to 3.6% year-end) adds a macro headwind for high-multiple AI growth names, but the structural AI semiconductor supercycle continues to overwhelm macro concerns. Our 3-position portfolio — AMAT (+50% from $411 entry, now $617), LLY (+11%, $1,099), NVDA (+2.4%, $210) — is at maximum capacity with all positions profitable. The dominant event this week is Micron (MU) earnings Wednesday June 24 after close: consensus $20 EPS / $34.7B revenue; company guided $19.15/$33.5B; MU has beaten by 21.7% average for 4 straight quarters with HBM4 supply fully sold out through 2026. If MU beats strongly, the semiconductor complex — including NVDA and AMAT — will rally Thursday. No position changes this week; hold all three with updated trailing stops and add MU to post-earnings watchlist.",
   "market_context": {
     "spy_last_close": 736.50,
-    "spy_today_change_pct": 0.54,
-    "nasdaq_today_change_pct": 2.17,
-    "oil_price": 80.20,
-    "oil_change_today": -4.64,
-    "macro_catalyst": "U.S.-Iran permanent peace deal — immediate termination of military operations, Strait of Hormuz reopened, naval blockade lifted",
+    "spy_data_note": "Bars data ~3-4 weeks stale (late May); last week Nasdaq +2.43%, S&P +0.93%.",
+    "nvda_price_est": 210.10,
+    "amat_price_est": 617.11,
+    "lly_price_est": 1099.00,
+    "mu_price_est": 1061.00,
+    "amd_price_est": 541.18,
+    "intc_price_est": 133.99,
+    "macro_catalyst": "Intel +10.6% June 18 on Trump's unconfirmed Apple chip deal; broader chip sector lifted; Iran peace deal ongoing supportive; MU hit ATH $1,149 on June 18 heading into June 24 earnings",
     "macro_risks": [
-      "10-year Treasury yield at 4.54% — elevated rate environment persists",
-      "Rate hike probability ~57% — headwind for ultra-high-PE growth names",
-      "Market closed Friday June 19 (Juneteenth) — 4-day trading week",
-      "MU Q3 FY2026 earnings June 24 — blackout, avoid new MU entry",
-      "Iran deal reception risk — partial reversal if deal details disappoint"
+      "Fed hawkish June 17 (Warsh era): rate hike expected October 2026; median dot plot 3.8% year-end from 3.5-3.75% current",
+      "PCE inflation revised up to 3.6% year-end — headwind for high-PE growth (NVDA, LLY)",
+      "MU at ATH entering earnings June 24 — 'buy the rumor, sell the news' risk for semiconductor complex",
+      "INTC Apple deal unconfirmed by Apple or Intel — gap-up may partially reverse on lack of official confirmation",
+      "10-year Treasury yield elevated — above 4.75% is warning level for growth stocks"
     ],
     "tailwinds": [
-      "Iran peace deal: oil -5.5%, geopolitical risk premium removed, capital rotates to tech",
-      "NVDA: SharonAI 6-year AI infrastructure compute collaboration announced; Vera CPU for China in August; Jensen Huang forecasts $200B CPU market",
-      "NVDA: 38 analysts Strong Buy consensus (Jun 14), avg target ~$300 (+46% upside from $205)",
-      "AMAT: AI semiconductor equipment multi-year cycle intact; Nasdaq rally = tailwind for AI capex",
-      "LLY: Retatrutide Phase 3 (TRIUMPH-1) cleared; Mounjaro Q1 revenue +125% YoY; defensive sector outperforms in volatile markets"
+      "AMAT: +50% from entry; next earnings August 13 (no near-term event risk); Q2 FY2026 beat EPS $2.86 vs $2.68 consensus (+6.7%); Q3 consensus $3.38",
+      "MU: 4 consecutive beats averaging +21.7% EPS surprise; HBM4 supply sold out; Nvidia Vera Rubin platform demand; consensus $20 EPS / $34.7B revenue",
+      "NVDA: SharonAI 6-year AI compute collaboration; Vera CPUs for China August; 38-analyst Strong Buy; avg target $300 (+43% upside from $210)",
+      "LLY: Retatrutide Phase 3 TRIUMPH-1 cleared (28.3% weight loss, class-best); Mounjaro Q1 revenue +125% YoY; defensive in rate-hike environment",
+      "Chip sector lifting: Intel/Apple deal + MU pre-earnings enthusiasm + AI capex acceleration"
     ]
   },
-  "buys": [
-    {
-      "symbol": "NVDA",
-      "signal": "STRONG_BUY",
-      "reasoning": "Relative underperformance today (+0.16% vs Nasdaq +2.17%) in a broad tech rally = textbook accumulation entry. 38 analysts Strong Buy consensus as of June 14; avg 12-month target ~$299-300 (+46% upside from $205.19). New SharonAI 6-year AI compute partnership announced. CEO Jensen Huang forecasts $200B CPU TAM; Vera CPUs for China launching August (new revenue stream, bypasses export restrictions). Nvidia dominates 85-92% of AI accelerator market with no credible near-term challenger. Blackwell architecture ramp intact. No earnings risk this week. Iran peace deal removes geopolitical uncertainty that had been weighing on global AI capex decisions — expect acceleration of data center buildout worldwide. RSI ~50 (neutral, no overbought risk). Previous June 8 trade plan targeted NVDA at $205 — same price, second opportunity to enter as execution was missed. Best risk/reward in the universe at this level.",
-      "confidence": "high",
-      "qty_pct": 0.20
-    }
-  ],
-  "close_positions": ["EOG", "VECO", "ACLS", "FLEX", "COHU", "SMTC"],
-  "close_reasoning": {
-    "EOG": "U.S.-Iran peace deal destroys the oil thesis entirely. Strait of Hormuz reopens immediately — oil drops to $80 (-$4.64, -5.5% today). EOG had been flagged for closure in multiple prior plans (RSI 70.4 overbought in bars; oil headwind; planned close in May/June). Iran deal is the definitive catalyst: energy geopolitical premium collapses, oil likely tests $75-78 range as Iranian production resumes. Entry $138.58; last known +2.65% (+$748). Close to lock remaining gain and eliminate sector risk.",
-    "VECO": "Planned closure since June 8 trade plan (planned but not executed). Veeco hit all-time high $67.19 on June 9, 2026 — ideal lock-in moment. Last known +10.75% (+$150) on 23 shares. Tiny position with negligible capital impact; semi equipment thesis fully covered by AMAT (+44%). Simplify portfolio to reach 3-position max.",
-    "ACLS": "Planned closure since June 8 trade plan (planned but not executed). Last known +6.21% (+$289) on 31 shares. Axcelis semi equipment thesis is a subset of AMAT's; concentration into the stronger name (AMAT +44%) is superior. Close and consolidate.",
-    "FLEX": "Flex returned from +20.12% ATH to +1.56% as of June 10 — gave back most gains. Electronics manufacturing for AI servers is a tier-3 play vs. NVDA's tier-1 AI infrastructure position. Closing to reach 3-position max and redeploy capital into NVDA at $205 with 46% upside.",
-    "COHU": "New June 8 position with only +1.31% gain (+$212) as of June 10. Semiconductor test equipment is a derivative play; insufficient conviction to hold vs. NVDA at current levels. Closing to simplify to 3 positions. Lock small gain.",
-    "SMTC": "2-share position ($300 notional). Negligible capital but contributes to position count. Close to simplify. Last known +2.73% (+$8)."
-  },
-  "hold_positions": ["AMAT", "LLY"],
+  "buys": [],
+  "close_positions": [],
+  "close_reasoning": {},
+  "hold_positions": ["AMAT", "LLY", "NVDA"],
   "hold_reasoning": {
-    "AMAT": "Portfolio's strongest performer at ~+44% from $411.45 entry (current ~$591, pre-market +4.25% to $591.38). AI semiconductor equipment multi-year super-cycle: SCREEN Semiconductor Solutions joined EPIC Center partnership (May 2026), semi equipment growth outlook >30% for 2026. Iran peace deal is constructive: global trade normalization improves supply chain and expands semiconductor addressable markets worldwide. Analyst avg target $511 has been exceeded — but AMAT continues to benefit from secular AI capex tailwind. RSI ~67 (approaching overbought; monitor). Hold with trailing stop ~$508 (5% below $534 mid-Jun range). Do not add — let winner run.",
-    "LLY": "Eli Lilly ($1,137 current, +14.6% from $992.17 entry) remains a defensive healthcare anchor. Retatrutide Phase 3 TRIUMPH-1 cleared (28.3% weight loss — class-best). Mounjaro Q1 revenue +125% YoY. FY2026 EPS guidance $35.50-37.00. 31 analysts Buy consensus; $1,211 avg 12m target (+6.5% further upside). Healthcare is defensive in elevated-rate environments; low correlation to geopolitical events. RSI ~70.3 (nearing overbought) — monitor; do not add. Hold with stop ~$942."
+    "AMAT": "Portfolio's strongest performer at +50% from $411.45 entry (current $617.11, +4.4% since June 15 pre-market $591). Next earnings August 13 — no near-term event risk. AI semiconductor equipment supercycle intact: SCREEN Semiconductor joined AMAT's EPIC Center partnership; global AI data center capex accelerating. Q2 beat: EPS $2.86 vs $2.68 est (+6.7%); Q3 consensus $3.38 implies continued growth. MU earnings Thursday beat scenario lifts semi equipment. Updated trailing stop: $586 (5% below $617). Let winner run.",
+    "LLY": "Defensive healthcare anchor. +10.8% from $992.17 entry (current $1,099, -3.3% from $1,137 June 15 high — normal pullback). Retatrutide Phase 3 TRIUMPH-1 cleared (28.3% weight loss, class-best vs competitor programs). Mounjaro Q1 revenue +125% YoY; FY2026 EPS guidance $35.50-$37.00. Fed rate hikes create valuation headwind but LLY's fundamental earnings power and blockbuster obesity franchise dominate. 31 analysts Buy; avg target $1,211 (+10.2% upside). Stop $942 (unchanged).",
+    "NVDA": "AI infrastructure secular leader. +2.4% from $205.19 entry (current $210.10). Up 2.95% last week on Intel/Apple chip sector enthusiasm. SharonAI 6-year compute collaboration; Vera CPUs for China August (new revenue stream bypassing export restrictions); 38-analyst Strong Buy consensus; avg target $300 (+43% from $210). MU earnings Wednesday night is a near-term catalyst — if MU beats on HBM4 demand, NVDA typically rallies 2-5% on semiconductor sector enthusiasm Thursday. Rate hike headwind real but 85-92% AI accelerator market dominance and Blackwell architecture ramp override macro. Stop $194.93 (unchanged)."
   },
   "skip_reasoning": {
-    "AMD": "Strong fundamental story (Q1 DC revenue $5.8B +57% YoY; BofA target $560; Venice CPU launch catalyst) but $511.57 current price is 5% ABOVE the $486.33 consensus analyst target. Chasing a name above consensus with 130% YTD gain carries meaningful mean-reversion risk. Today's +4.73% surge on Iran deal rally adds to chase concern. Revisit if AMD pulls back to $470-480 range.",
-    "MU": "Universe #2 scorer (RS60=+54%, RSI 34.7, HBM sold out multi-quarters); Q3 FY2026 earnings June 24 after close — 9 days away. Guidance: record revenue $33.5B ±$0.75B, ~81% gross margin. Earnings event risk too high for new entry. Monitor for post-earnings entry.",
-    "MRVL": "Bars data stale ($115 bars vs $279.70 actual, post-earnings gap). Cannot reliably score. Reached ATH $324.20 on June 3; now $279.70 = -13.7% from ATH. B. Riley target $345 (+23% upside). Watch but data lag prevents entry decision.",
-    "LRCX": "RS60 only +6% in bars — minimal relative strength vs. SPY's +44% 60d run. Semi equipment thesis covered by AMAT. Skip.",
-    "NEM": "Gold miner RS60=+1%; wrong sector (no AI catalyst). Skip.",
-    "ORCL": "RSI 27.6 near oversold; Oracle cloud AI thesis interesting (multi-cloud AI training partnerships) but score -0.003, RS60 flat. Insufficient momentum vs. NVDA."
+    "AMD": "Trading at $541 (June 21) — 11% ABOVE analyst consensus of $486. Already up 130%+ YTD; gained another 4.86% on June 18 Intel/Apple chip rally. CFO Jean Hu flagged 'unprecedented' HBM price inflation as a margin headwind in latest report. No margin of safety at these levels; chasing extended name above consensus is the exact pattern that triggered prior portfolio losses. Avoid until pullback to $470-490 range.",
+    "MU": "EARNINGS BLACKOUT — reports June 24 (Wednesday after close). MU hit ATH $1,149 on June 18; opened June 22 ~$1,061. Consensus: $20.25 EPS / $34.7B revenue; 4 consecutive beats averaging +21.7% EPS surprise; HBM4 supply sold out through 2026 with Nvidia Vera Rubin demand. This is a STRONG watchlist candidate for post-earnings entry (Thursday June 25 or next Monday June 29). If MU beats and the stock pulls back 5-10% from ATH, it becomes a buy. Do NOT enter before the event.",
+    "MRVL": "Trading at $317 (+240% YTD as of June 21); Jensen Huang's 'next trillion-dollar company' declaration may mark a sentiment peak. Marvell posted 28% YoY revenue growth and guided $2.7B Q2 FY27. Fundamentals solid, but at 240% YTD the risk/reward is asymmetric to the downside — any disappointment will be violent. Post-earnings gap has rendered our stale bars data ($115) useless. Skip until a meaningful consolidation.",
+    "INTC": "Surged 10.6% to $133.99 on June 18 on Trump's Truth Social post about Apple partnering with Intel — neither Apple nor Intel has confirmed the deal. Revenue timeline is 12-18 months per analysts. U.S. government ~10% stake creates conflict-of-interest concerns. Portfolio took two painful INTC stops in May (INTC stopped at $126.86 -3.05% and $119.82 -4.94% — total ~$2,000+ loss). INTC at $134 now exceeds our original $130.85 entry but the thesis was fundamentally different. Gap-up on unconfirmed political announcement is not a swing trade entry.",
+    "LRCX": "RS60 only +6% in bars (vs SPY ~44%); semiconductor equipment thesis fully covered by AMAT. Skip.",
+    "NEM": "Gold miner; no AI catalyst; minimal RS60. Skip.",
+    "AMZN": "Bars RS60 -2%; AWS AI cloud thesis interesting but underperforming vs semiconductor names with clearer near-term catalysts. Skip this week."
   },
-  "risk_notes": "NVDA new stop: ~$194.93 (5% below $205.19 entry). Existing stops: AMAT ~$508 (trailing, 5% below ~$534), LLY ~$942 (5% below $992 entry). Key risks: (1) Iran deal reversal — any breakdown in peace process would spike oil, hurt tech rotation thesis; (2) 10yr yield spike above 4.75% from Fed hawkishness — headwind for NVDA/AI growth; (3) Market closed June 19 — 4-day week means position monitoring on Mon-Thu only; (4) MU earnings June 24 — do not enter MU before then.",
+  "stop_updates": {
+    "AMAT": "$586 (updated trailing stop — 5% below current $617.11, up from prior $508 stop)",
+    "LLY": "$942 (unchanged — 5% below $992.17 entry)",
+    "NVDA": "$194.93 (unchanged — 5% below $205.19 entry)"
+  },
+  "watchlist_next_week": {
+    "MU": "Top post-earnings candidate for week of June 29. If MU beats June 24 consensus on EPS and HBM4 guidance, look for buy entry in the $950-1,050 range on any post-announcement dip (buy-the-rumor-sell-the-news pattern common after ATH runs). Would replace NVDA or become 3rd-position add only if another position closes.",
+    "NVDA": "Continue holding toward $300 target. Reassess take-profit if $270+ approached.",
+    "INTC": "Monitor for official Apple/Intel deal confirmation. If confirmed, INTC $140+ is possible; re-evaluate then."
+  },
+  "risk_notes": "Primary risk: MU 'sell the news' event Thursday June 25 could drag entire semiconductor complex (NVDA, AMAT) lower — but trailing stops protect. Secondary: Fed rate hike October + PCE running hot = multiple compression for NVDA/LLY if 10-year yield spikes above 4.75%. Tertiary: Iran deal fragility — any escalation would spike oil and reverse tech rotation thesis. Market closed Friday June 19 was last week; full 5-day week June 22-26.",
   "portfolio_context": {
-    "estimated_equity": 112331,
-    "positions_entering_week": ["AMAT", "LLY", "VECO", "ACLS", "EOG", "FLEX", "COHU", "SMTC"],
-    "positions_target_eow": ["AMAT", "LLY", "NVDA"],
-    "data_note": "Live Alpaca API unavailable (sandbox network policy). Equity from June 12 daily P&L ($112,331.16). Today's market rally (Nasdaq +2.17%) likely pushed portfolio to $113-116K range before closes/buy."
+    "estimated_equity": 128000,
+    "positions_entering_week": ["AMAT", "LLY", "NVDA"],
+    "target_positions_eow": ["AMAT", "LLY", "NVDA"],
+    "data_note": "Live Alpaca API unavailable (network policy blocks paper-api.alpaca.markets and data.alpaca.markets). Prices sourced via WebSearch June 22 2026: NVDA $210.10 pre-mkt, AMAT $617.11, LLY ~$1,099. Bars_raw.json is ~3-4 weeks stale (AMD shows $435 vs actual $541; MU shows $820 vs actual $1,061). Equity estimate: $112,331 June 12 base + AMAT gain ~$16K + LLY gain ~$3.5K + NVDA gain ~$0.4K = ~$132K less any slippage/fees ~$128K."
   }
 }

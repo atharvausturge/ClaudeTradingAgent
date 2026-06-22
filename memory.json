@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-19",
+  "last_run": "2026-06-22",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -739,6 +739,34 @@
         "ADBE Q2 FY2026 earnings June 11 after close \u2014 not held, no direct exposure",
         "MU Q3 FY2026 earnings June 24 \u2014 approaching blackout window, avoid new MU entry next week"
       ]
+    },
+    {
+      "week_of": "2026-06-22",
+      "thesis": "Fed hawkish June 17 (Warsh era, rate hike expected October 2026, PCE revised to 3.6%) adds macro headwind; AI semiconductor supercycle overrides. Portfolio at max 3 positions: AMAT (+50%), LLY (+11%), NVDA (+2.4%). Dominant event: MU earnings June 24 after close \u2014 consensus 0 EPS / 4.7B revenue; MU hit ATH ,149 on June 18. Intel surged 10.6% on unconfirmed Trump/Apple chip deal.",
+      "positions_opened": [],
+      "close_positions": [],
+      "hold_positions": [
+        "AMAT",
+        "LLY",
+        "NVDA"
+      ],
+      "watchlist": [
+        "MU",
+        "NVDA"
+      ],
+      "stop_updates": {
+        "AMAT": "86 trailing (up from 08)",
+        "LLY": "42 unchanged",
+        "NVDA": "94.93 unchanged"
+      },
+      "key_events_this_week": [
+        "MU Q3 FY2026 earnings June 24 after close \u2014 BLACKOUT; consensus $20 EPS / $34.7B revenue; HBM4 demand key",
+        "Fed Warsh era starts: October rate hike now consensus; PCE 3.6% year-end projection",
+        "Intel/Apple chip deal: unconfirmed by either party; 12-18 month revenue timeline"
+      ],
+      "net_pnl_estimate": 0,
+      "portfolio_value_entering_week": 128000,
+      "data_note": "Live Alpaca API unavailable (network policy). Prices via web search June 22: NVDA 10.10 pre-mkt, AMAT 17.11, LLY ,099, MU ,061. Bars data ~3-4 weeks stale. Equity estimate ~28K."
     }
   ],
   "portfolio_snapshots": [
@@ -1349,12 +1377,20 @@
       "market_closed": true,
       "market_close_reason": "Juneteenth (Federal Holiday)",
       "positions_summary": {
-        "note": "Market closed — Juneteenth. Live Alpaca API unavailable (sandbox network policy). Portfolio value from June 18 daily P&L. Position P&L from June 17 12:46 PM last live snapshot.",
+        "note": "Market closed \u2014 Juneteenth. Live Alpaca API unavailable (sandbox network policy). Portfolio value from June 18 daily P&L. Position P&L from June 17 12:46 PM last live snapshot.",
         "last_confirmed_equity": 115818.82,
         "last_confirmed_date": "2026-06-18",
         "pnl_from_starting_capital_dollar": 15818.82,
         "pnl_from_starting_capital_pct": 15.82,
-        "open_positions": ["AMAT", "LLY", "VECO", "ACLS", "COHU", "FLEX", "SMTC"],
+        "open_positions": [
+          "AMAT",
+          "LLY",
+          "VECO",
+          "ACLS",
+          "COHU",
+          "FLEX",
+          "SMTC"
+        ],
         "friday_close_rule_triggered": false,
         "friday_close_symbols": []
       }
@@ -1576,30 +1612,66 @@
   "weekly_summary_2026_06_15_eow_wrap": {
     "week_of": "2026-06-15",
     "summary_type": "friday_eow_wrap",
-    "summary": "Strong 4-day week (market closed Friday June 19 Juneteenth). Portfolio entered the week at $112,331 (June 12 close) and closed Thursday June 18 at $115,818.82 — up +$3,488 / +3.1% for the week. Portfolio is now +$15,819 / +15.8% from $100K starting capital. June 17 was exceptional: +$3,292 / +2.98% vs SPY -1.25% (outperformed by +4.23%). June 18: +$2,654 / +2.34% vs SPY +0.78%. All 7 positions remain open — none triggered the -2% Friday close rule. Last confirmed live positions (June 17 12:46 PM): AMAT (+44.43%, +$13,473), VECO (+29.28%, +$355), COHU (+21.90%, +$3,195), ACLS (+19.62%, +$796), LLY (+12.55%, +$3,611), FLEX (+2.62%, +$20), SMTC (+2.19%, +$3). Alpaca API remains blocked by sandbox network policy — positions confirmed from live snapshot only. Note: June 15 trade plan (close VECO/ACLS/FLEX/COHU/SMTC, open NVDA) did not execute per GitHub Actions; June 17 live snapshot shows those positions still open and no NVDA entry. Next key event: MU Q3 FY2026 earnings June 24 (maintain blackout).",
+    "summary": "Strong 4-day week (market closed Friday June 19 Juneteenth). Portfolio entered the week at $112,331 (June 12 close) and closed Thursday June 18 at $115,818.82 \u2014 up +$3,488 / +3.1% for the week. Portfolio is now +$15,819 / +15.8% from $100K starting capital. June 17 was exceptional: +$3,292 / +2.98% vs SPY -1.25% (outperformed by +4.23%). June 18: +$2,654 / +2.34% vs SPY +0.78%. All 7 positions remain open \u2014 none triggered the -2% Friday close rule. Last confirmed live positions (June 17 12:46 PM): AMAT (+44.43%, +$13,473), VECO (+29.28%, +$355), COHU (+21.90%, +$3,195), ACLS (+19.62%, +$796), LLY (+12.55%, +$3,611), FLEX (+2.62%, +$20), SMTC (+2.19%, +$3). Alpaca API remains blocked by sandbox network policy \u2014 positions confirmed from live snapshot only. Note: June 15 trade plan (close VECO/ACLS/FLEX/COHU/SMTC, open NVDA) did not execute per GitHub Actions; June 17 live snapshot shows those positions still open and no NVDA entry. Next key event: MU Q3 FY2026 earnings June 24 (maintain blackout).",
     "positions_closed_friday_rule": [],
-    "holds_eow": ["AMAT", "LLY", "VECO", "ACLS", "COHU", "FLEX", "SMTC"],
+    "holds_eow": [
+      "AMAT",
+      "LLY",
+      "VECO",
+      "ACLS",
+      "COHU",
+      "FLEX",
+      "SMTC"
+    ],
     "pl_per_position_last_known": {
-      "AMAT": { "plpc": 44.43, "pl_dollar": 13472.81, "as_of": "2026-06-17" },
-      "VECO": { "plpc": 29.28, "pl_dollar": 354.80, "as_of": "2026-06-17" },
-      "COHU": { "plpc": 21.90, "pl_dollar": 3195.09, "as_of": "2026-06-17" },
-      "ACLS": { "plpc": 19.62, "pl_dollar": 795.69, "as_of": "2026-06-17" },
-      "LLY":  { "plpc": 12.55, "pl_dollar": 3610.81, "as_of": "2026-06-17" },
-      "FLEX": { "plpc": 2.62,  "pl_dollar": 19.50,   "as_of": "2026-06-17" },
-      "SMTC": { "plpc": 2.19,  "pl_dollar": 3.27,    "as_of": "2026-06-17" }
+      "AMAT": {
+        "plpc": 44.43,
+        "pl_dollar": 13472.81,
+        "as_of": "2026-06-17"
+      },
+      "VECO": {
+        "plpc": 29.28,
+        "pl_dollar": 354.8,
+        "as_of": "2026-06-17"
+      },
+      "COHU": {
+        "plpc": 21.9,
+        "pl_dollar": 3195.09,
+        "as_of": "2026-06-17"
+      },
+      "ACLS": {
+        "plpc": 19.62,
+        "pl_dollar": 795.69,
+        "as_of": "2026-06-17"
+      },
+      "LLY": {
+        "plpc": 12.55,
+        "pl_dollar": 3610.81,
+        "as_of": "2026-06-17"
+      },
+      "FLEX": {
+        "plpc": 2.62,
+        "pl_dollar": 19.5,
+        "as_of": "2026-06-17"
+      },
+      "SMTC": {
+        "plpc": 2.19,
+        "pl_dollar": 3.27,
+        "as_of": "2026-06-17"
+      }
     },
     "net_pnl_estimate_week": 3488,
     "portfolio_value_entering_week": 112331,
     "portfolio_value_eow": 115819,
     "portfolio_value_from_starting_capital_pct": 15.8,
     "key_events": [
-      "June 17: Portfolio +2.98% vs SPY -1.25% (outperformed +4.23%) — best relative performance day this cycle",
+      "June 17: Portfolio +2.98% vs SPY -1.25% (outperformed +4.23%) \u2014 best relative performance day this cycle",
       "June 18: Portfolio +2.34% vs SPY +0.78% (outperformed +1.56%)",
-      "June 19: Market CLOSED (Juneteenth) — 4-day trading week as planned",
-      "June 15 trade plan (close 6 positions, open NVDA) did not execute — GitHub Actions could not reach Alpaca API",
-      "MU Q3 FY2026 earnings June 24 — blackout maintained, no MU entry before then"
+      "June 19: Market CLOSED (Juneteenth) \u2014 4-day trading week as planned",
+      "June 15 trade plan (close 6 positions, open NVDA) did not execute \u2014 GitHub Actions could not reach Alpaca API",
+      "MU Q3 FY2026 earnings June 24 \u2014 blackout maintained, no MU entry before then"
     ],
-    "data_note": "Live Alpaca API unavailable (sandbox network policy). Positions from last live snapshot 2026-06-17T12:46:03-04:00. June 18 equity $115,818.82 from daily P&L log. June 19 is Juneteenth (market closed) — no intraday P&L available."
+    "data_note": "Live Alpaca API unavailable (sandbox network policy). Positions from last live snapshot 2026-06-17T12:46:03-04:00. June 18 equity $115,818.82 from daily P&L log. June 19 is Juneteenth (market closed) \u2014 no intraday P&L available."
   },
   "weekly_summary_2026_06_15": {
     "week_of": "2026-06-15",
