@@ -1,49 +1,49 @@
 {
-  "week_of": "2026-06-14",
-  "week_thesis": "This week, the technology sector continues to lead the market with strong momentum, driven by AI and cloud computing trends. Stocks with high upside targets and recent positive news, such as DELL, HPE, and TTMI, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as RXO and CAR, should be avoided. The recent macro events, including the NFP report, will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
+  "week_of": "2026-06-21",
+  "week_thesis": "AI scoring unavailable this week. Trades selected on technical signal only.",
   "buys": [
     {
-      "symbol": "MXL",
-      "combined_score": 0.6667,
+      "symbol": "PENG",
+      "combined_score": 0.75,
       "tech_score": 1.0,
-      "sentiment_score": 0.333,
-      "reasoning": "Stock trades above analyst target with -19.6% downside, no recent news, and no social sentiment data",
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
       "confidence": "high",
       "qty_pct": 0.18
     },
     {
-      "symbol": "PENG",
-      "combined_score": 0.6443,
-      "tech_score": 0.622,
-      "sentiment_score": 0.667,
-      "reasoning": "Stock has positive news on AI infrastructure demand and no recent earnings report, but lacks social sentiment data",
+      "symbol": "VSH",
+      "combined_score": 0.7047,
+      "tech_score": 0.909,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
+      "confidence": "high",
+      "qty_pct": 0.18
+    },
+    {
+      "symbol": "INTC",
+      "combined_score": 0.5142,
+      "tech_score": 0.528,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     },
     {
       "symbol": "DELL",
-      "combined_score": 0.638,
-      "tech_score": 0.276,
-      "sentiment_score": 1.0,
-      "reasoning": "Stock has +22.3% analyst upside target, positive news on Michael Dell's net worth, and strong sector momentum",
+      "combined_score": 0.3594,
+      "tech_score": 0.219,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     },
     {
-      "symbol": "SNX",
-      "combined_score": 0.5144,
-      "tech_score": 0.029,
-      "sentiment_score": 1.0,
-      "reasoning": "Stock has -5.5% analyst downside target, positive news, and strong sector momentum",
-      "confidence": "medium",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "HPE",
-      "combined_score": 0.5052,
-      "tech_score": 0.177,
-      "sentiment_score": 0.833,
-      "reasoning": "Stock has +33.1% analyst upside target, positive news, and strong sector momentum",
+      "symbol": "HUM",
+      "combined_score": 0.3513,
+      "tech_score": 0.203,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     }
@@ -53,145 +53,145 @@
   "hold_positions": [],
   "skip_reasoning": {},
   "scoring_breakdown": {
-    "MXL": {
-      "combined": 0.6667,
-      "tech_norm": 1.0,
-      "sentiment_norm": 0.333,
-      "ai_raw_score": 4,
-      "ai_reason": "Stock trades above analyst target with -19.6% downside, no recent news, and no social sentiment data"
-    },
     "PENG": {
-      "combined": 0.6443,
-      "tech_norm": 0.622,
-      "sentiment_norm": 0.667,
-      "ai_raw_score": 6,
-      "ai_reason": "Stock has positive news on AI infrastructure demand and no recent earnings report, but lacks social sentiment data"
+      "combined": 0.75,
+      "tech_norm": 1.0,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "VSH": {
-      "combined": 0.3394,
-      "tech_norm": 0.512,
-      "sentiment_norm": 0.167,
-      "ai_raw_score": 3,
-      "ai_reason": "Stock has -42.7% analyst downside target and no recent positive news, with no social sentiment data"
+      "combined": 0.7047,
+      "tech_norm": 0.909,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "INTC": {
+      "combined": 0.5142,
+      "tech_norm": 0.528,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "DELL": {
-      "combined": 0.638,
-      "tech_norm": 0.276,
-      "sentiment_norm": 1.0,
-      "ai_raw_score": 8,
-      "ai_reason": "Stock has +22.3% analyst upside target, positive news on Michael Dell's net worth, and strong sector momentum"
+      "combined": 0.3594,
+      "tech_norm": 0.219,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "HUM": {
+      "combined": 0.3513,
+      "tech_norm": 0.203,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "FLEX": {
-      "combined": 0.3477,
+      "combined": 0.3473,
       "tech_norm": 0.195,
       "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "Stock has +7.1% analyst upside target, but lacks recent news and social sentiment data"
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "HPE": {
-      "combined": 0.5052,
-      "tech_norm": 0.177,
-      "sentiment_norm": 0.833,
-      "ai_raw_score": 7,
-      "ai_reason": "Stock has +33.1% analyst upside target, positive news, and strong sector momentum"
-    },
-    "RXO": {
-      "combined": 0.063,
-      "tech_norm": 0.126,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 2,
-      "ai_reason": "Stock has -24.0% analyst downside target, weak sector momentum, and no recent news or social sentiment data"
-    },
-    "AOSL": {
-      "combined": 0.228,
-      "tech_norm": 0.123,
-      "sentiment_norm": 0.333,
-      "ai_raw_score": 4,
-      "ai_reason": "Stock has -18.9% analyst downside target, no recent news, and no social sentiment data"
+    "VECO": {
+      "combined": 0.3427,
+      "tech_norm": 0.185,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "SMTC": {
-      "combined": 0.4775,
-      "tech_norm": 0.122,
-      "sentiment_norm": 0.833,
-      "ai_raw_score": 7,
-      "ai_reason": "Stock has +22.9% analyst upside target, strong sector momentum, but lacks recent news and social sentiment data"
-    },
-    "ON": {
-      "combined": 0.2224,
-      "tech_norm": 0.112,
-      "sentiment_norm": 0.333,
-      "ai_raw_score": 4,
-      "ai_reason": "Stock has -9.0% analyst downside target, some positive news, but lacks strong sector momentum and social sentiment data"
+      "combined": 0.326,
+      "tech_norm": 0.152,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "EXTR": {
-      "combined": 0.3012,
-      "tech_norm": 0.102,
+      "combined": 0.3159,
+      "tech_norm": 0.132,
       "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "Stock has -10.2% analyst downside target, some positive news, but lacks strong sector momentum and social sentiment data"
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "SANM": {
-      "combined": 0.1264,
-      "tech_norm": 0.086,
-      "sentiment_norm": 0.167,
-      "ai_raw_score": 3,
-      "ai_reason": "Stock has -12.3% analyst downside target, no recent news, and no social sentiment data"
-    },
-    "SYNA": {
-      "combined": 0.284,
-      "tech_norm": 0.068,
+    "AOSL": {
+      "combined": 0.302,
+      "tech_norm": 0.104,
       "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "Stock has -6.4% analyst downside target, no recent news, and no social sentiment data"
-    },
-    "TTMI": {
-      "combined": 0.4482,
-      "tech_norm": 0.063,
-      "sentiment_norm": 0.833,
-      "ai_raw_score": 7,
-      "ai_reason": "Stock has +7.7% analyst upside target, positive news, and strong sector momentum"
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "CNC": {
-      "combined": 0.1089,
-      "tech_norm": 0.051,
-      "sentiment_norm": 0.167,
-      "ai_raw_score": 3,
-      "ai_reason": "Stock has -5.9% analyst downside target, weak sector momentum, and no social sentiment data"
+      "combined": 0.3001,
+      "tech_norm": 0.1,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "IRDM": {
-      "combined": 0.0214,
-      "tech_norm": 0.043,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 2,
-      "ai_reason": "Stock has -20.0% analyst downside target, weak sector momentum, and some negative news"
+    "RXO": {
+      "combined": 0.2895,
+      "tech_norm": 0.079,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "CAR": {
-      "combined": 0.0204,
-      "tech_norm": 0.041,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 2,
-      "ai_reason": "Stock has -29.5% analyst downside target, weak sector momentum, and some negative news"
+    "ON": {
+      "combined": 0.2736,
+      "tech_norm": 0.047,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "SNX": {
-      "combined": 0.5144,
-      "tech_norm": 0.029,
-      "sentiment_norm": 1.0,
-      "ai_raw_score": 8,
-      "ai_reason": "Stock has -5.5% analyst downside target, positive news, and strong sector momentum"
+    "HPE": {
+      "combined": 0.2728,
+      "tech_norm": 0.046,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "AMN": {
-      "combined": 0.0876,
+    "SYNA": {
+      "combined": 0.2701,
+      "tech_norm": 0.04,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "FTNT": {
+      "combined": 0.2695,
+      "tech_norm": 0.039,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "PDFS": {
+      "combined": 0.2682,
+      "tech_norm": 0.036,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "SANM": {
+      "combined": 0.2619,
+      "tech_norm": 0.024,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "ACLS": {
+      "combined": 0.2547,
       "tech_norm": 0.009,
-      "sentiment_norm": 0.167,
-      "ai_raw_score": 3,
-      "ai_reason": "Stock has -8.6% analyst downside target, weak sector momentum, and no social sentiment data"
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "BRKR": {
+    "VSXY": {
       "combined": 0.25,
       "tech_norm": 0.0,
       "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "Stock has -1.8% analyst downside target, some positive news, but lacks strong sector momentum and social sentiment data"
+      "ai_raw_score": null,
+      "ai_reason": null
     }
   }
 }
