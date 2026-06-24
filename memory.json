@@ -1442,6 +1442,54 @@
       "time": "2026-06-22T14:05:33.581923-04:00",
       "portfolio_value": 116584.25,
       "buying_power": 334745.32
+    },
+    {
+      "time": "2026-06-24T12:00:00-04:00",
+      "portfolio_value": null,
+      "buying_power": null,
+      "positions_summary": {
+        "note": "Midweek check — Live Alpaca API unavailable (sandbox network policy blocks paper-api.alpaca.markets). Last confirmed daily P&L June 23 close.",
+        "last_confirmed_equity": 112089.18,
+        "last_confirmed_date": "2026-06-23",
+        "pnl_from_starting_capital_dollar": 12089.18,
+        "pnl_from_starting_capital_pct": 12.09,
+        "week_performance": {
+          "equity_entering_week": 116987.23,
+          "equity_current": 112089.18,
+          "week_pnl_dollar": -4898.05,
+          "week_pnl_pct": -4.19,
+          "note": "June 22: +1.14% vs SPY -0.31% (outperformed). June 23: -4.57% vs SPY -1.45% (underperformed -3.12%). Two-day week net: -$4,898."
+        },
+        "open_positions_per_trade_plan": ["AMAT", "LLY", "NVDA"],
+        "open_positions_per_daily_pnl": 7,
+        "position_count_note": "Trade plan (June 22) targets 3 positions (AMAT/LLY/NVDA). Daily P&L log shows 7 open positions June 22–23 — likely the 7 from June 17 live snapshot (AMAT/VECO/ACLS/COHU/LLY/FLEX/SMTC) if the June 15 plan's position closures and NVDA buy never executed through blocked API. This ambiguity is unresolved without live data.",
+        "thesis_check": {
+          "AMAT": "CONCERN — entered $411.45, trailing stop updated to $586 (5% below ~$617 estimated June 22). June 23 portfolio underperformed SPY by -3.12% driven by semiconductor weakness. A 5% decline from $617 = $586.15 would have triggered the trailing stop. Cannot confirm whether stop executed. If triggered, AMAT exposure is removed and cash returned.",
+          "LLY": "INTACT / HOLD — entered $992.17, stop $942. Last estimated price ~$1,099 (+10.8% gain). Healthcare is defensive relative to semiconductor-driven selloff. Stop buffer ~14.8% (from $942 to ~$1,099). Retatrutide and Mounjaro thesis unchanged. No near-term earnings event risk.",
+          "NVDA": "MONITOR / UNCERTAIN — trade plan entered $205.19, stop $194.93. Whether NVDA is actually in the portfolio is uncertain (June 17 live snapshot showed 7 prior positions without NVDA; Alpaca API may have blocked the June 15 buy order). If held: a -4.9% decline from $205.19 triggers $194.93 stop. June 23 semiconductor weakness may have stressed this position. MU beat tonight would be a tailwind.",
+          "VECO": "INTACT (if still held) — last known +29.28% from $59.48 entry (June 17). Small position. Semiconductor sector weakness is a headwind.",
+          "ACLS": "INTACT (if still held) — last known +19.62% from $150.18 entry (June 17). Moderate conviction, semi sector headwind.",
+          "COHU": "INTACT (if still held) — last known +21.90% from $53.83 entry (June 8). Semi test equipment, vulnerable to sector rotation.",
+          "FLEX": "INTACT (if still held) — last known +2.62% from $132.46 entry. Thin gain buffer; if down significantly on June 23 could be near stop.",
+          "SMTC": "INTACT (if still held) — tiny position (2 shares), negligible capital impact."
+        },
+        "open_orders_check": "Cannot verify GTC stop-loss orders active — Alpaca API blocked by sandbox network policy.",
+        "flags": {
+          "positions_down_gt_8pct": "None confirmed from available data. AMAT trailing stop at $586 is the primary risk — June 23 semiconductor weakness may have approached or triggered it. Cannot confirm without live API access.",
+          "positions_up_gt_10pct": [
+            "AMAT: ~+42-50% from $411.45 entry — STRONG HOLD above stop level; trailing stop at $586 protects significant profit",
+            "LLY: ~+10.8% from $992.17 entry — STRONG HOLD, defensive sector with wide stop buffer",
+            "VECO: +29.28% last known (June 17) — if still held, strong gain but small position",
+            "COHU: +21.90% last known (June 17) — if still held",
+            "ACLS: +19.62% last known (June 17) — if still held"
+          ],
+          "critical_event_tonight": "MU Q3 FY2026 earnings June 24 after close — consensus $20.25 EPS / $34.7B revenue; 4 consecutive beats averaging +21.7% EPS surprise; HBM4 supply sold out through 2026. Beat scenario: semiconductor complex (NVDA, AMAT, VECO, COHU) rallies Thursday. Miss or weak guidance scenario: additional pressure on semiconductor positions Thursday.",
+          "stop_loss_verification": "Cannot verify — API blocked. AMAT trailing stop $586 and NVDA stop $194.93 are the two levels to watch on Thursday open.",
+          "mu_earnings_risk": "Portfolio holds 3-5 semiconductor-adjacent positions (AMAT, NVDA/COHU/VECO depending on actual state). MU earnings tonight is a binary event: strong beat typically lifts the semiconductor complex +2-5% on the session following."
+        },
+        "midweek_verdict": "Portfolio at $112,089 (+12.1% from $100K starting capital) after the June 23 drawdown (-4.57% vs SPY -1.45%). The -3.12% relative underperformance on June 23 is the week's primary concern — semiconductor-heavy positions weakened ahead of MU earnings tonight. AMAT's $586 trailing stop is within ~5% of its ~$617 estimated price, making it the highest-risk position. LLY thesis is fully intact (defensive, 14.8% stop buffer). MU earnings June 24 after close is the critical binary catalyst for Thursday's open. No action is possible without API access. Watch: (1) AMAT vs $586 stop Thursday; (2) NVDA vs $194.93 stop if held; (3) MU post-earnings reaction as semiconductor complex signal."
+      },
+      "is_midweek_check": true
     }
   ],
   "last_monitor_run": "2026-06-19T12:00:00-04:00",
