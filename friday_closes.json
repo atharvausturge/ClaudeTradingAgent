@@ -1,60 +1,60 @@
 {
-  "generated_at": "2026-06-19",
-  "week_of": "2026-06-15",
-  "data_source": "last known live snapshot 2026-06-17T12:46:03-04:00; Alpaca API blocked by sandbox network policy; June 18 equity $115,818.82 (+2.34%) from daily P&L log",
-  "market_note": "Market CLOSED today (Juneteenth, June 19). No intraday prices available. Closing rule applied to June 17 last known P&L data. Any queued closes would execute on Monday June 23.",
+  "generated_at": "2026-06-26",
+  "week_of": "2026-06-22",
+  "data_source": "last known live snapshot 2026-06-24T11:41:57-04:00; Alpaca API blocked by sandbox network policy (curl exit 56); June 25 equity $119,115.29 (+6.41%) from daily P&L log",
   "close_rule": "unrealized_plpc < -0.02 (down more than 2%)",
-  "closes": [],
+  "closes": [
+    {
+      "symbol": "FLEX",
+      "last_known_plpc": -0.0203,
+      "last_known_pl_dollar": -15.10,
+      "last_known_as_of": "2026-06-24",
+      "reason": "down 2.03% — crosses Friday -2% close threshold; deteriorating trend from +20.12% peak (June 3) through +1.56% (June 10) → +2.62% (June 17) → -2.03% (June 24); thesis weakened; closing to protect capital ahead of weekend"
+    }
+  ],
   "holds": [
     {
       "symbol": "AMAT",
-      "last_known_plpc": 44.43,
-      "last_known_pl_dollar": 13472.81,
-      "last_known_as_of": "2026-06-17",
-      "reason": "up 44.43% — AI semiconductor equipment multi-year super-cycle; SCREEN Semiconductor partnership; Mizuho target $540+; dominant portfolio winner; far above -2% threshold; STRONG HOLD"
+      "last_known_plpc": 39.24,
+      "last_known_pl_dollar": 11899.25,
+      "last_known_as_of": "2026-06-24",
+      "reason": "up 39.24% — AI semiconductor equipment multi-year supercycle; dominant portfolio winner; far above -2% threshold; STRONG HOLD into next week"
     },
     {
       "symbol": "VECO",
-      "last_known_plpc": 29.28,
-      "last_known_pl_dollar": 354.80,
-      "last_known_as_of": "2026-06-17",
-      "reason": "up 29.28% — AI semiconductor laser equipment; strong recovery from prior dips; well above -2% threshold; hold into next week"
+      "last_known_plpc": 18.88,
+      "last_known_pl_dollar": 228.80,
+      "last_known_as_of": "2026-06-24",
+      "reason": "up 18.88% — semiconductor laser equipment; well above -2% threshold; MU beat tailwind June 25; hold into next week"
     },
     {
       "symbol": "COHU",
-      "last_known_plpc": 21.90,
-      "last_known_pl_dollar": 3195.09,
-      "last_known_as_of": "2026-06-17",
-      "reason": "up 21.90% — semiconductor test equipment; entered June 8 at post-NFP dip; strong recovery; above -2% threshold; hold"
+      "last_known_plpc": 18.29,
+      "last_known_pl_dollar": 2667.99,
+      "last_known_as_of": "2026-06-24",
+      "reason": "up 18.29% — semiconductor test equipment; strong gain from June 8 post-NFP dip entry; above threshold; hold"
     },
     {
       "symbol": "ACLS",
-      "last_known_plpc": 19.62,
-      "last_known_pl_dollar": 795.69,
-      "last_known_as_of": "2026-06-17",
-      "reason": "up 19.62% — semiconductor ion implant equipment; thesis intact; strong gain from June 1 entry at $150.18; above -2% threshold; hold"
+      "last_known_plpc": 12.85,
+      "last_known_pl_dollar": 521.10,
+      "last_known_as_of": "2026-06-24",
+      "reason": "up 12.85% — semiconductor ion implant equipment; thesis intact; well above -2% threshold; hold"
     },
     {
       "symbol": "LLY",
-      "last_known_plpc": 12.55,
-      "last_known_pl_dollar": 3610.81,
-      "last_known_as_of": "2026-06-17",
-      "reason": "up 12.55% — retatrutide Phase 3 TRIUMPH-1 cleared (28.3% weight loss class-best); Mounjaro Q1 revenue +125% YoY; 31 analysts Buy, $1,211 consensus target; defensive pharmaceutical; low rate sensitivity; hold"
-    },
-    {
-      "symbol": "FLEX",
-      "last_known_plpc": 2.62,
-      "last_known_pl_dollar": 19.50,
-      "last_known_as_of": "2026-06-17",
-      "reason": "up 2.62% — above -2% Friday threshold; AI server manufacturing exposure; hold into next week"
+      "last_known_plpc": 11.83,
+      "last_known_pl_dollar": 3404.04,
+      "last_known_as_of": "2026-06-24",
+      "reason": "up 11.83% — retatrutide Phase 3 TRIUMPH-1 / Mounjaro +125% YoY thesis delivering; defensive pharmaceutical; 31 analysts Buy; above threshold; hold"
     },
     {
       "symbol": "SMTC",
-      "last_known_plpc": 2.19,
-      "last_known_pl_dollar": 3.27,
-      "last_known_as_of": "2026-06-17",
-      "reason": "up 2.19% — above -2% Friday threshold; tiny 2-share position; negligible capital; hold"
+      "last_known_plpc": 7.57,
+      "last_known_pl_dollar": 11.31,
+      "last_known_as_of": "2026-06-24",
+      "reason": "up 7.57% — above -2% Friday threshold; tiny 2-share position; negligible capital; hold"
     }
   ],
-  "summary": "No closes triggered. All 7 positions are above the -2% Friday threshold based on June 17 last known data. Portfolio is having a strong week. Market closed today (Juneteenth) — GitHub Actions friday-execute will find no closes to execute."
+  "summary": "1 close triggered: FLEX (-2.03%, deteriorated from +20% peak). All other 6 positions well above -2% threshold. Last confirmed equity: $119,115.29 (June 25 close, +19.1% from $100K starting capital). June 25 +6.41% surge driven by MU Q3 FY2026 beat after June 24 close — semiconductor complex rally. GitHub Actions friday-execute-on-push will close FLEX; all others held into next week."
 }
