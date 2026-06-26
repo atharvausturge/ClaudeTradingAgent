@@ -1544,23 +1544,33 @@
       "buying_power": null,
       "is_friday_close": true,
       "positions_summary": {
-        "note": "Live Alpaca API unavailable — sandbox network policy blocks paper-api.alpaca.markets (curl exit 56). Last confirmed daily P&L June 25 close. Last live position snapshot 2026-06-24T11:41:57-04:00.",
+        "note": "Live Alpaca API unavailable \u2014 sandbox network policy blocks paper-api.alpaca.markets (curl exit 56). Last confirmed daily P&L June 25 close. Last live position snapshot 2026-06-24T11:41:57-04:00.",
         "last_confirmed_equity": 119115.29,
         "last_confirmed_date": "2026-06-25",
         "pnl_from_starting_capital_dollar": 19115.29,
         "pnl_from_starting_capital_pct": 19.12,
-        "open_positions_last_known": ["AMAT", "VECO", "COHU", "ACLS", "LLY", "SMTC", "FLEX"],
-        "friday_close_symbols": ["FLEX"],
+        "open_positions_last_known": [
+          "AMAT",
+          "VECO",
+          "COHU",
+          "ACLS",
+          "LLY",
+          "SMTC",
+          "FLEX"
+        ],
+        "friday_close_symbols": [
+          "FLEX"
+        ],
         "pl_highlights_last_known": {
-          "AMAT": "+39.24% (+$11,899) — dominant winner, AI semi equipment supercycle; STRONG HOLD",
-          "VECO": "+18.88% (+$229) — semiconductor laser equipment; strong MU-beat tailwind",
-          "COHU": "+18.29% (+$2,668) — semiconductor test equipment; post-NFP dip entry paying off",
-          "ACLS": "+12.85% (+$521) — ion implant equipment; thesis intact",
-          "LLY": "+11.83% (+$3,404) — retatrutide / Mounjaro thesis delivering; defensive sector",
-          "SMTC": "+7.57% (+$11) — tiny 2-share position; above threshold",
-          "FLEX": "-2.03% (-$15) — CLOSING: crosses -2% Friday threshold; trend deteriorated from +20% peak"
+          "AMAT": "+39.24% (+$11,899) \u2014 dominant winner, AI semi equipment supercycle; STRONG HOLD",
+          "VECO": "+18.88% (+$229) \u2014 semiconductor laser equipment; strong MU-beat tailwind",
+          "COHU": "+18.29% (+$2,668) \u2014 semiconductor test equipment; post-NFP dip entry paying off",
+          "ACLS": "+12.85% (+$521) \u2014 ion implant equipment; thesis intact",
+          "LLY": "+11.83% (+$3,404) \u2014 retatrutide / Mounjaro thesis delivering; defensive sector",
+          "SMTC": "+7.57% (+$11) \u2014 tiny 2-share position; above threshold",
+          "FLEX": "-2.03% (-$15) \u2014 CLOSING: crosses -2% Friday threshold; trend deteriorated from +20% peak"
         },
-        "june25_note": "Portfolio +6.41% on June 25 vs SPY +0.14% (+6.27% outperformance) — MU Q3 FY2026 beat after June 24 close drove semiconductor complex rally"
+        "june25_note": "Portfolio +6.41% on June 25 vs SPY +0.14% (+6.27% outperformance) \u2014 MU Q3 FY2026 beat after June 24 close drove semiconductor complex rally"
       }
     }
   ],
@@ -1776,6 +1786,17 @@
       "invested_pct": 87.8,
       "spy_daily_pct": 0.14,
       "vs_spy_pct": 6.27
+    },
+    {
+      "date": "2026-06-26",
+      "equity": 117805.78,
+      "daily_pl_dollar": -1489.82,
+      "daily_pl_pct": -1.25,
+      "open_positions": 7,
+      "realized_today_dollar": 0,
+      "invested_pct": 87.7,
+      "spy_daily_pct": -0.72,
+      "vs_spy_pct": -0.53
     }
   ],
   "weekly_summary_2026_06_15_eow_wrap": {
@@ -1886,21 +1907,59 @@
   "weekly_summary_2026_06_22_eow_wrap": {
     "week_of": "2026-06-22",
     "summary_type": "friday_eow_wrap",
-    "summary": "MU beat week — portfolio entered at $116,987 (June 22) and reached $119,115 by Thursday June 25 close (+$2,128 / +1.8% for the week). Volatile path: June 23 sold off -4.57% (-$5,362) vs SPY -1.45% (-3.12% relative underperformance) as semiconductor stocks weakened ahead of MU earnings. June 24 recovered +3.09% intraday; MU Q3 FY2026 reported after close with strong beat on EPS and HBM4 guidance. June 25 surged +6.41% (+$7,170) vs SPY +0.14% (+6.27% outperformance) — portfolio's second-best single-day gain of the year — as the semiconductor complex rallied on MU beat. Closing FLEX today (-2.03% from June 24 last snapshot, crosses -2% Friday threshold; deteriorated from +20.12% peak through +1.56% to -2.03%). All other 6 positions well above threshold. Portfolio +19.1% from $100K starting capital.",
+    "summary": "MU beat week \u2014 portfolio entered at $116,987 (June 22) and reached $119,115 by Thursday June 25 close (+$2,128 / +1.8% for the week). Volatile path: June 23 sold off -4.57% (-$5,362) vs SPY -1.45% (-3.12% relative underperformance) as semiconductor stocks weakened ahead of MU earnings. June 24 recovered +3.09% intraday; MU Q3 FY2026 reported after close with strong beat on EPS and HBM4 guidance. June 25 surged +6.41% (+$7,170) vs SPY +0.14% (+6.27% outperformance) \u2014 portfolio's second-best single-day gain of the year \u2014 as the semiconductor complex rallied on MU beat. Closing FLEX today (-2.03% from June 24 last snapshot, crosses -2% Friday threshold; deteriorated from +20.12% peak through +1.56% to -2.03%). All other 6 positions well above threshold. Portfolio +19.1% from $100K starting capital.",
     "positions_opened": [],
-    "positions_closed_friday_rule": ["FLEX"],
+    "positions_closed_friday_rule": [
+      "FLEX"
+    ],
     "close_reasons": {
       "FLEX": "Friday -2% rule: -2.03% as of June 24 last live snapshot; deteriorating trend from +20.12% peak (June 3) to +1.56% (June 10) to +2.62% (June 17) to -2.03% (June 24); thesis weakened; closing to protect capital ahead of weekend"
     },
-    "holds_eow": ["AMAT", "VECO", "COHU", "ACLS", "LLY", "SMTC"],
+    "holds_eow": [
+      "AMAT",
+      "VECO",
+      "COHU",
+      "ACLS",
+      "LLY",
+      "SMTC"
+    ],
     "pl_per_position_last_known": {
-      "AMAT": {"plpc": 39.24, "pl_dollar": 11899.25, "as_of": "2026-06-24"},
-      "VECO": {"plpc": 18.88, "pl_dollar": 228.80, "as_of": "2026-06-24"},
-      "COHU": {"plpc": 18.29, "pl_dollar": 2667.99, "as_of": "2026-06-24"},
-      "ACLS": {"plpc": 12.85, "pl_dollar": 521.10, "as_of": "2026-06-24"},
-      "LLY": {"plpc": 11.83, "pl_dollar": 3404.04, "as_of": "2026-06-24"},
-      "SMTC": {"plpc": 7.57, "pl_dollar": 11.31, "as_of": "2026-06-24"},
-      "FLEX": {"plpc": -2.03, "pl_dollar": -15.10, "as_of": "2026-06-24", "closing_friday": true}
+      "AMAT": {
+        "plpc": 39.24,
+        "pl_dollar": 11899.25,
+        "as_of": "2026-06-24"
+      },
+      "VECO": {
+        "plpc": 18.88,
+        "pl_dollar": 228.8,
+        "as_of": "2026-06-24"
+      },
+      "COHU": {
+        "plpc": 18.29,
+        "pl_dollar": 2667.99,
+        "as_of": "2026-06-24"
+      },
+      "ACLS": {
+        "plpc": 12.85,
+        "pl_dollar": 521.1,
+        "as_of": "2026-06-24"
+      },
+      "LLY": {
+        "plpc": 11.83,
+        "pl_dollar": 3404.04,
+        "as_of": "2026-06-24"
+      },
+      "SMTC": {
+        "plpc": 7.57,
+        "pl_dollar": 11.31,
+        "as_of": "2026-06-24"
+      },
+      "FLEX": {
+        "plpc": -2.03,
+        "pl_dollar": -15.1,
+        "as_of": "2026-06-24",
+        "closing_friday": true
+      }
     },
     "week_performance": {
       "equity_entering_week": 116987.23,
@@ -1908,28 +1967,48 @@
       "week_pnl_dollar": 2128.06,
       "week_pnl_pct": 1.82,
       "daily_breakdown": {
-        "2026-06-22": {"pnl_dollar": 1314.63, "pnl_pct": 1.14, "vs_spy_pct": 1.45, "note": "Outperformed — semi momentum pre-MU"},
-        "2026-06-23": {"pnl_dollar": -5362.05, "pnl_pct": -4.57, "vs_spy_pct": -3.12, "note": "Underperformed — pre-MU earnings semiconductor weakness"},
-        "2026-06-24": {"pnl_dollar": 3452.48, "pnl_pct": 3.09, "vs_spy_pct": 3.14, "note": "Recovery; MU earnings after close — strong beat"},
-        "2026-06-25": {"pnl_dollar": 7170.14, "pnl_pct": 6.41, "vs_spy_pct": 6.27, "note": "MU beat reaction — semiconductor complex surge; second-best single-day gain of the year"}
+        "2026-06-22": {
+          "pnl_dollar": 1314.63,
+          "pnl_pct": 1.14,
+          "vs_spy_pct": 1.45,
+          "note": "Outperformed \u2014 semi momentum pre-MU"
+        },
+        "2026-06-23": {
+          "pnl_dollar": -5362.05,
+          "pnl_pct": -4.57,
+          "vs_spy_pct": -3.12,
+          "note": "Underperformed \u2014 pre-MU earnings semiconductor weakness"
+        },
+        "2026-06-24": {
+          "pnl_dollar": 3452.48,
+          "pnl_pct": 3.09,
+          "vs_spy_pct": 3.14,
+          "note": "Recovery; MU earnings after close \u2014 strong beat"
+        },
+        "2026-06-25": {
+          "pnl_dollar": 7170.14,
+          "pnl_pct": 6.41,
+          "vs_spy_pct": 6.27,
+          "note": "MU beat reaction \u2014 semiconductor complex surge; second-best single-day gain of the year"
+        }
       }
     },
     "net_pnl_estimate": 2128,
     "portfolio_value_entering_week": 116987,
     "portfolio_value_eow": 119115,
     "portfolio_value_from_starting_capital_pct": 19.1,
-    "data_note": "Live Alpaca API unavailable (sandbox network policy, curl exit 56). Position P&L from last live snapshot 2026-06-24T11:41:57-04:00. June 25 equity $119,115.29 from daily P&L log. June 26 (today, Friday) intraday P&L unknown — GitHub Actions friday-execute-on-push will close FLEX.",
+    "data_note": "Live Alpaca API unavailable (sandbox network policy, curl exit 56). Position P&L from last live snapshot 2026-06-24T11:41:57-04:00. June 25 equity $119,115.29 from daily P&L log. June 26 (today, Friday) intraday P&L unknown \u2014 GitHub Actions friday-execute-on-push will close FLEX.",
     "key_events": [
-      "June 23: Semiconductor selloff -4.57% vs SPY -1.45% — pre-MU earnings weakness",
-      "June 24: MU Q3 FY2026 earnings after close — beat on EPS and HBM4 guidance; semiconductor complex re-rated",
-      "June 25: Portfolio +6.41% vs SPY +0.14% — MU beat drove semiconductor complex; second-best single-day gain of the year",
-      "FLEX: trend deteriorated from +20.12% peak to -2.03% — closing Friday per rule",
-      "MU blackout lifted post-earnings June 24 — MU now a post-earnings watchlist candidate for next week"
+      "June 23: Semiconductor selloff -4.57% vs SPY -1.45% \u2014 pre-MU earnings weakness",
+      "June 24: MU Q3 FY2026 earnings after close \u2014 beat on EPS and HBM4 guidance; semiconductor complex re-rated",
+      "June 25: Portfolio +6.41% vs SPY +0.14% \u2014 MU beat drove semiconductor complex; second-best single-day gain of the year",
+      "FLEX: trend deteriorated from +20.12% peak to -2.03% \u2014 closing Friday per rule",
+      "MU blackout lifted post-earnings June 24 \u2014 MU now a post-earnings watchlist candidate for next week"
     ],
     "watchlist_next_week": {
-      "MU": "Post-earnings entry candidate — if MU pulls back 5-10% from ATH after the event, consider entry; HBM4 demand thesis confirmed by earnings beat",
+      "MU": "Post-earnings entry candidate \u2014 if MU pulls back 5-10% from ATH after the event, consider entry; HBM4 demand thesis confirmed by earnings beat",
       "AMAT": "Continue holding toward Mizuho $540+ target; update trailing stop",
-      "LLY": "Hold — retatrutide + Mounjaro thesis intact; stop $942"
+      "LLY": "Hold \u2014 retatrutide + Mounjaro thesis intact; stop $942"
     }
   }
 }
