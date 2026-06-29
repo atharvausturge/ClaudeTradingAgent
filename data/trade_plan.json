@@ -1,5 +1,5 @@
 {
-  "week_of": "2026-06-21",
+  "week_of": "2026-06-28",
   "week_thesis": "AI scoring unavailable this week. Trades selected on technical signal only.",
   "buys": [
     {
@@ -13,35 +13,35 @@
     },
     {
       "symbol": "VSH",
-      "combined_score": 0.7047,
-      "tech_score": 0.909,
+      "combined_score": 0.66,
+      "tech_score": 0.82,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
-      "confidence": "high",
+      "confidence": "medium",
+      "qty_pct": 0.18
+    },
+    {
+      "symbol": "MU",
+      "combined_score": 0.6385,
+      "tech_score": 0.777,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
+      "confidence": "medium",
       "qty_pct": 0.18
     },
     {
       "symbol": "INTC",
-      "combined_score": 0.5142,
-      "tech_score": 0.528,
+      "combined_score": 0.5243,
+      "tech_score": 0.549,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     },
     {
-      "symbol": "DELL",
-      "combined_score": 0.3594,
-      "tech_score": 0.219,
-      "sentiment_score": 0.5,
-      "reasoning": "selected by technical score",
-      "confidence": "medium",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "HUM",
-      "combined_score": 0.3513,
-      "tech_score": 0.203,
+      "symbol": "ACMR",
+      "combined_score": 0.4495,
+      "tech_score": 0.399,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "medium",
@@ -61,132 +61,132 @@
       "ai_reason": null
     },
     "VSH": {
-      "combined": 0.7047,
-      "tech_norm": 0.909,
+      "combined": 0.66,
+      "tech_norm": 0.82,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "MU": {
+      "combined": 0.6385,
+      "tech_norm": 0.777,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "INTC": {
-      "combined": 0.5142,
-      "tech_norm": 0.528,
+      "combined": 0.5243,
+      "tech_norm": 0.549,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "ACMR": {
+      "combined": 0.4495,
+      "tech_norm": 0.399,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "DELL": {
-      "combined": 0.3594,
-      "tech_norm": 0.219,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "HUM": {
-      "combined": 0.3513,
-      "tech_norm": 0.203,
+      "combined": 0.4074,
+      "tech_norm": 0.315,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "FLEX": {
-      "combined": 0.3473,
-      "tech_norm": 0.195,
+      "combined": 0.3489,
+      "tech_norm": 0.198,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "TTMI": {
+      "combined": 0.3298,
+      "tech_norm": 0.16,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "VECO": {
-      "combined": 0.3427,
-      "tech_norm": 0.185,
+      "combined": 0.3288,
+      "tech_norm": 0.158,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "SMTC": {
-      "combined": 0.326,
-      "tech_norm": 0.152,
+    "COHU": {
+      "combined": 0.3194,
+      "tech_norm": 0.139,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "EXTR": {
-      "combined": 0.3159,
-      "tech_norm": 0.132,
+      "combined": 0.3044,
+      "tech_norm": 0.109,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "AOSL": {
-      "combined": 0.302,
+      "combined": 0.3031,
+      "tech_norm": 0.106,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "SMTC": {
+      "combined": 0.3019,
       "tech_norm": 0.104,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "CNC": {
-      "combined": 0.3001,
-      "tech_norm": 0.1,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "RXO": {
-      "combined": 0.2895,
-      "tech_norm": 0.079,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "ON": {
-      "combined": 0.2736,
-      "tech_norm": 0.047,
+    "ICHR": {
+      "combined": 0.2912,
+      "tech_norm": 0.082,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "HPE": {
-      "combined": 0.2728,
-      "tech_norm": 0.046,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "SYNA": {
-      "combined": 0.2701,
-      "tech_norm": 0.04,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "FTNT": {
-      "combined": 0.2695,
-      "tech_norm": 0.039,
+      "combined": 0.2657,
+      "tech_norm": 0.031,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "PDFS": {
-      "combined": 0.2682,
-      "tech_norm": 0.036,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "SANM": {
-      "combined": 0.2619,
-      "tech_norm": 0.024,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "ACLS": {
-      "combined": 0.2547,
+      "combined": 0.2544,
       "tech_norm": 0.009,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "VSXY": {
+    "AMKR": {
+      "combined": 0.2543,
+      "tech_norm": 0.009,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "UCTT": {
+      "combined": 0.2521,
+      "tech_norm": 0.004,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "ON": {
+      "combined": 0.2521,
+      "tech_norm": 0.004,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "SANM": {
       "combined": 0.25,
       "tech_norm": 0.0,
       "sentiment_norm": 0.5,
