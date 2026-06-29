@@ -1596,6 +1596,11 @@
         },
         "june25_note": "Portfolio +6.41% on June 25 vs SPY +0.14% (+6.27% outperformance) \u2014 MU Q3 FY2026 beat after June 24 close drove semiconductor complex rally"
       }
+    },
+    {
+      "time": "2026-06-29T12:46:03.322298-04:00",
+      "portfolio_value": 123957.23,
+      "buying_power": 355350.98
     }
   ],
   "last_monitor_run": "2026-06-29T09:00:00-04:00",
