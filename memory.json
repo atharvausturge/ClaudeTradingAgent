@@ -1607,7 +1607,7 @@
       "portfolio_value": null,
       "buying_power": null,
       "positions_summary": {
-        "note": "Midweek check — Live Alpaca API unavailable (sandbox network policy blocks paper-api.alpaca.markets, HTTP 403). Last confirmed daily P&L June 30 close.",
+        "note": "Midweek check \u2014 Live Alpaca API unavailable (sandbox network policy blocks paper-api.alpaca.markets, HTTP 403). Last confirmed daily P&L June 30 close.",
         "last_confirmed_equity": 127360.87,
         "last_confirmed_date": "2026-06-30",
         "pnl_from_starting_capital_dollar": 27360.87,
@@ -1628,38 +1628,85 @@
               "pnl_dollar": 3216.79,
               "pnl_pct": 2.59,
               "vs_spy_pct": 1.81,
-              "note": "PCE May 2026 data released June 30. Portfolio outperformed SPY by +1.81% on PCE day — suggests PCE print was broadly absorbed without rate-shock; AMAT and LLY held up relative to market."
+              "note": "PCE May 2026 data released June 30. Portfolio outperformed SPY by +1.81% on PCE day \u2014 suggests PCE print was broadly absorbed without rate-shock; AMAT and LLY held up relative to market."
             }
           }
         },
-        "target_positions_per_trade_plan": ["AMAT", "LLY", "MU"],
-        "closures_planned_june29": ["VECO", "COHU", "ACLS", "SMTC"],
-        "closure_status": "Likely executed — June 29 live snapshot showed buying_power $355,350 (up from $334,745 on June 22 despite higher equity), consistent with VECO/COHU/ACLS/SMTC being closed and cash freed. Cannot confirm without live API access.",
+        "target_positions_per_trade_plan": [
+          "AMAT",
+          "LLY",
+          "MU"
+        ],
+        "closures_planned_june29": [
+          "VECO",
+          "COHU",
+          "ACLS",
+          "SMTC"
+        ],
+        "closure_status": "Likely executed \u2014 June 29 live snapshot showed buying_power $355,350 (up from $334,745 on June 22 despite higher equity), consistent with VECO/COHU/ACLS/SMTC being closed and cash freed. Cannot confirm without live API access.",
         "thesis_check": {
-          "AMAT": "INTACT / STRONG HOLD — entry $411.45 (80 shares), last known +39.24% (+$11,899 as of June 24); June 17 live had +44.43% (+$13,473). Trade plan trailing stop updated to $617 (5% below ~$650). AMAT Master Class June 25 unveiled 6 new AI chipmaking systems for DRAM + AI packaging; analyst targets $720-$790 (Jefferies $770, B. Riley $790, Wells Fargo $740, BofA $720). Multi-year AI semiconductor equipment supercycle thesis intact. No earnings until August 13. Portfolio's defining winner. STRONG HOLD above $617 stop.",
-          "LLY": "INTACT / STRONG HOLD — entry $992.17 (33 shares), last known +24% gain (~$1,230 as of June 29). Medicare GLP-1 Bridge Program LAUNCHES TODAY (July 1) — 20 million Medicare patients eligible for Zepbound/Foundayo at $50/month, creating a major new recurring revenue channel. European Jaypirca cancer drug approval June 26 added bullish catalyst. Stop $942 (5% below $992.17 entry — wide ~14%+ buffer from current price). Next earnings late July. Defensive healthcare — low rate sensitivity. STRONG HOLD.",
-          "MU": "UNCERTAIN — trade plan initiated BUY at ~$1,133 on June 29 (stop $1,077, BofA target $1,500, avg consensus target $1,410). Whether buy order executed is unknown (API blocked). If entered: post-ATH dip thesis from $1,255 ATH is sound; HBM4 confirmed in high-volume production for Nvidia Vera Rubin; Q4 guidance $50B (+14.7% above consensus). If not entered: monitor for entry near current levels."
+          "AMAT": "INTACT / STRONG HOLD \u2014 entry $411.45 (80 shares), last known +39.24% (+$11,899 as of June 24); June 17 live had +44.43% (+$13,473). Trade plan trailing stop updated to $617 (5% below ~$650). AMAT Master Class June 25 unveiled 6 new AI chipmaking systems for DRAM + AI packaging; analyst targets $720-$790 (Jefferies $770, B. Riley $790, Wells Fargo $740, BofA $720). Multi-year AI semiconductor equipment supercycle thesis intact. No earnings until August 13. Portfolio's defining winner. STRONG HOLD above $617 stop.",
+          "LLY": "INTACT / STRONG HOLD \u2014 entry $992.17 (33 shares), last known +24% gain (~$1,230 as of June 29). Medicare GLP-1 Bridge Program LAUNCHES TODAY (July 1) \u2014 20 million Medicare patients eligible for Zepbound/Foundayo at $50/month, creating a major new recurring revenue channel. European Jaypirca cancer drug approval June 26 added bullish catalyst. Stop $942 (5% below $992.17 entry \u2014 wide ~14%+ buffer from current price). Next earnings late July. Defensive healthcare \u2014 low rate sensitivity. STRONG HOLD.",
+          "MU": "UNCERTAIN \u2014 trade plan initiated BUY at ~$1,133 on June 29 (stop $1,077, BofA target $1,500, avg consensus target $1,410). Whether buy order executed is unknown (API blocked). If entered: post-ATH dip thesis from $1,255 ATH is sound; HBM4 confirmed in high-volume production for Nvidia Vera Rubin; Q4 guidance $50B (+14.7% above consensus). If not entered: monitor for entry near current levels."
         },
-        "open_orders_check": "Cannot verify — Alpaca API blocked (HTTP 403). Cannot confirm GTC stop-loss orders for AMAT ($617), LLY ($942), or MU ($1,077 if entered) are active.",
+        "open_orders_check": "Cannot verify \u2014 Alpaca API blocked (HTTP 403). Cannot confirm GTC stop-loss orders for AMAT ($617), LLY ($942), or MU ($1,077 if entered) are active.",
         "flags": {
-          "positions_down_gt_8pct": "NONE identified — all known positions were significantly positive as of June 24 last live snapshot; week-to-date portfolio gain of +8.1% further confirms no major stop-outs",
+          "positions_down_gt_8pct": "NONE identified \u2014 all known positions were significantly positive as of June 24 last live snapshot; week-to-date portfolio gain of +8.1% further confirms no major stop-outs",
           "positions_up_gt_10pct": [
-            "AMAT: ~+39-58% from $411.45 entry — STRONG HOLD, AI semi equipment supercycle; target $720-$790",
-            "LLY: ~+24% from $992.17 entry — STRONG HOLD, Medicare GLP-1 Bridge launches today July 1",
+            "AMAT: ~+39-58% from $411.45 entry \u2014 STRONG HOLD, AI semi equipment supercycle; target $720-$790",
+            "LLY: ~+24% from $992.17 entry \u2014 STRONG HOLD, Medicare GLP-1 Bridge launches today July 1",
             "MU: entry unconfirmed via blocked API; if entered at ~$1,133, monitoring for hold above $1,077 stop"
           ],
-          "stop_loss_verification": "Cannot verify — API blocked (HTTP 403). AMAT trailing stop $617 and LLY stop $942 are critical levels. MU stop $1,077 if entered.",
-          "lly_catalyst_today": "ACTIVE — LLY Medicare GLP-1 Bridge Program launches July 1 (today). ~20M Medicare patients eligible at $50/month Zepbound/Foundayo. Significant new recurring revenue channel. This is a real-time fundamental catalyst.",
+          "stop_loss_verification": "Cannot verify \u2014 API blocked (HTTP 403). AMAT trailing stop $617 and LLY stop $942 are critical levels. MU stop $1,077 if entered.",
+          "lly_catalyst_today": "ACTIVE \u2014 LLY Medicare GLP-1 Bridge Program launches July 1 (today). ~20M Medicare patients eligible at $50/month Zepbound/Foundayo. Significant new recurring revenue channel. This is a real-time fundamental catalyst.",
           "pce_absorbed": "PCE May 2026 (June 30) was a primary risk flagged in trade plan. Portfolio +2.59% vs SPY +0.78% on PCE day (+1.81% relative outperformance) suggests the market absorbed the data without a rate-shock selloff.",
-          "holiday_risk": "NYSE closed Friday July 3 (July 4 Saturday observed). Today Wednesday July 1 is day 3 of 4 trading days this week. Thursday July 2 is the final full session before the long weekend. No time to recover from any Thursday shock — monitor closely tomorrow.",
-          "upcoming_earnings": "No portfolio holdings report this week. AMAT next earnings August 13. LLY next earnings late July. MU (if entered) — no near-term earnings risk."
+          "holiday_risk": "NYSE closed Friday July 3 (July 4 Saturday observed). Today Wednesday July 1 is day 3 of 4 trading days this week. Thursday July 2 is the final full session before the long weekend. No time to recover from any Thursday shock \u2014 monitor closely tomorrow.",
+          "upcoming_earnings": "No portfolio holdings report this week. AMAT next earnings August 13. LLY next earnings late July. MU (if entered) \u2014 no near-term earnings risk."
         },
-        "midweek_verdict": "Portfolio at estimated $127,361 (+27.4% from $100K starting capital) after strongest 2-day week start of the cycle (Mon +5.56%, Tue +2.59% = +8.1% week-to-date). PCE May 2026 risk on June 30 was absorbed — outperformed SPY by +1.81% on that day. LLY Medicare GLP-1 Bridge Program launches TODAY (July 1), providing immediate fundamental support for our largest-gain healthcare position. AMAT thesis fully intact with $720-$790 analyst targets. No positions down >8%. AMAT and LLY both remain strong holds well above +10% threshold. MU entry is the key unknown — API unavailable prevents confirmation. Holiday week (NYSE closed Friday July 3): Thursday July 2 is the final full session; monitor stop levels carefully. No action required midweek given strong performance and intact theses."
+        "midweek_verdict": "Portfolio at estimated $127,361 (+27.4% from $100K starting capital) after strongest 2-day week start of the cycle (Mon +5.56%, Tue +2.59% = +8.1% week-to-date). PCE May 2026 risk on June 30 was absorbed \u2014 outperformed SPY by +1.81% on that day. LLY Medicare GLP-1 Bridge Program launches TODAY (July 1), providing immediate fundamental support for our largest-gain healthcare position. AMAT thesis fully intact with $720-$790 analyst targets. No positions down >8%. AMAT and LLY both remain strong holds well above +10% threshold. MU entry is the key unknown \u2014 API unavailable prevents confirmation. Holiday week (NYSE closed Friday July 3): Thursday July 2 is the final full session; monitor stop levels carefully. No action required midweek given strong performance and intact theses."
       },
       "is_midweek_check": true
+    },
+    {
+      "time": "2026-07-01T12:06:16.716827-04:00",
+      "portfolio_value": 121417.45,
+      "buying_power": 348421.44,
+      "positions": [
+        {
+          "symbol": "ACLS",
+          "pl_pct": 18.64,
+          "pl_dollar": 756.0
+        },
+        {
+          "symbol": "AMAT",
+          "pl_pct": 56.99,
+          "pl_dollar": 17284.49
+        },
+        {
+          "symbol": "COHU",
+          "pl_pct": 31.63,
+          "pl_dollar": 4613.77
+        },
+        {
+          "symbol": "FLEX",
+          "pl_pct": -2.92,
+          "pl_dollar": -21.7
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 19.93,
+          "pl_dollar": 5735.49
+        },
+        {
+          "symbol": "VECO",
+          "pl_pct": 16.52,
+          "pl_dollar": 200.1
+        }
+      ],
+      "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-06-29T09:00:00-04:00",
+  "last_monitor_run": "2026-07-01T12:06:16.716827-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
