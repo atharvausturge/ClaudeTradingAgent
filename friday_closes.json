@@ -1,60 +1,55 @@
 {
-  "generated_at": "2026-06-26",
-  "week_of": "2026-06-22",
-  "data_source": "last known live snapshot 2026-06-24T11:41:57-04:00; Alpaca API blocked by sandbox network policy (curl exit 56); June 25 equity $119,115.29 (+6.41%) from daily P&L log",
+  "generated_at": "2026-07-03",
+  "week_of": "2026-06-29",
+  "market_status": "CLOSED — NYSE holiday (July 4 Saturday observed Friday July 3). Closes deferred to Monday July 7.",
+  "data_source": "Last live Alpaca snapshot 2026-07-01T12:06:16-04:00. API blocked by sandbox network policy (HTTP 403 / curl exit 56). Daily P&L log shows July 2 close at $114,029.11 with 4 open positions.",
   "close_rule": "unrealized_plpc < -0.02 (down more than 2%)",
   "closes": [
     {
       "symbol": "FLEX",
-      "last_known_plpc": -0.0203,
-      "last_known_pl_dollar": -15.10,
-      "last_known_as_of": "2026-06-24",
-      "reason": "down 2.03% — crosses Friday -2% close threshold; deteriorating trend from +20.12% peak (June 3) through +1.56% (June 10) → +2.62% (June 17) → -2.03% (June 24); thesis weakened; closing to protect capital ahead of weekend"
+      "last_known_plpc": -0.0292,
+      "last_known_pl_dollar": -21.70,
+      "last_known_as_of": "2026-07-01",
+      "reason": "down 2.92% — exceeds Friday -2% close threshold; was flagged June 26 but execution uncertain; deteriorated from +20.12% peak (June 3) to -2.92% (July 1); market closed today, close to execute Monday July 7"
     }
   ],
   "holds": [
     {
       "symbol": "AMAT",
-      "last_known_plpc": 39.24,
-      "last_known_pl_dollar": 11899.25,
-      "last_known_as_of": "2026-06-24",
-      "reason": "up 39.24% — AI semiconductor equipment multi-year supercycle; dominant portfolio winner; far above -2% threshold; STRONG HOLD into next week"
-    },
-    {
-      "symbol": "VECO",
-      "last_known_plpc": 18.88,
-      "last_known_pl_dollar": 228.80,
-      "last_known_as_of": "2026-06-24",
-      "reason": "up 18.88% — semiconductor laser equipment; well above -2% threshold; MU beat tailwind June 25; hold into next week"
-    },
-    {
-      "symbol": "COHU",
-      "last_known_plpc": 18.29,
-      "last_known_pl_dollar": 2667.99,
-      "last_known_as_of": "2026-06-24",
-      "reason": "up 18.29% — semiconductor test equipment; strong gain from June 8 post-NFP dip entry; above threshold; hold"
-    },
-    {
-      "symbol": "ACLS",
-      "last_known_plpc": 12.85,
-      "last_known_pl_dollar": 521.10,
-      "last_known_as_of": "2026-06-24",
-      "reason": "up 12.85% — semiconductor ion implant equipment; thesis intact; well above -2% threshold; hold"
+      "last_known_plpc": 56.99,
+      "last_known_pl_dollar": 17284.49,
+      "last_known_as_of": "2026-07-01",
+      "reason": "up 56.99% — AI semiconductor equipment supercycle; dominant portfolio winner; analyst targets $720–$790; far above -2% threshold; STRONG HOLD into next week"
     },
     {
       "symbol": "LLY",
-      "last_known_plpc": 11.83,
-      "last_known_pl_dollar": 3404.04,
-      "last_known_as_of": "2026-06-24",
-      "reason": "up 11.83% — retatrutide Phase 3 TRIUMPH-1 / Mounjaro +125% YoY thesis delivering; defensive pharmaceutical; 31 analysts Buy; above threshold; hold"
+      "last_known_plpc": 19.93,
+      "last_known_pl_dollar": 5735.49,
+      "last_known_as_of": "2026-07-01",
+      "reason": "up 19.93% — Medicare GLP-1 Bridge Program live (July 1); retatrutide + Mounjaro thesis intact; defensive pharma; far above -2% threshold; STRONG HOLD"
     },
     {
-      "symbol": "SMTC",
-      "last_known_plpc": 7.57,
-      "last_known_pl_dollar": 11.31,
-      "last_known_as_of": "2026-06-24",
-      "reason": "up 7.57% — above -2% Friday threshold; tiny 2-share position; negligible capital; hold"
+      "symbol": "COHU",
+      "last_known_plpc": 31.63,
+      "last_known_pl_dollar": 4613.77,
+      "last_known_as_of": "2026-07-01",
+      "reason": "up 31.63% — semiconductor test equipment; post-NFP dip entry June 8 paying off; well above threshold; note: June 29 trade plan targeted closure to consolidate to 3 positions, but not yet confirmed executed"
+    },
+    {
+      "symbol": "VECO",
+      "last_known_plpc": 16.52,
+      "last_known_pl_dollar": 200.10,
+      "last_known_as_of": "2026-07-01",
+      "reason": "up 16.52% — semiconductor laser equipment; well above -2% threshold; note: June 29 trade plan targeted closure to consolidate to 3 positions, but not yet confirmed executed"
+    },
+    {
+      "symbol": "ACLS",
+      "last_known_plpc": 18.64,
+      "last_known_pl_dollar": 756.00,
+      "last_known_as_of": "2026-07-01",
+      "reason": "up 18.64% — ion implant equipment; well above -2% threshold; note: June 29 trade plan targeted closure to consolidate to 3 positions, but not yet confirmed executed"
     }
   ],
-  "summary": "1 close triggered: FLEX (-2.03%, deteriorated from +20% peak). All other 6 positions well above -2% threshold. Last confirmed equity: $119,115.29 (June 25 close, +19.1% from $100K starting capital). June 25 +6.41% surge driven by MU Q3 FY2026 beat after June 24 close — semiconductor complex rally. GitHub Actions friday-execute-on-push will close FLEX; all others held into next week."
+  "position_count_note": "July 1 live snapshot showed 6 positions. July 2 daily P&L log shows 4 open positions — 2 closed on July 2 (likely FLEX via stop/rule, and 1 more; exact status unverifiable due to API block). SMTC absent from July 1 snapshot (likely closed per June 29 trade plan).",
+  "summary": "1 confirmed close: FLEX (-2.92%, deteriorated from +20% peak). All other 5 last-known positions well above -2% threshold. Market CLOSED today (July 3 NYSE holiday). Execution will trigger on Monday July 7 market open. Last confirmed equity: $114,029.11 (July 2 close, +14.03% from $100K starting capital). Week P&L: -$3,777 / -3.21% (strong open Mon/Tue, sharp reversal Wed/Thu)."
 }

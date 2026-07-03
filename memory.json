@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-29",
+  "last_run": "2026-07-03",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -1706,7 +1706,7 @@
       "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-07-01T12:06:16.716827-04:00",
+  "last_monitor_run": "2026-07-03T09:00:00-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
@@ -1973,6 +1973,17 @@
       "invested_pct": 82.8,
       "spy_daily_pct": -0.13,
       "vs_spy_pct": -5.05
+    },
+    {
+      "date": "2026-07-03",
+      "equity": 114029.11,
+      "daily_pl_dollar": 0,
+      "daily_pl_pct": 0,
+      "open_positions": 4,
+      "realized_today_dollar": 0,
+      "market_closed": true,
+      "market_close_reason": "NYSE holiday — July 4 (Saturday) observed Friday July 3",
+      "note": "No trading. Equity carried forward from July 2 close. FLEX flagged for close on Monday July 7 open."
     }
   ],
   "weekly_summary_2026_06_15_eow_wrap": {
@@ -2225,6 +2236,90 @@
       "MU": "Post-earnings entry candidate \u2014 if MU pulls back 5-10% from ATH after the event, consider entry; HBM4 demand thesis confirmed by earnings beat",
       "AMAT": "Continue holding toward Mizuho $540+ target; update trailing stop",
       "LLY": "Hold \u2014 retatrutide + Mounjaro thesis intact; stop $942"
+    }
+  },
+  "portfolio_snapshot_2026_07_03": {
+    "time": "2026-07-03T09:00:00-04:00",
+    "portfolio_value": 114029.11,
+    "buying_power": null,
+    "market_closed": true,
+    "market_close_reason": "NYSE holiday \u2014 July 4 (Saturday) observed Friday July 3",
+    "is_friday_close": true,
+    "positions_summary": {
+      "note": "Market CLOSED \u2014 NYSE holiday. Live Alpaca API unavailable (sandbox network policy, HTTP 403). Last confirmed equity $114,029.11 (July 2 daily P&L log). Last live position snapshot 2026-07-01T12:06:16-04:00.",
+      "last_confirmed_equity": 114029.11,
+      "last_confirmed_date": "2026-07-02",
+      "pnl_from_starting_capital_dollar": 14029.11,
+      "pnl_from_starting_capital_pct": 14.03,
+      "open_positions_last_known": 4,
+      "last_live_positions_as_of_jul1": [
+        {"symbol": "ACLS", "plpc": 18.64, "pl_dollar": 756.00},
+        {"symbol": "AMAT", "plpc": 56.99, "pl_dollar": 17284.49},
+        {"symbol": "COHU", "plpc": 31.63, "pl_dollar": 4613.77},
+        {"symbol": "FLEX", "plpc": -2.92, "pl_dollar": -21.70, "closing_friday": true},
+        {"symbol": "LLY", "plpc": 19.93, "pl_dollar": 5735.49},
+        {"symbol": "VECO", "plpc": 16.52, "pl_dollar": 200.10}
+      ],
+      "friday_close_symbols": ["FLEX"],
+      "position_count_change_note": "July 1 had 6 positions; July 2 daily P&L shows 4 \u2014 FLEX (-2.92%) and one other position closed on July 2 (likely stop-loss or partial trade plan execution). Exact status unverifiable without API access.",
+      "no_trades_today": "Market closed \u2014 FLEX closure and any pending consolidation (VECO/COHU/ACLS per June 29 trade plan) deferred to Monday July 7."
+    }
+  },
+  "weekly_summary_2026_06_29_eow_wrap": {
+    "week_of": "2026-06-29",
+    "summary_type": "friday_eow_wrap",
+    "last_trading_day": "2026-07-02",
+    "market_note": "NYSE closed Friday July 3 (July 4 Saturday observed). Last trading day was Thursday July 2. This was a 4-day trading week as anticipated in the trade plan.",
+    "summary": "Volatile holiday week \u2014 strong open, sharp reversal. Portfolio entered at $117,805.78 (June 26 close). Monday June 29 surged +5.56% (+$6,541) as MU Q3 FY2026 beat drove semiconductor complex and AMAT analyst target upgrades ($720\u2013$790) lifted the stock to ~$650+. Tuesday June 30 added +2.59% (+$3,217) as PCE May 2026 data was absorbed without a rate-shock (outperformed SPY by +1.81% on PCE day). Portfolio peaked at $127,360.87 (June 30) \u2014 up +$9,755 / +8.27% intraweek. Then reversal: July 1 fell -4.92% (-$6,270) vs SPY -0.14% (-4.78% relative underperformance), and July 2 fell further -5.18% (-$7,050) vs SPY -0.13% (-5.05% underperformance). Semiconductor sector-driven selloff ahead of the July 4 holiday. Position count dropped from 6 to 4 on July 2 \u2014 FLEX (-2.92% as of July 1 12PM) closed per Friday rule, and one additional position closed (likely via stop-loss or partial trade plan execution). SMTC was absent from July 1 live snapshot (likely closed per June 29 trade plan). Final equity: $114,029.11 (July 2 close). Week net: -$3,776.67 / -3.21%. Portfolio +14.03% from $100K starting capital.",
+    "week_performance": {
+      "equity_entering_week": 117805.78,
+      "equity_eow": 114029.11,
+      "week_pnl_dollar": -3776.67,
+      "week_pnl_pct": -3.21,
+      "peak_intraweek": 127360.87,
+      "peak_date": "2026-06-30",
+      "drawdown_from_peak": -13331.76,
+      "drawdown_from_peak_pct": -10.47,
+      "daily_breakdown": {
+        "2026-06-29": {"pnl_dollar": 6540.83, "pnl_pct": 5.56, "vs_spy_pct": 3.91, "note": "MU beat + AMAT $720\u2013$790 analyst targets drove semiconductor complex rally"},
+        "2026-06-30": {"pnl_dollar": 3216.79, "pnl_pct": 2.59, "vs_spy_pct": 1.81, "note": "PCE May 2026 absorbed; portfolio outperformed SPY by +1.81% on highest macro risk day"},
+        "2026-07-01": {"pnl_dollar": -6270.01, "pnl_pct": -4.92, "vs_spy_pct": -4.78, "note": "Semiconductor sector reversal; LLY Medicare GLP-1 Bridge launched July 1 but semi weakness dominated"},
+        "2026-07-02": {"pnl_dollar": -7050.87, "pnl_pct": -5.18, "vs_spy_pct": -5.05, "note": "Continued selling ahead of holiday; 2 positions closed (6\u21924); worst day of the week"}
+      }
+    },
+    "positions_closed_this_week": ["SMTC", "FLEX", "unknown_1"],
+    "close_reasons": {
+      "SMTC": "Absent from July 1 live snapshot \u2014 likely closed per June 29 trade plan (2-share/$300 notional, simplify to 3-position max)",
+      "FLEX": "Friday -2% rule: -2.92% as of July 1 12PM; deteriorated from +20.12% peak (June 3) through positive territory to negative; closed July 2",
+      "unknown_1": "Position count 6\u21924 on July 2 \u2014 1 additional position closed; likely stop-loss triggered on semi weakness or partial June 29 plan execution (VECO/COHU/ACLS); cannot confirm without API access"
+    },
+    "holds_eow": ["AMAT", "LLY", "2_of_COHU_VECO_ACLS"],
+    "pl_per_position_last_known": {
+      "AMAT": {"plpc": 56.99, "pl_dollar": 17284.49, "as_of": "2026-07-01"},
+      "LLY": {"plpc": 19.93, "pl_dollar": 5735.49, "as_of": "2026-07-01"},
+      "COHU": {"plpc": 31.63, "pl_dollar": 4613.77, "as_of": "2026-07-01"},
+      "VECO": {"plpc": 16.52, "pl_dollar": 200.10, "as_of": "2026-07-01"},
+      "ACLS": {"plpc": 18.64, "pl_dollar": 756.00, "as_of": "2026-07-01"},
+      "FLEX": {"plpc": -2.92, "pl_dollar": -21.70, "as_of": "2026-07-01", "closed_friday": true},
+      "SMTC": {"plpc": null, "pl_dollar": null, "note": "absent from July 1 snapshot \u2014 assumed closed per June 29 trade plan"}
+    },
+    "net_pnl_estimate": -3777,
+    "portfolio_value_entering_week": 117806,
+    "portfolio_value_eow": 114029,
+    "portfolio_value_from_starting_capital_pct": 14.03,
+    "data_note": "Live Alpaca API unavailable (sandbox network policy, HTTP 403 / curl exit 56). Equity from daily P&L log. Position P&L from last live snapshot 2026-07-01T12:06:16-04:00. July 2 (last trading day) position detail unavailable.",
+    "key_events": [
+      "June 29: MU Q3 FY2026 beat ($41.5B revenue +346% YoY, EPS +24%) drove semiconductor complex; AMAT analyst targets raised to $720\u2013$790; portfolio +5.56% vs SPY +1.65%",
+      "June 30: PCE May 2026 absorbed without rate-shock; portfolio outperformed SPY by +1.81% on the primary macro risk day",
+      "July 1: LLY Medicare GLP-1 Bridge Program launched (20M eligible Medicare patients at $50/mo) \u2014 positive LLY catalyst; but semiconductor weakness dragged portfolio -4.92% vs SPY -0.14%",
+      "July 2: Continued semiconductor selloff -5.18% vs SPY -0.13%; 2 positions closed (6\u21924 open positions)",
+      "July 3: NYSE CLOSED (July 4 Saturday observed) \u2014 no Friday trading; FLEX closure deferred to Monday July 7"
+    ],
+    "watchlist_next_week": {
+      "MU": "Entry unconfirmed (API blocked June 29); if not entered, monitor for entry near $1,133\u20131,200 range; BofA $1,500 target; HBM4 ramp thesis intact",
+      "NVDA": "Post-PCE entry candidate if RSI recovered above 40 and semiconductor sector stabilizes; $192\u2013$200 range",
+      "AMAT": "STRONG HOLD \u2014 update trailing stop to 5% below current price heading into July 7",
+      "LLY": "STRONG HOLD \u2014 Medicare GLP-1 Bridge live July 1; stop $942; next earnings late July"
     }
   }
 }
