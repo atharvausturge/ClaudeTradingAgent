@@ -2043,6 +2043,17 @@
       "market_closed": true,
       "market_close_reason": "NYSE holiday \u2014 July 4 (Saturday) observed Friday July 3",
       "note": "No trading. Equity carried forward from July 2 close. FLEX flagged for close on Monday July 7 open."
+    },
+    {
+      "date": "2026-07-06",
+      "equity": 112391.52,
+      "daily_pl_dollar": -1232.35,
+      "daily_pl_pct": -1.08,
+      "open_positions": 5,
+      "realized_today_dollar": 0,
+      "invested_pct": 94.1,
+      "spy_daily_pct": 0.87,
+      "vs_spy_pct": -1.95
     }
   ],
   "weekly_summary_2026_06_15_eow_wrap": {
