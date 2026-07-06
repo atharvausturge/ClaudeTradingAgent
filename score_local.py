@@ -16,7 +16,7 @@ MIN_PRICE    = 25.0
 MIN_RS       = -0.05     # must beat SPY by at least -5pp over 60 days
 
 # Symbols to exclude from scoring (earnings this week or known issues)
-EARNINGS_BLACKOUT = set()  # No universe symbols reporting week of June 29 - July 3 2026
+EARNINGS_BLACKOUT = {"LRCX"}  # LRCX earnings ~July 29 2026
 ALWAYS_SKIP       = set()
 
 

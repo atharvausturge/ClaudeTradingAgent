@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-03",
+  "last_run": "2026-07-06",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -791,6 +791,31 @@
       ],
       "net_pnl_estimate": null,
       "portfolio_value_entering_week": 121000
+    },
+    {
+      "week_of": "2026-07-06",
+      "thesis": "Semiconductor sector profit-taking after record H1 creates rotation. MU likely stopped out at -5% from late-June entry (~$1,133→$975, -14% drawdown). AMD replaces MU as AI compute play — #1 momentum scorer (RS60=+66%, Data Center $5.8B +57% YoY, OpenAI+Meta 6GW GPU deployments, earnings Aug 4). AMAT holds through equipment-sector correction (stop $391 far from $603 current, supercycle intact). LLY holds on Medicare GLP-1 Bridge July 1 launch success.",
+      "positions_opened": ["AMD"],
+      "positions_closed_likely_stopped": ["MU"],
+      "close_reasons": {
+        "MU": "Stop likely triggered at ~$1,076 (-5% from ~$1,133 entry); price hit $975 by July 2 (-14% from entry range). AI memory thesis intact long-term — watchlist for re-entry above $1,050."
+      },
+      "holds": ["AMAT", "LLY"],
+      "watchlist": ["NVDA", "MU", "CRWD"],
+      "blackouts": {
+        "LRCX": "earnings July 29"
+      },
+      "key_events_this_week": [
+        "FOMC minutes July 8 — Warsh data-dependence framework, no forward guidance",
+        "CPI July 14 — key inflation print (PCE running 4%+ above 2% target)",
+        "Weekly jobless claims July 9",
+        "AMD: Helios GPU ramp begins Q3 2026 — OpenAI/Meta 6GW deployment windows",
+        "AMAT/MU: Semiconductor sector correction (profit-taking after record H1, not thesis change)"
+      ],
+      "scoring_notes": "45 symbols scored from bars_raw.json (data vintage late June). SPY 60d return +44%. 25 passed filters. Top: AMD(+0.234, RS60=+66%), MU(+0.201, RS60=+54%), NVDA(+0.110, RS60=+21%). LRCX blackout (earnings July 29). Bars stale vs actual prices — actual: AMAT $603, MU $975, AMD $540, LLY ~$1,240, NVDA $197.",
+      "net_pnl_estimate": null,
+      "portfolio_value_entering_week": 128000,
+      "data_note": "Alpaca API unavailable (network policy). Prices via web search July 3-6 2026. Bars_raw.json stale (late June data). Scoring directionally valid on percentage-based metrics."
     }
   ],
   "portfolio_snapshots": [

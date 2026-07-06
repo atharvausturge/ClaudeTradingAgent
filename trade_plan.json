@@ -1,82 +1,70 @@
 {
-  "week_of": "2026-06-29",
-  "generated_at": "2026-06-29T09:00:00-04:00",
-  "week_thesis": "MU earnings confirmed the AI memory supercycle is accelerating beyond all prior estimates — Q3 revenue $41.5B (+346% YoY), EPS $25.04 (+23.8% beat), Q4 guidance $50B (+14.7% above consensus), HBM4 in high-volume production for Nvidia Vera Rubin. Portfolio consolidates to 3 maximum positions: hold AMAT (6 new AI chipmaking systems unveiled June 25 Master Class, analyst targets lifted to $720–$790; +58% from entry) and LLY (Medicare GLP-1 Bridge Program launching July 1 targeting 20 million Medicare patients at $50/mo; European Jaypirca cancer drug approved June 26; +24% from entry), and initiate MU (post-ATH pullback from $1,255 to ~$1,133, BofA target $1,500, 96% Buy/Strong Buy consensus). Close VECO, COHU, ACLS, SMTC to achieve 3-position max and lock 12–20% gains in each. Key macro risk: PCE May data June 30 (headline already at 4.1%, core 3.4% — could add rate-hike pressure). July 4 on Saturday — NYSE observes Friday July 3 as holiday, making this a 4-day trading week.",
+  "week_of": "2026-07-06",
+  "generated_at": "2026-07-06T09:00:00-04:00",
+  "week_thesis": "Semiconductor sector pullback (profit-taking after record first half) creates a clean rotation opportunity as AI fundamentals remain intact. MU was likely stopped out at -5% from its late-June entry (~$1,133→$975 by July 2, a -14% drawdown), freeing one slot. AMD replaces MU as the primary AI compute play — it has dramatically superior momentum (RS60=+66% vs SPY +44%), a record $5.8B Data Center quarter (+57% YoY), locked OpenAI and Meta 6GW GPU deployment partnerships, and its Helios GPU ramp begins Q3-Q4. Earnings safely on Aug 4 — four weeks away. AMAT holds through the semiconductor equipment correction: the original entry stop ($391) is $212 below the current price ($603); the AI equipment supercycle is confirmed (30%+ industry growth guidance, analyst avg target $578 vs current $603). LLY holds on the Medicare GLP-1 Bridge program launching July 1, which drives volume growth over price cuts (stock surged +7.1% on June 26 on this news, analyst avg target $1,221). Key macro events: FOMC minutes July 8, weekly jobless claims July 9, CPI July 14. Fed holds at 3.50-3.75% under Warsh data-dependence framework. Sector rotation from tech to healthcare/financials creates near-term tech headwind, offset by AMAT and AMD's AI structural tailwinds. Blackout: LRCX (earnings July 29).",
   "market_context": {
-    "spy_data_note": "Bars data ~3-4 weeks stale (early June). Current prices sourced via web search June 29 2026.",
-    "amat_price": 650.52,
-    "amat_note": "Pre-market June 29 +3.8%; June 25 ATH $669.22; closed June 26 ~$626 (-4.36%); up 144% YTD",
-    "lly_price": 1229.77,
-    "lly_note": "Up +7.13% June 29 on Medicare GLP-1 Bridge Program (July 1 launch, ~20M patients, $50/mo) + European Jaypirca approval June 26",
-    "mu_price_range": "1133-1247",
-    "mu_note": "Post-ATH pullback from $1,255 (June 25); Q3 EPS $25.04 vs $20.20 est (+24% beat); revenue $41.5B vs $34.7B est; Q4 guidance $50B",
-    "nvda_price": 192.71,
-    "nvda_note": "June 28 close; RSI 31 (oversold); below prior $194.93 stop; not in portfolio",
-    "amd_price": 518.72,
-    "amd_note": "June 29; 10% above $472 consensus analyst target; 130%+ YTD; insufficient margin of safety",
+    "spy_note": "SPY -0.13% July 6 on tech sector rotation toward healthcare/financials",
+    "amat_price": 603.04,
+    "amat_note": "July 2 close; down -7.35% on semiconductor profit-taking after record H1; entry $411.45, stop $390.88, still +46.5% from entry; semicon equipment supercycle intact",
+    "lly_price_approx": 1240.0,
+    "lly_note": "Medicare GLP-1 Bridge July 1 launch; +7.1% on June 26; analyst avg target $1,221; entry $992.17, +25% from entry",
+    "mu_note": "Entry late June ~$1,133-$1,247; July 2 close ~$975; -14% from entry — stop likely triggered automatically at -5% (~$1,076). Slot freed.",
+    "amd_price": 540.0,
+    "amd_note": "Down from ATH $580.91 on June 30; up 152% YTD; Data Center $5.8B +57% YoY; OpenAI+Meta 6GW GPU partnerships; earnings Aug 4",
+    "nvda_price": 197.58,
+    "nvda_note": "July 2 close; 38-analyst Strong Buy; avg target $309 (+56%); Blackwell sold out; watchlist for next slot",
     "macro_risks": [
-      "PCE May 2026 due June 30: headline 4.1% (3-year high), core 3.4% — hot print could accelerate rate-hike expectations",
-      "Fed hold at 3.50–3.75%; 9 of 19 FOMC members pencil in at least 1 hike in 2026; PCE forecast 3.6% year-end",
-      "July 4 holiday Saturday — NYSE closes Friday July 3; effective 4-day trading week",
-      "NVDA in descending channel at $192 (RSI 31) — semiconductor sector leadership uncertainty"
-    ],
-    "tailwinds": [
-      "MU Q3 FY2026 record: $41.5B revenue (+346% YoY), 84.6% gross margin, Q4 guided $50B; HBM4 volume production begun",
-      "AMAT Master Class June 25: 6 new AI chipmaking systems for DRAM + advanced packaging; analyst targets $720–$790",
-      "LLY Medicare GLP-1 Bridge July 1: 20M eligible patients at $50/mo Zepbound/Foundayo; European Jaypirca cancer drug backed",
-      "AI semiconductor supercycle: MU beat confirms HBM demand structural, not cyclical; AMAT multi-year equipment cycle",
-      "Quiet earnings calendar this week — no blackout names from our universe"
+      "FOMC minutes July 8 — Warsh communication shift (pure data dependence, no forward guidance)",
+      "CPI July 14 — key inflation print under elevated 4%+ PCE regime",
+      "Weekly jobless claims July 9 — labor market health check",
+      "Semiconductor sector rotation — profit-taking after record H1 for semicon names; near-term headwind for AMAT, AMD"
     ]
   },
   "buys": [
     {
-      "symbol": "MU",
-      "reasoning": "Micron's Q3 FY2026 print was the most decisive earnings beat of the AI supercycle: revenue $41.5B (+346% YoY, vs $34.7B consensus), EPS $25.04 (vs $20.20, +24% beat), gross margin 84.6% (record), net income $28.2B. Q4 guidance of $50B revenue with 86% margins came in $6.4B above expectations — a 14.7% guide-beat before the quarter started. HBM4 is in high-volume production for the lead customer (Nvidia Vera Rubin) with bandwidth above 2.8 TB/s and 20% better power efficiency vs HBM3E; $1B+ in HBM4 revenue already shipped this quarter. Nvidia certified Micron (alongside Samsung and SK Hynix) for Vera Rubin HBM4 supply, confirming a structural multi-year revenue floor. 41% Strong Buy / 55% Buy analyst consensus (96% Buy). BofA target $1,500 (+32% from ~$1,133); Phillip Securities raised to $1,870; average 12m target ~$1,410. Post-ATH pullback from $1,255 to ~$1,133 (-9.7%) is exactly the 'buy the dip after strong earnings' setup flagged in last week's watchlist. The June 22 plan explicitly identified MU post-earnings as top candidate if blackout lifted. RSI was 34.7 in stale bars (approaching oversold); actual RSI likely similar given pullback from ATH. Forward P/E below 12x on $50B quarterly run-rate is extremely attractive for a structural HBM leader.",
+      "symbol": "AMD",
+      "reasoning": "AMD is the #1 momentum scorer in the 45-stock universe (score=+0.234, RS60=+66% vs SPY +44%). Data Center segment delivered record $5.8B in Q1 2026, up 57% YoY and now more than half of total revenue. AMD and OpenAI signed a 6GW GPU deployment partnership; AMD and Meta signed another 6GW deal — these represent multi-year locked revenue. Helios GPU ramp begins Q3 2026, exactly when OpenAI and Meta gigawatts go live. 36-analyst Buy consensus. Stock is at $540, pulling back 7% from ATH $580.91 on June 30 — this is the dip entry the system targets. Earnings safely on August 4 (4 weeks away). Replaces stopped-out MU slot.",
       "confidence": "high",
       "qty_pct": 0.18,
-      "current_price_est": 1133.0,
-      "stop_price_est": 1077.0,
-      "analyst_targets": {
-        "BofA": 1500,
-        "Phillip_Securities": 1870,
-        "consensus_12m": 1410
-      }
+      "entry_price_approx": 540.0,
+      "stop_pct": -0.05,
+      "take_profit_pct": 0.08,
+      "earnings_date": "2026-08-04",
+      "thesis_category": "AI compute — GPU demand supercycle"
     }
   ],
-  "close_positions": ["VECO", "COHU", "ACLS", "SMTC"],
-  "close_reasoning": {
-    "VECO": "Lock +18–20% gain from $59.48 entry (last known +18.88% as of June 24 = ~$70.71). Semiconductor laser equipment thesis is solid but fully covered by our dominant AMAT position (+58%). Closing to achieve 3-position max and redeploy capital into MU (superior risk/reward with $1,500 analyst target vs VECO's more modest upside). VECO has no near-term catalyst comparable to MU's confirmed HBM4 ramp.",
-    "COHU": "Lock +18–20% gain from $53.83 entry (last known +18.29% as of June 24 = ~$63.69). Semiconductor test equipment thesis intact but smaller upside vs MU. Portfolio has been targeting 3-position max since the June 15 simplification plan; COHU was entered as a post-NFP dip trade on June 8 and has delivered well. The semi equipment thesis is anchored by the far larger AMAT position. Close to simplify and fund MU.",
-    "ACLS": "Lock +12–13% gain from $150.18 entry (last known +12.85% as of June 24 = ~$169.47). Ion implant equipment — thesis covered by AMAT. Originally entered as moderate-conviction position June 1; repeated in close-position lists June 8 and June 15 plans. Simplify to 3-position max.",
-    "SMTC": "2-share position ($299 notional). +7.57% gain (last known). Negligible capital impact; close to simplify and clean up portfolio to 3 positions."
-  },
+  "close_positions": [],
+  "close_reasoning": {},
   "hold_positions": ["AMAT", "LLY"],
   "hold_reasoning": {
-    "AMAT": "Portfolio's defining winner at +58% from $411.45 entry (current ~$650, 52-week high $669.22 set June 25). Applied Materials Master Class June 25 unveiled 6 new AI chipmaking systems targeting DRAM production and AI chip advanced packaging — direct address of the 'memory wall' constraining AI compute. This drove a 13.42% single-day surge to ATH $669.22 intraday. Immediate analyst target upgrades: Jefferies $770, B. Riley $790, Wells Fargo $740, BofA $720 (all Buy/Overweight). Pre-market June 29: +3.8% to $650.52 recovering from June 26 -4.36% pullback. AI semiconductor equipment supercycle is a multi-year secular theme; AMAT's equipment is essential to DRAM scaling and HBM4 production (directly correlated to MU's boom). Next earnings August 13 — no near-term event risk. Updated trailing stop: $617 (5% below ~$650, up from prior $586 trailing stop).",
-    "LLY": "Healthcare anchor with structural GLP-1 dominance. Up +24% from $992.17 entry to $1,229.77 (June 29 close). Two major catalysts this week: (1) European regulators backed Jaypirca (Pirtobrutinib) for cancer treatment June 26, lifting stock +6.15%; (2) Medicare GLP-1 Bridge Program launches July 1 — eligible Medicare Part D patients access Zepbound and Foundayo at $50/month; Lilly estimates ~20 million Medicare patients may meet clinical criteria — an enormous new recurring revenue channel. Leerink raised target to $1,232 June 25. Healthcare sector is defensively positioned relative to semiconductor volatility. LLY is low-rate-sensitivity vs NVDA/AMD. Stop $942 (5% below $992.17 entry, unchanged — wide buffer at +24% gain). Next earnings in late July — monitor for Mounjaro Q2 results."
+    "AMAT": "AI semiconductor equipment supercycle intact. Record Q2 FY2026 revenue, Q3 guidance $8.95B, 30%+ industry growth outlook for full year 2026. 39-analyst Strong Buy, avg target $578. Near-term selloff is sector profit-taking — original stop ($390.88) is $212 below current price ($603), position is +46.5% from entry. Next earnings November — no blackout. Susquehanna target $900, BofA $720, Wells Fargo $715.",
+    "LLY": "Medicare GLP-1 Bridge program launched July 1 — exactly the catalyst thesis. Program caps patient costs at $50/month for Zepbound and Foundayo, targeting ~20 million Medicare patients. Volume-driven growth protects margins. Stock surged +7.1% on June 26 on program announcement. Analyst avg target $1,221. Entry $992.17, current ~$1,200-1,240, +21-25% gain. Healthcare sector receiving rotation inflows this week. No July earnings (Q2 typically August)."
   },
   "skip_reasoning": {
-    "NVDA": "RSI 31 (oversold) at $192.71 June 28 — technically interesting but not yet confirmed bottom. This is below the $194.93 stop from the June 22 plan (position was never confirmed in portfolio per June 17 live snapshot). PCE on June 30 could accelerate rate-hike pricing and push high-PE names like NVDA further down. Wait for PCE clarity and RSI stabilization above 35. Strong Buy consensus (38 analysts), $300 avg target (+56% from $192) — add to watchlist for post-PCE entry if market absorbs data well.",
-    "AMD": "Trading at $518.72 June 29 — 10% ABOVE Wall Street consensus analyst target of $472. Up 130%+ YTD. Gartner named AMD 'Company to Beat for Enterprise AI Server CPUs'; UBS raised target; Barclays street-high $665. Fundamentals excellent but no margin of safety at current prices. The June 22 plan skip reasoning still applies: wait for pullback to $470–490 range. Chase risk is high.",
-    "CRWD": "RS60=+11% (stale bars). No earnings catalyst this week. CrowdStrike is a strong secular cybersecurity name but insufficient score and no imminent catalyst to displace MU in the 3-position portfolio.",
-    "MRVL": "Bars price $115 vs actual ~$317+ (post-earnings gap). Stale bars data renders scoring useless. Fundamentals strong (28% revenue growth, Jensen Huang 'next trillion dollar company') but at 240%+ YTD, momentum peak risk is real. Skip.",
-    "LRCX": "RS60=+6% in stale data (vs SPY +44%). Semiconductor equipment thesis covered by AMAT. Relative underperformer. Skip."
+    "MU": "Likely stopped out automatically (entry ~$1,133-$1,247, stop at -5% = $1,076; July 2 close $975 is 14% below entry range). Record fundamental thesis (Q3 $41.5B +346% YoY, HBM sold out, $100B binding contracts) is intact long-term. Re-evaluate after MU stabilizes above $1,050. Watchlist for next re-entry.",
+    "NVDA": "No free slots after AMAT/LLY/AMD. Watchlist #2. 38-analyst Strong Buy, avg target $309 (+56% from $197). Blackwell architecture sold out through mid-2026; $1T in confirmed AI chip commitments from MSFT/AMZN/GOOGL/META. Priority entry when AMAT or AMD takes profit.",
+    "LRCX": "EARNINGS BLACKOUT — next quarterly report estimated July 29. Too close to initiate a new 4-8 week swing position. LRCX is #6 scorer (RS60=+6%, score=+0.040). Re-evaluate after earnings.",
+    "MRVL": "#4 scorer (RS60=+21%, RSI=25.9 near oversold). No free slots. Earnings Aug 20 would be safe. Dividend payable July 30. Re-evaluate when a slot opens.",
+    "CRWD": "4-for-1 stock split effective July 2, 2026 (post-split price ~$120, bars show pre-split $480). No free slots. Q1 FY2027 revenue +26% YoY, EPS beat. Next earnings Sept 2 — safe. Watchlist if slot opens.",
+    "NEM": "Gold miner thesis diverges from portfolio's AI/pharma focus. RS60 only +1% vs SPY. Low conviction. Score +0.032.",
+    "EOG": "RSI 70.4 approaching overbought ceiling. Oil sector headwind persists. Score +0.012 (weak). Overextended 5-day move +2%.",
+    "AMZN": "RS60 = -2% vs SPY — borderline weak. Score +0.028. AWS AI cloud growth is a tailwind but equity story less pure than AMD/NVDA. No free slots.",
+    "META": "RS60 = +6%, score +0.025. Strong AI fundamentals (LLaMA 4, 6GW AMD GPU deal) but momentum weaker than AMD. No free slots."
   },
-  "stop_updates": {
-    "AMAT": "$617 (updated trailing stop — 5% below ~$650 current, up from $586 prior stop)",
-    "LLY": "$942 (unchanged — 5% below $992.17 entry; wide buffer at +24% gain)",
-    "MU": "$1,077 (5% below ~$1,133 entry price estimate)"
+  "portfolio_snapshot_estimate": {
+    "note": "Alpaca API unavailable (network policy); estimates from web-searched prices + memory",
+    "amat_position": {"entry": 411.45, "current_approx": 603.0, "gain_pct": 46.5},
+    "lly_position": {"entry": 992.17, "current_approx": 1240.0, "gain_pct": 25.0},
+    "mu_position": {"entry_approx": 1133.0, "current": 975.56, "status": "likely_stopped_out", "stop_triggered_at_approx": 1076.0},
+    "portfolio_value_approx": 128000
   },
-  "risk_notes": "Primary risk: PCE June 30 (May 2026 headline 4.1%, core 3.4% — 3-year high). A hot reading accelerates rate-hike expectations and compresses multiples for semiconductors. Secondary: July 3 market holiday (Friday) — 4-day week means less time to recover from any Wednesday/Thursday shock. Tertiary: MU 'sell the news' extended — stock pulled back -9.7% from ATH post-earnings; if selling continues, entry is early. All positions protected by stop-losses.",
-  "portfolio_context": {
-    "estimated_equity_entering_week": 121000,
-    "data_note": "Live Alpaca API unavailable (proxy blocks paper-api.alpaca.markets and data.alpaca.markets). Prices and equity via web search and memory.json. June 26 confirmed equity $117,805.78; today AMAT pre-mkt +3.8% and LLY +7.13% adds estimated $4–5K to portfolio.",
-    "positions_entering_week": ["AMAT", "LLY", "VECO", "COHU", "ACLS", "SMTC"],
-    "target_positions_eow": ["AMAT", "LLY", "MU"]
-  },
-  "watchlist_next_week": {
-    "NVDA": "Post-PCE entry candidate July 7 week if PCE benign and RSI recovers above 40. RSI 31 at $192 is technically compelling but rate risk and holiday week make timing difficult.",
-    "AMD": "Pullback to $470–490 range triggers fresh look. Gartner 'Company to Beat' validation is real.",
-    "AMAT": "Continue holding toward $720–790 analyst target range. Update trailing stop weekly."
+  "watchlist_priority": ["NVDA", "MU", "CRWD"],
+  "key_dates": {
+    "fomc_minutes": "2026-07-08",
+    "jobless_claims": "2026-07-09",
+    "cpi": "2026-07-14",
+    "lrcx_earnings": "2026-07-29",
+    "amd_earnings": "2026-08-04",
+    "mrvl_earnings": "2026-08-20"
   }
 }
