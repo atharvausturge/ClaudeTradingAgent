@@ -296,6 +296,17 @@
       "pl_pct": -5.16,
       "pl_dollar": -838.17,
       "reason": "stop loss triggered"
+    },
+    {
+      "time": "2026-07-06T12:40:04.099666-04:00",
+      "action": "BUY",
+      "symbol": "MU",
+      "qty": 13,
+      "price": 1002.27,
+      "stop_price": 951.93,
+      "reasoning": "Strong XLK sector momentum, high analyst target upside, and recent earnings surprise, but no clear sentiment signal due to lack of reddit data",
+      "confidence": "high",
+      "filled": true
     }
   ],
   "weekly_summaries": [
@@ -794,28 +805,46 @@
     },
     {
       "week_of": "2026-07-06",
-      "thesis": "Semiconductor sector profit-taking after record H1 creates rotation. MU likely stopped out at -5% from late-June entry (~$1,133→$975, -14% drawdown). AMD replaces MU as AI compute play — #1 momentum scorer (RS60=+66%, Data Center $5.8B +57% YoY, OpenAI+Meta 6GW GPU deployments, earnings Aug 4). AMAT holds through equipment-sector correction (stop $391 far from $603 current, supercycle intact). LLY holds on Medicare GLP-1 Bridge July 1 launch success.",
-      "positions_opened": ["AMD"],
-      "positions_closed_likely_stopped": ["MU"],
+      "thesis": "Semiconductor sector profit-taking after record H1 creates rotation. MU likely stopped out at -5% from late-June entry (~$1,133\u2192$975, -14% drawdown). AMD replaces MU as AI compute play \u2014 #1 momentum scorer (RS60=+66%, Data Center $5.8B +57% YoY, OpenAI+Meta 6GW GPU deployments, earnings Aug 4). AMAT holds through equipment-sector correction (stop $391 far from $603 current, supercycle intact). LLY holds on Medicare GLP-1 Bridge July 1 launch success.",
+      "positions_opened": [
+        "AMD"
+      ],
+      "positions_closed_likely_stopped": [
+        "MU"
+      ],
       "close_reasons": {
-        "MU": "Stop likely triggered at ~$1,076 (-5% from ~$1,133 entry); price hit $975 by July 2 (-14% from entry range). AI memory thesis intact long-term — watchlist for re-entry above $1,050."
+        "MU": "Stop likely triggered at ~$1,076 (-5% from ~$1,133 entry); price hit $975 by July 2 (-14% from entry range). AI memory thesis intact long-term \u2014 watchlist for re-entry above $1,050."
       },
-      "holds": ["AMAT", "LLY"],
-      "watchlist": ["NVDA", "MU", "CRWD"],
+      "holds": [
+        "AMAT",
+        "LLY"
+      ],
+      "watchlist": [
+        "NVDA",
+        "MU",
+        "CRWD"
+      ],
       "blackouts": {
         "LRCX": "earnings July 29"
       },
       "key_events_this_week": [
-        "FOMC minutes July 8 — Warsh data-dependence framework, no forward guidance",
-        "CPI July 14 — key inflation print (PCE running 4%+ above 2% target)",
+        "FOMC minutes July 8 \u2014 Warsh data-dependence framework, no forward guidance",
+        "CPI July 14 \u2014 key inflation print (PCE running 4%+ above 2% target)",
         "Weekly jobless claims July 9",
-        "AMD: Helios GPU ramp begins Q3 2026 — OpenAI/Meta 6GW deployment windows",
+        "AMD: Helios GPU ramp begins Q3 2026 \u2014 OpenAI/Meta 6GW deployment windows",
         "AMAT/MU: Semiconductor sector correction (profit-taking after record H1, not thesis change)"
       ],
-      "scoring_notes": "45 symbols scored from bars_raw.json (data vintage late June). SPY 60d return +44%. 25 passed filters. Top: AMD(+0.234, RS60=+66%), MU(+0.201, RS60=+54%), NVDA(+0.110, RS60=+21%). LRCX blackout (earnings July 29). Bars stale vs actual prices — actual: AMAT $603, MU $975, AMD $540, LLY ~$1,240, NVDA $197.",
+      "scoring_notes": "45 symbols scored from bars_raw.json (data vintage late June). SPY 60d return +44%. 25 passed filters. Top: AMD(+0.234, RS60=+66%), MU(+0.201, RS60=+54%), NVDA(+0.110, RS60=+21%). LRCX blackout (earnings July 29). Bars stale vs actual prices \u2014 actual: AMAT $603, MU $975, AMD $540, LLY ~$1,240, NVDA $197.",
       "net_pnl_estimate": null,
       "portfolio_value_entering_week": 128000,
       "data_note": "Alpaca API unavailable (network policy). Prices via web search July 3-6 2026. Bars_raw.json stale (late June data). Scoring directionally valid on percentage-based metrics."
+    },
+    {
+      "week_of": "2026-07-05",
+      "thesis": "This week, the technology sector continues to lead the market with strong momentum, driven by AI and semiconductor trends. Stocks with high upside targets and recent positive news, such as TTMI and HPE, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as HUM and CBRL, should be avoided. The recent macro events and upcoming earnings reports will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
+      "actions": [
+        "BUY 13 MU @ $1002.27 | stop $951.93"
+      ]
     }
   ],
   "portfolio_snapshots": [
@@ -1729,6 +1758,11 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-07-06T12:40:04.099666-04:00",
+      "portfolio_value": 113543.25,
+      "buying_power": 316865.5
     }
   ],
   "last_monitor_run": "2026-07-03T09:00:00-04:00",
@@ -2007,7 +2041,7 @@
       "open_positions": 4,
       "realized_today_dollar": 0,
       "market_closed": true,
-      "market_close_reason": "NYSE holiday — July 4 (Saturday) observed Friday July 3",
+      "market_close_reason": "NYSE holiday \u2014 July 4 (Saturday) observed Friday July 3",
       "note": "No trading. Equity carried forward from July 2 close. FLEX flagged for close on Monday July 7 open."
     }
   ],
@@ -2278,14 +2312,41 @@
       "pnl_from_starting_capital_pct": 14.03,
       "open_positions_last_known": 4,
       "last_live_positions_as_of_jul1": [
-        {"symbol": "ACLS", "plpc": 18.64, "pl_dollar": 756.00},
-        {"symbol": "AMAT", "plpc": 56.99, "pl_dollar": 17284.49},
-        {"symbol": "COHU", "plpc": 31.63, "pl_dollar": 4613.77},
-        {"symbol": "FLEX", "plpc": -2.92, "pl_dollar": -21.70, "closing_friday": true},
-        {"symbol": "LLY", "plpc": 19.93, "pl_dollar": 5735.49},
-        {"symbol": "VECO", "plpc": 16.52, "pl_dollar": 200.10}
+        {
+          "symbol": "ACLS",
+          "plpc": 18.64,
+          "pl_dollar": 756.0
+        },
+        {
+          "symbol": "AMAT",
+          "plpc": 56.99,
+          "pl_dollar": 17284.49
+        },
+        {
+          "symbol": "COHU",
+          "plpc": 31.63,
+          "pl_dollar": 4613.77
+        },
+        {
+          "symbol": "FLEX",
+          "plpc": -2.92,
+          "pl_dollar": -21.7,
+          "closing_friday": true
+        },
+        {
+          "symbol": "LLY",
+          "plpc": 19.93,
+          "pl_dollar": 5735.49
+        },
+        {
+          "symbol": "VECO",
+          "plpc": 16.52,
+          "pl_dollar": 200.1
+        }
       ],
-      "friday_close_symbols": ["FLEX"],
+      "friday_close_symbols": [
+        "FLEX"
+      ],
       "position_count_change_note": "July 1 had 6 positions; July 2 daily P&L shows 4 \u2014 FLEX (-2.92%) and one other position closed on July 2 (likely stop-loss or partial trade plan execution). Exact status unverifiable without API access.",
       "no_trades_today": "Market closed \u2014 FLEX closure and any pending consolidation (VECO/COHU/ACLS per June 29 trade plan) deferred to Monday July 7."
     }
@@ -2306,27 +2367,84 @@
       "drawdown_from_peak": -13331.76,
       "drawdown_from_peak_pct": -10.47,
       "daily_breakdown": {
-        "2026-06-29": {"pnl_dollar": 6540.83, "pnl_pct": 5.56, "vs_spy_pct": 3.91, "note": "MU beat + AMAT $720\u2013$790 analyst targets drove semiconductor complex rally"},
-        "2026-06-30": {"pnl_dollar": 3216.79, "pnl_pct": 2.59, "vs_spy_pct": 1.81, "note": "PCE May 2026 absorbed; portfolio outperformed SPY by +1.81% on highest macro risk day"},
-        "2026-07-01": {"pnl_dollar": -6270.01, "pnl_pct": -4.92, "vs_spy_pct": -4.78, "note": "Semiconductor sector reversal; LLY Medicare GLP-1 Bridge launched July 1 but semi weakness dominated"},
-        "2026-07-02": {"pnl_dollar": -7050.87, "pnl_pct": -5.18, "vs_spy_pct": -5.05, "note": "Continued selling ahead of holiday; 2 positions closed (6\u21924); worst day of the week"}
+        "2026-06-29": {
+          "pnl_dollar": 6540.83,
+          "pnl_pct": 5.56,
+          "vs_spy_pct": 3.91,
+          "note": "MU beat + AMAT $720\u2013$790 analyst targets drove semiconductor complex rally"
+        },
+        "2026-06-30": {
+          "pnl_dollar": 3216.79,
+          "pnl_pct": 2.59,
+          "vs_spy_pct": 1.81,
+          "note": "PCE May 2026 absorbed; portfolio outperformed SPY by +1.81% on highest macro risk day"
+        },
+        "2026-07-01": {
+          "pnl_dollar": -6270.01,
+          "pnl_pct": -4.92,
+          "vs_spy_pct": -4.78,
+          "note": "Semiconductor sector reversal; LLY Medicare GLP-1 Bridge launched July 1 but semi weakness dominated"
+        },
+        "2026-07-02": {
+          "pnl_dollar": -7050.87,
+          "pnl_pct": -5.18,
+          "vs_spy_pct": -5.05,
+          "note": "Continued selling ahead of holiday; 2 positions closed (6\u21924); worst day of the week"
+        }
       }
     },
-    "positions_closed_this_week": ["SMTC", "FLEX", "unknown_1"],
+    "positions_closed_this_week": [
+      "SMTC",
+      "FLEX",
+      "unknown_1"
+    ],
     "close_reasons": {
       "SMTC": "Absent from July 1 live snapshot \u2014 likely closed per June 29 trade plan (2-share/$300 notional, simplify to 3-position max)",
       "FLEX": "Friday -2% rule: -2.92% as of July 1 12PM; deteriorated from +20.12% peak (June 3) through positive territory to negative; closed July 2",
       "unknown_1": "Position count 6\u21924 on July 2 \u2014 1 additional position closed; likely stop-loss triggered on semi weakness or partial June 29 plan execution (VECO/COHU/ACLS); cannot confirm without API access"
     },
-    "holds_eow": ["AMAT", "LLY", "2_of_COHU_VECO_ACLS"],
+    "holds_eow": [
+      "AMAT",
+      "LLY",
+      "2_of_COHU_VECO_ACLS"
+    ],
     "pl_per_position_last_known": {
-      "AMAT": {"plpc": 56.99, "pl_dollar": 17284.49, "as_of": "2026-07-01"},
-      "LLY": {"plpc": 19.93, "pl_dollar": 5735.49, "as_of": "2026-07-01"},
-      "COHU": {"plpc": 31.63, "pl_dollar": 4613.77, "as_of": "2026-07-01"},
-      "VECO": {"plpc": 16.52, "pl_dollar": 200.10, "as_of": "2026-07-01"},
-      "ACLS": {"plpc": 18.64, "pl_dollar": 756.00, "as_of": "2026-07-01"},
-      "FLEX": {"plpc": -2.92, "pl_dollar": -21.70, "as_of": "2026-07-01", "closed_friday": true},
-      "SMTC": {"plpc": null, "pl_dollar": null, "note": "absent from July 1 snapshot \u2014 assumed closed per June 29 trade plan"}
+      "AMAT": {
+        "plpc": 56.99,
+        "pl_dollar": 17284.49,
+        "as_of": "2026-07-01"
+      },
+      "LLY": {
+        "plpc": 19.93,
+        "pl_dollar": 5735.49,
+        "as_of": "2026-07-01"
+      },
+      "COHU": {
+        "plpc": 31.63,
+        "pl_dollar": 4613.77,
+        "as_of": "2026-07-01"
+      },
+      "VECO": {
+        "plpc": 16.52,
+        "pl_dollar": 200.1,
+        "as_of": "2026-07-01"
+      },
+      "ACLS": {
+        "plpc": 18.64,
+        "pl_dollar": 756.0,
+        "as_of": "2026-07-01"
+      },
+      "FLEX": {
+        "plpc": -2.92,
+        "pl_dollar": -21.7,
+        "as_of": "2026-07-01",
+        "closed_friday": true
+      },
+      "SMTC": {
+        "plpc": null,
+        "pl_dollar": null,
+        "note": "absent from July 1 snapshot \u2014 assumed closed per June 29 trade plan"
+      }
     },
     "net_pnl_estimate": -3777,
     "portfolio_value_entering_week": 117806,
