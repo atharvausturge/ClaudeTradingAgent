@@ -1769,11 +1769,11 @@
       "portfolio_value": null,
       "buying_power": null,
       "positions_summary": {
-        "note": "Midweek check — Live Alpaca API unavailable (sandbox network policy, curl exit 56). Last confirmed daily P&L July 7 close.",
+        "note": "Midweek check \u2014 Live Alpaca API unavailable (sandbox network policy, curl exit 56). Last confirmed daily P&L July 7 close.",
         "last_confirmed_equity": 107497.25,
         "last_confirmed_date": "2026-07-07",
         "pnl_from_starting_capital_dollar": 7497.25,
-        "pnl_from_starting_capital_pct": 7.50,
+        "pnl_from_starting_capital_pct": 7.5,
         "week_performance_so_far": {
           "equity_entering_week": 114029.11,
           "equity_last_known": 107497.25,
@@ -1784,46 +1784,74 @@
               "pnl_dollar": -1232.35,
               "pnl_pct": -1.08,
               "vs_spy_pct": -1.95,
-              "note": "Semiconductor sector rotation/profit-taking; MU re-entered at $1,002.27; position count 4→5"
+              "note": "Semiconductor sector rotation/profit-taking; MU re-entered at $1,002.27; position count 4\u21925"
             },
             "2026-07-07": {
               "pnl_dollar": -4595.13,
-              "pnl_pct": -4.10,
+              "pnl_pct": -4.1,
               "vs_spy_pct": -3.62,
-              "note": "Continued semiconductor weakness; one position closed (5→4 open); likely stop-out"
+              "note": "Continued semiconductor weakness; one position closed (5\u21924 open); likely stop-out"
             }
           }
         },
         "estimated_open_positions": 4,
         "thesis_check": {
-          "AMAT": "INTACT / STRONG HOLD — entry $411.45 (80 shares), last known +56.99% (+$17,284 as of July 1 live snapshot). Trade plan notes ~$603 current (July 2, -7.35% semiconductor profit-taking). Even at $603, gain is +46.5%. Stop $390.88 is $212 below current — no stop risk. AI semiconductor equipment supercycle confirmed; AMAT Master Class June 25 unveiled 6 new AI systems; analyst targets $720–$790 (Jefferies $770, BofA $720, Wells Fargo $715). Next earnings November — no blackout. STRONG HOLD above $390.88.",
-          "LLY": "INTACT / STRONG HOLD — entry $992.17 (33 shares), last known +19.93% (+$5,735 as of July 1 live snapshot). Medicare GLP-1 Bridge Program launched July 1 (20M eligible Medicare patients, $50/mo Zepbound/Foundayo). Analyst avg target $1,221. Defensive healthcare sector — low rate sensitivity vs semiconductor headwinds. Stop $942. STRONG HOLD.",
-          "MU": "UNCERTAIN / MONITOR — re-entered July 6 at $1,002.27 (13 shares), stop $951.93. July 7 saw portfolio drop -4.10% and one position closed (5→4). If MU declined toward $951.93 on July 7 semiconductor weakness, stop may have triggered. If still open: July 2 close was ~$975 per trade plan (below new entry $1,002.27); thesis intact (HBM4 supercycle, BofA target $1,500) but position is at risk near stop. Previous MU entry (~$1,133) was likely stopped out before this re-entry.",
-          "AMD": "UNCERTAIN — Trade plan (week of 2026-07-06) called for AMD entry at ~$540 (18% portfolio). AMD is #1 momentum scorer (RS60=+66%), Data Center $5.8B +57% YoY, OpenAI+Meta 6GW GPU partnerships, Helios GPU ramp Q3 2026, earnings Aug 4. Whether buy order executed is unknown (API blocked since July 6 session). If entered at $540 and AMD declined on July 7 semiconductor weakness, position may be under pressure near -5% stop (~$513)."
+          "AMAT": "INTACT / STRONG HOLD \u2014 entry $411.45 (80 shares), last known +56.99% (+$17,284 as of July 1 live snapshot). Trade plan notes ~$603 current (July 2, -7.35% semiconductor profit-taking). Even at $603, gain is +46.5%. Stop $390.88 is $212 below current \u2014 no stop risk. AI semiconductor equipment supercycle confirmed; AMAT Master Class June 25 unveiled 6 new AI systems; analyst targets $720\u2013$790 (Jefferies $770, BofA $720, Wells Fargo $715). Next earnings November \u2014 no blackout. STRONG HOLD above $390.88.",
+          "LLY": "INTACT / STRONG HOLD \u2014 entry $992.17 (33 shares), last known +19.93% (+$5,735 as of July 1 live snapshot). Medicare GLP-1 Bridge Program launched July 1 (20M eligible Medicare patients, $50/mo Zepbound/Foundayo). Analyst avg target $1,221. Defensive healthcare sector \u2014 low rate sensitivity vs semiconductor headwinds. Stop $942. STRONG HOLD.",
+          "MU": "UNCERTAIN / MONITOR \u2014 re-entered July 6 at $1,002.27 (13 shares), stop $951.93. July 7 saw portfolio drop -4.10% and one position closed (5\u21924). If MU declined toward $951.93 on July 7 semiconductor weakness, stop may have triggered. If still open: July 2 close was ~$975 per trade plan (below new entry $1,002.27); thesis intact (HBM4 supercycle, BofA target $1,500) but position is at risk near stop. Previous MU entry (~$1,133) was likely stopped out before this re-entry.",
+          "AMD": "UNCERTAIN \u2014 Trade plan (week of 2026-07-06) called for AMD entry at ~$540 (18% portfolio). AMD is #1 momentum scorer (RS60=+66%), Data Center $5.8B +57% YoY, OpenAI+Meta 6GW GPU partnerships, Helios GPU ramp Q3 2026, earnings Aug 4. Whether buy order executed is unknown (API blocked since July 6 session). If entered at $540 and AMD declined on July 7 semiconductor weakness, position may be under pressure near -5% stop (~$513)."
         },
-        "open_orders_check": "Cannot verify — Alpaca API blocked (curl exit 56). GTC stop-loss orders for AMAT ($390.88), LLY (~$942), MU ($951.93) cannot be confirmed active.",
+        "open_orders_check": "Cannot verify \u2014 Alpaca API blocked (curl exit 56). GTC stop-loss orders for AMAT ($390.88), LLY (~$942), MU ($951.93) cannot be confirmed active.",
         "flags": {
-          "positions_down_gt_8pct": "NONE confirmed — all known core positions (AMAT, LLY) were well above +10% as of July 1 live snapshot. MU and AMD are near-stop concerns given July 6-7 semiconductor weakness.",
+          "positions_down_gt_8pct": "NONE confirmed \u2014 all known core positions (AMAT, LLY) were well above +10% as of July 1 live snapshot. MU and AMD are near-stop concerns given July 6-7 semiconductor weakness.",
           "positions_up_gt_10pct": [
-            "AMAT: +46-57% from $411.45 entry — STRONG HOLD, AI semi equipment supercycle; analyst targets $720–$790",
-            "LLY: +20-25% from $992.17 entry — STRONG HOLD, GLP-1/Medicare Bridge thesis delivering"
+            "AMAT: +46-57% from $411.45 entry \u2014 STRONG HOLD, AI semi equipment supercycle; analyst targets $720\u2013$790",
+            "LLY: +20-25% from $992.17 entry \u2014 STRONG HOLD, GLP-1/Medicare Bridge thesis delivering"
           ],
-          "stop_loss_verification": "Cannot verify — API blocked (curl exit 56). AMAT stop $390.88 and LLY stop $942 are critical levels. MU stop $951.93 at high risk given semiconductor selloff.",
+          "stop_loss_verification": "Cannot verify \u2014 API blocked (curl exit 56). AMAT stop $390.88 and LLY stop $942 are critical levels. MU stop $951.93 at high risk given semiconductor selloff.",
           "relative_underperformance_alert": "Two consecutive days of significant relative underperformance: July 6 -1.95% vs SPY, July 7 -3.62% vs SPY. Week-to-date -5.73% total while SPY roughly flat. Semiconductor sector rotation is the primary driver.",
           "upcoming_key_events": {
-            "fomc_minutes_today": "FOMC minutes July 8 (today) — Warsh data-dependence framework; no forward guidance expected; primary market event of the day",
-            "jobless_claims": "Weekly jobless claims July 9 — labor market health check",
-            "cpi_next_week": "CPI July 14 — key inflation print; PCE running 4%+ above 2% target; critical for rate path"
+            "fomc_minutes_today": "FOMC minutes July 8 (today) \u2014 Warsh data-dependence framework; no forward guidance expected; primary market event of the day",
+            "jobless_claims": "Weekly jobless claims July 9 \u2014 labor market health check",
+            "cpi_next_week": "CPI July 14 \u2014 key inflation print; PCE running 4%+ above 2% target; critical for rate path"
           },
-          "amd_earnings_risk": "AMD earnings Aug 4 — 4 weeks away; safe to hold through earnings if AMD entry executed",
-          "lrcx_blackout": "LRCX earnings July 29 — blackout maintained, no new LRCX entry"
+          "amd_earnings_risk": "AMD earnings Aug 4 \u2014 4 weeks away; safe to hold through earnings if AMD entry executed",
+          "lrcx_blackout": "LRCX earnings July 29 \u2014 blackout maintained, no new LRCX entry"
         },
-        "midweek_verdict": "Portfolio at estimated $107,497 (+7.5% from $100K starting capital) after a difficult first two days of the week (-5.73% week-to-date). The semiconductor sector rotation is hammering the portfolio: -1.95% vs SPY on July 6 and -3.62% vs SPY on July 7. Core thesis positions AMAT (+46-57%) and LLY (+20-25%) remain strong holds — both well above +10% and far from stops. The concern is MU (re-entered July 6 at $1,002.27, stop $951.93) and potentially AMD (entry at ~$540 per trade plan): both are at risk given the semiconductor selloff. One position closed July 7 (5→4), likely a stop-out. FOMC minutes today (July 8) are the key near-term catalyst — hawkish tone would extend semiconductor headwind, dovish tone could provide relief. No action required without API access. Priority when API accessible: (1) confirm AMAT and LLY stop-loss orders active; (2) determine if MU stop was triggered July 7; (3) confirm AMD entry status; (4) assess FOMC minutes market reaction."
+        "midweek_verdict": "Portfolio at estimated $107,497 (+7.5% from $100K starting capital) after a difficult first two days of the week (-5.73% week-to-date). The semiconductor sector rotation is hammering the portfolio: -1.95% vs SPY on July 6 and -3.62% vs SPY on July 7. Core thesis positions AMAT (+46-57%) and LLY (+20-25%) remain strong holds \u2014 both well above +10% and far from stops. The concern is MU (re-entered July 6 at $1,002.27, stop $951.93) and potentially AMD (entry at ~$540 per trade plan): both are at risk given the semiconductor selloff. One position closed July 7 (5\u21924), likely a stop-out. FOMC minutes today (July 8) are the key near-term catalyst \u2014 hawkish tone would extend semiconductor headwind, dovish tone could provide relief. No action required without API access. Priority when API accessible: (1) confirm AMAT and LLY stop-loss orders active; (2) determine if MU stop was triggered July 7; (3) confirm AMD entry status; (4) assess FOMC minutes market reaction."
       },
       "is_midweek_check": true
+    },
+    {
+      "time": "2026-07-08T11:41:27.001655-04:00",
+      "portfolio_value": 107985.68,
+      "buying_power": 318454.44,
+      "positions": [
+        {
+          "symbol": "AMAT",
+          "pl_pct": 33.36,
+          "pl_dollar": 10115.45
+        },
+        {
+          "symbol": "FLEX",
+          "pl_pct": 2.85,
+          "pl_dollar": 188.85
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 23.97,
+          "pl_dollar": 6896.8
+        },
+        {
+          "symbol": "MU",
+          "pl_pct": -7.73,
+          "pl_dollar": -1006.96
+        }
+      ],
+      "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-07-03T09:00:00-04:00",
+  "last_monitor_run": "2026-07-08T11:41:27.001655-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
