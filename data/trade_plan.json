@@ -1,49 +1,49 @@
 {
-  "week_of": "2026-07-05",
-  "week_thesis": "This week, the technology sector continues to lead the market with strong momentum, driven by AI and semiconductor trends. Stocks with high upside targets and recent positive news, such as TTMI and HPE, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as HUM and CBRL, should be avoided. The recent macro events and upcoming earnings reports will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
+  "week_of": "2026-07-12",
+  "week_thesis": "This week, the technology sector continues to lead the market with strong momentum, driven by AI and semiconductor trends. Stocks with high upside targets and recent positive news, such as DELL, MU, FLEX, and DOCN, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as HUM, CBRL, and RXO, should be avoided. The recent macro events and upcoming earnings reports will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
   "buys": [
     {
-      "symbol": "MU",
-      "combined_score": 1.0,
+      "symbol": "DELL",
+      "combined_score": 0.9286,
       "tech_score": 1.0,
-      "sentiment_score": 1.0,
-      "reasoning": "Strong XLK sector momentum, high analyst target upside, and recent earnings surprise, but no clear sentiment signal due to lack of reddit data",
+      "sentiment_score": 0.857,
+      "reasoning": "Strong sector momentum and high upside target, with recent positive news about Micron's US expansion plans",
       "confidence": "high",
       "qty_pct": 0.18
     },
     {
-      "symbol": "DELL",
-      "combined_score": 0.6558,
-      "tech_score": 0.478,
-      "sentiment_score": 0.833,
-      "reasoning": "Low valuation multiple, high analyst target upside, and recent earnings surprise, but no clear sentiment signal due to lack of reddit data",
+      "symbol": "MU",
+      "combined_score": 0.8583,
+      "tech_score": 0.717,
+      "sentiment_score": 1.0,
+      "reasoning": "Strong sector momentum, high upside target, and recent positive news about DRAM ETF inflows and AI memory supercycle",
+      "confidence": "high",
+      "qty_pct": 0.18
+    },
+    {
+      "symbol": "DOCN",
+      "combined_score": 0.5504,
+      "tech_score": 0.101,
+      "sentiment_score": 1.0,
+      "reasoning": "Good sector momentum, recent positive news, and high upside target",
       "confidence": "medium",
       "qty_pct": 0.18
     },
     {
       "symbol": "ACMR",
-      "combined_score": 0.6121,
-      "tech_score": 0.557,
-      "sentiment_score": 0.667,
-      "reasoning": "Moderate valuation multiple, mild analyst target upside, and no recent news or sentiment signal",
+      "combined_score": 0.542,
+      "tech_score": 0.513,
+      "sentiment_score": 0.571,
+      "reasoning": "Good sector momentum, but analyst target indicates modest downside and no significant recent news",
       "confidence": "medium",
       "qty_pct": 0.18
     },
     {
-      "symbol": "VSH",
-      "combined_score": 0.5338,
-      "tech_score": 0.901,
-      "sentiment_score": 0.167,
-      "reasoning": "Low valuation multiple, but strongly bearish analyst target and no recent news or sentiment signal to override",
-      "confidence": "medium",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "TTMI",
-      "combined_score": 0.5161,
-      "tech_score": 0.032,
-      "sentiment_score": 1.0,
-      "reasoning": "Moderate valuation multiple, high analyst target upside, and recent earnings surprise, with some positive news coverage",
+      "symbol": "FLEX",
+      "combined_score": 0.5273,
+      "tech_score": 0.197,
+      "sentiment_score": 0.857,
+      "reasoning": "Good sector momentum, recent positive news, and high upside target",
       "confidence": "medium",
       "qty_pct": 0.18
     }
@@ -53,145 +53,145 @@
   "hold_positions": [],
   "skip_reasoning": {},
   "scoring_breakdown": {
-    "MU": {
-      "combined": 1.0,
+    "DELL": {
+      "combined": 0.9286,
       "tech_norm": 1.0,
-      "sentiment_norm": 1.0,
+      "sentiment_norm": 0.857,
       "ai_raw_score": 8,
-      "ai_reason": "Strong XLK sector momentum, high analyst target upside, and recent earnings surprise, but no clear sentiment signal due to lack of reddit data"
+      "ai_reason": "Strong sector momentum and high upside target, with recent positive news about Micron's US expansion plans"
     },
-    "VSH": {
-      "combined": 0.5338,
-      "tech_norm": 0.901,
-      "sentiment_norm": 0.167,
-      "ai_raw_score": 3,
-      "ai_reason": "Low valuation multiple, but strongly bearish analyst target and no recent news or sentiment signal to override"
+    "OKTA": {
+      "combined": 0.504,
+      "tech_norm": 0.722,
+      "sentiment_norm": 0.286,
+      "ai_raw_score": 4,
+      "ai_reason": "Neutral sector momentum and analyst target indicating downside, despite recent positive news from Keybanc"
+    },
+    "MU": {
+      "combined": 0.8583,
+      "tech_norm": 0.717,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 9,
+      "ai_reason": "Strong sector momentum, high upside target, and recent positive news about DRAM ETF inflows and AI memory supercycle"
     },
     "ACMR": {
-      "combined": 0.6121,
-      "tech_norm": 0.557,
-      "sentiment_norm": 0.667,
+      "combined": 0.542,
+      "tech_norm": 0.513,
+      "sentiment_norm": 0.571,
       "ai_raw_score": 6,
-      "ai_reason": "Moderate valuation multiple, mild analyst target upside, and no recent news or sentiment signal"
-    },
-    "DELL": {
-      "combined": 0.6558,
-      "tech_norm": 0.478,
-      "sentiment_norm": 0.833,
-      "ai_raw_score": 7,
-      "ai_reason": "Low valuation multiple, high analyst target upside, and recent earnings surprise, but no clear sentiment signal due to lack of reddit data"
-    },
-    "INTC": {
-      "combined": 0.3997,
-      "tech_norm": 0.466,
-      "sentiment_norm": 0.333,
-      "ai_raw_score": 4,
-      "ai_reason": "High valuation multiple, strongly bearish analyst target, and no recent news or sentiment signal to override"
-    },
-    "FLEX": {
-      "combined": 0.4733,
-      "tech_norm": 0.28,
-      "sentiment_norm": 0.667,
-      "ai_raw_score": 6,
-      "ai_reason": "Low valuation multiple, mild analyst target upside, and no recent news or sentiment signal"
+      "ai_reason": "Good sector momentum, but analyst target indicates modest downside and no significant recent news"
     },
     "HUM": {
-      "combined": 0.1281,
-      "tech_norm": 0.256,
+      "combined": 0.2424,
+      "tech_norm": 0.485,
       "sentiment_norm": 0.0,
       "ai_raw_score": 2,
-      "ai_reason": "Low valuation multiple, but strongly bearish analyst target, lagging sector momentum, and no clear sentiment signal due to lack of reddit data"
+      "ai_reason": "Weak sector momentum and analyst target indicating significant downside, with neutral recent news"
+    },
+    "VSH": {
+      "combined": 0.4231,
+      "tech_norm": 0.418,
+      "sentiment_norm": 0.429,
+      "ai_raw_score": 5,
+      "ai_reason": "Good sector momentum, but analyst target indicates significant downside and no recent news"
+    },
+    "QLYS": {
+      "combined": 0.2966,
+      "tech_norm": 0.308,
+      "sentiment_norm": 0.286,
+      "ai_raw_score": 4,
+      "ai_reason": "Good sector momentum, but analyst target indicates significant downside and no recent news"
+    },
+    "INTC": {
+      "combined": 0.5093,
+      "tech_norm": 0.304,
+      "sentiment_norm": 0.714,
+      "ai_raw_score": 7,
+      "ai_reason": "Good sector momentum, recent positive news, and high surprise percentage, despite analyst target indicating modest downside"
     },
     "EXTR": {
-      "combined": 0.3488,
-      "tech_norm": 0.198,
-      "sentiment_norm": 0.5,
+      "combined": 0.3571,
+      "tech_norm": 0.286,
+      "sentiment_norm": 0.429,
       "ai_raw_score": 5,
-      "ai_reason": "Moderate valuation multiple, mild analyst target downside, and no recent news or sentiment signal"
-    },
-    "COHU": {
-      "combined": 0.2302,
-      "tech_norm": 0.127,
-      "sentiment_norm": 0.333,
-      "ai_raw_score": 4,
-      "ai_reason": "Moderate valuation multiple, but mild analyst target upside and recent earnings disappointment"
-    },
-    "CBRL": {
-      "combined": 0.0587,
-      "tech_norm": 0.117,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 2,
-      "ai_reason": "Low valuation multiple, but strongly bearish analyst target, lagging sector momentum, and no clear sentiment signal due to lack of reddit data"
-    },
-    "ICHR": {
-      "combined": 0.1254,
-      "tech_norm": 0.084,
-      "sentiment_norm": 0.167,
-      "ai_raw_score": 3,
-      "ai_reason": "Moderate valuation multiple, but strongly bearish analyst target and no recent news or sentiment signal"
-    },
-    "VECO": {
-      "combined": 0.2898,
-      "tech_norm": 0.08,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "Moderate valuation multiple, mild analyst target upside, and no recent news or sentiment signal"
-    },
-    "CNC": {
-      "combined": 0.1941,
-      "tech_norm": 0.055,
-      "sentiment_norm": 0.333,
-      "ai_raw_score": 4,
-      "ai_reason": "Low valuation multiple, but mildly bearish analyst target and lagging sector momentum"
-    },
-    "HIMS": {
-      "combined": 0.0273,
-      "tech_norm": 0.055,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 2,
-      "ai_reason": "High valuation multiple, strongly bearish analyst target, and recent earnings disappointment"
-    },
-    "AOSL": {
-      "combined": 0.4356,
-      "tech_norm": 0.038,
-      "sentiment_norm": 0.833,
-      "ai_raw_score": 7,
-      "ai_reason": "Low valuation multiple, high analyst target upside, and recent earnings surprise, but no clear sentiment signal due to lack of reddit data"
-    },
-    "TTMI": {
-      "combined": 0.5161,
-      "tech_norm": 0.032,
-      "sentiment_norm": 1.0,
-      "ai_raw_score": 8,
-      "ai_reason": "Moderate valuation multiple, high analyst target upside, and recent earnings surprise, with some positive news coverage"
-    },
-    "MTRN": {
-      "combined": 0.0988,
-      "tech_norm": 0.031,
-      "sentiment_norm": 0.167,
-      "ai_raw_score": 3,
-      "ai_reason": "Moderate valuation multiple, but mildly bearish analyst target and strongly lagging sector momentum"
+      "ai_reason": "Good sector momentum, but analyst target indicates modest downside and no recent news"
     },
     "AMN": {
-      "combined": 0.0927,
-      "tech_norm": 0.019,
-      "sentiment_norm": 0.167,
-      "ai_raw_score": 3,
-      "ai_reason": "Low valuation multiple, but mildly bearish analyst target and lagging sector momentum"
+      "combined": 0.3471,
+      "tech_norm": 0.266,
+      "sentiment_norm": 0.429,
+      "ai_raw_score": 5,
+      "ai_reason": "Neutral sector momentum and analyst target indicating modest downside, with no recent news"
     },
-    "HPE": {
-      "combined": 0.5071,
-      "tech_norm": 0.014,
-      "sentiment_norm": 1.0,
+    "FLEX": {
+      "combined": 0.5273,
+      "tech_norm": 0.197,
+      "sentiment_norm": 0.857,
       "ai_raw_score": 8,
-      "ai_reason": "Low valuation multiple, high analyst target upside, and recent earnings surprise, but no clear sentiment signal due to lack of reddit data"
+      "ai_reason": "Good sector momentum, recent positive news, and high upside target"
     },
-    "KLIC": {
-      "combined": 0.0833,
+    "CNC": {
+      "combined": 0.3125,
+      "tech_norm": 0.196,
+      "sentiment_norm": 0.429,
+      "ai_raw_score": 5,
+      "ai_reason": "Neutral sector momentum, recent mixed news, and analyst target indicating modest downside"
+    },
+    "DAVE": {
+      "combined": 0.3593,
+      "tech_norm": 0.147,
+      "sentiment_norm": 0.571,
+      "ai_raw_score": 6,
+      "ai_reason": "Good sector momentum, recent positive news, and high upside target, but analyst target indicates modest downside"
+    },
+    "CBRL": {
+      "combined": 0.0731,
+      "tech_norm": 0.146,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 2,
+      "ai_reason": "Weak sector momentum and analyst target indicating significant downside, with recent neutral news"
+    },
+    "GEO": {
+      "combined": 0.2674,
+      "tech_norm": 0.106,
+      "sentiment_norm": 0.429,
+      "ai_raw_score": 5,
+      "ai_reason": "Neutral sector momentum, recent no news, and analyst target indicating modest upside"
+    },
+    "DOCN": {
+      "combined": 0.5504,
+      "tech_norm": 0.101,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 9,
+      "ai_reason": "Good sector momentum, recent positive news, and high upside target"
+    },
+    "AGYS": {
+      "combined": 0.3805,
+      "tech_norm": 0.047,
+      "sentiment_norm": 0.714,
+      "ai_raw_score": 7,
+      "ai_reason": "Good sector momentum, recent no news, and analyst target indicating high upside"
+    },
+    "NTAP": {
+      "combined": 0.2998,
+      "tech_norm": 0.028,
+      "sentiment_norm": 0.571,
+      "ai_raw_score": 6,
+      "ai_reason": "Good sector momentum, recent no news, and analyst target indicating modest upside"
+    },
+    "DVA": {
+      "combined": 0.2247,
+      "tech_norm": 0.021,
+      "sentiment_norm": 0.429,
+      "ai_raw_score": 5,
+      "ai_reason": "Neutral sector momentum, recent mixed news, and analyst target indicating modest downside"
+    },
+    "RXO": {
+      "combined": 0.1429,
       "tech_norm": 0.0,
-      "sentiment_norm": 0.167,
-      "ai_raw_score": 3,
-      "ai_reason": "High valuation multiple, strongly bearish analyst target, and no recent news or sentiment signal"
+      "sentiment_norm": 0.286,
+      "ai_raw_score": 4,
+      "ai_reason": "Weak sector momentum and analyst target indicating modest downside, with recent neutral news"
     }
   }
 }
