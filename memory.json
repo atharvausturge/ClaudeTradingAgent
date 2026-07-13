@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-06",
+  "last_run": "2026-07-13",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -2605,5 +2605,39 @@
       "AMAT": "STRONG HOLD \u2014 update trailing stop to 5% below current price heading into July 7",
       "LLY": "STRONG HOLD \u2014 Medicare GLP-1 Bridge live July 1; stop $942; next earnings late July"
     }
+  },
+  "weekly_summary_2026_07_13": {
+    "week_of": "2026-07-13",
+    "thesis": "AI semiconductor sector under near-term profit-taking pressure from SK Hynix ADR post-IPO pullback (-10% on Nasdaq after record $26.5B debut Friday July 10) and Samsung Q2 sell-the-news. TSMC Q2 earnings Thursday July 16 expected to confirm AI demand 'extremely robust' ($39-40B guided, >30% FY2026 growth). Portfolio consolidates to 3 positions: AMAT (AI equipment anchor, +46%, TSMC earnings = direct catalyst), LLY (defensive GLP-1 healthcare, +20%, immune to chip selloff), AMD (new entry \u2014 Zen 6 Venice launch July 22, Advancing AI conference July 22-23, Q2 earnings Aug 4; Goldman $640 / Stifel $635). Close MU (stop $951.93 at risk; SK Hynix HBM\u2192DRAM narrative overhang) and FLEX (marginal +2.85% gain, low conviction, repeated closure target). CPI June 2026 Tuesday July 14 is the primary macro risk.",
+    "positions_opened": ["AMD"],
+    "positions_closed": ["MU", "FLEX"],
+    "close_reasons": {
+      "MU": "Stop $951.93 at risk with semiconductor sector down 5-10%+ pre-market July 13. MU at $979 July 10, entry $1,002.27. SK Hynix redirecting HBM4 capacity to conventional DRAM creates demand-cooling narrative. Closing proactively. Re-entry above $1,050 when SK Hynix noise fades.",
+      "FLEX": "Marginal +2.85% gain from $132.46 entry (~$136). No near-term catalysts. Been targeted for closure since June 22. Contract manufacturing without AI tailwinds. Closing to free capital for AMD and maintain 3-position max."
+    },
+    "holds": ["AMAT", "LLY"],
+    "target_positions_eow": ["AMAT", "LLY", "AMD"],
+    "blackouts": {"LRCX": "earnings July 29"},
+    "key_events_this_week": [
+      "CPI June 2026 \u2014 Tuesday July 14 8:30 AM (May was 4.2% YoY; primary macro risk)",
+      "Bank earnings Tue-Wed: JPM, GS, BAC, WFC, C, MS (Q2 2026; 4-6% options moves expected)",
+      "TSMC Q2 earnings Thursday July 16 \u2014 definitive AI/HPC demand barometer; guided $39-40B (+10% seq); expected beat",
+      "Netflix Q2 earnings Thursday July 16",
+      "SK Hynix ADR (SKHYV) first full week of Nasdaq trading \u2014 post-IPO volatility",
+      "AMD Advancing AI 2026 conference July 22-23 (next week)",
+      "AMD Zen 6 Venice 2nm CPU launch July 22 (next week)"
+    ],
+    "scoring_notes": "45 symbols scored from bars_raw.json (Alpaca API blocked, reusing existing data; bars vintage ~early July). SPY $736.50 in bars (actual ~$755 July 13). 24 symbols passed filters. Top by score: AMD(+0.234, RS60=+66%), MU(+0.201, RS60=+54%), NVDA(+0.110, RS60=+21%). Prices stale vs actual: AMAT $430 bars vs $603 actual; AMD $435 bars vs $516 actual; MU $820 bars vs $979 actual; CRWD $480 bars is pre-split (4:1 split July 2, ~$188 post-split). LRCX blackout: earnings July 29.",
+    "current_prices_web_sourced": {
+      "AMD": 516.0,
+      "NVDA": 208.0,
+      "AMAT": 602.5,
+      "LLY": 1188.14,
+      "MU": 979.3,
+      "CRWD": 188.48,
+      "note": "Prices from web search July 13, 2026 pre-market/recent close. AMD/NVDA/AMAT under pressure from SK Hynix ADR selloff."
+    },
+    "portfolio_value_entering_week": 110164,
+    "data_note": "Alpaca API unavailable (network policy, HTTP 403). Portfolio value from daily P&L log July 10 ($110,163.87, 4 positions). Current prices from web search. Bars_raw.json reused (stale but directionally valid for RS60/RSI signals)."
   }
 }

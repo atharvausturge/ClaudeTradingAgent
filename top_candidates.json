@@ -45,15 +45,6 @@
     "earnings_blackout": false
   },
   {
-    "symbol": "LRCX",
-    "score": 0.04,
-    "rs_60d": 6.0,
-    "dip_5d": -2.67,
-    "rsi": 60.6,
-    "price": 1100.0,
-    "earnings_blackout": false
-  },
-  {
     "symbol": "AMAT",
     "score": 0.0341,
     "rs_60d": 8.0,
@@ -177,6 +168,15 @@
     "dip_5d": 0.17,
     "rsi": 46.1,
     "price": 455.0,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "LLY",
+    "score": -0.024,
+    "rs_60d": -2.0,
+    "dip_5d": 2.67,
+    "rsi": 70.3,
+    "price": 1064.59,
     "earnings_blackout": false
   }
 ]
