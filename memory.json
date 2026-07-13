@@ -307,6 +307,17 @@
       "reasoning": "Strong XLK sector momentum, high analyst target upside, and recent earnings surprise, but no clear sentiment signal due to lack of reddit data",
       "confidence": "high",
       "filled": true
+    },
+    {
+      "time": "2026-07-13T12:06:06.407586-04:00",
+      "action": "BUY",
+      "symbol": "DELL",
+      "qty": 45,
+      "price": 430.44,
+      "stop_price": 408.66,
+      "reasoning": "Strong sector momentum and high upside target, with recent positive news about Micron's US expansion plans",
+      "confidence": "high",
+      "filled": true
     }
   ],
   "weekly_summaries": [
@@ -844,6 +855,13 @@
       "thesis": "This week, the technology sector continues to lead the market with strong momentum, driven by AI and semiconductor trends. Stocks with high upside targets and recent positive news, such as TTMI and HPE, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as HUM and CBRL, should be avoided. The recent macro events and upcoming earnings reports will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
       "actions": [
         "BUY 13 MU @ $1002.27 | stop $951.93"
+      ]
+    },
+    {
+      "week_of": "2026-07-12",
+      "thesis": "This week, the technology sector continues to lead the market with strong momentum, driven by AI and semiconductor trends. Stocks with high upside targets and recent positive news, such as DELL, MU, FLEX, and DOCN, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as HUM, CBRL, and RXO, should be avoided. The recent macro events and upcoming earnings reports will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
+      "actions": [
+        "BUY 45 DELL @ $430.44 | stop $408.66"
       ]
     }
   ],
@@ -1849,6 +1867,11 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-07-13T12:06:06.407586-04:00",
+      "portfolio_value": 108097.6,
+      "buying_power": 295281.64
     }
   ],
   "last_monitor_run": "2026-07-08T11:41:27.001655-04:00",
@@ -2609,15 +2632,29 @@
   "weekly_summary_2026_07_13": {
     "week_of": "2026-07-13",
     "thesis": "AI semiconductor sector under near-term profit-taking pressure from SK Hynix ADR post-IPO pullback (-10% on Nasdaq after record $26.5B debut Friday July 10) and Samsung Q2 sell-the-news. TSMC Q2 earnings Thursday July 16 expected to confirm AI demand 'extremely robust' ($39-40B guided, >30% FY2026 growth). Portfolio consolidates to 3 positions: AMAT (AI equipment anchor, +46%, TSMC earnings = direct catalyst), LLY (defensive GLP-1 healthcare, +20%, immune to chip selloff), AMD (new entry \u2014 Zen 6 Venice launch July 22, Advancing AI conference July 22-23, Q2 earnings Aug 4; Goldman $640 / Stifel $635). Close MU (stop $951.93 at risk; SK Hynix HBM\u2192DRAM narrative overhang) and FLEX (marginal +2.85% gain, low conviction, repeated closure target). CPI June 2026 Tuesday July 14 is the primary macro risk.",
-    "positions_opened": ["AMD"],
-    "positions_closed": ["MU", "FLEX"],
+    "positions_opened": [
+      "AMD"
+    ],
+    "positions_closed": [
+      "MU",
+      "FLEX"
+    ],
     "close_reasons": {
       "MU": "Stop $951.93 at risk with semiconductor sector down 5-10%+ pre-market July 13. MU at $979 July 10, entry $1,002.27. SK Hynix redirecting HBM4 capacity to conventional DRAM creates demand-cooling narrative. Closing proactively. Re-entry above $1,050 when SK Hynix noise fades.",
       "FLEX": "Marginal +2.85% gain from $132.46 entry (~$136). No near-term catalysts. Been targeted for closure since June 22. Contract manufacturing without AI tailwinds. Closing to free capital for AMD and maintain 3-position max."
     },
-    "holds": ["AMAT", "LLY"],
-    "target_positions_eow": ["AMAT", "LLY", "AMD"],
-    "blackouts": {"LRCX": "earnings July 29"},
+    "holds": [
+      "AMAT",
+      "LLY"
+    ],
+    "target_positions_eow": [
+      "AMAT",
+      "LLY",
+      "AMD"
+    ],
+    "blackouts": {
+      "LRCX": "earnings July 29"
+    },
     "key_events_this_week": [
       "CPI June 2026 \u2014 Tuesday July 14 8:30 AM (May was 4.2% YoY; primary macro risk)",
       "Bank earnings Tue-Wed: JPM, GS, BAC, WFC, C, MS (Q2 2026; 4-6% options moves expected)",
