@@ -318,6 +318,15 @@
       "reasoning": "Strong sector momentum and high upside target, with recent positive news about Micron's US expansion plans",
       "confidence": "high",
       "filled": true
+    },
+    {
+      "time": "2026-07-15T11:07:30.657321-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "DELL",
+      "fill_price": 408.616,
+      "pl_pct": -5.07,
+      "pl_dollar": -982.08,
+      "reason": "stop loss triggered"
     }
   ],
   "weekly_summaries": [
@@ -1878,7 +1887,7 @@
       "portfolio_value": null,
       "buying_power": null,
       "positions_summary": {
-        "note": "Midweek check — Live Alpaca API unavailable (sandbox network policy, HTTP 403 policy denial). Last confirmed daily P&L July 14 close.",
+        "note": "Midweek check \u2014 Live Alpaca API unavailable (sandbox network policy, HTTP 403 policy denial). Last confirmed daily P&L July 14 close.",
         "last_confirmed_equity": 110119.96,
         "last_confirmed_date": "2026-07-14",
         "pnl_from_starting_capital_dollar": 10119.96,
@@ -1896,39 +1905,71 @@
               "note": "SK Hynix ADR post-IPO selloff pressured semiconductor sector; 5 positions open"
             },
             "2026-07-14": {
-              "pnl_dollar": 2571.40,
+              "pnl_dollar": 2571.4,
               "pnl_pct": 2.39,
               "vs_spy_pct": 2.03,
-              "note": "CPI June 2026 reaction — outperformed SPY by +2.03%; recovery day; 5 positions open"
+              "note": "CPI June 2026 reaction \u2014 outperformed SPY by +2.03%; recovery day; 5 positions open"
             }
           }
         },
         "estimated_open_positions": 5,
-        "target_positions_per_trade_plan": ["AMAT", "LLY", "AMD"],
+        "target_positions_per_trade_plan": [
+          "AMAT",
+          "LLY",
+          "AMD"
+        ],
         "thesis_check": {
-          "AMAT": "INTACT / STRONG HOLD — entry $411.45 (80 shares), last live +33.36% (+$10,115 as of July 8). AI semi equipment supercycle; TSMC Q2 earnings July 16 (tomorrow) is a DIRECT catalyst — TSMC is AMAT's largest customer, guided $39-40B Q2 revenue; beat = positive equipment order signal. Analyst targets $720-$790 (Jefferies $770, BofA $720). Stop $390.88. STRONG HOLD.",
-          "LLY": "INTACT / STRONG HOLD — entry $992.17 (33 shares), last live +23.97% (+$6,897 as of July 8). Medicare GLP-1 Bridge Program active (20M eligible Medicare patients, $50/mo Zepbound/Foundayo). Defensive sector, immune to chip volatility. Stop $942. STRONG HOLD.",
-          "AMD": "NEW / UNCERTAIN — July 13 trade plan called for BUY ~$516 (20% portfolio, stop ~$490). Entry unconfirmed (API blocked). If entered: Zen 6 Venice 2nm CPU launch July 22, Advancing AI 2026 conference July 22-23, Q2 earnings Aug 4 (safe window). Goldman $640 / Stifel $635 targets. July 14 +2.39% portfolio recovery consistent with AMD rebound on cooling CPI.",
-          "MU": "FLAGGED FOR CLOSE / CONCERN — last live -7.73% (-$1,007 as of July 8). At -8% concern threshold. July 13 trade plan explicitly calls for closing MU (stop $951.93 at risk; SK Hynix redirecting HBM4 capacity to conventional DRAM creates demand-cooling narrative). Whether closed July 13-14 is unverifiable without API access. If still open, CLOSE IMMEDIATELY.",
-          "FLEX": "FLAGGED FOR CLOSE — +2.85% marginal gain from $132.46 entry. July 13 trade plan calls for closing FLEX (no AI catalysts, contract manufacturing, repeated closure target since June 22). Likely closed per trade plan."
+          "AMAT": "INTACT / STRONG HOLD \u2014 entry $411.45 (80 shares), last live +33.36% (+$10,115 as of July 8). AI semi equipment supercycle; TSMC Q2 earnings July 16 (tomorrow) is a DIRECT catalyst \u2014 TSMC is AMAT's largest customer, guided $39-40B Q2 revenue; beat = positive equipment order signal. Analyst targets $720-$790 (Jefferies $770, BofA $720). Stop $390.88. STRONG HOLD.",
+          "LLY": "INTACT / STRONG HOLD \u2014 entry $992.17 (33 shares), last live +23.97% (+$6,897 as of July 8). Medicare GLP-1 Bridge Program active (20M eligible Medicare patients, $50/mo Zepbound/Foundayo). Defensive sector, immune to chip volatility. Stop $942. STRONG HOLD.",
+          "AMD": "NEW / UNCERTAIN \u2014 July 13 trade plan called for BUY ~$516 (20% portfolio, stop ~$490). Entry unconfirmed (API blocked). If entered: Zen 6 Venice 2nm CPU launch July 22, Advancing AI 2026 conference July 22-23, Q2 earnings Aug 4 (safe window). Goldman $640 / Stifel $635 targets. July 14 +2.39% portfolio recovery consistent with AMD rebound on cooling CPI.",
+          "MU": "FLAGGED FOR CLOSE / CONCERN \u2014 last live -7.73% (-$1,007 as of July 8). At -8% concern threshold. July 13 trade plan explicitly calls for closing MU (stop $951.93 at risk; SK Hynix redirecting HBM4 capacity to conventional DRAM creates demand-cooling narrative). Whether closed July 13-14 is unverifiable without API access. If still open, CLOSE IMMEDIATELY.",
+          "FLEX": "FLAGGED FOR CLOSE \u2014 +2.85% marginal gain from $132.46 entry. July 13 trade plan calls for closing FLEX (no AI catalysts, contract manufacturing, repeated closure target since June 22). Likely closed per trade plan."
         },
-        "open_orders_check": "Cannot verify GTC stop-loss orders active — Alpaca API blocked (HTTP 403, gateway policy denial). Ongoing since session start.",
+        "open_orders_check": "Cannot verify GTC stop-loss orders active \u2014 Alpaca API blocked (HTTP 403, gateway policy denial). Ongoing since session start.",
         "flags": {
-          "positions_down_gt_8pct": "MU at -7.73% as of July 8 — approaching -8% threshold. July 13 trade plan calls for immediate close. Status unverifiable.",
+          "positions_down_gt_8pct": "MU at -7.73% as of July 8 \u2014 approaching -8% threshold. July 13 trade plan calls for immediate close. Status unverifiable.",
           "positions_up_gt_10pct": [
-            "AMAT: +33-46% from $411.45 entry — STRONG HOLD; TSMC Q2 earnings July 16 is direct positive catalyst",
-            "LLY: +24% from $992.17 entry — STRONG HOLD; defensive healthcare, GLP-1 Medicare thesis delivering"
+            "AMAT: +33-46% from $411.45 entry \u2014 STRONG HOLD; TSMC Q2 earnings July 16 is direct positive catalyst",
+            "LLY: +24% from $992.17 entry \u2014 STRONG HOLD; defensive healthcare, GLP-1 Medicare thesis delivering"
           ],
-          "stop_loss_verification": "Cannot verify — Alpaca API blocked (HTTP 403 policy denial from proxy gateway). Ongoing issue across all midweek checks.",
-          "critical_event_tomorrow": "TSMC Q2 earnings Thursday July 16 — guided $39-40B revenue (+10% sequential); AI/HPC described as 'extremely robust'; consensus expecting a beat. Beat scenario: AMAT, AMD, and AI semi complex rally. Miss scenario: additional sector headwind.",
-          "cpi_absorbed": "CPI June 2026 (July 14) drove portfolio +2.39% vs SPY +0.36% (+2.03% relative outperformance). Inflation cooling from May 4.2% YoY reduces immediate rate-hike pressure — positive for growth/tech."
+          "stop_loss_verification": "Cannot verify \u2014 Alpaca API blocked (HTTP 403 policy denial from proxy gateway). Ongoing issue across all midweek checks.",
+          "critical_event_tomorrow": "TSMC Q2 earnings Thursday July 16 \u2014 guided $39-40B revenue (+10% sequential); AI/HPC described as 'extremely robust'; consensus expecting a beat. Beat scenario: AMAT, AMD, and AI semi complex rally. Miss scenario: additional sector headwind.",
+          "cpi_absorbed": "CPI June 2026 (July 14) drove portfolio +2.39% vs SPY +0.36% (+2.03% relative outperformance). Inflation cooling from May 4.2% YoY reduces immediate rate-hike pressure \u2014 positive for growth/tech."
         },
-        "midweek_verdict": "Portfolio at estimated $110,120 (+10.1% from $100K starting capital) after recovery on CPI day (July 14 +2.39% vs SPY +0.36%). Week-to-date: +$2,022 / +1.87%. Core thesis intact: AMAT (+33-46%) and LLY (+24%) are dominant winners, both well above +10% threshold, both STRONG HOLDs. MU was -7.73% as of July 8 — at the -8% concern threshold; July 13 trade plan calls for close — status unknown. AMD entry from July 13 plan likely executed; CPI outperformance consistent with AMD recovery. TSMC Q2 earnings TOMORROW (July 16) is the pivotal event of the week — definitive AI/HPC demand signal and direct AMAT catalyst. No action required without API access. API blockage is the standing operational constraint."
+        "midweek_verdict": "Portfolio at estimated $110,120 (+10.1% from $100K starting capital) after recovery on CPI day (July 14 +2.39% vs SPY +0.36%). Week-to-date: +$2,022 / +1.87%. Core thesis intact: AMAT (+33-46%) and LLY (+24%) are dominant winners, both well above +10% threshold, both STRONG HOLDs. MU was -7.73% as of July 8 \u2014 at the -8% concern threshold; July 13 trade plan calls for close \u2014 status unknown. AMD entry from July 13 plan likely executed; CPI outperformance consistent with AMD recovery. TSMC Q2 earnings TOMORROW (July 16) is the pivotal event of the week \u2014 definitive AI/HPC demand signal and direct AMAT catalyst. No action required without API access. API blockage is the standing operational constraint."
       },
       "is_midweek_check": true
+    },
+    {
+      "time": "2026-07-15T11:07:30.657321-04:00",
+      "portfolio_value": 105331.36,
+      "buying_power": 309912.23,
+      "positions": [
+        {
+          "symbol": "AMAT",
+          "pl_pct": 36.89,
+          "pl_dollar": 11188.61
+        },
+        {
+          "symbol": "FLEX",
+          "pl_pct": 3.28,
+          "pl_dollar": 217.35
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 14.93,
+          "pl_dollar": 4295.35
+        },
+        {
+          "symbol": "MU",
+          "pl_pct": -9.05,
+          "pl_dollar": -1179.41
+        }
+      ],
+      "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-07-08T11:41:27.001655-04:00",
+  "last_monitor_run": "2026-07-15T11:07:30.657321-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
