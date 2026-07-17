@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-13",
+  "last_run": "2026-07-17",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -1969,7 +1969,7 @@
       "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-07-15T11:07:30.657321-04:00",
+  "last_monitor_run": "2026-07-17T09:00:00-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
@@ -2815,5 +2815,141 @@
     },
     "portfolio_value_entering_week": 110164,
     "data_note": "Alpaca API unavailable (network policy, HTTP 403). Portfolio value from daily P&L log July 10 ($110,163.87, 4 positions). Current prices from web search. Bars_raw.json reused (stale but directionally valid for RS60/RSI signals)."
+  },
+  "weekly_summary_2026_07_17_eow_wrap": {
+    "week_of": "2026-07-13",
+    "summary_type": "friday_eow_wrap",
+    "generated_at": "2026-07-17",
+    "summary": "Difficult week — portfolio entered at $110,163.87 (July 10 close) and closed Thursday July 16 at $105,186.69, down -$4,977 / -4.52%. Week was bookended by two recoveries but dragged by DELL stop and MU deterioration. Monday July 13 fell -2.33% (-$2,561) vs SPY -0.77% on SK Hynix ADR post-IPO profit-taking (-10% on Nasdaq after record $26.5B debut). Tuesday July 14 recovered strongly +2.39% (+$2,571) vs SPY +0.36% — outperformed by +2.03% on CPI June 2026 cooling (May 4.2% easing). Wednesday July 15 was the sharpest loss: -3.60% (-$3,958) vs SPY +0.40% (-4.00% relative underperformance) as DELL stop triggered at $408.616 (-5.07%, -$982.08 realized) and MU deteriorated to -9.05% in the live snapshot. Thursday July 16 (TSMC Q2 earnings day) was flat: -0.66% (-$702) vs SPY -0.54% (-0.12% relative) — slight underperformance despite TSMC Q2 expected beat as a direct AMAT catalyst. DELL was added July 13 per trade plan (45 shares @ $430.44, AI server infra thesis) but stopped out July 15. AMD entry from trade plan unconfirmed (API blocked). MU closes today per Friday -2% rule (-9.05%). Core holds AMAT (+36.89%) and LLY (+14.93%) remain strong and intact. FLEX (+3.28%) held above threshold.",
+    "week_performance": {
+      "equity_entering_week": 110163.87,
+      "equity_eow": 105186.69,
+      "week_pnl_dollar": -4977.18,
+      "week_pnl_pct": -4.52,
+      "daily_breakdown": {
+        "2026-07-13": {
+          "pnl_dollar": -2561.09,
+          "pnl_pct": -2.33,
+          "vs_spy_pct": -1.56,
+          "note": "SK Hynix ADR post-IPO selloff (-10% Nasdaq debut pressure); 5 positions opened (DELL added)"
+        },
+        "2026-07-14": {
+          "pnl_dollar": 2571.40,
+          "pnl_pct": 2.39,
+          "vs_spy_pct": 2.03,
+          "note": "CPI June 2026 cooling reaction — outperformed SPY by +2.03%; inflation cooling reduces rate-hike pressure"
+        },
+        "2026-07-15": {
+          "pnl_dollar": -3958.48,
+          "pnl_pct": -3.60,
+          "vs_spy_pct": -4.00,
+          "note": "DELL stop triggered at $408.616 (-5.07%, -$982.08 realized); MU -9.05% in live snapshot; worst day of week"
+        },
+        "2026-07-16": {
+          "pnl_dollar": -702.18,
+          "pnl_pct": -0.66,
+          "vs_spy_pct": -0.12,
+          "note": "TSMC Q2 earnings day; slight underperformance despite expected beat as direct AMAT catalyst"
+        }
+      }
+    },
+    "positions_opened": ["DELL"],
+    "positions_closed_stop": ["DELL"],
+    "positions_closed_friday_rule": ["MU"],
+    "close_reasons": {
+      "DELL": "Stop triggered July 15 at $408.616 (stop $408.66) — -5.07% / -$982.08 realized; entered July 13 at $430.44 (45 shares); rate environment and sector weakness undermined AI server thesis within 2 days",
+      "MU": "Friday -2% rule: -9.05% (-$1,179.41) as of July 15 live snapshot; far below -2% threshold; stop $951.93 at immediate risk with semiconductor sector pressure; SK Hynix redirecting HBM4 capacity to conventional DRAM creates demand-cooling narrative; trade plan (July 13) also explicitly targeted closure; entry $1,002.27 July 6"
+    },
+    "holds_eow": ["AMAT", "LLY", "FLEX"],
+    "pl_per_position_last_known": {
+      "AMAT": {
+        "plpc": 36.89,
+        "pl_dollar": 11188.61,
+        "as_of": "2026-07-15",
+        "entry": 411.45,
+        "qty": 80,
+        "status": "STRONG HOLD — AI semi equipment supercycle; TSMC Q2 July 16 direct catalyst; analyst targets $720-$790"
+      },
+      "LLY": {
+        "plpc": 14.93,
+        "pl_dollar": 4295.35,
+        "as_of": "2026-07-15",
+        "entry": 992.17,
+        "qty": 33,
+        "status": "STRONG HOLD — Medicare GLP-1 Bridge active; defensive healthcare; Mounjaro +125% YoY"
+      },
+      "FLEX": {
+        "plpc": 3.28,
+        "pl_dollar": 217.35,
+        "as_of": "2026-07-15",
+        "entry": 132.46,
+        "status": "HOLD — above -2% threshold; marginal position; repeated closure target but rule not triggered"
+      },
+      "MU": {
+        "plpc": -9.05,
+        "pl_dollar": -1179.41,
+        "as_of": "2026-07-15",
+        "entry": 1002.27,
+        "qty": 13,
+        "closing_friday": true,
+        "status": "CLOSING — Friday rule triggered (-9.05%); stop $951.93 at risk"
+      },
+      "DELL": {
+        "plpc": -5.07,
+        "pl_dollar": -982.08,
+        "stop_triggered": true,
+        "fill_price": 408.616,
+        "entry": 430.44,
+        "qty": 45,
+        "status": "CLOSED — stop triggered July 15"
+      }
+    },
+    "realized_this_week": {
+      "DELL": -982.08,
+      "total_realized": -982.08
+    },
+    "net_pnl_estimate": -4977,
+    "portfolio_value_entering_week": 110164,
+    "portfolio_value_eow": 105187,
+    "portfolio_value_from_starting_capital_pct": 5.19,
+    "data_note": "Live Alpaca API unavailable (sandbox network policy, HTTP 403 / curl exit 56). Position P&L from last live snapshot 2026-07-15T11:07:30-04:00. July 16 equity $105,186.69 from daily P&L log. July 17 (today, Friday) intraday P&L unknown — GitHub Actions friday-execute-on-push.yml will close MU.",
+    "key_events": [
+      "July 13: SK Hynix ADR (SKHYV) post-IPO selling — record $26.5B Nasdaq debut followed by -10% profit-taking; pressured semiconductor complex; DELL opened at $430.44 per trade plan",
+      "July 14: CPI June 2026 cooling — outperformed SPY by +2.03% on inflation data; rate-hike pressure easing",
+      "July 15: DELL stop triggered ($408.616, -5.07%, -$982.08 realized); MU deteriorated to -9.05% from $1,002.27 entry; worst relative day of week (-4.00% vs SPY)",
+      "July 16: TSMC Q2 earnings — guided $39-40B Q2 revenue (AI/HPC 'extremely robust'); expected beat is direct AMAT catalyst; portfolio -0.66% vs SPY -0.54%",
+      "AMD entry (trade plan target ~$516, 20% portfolio): unconfirmed — API blocked throughout week; not visible in July 15 live snapshot",
+      "MU closing today per Friday -2% rule — re-entry candidate above $1,050 when SK Hynix noise fades"
+    ],
+    "watchlist_next_week": {
+      "AMD": "Primary candidate — Zen 6 Venice 2nm CPU launch July 22, Advancing AI 2026 conference July 22-23, Q2 earnings Aug 4; Goldman $640 / Stifel $635 targets; entry on dip if TSMC Q2 beat triggers semiconductor recovery",
+      "MU": "Closed today — re-entry above $1,050 once SK Hynix post-IPO pressure fades; BofA $1,500 long-term target; HBM4 supercycle thesis intact",
+      "NVDA": "At 3-position max if AMD entered; revisit if AMAT or LLY hits take-profit; Blackwell demand intact; earnings Aug 26 safe window",
+      "LRCX": "EARNINGS BLACKOUT — reports July 29; maintain blackout on new LRCX entries"
+    }
+  },
+  "portfolio_snapshot_2026_07_17": {
+    "time": "2026-07-17T09:00:00-04:00",
+    "portfolio_value": 105186.69,
+    "buying_power": null,
+    "is_friday_close": true,
+    "data_source": "Daily P&L log July 16 close. Live Alpaca API unavailable (HTTP 403 / curl exit 56). Last live position snapshot 2026-07-15T11:07:30-04:00.",
+    "positions_summary": {
+      "note": "Market open July 17 (Friday). Live API unavailable. Positions from last confirmed snapshot July 15.",
+      "last_confirmed_equity": 105186.69,
+      "last_confirmed_date": "2026-07-16",
+      "pnl_from_starting_capital_dollar": 5186.69,
+      "pnl_from_starting_capital_pct": 5.19,
+      "open_positions_last_known": 4,
+      "friday_close_symbols": ["MU"],
+      "friday_close_executed_by": "GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json",
+      "positions_after_friday_close": ["AMAT", "LLY", "FLEX"],
+      "pl_highlights_last_known": {
+        "AMAT": "+36.89% (+$11,189) — dominant winner; AI semi equipment supercycle; TSMC Q2 beat expected tailwind; STRONG HOLD",
+        "LLY": "+14.93% (+$4,295) — GLP-1 Medicare Bridge defensive anchor; STRONG HOLD",
+        "FLEX": "+3.28% (+$217) — marginal position; above close threshold; HOLD",
+        "MU": "-9.05% (-$1,179) — CLOSING: Friday -2% rule triggered; stop $951.93 at risk"
+      }
+    }
   }
 }
