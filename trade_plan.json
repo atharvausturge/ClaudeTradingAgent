@@ -1,91 +1,95 @@
 {
-  "week_of": "2026-07-13",
-  "generated_at": "2026-07-13T09:00:00-04:00",
-  "week_thesis": "AI semiconductor sector is under near-term profit-taking pressure from SK Hynix ADR post-IPO pullback (-10% on Nasdaq after record $26.5B debut Friday July 10), Samsung Q2 sell-the-news dynamics, and Middle East tensions. Fundamental AI demand is NOT deteriorating — TSMC guided $39-40B Q2 revenue (+10% sequential), projects >30% FY2026 USD growth, and describes AI/HPC demand as 'extremely robust'; HPC is 61% of TSMC revenue. The current chip selloff is technical/sentiment-driven, NOT fundamental. Portfolio consolidates to 3 high-conviction positions: AMAT (AI equipment supercycle anchor, +46% gain, TSMC Q2 Thursday July 16 is a direct equipment-order catalyst), LLY (defensive GLP-1 healthcare winner, immune to chip volatility, +20% gain), and AMD (Zen 6 Venice launch July 22 + Advancing AI 2026 conference July 22-23 + Q2 earnings Aug 4; Goldman $640 / Stifel $635 targets). Actions: close MU (stop $951.93 at risk with chips -5-10% pre-market) and FLEX (marginal gain, low conviction). Key macro events: CPI June 2026 Tuesday July 14 8:30 AM (May was 4.2% YoY — hot print = tech headwind); bank earnings Tue-Wed (JPM, GS, BAC, WFC, C, MS); TSMC Q2 earnings Thursday July 16 (definitive AI demand barometer, expected beat). LRCX blackout maintained (earnings July 29).",
+  "week_of": "2026-07-20",
+  "generated_at": "2026-07-20T09:00:00-04:00",
+  "week_thesis": "Portfolio enters July 20 with 3 positions: AMAT (+36.89% as of July 15), LLY (+14.93%), and FLEX (+3.28%, no AI catalyst, repeatedly targeted for closure). Semiconductor mega-caps are in a mid-cycle rotation: AMD is down 17% from June peak and another ~13% this morning ($402-430 range, earnings August 4 blackout); Burry disclosed short on NVDA+AMAT+SOXX. The opportunity is in AI networking infrastructure — MRVL (Marvell Technology, $186.53) is building the custom silicon backbone for the AI buildout: Amazon Trainium 3 volume ramp H2 2026, Google Merope LPU design win ($12B lifecycle revenue), Nvidia $2B investment, Jensen Huang endorsement as 'next trillion-dollar company,' and 28 analysts Buy at $252.56 average target (+35.4% upside). RSI oversold — dip from $200+ to $186 is technical, not fundamental. Action: close FLEX (contract manufacturing, zero AI catalyst, +3.28% marginal gain, lock profit), open MRVL. Hold AMAT and LLY. Blackouts this week: GOOGL (July 22), INTC (July 23), LRCX (July 29). AMD blackout August 4. LLY earnings August 5-6 approaching — plan exit next week.",
 
   "market_context": {
-    "spy_note": "S&P 500 at ~7,552 on July 13 (SPY ~$755). Q2 2026 earnings season begins this week with banks Tues, TSMC/Netflix Thurs.",
-    "amat_price_approx": 540.0,
-    "amat_note": "July 10 confirmed close $602.50 (ATH $723 June 30). Down ~10% today with semi sector. Entry $411.45, stop $390.88, still +32-46% from entry. TSMC earnings Thursday is direct catalyst.",
-    "lly_price_approx": 1188.0,
-    "lly_note": "July 13 price $1,188. Entry $992.17, +20% gain. Defensive, unaffected by chip selloff. Medicare GLP-1 Bridge active.",
-    "mu_price_approx": 930.0,
-    "mu_note": "July 10 close $979.30 (ATH $1,213 June 25). Chip sector down 5-10% today. Stop $951.93 at high risk of triggering. Re-enter above $1,050.",
-    "amd_price_approx": 516.0,
-    "amd_note": "Down 8% July 7 after Samsung selloff; recovered +7.75% July 9. Pre-market July 13 under pressure again. Goldman $640 target. Zen 6 Venice July 22. Q2 earnings Aug 4.",
-    "nvda_price_approx": 208.0,
-    "nvda_note": "July 13 price $208 (range $201-$211). Earnings Aug 26 (safe window). No slot available at 3-position max.",
-    "crwd_price_approx": 188.5,
-    "crwd_note": "Post 4:1 split (effective July 2, 2026; bars show pre-split $480). Down 5% July 13. Watchlist.",
+    "spy_price_approx": 736.5,
+    "spy_note": "SPY last confirmed ~$736.50 (bars_raw). Semi sector (SOXX) -22% since June 22 peak — bear market for chip stocks.",
+    "mrvl_price_approx": 186.53,
+    "mrvl_note": "MRVL $186.53 July 20 (crashed below $200 from ~$210 peak). Amazon Trainium 3 processor ramp H2 2026; Google Merope LPU win $12B lifecycle (KeyBanc July 14); Nvidia $2B investment. Earnings Aug 20 — safe window.",
+    "amat_price_approx": 539.7,
+    "amat_note": "AMAT ~$540 July 20. Down from ATH $729 (Burry shorted June 30) and $602 (July 10) to $540. Entry $411.45, unrealized +31.4%. 26 analysts Buy, targets $593-790. Earnings ~Aug 13.",
+    "lly_price_approx": 1176.75,
+    "lly_note": "LLY ~$1,177 July 20. Entry $992.17, unrealized +18.6%. GLP-1 Medicare Bridge active, Foundayo (orforglipron) FDA approved, Q1 revenue $19.8B (+56% YoY). Earnings August 5-6 — plan exit next week.",
+    "flex_price_approx": 136.83,
+    "flex_note": "FLEX ~$136.83, entry $132.46. +3.28% marginal gain (112 shares). Contract manufacturing, no AI catalyst. Repeated closure target since June 22 — closing this week.",
+    "amd_price_approx": 415.0,
+    "amd_note": "AMD opened ~$409 today, range $402-430. Down 17%+ from June peak. Advancing AI 2026 conference July 22-23 (Zen 6 Venice launch) is near-term catalyst but earnings August 4 = blackout. Avoid new entries.",
+    "mu_price_approx": 848.95,
+    "mu_note": "MU closed July 17 at $848.95. Was closed Friday July 17 per Friday -2% rule (was at -9.05%). Entry $1,002.27 July 6. Re-entry candidate above $1,050 when sector stabilizes.",
     "macro_risks": [
-      "CPI June 2026 — Tuesday July 14 8:30 AM ET (May was 4.2% YoY; April was 3.8%: cooling trend helps tech)",
-      "Bank earnings Tue-Wed: JPM, GS, BAC, WFC, C, MS — options pricing 4.4-6% moves; macro sentiment read",
-      "TSMC Q2 earnings Thursday July 16 — definitive AI/HPC demand barometer; guided $39-40B (expected beat)",
-      "SK Hynix ADR (SKHYV) post-IPO pressure — was +13% on debut Fri July 10; down 10% Monday July 13",
-      "Middle East tensions — adding risk-off pressure to energy/defense, broad caution",
-      "LRCX earnings July 29 — maintain blackout on new LRCX entries"
+      "GOOGL Q2 earnings July 22 after close — BLACKOUT; AI cloud spend barometer",
+      "INTC Q2 earnings July 23 after close — BLACKOUT; Intel 18A manufacturing update = AMAT risk event",
+      "LRCX earnings July 29 — BLACKOUT maintained (score_local.py EARNINGS_BLACKOUT)",
+      "AMD Q2 earnings August 4 — hard blackout; Advancing AI July 22-23 may provide brief catalyst",
+      "LLY Q2 earnings August 5-6 — 2.5 weeks away; plan LLY close next week before August 1",
+      "AMAT fiscal Q3 earnings ~August 13 — 3.5 weeks out; hold through INTC July 23, plan exit before August 13",
+      "Fed Warsh: October 2026 rate hike consensus; 10yr ~4.54%; pressure on high-multiple growth names",
+      "Gemini 3.5 Pro behind schedule — AI demand uncertainty narrative headwind"
     ]
   },
 
   "buys": [
     {
-      "symbol": "AMD",
-      "reasoning": "AMD fell 8% to ~$516 on July 7 (Samsung Q2 sell-the-news selloff) and recovered +7.75% on July 9, proving buyers step in at this level. Today's pre-market weakness from SK Hynix ADR post-IPO profit-taking (-10%) is not AMD-specific but creates a dip entry. Three hard catalysts in the next 22 days: (1) Zen 6 Venice 2nm server CPU launch July 22 — first TSMC N2-node volume product, expected to take hyperscaler data center share from Intel; (2) Advancing AI 2026 conference July 22-23 — AMD Helios rack-scale AI platform showcase with OpenAI and Meta 6GW GPU roadmap updates; (3) Q2 2026 earnings August 4 — Data Center segment $5.8B +57% YoY in Q1, consensus Q2 ~$11.2B total with DC likely $6.5B+. Goldman Sachs target $640 (+24% upside), Stifel target $635, both citing agentic AI CPU demand inflection. TSMC Q2 earnings Thursday July 16 expected to confirm 'extremely robust' AI chip demand and could trigger broad semiconductor recovery that lifts AMD. Earnings safely August 4 — well within swing hold window. Stop at -5% (~$490). Score +0.234 (universe #1), RS60=+66% vs SPY.",
-      "confidence": "medium",
+      "symbol": "MRVL",
+      "reasoning": "MRVL (Marvell Technology, $186.53) is the premier AI networking infrastructure play — building the custom silicon that hyperscalers need beyond GPUs. Three confirmed H2 2026 revenue catalysts: (1) Amazon Trainium 3 custom AI processor volume ramp begins H2 2026 per KeyBanc analyst John Vinh (July 14 note); (2) Google 'Merope' LPU design win projected $12B lifetime revenue per KeyBanc; (3) Teralynx T100 102.4 Tbps AI switch ramping. Nvidia $2B strategic investment + Jensen Huang publicly endorsed as 'next trillion-dollar company.' 28 analysts Buy, average analyst target $252.56 = +35.4% upside; KeyBanc $400, RBC $360, UBS $340, Cantor $300. RSI oversold (bars: 25.9) — crash from $200+ to $186 is technical sector contagion, not fundamental. Earnings August 20 — 4+ weeks out, safe swing hold window. Stop at -5% ($177.20).",
+      "confidence": "high",
       "qty_pct": 0.20,
-      "entry_price_approx": 516.0,
-      "stop_pct": -0.05,
-      "stop_price_approx": 490.0,
+      "entry_price_approx": 186.53,
+      "stop_price_approx": 177.2,
       "take_profit_pct": 0.08,
-      "earnings_date": "2026-08-04",
-      "thesis_category": "AI compute — GPU/CPU demand supercycle, near-term product catalysts"
+      "earnings_date": "2026-08-20",
+      "thesis_category": "AI networking infrastructure — custom silicon (Trainium 3, Merope LPU), hyperscaler partnerships"
     }
   ],
 
-  "close_positions": ["MU", "FLEX"],
+  "close_positions": ["FLEX"],
 
   "close_reasoning": {
-    "MU": "Stop at $951.93 is at immediate risk. MU closed July 10 at $979.30; with semiconductor sector down 5-10% pre-market July 13 (SK Hynix ADR -10%, AMAT -10%, AMD -8% earlier), MU stop will likely trigger at market open (~$930 = -5% from July 10). Additional fundamental overhang: SK Hynix is deliberately redirecting capacity from HBM4 to conventional DRAM where margins are higher — narrative creates fear of AI memory demand cooling despite TSMC's data refuting it. Re-enter MU above $1,050 once SK Hynix noise fades and TSMC Q2 confirms HBM demand (Thursday). MU entry $1,002.27 (July 6), stop $951.93.",
-    "FLEX": "Low-conviction position with marginal +2.85% gain from $132.46 entry (~$136 current). Been targeted for closure in every trade plan since June 22. Contract manufacturing with no AI-driven catalysts and no near-term product launches. Closes to consolidate to max 3 high-conviction positions and free capital for AMD entry. Lock small gain cleanly."
+    "FLEX": "Contract manufacturing (Flextronics), no AI or semiconductor catalyst. +3.28% marginal gain from $132.46 entry (112 shares, ~$489 gain). Has been a repeated closure target since June 22 weekly plan (close_positions listed but above -2% Friday rule threshold). Closing now to free capital for MRVL and reduce to 3 high-conviction AI positions. Lock the small gain cleanly.",
+    "MU_note": "MU was closed Friday July 17 per Friday -2% rule (-9.05%, entry $1,002.27, closed ~$911 estimated). DELL was stopped July 15 at $408.616 (-5.07%). These are already reflected in the July 17 EOW snapshot."
   },
 
   "hold_positions": ["AMAT", "LLY"],
 
   "hold_reasoning": {
-    "AMAT": "Core portfolio anchor at +46% gain (entry $411.45, July 10 confirmed close $602.50; likely $540-570 today with sector weakness but still +32-38% from entry). Analyst targets $720-790 (Mizuho, Susquehanna, BofA, Wells Fargo). TSMC Q2 earnings Thursday July 16 is a DIRECT positive catalyst — TSMC is AMAT's largest customer; TSMC's guided $39-40B Q2 and CoWoS packaging capacity expansion translate directly to AMAT equipment orders. AI semiconductor equipment capex multi-year cycle intact (advanced nodes = 74% of TSMC wafer revenue, CoWoS utilization full). Stop at $390.88 provides $211 buffer below current price — cannot be stopped out even in a 35% sector correction. STRONG HOLD.",
-    "LLY": "Core defensive anchor at +20% gain (entry $992.17, current ~$1,188). Completely immune to semiconductor/AI sector volatility — serves as portfolio shock absorber. Medicare GLP-1 Bridge Program launched July 1 for 20M eligible Medicare patients at $50/mo Zepbound; secular demand growth with government-backed coverage. Mounjaro Q1 revenue +125% YoY to $8.7B. No near-term earnings risk (Q2 typically August). 24/7 Wall St notes 'Eli Lilly's $400B Surge Is Reshaping Big Pharma.' Stop ~$942 ($246 buffer from current). HOLD."
+    "AMAT": "HOLD. Entry $411.45 (80 shares), last confirmed +36.89% (+$11,189 as of July 15); current ~$540 = +31.4%. Despite Burry short from $729 and -12% from July 10 close, AMAT remains +31% above entry with stop at $390.88 providing $149 buffer. 26 analysts Buy, targets $593-790. INTC earnings July 23 is a key risk event as Intel is an AMAT customer — watch for 18A fab capacity guidance. Plan: CLOSE before August 13 earnings to avoid binary risk. Take-profit at +8% above entry ($444.37) already far exceeded; let winner run with trailing stop consideration.",
+    "LLY": "HOLD. Entry $992.17 (33 shares), last confirmed +14.93% (+$4,295 July 15); current ~$1,177 = +18.6%. GLP-1 thesis accelerating: Foundayo (orforglipron) FDA approved (pill form, any time/day), CMS $50/mo Medicare cap for obesity drugs (20M eligible patients), Q1 revenue $19.8B +56% YoY. Immune to semiconductor correction. ALERT: Q2 earnings August 5-6. Plan to CLOSE before August 1 to lock +18.6% gain and avoid binary earnings risk."
   },
 
   "skip_reasoning": {
-    "NVDA": "Compelling long-term thesis (earnings Aug 26 in safe window, $300+ targets, Blackwell demand) but already at 3-position max with AMAT + LLY + AMD. No allocation room. Revisit after CPI Tuesday and TSMC Thursday — if both benign, AMD could hit take-profit freeing a slot for NVDA entry.",
-    "MU": "Closed this week — stop at risk. Long-term AI memory thesis intact (HBM4 supercycle, BofA $1,500 target). Re-entry above $1,050 once SK Hynix ADR post-IPO pressure fades and TSMC Q2 confirms HBM4 demand Thursday.",
-    "LRCX": "EARNINGS BLACKOUT — LRCX reports earnings July 29. Avoid new entries per standing policy. Score +0.040 (RS60=+6%).",
-    "CRWD": "Post 4:1 split (July 2, 2026; ~$188 post-split). At 3-position max. Cybersecurity thesis intact but no allocation room this week.",
-    "MRVL": "Stale bars data ($115 pre-earnings vs significantly higher actual price post-gap). Skip until fresh bars; no allocation room at 3-position max."
+    "AMD": "Earnings August 4 — hard blackout. Down 17%+ from June peak, another ~13% today. Advancing AI conference July 22-23 (Zen 6 Venice launch) could be short-term catalyst. Monitor for post-earnings re-entry August 5+. Universe #1 scorer (RS60=+66%) but can't enter this week.",
+    "GOOGL": "Earnings July 22 — blackout. AI cloud demand print will be key for overall tech sector sentiment.",
+    "INTC": "Earnings July 23 — blackout. Intel 18A manufacturing progress key unknown; could move AMAT as equipment supplier.",
+    "LRCX": "Earnings July 29 — blackout (EARNINGS_BLACKOUT in score_local.py).",
+    "NVDA": "Burry short disclosed (NVDA+AMAT+SOXX basket). Sector headwinds. No slot available (AMAT+LLY+MRVL = max 3). Earnings Aug 26 is safe window but pass for now.",
+    "CRWD": "Cybersecurity tailwind real (+11% July 14 on cooler CPI, analyst targets $230-250, post-4:1 split ~$203). Scored 5th. MRVL offers superior conviction (+35% vs 13-23% upside, larger specific catalyst pipeline). Watchlist.",
+    "NEM": "Gold miner, 7th in scoring. Macro defensiveness appealing but outside AI/tech mandate.",
+    "MRVL_bars_note": "Bars_raw.json shows MRVL at stale $115 (pre-gap data from months ago; actual $186.53 July 20). Scoring RS60/RSI directionally valid despite stale absolute price."
   },
 
   "portfolio_snapshot_estimate": {
-    "note": "Alpaca API unavailable (network policy, HTTP 403). Values from last confirmed daily P&L (July 10, 2026) and web-searched current prices.",
-    "portfolio_value_july10": 110163.87,
-    "positions_confirmed_jul10": 4,
-    "amat_position": {"entry": 411.45, "qty": 80, "current_approx": 602.5, "gain_pct_approx": 46.4},
-    "lly_position": {"entry": 992.17, "qty": 33, "current_approx": 1188.0, "gain_pct_approx": 19.7},
-    "mu_position": {"entry": 1002.27, "qty": 13, "current_approx": 930.0, "stop": 951.93, "status": "close_stop_at_risk"},
-    "flex_position": {"entry": 132.46, "current_approx": 136.0, "status": "close_marginal_gain"},
-    "portfolio_value_approx_entering_week": 110000
+    "note": "Alpaca API unavailable (proxy HTTP 403). Values from last confirmed daily P&L (July 16: $105,186.69) and web-sourced current prices July 20.",
+    "portfolio_value_jul17_eow": 105186.69,
+    "pnl_from_100k_starting_capital_pct": 5.19,
+    "positions_entering_jul20": {
+      "AMAT": {"entry": 411.45, "qty": 80, "current_approx": 539.7, "gain_pct_approx": 31.2},
+      "LLY": {"entry": 992.17, "qty": 33, "current_approx": 1176.75, "gain_pct_approx": 18.6},
+      "FLEX": {"entry": 132.46, "qty": 112, "current_approx": 136.83, "gain_pct_approx": 3.28, "action": "CLOSE"}
+    },
+    "new_position": {"symbol": "MRVL", "entry_approx": 186.53, "stop_approx": 177.2, "qty_approx": 107}
   },
 
-  "watchlist_priority": ["NVDA", "MU", "CRWD"],
+  "watchlist_next_week": ["AMD", "MU", "NVDA", "CRWD"],
 
   "key_dates": {
-    "cpi_june_2026": "2026-07-14",
-    "bank_earnings_start": "2026-07-14",
-    "tsmc_q2_earnings": "2026-07-16",
-    "netflix_q2_earnings": "2026-07-16",
-    "amd_advancing_ai_conference": "2026-07-22",
-    "amd_zen6_venice_launch": "2026-07-22",
+    "googl_q2_earnings": "2026-07-22",
+    "intc_q2_earnings": "2026-07-23",
     "lrcx_earnings_blackout": "2026-07-29",
     "amd_q2_earnings": "2026-08-04",
-    "nvda_q2_earnings": "2026-08-26"
+    "lly_q2_earnings": "2026-08-05",
+    "amat_q3_fiscal_earnings": "2026-08-13",
+    "mrvl_q2_fiscal_earnings": "2026-08-20"
   }
 }
