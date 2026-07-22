@@ -1996,7 +1996,7 @@
       "portfolio_value": null,
       "buying_power": null,
       "positions_summary": {
-        "note": "Midweek check — Live Alpaca API unavailable (sandbox network policy, HTTP 403 policy denial). Last confirmed daily P&L July 21 close.",
+        "note": "Midweek check \u2014 Live Alpaca API unavailable (sandbox network policy, HTTP 403 policy denial). Last confirmed daily P&L July 21 close.",
         "last_confirmed_equity": 108032.56,
         "last_confirmed_date": "2026-07-21",
         "pnl_from_starting_capital_dollar": 8032.56,
@@ -2017,35 +2017,40 @@
               "pnl_dollar": 6750.74,
               "pnl_pct": 6.67,
               "vs_spy_pct": 5.84,
-              "note": "Strong recovery — +6.67% vs SPY +0.83% (+5.84% relative); MRVL/PENG/AMAT/LLY likely all contributed"
+              "note": "Strong recovery \u2014 +6.67% vs SPY +0.83% (+5.84% relative); MRVL/PENG/AMAT/LLY likely all contributed"
             }
           }
         },
         "estimated_open_positions": 4,
-        "estimated_positions": ["AMAT", "LLY", "MRVL", "PENG"],
+        "estimated_positions": [
+          "AMAT",
+          "LLY",
+          "MRVL",
+          "PENG"
+        ],
         "thesis_check": {
-          "AMAT": "INTACT / STRONG HOLD — entry $411.45 (80 shares), last live +36.89% (+$11,189 as of July 15). INTC Q2 earnings TOMORROW (July 23 after close) is a direct catalyst — Intel 18A fab progress determines AMAT equipment order flow. Analyst targets $720-$790 (Jefferies $770, BofA $720, Wells Fargo $715). Stop $390.88. STRONG HOLD.",
-          "LLY": "INTACT / STRONG HOLD — entry $992.17 (33 shares), last live +14.93% (+$4,295 July 15). GLP-1 Medicare Bridge active; Foundayo FDA approved. CRITICAL: Q2 earnings August 5-6 approaching — trade plan mandates CLOSE BEFORE AUGUST 1 to lock gains and avoid binary earnings risk. Defensive healthcare, low rate sensitivity. Stop $942. STRONG HOLD until July 31.",
-          "MRVL": "NEW / HOLD — entered July 20 at ~$186.53 (107 shares, stop $177.20). Amazon Trainium 3 H2 2026 ramp, Google Merope LPU $12B design win (KeyBanc July 14), Nvidia $2B investment, Jensen Huang endorsement. 28 analysts Buy, avg target $252.56 (+35.4% upside). GOOGL Q2 earnings TODAY after close is key read-through — Google AI capex guidance directly impacts Merope LPU thesis. Earnings August 20 — safe swing hold window. HOLD/MONITOR.",
-          "PENG": "NEW / HOLD — entered July 20 at $54.38 (341 shares, stop $51.70). Strong analyst upside (+23%), positive earnings surprise (+49.3%), convertible senior notes pricing catalyst. No near-term earnings risk. HOLD."
+          "AMAT": "INTACT / STRONG HOLD \u2014 entry $411.45 (80 shares), last live +36.89% (+$11,189 as of July 15). INTC Q2 earnings TOMORROW (July 23 after close) is a direct catalyst \u2014 Intel 18A fab progress determines AMAT equipment order flow. Analyst targets $720-$790 (Jefferies $770, BofA $720, Wells Fargo $715). Stop $390.88. STRONG HOLD.",
+          "LLY": "INTACT / STRONG HOLD \u2014 entry $992.17 (33 shares), last live +14.93% (+$4,295 July 15). GLP-1 Medicare Bridge active; Foundayo FDA approved. CRITICAL: Q2 earnings August 5-6 approaching \u2014 trade plan mandates CLOSE BEFORE AUGUST 1 to lock gains and avoid binary earnings risk. Defensive healthcare, low rate sensitivity. Stop $942. STRONG HOLD until July 31.",
+          "MRVL": "NEW / HOLD \u2014 entered July 20 at ~$186.53 (107 shares, stop $177.20). Amazon Trainium 3 H2 2026 ramp, Google Merope LPU $12B design win (KeyBanc July 14), Nvidia $2B investment, Jensen Huang endorsement. 28 analysts Buy, avg target $252.56 (+35.4% upside). GOOGL Q2 earnings TODAY after close is key read-through \u2014 Google AI capex guidance directly impacts Merope LPU thesis. Earnings August 20 \u2014 safe swing hold window. HOLD/MONITOR.",
+          "PENG": "NEW / HOLD \u2014 entered July 20 at $54.38 (341 shares, stop $51.70). Strong analyst upside (+23%), positive earnings surprise (+49.3%), convertible senior notes pricing catalyst. No near-term earnings risk. HOLD."
         },
-        "open_orders_check": "Cannot verify GTC stop-loss orders active — Alpaca API blocked (HTTP 403, gateway policy denial). Ongoing operational constraint across all sessions.",
+        "open_orders_check": "Cannot verify GTC stop-loss orders active \u2014 Alpaca API blocked (HTTP 403, gateway policy denial). Ongoing operational constraint across all sessions.",
         "flags": {
-          "positions_down_gt_8pct": "NONE confirmed — MRVL and PENG are new July 20 entries; after +6.67% recovery on July 21, likely in positive territory. No known position below -8%.",
+          "positions_down_gt_8pct": "NONE confirmed \u2014 MRVL and PENG are new July 20 entries; after +6.67% recovery on July 21, likely in positive territory. No known position below -8%.",
           "positions_up_gt_10pct": [
-            "AMAT: +36.89% last known (+$11,189 as of July 15) — STRONG HOLD; INTC earnings July 23 is direct catalyst event",
-            "LLY: +14.93% last known (+$4,295 as of July 15) — STRONG HOLD; plan exit before August 1 (LLY earnings Aug 5-6)"
+            "AMAT: +36.89% last known (+$11,189 as of July 15) \u2014 STRONG HOLD; INTC earnings July 23 is direct catalyst event",
+            "LLY: +14.93% last known (+$4,295 as of July 15) \u2014 STRONG HOLD; plan exit before August 1 (LLY earnings Aug 5-6)"
           ],
-          "stop_loss_verification": "Cannot verify — API blocked (HTTP 403). AMAT stop $390.88, LLY stop $942, MRVL stop $177.20, PENG stop $51.70.",
-          "critical_lly_deadline": "LLY Q2 earnings August 5-6 — trade plan mandates close before August 1 (~10 calendar days). Flag for execution during the week of July 27. Do not hold LLY into earnings.",
-          "googl_earnings_tonight": "GOOGL Q2 earnings after close July 22 — BLACKOUT (not held). Key read-through for MRVL: Google AI capex and cloud revenue guidance. Beat + robust AI investment = positive tailwind for MRVL Merope LPU thesis ($12B lifecycle design win).",
-          "intc_earnings_tomorrow": "INTC Q2 earnings July 23 after close — BLACKOUT (not held). Intel 18A fab progress is a direct AMAT catalyst: strong 18A execution = higher AMAT equipment demand; 18A delays = near-term AMAT headwind but supercycle thesis intact long-term.",
-          "amd_conference_today": "AMD Advancing AI 2026 + Zen 6 Venice 2nm CPU launch July 22-23 — not held (AMD earnings Aug 4 blackout). Monitor for post-conference AMD re-entry next week.",
-          "lrcx_blackout": "LRCX earnings July 29 — blackout maintained."
+          "stop_loss_verification": "Cannot verify \u2014 API blocked (HTTP 403). AMAT stop $390.88, LLY stop $942, MRVL stop $177.20, PENG stop $51.70.",
+          "critical_lly_deadline": "LLY Q2 earnings August 5-6 \u2014 trade plan mandates close before August 1 (~10 calendar days). Flag for execution during the week of July 27. Do not hold LLY into earnings.",
+          "googl_earnings_tonight": "GOOGL Q2 earnings after close July 22 \u2014 BLACKOUT (not held). Key read-through for MRVL: Google AI capex and cloud revenue guidance. Beat + robust AI investment = positive tailwind for MRVL Merope LPU thesis ($12B lifecycle design win).",
+          "intc_earnings_tomorrow": "INTC Q2 earnings July 23 after close \u2014 BLACKOUT (not held). Intel 18A fab progress is a direct AMAT catalyst: strong 18A execution = higher AMAT equipment demand; 18A delays = near-term AMAT headwind but supercycle thesis intact long-term.",
+          "amd_conference_today": "AMD Advancing AI 2026 + Zen 6 Venice 2nm CPU launch July 22-23 \u2014 not held (AMD earnings Aug 4 blackout). Monitor for post-conference AMD re-entry next week.",
+          "lrcx_blackout": "LRCX earnings July 29 \u2014 blackout maintained."
         },
-        "midweek_verdict": "Portfolio at estimated $108,033 (+8.0% from $100K starting capital) after a strong +6.67% recovery on July 21 (+5.84% vs SPY). Week-to-date: +$5,751 / +5.63% from July 17 close. Core positions AMAT (+37%) and LLY (+15%) remain STRONG HOLDs. New positions MRVL and PENG opened July 20 and rode the July 21 rally. CRITICAL UPCOMING ACTION: LLY earnings August 5-6 — trade plan mandates close before August 1; begin planning LLY exit for the week of July 27. Tonight: GOOGL earnings after close — key AI capex signal for MRVL Merope LPU thesis. Tomorrow: INTC earnings — direct AMAT equipment demand catalyst. API blockage is the standing operational constraint — all GTC stop-loss orders unverifiable without live API access.",
+        "midweek_verdict": "Portfolio at estimated $108,033 (+8.0% from $100K starting capital) after a strong +6.67% recovery on July 21 (+5.84% vs SPY). Week-to-date: +$5,751 / +5.63% from July 17 close. Core positions AMAT (+37%) and LLY (+15%) remain STRONG HOLDs. New positions MRVL and PENG opened July 20 and rode the July 21 rally. CRITICAL UPCOMING ACTION: LLY earnings August 5-6 \u2014 trade plan mandates close before August 1; begin planning LLY exit for the week of July 27. Tonight: GOOGL earnings after close \u2014 key AI capex signal for MRVL Merope LPU thesis. Tomorrow: INTC earnings \u2014 direct AMAT equipment demand catalyst. API blockage is the standing operational constraint \u2014 all GTC stop-loss orders unverifiable without live API access.",
         "action_items_for_next_session": [
-          "CLOSE LLY before August 1 — earnings August 5-6 blackout; lock ~+15-19% gain",
+          "CLOSE LLY before August 1 \u2014 earnings August 5-6 blackout; lock ~+15-19% gain",
           "Monitor GOOGL earnings reaction for MRVL thesis confirmation",
           "Monitor INTC earnings (July 23) for AMAT 18A equipment demand read",
           "Verify MRVL and PENG P&L when API accessible",
@@ -2053,9 +2058,42 @@
         ]
       },
       "is_midweek_check": true
+    },
+    {
+      "time": "2026-07-22T11:20:08.420637-04:00",
+      "portfolio_value": 107855.09,
+      "buying_power": 294573.94,
+      "positions": [
+        {
+          "symbol": "AMAT",
+          "pl_pct": 33.04,
+          "pl_dollar": 10021.13
+        },
+        {
+          "symbol": "FLEX",
+          "pl_pct": 2.32,
+          "pl_dollar": 153.85
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 17.2,
+          "pl_dollar": 4947.71
+        },
+        {
+          "symbol": "MU",
+          "pl_pct": -2.63,
+          "pl_dollar": -342.66
+        },
+        {
+          "symbol": "PENG",
+          "pl_pct": 12.28,
+          "pl_dollar": 2277.88
+        }
+      ],
+      "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-07-17T09:00:00-04:00",
+  "last_monitor_run": "2026-07-22T11:20:08.420637-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
