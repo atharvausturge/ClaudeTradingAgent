@@ -2525,6 +2525,17 @@
       "invested_pct": 93.8,
       "spy_daily_pct": -1.23,
       "vs_spy_pct": 1.23
+    },
+    {
+      "date": "2026-07-24",
+      "equity": 104672.31,
+      "daily_pl_dollar": -3397.47,
+      "daily_pl_pct": -3.14,
+      "open_positions": 5,
+      "realized_today_dollar": 0,
+      "invested_pct": 93.5,
+      "spy_daily_pct": 0.1,
+      "vs_spy_pct": -3.24
     }
   ],
   "weekly_summary_2026_06_15_eow_wrap": {
@@ -3265,7 +3276,7 @@
         "status": "STRONG HOLD \u2014 AI semi equipment supercycle anchor; INTC 18A earnings July 23 direct catalyst; analyst targets $720-$790; plan exit before August 13 earnings"
       },
       "LLY": {
-        "plpc": 17.20,
+        "plpc": 17.2,
         "pl_dollar": 4947.71,
         "as_of": "2026-07-22",
         "entry": 992.17,
