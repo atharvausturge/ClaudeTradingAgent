@@ -1,45 +1,49 @@
 {
-  "generated_at": "2026-07-17",
-  "week_of": "2026-07-13",
-  "data_source": "Last live Alpaca snapshot 2026-07-15T11:07:30-04:00. API blocked by sandbox network policy (HTTP 403 / curl exit 56). Daily P&L log shows July 16 close at $105,186.69 with 4 open positions.",
+  "generated_at": "2026-07-24",
+  "week_of": "2026-07-20",
+  "data_source": "Last live Alpaca snapshot 2026-07-22T11:20:08-04:00. API blocked by sandbox network policy (HTTP 403 / curl exit 56). Daily P&L log shows July 22 portfolio_value $107,855.09 with 5 open positions.",
   "close_rule": "unrealized_plpc < -0.02 (down more than 2%)",
   "closes": [
     {
       "symbol": "MU",
-      "last_known_plpc": -0.0905,
-      "last_known_pl_dollar": -1179.41,
-      "last_known_as_of": "2026-07-15",
-      "reason": "down 9.05% — far below Friday -2% close threshold; stop $951.93 at immediate risk with semiconductor sector under pressure; SK Hynix HBM→DRAM capacity redirection narrative creates demand-cooling overhang despite intact HBM4 long-term thesis; trade plan (week of 2026-07-13) also explicitly called for closure; entry $1,002.27 (July 6); re-entry above $1,050 when SK Hynix post-IPO noise fades and TSMC Q2 confirms HBM4 demand intact"
+      "last_known_plpc": -0.0263,
+      "last_known_pl_dollar": -342.66,
+      "last_known_as_of": "2026-07-22",
+      "reason": "down 2.63% — crosses Friday -2% close threshold; semiconductor sector headwinds ongoing (SOXX -22% since June peak); re-entry above $1,050 when SK Hynix post-IPO HBM4 demand noise fades; entry $1,002.27 (July 6, 13 shares)"
     }
   ],
   "holds": [
     {
       "symbol": "AMAT",
-      "last_known_plpc": 0.3689,
-      "last_known_pl_dollar": 11188.61,
-      "last_known_as_of": "2026-07-15",
-      "reason": "up 36.89% — AI semiconductor equipment supercycle anchor; TSMC Q2 earnings July 16 (AMAT's largest customer, guided $39-40B revenue, HPC 61% of TSMC wafer revenue) is a direct equipment-order catalyst; analyst targets $720-$790 (Jefferies $770, BofA $720, Wells Fargo $715); stop $390.88 provides $180+ buffer from last known price; far above -2% threshold; STRONG HOLD into next week"
+      "last_known_plpc": 0.3304,
+      "last_known_pl_dollar": 10021.13,
+      "last_known_as_of": "2026-07-22",
+      "reason": "up 33.04% (+$10,021) — AI semiconductor equipment supercycle anchor; entry $411.45 (80 shares); INTC Q2 earnings July 23 after close is a direct 18A equipment-demand catalyst; analyst targets $720-$790 (Jefferies $770, BofA $720); stop $390.88; STRONG HOLD into next week; plan exit before August 13 earnings"
     },
     {
       "symbol": "LLY",
-      "last_known_plpc": 0.1493,
-      "last_known_pl_dollar": 4295.35,
-      "last_known_as_of": "2026-07-15",
-      "reason": "up 14.93% — Medicare GLP-1 Bridge Program active (20M eligible Medicare patients at $50/mo Zepbound/Foundayo launched July 1); retatrutide + Mounjaro +125% YoY thesis delivering; defensive healthcare sector immune to semiconductor volatility; stop $942 ($246+ buffer from last known ~$1,188); far above -2% threshold; STRONG HOLD"
+      "last_known_plpc": 0.1720,
+      "last_known_pl_dollar": 4947.71,
+      "last_known_as_of": "2026-07-22",
+      "reason": "up 17.20% (+$4,948) — GLP-1 Medicare Bridge Program active (20M eligible patients, $50/mo Zepbound/Foundayo); Foundayo FDA approved; entry $992.17 (33 shares); stop $942; STRONG HOLD; CRITICAL: close before August 1 to avoid Q2 earnings August 5-6 binary risk"
     },
     {
       "symbol": "FLEX",
-      "last_known_plpc": 0.0328,
-      "last_known_pl_dollar": 217.35,
-      "last_known_as_of": "2026-07-15",
-      "reason": "up 3.28% — above -2% Friday close threshold; hold per rule (threshold not breached); marginal gain position, repeated closure target in prior trade plans, but Friday rule does not apply while above threshold"
+      "last_known_plpc": 0.0232,
+      "last_known_pl_dollar": 153.85,
+      "last_known_as_of": "2026-07-22",
+      "reason": "up 2.32% (+$154) — above -2% Friday close threshold per rule; entry $132.46 (112 shares); note: trade plan has repeatedly targeted FLEX for closure (no AI catalyst, contract manufacturing); Friday rule does not trigger; recommend proactive close next week"
+    },
+    {
+      "symbol": "PENG",
+      "last_known_plpc": 0.1228,
+      "last_known_pl_dollar": 2277.88,
+      "last_known_as_of": "2026-07-22",
+      "reason": "up 12.28% (+$2,278) — strong week; entry $54.38 (341 shares, stop $51.70); positive earnings surprise (+49.3%), convertible senior notes catalyst intact; hold into next week"
     }
   ],
-  "already_closed": {
-    "DELL": "Stop triggered July 15 at $408.616 (-5.07%, -$982.08 realized loss); stop level $408.66 breached; recorded in trade_history; not requiring action"
+  "unconfirmed_positions": {
+    "MRVL": "Trade plan (week of 2026-07-20) called for BUY at $186.53 (107 shares, stop $177.20); NOT visible in July 22 live snapshot (5 confirmed positions: AMAT, FLEX, LLY, MU, PENG); entry status unverifiable due to API block — not included in closes/holds; if open, HOLD (thesis intact: Amazon Trainium 3 H2 2026 ramp, Google Merope LPU $12B design win, 28 analysts Buy, avg target $252.56; earnings Aug 20 = safe window)"
   },
-  "unconfirmed": {
-    "AMD": "Trade plan (week of 2026-07-13) called for AMD entry at ~$516 (20% portfolio, stop ~$490); not visible in July 15 live snapshot (4 confirmed positions: AMAT, FLEX, LLY, MU); entry status unverifiable due to API block — not included in holds/closes"
-  },
-  "summary": "1 close: MU (-9.05%, far below -2% threshold; stop $951.93 at risk; trade plan also flagged for closure). 3 holds: AMAT (+36.89%), LLY (+14.93%), FLEX (+3.28%) — all above -2% threshold. DELL already closed via stop-loss July 15 (-5.07%, -$982.08 realized). Week P&L: $105,186.69 (July 16) vs $110,163.87 entering (July 10) = -$4,977 / -4.52%. Portfolio +5.19% from $100K starting capital."
+  "summary": "1 close: MU (-2.63%, crosses -2% Friday threshold; semiconductor sector under sustained pressure). 4 holds: AMAT (+33.04%), LLY (+17.20%), FLEX (+2.32%), PENG (+12.28%) — all above -2% threshold. MRVL position status unconfirmed (not in July 22 live snapshot). Week P&L: $107,855.09 (July 22 proxy) vs $102,281.63 entering week = +$5,573 / +5.45%. Portfolio +7.86% from $100K starting capital."
 }

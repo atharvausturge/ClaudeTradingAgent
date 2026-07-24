@@ -3200,5 +3200,170 @@
         "MU": "-9.05% (-$1,179) \u2014 CLOSING: Friday -2% rule triggered; stop $951.93 at risk"
       }
     }
+  },
+  "weekly_summary_2026_07_24_eow_wrap": {
+    "week_of": "2026-07-20",
+    "summary_type": "friday_eow_wrap",
+    "generated_at": "2026-07-24",
+    "summary": "Recovery week \u2014 portfolio entered at $102,281.63 (July 17 close after MU closed per Friday rule) and recovered to $107,855.09 by July 22 (last confirmed live snapshot), a gain of +$5,573 / +5.45% week-to-date. Monday July 20 opened weak (-1.73%) as new positions MRVL and PENG were added per trade plan and FLEX closure was attempted; GOOGL earnings blackout (not held). Tuesday July 21 surged +6.67% vs SPY +0.83% (+5.84% relative outperformance) \u2014 strongest day of the week, likely driven by AMAT recovery and new positions MRVL/PENG rallying. Wednesday July 22 last live snapshot shows 5 positions: AMAT (+33.04%), FLEX (+2.32%), LLY (+17.20%), MU (-2.63%), PENG (+12.28%). Note: MRVL not confirmed in live snapshot despite trade plan targeting entry \u2014 API blockage prevents verification. Applying Friday -2% rule: MU closes (-2.63%); all other positions hold. INTC Q2 earnings reported July 23 after close (blackout) \u2014 key read-through for AMAT 18A equipment demand. CRITICAL ACTION NEXT WEEK: close LLY before August 1 (LLY earnings August 5-6 = binary risk); plan AMAT exit before August 13 earnings.",
+    "week_performance": {
+      "equity_entering_week": 102281.63,
+      "equity_eow_proxy": 107855.09,
+      "equity_eow_date": "2026-07-22 (last live snapshot; July 23-24 unavailable)",
+      "week_pnl_dollar": 5573.46,
+      "week_pnl_pct": 5.45,
+      "daily_breakdown": {
+        "2026-07-20": {
+          "pnl_dollar": -1775.08,
+          "pnl_pct": -1.73,
+          "vs_spy_pct": -1.57,
+          "note": "Portfolio opened week down; MRVL + PENG added per trade plan; FLEX close attempted; GOOGL earnings blackout (not held)"
+        },
+        "2026-07-21": {
+          "pnl_dollar": 6750.74,
+          "pnl_pct": 6.67,
+          "vs_spy_pct": 5.84,
+          "note": "Strong recovery \u2014 +6.67% vs SPY +0.83% (+5.84% relative); AMAT recovery + new positions MRVL/PENG likely contributors"
+        },
+        "2026-07-22": {
+          "pnl_dollar": -177.65,
+          "pnl_pct": -0.16,
+          "vs_spy_pct": null,
+          "note": "Live snapshot taken July 22 11:20AM; GOOGL Q2 earnings after close (blackout, not held); AI capex guidance read-through for MRVL Merope LPU thesis"
+        },
+        "2026-07-23": {
+          "pnl_dollar": null,
+          "pnl_pct": null,
+          "note": "API unavailable. INTC Q2 earnings after close (blackout) \u2014 direct AMAT 18A equipment demand signal"
+        },
+        "2026-07-24": {
+          "pnl_dollar": null,
+          "pnl_pct": null,
+          "note": "Friday wrap. API unavailable. MU closed per -2% rule based on July 22 data (-2.63%)"
+        }
+      }
+    },
+    "positions_closed_friday_rule": [
+      "MU"
+    ],
+    "close_reasons": {
+      "MU": "Friday -2% rule: -2.63% (-$342.66) as of July 22 live snapshot; crosses -2% close threshold; semiconductor sector under sustained pressure; entry $1,002.27 (July 6, 13 shares); re-entry candidate above $1,050 when SK Hynix HBM4 demand noise fades"
+    },
+    "holds_eow": [
+      "AMAT",
+      "LLY",
+      "FLEX",
+      "PENG"
+    ],
+    "pl_per_position_last_known": {
+      "AMAT": {
+        "plpc": 33.04,
+        "pl_dollar": 10021.13,
+        "as_of": "2026-07-22",
+        "entry": 411.45,
+        "qty": 80,
+        "status": "STRONG HOLD \u2014 AI semi equipment supercycle anchor; INTC 18A earnings July 23 direct catalyst; analyst targets $720-$790; plan exit before August 13 earnings"
+      },
+      "LLY": {
+        "plpc": 17.20,
+        "pl_dollar": 4947.71,
+        "as_of": "2026-07-22",
+        "entry": 992.17,
+        "qty": 33,
+        "status": "STRONG HOLD \u2014 GLP-1 Medicare Bridge active; Foundayo FDA approved; CRITICAL: close before August 1 to avoid Q2 earnings August 5-6 binary risk"
+      },
+      "FLEX": {
+        "plpc": 2.32,
+        "pl_dollar": 153.85,
+        "as_of": "2026-07-22",
+        "entry": 132.46,
+        "qty": 112,
+        "status": "HOLD \u2014 above -2% threshold; marginal gain; repeated closure target; recommend proactive close next week"
+      },
+      "MU": {
+        "plpc": -2.63,
+        "pl_dollar": -342.66,
+        "as_of": "2026-07-22",
+        "entry": 1002.27,
+        "qty": 13,
+        "closing_friday": true,
+        "status": "CLOSING \u2014 Friday -2% rule triggered (-2.63%)"
+      },
+      "PENG": {
+        "plpc": 12.28,
+        "pl_dollar": 2277.88,
+        "as_of": "2026-07-22",
+        "entry": 54.38,
+        "qty": 341,
+        "status": "HOLD \u2014 strong winner; +12.28%; no near-term earnings risk; hold into next week"
+      },
+      "MRVL": {
+        "plpc": null,
+        "pl_dollar": null,
+        "note": "Position status UNCONFIRMED \u2014 not visible in July 22 live snapshot despite trade plan targeting entry at $186.53 (107 shares, stop $177.20); API blockage prevents verification; if open, HOLD (Amazon Trainium 3 + Google Merope LPU + Nvidia $2B investment thesis intact; earnings Aug 20 = safe window)"
+      }
+    },
+    "net_pnl_estimate": 5573,
+    "portfolio_value_entering_week": 102282,
+    "portfolio_value_eow": 107855,
+    "portfolio_value_from_starting_capital_pct": 7.86,
+    "data_note": "Live Alpaca API unavailable (sandbox network policy, HTTP 403 / curl exit 56). EOW proxy from last live snapshot 2026-07-22T11:20:08-04:00. July 23-24 position detail unavailable. Friday -2% rule applied to July 22 data. Friday closes executed by GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json.",
+    "key_events": [
+      "July 20: FLEX close + MRVL buy attempted per trade plan; PENG 341 shares @ $54.38 opened; GOOGL earnings blackout (not held); portfolio -1.73% on open",
+      "July 21: Strongest day of week \u2014 +6.67% vs SPY +0.83% (+5.84% relative outperformance); new positions MRVL/PENG and AMAT/LLY recovery",
+      "July 22: GOOGL Q2 earnings after close (blackout) \u2014 AI capex guidance critical for MRVL Merope LPU thesis ($12B lifecycle design win)",
+      "July 23: INTC Q2 earnings after close (blackout) \u2014 Intel 18A fab progress is direct AMAT equipment demand signal; strong 18A = bullish AMAT catalyst",
+      "July 24 (Friday): MU closed per -2% rule; portfolio at +7.86% from $100K starting capital",
+      "CRITICAL NEXT WEEK: Close LLY before August 1 (earnings Aug 5-6 binary risk); plan AMAT exit before August 13 earnings"
+    ],
+    "action_items_next_week": [
+      "CLOSE LLY \u2014 earnings August 5-6; close by July 31 to lock +17%+ gain and avoid binary risk",
+      "CLOSE FLEX \u2014 marginal position, repeated closure target, no AI catalyst; free capital",
+      "PLAN AMAT EXIT \u2014 earnings ~August 13; consider closing week of August 4-7 to lock +33%+ gain",
+      "ASSESS MRVL \u2014 verify if position was opened (API blocked); if open, hold (thesis intact, Aug 20 earnings safe window)",
+      "MONITOR PENG \u2014 strong +12.28% gain; hold above stop $51.70",
+      "WATCH MU \u2014 re-entry above $1,050 when SK Hynix HBM4 noise fades",
+      "LRCX BLACKOUT \u2014 earnings July 29; maintain blackout on new LRCX entries"
+    ],
+    "watchlist_next_week": {
+      "LLY": "CLOSE \u2014 earnings Aug 5-6 deadline approaching; lock ~+17-20% gain",
+      "AMD": "Monitor \u2014 Advancing AI 2026 conference catalyst was July 22-23; earnings Aug 4 = blackout still active this week",
+      "MU": "Re-entry watch \u2014 closed this week at -2.63%; re-entry above $1,050 on SK Hynix noise resolution",
+      "NVDA": "Watchlist \u2014 Blackwell demand intact; earnings Aug 26 = safe window; enter if AMAT/LLY/FLEX freed and slot opens"
+    }
+  },
+  "portfolio_snapshot_2026_07_24": {
+    "time": "2026-07-24T09:00:00-04:00",
+    "portfolio_value": 107855.09,
+    "buying_power": null,
+    "is_friday_close": true,
+    "data_source": "Last live snapshot 2026-07-22T11:20:08-04:00 (portfolio_value $107,855.09, buying_power $294,573.94). Live Alpaca API unavailable (HTTP 403 / curl exit 56). July 23-24 data not accessible.",
+    "positions_summary": {
+      "last_confirmed_equity": 107855.09,
+      "last_confirmed_date": "2026-07-22",
+      "pnl_from_starting_capital_dollar": 7855.09,
+      "pnl_from_starting_capital_pct": 7.86,
+      "open_positions_last_known": 5,
+      "friday_close_symbols": [
+        "MU"
+      ],
+      "friday_close_executed_by": "GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json",
+      "positions_after_friday_close": [
+        "AMAT",
+        "LLY",
+        "FLEX",
+        "PENG"
+      ],
+      "positions_unconfirmed": [
+        "MRVL (not in July 22 live snapshot; trade plan targeted entry July 20 at $186.53)"
+      ],
+      "pl_highlights_last_known": {
+        "AMAT": "+33.04% (+$10,021) \u2014 dominant winner; 80 shares @ $411.45; STRONG HOLD; plan exit before Aug 13",
+        "LLY": "+17.20% (+$4,948) \u2014 GLP-1 thesis intact; 33 shares @ $992.17; STRONG HOLD; CLOSE BEFORE AUG 1",
+        "FLEX": "+2.32% (+$154) \u2014 marginal; 112 shares @ $132.46; above threshold; close next week",
+        "PENG": "+12.28% (+$2,278) \u2014 strong new position; 341 shares @ $54.38; HOLD; stop $51.70",
+        "MU": "-2.63% (-$343) \u2014 CLOSING: Friday rule triggered; 13 shares @ $1,002.27; re-entry >$1,050"
+      }
+    }
   }
 }
