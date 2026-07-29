@@ -349,6 +349,15 @@
       "reasoning": "PENG has a low P/S ratio, a strong sector, and a high analyst target upside of +38.0%, making it an attractive candidate",
       "confidence": "high",
       "filled": true
+    },
+    {
+      "time": "2026-07-29T11:29:06.521411-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "PENG",
+      "fill_price": 48.02,
+      "pl_pct": -6.38,
+      "pl_dollar": -1173.93,
+      "reason": "stop loss triggered"
     }
   ],
   "weekly_summaries": [
@@ -2263,9 +2272,37 @@
         ]
       },
       "is_midweek_check": true
+    },
+    {
+      "time": "2026-07-29T11:29:06.521411-04:00",
+      "portfolio_value": 96175.66,
+      "buying_power": 284620.85,
+      "positions": [
+        {
+          "symbol": "AMAT",
+          "pl_pct": 7.25,
+          "pl_dollar": 2197.97
+        },
+        {
+          "symbol": "FLEX",
+          "pl_pct": 21.38,
+          "pl_dollar": 1416.85
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 23.33,
+          "pl_dollar": 6711.78
+        },
+        {
+          "symbol": "MU",
+          "pl_pct": -21.86,
+          "pl_dollar": -2848.54
+        }
+      ],
+      "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-07-22T11:20:08.420637-04:00",
+  "last_monitor_run": "2026-07-29T11:29:06.521411-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
