@@ -2789,6 +2789,17 @@
       "invested_pct": 76.7,
       "spy_daily_pct": 1.68,
       "vs_spy_pct": -0.03
+    },
+    {
+      "date": "2026-07-31",
+      "equity": 97837.1,
+      "daily_pl_dollar": -755.72,
+      "daily_pl_pct": -0.77,
+      "open_positions": 4,
+      "realized_today_dollar": 0,
+      "invested_pct": 76.3,
+      "spy_daily_pct": 0.72,
+      "vs_spy_pct": -1.49
     }
   ],
   "weekly_summary_2026_06_15_eow_wrap": {
@@ -3691,8 +3702,8 @@
       "week_pnl_pct": -4.92,
       "daily_breakdown": {
         "2026-07-27": {
-          "pnl_dollar": -2191.20,
-          "pnl_pct": -2.10,
+          "pnl_dollar": -2191.2,
+          "pnl_pct": -2.1,
           "vs_spy_pct": -2.12,
           "open_positions": 5,
           "note": "Week opened weak; LLY close attempted (mandatory); PENG original batch (341@$54.38) likely stopped at $51.70; PENG re-entry (359@$51.29) added; semi sector pressure"
@@ -3712,7 +3723,7 @@
           "note": "LRCX earnings (blackout). PENG stop triggered ($48.02, -6.38%, -$1,173.93). AMZN earnings after close (blackout \u2014 not held). SPY -1.54%."
         },
         "2026-07-30": {
-          "pnl_dollar": 1619.60,
+          "pnl_dollar": 1619.6,
           "pnl_pct": 1.65,
           "vs_spy_pct": -0.03,
           "open_positions": 4,
@@ -3725,16 +3736,25 @@
         }
       }
     },
-    "positions_closed_mandatory": ["LLY"],
-    "positions_stopped": ["PENG"],
-    "positions_closed_friday_rule": ["MU", "NVDA"],
+    "positions_closed_mandatory": [
+      "LLY"
+    ],
+    "positions_stopped": [
+      "PENG"
+    ],
+    "positions_closed_friday_rule": [
+      "MU",
+      "NVDA"
+    ],
     "close_reasons": {
       "LLY": "Mandatory earnings close per July 27 trade plan \u2014 Q2 earnings August 5-6; lock +17.20% gain (+$4,948 on 33 shares @ $992.17 entry)",
       "PENG": "Stop triggered July 29 at $48.02 (entry $51.29, 359 shares, stop $48.10) \u2014 -6.38% / -$1,173.93 realized; convertible notes news failed to sustain support level through semiconductor selloff",
       "MU": "Friday -2% rule: estimated -5.0% from $908 re-entry (July 27 week); at/near stop $863; semiconductor sector selloff July 27-29 drove repeated losses; semi thesis intact long-term \u2014 re-entry on recovery above $900",
       "NVDA": "Friday -2% rule: estimated -3.5% from $217 entry (July 27 week); MSFT/AMZN AI capex catalysts did not sustain rally into weekly close; earnings Aug 26 safe window preserved for next entry"
     },
-    "holds_eow": ["AMAT"],
+    "holds_eow": [
+      "AMAT"
+    ],
     "pl_per_position_last_known": {
       "AMAT": {
         "plpc": 0.3304,
@@ -3746,7 +3766,7 @@
         "status": "STRONG HOLD \u2014 anchor position; AI equipment supercycle; mandatory close by August 12 (earnings August 13)"
       },
       "LLY": {
-        "plpc": 0.1720,
+        "plpc": 0.172,
         "pl_dollar": 4947.71,
         "as_of": "2026-07-22",
         "entry": 992.17,
@@ -3765,7 +3785,7 @@
       "MU": {
         "entry": 908.0,
         "qty_approx": 21,
-        "estimated_plpc": -0.050,
+        "estimated_plpc": -0.05,
         "status": "CLOSING \u2014 Friday -2% rule; estimated -5.0% from $908 entry"
       },
       "NVDA": {
@@ -3821,9 +3841,14 @@
       "pnl_from_starting_capital_dollar": -477.08,
       "pnl_from_starting_capital_pct": -0.48,
       "open_positions_before_friday_close": 4,
-      "friday_close_symbols": ["MU", "NVDA"],
+      "friday_close_symbols": [
+        "MU",
+        "NVDA"
+      ],
       "friday_close_executed_by": "GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json",
-      "positions_after_friday_close": ["AMAT"],
+      "positions_after_friday_close": [
+        "AMAT"
+      ],
       "pl_highlights": {
         "AMAT": "+33% last known (July 22) \u2014 estimated +21%+ today; STRONG HOLD; close by Aug 12",
         "MU": "estimated -5.0% from $908 entry \u2014 CLOSING per Friday -2% rule",
