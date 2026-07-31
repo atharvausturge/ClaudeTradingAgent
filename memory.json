@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-27",
+  "last_run": "2026-07-31",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -3677,5 +3677,160 @@
       "MRVL": "Hold if confirmed \u2014 Amazon Trainium 3 H2 ramp, Google Merope LPU $12B, Nvidia $2B investment"
     },
     "data_note": "Alpaca API unavailable (proxy HTTP 403 policy block \u2014 data.alpaca.markets and paper-api.alpaca.markets both blocked). bars_raw.json uses existing 45-symbol dataset (last fetched prior week). Scoring and trade plan based on available bars + WebSearch news."
+  },
+  "weekly_summary_2026_07_31_eow_wrap": {
+    "week_of": "2026-07-27",
+    "summary_type": "friday_eow_wrap",
+    "generated_at": "2026-07-31T09:00:00-04:00",
+    "summary": "Difficult week \u2014 portfolio's worst since early May. Entered at $104,672.31 (July 24 prior Friday close) and fell to $99,522.92 by July 30 (Thursday), a loss of -$5,149 / -4.92% through Thursday. July 31 (today, Friday) intraday P&L unknown. The week was dominated by semiconductor sector pressure: portfolio fell -2.10% Monday, -4.77% Tuesday, -3.46% Wednesday (worst day \u2014 PENG stopped), recovered +5.29% Thursday. PENG re-entry batch (359 shares @ $51.29, entered July 27) stopped July 29 at $48.02 (-6.38%, -$1,173.93 realized). Original PENG batch (341 shares @ $54.38, stop $51.70) likely stopped July 27 as price opened below $51.70. LLY closed per mandatory plan (Q2 earnings Aug 5-6). Portfolio briefly dipped below $100K starting capital (trough $94,513.68 on July 29). Recovering to $99,522 by July 30 (+5.29% on day). Applying Friday -2% rule to estimated MU (-5%) and NVDA (-3.5%) positions \u2014 both close today. AMAT remains sole anchor: last confirmed +33.04% (+$10,021, July 22); AI equipment supercycle intact; mandatory close by August 12 before earnings August 13.",
+    "week_performance": {
+      "equity_entering_week_prior_friday": 104672.31,
+      "equity_eow_last_known": 99522.92,
+      "equity_eow_date": "2026-07-30 (last daily P&L; July 31 intraday unknown)",
+      "week_pnl_dollar": -5149.39,
+      "week_pnl_pct": -4.92,
+      "daily_breakdown": {
+        "2026-07-27": {
+          "pnl_dollar": -2191.20,
+          "pnl_pct": -2.10,
+          "vs_spy_pct": -2.12,
+          "open_positions": 5,
+          "note": "Week opened weak; LLY close attempted (mandatory); PENG original batch (341@$54.38) likely stopped at $51.70; PENG re-entry (359@$51.29) added; semi sector pressure"
+        },
+        "2026-07-28": {
+          "pnl_dollar": -4526.74,
+          "pnl_pct": -4.77,
+          "vs_spy_pct": -5.01,
+          "open_positions": 4,
+          "note": "KLAC earnings (blackout). LLY confirmed closed. Semiconductor selloff deepened. Portfolio underperformed SPY by 5.01%."
+        },
+        "2026-07-29": {
+          "pnl_dollar": -3237.36,
+          "pnl_pct": -3.46,
+          "vs_spy_pct": -1.92,
+          "open_positions": 4,
+          "note": "LRCX earnings (blackout). PENG stop triggered ($48.02, -6.38%, -$1,173.93). AMZN earnings after close (blackout \u2014 not held). SPY -1.54%."
+        },
+        "2026-07-30": {
+          "pnl_dollar": 1619.60,
+          "pnl_pct": 1.65,
+          "vs_spy_pct": -0.03,
+          "open_positions": 4,
+          "note": "Partial recovery +5.29% from July 29 trough. AMZN earnings reaction (AI capex beat) lifted semi sector. Portfolio +1.65% vs SPY +1.68% \u2014 nearly matched."
+        },
+        "2026-07-31": {
+          "pnl_dollar": null,
+          "pnl_pct": null,
+          "note": "Friday \u2014 API unavailable. MU and NVDA closes queued per -2% rule. GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json."
+        }
+      }
+    },
+    "positions_closed_mandatory": ["LLY"],
+    "positions_stopped": ["PENG"],
+    "positions_closed_friday_rule": ["MU", "NVDA"],
+    "close_reasons": {
+      "LLY": "Mandatory earnings close per July 27 trade plan \u2014 Q2 earnings August 5-6; lock +17.20% gain (+$4,948 on 33 shares @ $992.17 entry)",
+      "PENG": "Stop triggered July 29 at $48.02 (entry $51.29, 359 shares, stop $48.10) \u2014 -6.38% / -$1,173.93 realized; convertible notes news failed to sustain support level through semiconductor selloff",
+      "MU": "Friday -2% rule: estimated -5.0% from $908 re-entry (July 27 week); at/near stop $863; semiconductor sector selloff July 27-29 drove repeated losses; semi thesis intact long-term \u2014 re-entry on recovery above $900",
+      "NVDA": "Friday -2% rule: estimated -3.5% from $217 entry (July 27 week); MSFT/AMZN AI capex catalysts did not sustain rally into weekly close; earnings Aug 26 safe window preserved for next entry"
+    },
+    "holds_eow": ["AMAT"],
+    "pl_per_position_last_known": {
+      "AMAT": {
+        "plpc": 0.3304,
+        "pl_dollar": 10021.13,
+        "as_of": "2026-07-22",
+        "entry": 411.45,
+        "qty": 80,
+        "estimated_plpc_today": 0.215,
+        "status": "STRONG HOLD \u2014 anchor position; AI equipment supercycle; mandatory close by August 12 (earnings August 13)"
+      },
+      "LLY": {
+        "plpc": 0.1720,
+        "pl_dollar": 4947.71,
+        "as_of": "2026-07-22",
+        "entry": 992.17,
+        "qty": 33,
+        "status": "CLOSED \u2014 mandatory earnings close; locked +17.20% gain"
+      },
+      "PENG": {
+        "plpc": -0.0638,
+        "pl_dollar": -1173.93,
+        "entry": 51.29,
+        "qty": 359,
+        "stop_fill": 48.02,
+        "stopped_date": "2026-07-29",
+        "status": "STOPPED \u2014 July 29 at $48.02"
+      },
+      "MU": {
+        "entry": 908.0,
+        "qty_approx": 21,
+        "estimated_plpc": -0.050,
+        "status": "CLOSING \u2014 Friday -2% rule; estimated -5.0% from $908 entry"
+      },
+      "NVDA": {
+        "entry": 217.0,
+        "qty_approx": 89,
+        "estimated_plpc": -0.035,
+        "status": "CLOSING \u2014 Friday -2% rule; estimated -3.5% from $217 entry"
+      }
+    },
+    "realized_this_week": {
+      "PENG": -1173.93,
+      "total_realized_confirmed": -1173.93,
+      "note": "LLY gain realized (est. +$4,948) not reflected in daily equity (Alpaca API blocked; realized P&L settlement unclear)"
+    },
+    "net_pnl_estimate": -5149,
+    "portfolio_value_entering_week": 104672,
+    "portfolio_value_eow": 99523,
+    "portfolio_value_trough": 94514,
+    "portfolio_value_trough_date": "2026-07-29",
+    "portfolio_value_from_starting_capital_pct": -0.48,
+    "portfolio_value_from_starting_capital_dollar": -477,
+    "data_note": "Live Alpaca API unavailable (sandbox network policy, HTTP 403 / curl exit 56). Equity from daily P&L log. Last live position snapshot 2026-07-22T11:20:08-04:00. July 27-31 position detail unavailable. Friday closes executed by GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json.",
+    "key_events": [
+      "July 27: Semi sector opened weak; PENG original batch (341@$54.38) likely stopped at $51.70; re-entered PENG (359@$51.29); LLY close initiated per mandatory plan",
+      "July 28: KLAC earnings (blackout maintained); LLY confirmed closed; portfolio -4.77% vs SPY +0.24% \u2014 worst relative day of week",
+      "July 29: LRCX earnings (blackout); PENG stop triggered at $48.02 (-6.38%, -$1,173.93); AMZN Q2 earnings after close (blackout \u2014 not held); portfolio -3.46% / trough $94,513",
+      "July 30: AMZN earnings reaction (strong AWS AI capex) triggered semi sector recovery; portfolio +5.29% vs SPY +1.68%; partial recovery to $99,522",
+      "July 31 (Friday): MU and NVDA closes per -2% Friday rule; AMAT hold; AMD earnings Monday Aug 4 \u2014 critical sector catalyst; AMAT must close by Aug 12"
+    ],
+    "watchlist_next_week": {
+      "AMD": "BLACKOUT lifted after Aug 4 earnings \u2014 re-entry if Q2 guidance confirms MI450/MI500 ramp; UBS target $730",
+      "MU": "Closed today \u2014 re-entry above $900 when SK Hynix HBM4 demand narrative resolves; $1,087 median target intact",
+      "NVDA": "Closed today \u2014 re-entry above $215 on sector recovery; $1T demand pipeline intact; earnings Aug 26 safe window",
+      "CRWD": "Cybersecurity (earnings Aug 27 safe window); RS60 +11%, score #5 in universe",
+      "AMAT": "CRITICAL: must close by August 12 \u2014 plan exit week of Aug 4-8 to lock +20-30%+ gain; report Aug 13"
+    },
+    "action_items_next_week": [
+      "CLOSE AMAT \u2014 mandatory by August 12 before earnings August 13; target Aug 4-8 window to lock +20-30%+ gain on 80 shares",
+      "MONITOR AMD earnings Aug 4 \u2014 first major semi earnings after correction; read-through for sector recovery",
+      "WATCH MU/NVDA \u2014 both closed today per Friday rule; re-entry candidates on sector recovery",
+      "AVOID new entries until AMD (Aug 4) confirms sector direction"
+    ]
+  },
+  "portfolio_snapshot_2026_07_31": {
+    "time": "2026-07-31T09:00:00-04:00",
+    "portfolio_value": 99522.92,
+    "buying_power": null,
+    "is_friday_close": true,
+    "data_source": "Daily P&L log July 30 close ($99,522.92, 4 open positions). Live Alpaca API unavailable (HTTP 403 / curl exit 56). Last live position snapshot 2026-07-22T11:20:08-04:00.",
+    "positions_summary": {
+      "last_confirmed_equity": 99522.92,
+      "last_confirmed_date": "2026-07-30",
+      "pnl_from_starting_capital_dollar": -477.08,
+      "pnl_from_starting_capital_pct": -0.48,
+      "open_positions_before_friday_close": 4,
+      "friday_close_symbols": ["MU", "NVDA"],
+      "friday_close_executed_by": "GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json",
+      "positions_after_friday_close": ["AMAT"],
+      "pl_highlights": {
+        "AMAT": "+33% last known (July 22) \u2014 estimated +21%+ today; STRONG HOLD; close by Aug 12",
+        "MU": "estimated -5.0% from $908 entry \u2014 CLOSING per Friday -2% rule",
+        "NVDA": "estimated -3.5% from $217 entry \u2014 CLOSING per Friday -2% rule",
+        "PENG": "STOPPED July 29 at $48.02 (-6.38%, -$1,173.93) \u2014 already closed",
+        "LLY": "CLOSED per mandatory plan \u2014 locked +17.20% gain"
+      }
+    }
   }
 }
