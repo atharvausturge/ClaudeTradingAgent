@@ -1,49 +1,49 @@
 {
-  "week_of": "2026-07-26",
-  "week_thesis": "The technology sector continues to lead the market with strong momentum driven by AI and semiconductor trends. Stocks with high upside targets and recent positive news, such as MU, HPE, and AGYS, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as CBRL and RHI, should be avoided. The recent macro events and upcoming earnings reports will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
+  "week_of": "2026-08-02",
+  "week_thesis": "AI scoring unavailable this week. Trades selected on technical signal only.",
   "buys": [
     {
-      "symbol": "PENG",
-      "combined_score": 0.8674,
-      "tech_score": 0.878,
-      "sentiment_score": 0.857,
-      "reasoning": "PENG has a low P/S ratio, a strong sector, and a high analyst target upside of +38.0%, making it an attractive candidate",
+      "symbol": "MAN",
+      "combined_score": 0.75,
+      "tech_score": 1.0,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
       "confidence": "high",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "MU",
-      "combined_score": 0.6913,
-      "tech_score": 0.383,
-      "sentiment_score": 1.0,
-      "reasoning": "MU has a strong sector, a high analyst target upside of +63.7%, and recent positive news, making it a strong candidate",
-      "confidence": "high",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "PGNY",
-      "combined_score": 0.6008,
-      "tech_score": 0.487,
-      "sentiment_score": 0.714,
-      "reasoning": "PGNY has a strong sector, a positive analyst target upside of +7.0%, and recent positive news, but lacks significant upside potential",
-      "confidence": "medium",
       "qty_pct": 0.18
     },
     {
       "symbol": "OKTA",
-      "combined_score": 0.5714,
-      "tech_score": 1.0,
-      "sentiment_score": 0.143,
-      "reasoning": "OKTA trades above its sector median and has an analyst target with -8.4% downside, indicating overvaluation",
+      "combined_score": 0.689,
+      "tech_score": 0.878,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
+      "confidence": "high",
+      "qty_pct": 0.18
+    },
+    {
+      "symbol": "DELL",
+      "combined_score": 0.6737,
+      "tech_score": 0.847,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
+      "confidence": "high",
+      "qty_pct": 0.18
+    },
+    {
+      "symbol": "NSP",
+      "combined_score": 0.6393,
+      "tech_score": 0.779,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     },
     {
-      "symbol": "ACMR",
-      "combined_score": 0.5032,
-      "tech_score": 0.435,
-      "sentiment_score": 0.571,
-      "reasoning": "ACMR has a strong sector, a positive analyst target upside of +21.1%, but lacks recent news and significant momentum",
+      "symbol": "CBRL",
+      "combined_score": 0.5997,
+      "tech_score": 0.699,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     }
@@ -53,145 +53,145 @@
   "hold_positions": [],
   "skip_reasoning": {},
   "scoring_breakdown": {
-    "OKTA": {
-      "combined": 0.5714,
-      "tech_norm": 1.0,
-      "sentiment_norm": 0.143,
-      "ai_raw_score": 3,
-      "ai_reason": "OKTA trades above its sector median and has an analyst target with -8.4% downside, indicating overvaluation"
-    },
-    "PENG": {
-      "combined": 0.8674,
-      "tech_norm": 0.878,
-      "sentiment_norm": 0.857,
-      "ai_raw_score": 8,
-      "ai_reason": "PENG has a low P/S ratio, a strong sector, and a high analyst target upside of +38.0%, making it an attractive candidate"
-    },
     "MAN": {
-      "combined": 0.3901,
-      "tech_norm": 0.494,
-      "sentiment_norm": 0.286,
-      "ai_raw_score": 4,
-      "ai_reason": "MAN has a low P/S ratio and a positive earnings surprise, but the CHASE RISK flag and lack of recent news limit its score"
+      "combined": 0.75,
+      "tech_norm": 1.0,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "OKTA": {
+      "combined": 0.689,
+      "tech_norm": 0.878,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "DELL": {
+      "combined": 0.6737,
+      "tech_norm": 0.847,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "NSP": {
+      "combined": 0.6393,
+      "tech_norm": 0.779,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "CBRL": {
-      "combined": 0.2453,
-      "tech_norm": 0.491,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 2,
-      "ai_reason": "CBRL has a weak sector momentum, a low analyst target upside, and significant downside risk, making it a hard avoid"
+      "combined": 0.5997,
+      "tech_norm": 0.699,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "PGNY": {
-      "combined": 0.6008,
-      "tech_norm": 0.487,
-      "sentiment_norm": 0.714,
-      "ai_raw_score": 7,
-      "ai_reason": "PGNY has a strong sector, a positive analyst target upside of +7.0%, and recent positive news, but lacks significant upside potential"
-    },
-    "QLYS": {
-      "combined": 0.4515,
-      "tech_norm": 0.474,
-      "sentiment_norm": 0.429,
-      "ai_raw_score": 5,
-      "ai_reason": "QLYS has a high P/S ratio, a neutral sector momentum, and an analyst target with -5.1% downside, indicating a mixed setup"
+    "BJRI": {
+      "combined": 0.5895,
+      "tech_norm": 0.679,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "VSXY": {
-      "combined": 0.3707,
-      "tech_norm": 0.456,
-      "sentiment_norm": 0.286,
-      "ai_raw_score": 4,
-      "ai_reason": "VSXY has a weak sector momentum and limited analyst target upside of +6.8%, making it a mediocre candidate"
-    },
-    "ACMR": {
-      "combined": 0.5032,
-      "tech_norm": 0.435,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 6,
-      "ai_reason": "ACMR has a strong sector, a positive analyst target upside of +21.1%, but lacks recent news and significant momentum"
-    },
-    "DAVE": {
-      "combined": 0.4146,
-      "tech_norm": 0.401,
-      "sentiment_norm": 0.429,
-      "ai_raw_score": 5,
-      "ai_reason": "DAVE has a high P/S ratio, a neutral sector momentum, and an analyst target with -3.5% downside, indicating a mixed setup"
-    },
-    "MU": {
-      "combined": 0.6913,
-      "tech_norm": 0.383,
-      "sentiment_norm": 1.0,
-      "ai_raw_score": 9,
-      "ai_reason": "MU has a strong sector, a high analyst target upside of +63.7%, and recent positive news, making it a strong candidate"
-    },
-    "BRKR": {
-      "combined": 0.3648,
-      "tech_norm": 0.301,
-      "sentiment_norm": 0.429,
-      "ai_raw_score": 5,
-      "ai_reason": "BRKR has a neutral sector momentum, a limited analyst target upside of -1.2%, and lacks recent news, making it a mediocre candidate"
-    },
-    "GEO": {
-      "combined": 0.3938,
-      "tech_norm": 0.216,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 6,
-      "ai_reason": "GEO has a strong analyst target upside of +9.2% and a positive earnings surprise, but lacks significant momentum and news"
-    },
-    "AGYS": {
-      "combined": 0.4555,
-      "tech_norm": 0.197,
-      "sentiment_norm": 0.714,
-      "ai_raw_score": 7,
-      "ai_reason": "AGYS has a strong sector, a positive analyst target upside of +29.2%, and recent positive earnings, making it an attractive candidate"
-    },
-    "RAL": {
-      "combined": 0.2293,
-      "tech_norm": 0.173,
-      "sentiment_norm": 0.286,
-      "ai_raw_score": 4,
-      "ai_reason": "RAL has a neutral sector momentum, a limited analyst target upside of +2.5%, and lacks recent news, making it a mediocre candidate"
-    },
-    "AMN": {
-      "combined": 0.364,
-      "tech_norm": 0.157,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 6,
-      "ai_reason": "AMN has a strong sector, a positive analyst target upside, and recent positive news, but lacks significant momentum"
+      "combined": 0.5125,
+      "tech_norm": 0.525,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "HPE": {
-      "combined": 0.4897,
-      "tech_norm": 0.122,
-      "sentiment_norm": 0.857,
-      "ai_raw_score": 8,
-      "ai_reason": "HPE has a strong sector, a high analyst target upside of +34.9%, and recent positive news, making it an attractive candidate"
+      "combined": 0.4021,
+      "tech_norm": 0.304,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "NSIT": {
-      "combined": 0.0983,
-      "tech_norm": 0.054,
-      "sentiment_norm": 0.143,
-      "ai_raw_score": 3,
-      "ai_reason": "NSIT has a neutral sector momentum, a limited analyst target downside of -8.6%, and lacks recent news, making it a mediocre candidate"
+    "HUM": {
+      "combined": 0.3426,
+      "tech_norm": 0.185,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "CXW": {
-      "combined": 0.3084,
-      "tech_norm": 0.045,
-      "sentiment_norm": 0.571,
-      "ai_raw_score": 6,
-      "ai_reason": "CXW has a strong analyst target upside of +16.1% and a positive earnings surprise, but lacks significant momentum and news"
+    "NTAP": {
+      "combined": 0.3066,
+      "tech_norm": 0.113,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "DVA": {
-      "combined": 0.0818,
-      "tech_norm": 0.021,
-      "sentiment_norm": 0.143,
-      "ai_raw_score": 3,
-      "ai_reason": "DVA has a weak sector momentum, a limited analyst target downside of -11.4%, and lacks recent news, making it a mediocre candidate"
+    "HAE": {
+      "combined": 0.3037,
+      "tech_norm": 0.107,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "RHI": {
-      "combined": 0.0,
+      "combined": 0.3027,
+      "tech_norm": 0.105,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "GSHD": {
+      "combined": 0.291,
+      "tech_norm": 0.082,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "BBY": {
+      "combined": 0.287,
+      "tech_norm": 0.074,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "AGYS": {
+      "combined": 0.2856,
+      "tech_norm": 0.071,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "AZTA": {
+      "combined": 0.2729,
+      "tech_norm": 0.046,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "RAL": {
+      "combined": 0.2565,
+      "tech_norm": 0.013,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "QLYS": {
+      "combined": 0.2518,
+      "tech_norm": 0.004,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "CVLT": {
+      "combined": 0.2504,
+      "tech_norm": 0.001,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "KMX": {
+      "combined": 0.25,
       "tech_norm": 0.0,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 2,
-      "ai_reason": "RHI has a weak sector momentum, a CHASE RISK flag, and a limited analyst target downside of -4.0%, making it a hard avoid"
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     }
   }
 }
