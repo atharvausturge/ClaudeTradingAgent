@@ -2858,6 +2858,17 @@
       "invested_pct": 76.3,
       "spy_daily_pct": 0.72,
       "vs_spy_pct": -1.49
+    },
+    {
+      "date": "2026-08-03",
+      "equity": 98253.8,
+      "daily_pl_dollar": 177.14,
+      "daily_pl_pct": 0.18,
+      "open_positions": 4,
+      "realized_today_dollar": 0,
+      "invested_pct": 98.5,
+      "spy_daily_pct": 1.42,
+      "vs_spy_pct": -1.24
     }
   ],
   "weekly_summary_2026_06_15_eow_wrap": {
