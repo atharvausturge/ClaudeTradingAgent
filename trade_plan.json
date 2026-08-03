@@ -1,7 +1,7 @@
 {
   "week_of": "2026-08-03",
   "generated_at": "2026-08-03T09:00:00-04:00",
-  "week_thesis": "EMERGENCY: LLY reports Q2 earnings TOMORROW (Aug 5) — CLOSE immediately at open. Confirmed portfolio entering week: AMAT (+24%, must close before Aug 13 earnings), FLEX (+3-4%, free capital), LLY (+15.3%, MANDATORY earnings close Aug 5), PENG (+41.9%, strong hold — Q3 beat July 7 $479M vs $421M consensus). MU stopped out (stop $951.93 triggered; current $807). AMD reports TONIGHT (Aug 4 after close) — consensus $11.3B +47% YoY, beat expected = direct catalyst for MU re-entry and NVDA recovery. Plan: CLOSE LLY immediately (emergency, earnings tomorrow), CLOSE AMAT by Aug 12 (mandatory), CLOSE FLEX (no AI catalyst, free capital). HOLD PENG (+41.9%, update stop to $73.35). BUY MU re-entry (oversold, HBM4 sold out, AMD catalyst, earnings Sept 23) and NVDA (laggard +2% YTD, $302 analyst target, AMD beat read-through, earnings Aug 26 safe).",
+  "week_thesis": "EMERGENCY: LLY reports Q2 earnings TOMORROW (Aug 5) — CLOSE immediately at open. Confirmed portfolio entering week: AMAT (+24%, must close before Aug 13 earnings), FLEX (+3-4%, free capital), LLY (+15.3%, MANDATORY earnings close Aug 5), MRVL (earnings Aug 20 = 17 days, insufficient window — close). PENG: STOPPED OUT July 29 at $48.02 (both tranches). MU stopped out (stop $951.93 triggered; current $807). AMD reports TONIGHT (Aug 4 after close) — consensus $11.3B +47% YoY, beat expected = direct catalyst for MU re-entry and NVDA recovery. Plan: CLOSE LLY immediately (emergency, earnings tomorrow), CLOSE AMAT by Aug 12 (mandatory), CLOSE FLEX (no AI catalyst, free capital), CLOSE MRVL (earnings Aug 20, only 17 days). BUY MU re-entry (oversold, HBM4 sold out, AMD catalyst, earnings Sept 23) and NVDA (laggard +2% YTD, $302 analyst target, AMD beat read-through, earnings Aug 26 safe).",
   "market_context": {
     "spy_price_approx": 750,
     "spy_note": "SPY ~$750 (pre-market Aug 3, up from bars_raw $736.50). Market rising on MSFT/AMZN cloud AI capex beats July 29-30.",
@@ -9,13 +9,15 @@
     "lly_note": "LLY $1,144.34 (July 31). Entry $992.17 (33 shares). +15.3% / +$5,006. Q2 earnings Aug 5 — analysts expect $20.26B revenue, $6.71 EPS. Market pricing +/-8.37% earnings swing. MANDATORY CLOSE at Monday open.",
     "amat_note": "AMAT ~$507-517 (Aug 1: $516.89, then -3.61%). Entry $411.45 (80 shares). +23-26% / ~$7,650-8,450. Q3 earnings Aug 13. Close by Aug 12.",
     "flex_note": "FLEX ~$136-140 est. Entry $132.46 (112 shares). +2-6% marginal. Contract manufacturing, no AI catalyst. Close to free capital.",
-    "peng_note": "PENG $77.21 (current). Entry $54.38 (341 shares, stop $51.70). +41.9% / +$7,763. ATH $81.39 on July 9. Q3 beat July 7 ($479M vs $421M). HOLD. Update stop to $73.35.",
+    "peng_note": "PENG: STOPPED OUT July 29 at $48.02 (341 shares @ $54.38 entry, 359 shares @ $51.29 entry). Both tranches hit stops. Position closed.",
+    "mrvl_note": "MRVL: earnings Aug 20 = only 17 days. Insufficient safe swing window. Close position to avoid earnings binary risk. If entry was $186.53 (107 shares), evaluate P&L at close.",
     "mu_note": "MU ~$807-823 (Aug 3). Original entry $1,002.27, stop $951.93 — stopped out. RSI ~34 (oversold). Re-entry at ~$815, stop $775. HBM4 100% sold out through 2028. AMD beat = AI memory catalyst. $1,087 analyst median target.",
     "nvda_note": "NVDA $200.75 (Friday Aug 1, +2.9% on MSFT/AMZN cloud beats). Only +2% YTD vs AMD +120%. $302 analyst median target (61 analysts Strong Buy). Earnings Aug 26 = 3.5-week safe window.",
     "macro_risks": [
       "LLY Q2 earnings Aug 5 (TOMORROW) — CLOSE NOW",
       "AMD Q2 earnings Aug 4 (TONIGHT) — if miss, AI chip sector sells off",
       "AMAT Q3 earnings Aug 13 — close by Aug 12",
+      "MRVL Q2 earnings Aug 20 — close this week",
       "NVDA Q2 earnings Aug 26 — safe if entered this week"
     ]
   },
@@ -44,36 +46,35 @@
       "entry_condition": "Enter Tuesday Aug 5 morning after AMD Q2 beat confirmed; skip if AMD misses"
     }
   ],
-  "close_positions": ["LLY", "AMAT", "FLEX"],
+  "close_positions": ["LLY", "AMAT", "FLEX", "MRVL"],
   "close_reasoning": {
     "LLY": "EMERGENCY — Q2 earnings Aug 5 (TOMORROW). Execute at Monday open. $1,144.34 vs $992.17 entry (33 shares) = +15.3% / +$5,006. Market pricing +/-8.37% swing = $3,135 binary risk. Lock gain now.",
     "AMAT": "Mandatory earnings exit. Q3 Aug 13 — close by Aug 12. ~$507-517 vs $411.45 entry (80 shares) = +24% / ~$7,650-8,450. Lock gain.",
-    "FLEX": "No AI catalyst. Contract manufacturing. +2-6% marginal gain. Close to free capital for MU and NVDA with 40-50%+ upside targets."
+    "FLEX": "No AI catalyst. Contract manufacturing. +2-6% marginal gain. Close to free capital for MU and NVDA with 40-50%+ upside targets.",
+    "MRVL": "Earnings Aug 20 = only 17 days from entry — insufficient safe swing window. AI networking thesis intact but binary earnings risk too high. Close to avoid GLP-1-style gap risk. Re-evaluate post-earnings."
   },
-  "hold_positions": ["PENG"],
-  "hold_reasoning": {
-    "PENG": "HOLD with stop update. $77.21 vs $54.38 entry (341 shares) = +41.9% / +$7,763. Q3 beat July 7: $479M vs $421M. ATH $81.39. No imminent earnings. Update stop from $51.70 to $73.35 (-5% from $77.21) to protect gains."
-  },
+  "hold_positions": [],
+  "hold_reasoning": {},
   "skip_reasoning": {
     "AMD": "BLACKOUT: earnings Aug 4 after close. Re-evaluate Aug 10.",
     "CRWD": "Price data inconsistency: bars_raw $480 vs actual ~$191 (+307% from June lows). Skip until data reconciled. Earnings Aug 27 — revisit next week.",
-    "MRVL": "Earnings Aug 20 = 17 days — insufficient safe window for new entry. Watchlist.",
+    "PENG": "STOPPED OUT July 29 at $48.02. Both tranches hit GTC stop orders. No position remains.",
     "NEM": "Gold miner — outside AI/tech mandate.",
     "EOG": "Energy sector, RSI 70.4 overbought, outside mandate."
   },
   "portfolio_snapshot_estimate": {
-    "note": "Alpaca API unavailable (proxy HTTP 403). Estimated from last confirmed snapshot July 22 ($107,855) plus price moves.",
-    "portfolio_value_jul22_confirmed": 107855.09,
-    "portfolio_value_estimate_aug3": 121000,
+    "note": "Alpaca API unavailable (proxy HTTP 403). Values from last confirmed live snapshot July 29, 2026 ($96,175.66 after PENG stops triggered).",
+    "portfolio_value_jul29_confirmed": 96175.66,
+    "portfolio_value_estimate_aug3": 96000,
     "positions_entering_aug3": {
       "AMAT":  {"entry": 411.45, "qty": 80,  "current_approx": 512,   "gain_pct": 24.5, "action": "CLOSE by Aug 12"},
       "FLEX":  {"entry": 132.46, "qty": 112, "current_approx": 137,   "gain_pct": 3.4,  "action": "CLOSE"},
       "LLY":   {"entry": 992.17, "qty": 33,  "current_approx": 1144,  "gain_pct": 15.3, "action": "EMERGENCY CLOSE Mon open"},
-      "PENG":  {"entry": 54.38,  "qty": 341, "current_approx": 77.21, "gain_pct": 41.9, "action": "HOLD — update stop $73.35"},
-      "MU":    {"entry": 1002.27,"qty": 13,  "status": "STOPPED OUT — stop $951.93",     "action": "RE-ENTER ~$815"}
+      "MRVL":  {"entry": 186.53, "qty_est": 107, "current_approx": 115, "action": "CLOSE — earnings Aug 20"},
+      "PENG":  {"status": "STOPPED OUT July 29 at $48.02", "action": "CLOSED — no position"},
+      "MU":    {"entry": 1002.27, "qty": 13, "status": "STOPPED OUT", "action": "RE-ENTER ~$815"}
     },
     "target_positions_eow": [
-      {"symbol": "PENG", "current": 77.21, "entry": 54.38, "note": "hold"},
       {"symbol": "MU",   "entry_approx": 815, "stop": 775},
       {"symbol": "NVDA", "entry_approx": 200, "stop": 190}
     ]

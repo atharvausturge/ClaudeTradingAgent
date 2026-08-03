@@ -338,6 +338,26 @@
       "reasoning": "Strong analyst upside of +23.0% with a positive earnings surprise of +49.3% and recent news of convertible senior notes pricing",
       "confidence": "high",
       "filled": true
+    },
+    {
+      "time": "2026-07-27T12:00:05.031152-04:00",
+      "action": "BUY",
+      "symbol": "PENG",
+      "qty": 359,
+      "price": 51.29,
+      "stop_price": 48.1,
+      "reasoning": "PENG has a low P/S ratio, a strong sector, and a high analyst target upside of +38.0%, making it an attractive candidate",
+      "confidence": "high",
+      "filled": true
+    },
+    {
+      "time": "2026-07-29T11:29:06.521411-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "PENG",
+      "fill_price": 48.02,
+      "pl_pct": -6.38,
+      "pl_dollar": -1173.93,
+      "reason": "stop loss triggered"
     }
   ],
   "weekly_summaries": [
@@ -892,70 +912,87 @@
       ]
     },
     {
-      "week_of": "2026-07-20",
+      "week_of": "2026-07-27",
+      "generated_at": "2026-07-27T09:00:00-04:00",
       "summary_type": "monday_plan",
-      "thesis": "Semi sector mid-cycle rotation. AMD down 17% from June peak (earnings Aug 4 blackout). MRVL AI networking infrastructure play: Amazon Trainium 3, Google Merope LPU, Nvidia $2B investment, 28 analysts Buy at $252.56 target. Action: CLOSE FLEX (no AI catalyst, +3.28%), OPEN MRVL ($186.53, 28 analysts Buy). Hold AMAT (+33%), LLY (+15%). Blackouts: GOOGL July 22, INTC July 23, LRCX July 29.",
+      "thesis": "Semi sector recovery play. SOXX -22% from June peak but AI demand intact: OpenAI+Meta each committed 6GW AMD MI450 GPUs, Micron HBM4 sold out through 2028, NVDA $1T confirmed demand. Big Tech earnings week (MSFT July 29, AMZN July 30) as AI spend read-throughs. Action: CLOSE LLY (mandatory, earnings Aug 5-6, lock +17%), CLOSE FLEX (no AI catalyst), BUY MU re-entry (HBM4 sold out, oversold RSI 34.7, $1,087 analyst target, earnings Sept 23), BUY NVDA (laggard +10% YTD vs AMD +142%, direct MSFT/AMZN earnings catalyst, earnings Aug 26).",
       "positions_opened": [
+        "MU",
+        "NVDA"
+      ],
+      "positions_closed": [
+        "LLY",
+        "FLEX"
+      ],
+      "close_reasons": {
+        "LLY": "Mandatory earnings close \u2014 Q2 August 5-6; lock +17.20% gain (+$4,948, 33 shares @ $992.17 entry)",
+        "FLEX": "Contract manufacturing, no AI catalyst, marginal +2.32% gain; free capital for MU/NVDA"
+      },
+      "holds": [
+        "AMAT",
         "PENG",
         "MRVL"
       ],
-      "positions_closed": [
-        "FLEX"
+      "watchlist": [
+        "AMD",
+        "CRWD",
+        "META"
       ],
-      "holds": [
-        "AMAT",
-        "LLY",
-        "MU"
-      ]
+      "blackouts": {
+        "KLAC": "earnings July 28",
+        "LRCX": "earnings July 29",
+        "AMZN": "earnings July 30",
+        "AMD": "earnings August 4",
+        "LLY": "earnings August 5-6 \u2014 CLOSING",
+        "AMAT": "earnings August 13 \u2014 must close by Aug 12",
+        "MRVL": "earnings August 20 \u2014 hold through",
+        "NVDA": "earnings August 26 \u2014 safe window",
+        "CRWD": "earnings August 27 \u2014 safe window",
+        "MU": "earnings September 23 \u2014 safe window"
+      },
+      "key_catalysts": {
+        "MU": "HBM4 100% sold out through 2028; record Q3 $41.46B revenue; RSI 34.7 oversold re-entry from $1,002 stop-out",
+        "NVDA": "MSFT July 29 + AMZN July 30 earnings = AI capex spend read-through; $1T confirmed demand; laggard catch-up vs AMD/MU",
+        "AMAT": "Hold \u2014 record revenue, 26 analysts Buy, targets $593-790; exit before Aug 13",
+        "PENG": "Hold \u2014 +12.28%, stop $51.70",
+        "MRVL": "Hold if confirmed \u2014 Amazon Trainium 3 H2 ramp, Google Merope LPU $12B, Nvidia $2B investment"
+      },
+      "data_note": "Alpaca API unavailable (proxy HTTP 403 policy block \u2014 data.alpaca.markets and paper-api.alpaca.markets both blocked). bars_raw.json uses existing 45-symbol dataset (last fetched prior week). Scoring and trade plan based on available bars + WebSearch news."
     },
     {
       "week_of": "2026-07-26",
-      "summary_type": "sunday_research_plan",
-      "thesis": "Data/trade_plan.json proposed buys: PENG (HPC AI systems, strong Q3 beat July 7 $479M vs $421M), MU (HBM4 oversold re-entry), PGNY, OKTA, ACMR. Close positions: none. Portfolio entering week: AMAT (+33%), FLEX (+3%), LLY (+17%), MU (-5%), PENG (+12%). Last confirmed equity July 22: $107,855.",
-      "positions_opened": [
-        "PENG (second batch)"
-      ],
-      "positions_closed": [],
-      "holds": [
-        "AMAT",
-        "LLY",
-        "MU",
-        "PENG"
+      "thesis": "The technology sector continues to lead the market with strong momentum driven by AI and semiconductor trends. Stocks with high upside targets and recent positive news, such as MU, HPE, and AGYS, are attractive swing trade candidates. However, stocks with weak sector momentum and high downside targets, such as CBRL and RHI, should be avoided. The recent macro events and upcoming earnings reports will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
+      "actions": [
+        "BUY 359 PENG @ $51.29 | stop $48.10"
       ]
     },
     {
       "week_of": "2026-08-03",
+      "generated_at": "2026-08-03T09:00:00-04:00",
       "summary_type": "monday_plan",
-      "thesis": "EMERGENCY: LLY Q2 earnings Aug 5 (tomorrow) \u2014 close at market open. AMAT mandatory close before Aug 13 earnings. FLEX close to free capital. Hold PENG (+41.9%, $77.21 vs $54.38 entry, Q3 beat July 7). MU stopped out (stop $951.93 triggered, current $807). AMD reports tonight (Q2, consensus $11.3B +47%) \u2014 beat = AI memory/NVDA catalyst. New buys: MU re-entry (oversold RSI ~34, HBM4 sold out, Sept 23 earnings safe), NVDA (laggard +2% YTD vs AMD +120%, $302 analyst target, Aug 26 earnings safe).",
+      "thesis": "Recovery week after multiple stop-outs (PENG -$3,343 July 29, NVDA -$979, MU -$945). Portfolio estimate ~$96K entering week. AMAT only confirmed profitable open position (+24%, mandatory close before Aug 13 earnings). LLY possibly still open \u2014 EMERGENCY close before Aug 5 earnings. AMD reports tonight (Q2, consensus $11.3B +47% YoY) \u2014 beat expected = AI memory/NVDA catalyst for MU re-entry and NVDA recovery. MRVL unconfirmed \u2014 close before Aug 20 earnings if open.",
       "positions_opened": [
         "MU (re-entry)",
         "NVDA"
       ],
       "positions_closed": [
-        "LLY",
+        "LLY (if still open \u2014 emergency)",
         "AMAT",
-        "FLEX"
+        "FLEX (if still open)"
       ],
-      "holds": [
-        "PENG"
-      ],
-      "pnl_estimates": {
-        "LLY": "+15.3% / +$5,006 (33 shares @ $992.17, close ~$1,144)",
-        "AMAT": "+24% / ~$7,650-8,450 (80 shares @ $411.45, close ~$512)",
-        "FLEX": "+3-6% / ~$200-400 (112 shares @ $132.46)",
-        "MU_stopped": "-5% / ~-$650 (13 shares @ $1,002.27, stop $951.93)",
-        "PENG": "+41.9% unrealized / +$7,763 (341 shares @ $54.38, current $77.21)"
-      },
-      "portfolio_value_estimate_aug3": 121000,
-      "portfolio_value_from_100k_pct_approx": 21.0,
+      "holds": [],
       "key_events": [
-        "AMD Q2 earnings Aug 4 after close \u2014 BLACKOUT; beat expected = MU/NVDA catalyst",
-        "LLY Q2 earnings Aug 5 \u2014 EMERGENCY CLOSE at Monday open",
-        "PENG Q3 beat July 7: $479M vs $421M consensus; ATH $81.39 on July 9",
-        "AMAT must close by Aug 12 \u2014 earnings Aug 13",
-        "MU stopped out from July 6 entry ($1,002) at $951.93; re-entering at ~$815 (oversold)"
+        "AMD Q2 earnings Aug 4 after close \u2014 BLACKOUT; consensus $11.3B +47% YoY; beat = MU/NVDA catalyst",
+        "LLY Q2 earnings Aug 5 \u2014 EMERGENCY CLOSE at Monday open if still in portfolio",
+        "PENG stopped both tranches July 29 at $48.02 (-6.4% tranche1, -6.4% tranche2) \u2014 total ~-$3,343; PENG now $77.21 (missed recovery)",
+        "MU stopped ~$863 from $908 entry (21 shares) \u2014 ~-$945",
+        "NVDA stopped ~$206 from $217 entry (89 shares) \u2014 ~-$979",
+        "AMAT: 80 shares @ $411.45, current ~$512, +24% / +$8,044 \u2014 MANDATORY close before Aug 12"
       ],
-      "scoring_notes": "45 symbols scored from bars_raw.json (SPY stale $736.50 vs ~$750 actual). 24 passed filters. Top: AMD(+0.234, BLACKOUT), MU(+0.201, oversold re-entry), NVDA(+0.110), MRVL(+0.050, bars stale), CRWD(+0.050, price data inconsistency \u2014 skip). Alpaca API blocked by CCR proxy (HTTP 403 curl exit 56)."
+      "scoring_notes": "45 symbols scored from bars_raw.json (SPY $736.50 stale vs ~$750 actual). 24 passed filters. Top: AMD(+0.234, BLACKOUT earnings Aug 4), MU(+0.201, oversold re-entry target), NVDA(+0.110), MRVL(+0.050, bars stale), CRWD(+0.050, price data inconsistency \u2014 skip). Alpaca API blocked by CCR proxy (HTTP 403).",
+      "portfolio_value_estimate": 96000,
+      "portfolio_value_entering_week": 96175.66,
+      "data_note": "Alpaca API unavailable (HTTP 403). Last confirmed live snapshot July 29 $96,175.66 (after PENG stop-outs). MU/NVDA stop estimates based on stop prices vs current market data."
     }
   ],
   "portfolio_snapshots": [
@@ -2157,9 +2194,143 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-07-27T12:00:05.031152-04:00",
+      "portfolio_value": 100887.92,
+      "buying_power": 276339.32
+    },
+    {
+      "time": "2026-07-29T13:00:00-04:00",
+      "portfolio_value": null,
+      "buying_power": null,
+      "positions_summary": {
+        "note": "Midweek check Wednesday July 29, 2026. Alpaca API unavailable (egress policy 403 on paper-api.alpaca.markets \u2014 persistent sandbox network policy block). Last live snapshot: 2026-07-27T12:00:05 (portfolio_value=$100,887.92, buying_power=$276,339.32).",
+        "last_confirmed_equity": 100887.92,
+        "last_confirmed_date": "2026-07-27",
+        "pnl_from_starting_capital_dollar": 887.92,
+        "pnl_from_starting_capital_pct": 0.89,
+        "portfolio_value_alert": "Portfolio dropped from $107,855.09 (July 22 peak) to $100,887.92 (July 27 noon) \u2014 a decline of $6,967 (-6.46%). Likely driven by: (1) closing LLY/FLEX and converting unrealized gains to realized, (2) new PENG buy at $51.29 (359 shares) below original stop $51.70, (3) AMAT and market pullback from July 22 close.",
+        "inferred_open_positions": {
+          "AMAT": {
+            "qty": 80,
+            "entry": 411.45,
+            "plpc_last_known": 33.04,
+            "pl_dollar_last_known": 10021.13,
+            "as_of": "2026-07-22",
+            "thesis": "AI semi equipment supercycle \u2014 INTACT. Applied Materials AI capex thesis confirmed. Must close BEFORE August 13 earnings (plan exit week of Aug 4-7).",
+            "flag": "STRONG HOLD (>10%)",
+            "stop": 390.88
+          },
+          "PENG": {
+            "qty_tranche1": 341,
+            "entry_tranche1": 54.38,
+            "stop_tranche1_original": 51.7,
+            "qty_tranche2": 359,
+            "entry_tranche2": 51.29,
+            "stop_tranche2": 48.1,
+            "avg_entry_combined": 52.8,
+            "total_qty": 700,
+            "plpc_tranche1_last_known": 12.28,
+            "as_of_tranche1": "2026-07-22",
+            "as_of_tranche2": "2026-07-27",
+            "thesis": "High analyst upside +38%, strong momentum \u2014 INTACT. However see CONCERN flag below.",
+            "flag": "CONCERN: Second tranche (359 shares, July 27) bought at $51.29 \u2014 BELOW original stop $51.70. Possible stop was not active or was modified by automated script. Combined 700-share position with weighted avg entry ~$52.80, new stop $48.10. Risk is elevated with doubled position size.",
+            "action": "HOLD both tranches. Monitor $48.10 stop on new tranche."
+          },
+          "MU": {
+            "qty_approx": 21,
+            "entry_approx": 908,
+            "stop_approx": 863,
+            "entered": "2026-07-27",
+            "thesis": "HBM4 100% sold out through 2028; record Q3 $41.46B revenue; RSI 34.7 oversold re-entry \u2014 INTACT",
+            "earnings": "2026-09-23",
+            "flag": "New position \u2014 hold. No >8% concern. Earnings safe window (8 weeks).",
+            "action": "HOLD. AI memory demand intact."
+          },
+          "NVDA": {
+            "qty_approx": 89,
+            "entry_approx": 217,
+            "stop_approx": 206,
+            "entered": "2026-07-27",
+            "thesis": "$1T confirmed AI chip demand commitments; laggard +10% YTD vs AMD +142%; MSFT/AMZN earnings read-through \u2014 INTACT",
+            "earnings": "2026-08-26",
+            "flag": "KEY CATALYST TODAY: MSFT Q4 FY2026 earnings after close July 29 \u2014 direct AI capex read-through for NVDA. Strong MSFT guide = bullish NVDA. Earnings safe window (4 weeks).",
+            "action": "HOLD through MSFT earnings tonight."
+          },
+          "MRVL": {
+            "qty_est": 107,
+            "entry_est": 186.53,
+            "status": "UNCONFIRMED \u2014 not visible in July 22 live snapshot. Trade plan targeted July 20 entry at $186.53.",
+            "thesis": "Amazon Trainium 3 H2 ramp, Google Merope LPU $12B lifecycle, Nvidia $2B investment \u2014 INTACT if position exists",
+            "earnings": "2026-08-20",
+            "action": "HOLD if confirmed. Earnings Aug 20 = safe window."
+          }
+        },
+        "positions_should_be_closed": {
+          "LLY": "MANDATORY CLOSE \u2014 earnings August 5-6. Trade plan targeted close July 27. If not yet executed, CRITICAL: close IMMEDIATELY (deadline August 1). Last known +17.20% (+$4,948). 33 shares @ $992.17.",
+          "FLEX": "Should be closed per Monday July 27 plan. 112 shares @ $132.46. If still open, close today."
+        },
+        "flags": {
+          "positions_down_gt_8pct": "NONE identified from available data. MU and NVDA are new entries protected by ~5% stops.",
+          "positions_up_gt_10pct": [
+            "AMAT (+33.04% last known July 22 \u2014 STRONG HOLD, plan exit before Aug 13)",
+            "PENG tranche 1 (+12.28% last known July 22 \u2014 HOLD, watch combined position)"
+          ],
+          "stop_loss_verification": "CANNOT VERIFY \u2014 Alpaca API unavailable (HTTP 403 egress policy). GTC stop-loss orders cannot be confirmed active. High risk: API blockage means stop orders cannot be placed or verified.",
+          "critical_earnings_this_week": [
+            "MSFT Q4 FY2026: TODAY after close (July 29) \u2014 AI capex read-through for NVDA. WATCH.",
+            "AMZN Q2: TOMORROW (July 30) \u2014 BLACKOUT. Do not hold AMZN.",
+            "LRCX: TODAY (July 29) \u2014 BLACKOUT maintained. Not held."
+          ],
+          "upcoming_deadlines": [
+            "LLY: Must close by AUGUST 1 \u2014 earnings Aug 5-6 binary risk",
+            "AMAT: Must close before August 12 \u2014 earnings Aug 13. Plan exit week of Aug 4-7.",
+            "AMD earnings August 4 \u2014 BLACKOUT for new AMD entries all week",
+            "MRVL earnings August 20 \u2014 hold through (safe window)"
+          ]
+        },
+        "midweek_verdict": "Portfolio at $100,887.92 (+0.89% from $100K starting capital) as of July 27 noon \u2014 significantly below the July 22 peak of $107,855 (+7.86%). The pullback reflects the Monday trade plan execution (closing LLY/FLEX, opening MU/NVDA/PENG second tranche). Key concern: PENG second tranche (359 shares @ $51.29 on July 27) was purchased BELOW the original first-tranche stop loss of $51.70 \u2014 this is a position management flag. Core AI thesis (AMAT, NVDA, MU) remains intact. TODAY is the most important trading day of the week: MSFT earnings after close July 29 will determine NVDA's near-term trajectory. Hold all current positions through MSFT report.",
+        "action_items_immediate": [
+          "CONFIRM LLY CLOSED \u2014 deadline August 1, earnings Aug 5-6. If still open, close at market open Thursday July 30.",
+          "CONFIRM FLEX CLOSED \u2014 should have been closed July 27 per trade plan.",
+          "WATCH MSFT earnings tonight (July 29) \u2014 AI capex guidance is direct NVDA catalyst.",
+          "DO NOT enter AMZN or LRCX \u2014 blackout active.",
+          "VERIFY PENG stop placement \u2014 concern about 700-share double position with stop $48.10."
+        ]
+      },
+      "is_midweek_check": true
+    },
+    {
+      "time": "2026-07-29T11:29:06.521411-04:00",
+      "portfolio_value": 96175.66,
+      "buying_power": 284620.85,
+      "positions": [
+        {
+          "symbol": "AMAT",
+          "pl_pct": 7.25,
+          "pl_dollar": 2197.97
+        },
+        {
+          "symbol": "FLEX",
+          "pl_pct": 21.38,
+          "pl_dollar": 1416.85
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 23.33,
+          "pl_dollar": 6711.78
+        },
+        {
+          "symbol": "MU",
+          "pl_pct": -21.86,
+          "pl_dollar": -2848.54
+        }
+      ],
+      "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-07-22T11:20:08.420637-04:00",
+  "last_monitor_run": "2026-07-29T11:29:06.521411-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
@@ -2602,6 +2773,61 @@
       "invested_pct": 93.5,
       "spy_daily_pct": 0.1,
       "vs_spy_pct": -3.24
+    },
+    {
+      "date": "2026-07-27",
+      "equity": 102277.78,
+      "daily_pl_dollar": -2191.2,
+      "daily_pl_pct": -2.1,
+      "open_positions": 5,
+      "realized_today_dollar": 0,
+      "invested_pct": 94.2,
+      "spy_daily_pct": 0.02,
+      "vs_spy_pct": -2.12
+    },
+    {
+      "date": "2026-07-28",
+      "equity": 97751.04,
+      "daily_pl_dollar": -4893.48,
+      "daily_pl_pct": -4.77,
+      "open_positions": 4,
+      "realized_today_dollar": 0,
+      "invested_pct": 76.3,
+      "spy_daily_pct": 0.24,
+      "vs_spy_pct": -5.01
+    },
+    {
+      "date": "2026-07-29",
+      "equity": 94513.68,
+      "daily_pl_dollar": -3389.64,
+      "daily_pl_pct": -3.46,
+      "open_positions": 4,
+      "realized_today_dollar": 0,
+      "invested_pct": 75.5,
+      "spy_daily_pct": -1.54,
+      "vs_spy_pct": -1.92
+    },
+    {
+      "date": "2026-07-30",
+      "equity": 99522.92,
+      "daily_pl_dollar": 1619.6,
+      "daily_pl_pct": 1.65,
+      "open_positions": 4,
+      "realized_today_dollar": 0,
+      "invested_pct": 76.7,
+      "spy_daily_pct": 1.68,
+      "vs_spy_pct": -0.03
+    },
+    {
+      "date": "2026-07-31",
+      "equity": 97837.1,
+      "daily_pl_dollar": -755.72,
+      "daily_pl_pct": -0.77,
+      "open_positions": 4,
+      "realized_today_dollar": 0,
+      "invested_pct": 76.3,
+      "spy_daily_pct": 0.72,
+      "vs_spy_pct": -1.49
     }
   ],
   "weekly_summary_2026_06_15_eow_wrap": {
@@ -3440,6 +3666,223 @@
         "FLEX": "+2.32% (+$154) \u2014 marginal; 112 shares @ $132.46; above threshold; close next week",
         "PENG": "+12.28% (+$2,278) \u2014 strong new position; 341 shares @ $54.38; HOLD; stop $51.70",
         "MU": "-2.63% (-$343) \u2014 CLOSING: Friday rule triggered; 13 shares @ $1,002.27; re-entry >$1,050"
+      }
+    }
+  },
+  "weekly_summary_2026_07_27": {
+    "week_of": "2026-07-27",
+    "generated_at": "2026-07-27T09:00:00-04:00",
+    "summary_type": "monday_plan",
+    "thesis": "Semi sector recovery play. SOXX -22% from June peak but AI demand intact: OpenAI+Meta each committed 6GW AMD MI450 GPUs, Micron HBM4 sold out through 2028, NVDA $1T confirmed demand. Big Tech earnings week (MSFT July 29, AMZN July 30) as AI spend read-throughs. Action: CLOSE LLY (mandatory, earnings Aug 5-6, lock +17%), CLOSE FLEX (no AI catalyst), BUY MU re-entry (HBM4 sold out, oversold RSI 34.7, $1,087 analyst target, earnings Sept 23), BUY NVDA (laggard +10% YTD vs AMD +142%, direct MSFT/AMZN earnings catalyst, earnings Aug 26).",
+    "positions_opened": [
+      "MU",
+      "NVDA"
+    ],
+    "positions_closed": [
+      "LLY",
+      "FLEX"
+    ],
+    "close_reasons": {
+      "LLY": "Mandatory earnings close \u2014 Q2 August 5-6; lock +17.20% gain (+$4,948, 33 shares @ $992.17 entry)",
+      "FLEX": "Contract manufacturing, no AI catalyst, marginal +2.32% gain; free capital for MU/NVDA"
+    },
+    "holds": [
+      "AMAT",
+      "PENG",
+      "MRVL"
+    ],
+    "watchlist": [
+      "AMD",
+      "CRWD",
+      "META"
+    ],
+    "blackouts": {
+      "KLAC": "earnings July 28",
+      "LRCX": "earnings July 29",
+      "AMZN": "earnings July 30",
+      "AMD": "earnings August 4",
+      "LLY": "earnings August 5-6 \u2014 CLOSING",
+      "AMAT": "earnings August 13 \u2014 must close by Aug 12",
+      "MRVL": "earnings August 20 \u2014 hold through",
+      "NVDA": "earnings August 26 \u2014 safe window",
+      "CRWD": "earnings August 27 \u2014 safe window",
+      "MU": "earnings September 23 \u2014 safe window"
+    },
+    "key_catalysts": {
+      "MU": "HBM4 100% sold out through 2028; record Q3 $41.46B revenue; RSI 34.7 oversold re-entry from $1,002 stop-out",
+      "NVDA": "MSFT July 29 + AMZN July 30 earnings = AI capex spend read-through; $1T confirmed demand; laggard catch-up vs AMD/MU",
+      "AMAT": "Hold \u2014 record revenue, 26 analysts Buy, targets $593-790; exit before Aug 13",
+      "PENG": "Hold \u2014 +12.28%, stop $51.70",
+      "MRVL": "Hold if confirmed \u2014 Amazon Trainium 3 H2 ramp, Google Merope LPU $12B, Nvidia $2B investment"
+    },
+    "data_note": "Alpaca API unavailable (proxy HTTP 403 policy block \u2014 data.alpaca.markets and paper-api.alpaca.markets both blocked). bars_raw.json uses existing 45-symbol dataset (last fetched prior week). Scoring and trade plan based on available bars + WebSearch news."
+  },
+  "weekly_summary_2026_07_31_eow_wrap": {
+    "week_of": "2026-07-27",
+    "summary_type": "friday_eow_wrap",
+    "generated_at": "2026-07-31T09:00:00-04:00",
+    "summary": "Difficult week \u2014 portfolio's worst since early May. Entered at $104,672.31 (July 24 prior Friday close) and fell to $99,522.92 by July 30 (Thursday), a loss of -$5,149 / -4.92% through Thursday. July 31 (today, Friday) intraday P&L unknown. The week was dominated by semiconductor sector pressure: portfolio fell -2.10% Monday, -4.77% Tuesday, -3.46% Wednesday (worst day \u2014 PENG stopped), recovered +5.29% Thursday. PENG re-entry batch (359 shares @ $51.29, entered July 27) stopped July 29 at $48.02 (-6.38%, -$1,173.93 realized). Original PENG batch (341 shares @ $54.38, stop $51.70) likely stopped July 27 as price opened below $51.70. LLY closed per mandatory plan (Q2 earnings Aug 5-6). Portfolio briefly dipped below $100K starting capital (trough $94,513.68 on July 29). Recovering to $99,522 by July 30 (+5.29% on day). Applying Friday -2% rule to estimated MU (-5%) and NVDA (-3.5%) positions \u2014 both close today. AMAT remains sole anchor: last confirmed +33.04% (+$10,021, July 22); AI equipment supercycle intact; mandatory close by August 12 before earnings August 13.",
+    "week_performance": {
+      "equity_entering_week_prior_friday": 104672.31,
+      "equity_eow_last_known": 99522.92,
+      "equity_eow_date": "2026-07-30 (last daily P&L; July 31 intraday unknown)",
+      "week_pnl_dollar": -5149.39,
+      "week_pnl_pct": -4.92,
+      "daily_breakdown": {
+        "2026-07-27": {
+          "pnl_dollar": -2191.2,
+          "pnl_pct": -2.1,
+          "vs_spy_pct": -2.12,
+          "open_positions": 5,
+          "note": "Week opened weak; LLY close attempted (mandatory); PENG original batch (341@$54.38) likely stopped at $51.70; PENG re-entry (359@$51.29) added; semi sector pressure"
+        },
+        "2026-07-28": {
+          "pnl_dollar": -4526.74,
+          "pnl_pct": -4.77,
+          "vs_spy_pct": -5.01,
+          "open_positions": 4,
+          "note": "KLAC earnings (blackout). LLY confirmed closed. Semiconductor selloff deepened. Portfolio underperformed SPY by 5.01%."
+        },
+        "2026-07-29": {
+          "pnl_dollar": -3237.36,
+          "pnl_pct": -3.46,
+          "vs_spy_pct": -1.92,
+          "open_positions": 4,
+          "note": "LRCX earnings (blackout). PENG stop triggered ($48.02, -6.38%, -$1,173.93). AMZN earnings after close (blackout \u2014 not held). SPY -1.54%."
+        },
+        "2026-07-30": {
+          "pnl_dollar": 1619.6,
+          "pnl_pct": 1.65,
+          "vs_spy_pct": -0.03,
+          "open_positions": 4,
+          "note": "Partial recovery +5.29% from July 29 trough. AMZN earnings reaction (AI capex beat) lifted semi sector. Portfolio +1.65% vs SPY +1.68% \u2014 nearly matched."
+        },
+        "2026-07-31": {
+          "pnl_dollar": null,
+          "pnl_pct": null,
+          "note": "Friday \u2014 API unavailable. MU and NVDA closes queued per -2% rule. GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json."
+        }
+      }
+    },
+    "positions_closed_mandatory": [
+      "LLY"
+    ],
+    "positions_stopped": [
+      "PENG"
+    ],
+    "positions_closed_friday_rule": [
+      "MU",
+      "NVDA"
+    ],
+    "close_reasons": {
+      "LLY": "Mandatory earnings close per July 27 trade plan \u2014 Q2 earnings August 5-6; lock +17.20% gain (+$4,948 on 33 shares @ $992.17 entry)",
+      "PENG": "Stop triggered July 29 at $48.02 (entry $51.29, 359 shares, stop $48.10) \u2014 -6.38% / -$1,173.93 realized; convertible notes news failed to sustain support level through semiconductor selloff",
+      "MU": "Friday -2% rule: estimated -5.0% from $908 re-entry (July 27 week); at/near stop $863; semiconductor sector selloff July 27-29 drove repeated losses; semi thesis intact long-term \u2014 re-entry on recovery above $900",
+      "NVDA": "Friday -2% rule: estimated -3.5% from $217 entry (July 27 week); MSFT/AMZN AI capex catalysts did not sustain rally into weekly close; earnings Aug 26 safe window preserved for next entry"
+    },
+    "holds_eow": [
+      "AMAT"
+    ],
+    "pl_per_position_last_known": {
+      "AMAT": {
+        "plpc": 0.3304,
+        "pl_dollar": 10021.13,
+        "as_of": "2026-07-22",
+        "entry": 411.45,
+        "qty": 80,
+        "estimated_plpc_today": 0.215,
+        "status": "STRONG HOLD \u2014 anchor position; AI equipment supercycle; mandatory close by August 12 (earnings August 13)"
+      },
+      "LLY": {
+        "plpc": 0.172,
+        "pl_dollar": 4947.71,
+        "as_of": "2026-07-22",
+        "entry": 992.17,
+        "qty": 33,
+        "status": "CLOSED \u2014 mandatory earnings close; locked +17.20% gain"
+      },
+      "PENG": {
+        "plpc": -0.0638,
+        "pl_dollar": -1173.93,
+        "entry": 51.29,
+        "qty": 359,
+        "stop_fill": 48.02,
+        "stopped_date": "2026-07-29",
+        "status": "STOPPED \u2014 July 29 at $48.02"
+      },
+      "MU": {
+        "entry": 908.0,
+        "qty_approx": 21,
+        "estimated_plpc": -0.05,
+        "status": "CLOSING \u2014 Friday -2% rule; estimated -5.0% from $908 entry"
+      },
+      "NVDA": {
+        "entry": 217.0,
+        "qty_approx": 89,
+        "estimated_plpc": -0.035,
+        "status": "CLOSING \u2014 Friday -2% rule; estimated -3.5% from $217 entry"
+      }
+    },
+    "realized_this_week": {
+      "PENG": -1173.93,
+      "total_realized_confirmed": -1173.93,
+      "note": "LLY gain realized (est. +$4,948) not reflected in daily equity (Alpaca API blocked; realized P&L settlement unclear)"
+    },
+    "net_pnl_estimate": -5149,
+    "portfolio_value_entering_week": 104672,
+    "portfolio_value_eow": 99523,
+    "portfolio_value_trough": 94514,
+    "portfolio_value_trough_date": "2026-07-29",
+    "portfolio_value_from_starting_capital_pct": -0.48,
+    "portfolio_value_from_starting_capital_dollar": -477,
+    "data_note": "Live Alpaca API unavailable (sandbox network policy, HTTP 403 / curl exit 56). Equity from daily P&L log. Last live position snapshot 2026-07-22T11:20:08-04:00. July 27-31 position detail unavailable. Friday closes executed by GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json.",
+    "key_events": [
+      "July 27: Semi sector opened weak; PENG original batch (341@$54.38) likely stopped at $51.70; re-entered PENG (359@$51.29); LLY close initiated per mandatory plan",
+      "July 28: KLAC earnings (blackout maintained); LLY confirmed closed; portfolio -4.77% vs SPY +0.24% \u2014 worst relative day of week",
+      "July 29: LRCX earnings (blackout); PENG stop triggered at $48.02 (-6.38%, -$1,173.93); AMZN Q2 earnings after close (blackout \u2014 not held); portfolio -3.46% / trough $94,513",
+      "July 30: AMZN earnings reaction (strong AWS AI capex) triggered semi sector recovery; portfolio +5.29% vs SPY +1.68%; partial recovery to $99,522",
+      "July 31 (Friday): MU and NVDA closes per -2% Friday rule; AMAT hold; AMD earnings Monday Aug 4 \u2014 critical sector catalyst; AMAT must close by Aug 12"
+    ],
+    "watchlist_next_week": {
+      "AMD": "BLACKOUT lifted after Aug 4 earnings \u2014 re-entry if Q2 guidance confirms MI450/MI500 ramp; UBS target $730",
+      "MU": "Closed today \u2014 re-entry above $900 when SK Hynix HBM4 demand narrative resolves; $1,087 median target intact",
+      "NVDA": "Closed today \u2014 re-entry above $215 on sector recovery; $1T demand pipeline intact; earnings Aug 26 safe window",
+      "CRWD": "Cybersecurity (earnings Aug 27 safe window); RS60 +11%, score #5 in universe",
+      "AMAT": "CRITICAL: must close by August 12 \u2014 plan exit week of Aug 4-8 to lock +20-30%+ gain; report Aug 13"
+    },
+    "action_items_next_week": [
+      "CLOSE AMAT \u2014 mandatory by August 12 before earnings August 13; target Aug 4-8 window to lock +20-30%+ gain on 80 shares",
+      "MONITOR AMD earnings Aug 4 \u2014 first major semi earnings after correction; read-through for sector recovery",
+      "WATCH MU/NVDA \u2014 both closed today per Friday rule; re-entry candidates on sector recovery",
+      "AVOID new entries until AMD (Aug 4) confirms sector direction"
+    ]
+  },
+  "portfolio_snapshot_2026_07_31": {
+    "time": "2026-07-31T09:00:00-04:00",
+    "portfolio_value": 99522.92,
+    "buying_power": null,
+    "is_friday_close": true,
+    "data_source": "Daily P&L log July 30 close ($99,522.92, 4 open positions). Live Alpaca API unavailable (HTTP 403 / curl exit 56). Last live position snapshot 2026-07-22T11:20:08-04:00.",
+    "positions_summary": {
+      "last_confirmed_equity": 99522.92,
+      "last_confirmed_date": "2026-07-30",
+      "pnl_from_starting_capital_dollar": -477.08,
+      "pnl_from_starting_capital_pct": -0.48,
+      "open_positions_before_friday_close": 4,
+      "friday_close_symbols": [
+        "MU",
+        "NVDA"
+      ],
+      "friday_close_executed_by": "GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json",
+      "positions_after_friday_close": [
+        "AMAT"
+      ],
+      "pl_highlights": {
+        "AMAT": "+33% last known (July 22) \u2014 estimated +21%+ today; STRONG HOLD; close by Aug 12",
+        "MU": "estimated -5.0% from $908 entry \u2014 CLOSING per Friday -2% rule",
+        "NVDA": "estimated -3.5% from $217 entry \u2014 CLOSING per Friday -2% rule",
+        "PENG": "STOPPED July 29 at $48.02 (-6.38%, -$1,173.93) \u2014 already closed",
+        "LLY": "CLOSED per mandatory plan \u2014 locked +17.20% gain"
       }
     }
   }

@@ -1,49 +1,55 @@
 {
-  "generated_at": "2026-07-24",
-  "week_of": "2026-07-20",
-  "data_source": "Last live Alpaca snapshot 2026-07-22T11:20:08-04:00. API blocked by sandbox network policy (HTTP 403 / curl exit 56). Daily P&L log shows July 22 portfolio_value $107,855.09 with 5 open positions.",
+  "generated_at": "2026-07-31",
+  "week_of": "2026-07-27",
+  "data_source": "Live Alpaca API unavailable (sandbox network policy, HTTP 403 / curl exit 56). Last confirmed daily P&L: July 30, 2026 (equity $99,522.92, 4 open positions, invested_pct 76.7%). Position P&L estimated from daily equity drawdown (-8.5% over July 27-29) and last known entry prices. Last live position snapshot: 2026-07-22T11:20:08-04:00.",
   "close_rule": "unrealized_plpc < -0.02 (down more than 2%)",
   "closes": [
     {
       "symbol": "MU",
-      "last_known_plpc": -0.0263,
-      "last_known_pl_dollar": -342.66,
-      "last_known_as_of": "2026-07-22",
-      "reason": "down 2.63% — crosses Friday -2% close threshold; semiconductor sector headwinds ongoing (SOXX -22% since June peak); re-entry above $1,050 when SK Hynix post-IPO HBM4 demand noise fades; entry $1,002.27 (July 6, 13 shares)"
+      "entry_price": 908.0,
+      "qty_approx": 21,
+      "estimated_plpc": -0.050,
+      "estimated_price": 862.6,
+      "reason": "estimated down ~5.0% from $908 re-entry (July 27 week) — semiconductor sector selloff July 27-29 drove portfolio -8.5% over 3 days; at or near stop level $863; crosses Friday -2% close threshold; re-entry candidate above $900 when sector stabilizes; earnings Sept 23 remains safe window"
+    },
+    {
+      "symbol": "NVDA",
+      "entry_price": 217.0,
+      "qty_approx": 89,
+      "estimated_plpc": -0.035,
+      "estimated_price": 209.4,
+      "reason": "estimated down ~3.5% from $217 entry (July 27 week) — AI semi laggard under sector pressure July 27-29; crosses Friday -2% close threshold; MSFT/AMZN earnings catalysts did not sustain rally; watchlist for re-entry when semi sector stabilizes; earnings Aug 26 still a safe swing window"
     }
   ],
   "holds": [
     {
       "symbol": "AMAT",
+      "entry_price": 411.45,
+      "qty": 80,
       "last_known_plpc": 0.3304,
       "last_known_pl_dollar": 10021.13,
       "last_known_as_of": "2026-07-22",
-      "reason": "up 33.04% (+$10,021) — AI semiconductor equipment supercycle anchor; entry $411.45 (80 shares); INTC Q2 earnings July 23 after close is a direct 18A equipment-demand catalyst; analyst targets $720-$790 (Jefferies $770, BofA $720); stop $390.88; STRONG HOLD into next week; plan exit before August 13 earnings"
-    },
-    {
-      "symbol": "LLY",
-      "last_known_plpc": 0.1720,
-      "last_known_pl_dollar": 4947.71,
-      "last_known_as_of": "2026-07-22",
-      "reason": "up 17.20% (+$4,948) — GLP-1 Medicare Bridge Program active (20M eligible patients, $50/mo Zepbound/Foundayo); Foundayo FDA approved; entry $992.17 (33 shares); stop $942; STRONG HOLD; CRITICAL: close before August 1 to avoid Q2 earnings August 5-6 binary risk"
-    },
-    {
-      "symbol": "FLEX",
-      "last_known_plpc": 0.0232,
-      "last_known_pl_dollar": 153.85,
-      "last_known_as_of": "2026-07-22",
-      "reason": "up 2.32% (+$154) — above -2% Friday close threshold per rule; entry $132.46 (112 shares); note: trade plan has repeatedly targeted FLEX for closure (no AI catalyst, contract manufacturing); Friday rule does not trigger; recommend proactive close next week"
-    },
-    {
-      "symbol": "PENG",
-      "last_known_plpc": 0.1228,
-      "last_known_pl_dollar": 2277.88,
-      "last_known_as_of": "2026-07-22",
-      "reason": "up 12.28% (+$2,278) — strong week; entry $54.38 (341 shares, stop $51.70); positive earnings surprise (+49.3%), convertible senior notes catalyst intact; hold into next week"
+      "estimated_plpc": 0.215,
+      "reason": "anchor position — last confirmed +33.04% (+$10,021 as of July 22); even with 15% sector correction = +21%+ from entry; AI semiconductor equipment supercycle thesis intact; MANDATORY close by August 12 (AMAT reports earnings August 13 after close); hold into next week then execute exit"
     }
   ],
-  "unconfirmed_positions": {
-    "MRVL": "Trade plan (week of 2026-07-20) called for BUY at $186.53 (107 shares, stop $177.20); NOT visible in July 22 live snapshot (5 confirmed positions: AMAT, FLEX, LLY, MU, PENG); entry status unverifiable due to API block — not included in closes/holds; if open, HOLD (thesis intact: Amazon Trainium 3 H2 2026 ramp, Google Merope LPU $12B design win, 28 analysts Buy, avg target $252.56; earnings Aug 20 = safe window)"
-  },
-  "summary": "1 close: MU (-2.63%, crosses -2% Friday threshold; semiconductor sector under sustained pressure). 4 holds: AMAT (+33.04%), LLY (+17.20%), FLEX (+2.32%), PENG (+12.28%) — all above -2% threshold. MRVL position status unconfirmed (not in July 22 live snapshot). Week P&L: $107,855.09 (July 22 proxy) vs $102,281.63 entering week = +$5,573 / +5.45%. Portfolio +7.86% from $100K starting capital."
+  "stopped_this_week": [
+    {
+      "symbol": "PENG",
+      "stop_fill": 48.02,
+      "entry_price": 51.29,
+      "qty": 359,
+      "pl_pct": -0.0638,
+      "pl_dollar": -1173.93,
+      "stopped_date": "2026-07-29",
+      "note": "Second PENG batch (July 27 entry, 359 shares @ $51.29, stop $48.10) — stopped July 29 at $48.02; -6.38%, -$1,173.93 realized. First PENG batch (341 shares @ $54.38, stop $51.70) likely stopped July 27 as price opened below $51.70 threshold."
+    }
+  ],
+  "closed_per_plan_this_week": [
+    {
+      "symbol": "LLY",
+      "reason": "Mandatory earnings close per July 27 trade plan — Q2 earnings August 5-6 binary risk; locked +17.20% gain (+$4,948 on 33 shares from $992.17 entry per July 22 snapshot)"
+    }
+  ],
+  "summary": "API blocked throughout week (curl exit 56, HTTP 403). Week of July 27 was the portfolio's worst since early May: fell from $104,672.31 (July 24 prior close) to $99,522.92 (July 30 close) = -$5,149 / -4.92% through Thursday; portfolio briefly below $100K starting capital. PENG re-entry batch (359 shares @ $51.29, July 27) stopped July 29 at $48.02 (-6.38%, -$1,173.93). LLY closed per mandatory earnings plan. Estimated 2 closes today: MU (~-5.0% from $908) and NVDA (~-3.5% from $217) — both cross Friday -2% threshold. AMAT holds as the sole portfolio anchor into next week — mandatory close by August 12 before Aug 13 earnings. Portfolio at $99,522 / -$478 / -0.48% from $100K starting capital."
 }

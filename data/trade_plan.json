@@ -1,6 +1,6 @@
 {
   "week_of": "2026-08-03",
-  "week_thesis": "EMERGENCY: LLY earnings Aug 5 (tomorrow) — close at open. AMAT mandatory close before Aug 13 earnings. FLEX close to free capital. Hold PENG (+41.9%, update stop to $73.35). MU re-entry (oversold, HBM4 sold out, AMD Q2 beat tonight = catalyst). NVDA laggard catch-up (conditional on AMD beat).",
+  "week_thesis": "EMERGENCY: LLY earnings Aug 5 (tomorrow) — close at open. AMAT mandatory close before Aug 13 earnings. FLEX close to free capital. MRVL close (earnings Aug 20 = 17 days, insufficient window). PENG stopped out July 29. MU re-entry (oversold, HBM4 sold out, AMD Q2 beat tonight = catalyst). NVDA laggard catch-up (conditional on AMD beat).",
   "buys": [
     {
       "symbol": "MU",
@@ -15,16 +15,17 @@
       "qty_pct": 0.18
     }
   ],
-  "close_positions": ["LLY", "AMAT", "FLEX"],
+  "close_positions": ["LLY", "AMAT", "FLEX", "MRVL"],
   "close_reasoning": {
     "LLY": "EMERGENCY — Q2 earnings Aug 5 (tomorrow). Execute at Monday open. +15.3% / +$5,006 gain (33 shares @ $992.17 entry, current $1,144). Lock profit before earnings binary risk.",
     "AMAT": "Mandatory earnings exit. Q3 reports Aug 13 — close by Aug 12. +24% / ~$7,650 gain (80 shares @ $411.45 entry, current ~$512).",
-    "FLEX": "No AI catalyst. +3% marginal gain. Free capital for MU/NVDA with 40-50%+ upside."
+    "FLEX": "No AI catalyst. +3% marginal gain. Free capital for MU/NVDA with 40-50%+ upside.",
+    "MRVL": "Earnings Aug 20 = only 17 days. Insufficient safe window. Close to avoid binary earnings risk. Re-evaluate post-Aug 20."
   },
-  "hold_positions": ["PENG"],
+  "hold_positions": [],
   "skip_reasoning": {
     "AMD": "BLACKOUT: earnings Aug 4 after close. Re-evaluate Aug 10.",
     "CRWD": "Price data inconsistency (bars $480 vs actual ~$191). Skip pending data reconciliation.",
-    "MRVL": "Earnings Aug 20 = insufficient window. Watchlist post-Aug 20."
+    "PENG": "STOPPED OUT July 29 at $48.02. No position remains."
   }
 }
