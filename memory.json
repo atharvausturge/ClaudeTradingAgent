@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-20",
+  "last_run": "2026-08-03",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -890,6 +890,72 @@
       "actions": [
         "BUY 341 PENG @ $54.38 | stop $51.70"
       ]
+    },
+    {
+      "week_of": "2026-07-20",
+      "summary_type": "monday_plan",
+      "thesis": "Semi sector mid-cycle rotation. AMD down 17% from June peak (earnings Aug 4 blackout). MRVL AI networking infrastructure play: Amazon Trainium 3, Google Merope LPU, Nvidia $2B investment, 28 analysts Buy at $252.56 target. Action: CLOSE FLEX (no AI catalyst, +3.28%), OPEN MRVL ($186.53, 28 analysts Buy). Hold AMAT (+33%), LLY (+15%). Blackouts: GOOGL July 22, INTC July 23, LRCX July 29.",
+      "positions_opened": [
+        "PENG",
+        "MRVL"
+      ],
+      "positions_closed": [
+        "FLEX"
+      ],
+      "holds": [
+        "AMAT",
+        "LLY",
+        "MU"
+      ]
+    },
+    {
+      "week_of": "2026-07-26",
+      "summary_type": "sunday_research_plan",
+      "thesis": "Data/trade_plan.json proposed buys: PENG (HPC AI systems, strong Q3 beat July 7 $479M vs $421M), MU (HBM4 oversold re-entry), PGNY, OKTA, ACMR. Close positions: none. Portfolio entering week: AMAT (+33%), FLEX (+3%), LLY (+17%), MU (-5%), PENG (+12%). Last confirmed equity July 22: $107,855.",
+      "positions_opened": [
+        "PENG (second batch)"
+      ],
+      "positions_closed": [],
+      "holds": [
+        "AMAT",
+        "LLY",
+        "MU",
+        "PENG"
+      ]
+    },
+    {
+      "week_of": "2026-08-03",
+      "summary_type": "monday_plan",
+      "thesis": "EMERGENCY: LLY Q2 earnings Aug 5 (tomorrow) \u2014 close at market open. AMAT mandatory close before Aug 13 earnings. FLEX close to free capital. Hold PENG (+41.9%, $77.21 vs $54.38 entry, Q3 beat July 7). MU stopped out (stop $951.93 triggered, current $807). AMD reports tonight (Q2, consensus $11.3B +47%) \u2014 beat = AI memory/NVDA catalyst. New buys: MU re-entry (oversold RSI ~34, HBM4 sold out, Sept 23 earnings safe), NVDA (laggard +2% YTD vs AMD +120%, $302 analyst target, Aug 26 earnings safe).",
+      "positions_opened": [
+        "MU (re-entry)",
+        "NVDA"
+      ],
+      "positions_closed": [
+        "LLY",
+        "AMAT",
+        "FLEX"
+      ],
+      "holds": [
+        "PENG"
+      ],
+      "pnl_estimates": {
+        "LLY": "+15.3% / +$5,006 (33 shares @ $992.17, close ~$1,144)",
+        "AMAT": "+24% / ~$7,650-8,450 (80 shares @ $411.45, close ~$512)",
+        "FLEX": "+3-6% / ~$200-400 (112 shares @ $132.46)",
+        "MU_stopped": "-5% / ~-$650 (13 shares @ $1,002.27, stop $951.93)",
+        "PENG": "+41.9% unrealized / +$7,763 (341 shares @ $54.38, current $77.21)"
+      },
+      "portfolio_value_estimate_aug3": 121000,
+      "portfolio_value_from_100k_pct_approx": 21.0,
+      "key_events": [
+        "AMD Q2 earnings Aug 4 after close \u2014 BLACKOUT; beat expected = MU/NVDA catalyst",
+        "LLY Q2 earnings Aug 5 \u2014 EMERGENCY CLOSE at Monday open",
+        "PENG Q3 beat July 7: $479M vs $421M consensus; ATH $81.39 on July 9",
+        "AMAT must close by Aug 12 \u2014 earnings Aug 13",
+        "MU stopped out from July 6 entry ($1,002) at $951.93; re-entering at ~$815 (oversold)"
+      ],
+      "scoring_notes": "45 symbols scored from bars_raw.json (SPY stale $736.50 vs ~$750 actual). 24 passed filters. Top: AMD(+0.234, BLACKOUT), MU(+0.201, oversold re-entry), NVDA(+0.110), MRVL(+0.050, bars stale), CRWD(+0.050, price data inconsistency \u2014 skip). Alpaca API blocked by CCR proxy (HTTP 403 curl exit 56)."
     }
   ],
   "portfolio_snapshots": [

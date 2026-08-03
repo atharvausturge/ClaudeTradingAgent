@@ -1,95 +1,92 @@
 {
-  "week_of": "2026-07-20",
-  "generated_at": "2026-07-20T09:00:00-04:00",
-  "week_thesis": "Portfolio enters July 20 with 3 positions: AMAT (+36.89% as of July 15), LLY (+14.93%), and FLEX (+3.28%, no AI catalyst, repeatedly targeted for closure). Semiconductor mega-caps are in a mid-cycle rotation: AMD is down 17% from June peak and another ~13% this morning ($402-430 range, earnings August 4 blackout); Burry disclosed short on NVDA+AMAT+SOXX. The opportunity is in AI networking infrastructure — MRVL (Marvell Technology, $186.53) is building the custom silicon backbone for the AI buildout: Amazon Trainium 3 volume ramp H2 2026, Google Merope LPU design win ($12B lifecycle revenue), Nvidia $2B investment, Jensen Huang endorsement as 'next trillion-dollar company,' and 28 analysts Buy at $252.56 average target (+35.4% upside). RSI oversold — dip from $200+ to $186 is technical, not fundamental. Action: close FLEX (contract manufacturing, zero AI catalyst, +3.28% marginal gain, lock profit), open MRVL. Hold AMAT and LLY. Blackouts this week: GOOGL (July 22), INTC (July 23), LRCX (July 29). AMD blackout August 4. LLY earnings August 5-6 approaching — plan exit next week.",
-
+  "week_of": "2026-08-03",
+  "generated_at": "2026-08-03T09:00:00-04:00",
+  "week_thesis": "EMERGENCY: LLY reports Q2 earnings TOMORROW (Aug 5) — CLOSE immediately at open. Confirmed portfolio entering week: AMAT (+24%, must close before Aug 13 earnings), FLEX (+3-4%, free capital), LLY (+15.3%, MANDATORY earnings close Aug 5), PENG (+41.9%, strong hold — Q3 beat July 7 $479M vs $421M consensus). MU stopped out (stop $951.93 triggered; current $807). AMD reports TONIGHT (Aug 4 after close) — consensus $11.3B +47% YoY, beat expected = direct catalyst for MU re-entry and NVDA recovery. Plan: CLOSE LLY immediately (emergency, earnings tomorrow), CLOSE AMAT by Aug 12 (mandatory), CLOSE FLEX (no AI catalyst, free capital). HOLD PENG (+41.9%, update stop to $73.35). BUY MU re-entry (oversold, HBM4 sold out, AMD catalyst, earnings Sept 23) and NVDA (laggard +2% YTD, $302 analyst target, AMD beat read-through, earnings Aug 26 safe).",
   "market_context": {
-    "spy_price_approx": 736.5,
-    "spy_note": "SPY last confirmed ~$736.50 (bars_raw). Semi sector (SOXX) -22% since June 22 peak — bear market for chip stocks.",
-    "mrvl_price_approx": 186.53,
-    "mrvl_note": "MRVL $186.53 July 20 (crashed below $200 from ~$210 peak). Amazon Trainium 3 processor ramp H2 2026; Google Merope LPU win $12B lifecycle (KeyBanc July 14); Nvidia $2B investment. Earnings Aug 20 — safe window.",
-    "amat_price_approx": 539.7,
-    "amat_note": "AMAT ~$540 July 20. Down from ATH $729 (Burry shorted June 30) and $602 (July 10) to $540. Entry $411.45, unrealized +31.4%. 26 analysts Buy, targets $593-790. Earnings ~Aug 13.",
-    "lly_price_approx": 1176.75,
-    "lly_note": "LLY ~$1,177 July 20. Entry $992.17, unrealized +18.6%. GLP-1 Medicare Bridge active, Foundayo (orforglipron) FDA approved, Q1 revenue $19.8B (+56% YoY). Earnings August 5-6 — plan exit next week.",
-    "flex_price_approx": 136.83,
-    "flex_note": "FLEX ~$136.83, entry $132.46. +3.28% marginal gain (112 shares). Contract manufacturing, no AI catalyst. Repeated closure target since June 22 — closing this week.",
-    "amd_price_approx": 415.0,
-    "amd_note": "AMD opened ~$409 today, range $402-430. Down 17%+ from June peak. Advancing AI 2026 conference July 22-23 (Zen 6 Venice launch) is near-term catalyst but earnings August 4 = blackout. Avoid new entries.",
-    "mu_price_approx": 848.95,
-    "mu_note": "MU closed July 17 at $848.95. Was closed Friday July 17 per Friday -2% rule (was at -9.05%). Entry $1,002.27 July 6. Re-entry candidate above $1,050 when sector stabilizes.",
+    "spy_price_approx": 750,
+    "spy_note": "SPY ~$750 (pre-market Aug 3, up from bars_raw $736.50). Market rising on MSFT/AMZN cloud AI capex beats July 29-30.",
+    "amd_earnings_tonight": "AMD Q2 2026: Aug 4 after close. Consensus $11.3B (+47% YoY), EPS $1.62 (+235%). Data Center ~$6.5B (+100% YoY). BLACKOUT new AMD entries all week. Beat = direct MU/NVDA catalyst.",
+    "lly_note": "LLY $1,144.34 (July 31). Entry $992.17 (33 shares). +15.3% / +$5,006. Q2 earnings Aug 5 — analysts expect $20.26B revenue, $6.71 EPS. Market pricing +/-8.37% earnings swing. MANDATORY CLOSE at Monday open.",
+    "amat_note": "AMAT ~$507-517 (Aug 1: $516.89, then -3.61%). Entry $411.45 (80 shares). +23-26% / ~$7,650-8,450. Q3 earnings Aug 13. Close by Aug 12.",
+    "flex_note": "FLEX ~$136-140 est. Entry $132.46 (112 shares). +2-6% marginal. Contract manufacturing, no AI catalyst. Close to free capital.",
+    "peng_note": "PENG $77.21 (current). Entry $54.38 (341 shares, stop $51.70). +41.9% / +$7,763. ATH $81.39 on July 9. Q3 beat July 7 ($479M vs $421M). HOLD. Update stop to $73.35.",
+    "mu_note": "MU ~$807-823 (Aug 3). Original entry $1,002.27, stop $951.93 — stopped out. RSI ~34 (oversold). Re-entry at ~$815, stop $775. HBM4 100% sold out through 2028. AMD beat = AI memory catalyst. $1,087 analyst median target.",
+    "nvda_note": "NVDA $200.75 (Friday Aug 1, +2.9% on MSFT/AMZN cloud beats). Only +2% YTD vs AMD +120%. $302 analyst median target (61 analysts Strong Buy). Earnings Aug 26 = 3.5-week safe window.",
     "macro_risks": [
-      "GOOGL Q2 earnings July 22 after close — BLACKOUT; AI cloud spend barometer",
-      "INTC Q2 earnings July 23 after close — BLACKOUT; Intel 18A manufacturing update = AMAT risk event",
-      "LRCX earnings July 29 — BLACKOUT maintained (score_local.py EARNINGS_BLACKOUT)",
-      "AMD Q2 earnings August 4 — hard blackout; Advancing AI July 22-23 may provide brief catalyst",
-      "LLY Q2 earnings August 5-6 — 2.5 weeks away; plan LLY close next week before August 1",
-      "AMAT fiscal Q3 earnings ~August 13 — 3.5 weeks out; hold through INTC July 23, plan exit before August 13",
-      "Fed Warsh: October 2026 rate hike consensus; 10yr ~4.54%; pressure on high-multiple growth names",
-      "Gemini 3.5 Pro behind schedule — AI demand uncertainty narrative headwind"
+      "LLY Q2 earnings Aug 5 (TOMORROW) — CLOSE NOW",
+      "AMD Q2 earnings Aug 4 (TONIGHT) — if miss, AI chip sector sells off",
+      "AMAT Q3 earnings Aug 13 — close by Aug 12",
+      "NVDA Q2 earnings Aug 26 — safe if entered this week"
     ]
   },
-
   "buys": [
     {
-      "symbol": "MRVL",
-      "reasoning": "MRVL (Marvell Technology, $186.53) is the premier AI networking infrastructure play — building the custom silicon that hyperscalers need beyond GPUs. Three confirmed H2 2026 revenue catalysts: (1) Amazon Trainium 3 custom AI processor volume ramp begins H2 2026 per KeyBanc analyst John Vinh (July 14 note); (2) Google 'Merope' LPU design win projected $12B lifetime revenue per KeyBanc; (3) Teralynx T100 102.4 Tbps AI switch ramping. Nvidia $2B strategic investment + Jensen Huang publicly endorsed as 'next trillion-dollar company.' 28 analysts Buy, average analyst target $252.56 = +35.4% upside; KeyBanc $400, RBC $360, UBS $340, Cantor $300. RSI oversold (bars: 25.9) — crash from $200+ to $186 is technical sector contagion, not fundamental. Earnings August 20 — 4+ weeks out, safe swing hold window. Stop at -5% ($177.20).",
+      "symbol": "MU",
+      "reasoning": "Re-entry on oversold recovery. Stopped out at $951.93 from July 6 entry due to sector rotation, not thesis change. Current $807-823, RSI ~34 (oversold). HBM4 100% sold out through 2028. Record Q3 $41.46B revenue; Q4 guidance $50B. AMD Q2 beat tonight = direct AI memory demand catalyst. Morgan Stanley top semiconductor pick 2026. Analyst median $1,087 (37 analysts Strong Buy). Entry ~$815, stop $775. Earnings Sept 23 = 7-week safe window.",
       "confidence": "high",
       "qty_pct": 0.20,
-      "entry_price_approx": 186.53,
-      "stop_price_approx": 177.2,
+      "entry_price_approx": 815,
+      "stop_price_approx": 775,
       "take_profit_pct": 0.08,
-      "earnings_date": "2026-08-20",
-      "thesis_category": "AI networking infrastructure — custom silicon (Trainium 3, Merope LPU), hyperscaler partnerships"
+      "earnings_date": "2026-09-23",
+      "thesis_category": "AI memory infrastructure — HBM4 supply shortage, data center DRAM supercycle"
+    },
+    {
+      "symbol": "NVDA",
+      "reasoning": "Laggard catch-up. Only +2% YTD vs AMD +120%. Friday $200.75 (+2.9% on MSFT/AMZN cloud AI beat). 61 analysts Strong Buy, $302 median target (+51% upside). AMD Q2 beat tonight = hyperscaler AI capex read-through. Earnings Aug 26 = 3.5-week safe window. Enter Tuesday morning after AMD beat confirmed.",
+      "confidence": "medium",
+      "qty_pct": 0.18,
+      "entry_price_approx": 200,
+      "stop_price_approx": 190,
+      "take_profit_pct": 0.08,
+      "earnings_date": "2026-08-26",
+      "thesis_category": "AI GPU infrastructure — data center, hyperscaler demand, laggard recovery",
+      "entry_condition": "Enter Tuesday Aug 5 morning after AMD Q2 beat confirmed; skip if AMD misses"
     }
   ],
-
-  "close_positions": ["FLEX"],
-
+  "close_positions": ["LLY", "AMAT", "FLEX"],
   "close_reasoning": {
-    "FLEX": "Contract manufacturing (Flextronics), no AI or semiconductor catalyst. +3.28% marginal gain from $132.46 entry (112 shares, ~$489 gain). Has been a repeated closure target since June 22 weekly plan (close_positions listed but above -2% Friday rule threshold). Closing now to free capital for MRVL and reduce to 3 high-conviction AI positions. Lock the small gain cleanly.",
-    "MU_note": "MU was closed Friday July 17 per Friday -2% rule (-9.05%, entry $1,002.27, closed ~$911 estimated). DELL was stopped July 15 at $408.616 (-5.07%). These are already reflected in the July 17 EOW snapshot."
+    "LLY": "EMERGENCY — Q2 earnings Aug 5 (TOMORROW). Execute at Monday open. $1,144.34 vs $992.17 entry (33 shares) = +15.3% / +$5,006. Market pricing +/-8.37% swing = $3,135 binary risk. Lock gain now.",
+    "AMAT": "Mandatory earnings exit. Q3 Aug 13 — close by Aug 12. ~$507-517 vs $411.45 entry (80 shares) = +24% / ~$7,650-8,450. Lock gain.",
+    "FLEX": "No AI catalyst. Contract manufacturing. +2-6% marginal gain. Close to free capital for MU and NVDA with 40-50%+ upside targets."
   },
-
-  "hold_positions": ["AMAT", "LLY"],
-
+  "hold_positions": ["PENG"],
   "hold_reasoning": {
-    "AMAT": "HOLD. Entry $411.45 (80 shares), last confirmed +36.89% (+$11,189 as of July 15); current ~$540 = +31.4%. Despite Burry short from $729 and -12% from July 10 close, AMAT remains +31% above entry with stop at $390.88 providing $149 buffer. 26 analysts Buy, targets $593-790. INTC earnings July 23 is a key risk event as Intel is an AMAT customer — watch for 18A fab capacity guidance. Plan: CLOSE before August 13 earnings to avoid binary risk. Take-profit at +8% above entry ($444.37) already far exceeded; let winner run with trailing stop consideration.",
-    "LLY": "HOLD. Entry $992.17 (33 shares), last confirmed +14.93% (+$4,295 July 15); current ~$1,177 = +18.6%. GLP-1 thesis accelerating: Foundayo (orforglipron) FDA approved (pill form, any time/day), CMS $50/mo Medicare cap for obesity drugs (20M eligible patients), Q1 revenue $19.8B +56% YoY. Immune to semiconductor correction. ALERT: Q2 earnings August 5-6. Plan to CLOSE before August 1 to lock +18.6% gain and avoid binary earnings risk."
+    "PENG": "HOLD with stop update. $77.21 vs $54.38 entry (341 shares) = +41.9% / +$7,763. Q3 beat July 7: $479M vs $421M. ATH $81.39. No imminent earnings. Update stop from $51.70 to $73.35 (-5% from $77.21) to protect gains."
   },
-
   "skip_reasoning": {
-    "AMD": "Earnings August 4 — hard blackout. Down 17%+ from June peak, another ~13% today. Advancing AI conference July 22-23 (Zen 6 Venice launch) could be short-term catalyst. Monitor for post-earnings re-entry August 5+. Universe #1 scorer (RS60=+66%) but can't enter this week.",
-    "GOOGL": "Earnings July 22 — blackout. AI cloud demand print will be key for overall tech sector sentiment.",
-    "INTC": "Earnings July 23 — blackout. Intel 18A manufacturing progress key unknown; could move AMAT as equipment supplier.",
-    "LRCX": "Earnings July 29 — blackout (EARNINGS_BLACKOUT in score_local.py).",
-    "NVDA": "Burry short disclosed (NVDA+AMAT+SOXX basket). Sector headwinds. No slot available (AMAT+LLY+MRVL = max 3). Earnings Aug 26 is safe window but pass for now.",
-    "CRWD": "Cybersecurity tailwind real (+11% July 14 on cooler CPI, analyst targets $230-250, post-4:1 split ~$203). Scored 5th. MRVL offers superior conviction (+35% vs 13-23% upside, larger specific catalyst pipeline). Watchlist.",
-    "NEM": "Gold miner, 7th in scoring. Macro defensiveness appealing but outside AI/tech mandate.",
-    "MRVL_bars_note": "Bars_raw.json shows MRVL at stale $115 (pre-gap data from months ago; actual $186.53 July 20). Scoring RS60/RSI directionally valid despite stale absolute price."
+    "AMD": "BLACKOUT: earnings Aug 4 after close. Re-evaluate Aug 10.",
+    "CRWD": "Price data inconsistency: bars_raw $480 vs actual ~$191 (+307% from June lows). Skip until data reconciled. Earnings Aug 27 — revisit next week.",
+    "MRVL": "Earnings Aug 20 = 17 days — insufficient safe window for new entry. Watchlist.",
+    "NEM": "Gold miner — outside AI/tech mandate.",
+    "EOG": "Energy sector, RSI 70.4 overbought, outside mandate."
   },
-
   "portfolio_snapshot_estimate": {
-    "note": "Alpaca API unavailable (proxy HTTP 403). Values from last confirmed daily P&L (July 16: $105,186.69) and web-sourced current prices July 20.",
-    "portfolio_value_jul17_eow": 105186.69,
-    "pnl_from_100k_starting_capital_pct": 5.19,
-    "positions_entering_jul20": {
-      "AMAT": {"entry": 411.45, "qty": 80, "current_approx": 539.7, "gain_pct_approx": 31.2},
-      "LLY": {"entry": 992.17, "qty": 33, "current_approx": 1176.75, "gain_pct_approx": 18.6},
-      "FLEX": {"entry": 132.46, "qty": 112, "current_approx": 136.83, "gain_pct_approx": 3.28, "action": "CLOSE"}
+    "note": "Alpaca API unavailable (proxy HTTP 403). Estimated from last confirmed snapshot July 22 ($107,855) plus price moves.",
+    "portfolio_value_jul22_confirmed": 107855.09,
+    "portfolio_value_estimate_aug3": 121000,
+    "positions_entering_aug3": {
+      "AMAT":  {"entry": 411.45, "qty": 80,  "current_approx": 512,   "gain_pct": 24.5, "action": "CLOSE by Aug 12"},
+      "FLEX":  {"entry": 132.46, "qty": 112, "current_approx": 137,   "gain_pct": 3.4,  "action": "CLOSE"},
+      "LLY":   {"entry": 992.17, "qty": 33,  "current_approx": 1144,  "gain_pct": 15.3, "action": "EMERGENCY CLOSE Mon open"},
+      "PENG":  {"entry": 54.38,  "qty": 341, "current_approx": 77.21, "gain_pct": 41.9, "action": "HOLD — update stop $73.35"},
+      "MU":    {"entry": 1002.27,"qty": 13,  "status": "STOPPED OUT — stop $951.93",     "action": "RE-ENTER ~$815"}
     },
-    "new_position": {"symbol": "MRVL", "entry_approx": 186.53, "stop_approx": 177.2, "qty_approx": 107}
+    "target_positions_eow": [
+      {"symbol": "PENG", "current": 77.21, "entry": 54.38, "note": "hold"},
+      {"symbol": "MU",   "entry_approx": 815, "stop": 775},
+      {"symbol": "NVDA", "entry_approx": 200, "stop": 190}
+    ]
   },
-
-  "watchlist_next_week": ["AMD", "MU", "NVDA", "CRWD"],
-
+  "watchlist_next_week": ["AMD", "CRWD", "MRVL"],
   "key_dates": {
-    "googl_q2_earnings": "2026-07-22",
-    "intc_q2_earnings": "2026-07-23",
-    "lrcx_earnings_blackout": "2026-07-29",
-    "amd_q2_earnings": "2026-08-04",
-    "lly_q2_earnings": "2026-08-05",
-    "amat_q3_fiscal_earnings": "2026-08-13",
-    "mrvl_q2_fiscal_earnings": "2026-08-20"
+    "lly_q2_earnings_emergency": "2026-08-05",
+    "amd_q2_earnings_blackout": "2026-08-04 after close",
+    "amat_q3_must_close_before": "2026-08-12",
+    "amat_q3_earnings": "2026-08-13",
+    "mrvl_q2_earnings": "2026-08-20",
+    "nvda_q2_earnings": "2026-08-26",
+    "crwd_q2_earnings": "2026-08-27",
+    "mu_q4_earnings": "2026-09-23"
   }
 }
