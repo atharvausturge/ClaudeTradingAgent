@@ -404,6 +404,15 @@
       "reasoning": "Stock has favorable sector momentum and mild upside from analyst target, but lacks recent news and social sentiment data",
       "confidence": "medium",
       "filled": true
+    },
+    {
+      "time": "2026-08-12T10:35:46.300217-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "MU",
+      "fill_price": 874.09,
+      "pl_pct": -12.79,
+      "pl_dollar": -1666.34,
+      "reason": "auto-closed"
     }
   ],
   "weekly_summaries": [
@@ -2555,9 +2564,42 @@
         ],
         "midweek_verdict": "Two strong winners anchor the portfolio (AMAT +27.79%, LLY +19.34%). NVDA also positive (+7.79%). No losers >8%. CRITICAL ACTION: AMAT MUST CLOSE TODAY before Aug 13 earnings \u2014 this is the only urgent action. DD and MAN are new positions requiring monitoring only. NVDA safe window intact through Aug 22."
       }
+    },
+    {
+      "time": "2026-08-12T10:35:46.300217-04:00",
+      "portfolio_value": 104631.67,
+      "buying_power": 299244.09,
+      "positions": [
+        {
+          "symbol": "AMAT",
+          "pl_pct": 29.72,
+          "pl_dollar": 9012.87
+        },
+        {
+          "symbol": "DD",
+          "pl_pct": 0.08,
+          "pl_dollar": 5.83
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 22.35,
+          "pl_dollar": 6431.06
+        },
+        {
+          "symbol": "MAN",
+          "pl_pct": -2.12,
+          "pl_dollar": -1.19
+        },
+        {
+          "symbol": "NVDA",
+          "pl_pct": 8.31,
+          "pl_dollar": 1324.4
+        }
+      ],
+      "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-08-07T15:52:38.533008-04:00",
+  "last_monitor_run": "2026-08-12T10:35:46.300217-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-22",
