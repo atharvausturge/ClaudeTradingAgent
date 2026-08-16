@@ -1,49 +1,49 @@
 {
-  "week_of": "2026-08-09",
-  "week_thesis": "The market is expected to be driven by sector momentum, with Technology and Healthcare sectors showing strength. Stocks with strong sector momentum, significant upside from analyst targets, and recent positive earnings surprises are attractive swing trade candidates. However, stocks with unfavorable sector momentum, significant downside from analyst targets, and chase risk should be avoided. The recent macro events and upcoming earnings reports will also impact the market, making it essential to stay vigilant and adjust the portfolio accordingly.",
+  "week_of": "2026-08-16",
+  "week_thesis": "AI scoring unavailable this week. Trades selected on technical signal only.",
   "buys": [
     {
       "symbol": "DD",
       "combined_score": 0.75,
       "tech_score": 1.0,
       "sentiment_score": 0.5,
-      "reasoning": "Stock trades near analyst target with mild sector momentum and recent earnings, but lacks strong catalysts and has chase risk",
+      "reasoning": "selected by technical score",
       "confidence": "high",
       "qty_pct": 0.18
     },
     {
       "symbol": "MAN",
-      "combined_score": 0.5647,
-      "tech_score": 0.463,
-      "sentiment_score": 0.667,
-      "reasoning": "Stock has favorable sector momentum and mild upside from analyst target, but lacks recent news and social sentiment data",
+      "combined_score": 0.4155,
+      "tech_score": 0.331,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     },
     {
-      "symbol": "AGYS",
-      "combined_score": 0.5594,
-      "tech_score": 0.119,
-      "sentiment_score": 1.0,
-      "reasoning": "Stock has mild sector momentum, significant upside from analyst target, and recent positive earnings surprise, with no strong negatives",
+      "symbol": "VSXY",
+      "combined_score": 0.4073,
+      "tech_score": 0.315,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     },
     {
-      "symbol": "GSHD",
-      "combined_score": 0.5285,
-      "tech_score": 0.224,
-      "sentiment_score": 0.833,
-      "reasoning": "Stock has strong sector momentum, mild upside from analyst target, and recent positive earnings surprise, but lacks strong catalysts",
+      "symbol": "DELL",
+      "combined_score": 0.3676,
+      "tech_score": 0.235,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     },
     {
-      "symbol": "HPE",
-      "combined_score": 0.5191,
-      "tech_score": 0.038,
-      "sentiment_score": 1.0,
-      "reasoning": "Stock has mild sector momentum, significant upside from analyst target, and recent positive earnings surprise, with favorable news sentiment",
+      "symbol": "CBRL",
+      "combined_score": 0.3577,
+      "tech_score": 0.215,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     }
@@ -57,141 +57,141 @@
       "combined": 0.75,
       "tech_norm": 1.0,
       "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "Stock trades near analyst target with mild sector momentum and recent earnings, but lacks strong catalysts and has chase risk"
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "MAN": {
-      "combined": 0.5647,
-      "tech_norm": 0.463,
-      "sentiment_norm": 0.667,
-      "ai_raw_score": 6,
-      "ai_reason": "Stock has favorable sector momentum and mild upside from analyst target, but lacks recent news and social sentiment data"
-    },
-    "CBRL": {
-      "combined": 0.1894,
-      "tech_norm": 0.379,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 2,
-      "ai_reason": "Stock has unfavorable sector momentum and significant downside from analyst target, with no recent news or social sentiment to change outlook"
-    },
-    "NSP": {
-      "combined": 0.373,
-      "tech_norm": 0.246,
+      "combined": 0.4155,
+      "tech_norm": 0.331,
       "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "Stock has favorable sector momentum, but trades near analyst target and lacks strong catalysts or recent news"
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "OKTA": {
-      "combined": 0.2877,
-      "tech_norm": 0.242,
-      "sentiment_norm": 0.333,
-      "ai_raw_score": 4,
-      "ai_reason": "Stock has mild sector momentum, but significant downside from analyst target and no recent news to support a strong score"
-    },
-    "GSHD": {
-      "combined": 0.5285,
-      "tech_norm": 0.224,
-      "sentiment_norm": 0.833,
-      "ai_raw_score": 7,
-      "ai_reason": "Stock has strong sector momentum, mild upside from analyst target, and recent positive earnings surprise, but lacks strong catalysts"
+    "VSXY": {
+      "combined": 0.4073,
+      "tech_norm": 0.315,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "DELL": {
-      "combined": 0.5173,
-      "tech_norm": 0.201,
-      "sentiment_norm": 0.833,
-      "ai_raw_score": 7,
-      "ai_reason": "Stock has mild sector momentum, significant upside from analyst target, and recent positive earnings surprise, with favorable news sentiment"
+      "combined": 0.3676,
+      "tech_norm": 0.235,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "CBRL": {
+      "combined": 0.3577,
+      "tech_norm": 0.215,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "QLYS": {
+      "combined": 0.3459,
+      "tech_norm": 0.192,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "AZTA": {
-      "combined": 0.4335,
-      "tech_norm": 0.2,
-      "sentiment_norm": 0.667,
-      "ai_raw_score": 6,
-      "ai_reason": "Stock has strong sector momentum and significant upside from analyst target, but has chase risk and recent earnings surprise"
-    },
-    "AGYS": {
-      "combined": 0.5594,
-      "tech_norm": 0.119,
-      "sentiment_norm": 1.0,
-      "ai_raw_score": 8,
-      "ai_reason": "Stock has mild sector momentum, significant upside from analyst target, and recent positive earnings surprise, with no strong negatives"
-    },
-    "BJRI": {
-      "combined": 0.3028,
-      "tech_norm": 0.106,
+      "combined": 0.328,
+      "tech_norm": 0.156,
       "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "Stock has unfavorable sector momentum and upside from analyst target, with chase risk and recent earnings surprise"
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "PBF": {
-      "combined": 0.2988,
-      "tech_norm": 0.098,
+    "EFOR": {
+      "combined": 0.3212,
+      "tech_norm": 0.142,
       "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "Stock has unfavorable sector momentum, mild upside from analyst target, and recent positive earnings surprise, with chase risk"
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "DAVE": {
-      "combined": 0.3761,
-      "tech_norm": 0.085,
-      "sentiment_norm": 0.667,
-      "ai_raw_score": 6,
-      "ai_reason": "Stock has mild sector momentum, significant upside from analyst target, and recent positive earnings surprise, with chase risk and favorable news sentiment"
-    },
-    "BAX": {
-      "combined": 0.2893,
-      "tech_norm": 0.079,
+    "EAT": {
+      "combined": 0.3109,
+      "tech_norm": 0.122,
       "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "Stock has strong sector momentum and mild upside from analyst target, but has chase risk and recent earnings surprise"
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "ENVA": {
-      "combined": 0.4404,
-      "tech_norm": 0.047,
-      "sentiment_norm": 0.833,
-      "ai_raw_score": 7,
-      "ai_reason": "Stock has strong sector momentum, mild upside from analyst target, and recent positive earnings surprise, with favorable news sentiment"
+    "OKTA": {
+      "combined": 0.2922,
+      "tech_norm": 0.084,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "PRGS": {
-      "combined": 0.4381,
-      "tech_norm": 0.043,
-      "sentiment_norm": 0.833,
-      "ai_raw_score": 7,
-      "ai_reason": "Stock has mild sector momentum and significant upside from analyst target, but lacks recent news or strong catalysts"
+    "EPC": {
+      "combined": 0.2805,
+      "tech_norm": 0.061,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "KMX": {
-      "combined": 0.188,
-      "tech_norm": 0.043,
-      "sentiment_norm": 0.333,
-      "ai_raw_score": 4,
-      "ai_reason": "Stock has unfavorable sector momentum and downside from analyst target, with no recent news to change outlook"
+    "RHI": {
+      "combined": 0.2719,
+      "tech_norm": 0.044,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
     "HPE": {
-      "combined": 0.5191,
-      "tech_norm": 0.038,
-      "sentiment_norm": 1.0,
-      "ai_raw_score": 8,
-      "ai_reason": "Stock has mild sector momentum, significant upside from analyst target, and recent positive earnings surprise, with favorable news sentiment"
-    },
-    "NTAP": {
-      "combined": 0.2586,
-      "tech_norm": 0.017,
+      "combined": 0.271,
+      "tech_norm": 0.042,
       "sentiment_norm": 0.5,
-      "ai_raw_score": 5,
-      "ai_reason": "Stock has mild sector momentum and downside from analyst target, with recent news but no strong catalysts"
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "BBY": {
-      "combined": 0.1713,
-      "tech_norm": 0.009,
-      "sentiment_norm": 0.333,
-      "ai_raw_score": 4,
-      "ai_reason": "Stock has unfavorable sector momentum and downside from analyst target, with recent news but no strong catalysts"
+    "NSP": {
+      "combined": 0.2697,
+      "tech_norm": 0.039,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     },
-    "HAE": {
-      "combined": 0.3333,
+    "HNI": {
+      "combined": 0.2652,
+      "tech_norm": 0.03,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "LIF": {
+      "combined": 0.2633,
+      "tech_norm": 0.027,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "PBF": {
+      "combined": 0.2605,
+      "tech_norm": 0.021,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "ANF": {
+      "combined": 0.2549,
+      "tech_norm": 0.01,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "KMX": {
+      "combined": 0.254,
+      "tech_norm": 0.008,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "BJRI": {
+      "combined": 0.25,
       "tech_norm": 0.0,
-      "sentiment_norm": 0.667,
-      "ai_raw_score": 6,
-      "ai_reason": "Stock has strong sector momentum, mild upside from analyst target, and recent positive earnings surprise, with chase risk and favorable news sentiment"
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
     }
   }
 }
