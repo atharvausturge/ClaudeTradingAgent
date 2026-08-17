@@ -2630,6 +2630,11 @@
         }
       ],
       "is_friday_close": true
+    },
+    {
+      "time": "2026-08-17T10:02:50.790000-04:00",
+      "portfolio_value": 102892.56,
+      "buying_power": 294374.59
     }
   ],
   "last_monitor_run": "2026-08-14T15:49:28.024707-04:00",
