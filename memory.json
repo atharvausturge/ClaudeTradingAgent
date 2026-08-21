@@ -2668,9 +2668,42 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-08-21T15:26:26.352209-04:00",
+      "portfolio_value": 101216.32,
+      "buying_power": 289681.09,
+      "positions": [
+        {
+          "symbol": "AMAT",
+          "pl_pct": 17.01,
+          "pl_dollar": 5158.97
+        },
+        {
+          "symbol": "DD",
+          "pl_pct": -2.37,
+          "pl_dollar": -178.88
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 26.91,
+          "pl_dollar": 7742.73
+        },
+        {
+          "symbol": "MAN",
+          "pl_pct": 9.48,
+          "pl_dollar": 5.32
+        },
+        {
+          "symbol": "NVDA",
+          "pl_pct": 3.95,
+          "pl_dollar": 629.48
+        }
+      ],
+      "is_friday_close": true
     }
   ],
-  "last_monitor_run": "2026-08-19T10:06:16.326317-04:00",
+  "last_monitor_run": "2026-08-21T15:26:26.352209-04:00",
   "daily_pnl": [
     {
       "date": "2026-05-28",
