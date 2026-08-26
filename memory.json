@@ -2786,9 +2786,37 @@
         "midweek_verdict": "Portfolio in moderate shape with 4 open positions. CRITICAL alert: NVDA earnings tonight (Aug 26 after close) \u2014 this was the 'safe window end date' per Aug 3 trade plan. If NVDA is still open, there is immediate binary earnings risk. LLY is the standout winner at +26.91%. DD closed per Friday -2% rule Aug 21. AMAT held through Aug 13 earnings successfully, still +17%+. No action possible on Alpaca API \u2014 Friday GitHub Actions workflow must handle any closures.",
         "data_note": "Live Alpaca API unavailable (egress proxy blocks paper-api.alpaca.markets). Position P&L estimates from last live snapshot 2026-08-21T15:26:26-04:00. Aug 25 equity from daily P&L log."
       }
+    },
+    {
+      "time": "2026-08-26T10:11:12.733497-04:00",
+      "portfolio_value": 98275.11,
+      "buying_power": 290037.23,
+      "positions": [
+        {
+          "symbol": "AMAT",
+          "pl_pct": 13.44,
+          "pl_dollar": 4076.09
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 22.08,
+          "pl_dollar": 6353.77
+        },
+        {
+          "symbol": "MAN",
+          "pl_pct": 9.66,
+          "pl_dollar": 5.42
+        },
+        {
+          "symbol": "NVDA",
+          "pl_pct": 2.28,
+          "pl_dollar": 363.44
+        }
+      ],
+      "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-08-21T15:26:26.352209-04:00",
+  "last_monitor_run": "2026-08-26T10:11:12.733497-04:00",
   "daily_pnl": [
     {
       "date": "2026-06-02",
