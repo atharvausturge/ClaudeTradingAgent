@@ -1,5 +1,5 @@
 {
-  "week_of": "2026-08-23",
+  "week_of": "2026-08-30",
   "week_thesis": "AI scoring unavailable this week. Trades selected on technical signal only.",
   "buys": [
     {
@@ -13,26 +13,8 @@
     },
     {
       "symbol": "MAN",
-      "combined_score": 0.3936,
-      "tech_score": 0.287,
-      "sentiment_score": 0.5,
-      "reasoning": "selected by technical score",
-      "confidence": "medium",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "PBF",
-      "combined_score": 0.385,
-      "tech_score": 0.27,
-      "sentiment_score": 0.5,
-      "reasoning": "selected by technical score",
-      "confidence": "medium",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "QLYS",
-      "combined_score": 0.3668,
-      "tech_score": 0.234,
+      "combined_score": 0.4106,
+      "tech_score": 0.321,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "medium",
@@ -40,8 +22,26 @@
     },
     {
       "symbol": "EAT",
-      "combined_score": 0.3349,
-      "tech_score": 0.17,
+      "combined_score": 0.3754,
+      "tech_score": 0.251,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
+      "confidence": "medium",
+      "qty_pct": 0.18
+    },
+    {
+      "symbol": "CAKE",
+      "combined_score": 0.3618,
+      "tech_score": 0.224,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
+      "confidence": "medium",
+      "qty_pct": 0.18
+    },
+    {
+      "symbol": "CBRL",
+      "combined_score": 0.3471,
+      "tech_score": 0.194,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "medium",
@@ -61,132 +61,132 @@
       "ai_reason": null
     },
     "MAN": {
-      "combined": 0.3936,
-      "tech_norm": 0.287,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "PBF": {
-      "combined": 0.385,
-      "tech_norm": 0.27,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "QLYS": {
-      "combined": 0.3668,
-      "tech_norm": 0.234,
+      "combined": 0.4106,
+      "tech_norm": 0.321,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "EAT": {
-      "combined": 0.3349,
-      "tech_norm": 0.17,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "CBRL": {
-      "combined": 0.3314,
-      "tech_norm": 0.163,
+      "combined": 0.3754,
+      "tech_norm": 0.251,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "CAKE": {
-      "combined": 0.3263,
-      "tech_norm": 0.153,
+      "combined": 0.3618,
+      "tech_norm": 0.224,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "ENVA": {
-      "combined": 0.3069,
-      "tech_norm": 0.114,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "EPC": {
-      "combined": 0.2943,
-      "tech_norm": 0.089,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "CXW": {
-      "combined": 0.2711,
-      "tech_norm": 0.042,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "SN": {
-      "combined": 0.2688,
-      "tech_norm": 0.038,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "RNG": {
-      "combined": 0.2674,
-      "tech_norm": 0.035,
+    "CBRL": {
+      "combined": 0.3471,
+      "tech_norm": 0.194,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "THC": {
-      "combined": 0.2664,
-      "tech_norm": 0.033,
+      "combined": 0.3361,
+      "tech_norm": 0.172,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "BLKB": {
+      "combined": 0.3288,
+      "tech_norm": 0.158,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "HNI": {
-      "combined": 0.2639,
-      "tech_norm": 0.028,
+      "combined": 0.3045,
+      "tech_norm": 0.109,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "DELL": {
-      "combined": 0.2606,
-      "tech_norm": 0.021,
+    "PBF": {
+      "combined": 0.3044,
+      "tech_norm": 0.109,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "OKTA": {
-      "combined": 0.2604,
-      "tech_norm": 0.021,
+    "QLYS": {
+      "combined": 0.2959,
+      "tech_norm": 0.092,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "HPE": {
-      "combined": 0.2589,
-      "tech_norm": 0.018,
+    "CRL": {
+      "combined": 0.2957,
+      "tech_norm": 0.091,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "ZBRA": {
+    "EFOR": {
+      "combined": 0.2857,
+      "tech_norm": 0.071,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "BJRI": {
+      "combined": 0.282,
+      "tech_norm": 0.064,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "NSP": {
+      "combined": 0.2796,
+      "tech_norm": 0.059,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "FRPT": {
+      "combined": 0.2766,
+      "tech_norm": 0.053,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "HAE": {
+      "combined": 0.2761,
+      "tech_norm": 0.052,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "RNG": {
+      "combined": 0.2669,
+      "tech_norm": 0.034,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "EXPE": {
       "combined": 0.2557,
       "tech_norm": 0.011,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "RHI": {
-      "combined": 0.2549,
-      "tech_norm": 0.01,
+    "ZBRA": {
+      "combined": 0.2513,
+      "tech_norm": 0.003,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "NSP": {
+    "ENVA": {
       "combined": 0.25,
       "tech_norm": 0.0,
       "sentiment_norm": 0.5,
