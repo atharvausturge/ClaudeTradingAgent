@@ -1,5 +1,5 @@
 {
-  "week_of": "2026-09-06",
+  "week_of": "2026-09-13",
   "week_thesis": "AI scoring unavailable this week. Trades selected on technical signal only.",
   "buys": [
     {
@@ -13,26 +13,17 @@
     },
     {
       "symbol": "RNG",
-      "combined_score": 0.3863,
-      "tech_score": 0.273,
+      "combined_score": 0.4543,
+      "tech_score": 0.409,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     },
     {
-      "symbol": "MAN",
-      "combined_score": 0.3785,
-      "tech_score": 0.257,
-      "sentiment_score": 0.5,
-      "reasoning": "selected by technical score",
-      "confidence": "medium",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "GSHD",
-      "combined_score": 0.3772,
-      "tech_score": 0.254,
+      "symbol": "PBF",
+      "combined_score": 0.4378,
+      "tech_score": 0.376,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "medium",
@@ -40,8 +31,17 @@
     },
     {
       "symbol": "PAYC",
-      "combined_score": 0.3608,
-      "tech_score": 0.222,
+      "combined_score": 0.3755,
+      "tech_score": 0.251,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
+      "confidence": "medium",
+      "qty_pct": 0.18
+    },
+    {
+      "symbol": "GSHD",
+      "combined_score": 0.3581,
+      "tech_score": 0.216,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "medium",
@@ -61,132 +61,132 @@
       "ai_reason": null
     },
     "RNG": {
-      "combined": 0.3863,
-      "tech_norm": 0.273,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "MAN": {
-      "combined": 0.3785,
-      "tech_norm": 0.257,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "GSHD": {
-      "combined": 0.3772,
-      "tech_norm": 0.254,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "PAYC": {
-      "combined": 0.3608,
-      "tech_norm": 0.222,
+      "combined": 0.4543,
+      "tech_norm": 0.409,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "PBF": {
-      "combined": 0.3538,
-      "tech_norm": 0.208,
+      "combined": 0.4378,
+      "tech_norm": 0.376,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "BLKB": {
-      "combined": 0.3433,
-      "tech_norm": 0.187,
+    "PAYC": {
+      "combined": 0.3755,
+      "tech_norm": 0.251,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "GWRE": {
-      "combined": 0.3168,
-      "tech_norm": 0.134,
+    "GSHD": {
+      "combined": 0.3581,
+      "tech_norm": 0.216,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "QLYS": {
-      "combined": 0.3112,
-      "tech_norm": 0.122,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "FIVN": {
-      "combined": 0.3067,
-      "tech_norm": 0.113,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "EFOR": {
-      "combined": 0.2889,
-      "tech_norm": 0.078,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "ZBRA": {
-      "combined": 0.2837,
-      "tech_norm": 0.067,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "MANH": {
-      "combined": 0.282,
-      "tech_norm": 0.064,
+    "MAN": {
+      "combined": 0.3439,
+      "tech_norm": 0.188,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "ANF": {
-      "combined": 0.2803,
-      "tech_norm": 0.061,
+      "combined": 0.3345,
+      "tech_norm": 0.169,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "SPSC": {
+    "BLKB": {
+      "combined": 0.3307,
+      "tech_norm": 0.161,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "FIVN": {
+      "combined": 0.309,
+      "tech_norm": 0.118,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "CRM": {
+      "combined": 0.2928,
+      "tech_norm": 0.086,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "EFOR": {
+      "combined": 0.2725,
+      "tech_norm": 0.045,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "MANH": {
       "combined": 0.2695,
       "tech_norm": 0.039,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "THC": {
-      "combined": 0.2628,
-      "tech_norm": 0.026,
+    "PARR": {
+      "combined": 0.2658,
+      "tech_norm": 0.032,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "CRL": {
-      "combined": 0.2617,
-      "tech_norm": 0.023,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "BILL": {
-      "combined": 0.2616,
-      "tech_norm": 0.023,
+    "DOCU": {
+      "combined": 0.2653,
+      "tech_norm": 0.031,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "WDAY": {
-      "combined": 0.2542,
-      "tech_norm": 0.008,
+      "combined": 0.265,
+      "tech_norm": 0.03,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "QTWO": {
+    "DINO": {
+      "combined": 0.265,
+      "tech_norm": 0.03,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "MPC": {
+      "combined": 0.2606,
+      "tech_norm": 0.021,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "CRL": {
+      "combined": 0.2552,
+      "tech_norm": 0.01,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "SPSC": {
+      "combined": 0.2513,
+      "tech_norm": 0.003,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "IQV": {
       "combined": 0.25,
       "tech_norm": 0.0,
       "sentiment_norm": 0.5,
