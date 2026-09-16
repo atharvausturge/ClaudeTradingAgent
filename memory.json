@@ -3029,9 +3029,42 @@
         ],
         "midweek_verdict": "API blocked \u2014 cannot confirm live positions. Last known state (Sep 9): AMAT/LLY/NVDA all profitable; DD struggling. Key concern: DD averaging down at lower prices while tranche 1 is estimated >12% underwater. Recommend manual verification of (1) DD stop-loss status, (2) AMAT/LLY positions given past mandatory close deadlines. NVDA holding well. MU earnings Sep 23 = 7 days \u2014 if any MU exposure exists, exit by Sep 19."
       }
+    },
+    {
+      "time": "2026-09-16T13:41:06.286984-04:00",
+      "portfolio_value": 92050.02,
+      "buying_power": 263346.35,
+      "positions": [
+        {
+          "symbol": "AMAT",
+          "pl_pct": -0.59,
+          "pl_dollar": -178.39
+        },
+        {
+          "symbol": "DD",
+          "pl_pct": 3.36,
+          "pl_dollar": 246.03
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 14.85,
+          "pl_dollar": 4273.02
+        },
+        {
+          "symbol": "MAN",
+          "pl_pct": 3.29,
+          "pl_dollar": 1.84
+        },
+        {
+          "symbol": "NVDA",
+          "pl_pct": 3.92,
+          "pl_dollar": 625.23
+        }
+      ],
+      "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-09-09T13:13:17.848325-04:00",
+  "last_monitor_run": "2026-09-16T13:41:06.286984-04:00",
   "daily_pnl": [
     {
       "date": "2026-06-23",
