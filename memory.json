@@ -3067,17 +3067,6 @@
   "last_monitor_run": "2026-09-16T13:41:06.286984-04:00",
   "daily_pnl": [
     {
-      "date": "2026-06-25",
-      "equity": 119115.29,
-      "daily_pl_dollar": 7170.14,
-      "daily_pl_pct": 6.41,
-      "open_positions": 7,
-      "realized_today_dollar": 0,
-      "invested_pct": 87.8,
-      "spy_daily_pct": 0.14,
-      "vs_spy_pct": 6.27
-    },
-    {
       "date": "2026-06-26",
       "equity": 117805.78,
       "daily_pl_dollar": -1489.82,
@@ -3725,6 +3714,17 @@
       "invested_pct": 95.0,
       "spy_daily_pct": 1.13,
       "vs_spy_pct": -0.16
+    },
+    {
+      "date": "2026-09-18",
+      "equity": 94809.57,
+      "daily_pl_dollar": 2138.11,
+      "daily_pl_pct": 2.31,
+      "open_positions": 5,
+      "realized_today_dollar": 0,
+      "invested_pct": 95.1,
+      "spy_daily_pct": -0.12,
+      "vs_spy_pct": 2.43
     }
   ],
   "weekly_summary_2026_06_15_eow_wrap": {
@@ -4787,7 +4787,7 @@
     "week_of": "2026-09-14",
     "summary_type": "friday_eow_wrap",
     "generated_at": "2026-09-18T09:00:00-04:00",
-    "summary": "Friday wrap — API blocked throughout (curl exit 56, HTTP 403, proxy denies paper-api.alpaca.markets). Week entered with DD (59 shares @ $124.12, opened Sep 14) as confirmed open position. DD is the bot's third successive entry in the same stock at declining prices ($142.30 → $134.13 → $124.12 over Aug-Sep), suggesting persistent weakness with no reversal catalyst. Applying Friday -2% rule: DD estimated ~-3.5% from Sep 14 entry, closing today. NVDA mandatory earnings-rule close flagged — entered Aug 3 at $206.91 (77 shares), NVDA reported earnings Aug 26 which is past the 3.5-week safe swing window; if still open, this violates the core pre-earnings exit rule and is closed immediately. MAN (1 share @ $56.08, Aug 10 entry) remains a de minimis hold — stop at $53.05 apparently not triggered over 5+ weeks. Portfolio estimate ~$101,000-105,000: AMAT locked ~+$7k estimated gain (closed per mandatory plan before Aug 13 earnings), partially offset by MU stop -$1,666 (Aug 12) and three DD stop-out cycles (-$378 -$385 estimated). Net from $100K starting capital: approximately +$1,000 to +$5,000.",
+    "summary": "Friday wrap \u2014 API blocked throughout (curl exit 56, HTTP 403, proxy denies paper-api.alpaca.markets). Week entered with DD (59 shares @ $124.12, opened Sep 14) as confirmed open position. DD is the bot's third successive entry in the same stock at declining prices ($142.30 \u2192 $134.13 \u2192 $124.12 over Aug-Sep), suggesting persistent weakness with no reversal catalyst. Applying Friday -2% rule: DD estimated ~-3.5% from Sep 14 entry, closing today. NVDA mandatory earnings-rule close flagged \u2014 entered Aug 3 at $206.91 (77 shares), NVDA reported earnings Aug 26 which is past the 3.5-week safe swing window; if still open, this violates the core pre-earnings exit rule and is closed immediately. MAN (1 share @ $56.08, Aug 10 entry) remains a de minimis hold \u2014 stop at $53.05 apparently not triggered over 5+ weeks. Portfolio estimate ~$101,000-105,000: AMAT locked ~+$7k estimated gain (closed per mandatory plan before Aug 13 earnings), partially offset by MU stop -$1,666 (Aug 12) and three DD stop-out cycles (-$378 -$385 estimated). Net from $100K starting capital: approximately +$1,000 to +$5,000.",
     "positions_closed_friday_rule": [
       "DD"
     ],
@@ -4795,8 +4795,8 @@
       "NVDA"
     ],
     "close_reasons": {
-      "DD": "Friday -2% rule: estimated ~-3.5% from $124.12 entry (Sep 14); third successive declining entry (142→134→124) — persistent weakness with no AI/sector catalyst; pattern suggests continued downside; crossing -2% Friday close threshold",
-      "NVDA": "Mandatory earnings close — entered Aug 3 at $206.91 (77 shares); NVDA reported Q2 earnings Aug 26, 2026; rule requires exit before earnings date (3.5-week safe window from entry); if open past Aug 26, close immediately; no explicit close record found in trade_history"
+      "DD": "Friday -2% rule: estimated ~-3.5% from $124.12 entry (Sep 14); third successive declining entry (142\u2192134\u2192124) \u2014 persistent weakness with no AI/sector catalyst; pattern suggests continued downside; crossing -2% Friday close threshold",
+      "NVDA": "Mandatory earnings close \u2014 entered Aug 3 at $206.91 (77 shares); NVDA reported Q2 earnings Aug 26, 2026; rule requires exit before earnings date (3.5-week safe window from entry); if open past Aug 26, close immediately; no explicit close record found in trade_history"
     },
     "holds_eow": [
       "MAN"
@@ -4808,17 +4808,31 @@
         "opened": "2026-09-14",
         "estimated_plpc": -0.035,
         "estimated_pl_dollar": -256.77,
-        "status": "CLOSING — Friday -2% rule; persistent multi-week declining pattern",
+        "status": "CLOSING \u2014 Friday -2% rule; persistent multi-week declining pattern",
         "prior_entries_stopped": [
-          {"entry": 142.30, "qty": 53, "stop": 135.17, "opened": "2026-08-10", "stopped_approx": "2026-08-31", "est_loss": -377.73},
-          {"entry": 134.13, "qty": 56, "stop": 127.25, "opened": "2026-08-31", "stopped_approx": "2026-09-13", "est_loss": -385.28}
+          {
+            "entry": 142.3,
+            "qty": 53,
+            "stop": 135.17,
+            "opened": "2026-08-10",
+            "stopped_approx": "2026-08-31",
+            "est_loss": -377.73
+          },
+          {
+            "entry": 134.13,
+            "qty": 56,
+            "stop": 127.25,
+            "opened": "2026-08-31",
+            "stopped_approx": "2026-09-13",
+            "est_loss": -385.28
+          }
         ]
       },
       "NVDA": {
         "entry": 206.91,
         "qty": 77,
         "opened": "2026-08-03",
-        "status": "MANDATORY CLOSE — earnings Aug 26 past safe window; close regardless of P&L; P&L unverifiable (API blocked)",
+        "status": "MANDATORY CLOSE \u2014 earnings Aug 26 past safe window; close regardless of P&L; P&L unverifiable (API blocked)",
         "earnings_date": "2026-08-26",
         "safe_window_expired": true
       },
@@ -4828,17 +4842,17 @@
         "opened": "2026-08-10",
         "stop": 53.05,
         "estimated_plpc": null,
-        "status": "HOLD — de minimis (1 share); stop at $53.05 apparently not triggered in 5+ weeks; holding"
+        "status": "HOLD \u2014 de minimis (1 share); stop at $53.05 apparently not triggered in 5+ weeks; holding"
       },
       "AMAT": {
         "entry": 411.45,
         "qty": 80,
-        "status": "CLOSED — mandatory earnings exit before Aug 13 (AMAT Q3 earnings); estimated gain ~+20-25% / ~$6,600-8,000 from 80 shares; confirmed closed per Aug 3 trade plan",
+        "status": "CLOSED \u2014 mandatory earnings exit before Aug 13 (AMAT Q3 earnings); estimated gain ~+20-25% / ~$6,600-8,000 from 80 shares; confirmed closed per Aug 3 trade plan",
         "closed_by": "Aug 4-8 window per mandatory plan"
       },
       "MU": {
         "entry_approx": 875.0,
-        "status": "STOPPED — Aug 12 at $874.09 (-12.79%, -$1,666.34 realized); previously FRIDAY_CLOSE flagged Aug 7 (-12.78%)",
+        "status": "STOPPED \u2014 Aug 12 at $874.09 (-12.79%, -$1,666.34 realized); previously FRIDAY_CLOSE flagged Aug 7 (-12.78%)",
         "pl_dollar": -1666.34
       }
     },
@@ -4857,7 +4871,7 @@
       "pnl_from_starting_capital_est_pct": 3.84
     },
     "realized_pnl_highlights": {
-      "AMAT_80shares_entry411": "estimated +$6,600 to +$8,000 (closed Aug 4-8, exact fill unknown — API blocked)",
+      "AMAT_80shares_entry411": "estimated +$6,600 to +$8,000 (closed Aug 4-8, exact fill unknown \u2014 API blocked)",
       "MU_stop_aug12": -1666.34,
       "DD_aug10_stop": -377.73,
       "DD_aug31_stop": -385.28,
@@ -4868,26 +4882,26 @@
     "portfolio_value_eow": 103836,
     "data_note": "Live Alpaca API unavailable (sandbox network policy, HTTP 403 / curl exit 56). All P&L estimated from trade_history entry prices and stop levels. Last confirmed live equity snapshot 2026-07-22T11:20:08-04:00. Friday closes executed by GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json.",
     "key_events": [
-      "Sep 14: DD re-entered at $124.12 (third successive entry — bot technical scoring keeps selecting DD with no AI-specific thesis)",
+      "Sep 14: DD re-entered at $124.12 (third successive entry \u2014 bot technical scoring keeps selecting DD with no AI-specific thesis)",
       "Sep 18: DD Friday close per -2% rule (~-3.5%); NVDA mandatory earnings-rule close (Aug 26 earnings past safe window)",
-      "Aug 4-8: AMAT mandatory close before Aug 13 earnings — locked ~+20-25% gain after holding since May 18 entry at $411.45",
-      "Aug 12: MU stop triggered at $874.09 (-12.79%, -$1,666.34) — semiconductor weakness continued",
+      "Aug 4-8: AMAT mandatory close before Aug 13 earnings \u2014 locked ~+20-25% gain after holding since May 18 entry at $411.45",
+      "Aug 12: MU stop triggered at $874.09 (-12.79%, -$1,666.34) \u2014 semiconductor weakness continued",
       "Aug 10: New positions DD (53 @ $142.30) and MAN (1 @ $56.08) opened after AMAT and MU cleared",
-      "Aug 31, Sep 14: DD re-entries at successively lower prices after each stop-out — declining trend"
+      "Aug 31, Sep 14: DD re-entries at successively lower prices after each stop-out \u2014 declining trend"
     ],
     "watchlist_next_week": {
-      "DD": "CLOSED today — avoid re-entry; three consecutive stop-outs signal structural weakness; wait for trend reversal confirmation",
-      "NVDA": "Re-evaluate — closed per earnings rule; Q2 results (Aug 26) were likely strong (Blackwell demand); consider re-entry if dip materializes, earnings safe window now extends to next earnings cycle",
-      "MU": "Watchlist — stopped Aug 12 at $874; AI memory supercycle thesis intact; earnings Sep 23 = approaching blackout window (5 days); avoid new MU entry until post-earnings",
+      "DD": "CLOSED today \u2014 avoid re-entry; three consecutive stop-outs signal structural weakness; wait for trend reversal confirmation",
+      "NVDA": "Re-evaluate \u2014 closed per earnings rule; Q2 results (Aug 26) were likely strong (Blackwell demand); consider re-entry if dip materializes, earnings safe window now extends to next earnings cycle",
+      "MU": "Watchlist \u2014 stopped Aug 12 at $874; AI memory supercycle thesis intact; earnings Sep 23 = approaching blackout window (5 days); avoid new MU entry until post-earnings",
       "CRWD": "Cybersecurity; earnings passed (Aug 27); re-evaluate for new entry if RS60 score remains strong",
       "MAN": "Tiny 1-share hold; de minimis; reassess if technical signal changes"
     },
     "action_items_next_week": [
-      "AVOID MU new entry — earnings Sep 23, 2026 (5 days away from Sep 18); maintain blackout",
-      "EVALUATE NVDA re-entry — Q2 results now known; if Blackwell demand confirmed strong, consider entry on next dip",
-      "RUN UNIVERSE SCORING — bars_raw.json stale (last fetched weeks ago); need fresh sector/momentum data to identify new candidates",
-      "ASSESS MAN position — 1 share @ $56.08; confirm stop not triggered; close or hold based on fresh technical read",
-      "REVIEW scoring logic for DD bias — bot has selected DD three consecutive weeks; investigate if bars_raw scoring is producing stale signals that repeatedly favor DD"
+      "AVOID MU new entry \u2014 earnings Sep 23, 2026 (5 days away from Sep 18); maintain blackout",
+      "EVALUATE NVDA re-entry \u2014 Q2 results now known; if Blackwell demand confirmed strong, consider entry on next dip",
+      "RUN UNIVERSE SCORING \u2014 bars_raw.json stale (last fetched weeks ago); need fresh sector/momentum data to identify new candidates",
+      "ASSESS MAN position \u2014 1 share @ $56.08; confirm stop not triggered; close or hold based on fresh technical read",
+      "REVIEW scoring logic for DD bias \u2014 bot has selected DD three consecutive weeks; investigate if bars_raw scoring is producing stale signals that repeatedly favor DD"
     ]
   },
   "portfolio_snapshot_2026_09_18": {
@@ -4898,13 +4912,18 @@
     "positions_summary": {
       "pnl_from_starting_capital_dollar_est": 3836,
       "pnl_from_starting_capital_pct_est": 3.84,
-      "friday_close_symbols": ["DD", "NVDA"],
+      "friday_close_symbols": [
+        "DD",
+        "NVDA"
+      ],
       "friday_close_executed_by": "GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json",
-      "positions_after_friday_close": ["MAN"],
+      "positions_after_friday_close": [
+        "MAN"
+      ],
       "pl_highlights": {
-        "DD": "estimated -3.5% from $124.12 entry — CLOSING (third successive declining entry; Friday rule triggered)",
-        "NVDA": "entered Aug 3 @ $206.91 — MANDATORY CLOSE (Aug 26 earnings rule; safe window expired)",
-        "MAN": "1 share @ $56.08 — HOLD (de minimis; stop apparently not triggered over 5+ weeks)"
+        "DD": "estimated -3.5% from $124.12 entry \u2014 CLOSING (third successive declining entry; Friday rule triggered)",
+        "NVDA": "entered Aug 3 @ $206.91 \u2014 MANDATORY CLOSE (Aug 26 earnings rule; safe window expired)",
+        "MAN": "1 share @ $56.08 \u2014 HOLD (de minimis; stop apparently not triggered over 5+ weeks)"
       }
     }
   }
