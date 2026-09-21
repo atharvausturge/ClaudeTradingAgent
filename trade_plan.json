@@ -1,93 +1,35 @@
 {
-  "week_of": "2026-08-03",
-  "generated_at": "2026-08-03T09:00:00-04:00",
-  "week_thesis": "EMERGENCY: LLY reports Q2 earnings TOMORROW (Aug 5) — CLOSE immediately at open. Confirmed portfolio entering week: AMAT (+24%, must close before Aug 13 earnings), FLEX (+3-4%, free capital), LLY (+15.3%, MANDATORY earnings close Aug 5), MRVL (earnings Aug 20 = 17 days, insufficient window — close). PENG: STOPPED OUT July 29 at $48.02 (both tranches). MU stopped out (stop $951.93 triggered; current $807). AMD reports TONIGHT (Aug 4 after close) — consensus $11.3B +47% YoY, beat expected = direct catalyst for MU re-entry and NVDA recovery. Plan: CLOSE LLY immediately (emergency, earnings tomorrow), CLOSE AMAT by Aug 12 (mandatory), CLOSE FLEX (no AI catalyst, free capital), CLOSE MRVL (earnings Aug 20, only 17 days). BUY MU re-entry (oversold, HBM4 sold out, AMD catalyst, earnings Sept 23) and NVDA (laggard +2% YTD, $302 analyst target, AMD beat read-through, earnings Aug 26 safe).",
-  "market_context": {
-    "spy_price_approx": 750,
-    "spy_note": "SPY ~$750 (pre-market Aug 3, up from bars_raw $736.50). Market rising on MSFT/AMZN cloud AI capex beats July 29-30.",
-    "amd_earnings_tonight": "AMD Q2 2026: Aug 4 after close. Consensus $11.3B (+47% YoY), EPS $1.62 (+235%). Data Center ~$6.5B (+100% YoY). BLACKOUT new AMD entries all week. Beat = direct MU/NVDA catalyst.",
-    "lly_note": "LLY $1,144.34 (July 31). Entry $992.17 (33 shares). +15.3% / +$5,006. Q2 earnings Aug 5 — analysts expect $20.26B revenue, $6.71 EPS. Market pricing +/-8.37% earnings swing. MANDATORY CLOSE at Monday open.",
-    "amat_note": "AMAT ~$507-517 (Aug 1: $516.89, then -3.61%). Entry $411.45 (80 shares). +23-26% / ~$7,650-8,450. Q3 earnings Aug 13. Close by Aug 12.",
-    "flex_note": "FLEX ~$136-140 est. Entry $132.46 (112 shares). +2-6% marginal. Contract manufacturing, no AI catalyst. Close to free capital.",
-    "peng_note": "PENG: STOPPED OUT July 29 at $48.02 (341 shares @ $54.38 entry, 359 shares @ $51.29 entry). Both tranches hit stops. Position closed.",
-    "mrvl_note": "MRVL: earnings Aug 20 = only 17 days. Insufficient safe swing window. Close position to avoid earnings binary risk. If entry was $186.53 (107 shares), evaluate P&L at close.",
-    "mu_note": "MU ~$807-823 (Aug 3). Original entry $1,002.27, stop $951.93 — stopped out. RSI ~34 (oversold). Re-entry at ~$815, stop $775. HBM4 100% sold out through 2028. AMD beat = AI memory catalyst. $1,087 analyst median target.",
-    "nvda_note": "NVDA $200.75 (Friday Aug 1, +2.9% on MSFT/AMZN cloud beats). Only +2% YTD vs AMD +120%. $302 analyst median target (61 analysts Strong Buy). Earnings Aug 26 = 3.5-week safe window.",
-    "macro_risks": [
-      "LLY Q2 earnings Aug 5 (TOMORROW) — CLOSE NOW",
-      "AMD Q2 earnings Aug 4 (TONIGHT) — if miss, AI chip sector sells off",
-      "AMAT Q3 earnings Aug 13 — close by Aug 12",
-      "MRVL Q2 earnings Aug 20 — close this week",
-      "NVDA Q2 earnings Aug 26 — safe if entered this week"
-    ]
-  },
+  "week_of": "2026-09-21",
+  "generated_at": "2026-09-21T09:00:00-04:00",
+  "week_thesis": "Portfolio reset entering this week: DD (-3.5% Friday rule) and NVDA (mandatory Aug 26 earnings-rule close) both closed Sep 18. Only MAN (1 share, de minimis) remains open. SPY at $761.69 near ATH. Semiconductor AI supercycle intact: AMD record Q2 $11.5B (+47% YoY), Q3 guide $13B, earnings Nov 3 = 6-week safe window. NVDA post-Q2 strong: Jensen Huang confirmed doubling chip output, FY2026 revenue $215.94B (+65% YoY), 59/60 analysts Strong Buy, $327 median target. Chip stocks staged strong Sept 17 rally (+4-6%) on CPU supply constraints. Buy AMD + re-enter NVDA as core 2 positions. Skip MU (earnings Sep 30 = 9 days, BLACKOUT). Max 3 positions: MAN (hold) + AMD + NVDA.",
   "buys": [
     {
-      "symbol": "MU",
-      "reasoning": "Re-entry on oversold recovery. Stopped out at $951.93 from July 6 entry due to sector rotation, not thesis change. Current $807-823, RSI ~34 (oversold). HBM4 100% sold out through 2028. Record Q3 $41.46B revenue; Q4 guidance $50B. AMD Q2 beat tonight = direct AI memory demand catalyst. Morgan Stanley top semiconductor pick 2026. Analyst median $1,087 (37 analysts Strong Buy). Entry ~$815, stop $775. Earnings Sept 23 = 7-week safe window.",
+      "symbol": "AMD",
+      "reasoning": "Top universe scorer: RS60=+66% (bars stale at $435; actual ~$578-559 as of Sep 18-21). Record Q2 2026 revenue $11.536B (+47% YoY), Q3 guidance $13B ± $300M (+12% QoQ). OpenAI+Meta 6GW Instinct MI450 GPU deployment ramp. Sept 17 chip rally: AMD +4.64% on CPU supply constraints and resilient data-center demand. Earnings Nov 3, 2026 = 6-week safe entry window. RSI 52.8 (neutral). No earnings blackout risk. Previous pattern of strength validates continued AI compute demand share gains vs NVIDIA. Analyst consensus: Strong Buy.",
       "confidence": "high",
-      "qty_pct": 0.20,
-      "entry_price_approx": 815,
-      "stop_price_approx": 775,
-      "take_profit_pct": 0.08,
-      "earnings_date": "2026-09-23",
-      "thesis_category": "AI memory infrastructure — HBM4 supply shortage, data center DRAM supercycle"
+      "qty_pct": 0.18
     },
     {
       "symbol": "NVDA",
-      "reasoning": "Laggard catch-up. Only +2% YTD vs AMD +120%. Friday $200.75 (+2.9% on MSFT/AMZN cloud AI beat). 61 analysts Strong Buy, $302 median target (+51% upside). AMD Q2 beat tonight = hyperscaler AI capex read-through. Earnings Aug 26 = 3.5-week safe window. Enter Tuesday morning after AMD beat confirmed.",
-      "confidence": "medium",
-      "qty_pct": 0.18,
-      "entry_price_approx": 200,
-      "stop_price_approx": 190,
-      "take_profit_pct": 0.08,
-      "earnings_date": "2026-08-26",
-      "thesis_category": "AI GPU infrastructure — data center, hyperscaler demand, laggard recovery",
-      "entry_condition": "Enter Tuesday Aug 5 morning after AMD Q2 beat confirmed; skip if AMD misses"
+      "reasoning": "Re-entry post-Q2 earnings (reported Aug 26, now in rearview). Jensen Huang Sept 2026: will double chip output next year. FY2026 revenue $215.94B (+65% YoY). 59/60 analysts Strong Buy, $327 median target (+47% from ~$222 current). Previously entered Aug 3 @ $206.91, closed Sep 18 per earnings-safe-window rule; now re-enterable with fresh safe window (next earnings ~Nov 2026). Sept 17 chip rally: NVDA +5.5%. CFO share sale Sep 17 ($7.65M) is routine, not a red flag at this scale. Blackwell demand thesis: AI infrastructure hyperscaler capex continues accelerating. Current $222.27 with 52-week range $164-$236 — mid-range entry, not chasing ATH.",
+      "confidence": "high",
+      "qty_pct": 0.18
     }
   ],
-  "close_positions": ["LLY", "AMAT", "FLEX", "MRVL"],
-  "close_reasoning": {
-    "LLY": "EMERGENCY — Q2 earnings Aug 5 (TOMORROW). Execute at Monday open. $1,144.34 vs $992.17 entry (33 shares) = +15.3% / +$5,006. Market pricing +/-8.37% swing = $3,135 binary risk. Lock gain now.",
-    "AMAT": "Mandatory earnings exit. Q3 Aug 13 — close by Aug 12. ~$507-517 vs $411.45 entry (80 shares) = +24% / ~$7,650-8,450. Lock gain.",
-    "FLEX": "No AI catalyst. Contract manufacturing. +2-6% marginal gain. Close to free capital for MU and NVDA with 40-50%+ upside targets.",
-    "MRVL": "Earnings Aug 20 = only 17 days from entry — insufficient safe swing window. AI networking thesis intact but binary earnings risk too high. Close to avoid GLP-1-style gap risk. Re-evaluate post-earnings."
+  "close_positions": [],
+  "close_reasoning": {},
+  "hold_positions": ["MAN"],
+  "hold_reasoning": {
+    "MAN": "1 share @ $56.08 (de minimis — ~$56 value). ManpowerGroup staffing; holding passively as stop has not triggered over 5+ weeks. No action needed; does not count against meaningful position limit."
   },
-  "hold_positions": [],
-  "hold_reasoning": {},
   "skip_reasoning": {
-    "AMD": "BLACKOUT: earnings Aug 4 after close. Re-evaluate Aug 10.",
-    "CRWD": "Price data inconsistency: bars_raw $480 vs actual ~$191 (+307% from June lows). Skip until data reconciled. Earnings Aug 27 — revisit next week.",
-    "PENG": "STOPPED OUT July 29 at $48.02. Both tranches hit GTC stop orders. No position remains.",
-    "NEM": "Gold miner — outside AI/tech mandate.",
-    "EOG": "Energy sector, RSI 70.4 overbought, outside mandate."
+    "MU": "MANDATORY BLACKOUT — earnings September 30, 2026 (9 days away). Current $1,015.80. Strong Buy 45/45 analysts, target $1,513. Top watchlist candidate for post-earnings re-entry (Oct 1+) if beat + guidance strong.",
+    "CRWD": "Post-earnings volatility (reported ~Aug 27). +102% YTD through Sep 18. Stock fell on earnings print despite strong underlying momentum. Wait for post-earnings base-building consolidation before re-entry.",
+    "AVGO": "Reported fiscal Q3 earnings recently. Q4 revenue guidance slightly below most optimistic projections — triggered post-earnings selling despite record AI semiconductor revenue (+221% YoY). Post-earnings volatility settling (Sep 18: +4.16% rebound). Wait for cleaner setup.",
+    "AMAT": "RSI 67.1 (approaching overbought zone in stale bars). Bars price $430 may understate actual. No fresh catalyst. Avoid until bars refresh.",
+    "MRVL": "RSI 25.9 (borderline oversold — possible value trap vs momentum opportunity). Insufficient fresh data to confirm. Pass.",
+    "NEM": "Gold miner, RS60=+1%, defensive sector. AI/tech thesis week. Skip.",
+    "DD": "Closed Sep 18 per Friday -2% rule (-3.5%). Three consecutive declining stop-outs (Aug 10 → Aug 31 → Sep 14) confirm structural weakness. Avoid re-entry."
   },
-  "portfolio_snapshot_estimate": {
-    "note": "Alpaca API unavailable (proxy HTTP 403). Values from last confirmed live snapshot July 29, 2026 ($96,175.66 after PENG stops triggered).",
-    "portfolio_value_jul29_confirmed": 96175.66,
-    "portfolio_value_estimate_aug3": 96000,
-    "positions_entering_aug3": {
-      "AMAT":  {"entry": 411.45, "qty": 80,  "current_approx": 512,   "gain_pct": 24.5, "action": "CLOSE by Aug 12"},
-      "FLEX":  {"entry": 132.46, "qty": 112, "current_approx": 137,   "gain_pct": 3.4,  "action": "CLOSE"},
-      "LLY":   {"entry": 992.17, "qty": 33,  "current_approx": 1144,  "gain_pct": 15.3, "action": "EMERGENCY CLOSE Mon open"},
-      "MRVL":  {"entry": 186.53, "qty_est": 107, "current_approx": 115, "action": "CLOSE — earnings Aug 20"},
-      "PENG":  {"status": "STOPPED OUT July 29 at $48.02", "action": "CLOSED — no position"},
-      "MU":    {"entry": 1002.27, "qty": 13, "status": "STOPPED OUT", "action": "RE-ENTER ~$815"}
-    },
-    "target_positions_eow": [
-      {"symbol": "MU",   "entry_approx": 815, "stop": 775},
-      {"symbol": "NVDA", "entry_approx": 200, "stop": 190}
-    ]
-  },
-  "watchlist_next_week": ["AMD", "CRWD", "MRVL"],
-  "key_dates": {
-    "lly_q2_earnings_emergency": "2026-08-05",
-    "amd_q2_earnings_blackout": "2026-08-04 after close",
-    "amat_q3_must_close_before": "2026-08-12",
-    "amat_q3_earnings": "2026-08-13",
-    "mrvl_q2_earnings": "2026-08-20",
-    "nvda_q2_earnings": "2026-08-26",
-    "crwd_q2_earnings": "2026-08-27",
-    "mu_q4_earnings": "2026-09-23"
-  }
+  "data_note": "Alpaca API blocked by CCR proxy (HTTP 403). bars_raw.json vintage ~early September (SPY $736.50 vs actual $761.69 Sep 20). Current prices from WebSearch. Positions sourced from memory.json: DD and NVDA closed Sep 18 (Friday rule + earnings rule), MAN (1 share) remains. Portfolio equity estimated ~$103,836 per Sep 18 snapshot."
 }

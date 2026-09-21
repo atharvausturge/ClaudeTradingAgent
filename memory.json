@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-09-18",
+  "last_run": "2026-09-21",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -1100,6 +1100,45 @@
       "actions": [
         "BUY 59 DD @ $124.12 | stop $117.89"
       ]
+    },
+    {
+      "week_of": "2026-09-21",
+      "generated_at": "2026-09-21T09:00:00-04:00",
+      "summary_type": "monday_plan",
+      "thesis": "Portfolio reset after Sep 18 Friday-rule closes (DD -3.5%, NVDA earnings-rule mandatory close). Only MAN (1 share, de minimis) remains. SPY at $761.69 near ATH. Re-entering AMD + NVDA as the two core AI-semiconductor positions. AMD: record Q2 $11.5B (+47% YoY), Q3 guide $13B, earnings Nov 3 = safe window. NVDA: post-Q2 re-entry with Jensen Huang confirming chip output doubling, $327 analyst median target. MU BLACKOUT: earnings Sep 30 (9 days). Chip stocks rallied Sep 17 (+4-6%) on CPU supply constraints.",
+      "positions_opened": [
+        "AMD",
+        "NVDA"
+      ],
+      "positions_closed": [
+        "DD",
+        "NVDA (prior)"
+      ],
+      "close_reasons": {
+        "DD": "Sep 18 Friday -2% rule: -3.5% from $124.12 entry. Third consecutive declining entry (Aug 10 \u2192 Aug 31 \u2192 Sep 14 \u2192 each stopped lower). Structural weakness confirmed \u2014 avoid re-entry.",
+        "NVDA (prior)": "Mandatory earnings-safe-window close: Aug 26 Q2 results published, safe window expired Sep 18. Re-entering fresh this week after confirming Q2 strong (Jensen Huang: doubling chip output, $215.94B FY2026 revenue +65% YoY)."
+      },
+      "holds": [
+        "MAN"
+      ],
+      "blackouts": {
+        "MU": "earnings September 30, 2026 \u2014 BLACKOUT"
+      },
+      "watchlist_next_week": {
+        "MU": "Post-earnings re-entry (Oct 1+) if Q4 FY2026 guidance strong. $1,015 current, $1,513 analyst target.",
+        "CRWD": "Post-earnings consolidation. +102% YTD. Wait for base before re-entry.",
+        "AVGO": "Post-earnings reset. +4.16% Sep 18 rebound. Monitor for clean entry."
+      },
+      "key_events_this_week": [
+        "AZO earnings Tuesday Sep 22 (no portfolio impact)",
+        "GIS earnings Tuesday Sep 22 (no portfolio impact)",
+        "COST earnings Thursday Sep 24 after close (no portfolio impact)",
+        "MU earnings September 30 \u2014 approaching; maintain BLACKOUT all week"
+      ],
+      "scoring_notes": "Alpaca API blocked (HTTP 403). bars_raw.json stale (SPY $736.50 vs actual $761.69). score_local.py run: 24 symbols passed filters. Top scorers: AMD(+0.2338, RS60=+66%), MU(+0.2009 \u2014 BLACKOUT), NVDA(+0.1101). Actual AMD price ~$559-578 vs bars $435; NVDA $222 vs bars $217 \u2014 reasonable delta. WebSearch confirms prices and news.",
+      "net_pnl_estimate": null,
+      "portfolio_value_entering_week": 103836,
+      "data_note": "Alpaca API unavailable (HTTP 403). Portfolio value $103,836 estimated from Sep 18 snapshot. Positions confirmed via memory.json trade_history."
     }
   ],
   "portfolio_snapshots": [
