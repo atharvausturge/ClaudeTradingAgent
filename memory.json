@@ -3141,9 +3141,42 @@
         "pct_up_flags": "Cannot assess \u2014 API blocked",
         "midweek_verdict": "Thesis intact for all planned positions. AI semiconductor thesis (AMD + NVDA) aligned with Sep 21 trade plan. MU blackout maintained (earnings Sep 30). Primary concern: unable to verify stop-loss orders active. Action: no changes to plan; maintain stops; await Friday EOW check."
       }
+    },
+    {
+      "time": "2026-09-23T13:54:45.441178-04:00",
+      "portfolio_value": 97256.6,
+      "buying_power": 277924.77,
+      "positions": [
+        {
+          "symbol": "AMAT",
+          "pl_pct": 12.3,
+          "pl_dollar": 3729.05
+        },
+        {
+          "symbol": "DD",
+          "pl_pct": 5.96,
+          "pl_dollar": 436.6
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 15.98,
+          "pl_dollar": 4597.68
+        },
+        {
+          "symbol": "MAN",
+          "pl_pct": 3.37,
+          "pl_dollar": 1.89
+        },
+        {
+          "symbol": "NVDA",
+          "pl_pct": 8.85,
+          "pl_dollar": 1410.09
+        }
+      ],
+      "is_friday_close": false
     }
   ],
-  "last_monitor_run": "2026-09-16T13:41:06.286984-04:00",
+  "last_monitor_run": "2026-09-23T13:54:45.441178-04:00",
   "daily_pnl": [
     {
       "date": "2026-06-30",
