@@ -3106,6 +3106,41 @@
       "time": "2026-09-21T14:53:02.786803-04:00",
       "portfolio_value": 97320.92,
       "buying_power": 278104.85
+    },
+    {
+      "time": "2026-09-23T09:41:50-04:00",
+      "portfolio_value": 97320.92,
+      "buying_power": 278104.85,
+      "is_midweek_check": true,
+      "data_source": "API blocked (proxy connect_rejected paper-api.alpaca.markets:443). Last confirmed live snapshot 2026-09-21T14:53:02-04:00.",
+      "positions_summary": {
+        "note": "API blocked \u2014 positions from trade_plan.json + trade_history. Cannot verify actual fills or current P&L.",
+        "last_confirmed_equity": 97320.92,
+        "last_confirmed_buying_power": 278104.85,
+        "last_confirmed_date": "2026-09-21",
+        "open_positions_planned": [
+          "AMD",
+          "NVDA",
+          "MAN"
+        ],
+        "thesis_check": {
+          "AMD": "INTACT \u2014 AI compute supercycle, Q3 guidance raised to $13B, earnings Nov 3 safe window",
+          "NVDA": "INTACT \u2014 post-Q2 clean re-entry, Blackwell demand, $327 analyst target",
+          "MAN": "INTACT (de minimis) \u2014 stop $53.05 apparently not triggered"
+        },
+        "stop_loss_check": "UNVERIFIABLE \u2014 API blocked. GTC stop-loss orders for AMD and NVDA cannot be confirmed active.",
+        "concerns": [
+          "API BLOCKED: paper-api.alpaca.markets rejected by proxy \u2014 cannot verify position fills, current prices, P&L, or stop-loss orders. Cannot confirm AMD/NVDA buys executed.",
+          "MU BLACKOUT: MU earnings September 30 (7 days). Maintaining blackout \u2014 no MU entry."
+        ],
+        "strong_holds": [
+          "AMD \u2014 top scorer, clean thesis",
+          "NVDA \u2014 59/60 Strong Buy, $327 target"
+        ],
+        "pct_down_flags": "Cannot assess \u2014 API blocked",
+        "pct_up_flags": "Cannot assess \u2014 API blocked",
+        "midweek_verdict": "Thesis intact for all planned positions. AI semiconductor thesis (AMD + NVDA) aligned with Sep 21 trade plan. MU blackout maintained (earnings Sep 30). Primary concern: unable to verify stop-loss orders active. Action: no changes to plan; maintain stops; await Friday EOW check."
+      }
     }
   ],
   "last_monitor_run": "2026-09-16T13:41:06.286984-04:00",
