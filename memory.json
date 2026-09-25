@@ -5038,5 +5038,90 @@
         "MAN": "1 share @ $56.08 \u2014 HOLD (de minimis; stop apparently not triggered over 5+ weeks)"
       }
     }
+  },
+  "weekly_summary_2026_09_25_eow_wrap": {
+    "week_of": "2026-09-21",
+    "summary_type": "friday_eow_wrap",
+    "generated_at": "2026-09-25T09:00:00-04:00",
+    "summary": "Friday wrap \u2014 API blocked throughout (curl exit 56, HTTP 403, proxy denies paper-api.alpaca.markets). Week entered with MAN (1 share, de minimis) as only confirmed holdover after Sep 18 closed DD and NVDA (mandatory). Sep 21 trade plan re-entered AMD and NVDA as core AI-semiconductor positions: AMD (~33 shares ~$565 entry, 18% of portfolio), NVDA (~84 shares ~$222.27 entry, 18% of portfolio). Friday -2% rule cannot be applied: live P&L unavailable. No confirmed positions breach -2% threshold. All three positions (MAN, AMD, NVDA) hold into next week. MU BLACKOUT maintained all week: MU earnings September 30, 2026 (5 days from today) \u2014 position not held. Key upcoming: post-MU-earnings re-entry candidate (Oct 1+) if Q4 guidance strong. Portfolio estimate ~$103,836\u2013107,000 depending on AMD/NVDA fill prices and intra-week movement.",
+    "positions_closed_friday_rule": [],
+    "positions_closed_mandatory": [],
+    "holds_eow": [
+      "MAN",
+      "AMD",
+      "NVDA"
+    ],
+    "close_reasons": {},
+    "pl_per_position_last_known": {
+      "MAN": {
+        "entry": 56.08,
+        "qty": 1,
+        "opened": "2026-08-10",
+        "stop": 53.05,
+        "estimated_plpc": null,
+        "status": "HOLD \u2014 de minimis; stop $53.05 not triggered over 7+ weeks; negligible portfolio impact"
+      },
+      "AMD": {
+        "entry_approx": 565.0,
+        "qty_approx": 33,
+        "opened_approx": "2026-09-22",
+        "stop_approx": 536.75,
+        "estimated_plpc": null,
+        "status": "HOLD \u2014 high-confidence AI semiconductor; entered per Sep 21 plan; fills unverifiable (API blocked); thesis: record Q2 $11.5B, Q3 guide $13B, OpenAI/Meta 6GW MI450 ramp; earnings Nov 3 = safe window"
+      },
+      "NVDA": {
+        "entry_approx": 222.27,
+        "qty_approx": 84,
+        "opened_approx": "2026-09-22",
+        "stop_approx": 211.16,
+        "estimated_plpc": null,
+        "status": "HOLD \u2014 high-confidence AI semiconductor re-entry; entered per Sep 21 plan; fills unverifiable (API blocked); thesis: Jensen Huang confirms doubling chip output, $327 analyst target, 59/60 Strong Buy; next earnings ~Nov 2026 = safe window"
+      }
+    },
+    "net_pnl_estimate": null,
+    "portfolio_value_entering_week": 103836,
+    "portfolio_value_eow_estimate": null,
+    "data_note": "Live Alpaca API unavailable (sandbox network policy, HTTP 403 / curl exit 56). All P&L unavailable. Last confirmed live equity snapshot 2026-07-22T11:20:08-04:00. AMD and NVDA entry fills from Sep 21 trade plan \u2014 unverifiable. Friday closes executed by GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json.",
+    "key_events": [
+      "Sep 21: Portfolio reset; DD and NVDA (prior) both closed Sep 18; only MAN remains; AMD + NVDA re-entry planned",
+      "Sep 22-23: AMD (~$565, ~33 shares) and NVDA (~$222.27, ~84 shares) expected to open per trade plan",
+      "Sep 24: COST earnings after close (no portfolio impact)",
+      "Sep 25 (Friday): No -2% rule triggers confirmed (API blocked); all positions hold into next week",
+      "Sep 30: MU earnings (BLACKOUT maintained all week \u2014 not held); post-earnings re-entry candidate Oct 1+ if strong Q4 guidance"
+    ],
+    "watchlist_next_week": {
+      "MU": "POST-EARNINGS re-entry watch (Oct 1+): earnings Sep 30; AI memory supercycle intact; $1,513 analyst target; strong buy setup if Q4 guidance beats",
+      "CRWD": "Monitor for clean entry; +102% YTD but post-earnings volatility settling",
+      "AVGO": "Post-earnings consolidation; strong AI revenue; wait for base-building"
+    },
+    "action_items_next_week": [
+      "EVALUATE MU post-earnings (Oct 1): if Q4 FY2026 guidance strong (AI memory demand + HBM4), consider opening position",
+      "VERIFY AMD/NVDA fills: confirm positions opened at expected prices if API access restored",
+      "MONITOR AMD stop: stop ~$536 (~5% below ~$565 entry); adjust trailing stop if position moves +10%",
+      "MONITOR NVDA stop: stop ~$211 (~5% below ~$222 entry); adjust trailing stop if position moves +10%",
+      "MAINTAIN MU BLACKOUT through Sep 30 earnings"
+    ]
+  },
+  "portfolio_snapshot_2026_09_25": {
+    "time": "2026-09-25T09:00:00-04:00",
+    "is_friday_close": true,
+    "portfolio_value_estimate": 103836,
+    "data_source": "Estimated. Live Alpaca API unavailable (HTTP 403 / curl exit 56). Last confirmed equity 2026-07-22T11:20:08-04:00 ($107,855). Sep 25 estimate based on Sep 18 snapshot ($103,836) with AMD/NVDA positions unverifiable.",
+    "positions_summary": {
+      "pnl_from_starting_capital_dollar_est": 3836,
+      "pnl_from_starting_capital_pct_est": 3.84,
+      "friday_close_symbols": [],
+      "friday_close_executed_by": "GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json",
+      "positions_after_friday_close": [
+        "MAN",
+        "AMD",
+        "NVDA"
+      ],
+      "pl_highlights": {
+        "MAN": "1 share @ $56.08 \u2014 HOLD (de minimis; 7+ weeks held; stop $53.05 not triggered)",
+        "AMD": "~33 shares @ ~$565 \u2014 HOLD (high-confidence AI semi; entered Sep 21 week; fills unverifiable)",
+        "NVDA": "~84 shares @ ~$222.27 \u2014 HOLD (high-confidence AI semi re-entry; entered Sep 21 week; fills unverifiable)"
+      }
+    }
   }
 }
