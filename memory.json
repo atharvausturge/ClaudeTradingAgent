@@ -3179,6 +3179,43 @@
       "time": "2026-09-28T16:12:29.384485-04:00",
       "portfolio_value": 99382.33,
       "buying_power": 283876.81
+    },
+    {
+      "time": "2026-09-30T12:00:00-04:00",
+      "is_midweek_check": true,
+      "portfolio_value": 99382.33,
+      "buying_power": 283876.81,
+      "data_source": "Estimated. Last confirmed from Daily P&L 2026-09-28 commit (bf212aa). Alpaca API blocked (HTTP 403 / curl exit 56). Position prices from trade_plan.json Sep 28 web search.",
+      "positions_summary": {
+        "note": "API blocked \u2014 positions and P&L from trade_plan.json Sep 28 (AMD/NVDA/MAN). Cannot verify actual fills.",
+        "last_confirmed_equity": 99382.33,
+        "last_confirmed_date": "2026-09-28",
+        "buying_power": 283876.81,
+        "open_positions_planned": [
+          "AMD",
+          "NVDA",
+          "MAN"
+        ],
+        "thesis_check": {
+          "AMD": "INTACT \u2014 entered ~$559 Sep 21; last known $630.63 (+12.7% Sep 28). AMD joined $1T club. Q3 guide $13B (+41% YoY). Earnings Nov 3 = safe window. Mental stop $580.",
+          "NVDA": "INTACT \u2014 entered ~$222 Sep 21; last known $225.07 (+1.4% Sep 28). 61 analysts Strong Buy, $327 target (+45%). Next earnings ~Nov 2026 safe window. Stop ~$211.",
+          "MAN": "PLANNED CLOSE \u2014 1 share @ $56.08 (Aug 10 entry, 7+ weeks). De minimis portfolio housekeeping per Sep 28 trade plan. Close before end of week."
+        },
+        "stop_loss_check": "UNVERIFIABLE \u2014 API blocked. GTC stop-loss orders cannot be confirmed. Mental stops: AMD $580 (-8% from $630), NVDA $211 (~5% below entry).",
+        "pct_down_flags": "No positions flagged down >8%. NVDA +1.4%, AMD +12.7% (both above entry).",
+        "pct_up_flags": "AMD +12.7% \u2014 STRONG HOLD flag triggered (>+10%). Thesis intact; no take-profit action yet (target zone $680+).",
+        "concerns": [
+          "API BLOCKED: Cannot verify live positions, stop-loss orders, or current prices. All assessments based on Sep 28 web-searched prices.",
+          "MU EARNINGS TODAY (Sep 30 after close): BLACKOUT maintained \u2014 not held. Key risk: if MU Q4 FY2026 guidance disappoints on HBM pricing, could trigger sell-the-news in AMD/NVDA. NOT a thesis-breaker for AMD (GPU \u2260 DRAM).",
+          "NFP FRIDAY OCT 2: June 5 analog risk (portfolio -10.3%). September jobs report primary macro risk. No new buys this week pending post-NFP clarity."
+        ],
+        "strong_holds": [
+          "AMD: +12.7% from ~$559 entry. AI accelerator demand thesis intact. $1T market cap milestone Sep 22. Q3 guide $13B +41% YoY. Hold through MU earnings (GPU business not DRAM-correlated). Take-profit threshold $680+.",
+          "NVDA: +1.4% \u2014 modest gain. 61 analysts Strong Buy, $327 median target. Blackwell/Vera Rubin ramp confirmed. Wide upside runway."
+        ],
+        "key_event_today": "MU Q4 FY2026 earnings after close Sep 30. Expected: $51B revenue (+353% YoY), $31 EPS. Blackout maintained \u2014 not held. Post-earnings: if guidance strong (Oct 1+), MU re-entry is top watchlist candidate.",
+        "midweek_verdict": "Thesis fully intact. AMD is the standout performer (+12.7%, STRONG HOLD). NVDA holding near entry (+1.4%). MAN to close (de minimis housekeeping). Primary risks: MU earnings tonight (not held \u2014 limited direct correlation) and NFP Friday Oct 2 (macro risk, no new buys). No position breaches stop-loss threshold. No action required midweek except confirming MAN close."
+      }
     }
   ],
   "last_monitor_run": "2026-09-23T13:54:45.441178-04:00",
