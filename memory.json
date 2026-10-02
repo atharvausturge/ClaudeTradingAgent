@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-09-21",
+  "last_run": "2026-10-02",
   "trade_history": [
     {
       "time": "2026-05-11T09:31:58.015102-04:00",
@@ -5196,6 +5196,100 @@
         "MAN": "1 share @ $56.08 \u2014 HOLD (de minimis; 7+ weeks held; stop $53.05 not triggered)",
         "AMD": "~33 shares @ ~$565 \u2014 HOLD (high-confidence AI semi; entered Sep 21 week; fills unverifiable)",
         "NVDA": "~84 shares @ ~$222.27 \u2014 HOLD (high-confidence AI semi re-entry; entered Sep 21 week; fills unverifiable)"
+      }
+    }
+  },
+  "weekly_summary_2026_10_02_eow_wrap": {
+    "week_of": "2026-09-28",
+    "summary_type": "friday_eow_wrap",
+    "generated_at": "2026-10-02T09:00:00-04:00",
+    "summary": "Friday wrap \u2014 API blocked throughout (curl exit 56, HTTP 403, proxy denies paper-api.alpaca.markets). Week entered with MAN (1 share, de minimis), AMD (~33 shares ~$565 entry), NVDA (~84 shares ~$222.27 entry). Sep 28 trade plan called for closing MAN as portfolio housekeeping (de minimis, off-thesis in AI semi portfolio). Friday -2% rule: AMD estimated +11.6% from entry (Sep 28 price $630.63 \u2014 AMD joined $1T club Sep 22 on MI450 GPU ramp + 10% chip price hike, Q3 2026 guide $13B +41% YoY); NVDA estimated +1.3% from entry (Sep 28 price $225.07 \u2014 Jensen Huang confirmed doubling chip output, $327 analyst median target +45%). Neither AMD nor NVDA triggers the -2% close threshold. MAN closed per trade plan (not -2% rule). MU earnings Sep 30 \u2014 blackout maintained all week (not held); post-earnings MU re-entry is the top priority for week of Oct 5 if Q4 FY2027 guidance is strong. NFP Jobs Report today Oct 2 is the primary macro risk (June 5 analog: -10.3% portfolio in one day; Warsh Fed hawkish, 57% October rate hike probability).",
+    "positions_closed_trade_plan": [
+      "MAN"
+    ],
+    "positions_closed_friday_rule": [],
+    "positions_closed_mandatory": [],
+    "holds_eow": [
+      "AMD",
+      "NVDA"
+    ],
+    "close_reasons": {
+      "MAN": "Planned close per Sep 28 trade plan \u2014 de minimis 1-share position ($56.08 entry Aug 10, ~8 weeks held); ManpowerGroup staffing off-thesis in AI semiconductor portfolio; closing as housekeeping before NFP macro risk; negligible P&L impact"
+    },
+    "pl_per_position_last_known": {
+      "MAN": {
+        "entry": 56.08,
+        "qty": 1,
+        "opened": "2026-08-10",
+        "stop": 53.05,
+        "estimated_plpc": null,
+        "status": "CLOSING \u2014 trade plan housekeeping; de minimis; off-thesis"
+      },
+      "AMD": {
+        "entry_approx": 565.0,
+        "qty_approx": 33,
+        "opened_approx": "2026-09-22",
+        "estimated_price_sep28": 630.63,
+        "estimated_plpc": 0.116,
+        "estimated_pl_dollar_approx": 2166,
+        "status": "HOLD \u2014 +11.6% estimated; above -2% close threshold; AMD $1T market cap milestone Sep 22; Q3 guide $13B; earnings Nov 3 = safe window"
+      },
+      "NVDA": {
+        "entry_approx": 222.27,
+        "qty_approx": 84,
+        "opened_approx": "2026-09-22",
+        "estimated_price_sep28": 225.07,
+        "estimated_plpc": 0.013,
+        "estimated_pl_dollar_approx": 235,
+        "status": "HOLD \u2014 +1.3% estimated; above -2% close threshold; 61 analysts Strong Buy, $327 median target +45%; next earnings ~Nov 2026 = safe window"
+      }
+    },
+    "net_pnl_estimate_week": 2401,
+    "portfolio_value_entering_week": 103836,
+    "portfolio_value_eow_estimate": 106237,
+    "pnl_from_starting_capital_dollar_est": 6237,
+    "pnl_from_starting_capital_pct_est": 6.24,
+    "data_note": "Live Alpaca API unavailable (sandbox network policy, HTTP 403 / curl exit 56). All P&L estimated from trade_history entry prices and Sep 28 WebSearch prices (AMD $630.63, NVDA $225.07). Last confirmed live equity snapshot 2026-07-22T11:20:08-04:00. Friday closes executed by GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json.",
+    "key_events": [
+      "Sep 28: AMD week thesis \u2014 $1T market cap milestone Sep 22; trading above analyst mean ($623) but momentum intact; Q3 2026 guide $13B (+41% YoY); 10% chip price hike",
+      "Sep 30 (Wed): MU fiscal Q4 FY2026 earnings \u2014 BLACKOUT maintained (not held); expected $51B revenue +353% YoY / $31 EPS; post-earnings MU re-entry top priority if Q4 FY2027 guidance strong",
+      "Oct 2 (Fri/today): September NFP Jobs Report \u2014 primary macro risk (June 5 analog: +172K jobs triggered Nasdaq -4.2% and portfolio -10.3%); Warsh Fed hawkish, October rate hike at 57% probability",
+      "MAN closed per trade plan (de minimis housekeeping)"
+    ],
+    "watchlist_next_week": {
+      "MU": "TOP PRIORITY \u2014 post-earnings re-entry Oct 5+ if Q4 FY2027 guidance strong; $1,015 price (Sep 28), $1,513 analyst target; HBM4 sold out through 2028",
+      "AVGO": "Post-earnings reset; AI revenue +221% YoY; score ~+0.007 (stale bars); watch for technical base before entry",
+      "MRVL": "Amazon Trainium 3 / Google LPU demand thesis solid; need fresh bars data to confirm score",
+      "AMD_profit_take": "If AMD exceeds $680, consider partial profit-take (extended above analyst mean; RSI likely overbought)"
+    },
+    "action_items_next_week": [
+      "EVALUATE MU post-earnings (Oct 5+): if Q4 FY2027 revenue guidance strong, open position \u2014 top candidate",
+      "MONITOR AMD stop (~$598 trailing at +5%): tighten trailing stop as position extends above analyst mean",
+      "MONITOR NVDA stop (~$211): adjust trailing stop if NVDA clears $236.54 52-week high resistance",
+      "WATCH NFP reaction (Oct 2 close): if hawkish print like June 5, prepare for -5 to -10% semiconductor sector dip \u2014 monitor stops",
+      "RUN UNIVERSE SCORING: bars_raw.json stale (SPY $736.50 vs actual ~$761+); need fresh data for new entry candidates"
+    ]
+  },
+  "portfolio_snapshot_2026_10_02": {
+    "time": "2026-10-02T09:00:00-04:00",
+    "is_friday_close": true,
+    "portfolio_value_estimate": 106237,
+    "data_source": "Estimated. Live Alpaca API unavailable (HTTP 403 / curl exit 56). Last confirmed equity 2026-07-22T11:20:08-04:00 ($107,855). Oct 2 estimate: Sep 25 base ($103,836) + AMD gain (~+$2,166 on ~33 shares) + NVDA gain (~+$235 on ~84 shares) = ~$106,237. Prices from WebSearch Sep 28: AMD $630.63, NVDA $225.07.",
+    "positions_summary": {
+      "pnl_from_starting_capital_dollar_est": 6237,
+      "pnl_from_starting_capital_pct_est": 6.24,
+      "friday_close_symbols": [
+        "MAN"
+      ],
+      "friday_close_executed_by": "GitHub Actions friday-execute-on-push.yml triggered on push of friday_closes.json",
+      "positions_after_friday_close": [
+        "AMD",
+        "NVDA"
+      ],
+      "pl_highlights": {
+        "MAN": "1 share @ $56.08 \u2014 CLOSING (trade plan housekeeping; de minimis; off-thesis)",
+        "AMD": "~33 shares @ ~$565 entry; est. $630.63 Sep 28 (+11.6% / ~+$2,166) \u2014 HOLD; $1T market cap milestone; Q3 guide $13B; earnings Nov 3 safe window",
+        "NVDA": "~84 shares @ ~$222.27 entry; est. $225.07 Sep 28 (+1.3% / ~+$235) \u2014 HOLD; $327 analyst target +45%; next earnings ~Nov 2026 safe window"
       }
     }
   }
