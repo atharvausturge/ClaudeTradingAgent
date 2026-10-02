@@ -1,31 +1,34 @@
 {
-  "generated_at": "2026-09-25",
-  "week_of": "2026-09-21",
-  "data_source": "Live Alpaca API unavailable (sandbox network policy, HTTP 403 / curl exit 56 — proxy blocks paper-api.alpaca.markets throughout all sessions). Position P&L estimated from trade_history entry prices and Sep 21 trade plan. Current prices unavailable.",
+  "generated_at": "2026-10-02",
+  "week_of": "2026-09-28",
+  "data_source": "Live Alpaca API unavailable (sandbox network policy, HTTP 403 / curl exit 56 — proxy blocks paper-api.alpaca.markets). Position P&L estimated from trade_history entry prices and Sep 28 trade plan prices (WebSearch). Current intraday prices unavailable.",
   "close_rule": "unrealized_plpc < -0.02 (down more than 2%)",
-  "closes": [],
-  "holds": [
+  "closes": [
     {
       "symbol": "MAN",
       "entry_price": 56.08,
       "qty": 1,
       "estimated_plpc": null,
-      "reason": "de minimis 1-share position; stop at $53.05 has not been triggered in 7+ weeks; negligible portfolio impact; hold"
-    },
+      "reason": "planned close per Sep 28 trade plan — de minimis 1-share position; ManpowerGroup staffing is off-thesis in AI semiconductor portfolio; held since Aug 10 (~8 weeks); closing as portfolio housekeeping before NFP (Fri Oct 2) macro risk; negligible P&L impact"
+    }
+  ],
+  "holds": [
     {
       "symbol": "AMD",
       "entry_price_approx": 565.0,
       "qty_approx": 33,
-      "estimated_plpc": null,
-      "reason": "high-confidence AI semiconductor position entered week of Sep 21 per trade plan; record Q2 $11.5B +47% YoY, Q3 guide $13B, OpenAI/Meta 6GW Instinct MI450 ramp; earnings Nov 3 = safe window; API blocked — no live P&L confirmed above -2% close threshold; hold into next week"
+      "estimated_price_sep28": 630.63,
+      "estimated_plpc": 0.116,
+      "reason": "up ~11.6% from ~$565 entry (Sep 28 price $630.63) — well above Friday -2% close threshold; AMD joined $1T club Sep 22 on AI accelerator demand + MI450 GPU ramp + 10% chip price hike; Q3 2026 guide $13B (+41% YoY); earnings Nov 3 = safe window; hold into next week"
     },
     {
       "symbol": "NVDA",
       "entry_price_approx": 222.27,
       "qty_approx": 84,
-      "estimated_plpc": null,
-      "reason": "high-confidence AI semiconductor re-entry per Sep 21 plan; Jensen Huang confirmed doubling chip output; 59/60 analysts Strong Buy, $327 median target (+47%); next earnings ~Nov 2026 = safe window; API blocked — no live P&L confirmed above -2% close threshold; hold into next week"
+      "estimated_price_sep28": 225.07,
+      "estimated_plpc": 0.013,
+      "reason": "up ~1.3% from ~$222.27 entry (Sep 28 price $225.07) — above Friday -2% close threshold; 61 analysts Strong Buy, $327 median target (+45% upside); Jensen Huang confirmed doubling chip output; next earnings ~Nov 2026 = safe window; NFP (Oct 2) is key macro risk but thesis intact; hold into next week"
     }
   ],
-  "summary": "API blocked throughout (curl exit 56, HTTP 403). No confirmed live P&L available for any position. Sep 21 plan opened AMD and NVDA as high-confidence positions with strong AI thesis and safe earnings windows. MAN (1 share) continues as de minimis hold. No positions meet confirmed -2% Friday close threshold. All holds carry into next week. Key upcoming event: MU earnings Sep 30, 2026 (BLACKOUT maintained — not held this week)."
+  "summary": "API blocked throughout (curl exit 56, HTTP 403). No positions breach confirmed -2% Friday close threshold. MAN closed per trade plan housekeeping (not -2% rule trigger). AMD and NVDA both estimated positive from entry — holding into next week. Key events this week: MU earnings Sep 30 (blackout maintained — not held; evaluate post-earnings re-entry Oct 1+), NFP Jobs Report today Oct 2 (primary macro risk — June 5 analog -10.3% in one day). All AMD/NVDA holds carry into week of Oct 5."
 }
