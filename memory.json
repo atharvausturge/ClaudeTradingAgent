@@ -3254,17 +3254,6 @@
   "last_monitor_run": "2026-09-30T14:30:58.786752-04:00",
   "daily_pnl": [
     {
-      "date": "2026-07-08",
-      "equity": 108212.58,
-      "daily_pl_dollar": 544.29,
-      "daily_pl_pct": 0.51,
-      "open_positions": 4,
-      "realized_today_dollar": 0,
-      "invested_pct": 75.7,
-      "spy_daily_pct": -0.31,
-      "vs_spy_pct": 0.82
-    },
-    {
       "date": "2026-07-09",
       "equity": 110298.19,
       "daily_pl_dollar": 2007.11,
@@ -3912,6 +3901,17 @@
       "invested_pct": 95.4,
       "spy_daily_pct": -0.21,
       "vs_spy_pct": -0.15
+    },
+    {
+      "date": "2026-10-01",
+      "equity": 101950.02,
+      "daily_pl_dollar": 1599.08,
+      "daily_pl_pct": 1.59,
+      "open_positions": 5,
+      "realized_today_dollar": 0,
+      "invested_pct": 95.4,
+      "spy_daily_pct": 0.18,
+      "vs_spy_pct": 1.41
     }
   ],
   "weekly_summary_2026_06_15_eow_wrap": {
