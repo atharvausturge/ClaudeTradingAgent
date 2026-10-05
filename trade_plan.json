@@ -1,29 +1,39 @@
 {
-  "week_of": "2026-09-28",
-  "generated_at": "2026-09-28T09:00:00-04:00",
-  "week_thesis": "AMD delivered a strong week after last Monday's entries, crossing the $1 trillion market cap milestone on September 22 — only the fourth US chipmaker to do so (+189% YTD, +12.7% from our $559 entry). At $630.63 AMD now trades 1–2% above the analyst mean consensus target ($616–$624), but the Q3 guide ($13B, +41% YoY), a 10% chip price hike, and strong AI accelerator demand support the bull case ($1,250 high-end target). NVDA holds at $225.07 with 45% upside to the $327 analyst median target and Q3 FY2027 guidance of ~$100B. Critical macro events this week: (1) MU earnings Wednesday Sep 30 after close — expected $51B revenue +353% YoY / EPS $31 vs $3 last year; consensus is bullish but 'guidance language is king' — any HBM pricing softness triggers sell-the-news; (2) September NFP Jobs Report Friday Oct 2 — the June 5 analog risk (-10.3% portfolio in one day). Action: hold AMD and NVDA through these events (AMD is GPU/accelerator not memory — limited fundamental correlation to MU), close de minimis MAN (housekeeping), no new buys given MU/NFP concentration risk this week. Post-NFP clarity (Oct 6+): MU re-entry if strong guidance, AVGO if post-earnings reset confirms AI setup.",
-  "buys": [],
-  "close_positions": ["MAN"],
-  "close_reasoning": {
-    "MAN": "De minimis position (1 share, ~$56.08 entry Aug 10 2026, held 7+ weeks). ManpowerGroup staffing is off-thesis in an AI semiconductor portfolio environment. Closing as portfolio housekeeping before MU earnings (Wed) and NFP (Fri) risk week. Value is negligible; cleaning up the position count."
-  },
-  "hold_positions": ["AMD", "NVDA"],
+  "week_of": "2026-10-05",
+  "generated_at": "2026-10-05T09:00:00-04:00",
+  "week_thesis": "AI memory supercycle confirmed by Micron's blowout Q4 FY2026 earnings and record Q1 FY2027 guidance. MU reported Sep 30: revenue $54.2B (+7.5% beat), EPS $33.42 (+7.3% beat), Q1 FY2027 guide $61.5B vs $56.77B consensus (+8.3% above). Memory conditions 'much tighter in 2027/2028' with HBM largely sold out. Today's -2.05% sell-the-news dip to $1,074.89 is the re-entry signal we flagged as top priority last week. Portfolio enters week with AMD (+12.2% from $565 entry) and NVDA (+5.3% from $222.27 entry) as core AI positions — adding MU as the 3rd slot completes the AI semiconductor trio. NVDA reinforced by $150B buyback (largest ever), new ATH near $238. MRVL Investor Day Oct 6 is a potential catalyst but too event-driven to enter ahead; will monitor results. No major earnings this week (no blackouts).",
+  "buys": [
+    {
+      "symbol": "MU",
+      "reasoning": "Q4 FY2026 massive beat: revenue $54.2B vs $50.76B consensus (+7.5%), EPS $33.42 vs $31.39 (+7.3%). Q1 FY2027 guidance $61.5B +/-$1.5B vs $56.77B analyst consensus — 8.3% above expectations. EPS guide $38.15 vs $36.02 consensus (+5.9%). Fiscal 2027 projected as another record year with sequential quarterly revenue growth. HBM largely sold out through 2028; over 75% of output already committed. Memory conditions 'much tighter in 2027 and 2028.' Analyst median target ~$1,513 vs current $1,074.89 = +40.7% upside. Today's -2.05% sell-the-news dip is the post-earnings re-entry signal identified in last week's top priority action item. RSI ~34.7 in stale bars (oversold territory confirms dip opportunity). Earnings next ~Dec 2026 = 8-week safe window.",
+      "confidence": "high",
+      "qty_pct": 0.20,
+      "entry_price_approx": 1074.89,
+      "stop_price_approx": 1020.0
+    }
+  ],
+  "close_positions": [],
+  "close_reasoning": {},
+  "hold_positions": [
+    "AMD",
+    "NVDA"
+  ],
   "hold_reasoning": {
-    "AMD": "Entered Sep 21 at ~$559; current $630.63 = +12.7% unrealized gain. AMD joined $1T club Sep 22 on AI accelerator demand + MI450 GPU ramp + 10% chip price hike. Q3 2026 guidance $13B (+41% YoY, EPS est $1.64 vs $0.97 prior year = +69% YoY). 48 analysts Strong Buy. NOW TRADING ABOVE ANALYST MEAN ($623) — elevated but momentum intact. Mental stop tightened to $580 (–8% from current). Earnings Nov 3 = 5-week safe window. Holding through MU Wednesday (GPU/CPU business not DRAM — different demand driver). Take-profit threshold: $680+ (watch for overbought RSI)",
-    "NVDA": "Entered Sep 21 at ~$222; current $225.07 = +1.4% unrealized gain. Wide runway: 61 analysts Strong Buy, $327 median target (+45% upside from current). Q2 FY2027 revenue $96.2B; Q3 guidance ~$100B. Jensen Huang: doubling chip output next year. Blackwell/Vera Rubin ramp ongoing. 52-week high $236.54 = near-term resistance. Safe window through ~Nov 2026 earnings. Fed rate hike risk (Warsh era) is near-term volatility, not thesis change."
+    "AMD": "Holding +12.2% gain from ~$565 entry. Today at $633.91 (+2.95%). AMD hit $1T market cap Sep 22 on MI450 GPU ramp + 10% chip price hike. Q3 FY2026 guide $13B (+41% YoY) confirmed. 10% MI450 chip price hike adds margin expansion. Mizuho maintains Outperform with raised targets. Earnings Nov 3 = 4-week safe window. Stop trailing at ~$598 (-5.5% from entry, already updated from initial $536).",
+    "NVDA": "Holding +5.3% gain from ~$222.27 entry. Today at $233.95, hit new ATH near $238. NVDA announced $150B buyback (Sep 28) — largest-ever buyback authorization, total $235B program. Jensen Huang confirmed doubling chip shipments in 2027 as AI demand surges. Hyperscaler capex projected to top $1.3T by 2027. Lowest valuation multiple since 2015 (16.5x forward earnings) despite AI dominance — significant re-rating potential. $327 analyst median target = +39.8% upside. Earnings ~Nov 2026 = 4+ week safe window."
   },
   "skip_reasoning": {
-    "MU": "MANDATORY BLACKOUT — fiscal Q4 FY2026 earnings September 30, 2026 (Wednesday, 2 days). Expected: $51B revenue (+353% YoY), $31.16 EPS (+929% YoY). Top-ranked scorer (RS60=+54%, RSI=34.7) but sell-the-news risk if Q4 FY2027 guidance disappoints on HBM pricing. POST-EARNINGS WATCHLIST: re-enter Oct 1+ if Q4 FY2027 revenue guide is strong. $1,015 current price, $1,513+ analyst target = compelling setup if guidance clears the bar.",
-    "AVGO": "Post-earnings reset (Q3 FY2026 AI revenue +221% YoY but guidance slightly below optimistic projections). Current $353.70. Score=+0.0072 (stale bars RSI 34.8 — potential contrarian setup). Watchlist for cleaner entry once bars data refreshes.",
-    "MRVL": "Score=+0.0504 (RS60=+21%, RSI=25.9 borderline oversold in stale bars). Bars price $115 is stale vs actual significantly higher. Amazon Trainium 3 / Google LPU demand supports fundamental thesis but insufficient fresh data to confirm entry. Pass this week.",
-    "CRWD": "Score=+0.0496 (RS60=+11%, RSI=53.3). Post-earnings base building (+102% YTD). Not compelling enough vs AMD/NVDA upside potential. No actionable catalyst.",
-    "NFP_macro": "September Jobs Report Friday October 2 is the week's primary macro risk. June 5 analog: 172K jobs (2x consensus) spiked 10yr yield, raised rate-hike probability, triggered Nasdaq –4.2% and portfolio –10.3% in one day. Warsh Fed era: hawkish, data-dependent, October 2026 rate hike at 57% probability. Precluding new position adds until post-NFP clarity (week of Oct 6)."
+    "MRVL": "Investor Day Oct 6 (tomorrow) with Google relationship update expected — too event-driven to enter ahead. Will evaluate post-event for potential entry next week if Investor Day is constructive. Stale bars score +0.0504. Amazon Trainium 3 / Google LPU demand thesis remains intact.",
+    "CRWD": "Bars data stale (score +0.0496, price $480 in bars vs likely $700+ actual given +102% YTD as of Sep 18). Need fresh bars data before entry. No earnings flag this week.",
+    "AMAT": "RSI 67.1 approaching overbought in bars data. Stale bars price $430.62. No earnings flag but would need fresh confirmation of RSI/dip signal before re-entry.",
+    "NEM": "Gold miner, off-thesis from AI semiconductor portfolio focus.",
+    "AMZN": "RS60 -2.0% in stale bars (underperforming SPY). Lower conviction than AI semi core."
   },
-  "data_note": "Alpaca API blocked by CCR proxy (HTTP 403). bars_raw.json vintage ~early September (SPY $736.50 vs actual ~$761+). Current prices from WebSearch Sep 28: AMD $630.63, NVDA $225.07, AVGO $353.70. Positions inferred from memory.json: AMD + NVDA entered Sep 21 per last week's plan; MAN held since Aug 10. Portfolio equity estimated ~$106,500.",
-  "watchlist_next_week": {
-    "MU": "Top priority — post-earnings re-entry Oct 1+ if Q4 FY2027 guidance is strong. Current $1,015, target $1,513+.",
-    "AVGO": "Post-earnings reset with oversold RSI — watch for technical base. AI revenue +221% YoY is real.",
-    "MRVL": "Need fresh bars data. Amazon Trainium / Google LPU demand thesis solid.",
-    "AMD_profit_take": "If AMD exceeds $680 this week, consider taking profit (extended above consensus; RSI likely overbought)."
+  "portfolio_context": {
+    "positions_entering_week": ["AMD", "NVDA"],
+    "portfolio_value_estimate": 107091,
+    "data_note": "Alpaca API unavailable (HTTP 403). Portfolio estimated from Sep 21 entry ~$103,836 + AMD gain ~$2,261 (33 shares * ($633.91-$565)) + NVDA gain ~$980 (84 shares * ($233.95-$222.27)) = ~$107,077. Prices from WebSearch Oct 5: AMD $633.91, NVDA $233.95, MU $1,074.89.",
+    "max_positions": 3,
+    "positions_after_plan": ["AMD", "NVDA", "MU"]
   }
 }
