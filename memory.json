@@ -7,5 +7,18 @@
       "portfolio_value": 103242.8,
       "buying_power": 294686.14
     }
+  ],
+  "daily_pnl": [
+    {
+      "date": "2026-10-05",
+      "equity": 103182.82,
+      "daily_pl_dollar": 748.25,
+      "daily_pl_pct": 0.73,
+      "open_positions": 5,
+      "realized_today_dollar": 0,
+      "invested_pct": 95.5,
+      "spy_daily_pct": 0.67,
+      "vs_spy_pct": 0.06
+    }
   ]
 }
