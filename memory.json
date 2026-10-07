@@ -6,6 +6,34 @@
       "time": "2026-10-05T17:12:47.485854-04:00",
       "portfolio_value": 103242.8,
       "buying_power": 294686.14
+    },
+    {
+      "time": "2026-10-07T09:00:00-04:00",
+      "portfolio_value": 102734.0,
+      "buying_power": null,
+      "note": "Alpaca API blocked — portfolio estimated from Oct 6 equity $102,865.65 adjusted for Oct 7 intraday moves (AMD +1.38%, NVDA -2.34%, MU +0.32%)",
+      "positions_summary": {
+        "AMD": {
+          "entry_price": 565.0,
+          "current_price_approx": 624.0,
+          "unrealized_pct": 10.4,
+          "flag": "strong_hold"
+        },
+        "NVDA": {
+          "entry_price": 222.27,
+          "current_price_approx": 219.74,
+          "unrealized_pct": -1.14,
+          "flag": "watch_stop"
+        },
+        "MU": {
+          "entry_price": 1074.89,
+          "current_price_approx": 935.93,
+          "unrealized_pct": -12.9,
+          "stop_price": 1020.0,
+          "flag": "CRITICAL_BELOW_STOP"
+        }
+      },
+      "midweek_notes": "MU down -12.9% from entry, well below $1,020 stop. Stop should trigger or manual review needed. AMD holding strong at +10.4%. NVDA slightly negative at -1.14%, thesis intact (buyback, AI demand). Alpaca API unavailable for live order/position verification."
     }
   ],
   "daily_pnl": [
