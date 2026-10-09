@@ -1,6 +1,26 @@
 {
   "trade_history": [],
-  "weekly_summaries": [],
+  "weekly_summaries": [
+    {
+      "week_of": "2026-10-05",
+      "generated_at": "2026-10-09T19:09:18Z",
+      "equity_start": 103182.82,
+      "equity_end_approx": 100673.82,
+      "net_pl_dollar_approx": -2509.0,
+      "net_pl_pct_approx": -0.0243,
+      "api_available": false,
+      "api_note": "Alpaca API blocked all week (network egress proxy). Live prices unavailable; all P&L estimates based on last successful snapshot 2026-10-07T15:26:43-04:00.",
+      "positions_final": [
+        {"symbol": "AMAT", "pl_pct_from_entry": 0.2332, "pl_dollar": 7072.01, "decision": "hold"},
+        {"symbol": "DD",   "pl_pct_from_entry": 0.0543, "pl_dollar": 397.95,  "decision": "hold"},
+        {"symbol": "LLY",  "pl_pct_from_entry": 0.1951, "pl_dollar": 5612.97, "decision": "hold"},
+        {"symbol": "NVDA", "pl_pct_from_entry": 0.1459, "pl_dollar": 2323.86, "decision": "hold"}
+      ],
+      "closes_triggered": 0,
+      "close_rule": "unrealized_plpc < -0.02",
+      "notable_events": "Oct 8 portfolio dropped -1.98% ($2,029.67) — worst single day of week; market-wide weakness. No per-position entry-based stop triggered. All positions held into week of Oct 12."
+    }
+  ],
   "portfolio_snapshots": [
     {
       "time": "2026-10-05T17:12:47.485854-04:00",
@@ -62,6 +82,20 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-10-09T19:09:18Z",
+      "portfolio_value": null,
+      "buying_power": null,
+      "is_friday_close": true,
+      "api_available": false,
+      "note": "Friday close snapshot — Alpaca API blocked (EGRESS_BLOCKED). Last confirmed equity $100,673.82 on 2026-10-08. No positions breached -2% close threshold based on last known data. All 4 positions (AMAT +23.3%, DD +5.4%, LLY +19.5%, NVDA +14.6% from entry) held into week of Oct 12.",
+      "positions_summary": {
+        "AMAT": {"pl_pct_from_entry": 0.2332, "pl_dollar": 7072.01, "decision": "hold"},
+        "DD":   {"pl_pct_from_entry": 0.0543, "pl_dollar": 397.95,  "decision": "hold"},
+        "LLY":  {"pl_pct_from_entry": 0.1951, "pl_dollar": 5612.97, "decision": "hold"},
+        "NVDA": {"pl_pct_from_entry": 0.1459, "pl_dollar": 2323.86, "decision": "hold"}
+      }
     }
   ],
   "daily_pnl": [
@@ -110,5 +144,6 @@
       "vs_spy_pct": -1.56
     }
   ],
-  "last_monitor_run": "2026-10-07T15:26:43.339814-04:00"
+  "last_monitor_run": "2026-10-07T15:26:43.339814-04:00",
+  "last_friday_cleanup": "2026-10-09T19:09:18Z"
 }
