@@ -31,7 +31,7 @@
       "time": "2026-10-07T09:00:00-04:00",
       "portfolio_value": 102734.0,
       "buying_power": null,
-      "note": "Alpaca API blocked \u2014 portfolio estimated from Oct 6 equity $102,865.65 adjusted for Oct 7 intraday moves (AMD +1.38%, NVDA -2.34%, MU +0.32%)",
+      "note": "Alpaca API blocked — portfolio estimated from Oct 6 equity $102,865.65 adjusted for Oct 7 intraday moves (AMD +1.38%, NVDA -2.34%, MU +0.32%)",
       "positions_summary": {
         "AMD": {
           "entry_price": 565.0,
