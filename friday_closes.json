@@ -1,34 +1,39 @@
 {
-  "generated_at": "2026-10-02",
-  "week_of": "2026-09-28",
-  "data_source": "Live Alpaca API unavailable (sandbox network policy, HTTP 403 / curl exit 56 — proxy blocks paper-api.alpaca.markets). Position P&L estimated from trade_history entry prices and Sep 28 trade plan prices (WebSearch). Current intraday prices unavailable.",
-  "close_rule": "unrealized_plpc < -0.02 (down more than 2%)",
-  "closes": [
-    {
-      "symbol": "MAN",
-      "entry_price": 56.08,
-      "qty": 1,
-      "estimated_plpc": null,
-      "reason": "planned close per Sep 28 trade plan — de minimis 1-share position; ManpowerGroup staffing is off-thesis in AI semiconductor portfolio; held since Aug 10 (~8 weeks); closing as portfolio housekeeping before NFP (Fri Oct 2) macro risk; negligible P&L impact"
-    }
-  ],
+  "generated_at": "2026-10-09T19:09:18Z",
+  "week_of": "2026-10-05",
+  "data_source": "Live Alpaca API unavailable (network egress proxy blocks paper-api.alpaca.markets). P&L estimated from last Alpaca snapshot 2026-10-07T15:26:43-04:00.",
+  "close_rule": "unrealized_plpc < -0.02 (down more than 2% from entry)",
+  "closes": [],
   "holds": [
     {
-      "symbol": "AMD",
-      "entry_price_approx": 565.0,
-      "qty_approx": 33,
-      "estimated_price_sep28": 630.63,
-      "estimated_plpc": 0.116,
-      "reason": "up ~11.6% from ~$565 entry (Sep 28 price $630.63) — well above Friday -2% close threshold; AMD joined $1T club Sep 22 on AI accelerator demand + MI450 GPU ramp + 10% chip price hike; Q3 2026 guide $13B (+41% YoY); earnings Nov 3 = safe window; hold into next week"
+      "symbol": "AMAT",
+      "last_known_plpc": 0.2332,
+      "last_known_pl_dollar": 7072.01,
+      "snapshot_date": "2026-10-07",
+      "reason": "up +23.3% from entry as of Oct 7 — well above Friday -2% close threshold; Oct 8 portfolio-level drop was -1.98% but AMAT's large cushion means entry-based stop not breached; hold into next week"
+    },
+    {
+      "symbol": "DD",
+      "last_known_plpc": 0.0543,
+      "last_known_pl_dollar": 397.95,
+      "snapshot_date": "2026-10-07",
+      "reason": "up +5.4% from entry as of Oct 7 — above Friday -2% close threshold; positive momentum; hold into next week"
+    },
+    {
+      "symbol": "LLY",
+      "last_known_plpc": 0.1951,
+      "last_known_pl_dollar": 5612.97,
+      "snapshot_date": "2026-10-07",
+      "reason": "up +19.5% from entry as of Oct 7 — well above Friday -2% close threshold; large cushion absorbs Oct 8 market-wide weakness; hold into next week"
     },
     {
       "symbol": "NVDA",
-      "entry_price_approx": 222.27,
-      "qty_approx": 84,
-      "estimated_price_sep28": 225.07,
-      "estimated_plpc": 0.013,
-      "reason": "up ~1.3% from ~$222.27 entry (Sep 28 price $225.07) — above Friday -2% close threshold; 61 analysts Strong Buy, $327 median target (+45% upside); Jensen Huang confirmed doubling chip output; next earnings ~Nov 2026 = safe window; NFP (Oct 2) is key macro risk but thesis intact; hold into next week"
+      "last_known_plpc": 0.1459,
+      "last_known_pl_dollar": 2323.86,
+      "snapshot_date": "2026-10-07",
+      "reason": "up +14.6% from entry as of Oct 7 — well above Friday -2% close threshold; $150B buyback, AI demand thesis intact; hold into next week"
     }
   ],
-  "summary": "API blocked throughout (curl exit 56, HTTP 403). No positions breach confirmed -2% Friday close threshold. MAN closed per trade plan housekeeping (not -2% rule trigger). AMD and NVDA both estimated positive from entry — holding into next week. Key events this week: MU earnings Sep 30 (blackout maintained — not held; evaluate post-earnings re-entry Oct 1+), NFP Jobs Report today Oct 2 (primary macro risk — June 5 analog -10.3% in one day). All AMD/NVDA holds carry into week of Oct 5."
+  "api_note": "Alpaca API (paper-api.alpaca.markets) was unreachable all week due to sandbox network egress policy (HTTP 403 / EGRESS_BLOCKED). GitHub Actions executor should verify live prices before executing any closes.",
+  "summary": "No closes triggered. All 4 positions (AMAT, DD, LLY, NVDA) were last measured well above the -2% close threshold. Oct 8 saw a portfolio-level drop of -1.98% ($2,029.67) but positions entered the week with strong cushions. Holding all into week of Oct 12."
 }
