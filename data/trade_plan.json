@@ -1,5 +1,5 @@
 {
-  "week_of": "2026-10-04",
+  "week_of": "2026-10-11",
   "week_thesis": "AI scoring unavailable this week. Trades selected on technical signal only.",
   "buys": [
     {
@@ -13,35 +13,35 @@
     },
     {
       "symbol": "RNG",
-      "combined_score": 0.6968,
-      "tech_score": 0.894,
+      "combined_score": 0.7223,
+      "tech_score": 0.945,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "high",
       "qty_pct": 0.18
     },
     {
+      "symbol": "SMCI",
+      "combined_score": 0.601,
+      "tech_score": 0.702,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
+      "confidence": "medium",
+      "qty_pct": 0.18
+    },
+    {
       "symbol": "CVI",
-      "combined_score": 0.5238,
-      "tech_score": 0.548,
+      "combined_score": 0.4645,
+      "tech_score": 0.429,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     },
     {
-      "symbol": "PAYC",
-      "combined_score": 0.4634,
-      "tech_score": 0.427,
-      "sentiment_score": 0.5,
-      "reasoning": "selected by technical score",
-      "confidence": "medium",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "HZO",
-      "combined_score": 0.4045,
-      "tech_score": 0.309,
+      "symbol": "AZTA",
+      "combined_score": 0.4534,
+      "tech_score": 0.407,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "medium",
@@ -61,127 +61,127 @@
       "ai_reason": null
     },
     "RNG": {
-      "combined": 0.6968,
-      "tech_norm": 0.894,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "CVI": {
-      "combined": 0.5238,
-      "tech_norm": 0.548,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "PAYC": {
-      "combined": 0.4634,
-      "tech_norm": 0.427,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "HZO": {
-      "combined": 0.4045,
-      "tech_norm": 0.309,
+      "combined": 0.7223,
+      "tech_norm": 0.945,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "SMCI": {
-      "combined": 0.3574,
-      "tech_norm": 0.215,
+      "combined": 0.601,
+      "tech_norm": 0.702,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "MAN": {
-      "combined": 0.3572,
-      "tech_norm": 0.214,
+    "CVI": {
+      "combined": 0.4645,
+      "tech_norm": 0.429,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "AMPH": {
-      "combined": 0.3489,
-      "tech_norm": 0.198,
+    "AZTA": {
+      "combined": 0.4534,
+      "tech_norm": 0.407,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "OKTA": {
-      "combined": 0.3401,
-      "tech_norm": 0.18,
+    "SMTC": {
+      "combined": 0.3925,
+      "tech_norm": 0.285,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "SWKS": {
-      "combined": 0.336,
-      "tech_norm": 0.172,
+    "PAYC": {
+      "combined": 0.3793,
+      "tech_norm": 0.259,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "HZO": {
+      "combined": 0.37,
+      "tech_norm": 0.24,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "HPE": {
+      "combined": 0.3476,
+      "tech_norm": 0.195,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "ANF": {
-      "combined": 0.3253,
-      "tech_norm": 0.151,
+      "combined": 0.3416,
+      "tech_norm": 0.183,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "BLKB": {
+    "TWLO": {
       "combined": 0.3173,
       "tech_norm": 0.135,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "IT": {
-      "combined": 0.2811,
-      "tech_norm": 0.062,
+    "COHU": {
+      "combined": 0.3064,
+      "tech_norm": 0.113,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "PBF": {
-      "combined": 0.2771,
-      "tech_norm": 0.054,
+    "SWKS": {
+      "combined": 0.2859,
+      "tech_norm": 0.072,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "HAE": {
-      "combined": 0.2766,
-      "tech_norm": 0.053,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "CRM": {
-      "combined": 0.275,
-      "tech_norm": 0.05,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "VLO": {
-      "combined": 0.2704,
-      "tech_norm": 0.041,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "FIVN": {
-      "combined": 0.2529,
-      "tech_norm": 0.006,
+    "FORM": {
+      "combined": 0.2732,
+      "tech_norm": 0.046,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "ZBRA": {
-      "combined": 0.2514,
-      "tech_norm": 0.003,
+      "combined": 0.2686,
+      "tech_norm": 0.037,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "INSP": {
+      "combined": 0.2677,
+      "tech_norm": 0.035,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "TER": {
+      "combined": 0.2584,
+      "tech_norm": 0.017,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "CRL": {
+      "combined": 0.2566,
+      "tech_norm": 0.013,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "DELL": {
+      "combined": 0.2553,
+      "tech_norm": 0.011,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
