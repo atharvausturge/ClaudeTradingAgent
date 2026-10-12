@@ -2,6 +2,28 @@
   "trade_history": [],
   "weekly_summaries": [
     {
+      "week_of": "2026-10-12",
+      "generated_at": "2026-10-12T00:00:00Z",
+      "equity_start_approx": 100673.82,
+      "equity_end_approx": null,
+      "api_available": false,
+      "api_note": "Alpaca API blocked week 2 (EGRESS_BLOCKED). Bars fetched from prior snapshot. All decisions based on last confirmed data Oct 7-9.",
+      "plan_summary": {
+        "close": ["DD", "LLY"],
+        "hold": ["AMAT", "NVDA"],
+        "buy": ["MU"],
+        "rationale": "Rotating LLY (underperforming, RSI 70.3) and DD (weak, not in universe) into MU (dip buy, RSI 34.7, RS60 +54%, Micron HBM sold out 2026). AMD skipped despite #1 score due to Nov 3 earnings and +5% run. Market at all-time highs with poor breadth; maintaining defensive 3-position cap."
+      },
+      "top_candidates_scores": {
+        "AMD": 0.2338,
+        "MU": 0.2009,
+        "NVDA": 0.1101,
+        "CRWD": 0.0496,
+        "AMAT": 0.0341
+      },
+      "market_context": "S&P 500 at ~7,750 (ATH) entering Oct 2026. Poor market breadth flagged by analysts. Rising bond yields. Bank earnings week (JPM, GS, WFC, BAC, UNH Oct 13-14)."
+    },
+    {
       "week_of": "2026-10-05",
       "generated_at": "2026-10-09T19:09:18Z",
       "equity_start": 103182.82,
@@ -38,7 +60,7 @@
       ],
       "closes_triggered": 0,
       "close_rule": "unrealized_plpc < -0.02",
-      "notable_events": "Oct 8 portfolio dropped -1.98% ($2,029.67) \u2014 worst single day of week; market-wide weakness. No per-position entry-based stop triggered. All positions held into week of Oct 12."
+      "notable_events": "Oct 8 portfolio dropped -1.98% ($2,029.67) — worst single day of week; market-wide weakness. No per-position entry-based stop triggered. All positions held into week of Oct 12."
     }
   ],
   "portfolio_snapshots": [
@@ -51,7 +73,7 @@
       "time": "2026-10-07T09:00:00-04:00",
       "portfolio_value": 102734.0,
       "buying_power": null,
-      "note": "Alpaca API blocked \u2014 portfolio estimated from Oct 6 equity $102,865.65 adjusted for Oct 7 intraday moves (AMD +1.38%, NVDA -2.34%, MU +0.32%)",
+      "note": "Alpaca API blocked — portfolio estimated from Oct 6 equity $102,865.65 adjusted for Oct 7 intraday moves (AMD +1.38%, NVDA -2.34%, MU +0.32%)",
       "positions_summary": {
         "AMD": {
           "entry_price": 565.0,
@@ -109,7 +131,7 @@
       "buying_power": null,
       "is_friday_close": true,
       "api_available": false,
-      "note": "Friday close snapshot \u2014 Alpaca API blocked (EGRESS_BLOCKED). Last confirmed equity $100,673.82 on 2026-10-08. No positions breached -2% close threshold based on last known data. All 4 positions (AMAT +23.3%, DD +5.4%, LLY +19.5%, NVDA +14.6% from entry) held into week of Oct 12.",
+      "note": "Friday close snapshot — Alpaca API blocked (EGRESS_BLOCKED). Last confirmed equity $100,673.82 on 2026-10-08. No positions breached -2% close threshold based on last known data. All 4 positions (AMAT +23.3%, DD +5.4%, LLY +19.5%, NVDA +14.6% from entry) held into week of Oct 12.",
       "positions_summary": {
         "AMAT": {
           "pl_pct_from_entry": 0.2332,
