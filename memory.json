@@ -68,7 +68,7 @@
       ],
       "closes_triggered": 0,
       "close_rule": "unrealized_plpc < -0.02",
-      "notable_events": "Oct 8 portfolio dropped -1.98% ($2,029.67) — worst single day of week; market-wide weakness. No per-position entry-based stop triggered. All positions held into week of Oct 12."
+      "notable_events": "Oct 8 portfolio dropped -1.98% ($2,029.67) \u2014 worst single day of week; market-wide weakness. No per-position entry-based stop triggered. All positions held into week of Oct 12."
     }
   ],
   "portfolio_snapshots": [
@@ -81,7 +81,7 @@
       "time": "2026-10-07T09:00:00-04:00",
       "portfolio_value": 102734.0,
       "buying_power": null,
-      "note": "Alpaca API blocked — portfolio estimated from Oct 6 equity $102,865.65 adjusted for Oct 7 intraday moves (AMD +1.38%, NVDA -2.34%, MU +0.32%)",
+      "note": "Alpaca API blocked \u2014 portfolio estimated from Oct 6 equity $102,865.65 adjusted for Oct 7 intraday moves (AMD +1.38%, NVDA -2.34%, MU +0.32%)",
       "positions_summary": {
         "AMD": {
           "entry_price": 565.0,
@@ -139,7 +139,7 @@
       "buying_power": null,
       "is_friday_close": true,
       "api_available": false,
-      "note": "Friday close snapshot — Alpaca API blocked (EGRESS_BLOCKED). Last confirmed equity $100,673.82 on 2026-10-08. No positions breached -2% close threshold based on last known data. All 4 positions (AMAT +23.3%, DD +5.4%, LLY +19.5%, NVDA +14.6% from entry) held into week of Oct 12.",
+      "note": "Friday close snapshot \u2014 Alpaca API blocked (EGRESS_BLOCKED). Last confirmed equity $100,673.82 on 2026-10-08. No positions breached -2% close threshold based on last known data. All 4 positions (AMAT +23.3%, DD +5.4%, LLY +19.5%, NVDA +14.6% from entry) held into week of Oct 12.",
       "positions_summary": {
         "AMAT": {
           "pl_pct_from_entry": 0.2332,
@@ -189,18 +189,56 @@
           "thesis_intact": true
         },
         "position_3_unknown": {
-          "candidates": ["DD (not closed, ~0% from entry)", "MU (bought ~$820 per plan, may be down)"],
+          "candidates": [
+            "DD (not closed, ~0% from entry)",
+            "MU (bought ~$820 per plan, may be down)"
+          ],
           "flag": "concern_unverifiable"
         },
         "position_4_unknown": {
-          "candidates": ["LLY (not closed, ~14.5% from entry est)", "closed per plan"],
+          "candidates": [
+            "LLY (not closed, ~14.5% from entry est)",
+            "closed per plan"
+          ],
           "flag": "unverifiable"
         }
       },
       "midweek_notes": "CONCERN: Portfolio down -3.3% WTD from ~$100.7k to $97.4k in 2 trading days. Severely underperforming SPY: Oct 12 -1.70% vs SPY, Oct 13 -2.53% vs SPY. Semiconductor sector weakness driving losses. Cannot verify stop loss orders or exact positions via API. No position estimated down >8% from entry yet, but trajectory is worrying. Portfolio at -2.6% from $100k starting equity. Stop loss verification urgently needed when API restored.",
       "wtd_pl_dollar_est": -3295.69,
       "wtd_pl_pct_est": -0.033,
-      "concern_flags": ["severe_spy_underperformance", "api_blocked_3rd_consecutive", "stop_loss_unverifiable"]
+      "concern_flags": [
+        "severe_spy_underperformance",
+        "api_blocked_3rd_consecutive",
+        "stop_loss_unverifiable"
+      ]
+    },
+    {
+      "time": "2026-10-14T14:06:34.401852-04:00",
+      "portfolio_value": 96739.19,
+      "buying_power": 276539.62,
+      "positions": [
+        {
+          "symbol": "AMAT",
+          "pl_pct": 6.38,
+          "pl_dollar": 1934.81
+        },
+        {
+          "symbol": "DD",
+          "pl_pct": 3.01,
+          "pl_dollar": 220.37
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 22.38,
+          "pl_dollar": 6438.38
+        },
+        {
+          "symbol": "NVDA",
+          "pl_pct": 6.69,
+          "pl_dollar": 1066.45
+        }
+      ],
+      "is_friday_close": false
     }
   ],
   "daily_pnl": [
@@ -282,6 +320,6 @@
       "vs_spy_pct": -2.53
     }
   ],
-  "last_monitor_run": "2026-10-14T00:00:00Z",
+  "last_monitor_run": "2026-10-14T14:06:34.401852-04:00",
   "last_friday_cleanup": "2026-10-09T19:09:18Z"
 }
