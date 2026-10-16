@@ -1,39 +1,40 @@
 {
-  "generated_at": "2026-10-09T19:09:18Z",
-  "week_of": "2026-10-05",
-  "data_source": "Live Alpaca API unavailable (network egress proxy blocks paper-api.alpaca.markets). P&L estimated from last Alpaca snapshot 2026-10-07T15:26:43-04:00.",
+  "generated_at": "2026-10-16T19:09:21Z",
+  "week_of": "2026-10-12",
+  "data_source": "Live Alpaca API unavailable (ENOTFOUND paper-api.alpaca.markets — 4th consecutive week blocked). P&L based on last confirmed position snapshot 2026-10-14T14:06:34-04:00.",
   "close_rule": "unrealized_plpc < -0.02 (down more than 2% from entry)",
   "closes": [],
   "holds": [
     {
       "symbol": "AMAT",
-      "last_known_plpc": 0.2332,
-      "last_known_pl_dollar": 7072.01,
-      "snapshot_date": "2026-10-07",
-      "reason": "up +23.3% from entry as of Oct 7 — well above Friday -2% close threshold; Oct 8 portfolio-level drop was -1.98% but AMAT's large cushion means entry-based stop not breached; hold into next week"
+      "last_known_plpc": 0.0638,
+      "last_known_pl_dollar": 1934.81,
+      "snapshot_date": "2026-10-14",
+      "reason": "up +6.38% from entry as of Oct 14 — above Friday -2% close threshold; core AI/semiconductor capex position; hold into next week"
     },
     {
       "symbol": "DD",
-      "last_known_plpc": 0.0543,
-      "last_known_pl_dollar": 397.95,
-      "snapshot_date": "2026-10-07",
-      "reason": "up +5.4% from entry as of Oct 7 — above Friday -2% close threshold; positive momentum; hold into next week"
+      "last_known_plpc": 0.0301,
+      "last_known_pl_dollar": 220.37,
+      "snapshot_date": "2026-10-14",
+      "reason": "up +3.01% from entry as of Oct 14 — above Friday -2% close threshold; note: trade plan week of Oct 12 called to close DD (rotate into MU) but API blocked; GitHub Actions should verify execution status; held as reported by last confirmed snapshot"
     },
     {
       "symbol": "LLY",
-      "last_known_plpc": 0.1951,
-      "last_known_pl_dollar": 5612.97,
-      "snapshot_date": "2026-10-07",
-      "reason": "up +19.5% from entry as of Oct 7 — well above Friday -2% close threshold; large cushion absorbs Oct 8 market-wide weakness; hold into next week"
+      "last_known_plpc": 0.2238,
+      "last_known_pl_dollar": 6438.38,
+      "snapshot_date": "2026-10-14",
+      "reason": "up +22.38% from entry as of Oct 14 — well above Friday -2% close threshold; note: trade plan week of Oct 12 called to close LLY (RSI overbought, rotate into MU) but API blocked; GitHub Actions should verify execution status; held as reported by last confirmed snapshot"
     },
     {
       "symbol": "NVDA",
-      "last_known_plpc": 0.1459,
-      "last_known_pl_dollar": 2323.86,
-      "snapshot_date": "2026-10-07",
-      "reason": "up +14.6% from entry as of Oct 7 — well above Friday -2% close threshold; $150B buyback, AI demand thesis intact; hold into next week"
+      "last_known_plpc": 0.0669,
+      "last_known_pl_dollar": 1066.45,
+      "snapshot_date": "2026-10-14",
+      "reason": "up +6.69% from entry as of Oct 14 — above Friday -2% close threshold; Blackwell demand thesis intact; hold into next week"
     }
   ],
-  "api_note": "Alpaca API (paper-api.alpaca.markets) was unreachable all week due to sandbox network egress policy (HTTP 403 / EGRESS_BLOCKED). GitHub Actions executor should verify live prices before executing any closes.",
-  "summary": "No closes triggered. All 4 positions (AMAT, DD, LLY, NVDA) were last measured well above the -2% close threshold. Oct 8 saw a portfolio-level drop of -1.98% ($2,029.67) but positions entered the week with strong cushions. Holding all into week of Oct 12."
+  "api_note": "Alpaca API (paper-api.alpaca.markets) unreachable for 4th consecutive week (ENOTFOUND). Last confirmed equity $96,312.18 on 2026-10-15. GitHub Actions executor must verify live P&L before executing any closes — do NOT execute closes blindly based on stale data.",
+  "trade_plan_execution_uncertainty": "Week of Oct 12 plan called to close DD+LLY and buy MU. Commit '4a931a1 Monday 2026-10-12: trades executed' exists, but Oct 14 confirmed API snapshot still shows DD and LLY open. Trades may have failed to execute due to repeated API blockage.",
+  "summary": "No closes triggered by the -2% rule. All 4 last-known positions (AMAT +6.4%, DD +3.0%, LLY +22.4%, NVDA +6.7%) remain above the close threshold. Week of Oct 12 was down approximately -4.3% ($100,673 → $96,312), largely driven by semiconductor sector weakness (Oct 12-13 severe underperformance vs SPY). Holding all into week of Oct 19 pending API restoration and trade plan execution verification."
 }
