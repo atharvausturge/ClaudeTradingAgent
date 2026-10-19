@@ -9,13 +9,19 @@
       "net_pl_dollar_approx": null,
       "net_pl_pct_approx": null,
       "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND — 5th consecutive week). bars_raw.json is stale (Aug-Sep 2026 data). scores supplemented by WebSearch.",
+      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 5th consecutive week). bars_raw.json is stale (Aug-Sep 2026 data). scores supplemented by WebSearch.",
       "plan_summary": {
-        "close": ["DD"],
-        "hold": ["AMAT", "LLY", "NVDA"],
+        "close": [
+          "DD"
+        ],
+        "hold": [
+          "AMAT",
+          "LLY",
+          "NVDA"
+        ],
         "buy": [],
-        "rationale": "SOX fell 11.4% week of Oct 12-16 (worst since 2008). Semiconductor rebound Oct 19 premarket (+1% Nasdaq 100 futures). Closing DD (non-universe, +3%, long overdue). Reversing LLY close to maintain defensive ballast. Hold AMAT (Strong Buy, earnings Nov 12) and NVDA (Blackwell demand intact). No new buys — AMD still earnings blackout Nov 3, MU recovered to $931 (no longer dip setup). Big-tech earnings this week: META, TSLA.",
-        "execution_status": "UNVERIFIED — API blocked"
+        "rationale": "SOX fell 11.4% week of Oct 12-16 (worst since 2008). Semiconductor rebound Oct 19 premarket (+1% Nasdaq 100 futures). Closing DD (non-universe, +3%, long overdue). Reversing LLY close to maintain defensive ballast. Hold AMAT (Strong Buy, earnings Nov 12) and NVDA (Blackwell demand intact). No new buys \u2014 AMD still earnings blackout Nov 3, MU recovered to $931 (no longer dip setup). Big-tech earnings this week: META, TSLA.",
+        "execution_status": "UNVERIFIED \u2014 API blocked"
       },
       "top_candidates_scores": {
         "AMD": 0.2338,
@@ -316,6 +322,11 @@
       "closes_triggered": 0,
       "close_rule": "unrealized_plpc < -0.02",
       "notable_events": "4th consecutive week of API blockage. All positions above -2% entry stop based on Oct 14 snapshot. Week down -4.3% primarily from semiconductor sector decline Oct 12-13."
+    },
+    {
+      "time": "2026-10-19T15:26:02.473242-04:00",
+      "portfolio_value": 95352.24,
+      "buying_power": 272656.15
     }
   ],
   "daily_pnl": [
