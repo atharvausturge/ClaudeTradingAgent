@@ -1,9 +1,9 @@
 {
-  "week_of": "2026-10-11",
+  "week_of": "2026-10-18",
   "week_thesis": "AI scoring unavailable this week. Trades selected on technical signal only.",
   "buys": [
     {
-      "symbol": "EFOR",
+      "symbol": "P",
       "combined_score": 0.75,
       "tech_score": 1.0,
       "sentiment_score": 0.5,
@@ -12,18 +12,9 @@
       "qty_pct": 0.18
     },
     {
-      "symbol": "RNG",
-      "combined_score": 0.7223,
-      "tech_score": 0.945,
-      "sentiment_score": 0.5,
-      "reasoning": "selected by technical score",
-      "confidence": "high",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "SMCI",
-      "combined_score": 0.601,
-      "tech_score": 0.702,
+      "symbol": "EFOR",
+      "combined_score": 0.6166,
+      "tech_score": 0.733,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "medium",
@@ -31,17 +22,26 @@
     },
     {
       "symbol": "CVI",
-      "combined_score": 0.4645,
-      "tech_score": 0.429,
+      "combined_score": 0.5672,
+      "tech_score": 0.634,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "medium",
       "qty_pct": 0.18
     },
     {
-      "symbol": "AZTA",
-      "combined_score": 0.4534,
-      "tech_score": 0.407,
+      "symbol": "PAYC",
+      "combined_score": 0.4281,
+      "tech_score": 0.356,
+      "sentiment_score": 0.5,
+      "reasoning": "selected by technical score",
+      "confidence": "medium",
+      "qty_pct": 0.18
+    },
+    {
+      "symbol": "OKTA",
+      "combined_score": 0.4186,
+      "tech_score": 0.337,
       "sentiment_score": 0.5,
       "reasoning": "selected by technical score",
       "confidence": "medium",
@@ -53,140 +53,140 @@
   "hold_positions": [],
   "skip_reasoning": {},
   "scoring_breakdown": {
-    "EFOR": {
+    "P": {
       "combined": 0.75,
       "tech_norm": 1.0,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "RNG": {
-      "combined": 0.7223,
-      "tech_norm": 0.945,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "SMCI": {
-      "combined": 0.601,
-      "tech_norm": 0.702,
+    "EFOR": {
+      "combined": 0.6166,
+      "tech_norm": 0.733,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "CVI": {
-      "combined": 0.4645,
-      "tech_norm": 0.429,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "AZTA": {
-      "combined": 0.4534,
-      "tech_norm": 0.407,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "SMTC": {
-      "combined": 0.3925,
-      "tech_norm": 0.285,
+      "combined": 0.5672,
+      "tech_norm": 0.634,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "PAYC": {
-      "combined": 0.3793,
-      "tech_norm": 0.259,
+      "combined": 0.4281,
+      "tech_norm": 0.356,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "HZO": {
-      "combined": 0.37,
-      "tech_norm": 0.24,
+    "OKTA": {
+      "combined": 0.4186,
+      "tech_norm": 0.337,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "HPE": {
-      "combined": 0.3476,
-      "tech_norm": 0.195,
+    "DT": {
+      "combined": 0.3697,
+      "tech_norm": 0.239,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "ANF": {
-      "combined": 0.3416,
-      "tech_norm": 0.183,
+      "combined": 0.3647,
+      "tech_norm": 0.229,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "TWLO": {
-      "combined": 0.3173,
-      "tech_norm": 0.135,
+    "HAE": {
+      "combined": 0.355,
+      "tech_norm": 0.21,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "COHU": {
-      "combined": 0.3064,
-      "tech_norm": 0.113,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "SWKS": {
-      "combined": 0.2859,
-      "tech_norm": 0.072,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "FORM": {
-      "combined": 0.2732,
-      "tech_norm": 0.046,
+    "FIVN": {
+      "combined": 0.3463,
+      "tech_norm": 0.193,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "ZBRA": {
-      "combined": 0.2686,
-      "tech_norm": 0.037,
+      "combined": 0.3037,
+      "tech_norm": 0.107,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
-    "INSP": {
-      "combined": 0.2677,
-      "tech_norm": 0.035,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "TER": {
-      "combined": 0.2584,
-      "tech_norm": 0.017,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "CRL": {
-      "combined": 0.2566,
-      "tech_norm": 0.013,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "DELL": {
-      "combined": 0.2553,
-      "tech_norm": 0.011,
+    "PI": {
+      "combined": 0.3009,
+      "tech_norm": 0.102,
       "sentiment_norm": 0.5,
       "ai_raw_score": null,
       "ai_reason": null
     },
     "MPC": {
+      "combined": 0.2935,
+      "tech_norm": 0.087,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "HPE": {
+      "combined": 0.2909,
+      "tech_norm": 0.082,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "TWLO": {
+      "combined": 0.2904,
+      "tech_norm": 0.081,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "PENG": {
+      "combined": 0.2893,
+      "tech_norm": 0.079,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "ACN": {
+      "combined": 0.2711,
+      "tech_norm": 0.042,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "INSP": {
+      "combined": 0.2673,
+      "tech_norm": 0.035,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "HZO": {
+      "combined": 0.2533,
+      "tech_norm": 0.007,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "VLO": {
+      "combined": 0.2531,
+      "tech_norm": 0.006,
+      "sentiment_norm": 0.5,
+      "ai_raw_score": null,
+      "ai_reason": null
+    },
+    "NTAP": {
       "combined": 0.25,
       "tech_norm": 0.0,
       "sentiment_norm": 0.5,

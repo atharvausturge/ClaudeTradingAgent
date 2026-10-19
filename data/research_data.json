@@ -1,43 +1,76 @@
 {
-  "generated_at": "2026-10-11T21:56:09.092190-04:00",
+  "generated_at": "2026-10-18T20:37:41.256996-04:00",
   "universe_size": 1503,
-  "stocks_passing_filter": 456,
+  "stocks_passing_filter": 487,
   "account": {
-    "portfolio_value": 100845.9,
-    "buying_power": 288038.4,
+    "portfolio_value": 95417.18,
+    "buying_power": 272837.98,
     "cash": 4724.9
   },
   "current_positions": {
     "AMAT": {
       "qty": 72.0,
       "avg_entry_price": 421.197628,
-      "current_price": 507.45,
-      "unrealized_pl": 6210.170784,
-      "unrealized_pl_pct": 20.48
+      "current_price": 415.73,
+      "unrealized_pl": -393.669216,
+      "unrealized_pl_pct": -1.3
     },
     "DD": {
       "qty": 59.0,
       "avg_entry_price": 124.12,
-      "current_price": 130.0,
-      "unrealized_pl": 346.92,
-      "unrealized_pl_pct": 4.74
+      "current_price": 130.45,
+      "unrealized_pl": 373.47,
+      "unrealized_pl_pct": 5.1
     },
     "LLY": {
       "qty": 29.0,
       "avg_entry_price": 992.169394,
-      "current_price": 1180.0,
-      "unrealized_pl": 5447.087574,
-      "unrealized_pl_pct": 18.93
+      "current_price": 1255.61,
+      "unrealized_pl": 7639.777574,
+      "unrealized_pl_pct": 26.55
     },
     "NVDA": {
       "qty": 77.0,
       "avg_entry_price": 206.91,
-      "current_price": 229.8,
-      "unrealized_pl": 1762.53,
-      "unrealized_pl_pct": 11.06
+      "current_price": 216.24,
+      "unrealized_pl": 718.41,
+      "unrealized_pl_pct": 4.51
     }
   },
   "recent_weekly_summaries": [
+    {
+      "week_of": "2026-10-12",
+      "generated_at": "2026-10-16T19:09:21Z",
+      "equity_start_approx": 100673.82,
+      "equity_end_approx": 96312.18,
+      "net_pl_dollar_approx": -4361.64,
+      "net_pl_pct_approx": -0.0433,
+      "api_available": false,
+      "api_note": "Alpaca API blocked week of Oct 12 (ENOTFOUND \u2014 4th consecutive week). End equity is Oct 15 EOD value; Oct 16 intraday unavailable. Trade plan execution unverified (plan called to close DD+LLY, buy MU; Oct 14 snapshot still showed DD+LLY open).",
+      "plan_summary": {
+        "close": [
+          "DD",
+          "LLY"
+        ],
+        "hold": [
+          "AMAT",
+          "NVDA"
+        ],
+        "buy": [
+          "MU"
+        ],
+        "rationale": "Rotating LLY (underperforming, RSI 70.3) and DD (weak, not in universe) into MU (dip buy, RSI 34.7, RS60 +54%, Micron HBM sold out 2026). AMD skipped despite #1 score due to Nov 3 earnings and +5% run. Market at all-time highs with poor breadth; maintaining defensive 3-position cap.",
+        "execution_status": "UNVERIFIED \u2014 Alpaca API blocked all week. Commit '4a931a1' claims trades executed but Oct 14 API snapshot still shows DD and LLY. Needs verification when API restored."
+      },
+      "top_candidates_scores": {
+        "AMD": 0.2338,
+        "MU": 0.2009,
+        "NVDA": 0.1101,
+        "CRWD": 0.0496,
+        "AMAT": 0.0341
+      },
+      "market_context": "S&P 500 at ~7,750 (ATH) entering Oct 2026. Poor market breadth flagged by analysts. Rising bond yields. Bank earnings week (JPM, GS, WFC, BAC, UNH Oct 13-14)."
+    },
     {
       "week_of": "2026-10-05",
       "generated_at": "2026-10-09T19:09:18Z",
@@ -80,236 +113,137 @@
   ],
   "sector_momentum": {
     "XLK": {
-      "return_60d_pct": 13.21,
-      "vs_spy_pct": 8.46
+      "return_60d_pct": 4.32,
+      "vs_spy_pct": 1.02
     },
     "XLC": {
-      "return_60d_pct": -0.24,
-      "vs_spy_pct": -4.99
+      "return_60d_pct": 3.78,
+      "vs_spy_pct": 0.49
     },
     "XLY": {
-      "return_60d_pct": -2.24,
-      "vs_spy_pct": -6.99
+      "return_60d_pct": 2.79,
+      "vs_spy_pct": -0.5
     },
     "XLP": {
-      "return_60d_pct": -2.07,
-      "vs_spy_pct": -6.81
+      "return_60d_pct": 4.15,
+      "vs_spy_pct": 0.86
     },
     "XLF": {
-      "return_60d_pct": -2.72,
-      "vs_spy_pct": -7.47
+      "return_60d_pct": -1.4,
+      "vs_spy_pct": -4.69
     },
     "XLV": {
-      "return_60d_pct": 6.03,
-      "vs_spy_pct": 1.29
+      "return_60d_pct": 8.7,
+      "vs_spy_pct": 5.41
     },
     "XLI": {
-      "return_60d_pct": -5.66,
-      "vs_spy_pct": -10.41
+      "return_60d_pct": -8.16,
+      "vs_spy_pct": -11.45
     },
     "XLE": {
-      "return_60d_pct": 12.83,
-      "vs_spy_pct": 8.08
+      "return_60d_pct": 14.46,
+      "vs_spy_pct": 11.17
     },
     "XLU": {
-      "return_60d_pct": -8.32,
-      "vs_spy_pct": -13.07
+      "return_60d_pct": -8.81,
+      "vs_spy_pct": -12.11
     },
     "XLB": {
-      "return_60d_pct": -2.18,
-      "vs_spy_pct": -6.92
+      "return_60d_pct": -0.66,
+      "vs_spy_pct": -3.95
     },
     "XLRE": {
-      "return_60d_pct": -8.39,
-      "vs_spy_pct": -13.13
+      "return_60d_pct": -8.25,
+      "vs_spy_pct": -11.54
     }
   },
   "top_candidates": {
-    "EFOR": {
+    "P": {
       "technicals": {
-        "score": 0.3593,
-        "rs_60d": 95.47,
-        "dip_5d": 3.76,
-        "rsi": 65.8,
-        "price": 37.5
+        "score": 0.373,
+        "rs_60d": 63.03,
+        "dip_5d": -20.15,
+        "rsi": 45.6,
+        "price": 124.01
       },
       "valuation": {
         "verdict": "pass",
-        "ps": 0.39,
+        "ps": 9.7,
         "sector": "Technology",
         "sector_median": 6.0,
-        "ratio": 0.06,
+        "ratio": 1.62,
+        "reason": "P/S 9.7 = 1.6x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
+        "analyst": {
+          "mean_target": 151.11,
+          "pct_vs_current": 21.85,
+          "analyst_count": 19,
+          "high_target": 215.0,
+          "low_target": 80.0
+        },
+        "earnings": {
+          "days_since": 53,
+          "surprise_pct": 20.97,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "Here's How Much $1000 Invested In Everpure 10 Years Ago Would Be Worth Today",
+          "summary": "Everpure (NYSE:P) has outperformed the market over the past 10 years by 12.81% on an annualized basis producing an average annual return of 26.48%. Currently, Everpure has a market capitalization of $52.31 billion.",
+          "published": "2026-10-15T21:15:33Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "EFOR": {
+      "technicals": {
+        "score": 0.3166,
+        "rs_60d": 82.92,
+        "dip_5d": 2.51,
+        "rsi": 64.3,
+        "price": 38.36
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 0.4,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.07,
         "reason": "P/S 0.4 = 0.1x Technology median 6.0"
       },
       "market_context": {
         "sector": "Technology",
         "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
         "analyst": {
-          "mean_target": 30.83,
-          "pct_vs_current": -17.78,
+          "mean_target": 32.67,
+          "pct_vs_current": -14.84,
           "analyst_count": 6,
           "high_target": 45.0,
           "low_target": 17.0
         },
         "earnings": {
-          "days_since": 74,
+          "days_since": 81,
           "surprise_pct": 11.42,
           "chase_risk": false
         }
       },
-      "news": [
-        {
-          "headline": "Elizabeth Warren Says Trump Made '28,000+' Trades, More Than Congress Combined: \u2018Stock Trading\u2026Should Be Illegal\u2019",
-          "summary": "Warren urged banning stock trading by senior officials, citing Trump\u2019s 28,000+ trades and investments linked to companies winning contracts.",
-          "published": "2026-10-11T03:04:58Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "BMO Capital Maintains Market Perform on Everforth, Raises Price Target to $41",
-          "summary": "",
-          "published": "2026-10-09T18:06:18Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Truist Securities Maintains Buy on Everforth, Raises Price Target to $45",
-          "summary": "",
-          "published": "2026-10-09T15:36:06Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "RNG": {
-      "technicals": {
-        "score": 0.3468,
-        "rs_60d": 87.1,
-        "dip_5d": 0.27,
-        "rsi": 62.2,
-        "price": 79.27
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 2.56,
-        "sector": "Technology",
-        "sector_median": 6.0,
-        "ratio": 0.43,
-        "reason": "P/S 2.6 = 0.4x Technology median 6.0"
-      },
-      "market_context": {
-        "sector": "Technology",
-        "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
-        "analyst": {
-          "mean_target": 57.64,
-          "pct_vs_current": -27.28,
-          "analyst_count": 14,
-          "high_target": 85.0,
-          "low_target": 38.0
-        },
-        "earnings": {
-          "days_since": 80,
-          "surprise_pct": 3.99,
-          "chase_risk": false
-        }
-      },
       "news": [],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "SMCI": {
-      "technicals": {
-        "score": 0.292,
-        "rs_60d": 68.35,
-        "dip_5d": -3.09,
-        "rsi": 53.8,
-        "price": 41.85
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 0.7,
-        "sector": "Technology",
-        "sector_median": 6.0,
-        "ratio": 0.12,
-        "reason": "P/S 0.7 = 0.1x Technology median 6.0"
-      },
-      "market_context": {
-        "sector": "Technology",
-        "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
-        "analyst": {
-          "mean_target": 42.27,
-          "pct_vs_current": 1.0,
-          "analyst_count": 15,
-          "high_target": 60.0,
-          "low_target": 15.0
-        },
-        "earnings": {
-          "days_since": 61,
-          "surprise_pct": 77.55,
-          "chase_risk": false
-        }
-      },
-      "news": [
-        {
-          "headline": "Super Micro Contractor Pleads Guilty in $2.5 Billion Nvidia AI Chip Smuggling Case",
-          "summary": "A Super Micro contractor pleaded guilty to helping divert Nvidia-powered AI servers worth $2.5 billion to China illegally.",
-          "published": "2026-10-10T08:13:47Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Citigroup Maintains Neutral on Super Micro Computer, Raises Price Target to $45",
-          "summary": "",
-          "published": "2026-10-08T21:26:37Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "What Is Going on With Super Micro Stock on Thursday?",
-          "summary": "Super Micro Computer stock pulls back 3% as investors take profits and balance Jim Cramer&#39;s caution against server demand from Lambda&#39;s $4B funding.",
-          "published": "2026-10-08T17:19:05Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Applied Digital, Webull Corp., Super Micro Computer, Micron and Caterpillar: Why These 5 Stocks Are on Investors' Radars Today",
-          "summary": "Major U.S. indices closed lower, with the Dow Jones Industrial Average falling 0.66% to 51,179.87.",
-          "published": "2026-10-08T01:11:32Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "10 Information Technology Stocks Whale Activity In Today\u2019s Session",
-          "summary": "This whale alert can help traders discover the next big trading opportunities.\nWhales are entities with large sums of money and we track their transactions here at Benzinga on our options activity scanner.\nTraders will",
-          "published": "2026-10-07T17:35:11Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Why Is Super Micro Computer Stock Trading Higher Today?",
-          "summary": "Super Micro stock rises as Vera Rubin server deployments and a massive $60 billion order backlog bolster its long-term AI hardware outlook.",
-          "published": "2026-10-07T17:18:09Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "If You Invested $100 In Super Micro Computer Stock 5 Years Ago, You Would Have This Much Today",
-          "summary": "Super Micro Computer (NASDAQ:SMCI) has outperformed the market over the past 5 years by 52.58% on an annualized basis producing an average annual return of 64.89%. Currently, Super Micro Computer has a market",
-          "published": "2026-10-07T14:00:27Z",
-          "source": "benzinga"
-        }
-      ],
       "reddit": {
         "mention_count": 0,
         "bull_pct": null,
@@ -321,144 +255,43 @@
     },
     "CVI": {
       "technicals": {
-        "score": 0.2303,
-        "rs_60d": 60.41,
-        "dip_5d": 1.9,
-        "rsi": 73.6,
-        "price": 58.02
+        "score": 0.2957,
+        "rs_60d": 80.33,
+        "dip_5d": 4.26,
+        "rsi": 73.3,
+        "price": 61.42
       },
       "valuation": {
         "verdict": "pass",
-        "ps": 0.69,
+        "ps": 0.73,
         "sector": "Energy",
         "sector_median": 1.2,
-        "ratio": 0.57,
+        "ratio": 0.61,
         "reason": "P/S 0.7 = 0.6x Energy median 1.2"
       },
       "market_context": {
         "sector": "Energy",
         "sector_etf": "XLE",
-        "sector_vs_spy_60d_pct": 8.08,
-        "sector_return_60d_pct": 12.83,
+        "sector_vs_spy_60d_pct": 11.17,
+        "sector_return_60d_pct": 14.46,
         "analyst": {
-          "mean_target": 45.0,
-          "pct_vs_current": -22.44,
+          "mean_target": 48.0,
+          "pct_vs_current": -21.85,
           "analyst_count": 5,
           "high_target": 53.0,
-          "low_target": 32.0
+          "low_target": 38.0
         },
         "earnings": {
-          "days_since": 74,
+          "days_since": 81,
           "surprise_pct": 216.28,
           "chase_risk": false
         }
       },
       "news": [
         {
-          "headline": "Goldman Sachs Maintains Sell on CVR Energy, Raises Price Target to $50",
-          "summary": "",
-          "published": "2026-10-09T17:54:49Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Mizuho Maintains Underperform on CVR Energy, Raises Price Target to $52",
-          "summary": "",
-          "published": "2026-10-08T11:21:02Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "AZTA": {
-      "technicals": {
-        "score": 0.2253,
-        "rs_60d": 38.73,
-        "dip_5d": -11.72,
-        "rsi": 58.4,
-        "price": 37.72
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 2.69,
-        "sector": "Healthcare",
-        "sector_median": 1.8,
-        "ratio": 1.5,
-        "reason": "P/S 2.7 = 1.5x Healthcare median 1.8"
-      },
-      "market_context": {
-        "sector": "Healthcare",
-        "sector_etf": "XLV",
-        "sector_vs_spy_60d_pct": 1.29,
-        "sector_return_60d_pct": 6.03,
-        "analyst": {
-          "mean_target": 37.0,
-          "pct_vs_current": -1.91,
-          "analyst_count": 4,
-          "high_target": 42.0,
-          "low_target": 33.0
-        },
-        "earnings": {
-          "days_since": 68,
-          "surprise_pct": 60.0,
-          "chase_risk": false
-        }
-      },
-      "news": [],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "SMTC": {
-      "technicals": {
-        "score": 0.1978,
-        "rs_60d": 45.14,
-        "dip_5d": -2.87,
-        "rsi": 59.0,
-        "price": 187.3
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 14.89,
-        "sector": "Technology",
-        "sector_median": 6.0,
-        "ratio": 2.48,
-        "reason": "P/S 14.9 = 2.5x Technology median 6.0"
-      },
-      "market_context": {
-        "sector": "Technology",
-        "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
-        "analyst": {
-          "mean_target": 214.64,
-          "pct_vs_current": 14.6,
-          "analyst_count": 14,
-          "high_target": 300.0,
-          "low_target": 155.0
-        },
-        "earnings": {
-          "days_since": 47,
-          "surprise_pct": 15.63,
-          "chase_risk": false
-        }
-      },
-      "news": [
-        {
-          "headline": "Here\u2019s How Much You Would Have Made Owning Semtech Stock In The Last 20 Years",
-          "summary": "Semtech (NASDAQ:SMTC) has outperformed the market over the past 20 years by 5.05% on an annualized basis producing an average annual return of 14.15%. Currently, Semtech has a market capitalization of $17.50 billion.",
-          "published": "2026-10-09T23:15:15Z",
+          "headline": "Top 3 Energy Stocks That May Fall Off A Cliff In October",
+          "summary": "CVR Energy, HF Sinclair and Phillips 66 show overbought momentum signals, with RSI readings of 81.2, 80.4 and 77.2.",
+          "published": "2026-10-14T12:39:08Z",
           "source": "benzinga"
         }
       ],
@@ -473,35 +306,149 @@
     },
     "PAYC": {
       "technicals": {
-        "score": 0.1918,
-        "rs_60d": 52.22,
-        "dip_5d": 2.85,
-        "rsi": 61.4,
-        "price": 232.22
+        "score": 0.2369,
+        "rs_60d": 69.84,
+        "dip_5d": 7.08,
+        "rsi": 73.7,
+        "price": 251.64
       },
       "valuation": {
         "verdict": "pass",
-        "ps": 4.89,
+        "ps": 5.3,
         "sector": "Technology",
         "sector_median": 6.0,
-        "ratio": 0.81,
-        "reason": "P/S 4.9 = 0.8x Technology median 6.0"
+        "ratio": 0.88,
+        "reason": "P/S 5.3 = 0.9x Technology median 6.0"
       },
       "market_context": {
         "sector": "Technology",
         "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
         "analyst": {
-          "mean_target": 220.24,
-          "pct_vs_current": -5.16,
+          "mean_target": 222.59,
+          "pct_vs_current": -11.54,
           "analyst_count": 17,
           "high_target": 286.0,
           "low_target": 160.0
         },
         "earnings": {
-          "days_since": 67,
+          "days_since": 74,
           "surprise_pct": 16.76,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "Watching Paycom Software; Hearing Investor Business Daily SwingTrader Buys Stock",
+          "summary": "",
+          "published": "2026-10-15T18:59:01Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "OKTA": {
+      "technicals": {
+        "score": 0.2329,
+        "rs_60d": 31.91,
+        "dip_5d": -17.54,
+        "rsi": 41.5,
+        "price": 187.26
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 10.65,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 1.78,
+        "reason": "P/S 10.7 = 1.8x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
+        "analyst": {
+          "mean_target": 212.83,
+          "pct_vs_current": 13.66,
+          "analyst_count": 43,
+          "high_target": 250.0,
+          "low_target": 127.0
+        },
+        "earnings": {
+          "days_since": 53,
+          "surprise_pct": 8.93,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "Nasdaq 100 Slides As Micron, SanDisk, CoreWeave Sink: Stock Market Today",
+          "summary": "The Nasdaq 100 fell 1.5% at midday Friday as memory chips and AI-debt names sold off, while Fed Chair Warsh declined to rule out an October hike after hot CPI and PPI. WTI held near $96, the 10-year yield hovered around 5.1%, gold bounced toward $4,200 and bitcoin traded near $81,300.",
+          "published": "2026-10-16T16:33:06Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Citigroup Maintains Neutral on Okta, Raises Price Target to $215",
+          "summary": "",
+          "published": "2026-10-15T18:51:18Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "AI Breaches Cost $6 Million: 3 Security Markets Investors Should Watch",
+          "summary": "Higher breach costs give companies a reason to improve security. For investors, however, the useful question is which improvements customers will pay for and which suppliers can deliver them profitably. Answering that",
+          "published": "2026-10-14T12:57:33Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "DT": {
+      "technicals": {
+        "score": 0.2122,
+        "rs_60d": 43.54,
+        "dip_5d": -6.34,
+        "rsi": 57.6,
+        "price": 61.11
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 8.46,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 1.41,
+        "reason": "P/S 8.5 = 1.4x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
+        "analyst": {
+          "mean_target": 62.53,
+          "pct_vs_current": 2.32,
+          "analyst_count": 34,
+          "high_target": 75.0,
+          "low_target": 42.0
+        },
+        "earnings": {
+          "days_since": 74,
+          "surprise_pct": 8.16,
           "chase_risk": false
         }
       },
@@ -515,12 +462,612 @@
         "top_posts": []
       }
     },
+    "ANF": {
+      "technicals": {
+        "score": 0.2101,
+        "rs_60d": 60.08,
+        "dip_5d": 5.04,
+        "rsi": 69.6,
+        "price": 153.26
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 1.22,
+        "sector": "Consumer Cyclical",
+        "sector_median": 1.5,
+        "ratio": 0.81,
+        "reason": "P/S 1.2 = 0.8x Consumer Cyclical median 1.5"
+      },
+      "market_context": {
+        "sector": "Consumer Cyclical",
+        "sector_etf": "XLY",
+        "sector_vs_spy_60d_pct": -0.5,
+        "sector_return_60d_pct": 2.79,
+        "analyst": {
+          "mean_target": 163.55,
+          "pct_vs_current": 6.71,
+          "analyst_count": 11,
+          "high_target": 185.0,
+          "low_target": 134.0
+        },
+        "earnings": {
+          "days_since": 53,
+          "surprise_pct": 111.93,
+          "chase_risk": false
+        }
+      },
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "HAE": {
+      "technicals": {
+        "score": 0.206,
+        "rs_60d": 46.85,
+        "dip_5d": -3.1,
+        "rsi": 66.3,
+        "price": 118.28
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 3.98,
+        "sector": "Healthcare",
+        "sector_median": 1.8,
+        "ratio": 2.21,
+        "reason": "P/S 4.0 = 2.2x Healthcare median 1.8"
+      },
+      "market_context": {
+        "sector": "Healthcare",
+        "sector_etf": "XLV",
+        "sector_vs_spy_60d_pct": 5.41,
+        "sector_return_60d_pct": 8.7,
+        "analyst": {
+          "mean_target": 124.5,
+          "pct_vs_current": 5.26,
+          "analyst_count": 10,
+          "high_target": 142.0,
+          "low_target": 86.0
+        },
+        "earnings": {
+          "days_since": 73,
+          "surprise_pct": 5.85,
+          "chase_risk": false
+        }
+      },
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "FIVN": {
+      "technicals": {
+        "score": 0.2023,
+        "rs_60d": 36.11,
+        "dip_5d": -9.64,
+        "rsi": 44.2,
+        "price": 32.23
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 2.0,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.33,
+        "reason": "P/S 2.0 = 0.3x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
+        "analyst": {
+          "mean_target": 36.7,
+          "pct_vs_current": 13.87,
+          "analyst_count": 20,
+          "high_target": 50.0,
+          "low_target": 24.0
+        },
+        "earnings": {
+          "days_since": 73,
+          "surprise_pct": 2.58,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "UBS Maintains Buy on Five9, Raises Price Target to $48",
+          "summary": "",
+          "published": "2026-10-16T17:41:57Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "ZBRA": {
+      "technicals": {
+        "score": 0.1843,
+        "rs_60d": 38.68,
+        "dip_5d": -4.92,
+        "rsi": 48.8,
+        "price": 369.01
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 2.99,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.5,
+        "reason": "P/S 3.0 = 0.5x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
+        "analyst": {
+          "mean_target": 414.85,
+          "pct_vs_current": 12.42,
+          "analyst_count": 15,
+          "high_target": 460.0,
+          "low_target": 350.0
+        },
+        "earnings": {
+          "days_since": 75,
+          "surprise_pct": 45.1,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "$1000 Invested In Zebra Technologies 10 Years Ago Would Be Worth This Much Today",
+          "summary": "Zebra Technologies (NASDAQ:ZBRA) has outperformed the market over the past 10 years by 5.48% on an annualized basis producing an average annual return of 19.15%. Currently, Zebra Technologies has a market capitalization",
+          "published": "2026-10-14T20:45:24Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "PI": {
+      "technicals": {
+        "score": 0.1831,
+        "rs_60d": 34.2,
+        "dip_5d": -7.72,
+        "rsi": 45.4,
+        "price": 175.37
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 14.42,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 2.4,
+        "reason": "P/S 14.4 = 2.4x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
+        "analyst": {
+          "mean_target": 183.56,
+          "pct_vs_current": 4.67,
+          "analyst_count": 9,
+          "high_target": 220.0,
+          "low_target": 144.0
+        },
+        "earnings": {
+          "days_since": 81,
+          "surprise_pct": 8.11,
+          "chase_risk": false
+        }
+      },
+      "news": [],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "MPC": {
+      "technicals": {
+        "score": 0.18,
+        "rs_60d": 51.3,
+        "dip_5d": 4.2,
+        "rsi": 74.7,
+        "price": 478.07
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 0.87,
+        "sector": "Energy",
+        "sector_median": 1.2,
+        "ratio": 0.73,
+        "reason": "P/S 0.9 = 0.7x Energy median 1.2"
+      },
+      "market_context": {
+        "sector": "Energy",
+        "sector_etf": "XLE",
+        "sector_vs_spy_60d_pct": 11.17,
+        "sector_return_60d_pct": 14.46,
+        "analyst": {
+          "mean_target": 442.33,
+          "pct_vs_current": -7.48,
+          "analyst_count": 18,
+          "high_target": 560.0,
+          "low_target": 236.0
+        },
+        "earnings": {
+          "days_since": 75,
+          "surprise_pct": 27.08,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "Trump\u2019s Russia Tariff Waiver Helps Apple, Eliminates Tariff Advantage for CF and CVR Partners",
+          "summary": "Trump\u2019s waiver of steep Russia\u2011related tariffs gives Apple temporary relief while denying fertilizer makers like CF Industries and CVR Partners a potential shield. The move reshapes outlooks across tech, energy, refining, and agriculture as Washington\u2019s sanctions strategy shifts again.",
+          "published": "2026-10-18T16:55:09Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Wells Fargo Maintains Overweight on Marathon Petroleum, Raises Price Target to $560",
+          "summary": "",
+          "published": "2026-10-14T14:33:59Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "HPE": {
+      "technicals": {
+        "score": 0.1789,
+        "rs_60d": 12.31,
+        "dip_5d": -21.61,
+        "rsi": 37.4,
+        "price": 55.13
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 1.75,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.29,
+        "reason": "P/S 1.7 = 0.3x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
+        "analyst": {
+          "mean_target": 71.74,
+          "pct_vs_current": 30.13,
+          "analyst_count": 21,
+          "high_target": 92.0,
+          "low_target": 52.59
+        },
+        "earnings": {
+          "days_since": 46,
+          "surprise_pct": null,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "Barclays Downgrades Hewlett Packard to Equal-Weight, Lowers Price Target to $77",
+          "summary": "",
+          "published": "2026-10-14T13:14:17Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "State Street, Fastenal And Other Big Stocks Moving Lower In Wednesday\u2019s Pre-Market Session",
+          "summary": "U.S. futures were mixed. State Street fell 6.4% after missing sales estimates, while Biomea Fusion, Skydance and other stocks slid premarket.",
+          "published": "2026-10-14T12:02:07Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Why Enovix Shares Are Trading Higher By Around 7%; Here Are 20 Stocks Moving Premarket",
+          "summary": "Enovix jumps 6.8% after securing a 100,000-unit battery order from a multinational drone maker, with deliveries planned for H1 2027.",
+          "published": "2026-10-14T08:51:49Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "TWLO": {
+      "technicals": {
+        "score": 0.1787,
+        "rs_60d": 24.34,
+        "dip_5d": -13.55,
+        "rsi": 39.9,
+        "price": 244.37
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 6.73,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 1.12,
+        "reason": "P/S 6.7 = 1.1x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
+        "analyst": {
+          "mean_target": 270.64,
+          "pct_vs_current": 10.75,
+          "analyst_count": 29,
+          "high_target": 335.0,
+          "low_target": 165.0
+        },
+        "earnings": {
+          "days_since": 73,
+          "surprise_pct": 11.06,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "Nasdaq 100 Slides As Micron, SanDisk, CoreWeave Sink: Stock Market Today",
+          "summary": "The Nasdaq 100 fell 1.5% at midday Friday as memory chips and AI-debt names sold off, while Fed Chair Warsh declined to rule out an October hike after hot CPI and PPI. WTI held near $96, the 10-year yield hovered around 5.1%, gold bounced toward $4,200 and bitcoin traded near $81,300.",
+          "published": "2026-10-16T16:33:06Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "SpaceX To Rally Around 85%? Here Are 10 Top Analyst Forecasts For Friday",
+          "summary": "Wall Street analysts raised targets for MSTR, FOXA, NRIX, ZETA and TWLO, while cutting targets for CAMT and DVN.",
+          "published": "2026-10-16T12:25:12Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "BTIG Maintains Buy on Twilio, Raises Price Target to $315",
+          "summary": "",
+          "published": "2026-10-16T10:05:29Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "B of A Securities Maintains Buy on Twilio, Raises Price Target to $320",
+          "summary": "",
+          "published": "2026-10-14T18:13:43Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "PENG": {
+      "technicals": {
+        "score": 0.1782,
+        "rs_60d": 2.74,
+        "dip_5d": -27.86,
+        "rsi": 44.8,
+        "price": 57.1
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 1.69,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.28,
+        "reason": "P/S 1.7 = 0.3x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
+        "analyst": {
+          "mean_target": 85.62,
+          "pct_vs_current": 49.96,
+          "analyst_count": 8,
+          "high_target": 100.0,
+          "low_target": 60.0
+        },
+        "earnings": {
+          "days_since": 12,
+          "surprise_pct": 29.53,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "Axe Compute Collaborates With Penguin Solutions To Integrate Its Services Into Axe's Partner Network",
+          "summary": "",
+          "published": "2026-10-14T12:35:18Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Jim Cramer Skips IREN: \u2018The Only One That I Trust\u2019 Is a Different Neocloud",
+          "summary": "Cramer advised holding ESI, buying MTZ and PENG, favoring WM over WCN and CRWV over IREN, rejecting STWD and remaining skeptical of SAIL.",
+          "published": "2026-10-14T12:19:43Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "ACN": {
+      "technicals": {
+        "score": 0.1705,
+        "rs_60d": 52.96,
+        "dip_5d": 6.89,
+        "rsi": 72.2,
+        "price": 229.68
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 1.89,
+        "sector": "Technology",
+        "sector_median": 6.0,
+        "ratio": 0.32,
+        "reason": "P/S 1.9 = 0.3x Technology median 6.0"
+      },
+      "market_context": {
+        "sector": "Technology",
+        "sector_etf": "XLK",
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
+        "analyst": {
+          "mean_target": 225.32,
+          "pct_vs_current": -1.9,
+          "analyst_count": 24,
+          "high_target": 278.0,
+          "low_target": 163.0
+        },
+        "earnings": {
+          "days_since": 17,
+          "surprise_pct": 3.36,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "Accenture Analysts Raise Price Targets as AI Fuels Multi-Year Growth Plan",
+          "summary": "Accenture analysts see AI creating new service demand, although the company&#39;s growth outlook depends on execution and sustained expansion in its core business.",
+          "published": "2026-10-16T14:13:16Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "TD Cowen Maintains Hold on Accenture, Raises Price Target to $201",
+          "summary": "",
+          "published": "2026-10-15T13:35:50Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Susquehanna Maintains Neutral on Accenture, Raises Price Target to $230",
+          "summary": "",
+          "published": "2026-10-15T13:03:36Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Accenture Targets Operating Margin Expansion Of 10-30bps Over FY27-29; Projects Mid-Single Digit Revenue Growth In FY27 And FY28, With Mid To High Single Digit Growth In FY29; Targets $5.5B Of Share Repurchases In FY27",
+          "summary": "",
+          "published": "2026-10-14T10:53:38Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "INSP": {
+      "technicals": {
+        "score": 0.1689,
+        "rs_60d": 36.55,
+        "dip_5d": -3.78,
+        "rsi": 50.4,
+        "price": 68.79
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 2.21,
+        "sector": "Healthcare",
+        "sector_median": 1.8,
+        "ratio": 1.23,
+        "reason": "P/S 2.2 = 1.2x Healthcare median 1.8"
+      },
+      "market_context": {
+        "sector": "Healthcare",
+        "sector_etf": "XLV",
+        "sector_vs_spy_60d_pct": 5.41,
+        "sector_return_60d_pct": 8.7,
+        "analyst": {
+          "mean_target": 68.0,
+          "pct_vs_current": -1.15,
+          "analyst_count": 16,
+          "high_target": 97.0,
+          "low_target": 40.0
+        },
+        "earnings": {
+          "days_since": 76,
+          "surprise_pct": 157.1,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "Truist Securities Maintains Hold on Inspire Medical Systems, Raises Price Target to $78",
+          "summary": "",
+          "published": "2026-10-14T17:31:07Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
     "HZO": {
       "technicals": {
-        "score": 0.1876,
-        "rs_60d": 46.96,
-        "dip_5d": 0.04,
-        "rsi": 70.4,
+        "score": 0.163,
+        "rs_60d": 40.86,
+        "dip_5d": 0.08,
+        "rsi": 68.6,
         "price": 52.37
       },
       "valuation": {
@@ -534,8 +1081,8 @@
       "market_context": {
         "sector": "Consumer Cyclical",
         "sector_etf": "XLY",
-        "sector_vs_spy_60d_pct": -6.99,
-        "sector_return_60d_pct": -2.24,
+        "sector_vs_spy_60d_pct": -0.5,
+        "sector_return_60d_pct": 2.79,
         "analyst": {
           "mean_target": 49.4,
           "pct_vs_current": -5.67,
@@ -544,7 +1091,7 @@
           "low_target": 35.0
         },
         "earnings": {
-          "days_since": 80,
+          "days_since": 87,
           "surprise_pct": -2.65,
           "chase_risk": false
         }
@@ -559,674 +1106,108 @@
         "top_posts": []
       }
     },
-    "HPE": {
+    "VLO": {
       "technicals": {
-        "score": 0.1775,
-        "rs_60d": 55.58,
-        "dip_5d": 7.46,
-        "rsi": 71.4,
-        "price": 73.46
+        "score": 0.1629,
+        "rs_60d": 43.72,
+        "dip_5d": 2.0,
+        "rsi": 66.4,
+        "price": 444.71
       },
       "valuation": {
         "verdict": "pass",
-        "ps": 2.33,
+        "ps": 0.97,
+        "sector": "Energy",
+        "sector_median": 1.2,
+        "ratio": 0.81,
+        "reason": "P/S 1.0 = 0.8x Energy median 1.2"
+      },
+      "market_context": {
+        "sector": "Energy",
+        "sector_etf": "XLE",
+        "sector_vs_spy_60d_pct": 11.17,
+        "sector_return_60d_pct": 14.46,
+        "analyst": {
+          "mean_target": 406.58,
+          "pct_vs_current": -8.57,
+          "analyst_count": 19,
+          "high_target": 496.0,
+          "low_target": 238.0
+        },
+        "earnings": {
+          "days_since": 80,
+          "surprise_pct": 23.84,
+          "chase_risk": false
+        }
+      },
+      "news": [
+        {
+          "headline": "Trump\u2019s Russia Tariff Waiver Helps Apple, Eliminates Tariff Advantage for CF and CVR Partners",
+          "summary": "Trump\u2019s waiver of steep Russia\u2011related tariffs gives Apple temporary relief while denying fertilizer makers like CF Industries and CVR Partners a potential shield. The move reshapes outlooks across tech, energy, refining, and agriculture as Washington\u2019s sanctions strategy shifts again.",
+          "published": "2026-10-18T16:55:09Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Jim Cramer: Reddit Is 'Inexpensive' While SiTime Is \u2018Expensive\u2019",
+          "summary": "Jim Cramer favors Reddit, Chevron, EPD and Corning, but calls SiTime expensive and Valero a risky double-or-nothing trade.",
+          "published": "2026-10-16T11:37:21Z",
+          "source": "benzinga"
+        },
+        {
+          "headline": "Wells Fargo Maintains Overweight on Valero Energy, Raises Price Target to $485",
+          "summary": "",
+          "published": "2026-10-14T14:36:23Z",
+          "source": "benzinga"
+        }
+      ],
+      "reddit": {
+        "mention_count": 0,
+        "bull_pct": null,
+        "bear_pct": null,
+        "overall": "no_data",
+        "subreddit_breakdown": {},
+        "top_posts": []
+      }
+    },
+    "NTAP": {
+      "technicals": {
+        "score": 0.1616,
+        "rs_60d": 18.21,
+        "dip_5d": -14.79,
+        "rsi": 43.6,
+        "price": 203.8
+      },
+      "valuation": {
+        "verdict": "pass",
+        "ps": 5.42,
         "sector": "Technology",
         "sector_median": 6.0,
-        "ratio": 0.39,
-        "reason": "P/S 2.3 = 0.4x Technology median 6.0"
+        "ratio": 0.9,
+        "reason": "P/S 5.4 = 0.9x Technology median 6.0"
       },
       "market_context": {
         "sector": "Technology",
         "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
+        "sector_vs_spy_60d_pct": 1.02,
+        "sector_return_60d_pct": 4.32,
         "analyst": {
-          "mean_target": 72.03,
-          "pct_vs_current": -1.95,
-          "analyst_count": 21,
-          "high_target": 92.0,
-          "low_target": 52.59
+          "mean_target": 211.69,
+          "pct_vs_current": 3.87,
+          "analyst_count": 16,
+          "high_target": 300.0,
+          "low_target": 170.0
         },
         "earnings": {
-          "days_since": 39,
+          "days_since": 46,
           "surprise_pct": null,
           "chase_risk": false
         }
       },
       "news": [
         {
-          "headline": "CNBC Halftime Report Final Trades: UnitedHealth Group, Arista Networks, Hewlett Packard Enterprise, Wells Fargo & Company",
+          "headline": "Barclays Downgrades NetApp to Equal-Weight, Maintains Price Target to $219",
           "summary": "",
-          "published": "2026-10-09T17:00:58Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "What's Going On With Hewlett Packard Enterprise Stock Thursday?",
-          "summary": "Hewlett Packard Enterprise (HPE) stock dropped 2% premarket after a 52-week high as overbought RSI levels sparked profit-taking.",
-          "published": "2026-10-08T12:06:18Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Reported Earlier, HPE Liquid-Cooled Cray XD2000 To Power Mizuho Securities' Expanding Global Strategy And Financial Simulations",
-          "summary": "",
-          "published": "2026-10-08T05:56:01Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Hewlett Packard Enterprise Stock Hits 52-Week Highs - Here's Why",
-          "summary": "Hewlett Packard Enterprise stock gains nearly 4% to reach a new 52-week high as expanding AMD-powered server launches reinforce its position in enterprise AI infrastructure.",
-          "published": "2026-10-07T19:15:41Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Stock Market Today: S&P 500, Russell 2000 Fall as 30-Year Yield Hits 5.7%",
-          "summary": "Stocks fell and small caps slumped Wednesday as the 30-year Treasury yield hit 5.7%, a 24-year high, with Fed minutes and bond auctions ahead.",
-          "published": "2026-10-07T16:53:37Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "HPE Announces Four ProLiant Gen13 Servers With AMD's 6th Gen EPYC Processors, First Available Later In 2026",
-          "summary": "",
-          "published": "2026-10-07T13:02:27Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "ANF": {
-      "technicals": {
-        "score": 0.1748,
-        "rs_60d": 44.96,
-        "dip_5d": 0.83,
-        "rsi": 60.2,
-        "price": 142.58
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 1.13,
-        "sector": "Consumer Cyclical",
-        "sector_median": 1.5,
-        "ratio": 0.76,
-        "reason": "P/S 1.1 = 0.8x Consumer Cyclical median 1.5"
-      },
-      "market_context": {
-        "sector": "Consumer Cyclical",
-        "sector_etf": "XLY",
-        "sector_vs_spy_60d_pct": -6.99,
-        "sector_return_60d_pct": -2.24,
-        "analyst": {
-          "mean_target": 163.55,
-          "pct_vs_current": 14.7,
-          "analyst_count": 11,
-          "high_target": 185.0,
-          "low_target": 134.0
-        },
-        "earnings": {
-          "days_since": 46,
-          "surprise_pct": 111.93,
-          "chase_risk": false
-        }
-      },
-      "news": [
-        {
-          "headline": "BTIG Reiterates Buy on Abercrombie & Fitch, Maintains $175 Price Target",
-          "summary": "",
-          "published": "2026-10-07T10:40:22Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "TWLO": {
-      "technicals": {
-        "score": 0.1638,
-        "rs_60d": 35.24,
-        "dip_5d": -3.8,
-        "rsi": 59.3,
-        "price": 289.47
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 7.98,
-        "sector": "Technology",
-        "sector_median": 6.0,
-        "ratio": 1.33,
-        "reason": "P/S 8.0 = 1.3x Technology median 6.0"
-      },
-      "market_context": {
-        "sector": "Technology",
-        "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
-        "analyst": {
-          "mean_target": 265.71,
-          "pct_vs_current": -8.21,
-          "analyst_count": 28,
-          "high_target": 335.0,
-          "low_target": 165.0
-        },
-        "earnings": {
-          "days_since": 66,
-          "surprise_pct": 11.06,
-          "chase_risk": false
-        }
-      },
-      "news": [
-        {
-          "headline": "JP Morgan Maintains Overweight on Twilio, Raises Price Target to $335",
-          "summary": "",
-          "published": "2026-10-08T20:27:31Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "COHU": {
-      "technicals": {
-        "score": 0.1589,
-        "rs_60d": 28.46,
-        "dip_5d": -7.51,
-        "rsi": 59.8,
-        "price": 68.19
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 6.18,
-        "sector": "Technology",
-        "sector_median": 6.0,
-        "ratio": 1.03,
-        "reason": "P/S 6.2 = 1.0x Technology median 6.0"
-      },
-      "market_context": {
-        "sector": "Technology",
-        "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
-        "analyst": {
-          "mean_target": 70.88,
-          "pct_vs_current": 3.94,
-          "analyst_count": 8,
-          "high_target": 80.0,
-          "low_target": 65.0
-        },
-        "earnings": {
-          "days_since": 73,
-          "surprise_pct": 87.39,
-          "chase_risk": false
-        }
-      },
-      "news": [],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "SWKS": {
-      "technicals": {
-        "score": 0.1496,
-        "rs_60d": 23.9,
-        "dip_5d": -9.01,
-        "rsi": 41.3,
-        "price": 76.35
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 4.47,
-        "sector": "Technology",
-        "sector_median": 6.0,
-        "ratio": 0.75,
-        "reason": "P/S 4.5 = 0.7x Technology median 6.0"
-      },
-      "market_context": {
-        "sector": "Technology",
-        "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
-        "analyst": {
-          "mean_target": 75.65,
-          "pct_vs_current": -0.92,
-          "analyst_count": 17,
-          "high_target": 107.0,
-          "low_target": 61.0
-        },
-        "earnings": {
-          "days_since": 75,
-          "surprise_pct": 4.79,
-          "chase_risk": false
-        }
-      },
-      "news": [
-        {
-          "headline": "Mizuho Maintains Underperform on Skyworks Solutions, Raises Price Target to $61",
-          "summary": "",
-          "published": "2026-10-09T18:03:36Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Skyworks Solutions Form 13G Shows Abigail P. Johnson Reports 12.6% Stake In Co. As Of Sept. 30",
-          "summary": "",
-          "published": "2026-10-07T15:53:48Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "FORM": {
-      "technicals": {
-        "score": 0.1439,
-        "rs_60d": 27.55,
-        "dip_5d": -5.62,
-        "rsi": 60.4,
-        "price": 139.67
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 12.09,
-        "sector": "Technology",
-        "sector_median": 6.0,
-        "ratio": 2.02,
-        "reason": "P/S 12.1 = 2.0x Technology median 6.0"
-      },
-      "market_context": {
-        "sector": "Technology",
-        "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
-        "analyst": {
-          "mean_target": 153.89,
-          "pct_vs_current": 10.18,
-          "analyst_count": 9,
-          "high_target": 200.0,
-          "low_target": 100.0
-        },
-        "earnings": {
-          "days_since": 74,
-          "surprise_pct": 34.43,
-          "chase_risk": false
-        }
-      },
-      "news": [],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "ZBRA": {
-      "technicals": {
-        "score": 0.1418,
-        "rs_60d": 40.05,
-        "dip_5d": 3.07,
-        "rsi": 67.6,
-        "price": 387.18
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 3.13,
-        "sector": "Technology",
-        "sector_median": 6.0,
-        "ratio": 0.52,
-        "reason": "P/S 3.1 = 0.5x Technology median 6.0"
-      },
-      "market_context": {
-        "sector": "Technology",
-        "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
-        "analyst": {
-          "mean_target": 413.85,
-          "pct_vs_current": 6.89,
-          "analyst_count": 15,
-          "high_target": 455.0,
-          "low_target": 350.0
-        },
-        "earnings": {
-          "days_since": 68,
-          "surprise_pct": 45.1,
-          "chase_risk": false
-        }
-      },
-      "news": [],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "INSP": {
-      "technicals": {
-        "score": 0.1414,
-        "rs_60d": 31.4,
-        "dip_5d": -2.63,
-        "rsi": 51.5,
-        "price": 68.89
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 2.22,
-        "sector": "Healthcare",
-        "sector_median": 1.8,
-        "ratio": 1.23,
-        "reason": "P/S 2.2 = 1.2x Healthcare median 1.8"
-      },
-      "market_context": {
-        "sector": "Healthcare",
-        "sector_etf": "XLV",
-        "sector_vs_spy_60d_pct": 1.29,
-        "sector_return_60d_pct": 6.03,
-        "analyst": {
-          "mean_target": 65.5,
-          "pct_vs_current": -4.92,
-          "analyst_count": 16,
-          "high_target": 97.0,
-          "low_target": 40.0
-        },
-        "earnings": {
-          "days_since": 69,
-          "surprise_pct": 157.1,
-          "chase_risk": false
-        }
-      },
-      "news": [
-        {
-          "headline": "Barclays Initiates Coverage On Inspire Medical Systems with Underweight Rating, Announces Price Target of $65",
-          "summary": "",
-          "published": "2026-10-07T12:47:25Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "TER": {
-      "technicals": {
-        "score": 0.1372,
-        "rs_60d": 20.17,
-        "dip_5d": -9.41,
-        "rsi": 52.5,
-        "price": 402.68
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 14.1,
-        "sector": "Technology",
-        "sector_median": 6.0,
-        "ratio": 2.35,
-        "reason": "P/S 14.1 = 2.4x Technology median 6.0"
-      },
-      "market_context": {
-        "sector": "Technology",
-        "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
-        "analyst": {
-          "mean_target": 446.47,
-          "pct_vs_current": 10.87,
-          "analyst_count": 15,
-          "high_target": 550.0,
-          "low_target": 350.0
-        },
-        "earnings": {
-          "days_since": 75,
-          "surprise_pct": 20.28,
-          "chase_risk": false
-        }
-      },
-      "news": [
-        {
-          "headline": "Nvidia, Micron and Other 5 S&P 500 Stocks With +100% Revenue Growth",
-          "summary": "Micron, Sandisk and Nvidia lead seven S&amp;P 500 stocks that more than doubled quarterly revenue. Six sell AI hardware.",
-          "published": "2026-10-07T14:06:10Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Cathie Wood Bets $31M On Amazon, CoreWeave And Meta, While Pulling $26.5M Out of This Hot AI Stock",
-          "summary": "Cathie Wood\u2019s ARK Invest poured $31 million into Amazon, CoreWeave and Meta, but also trimmed $26.5 million of Teradyne.",
-          "published": "2026-10-07T13:02:54Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "CRL": {
-      "technicals": {
-        "score": 0.1364,
-        "rs_60d": 29.77,
-        "dip_5d": -2.89,
-        "rsi": 58.9,
-        "price": 301.79
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 3.64,
-        "sector": "Healthcare",
-        "sector_median": 1.8,
-        "ratio": 2.02,
-        "reason": "P/S 3.6 = 2.0x Healthcare median 1.8"
-      },
-      "market_context": {
-        "sector": "Healthcare",
-        "sector_etf": "XLV",
-        "sector_vs_spy_60d_pct": 1.29,
-        "sector_return_60d_pct": 6.03,
-        "analyst": {
-          "mean_target": 310.53,
-          "pct_vs_current": 2.9,
-          "analyst_count": 15,
-          "high_target": 357.0,
-          "low_target": 145.0
-        },
-        "earnings": {
-          "days_since": 67,
-          "surprise_pct": 10.31,
-          "chase_risk": false
-        }
-      },
-      "news": [],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "DELL": {
-      "technicals": {
-        "score": 0.1358,
-        "rs_60d": 43.12,
-        "dip_5d": 6.11,
-        "rsi": 61.7,
-        "price": 586.06
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 2.46,
-        "sector": "Technology",
-        "sector_median": 6.0,
-        "ratio": 0.41,
-        "reason": "P/S 2.5 = 0.4x Technology median 6.0"
-      },
-      "market_context": {
-        "sector": "Technology",
-        "sector_etf": "XLK",
-        "sector_vs_spy_60d_pct": 8.46,
-        "sector_return_60d_pct": 13.21,
-        "analyst": {
-          "mean_target": 585.96,
-          "pct_vs_current": -0.02,
-          "analyst_count": 25,
-          "high_target": 735.0,
-          "low_target": 480.0
-        },
-        "earnings": {
-          "days_since": 40,
-          "surprise_pct": 43.14,
-          "chase_risk": false
-        }
-      },
-      "news": [
-        {
-          "headline": "Dan Ives Updates AI 30: Adds DELL, SPCX While Dropping ORCL and PEGA Ahead of IVES Rebalance",
-          "summary": "Dan Ives updates his AI 30 &#39;Winner List&#39; ahead of the IVES ETF rebalance, adding Dell and SpaceX while dropping Oracle and Pegasystems.",
-          "published": "2026-10-09T07:58:30Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Elon Musk A \u2018National Treasure,\u2019 Says Trump: President Compares Tesla CEO With Edison As He Awards National Medal of Science",
-          "summary": "Elon Musk congratulated his fellow honorees after President Trump gave six tech leaders national science and technology medals on Thursday.",
-          "published": "2026-10-09T07:00:05Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "What Is Going on With Super Micro Stock on Thursday?",
-          "summary": "Super Micro Computer stock pulls back 3% as investors take profits and balance Jim Cramer&#39;s caution against server demand from Lambda&#39;s $4B funding.",
-          "published": "2026-10-08T17:19:05Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Accenture And Dell Expand Collaboration To Form Accenture Dell Business Group To Help Scale AI And Modernize Their Infrastructure",
-          "summary": "",
-          "published": "2026-10-08T12:08:56Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Elon Musk, Jensen Huang, Satya Nadella Reportedly to Be Awarded Medals By Trump \u2014 White House Says They Help America Lead 'the World in Innovation'",
-          "summary": "Elon Musk and other top tech leaders will reportedly receive the nation&#39;s highest science and tech honors from Trump on Thursday.",
-          "published": "2026-10-08T04:23:08Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Dell Technologies Rolls Out Nvidia RTX Spark-Powered XPS 16 Creator Edition",
-          "summary": "",
-          "published": "2026-10-07T18:10:06Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Watching Dell Technologies; Hearing Investor Business Daily SwingTrader Buys Stock",
-          "summary": "",
-          "published": "2026-10-07T17:31:23Z",
-          "source": "benzinga"
-        }
-      ],
-      "reddit": {
-        "mention_count": 0,
-        "bull_pct": null,
-        "bear_pct": null,
-        "overall": "no_data",
-        "subreddit_breakdown": {},
-        "top_posts": []
-      }
-    },
-    "MPC": {
-      "technicals": {
-        "score": 0.1334,
-        "rs_60d": 40.82,
-        "dip_5d": 4.97,
-        "rsi": 73.5,
-        "price": 455.03
-      },
-      "valuation": {
-        "verdict": "pass",
-        "ps": 0.83,
-        "sector": "Energy",
-        "sector_median": 1.2,
-        "ratio": 0.69,
-        "reason": "P/S 0.8 = 0.7x Energy median 1.2"
-      },
-      "market_context": {
-        "sector": "Energy",
-        "sector_etf": "XLE",
-        "sector_vs_spy_60d_pct": 8.08,
-        "sector_return_60d_pct": 12.83,
-        "analyst": {
-          "mean_target": 409.28,
-          "pct_vs_current": -10.05,
-          "analyst_count": 18,
-          "high_target": 519.0,
-          "low_target": 236.0
-        },
-        "earnings": {
-          "days_since": 68,
-          "surprise_pct": 27.08,
-          "chase_risk": false
-        }
-      },
-      "news": [
-        {
-          "headline": "Trump\u2019s Russian Diesel Deal Draws GOP Pushback: Rep. Brian Fitzpatrick Plans Bill to Block Russian Oil Purchases",
-          "summary": "Rep. Fitzpatrick plans bipartisan bill to block Russian oil purchases, opposing Donald Trump\u2019s diesel deal.",
-          "published": "2026-10-11T07:37:14Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Trump Says Putin Is Sending Russian Diesel \u2014 So Much for Sanctions",
-          "summary": "President Trump says Russia will supply 4.8 million tons of diesel after talks with Putin, though pump prices remain near records.",
-          "published": "2026-10-09T20:44:39Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Stock Market Today: S&P 500 Slips as Oil Spikes 5%, 10-Year Yields Near 5.35%",
-          "summary": "Stocks slip as Gulf tanker attacks lift Brent above $105 and the 10-year yield nears 5.35%; small caps lag while energy and Chipotle rally.",
-          "published": "2026-10-08T17:19:59Z",
-          "source": "benzinga"
-        },
-        {
-          "headline": "Mizuho Maintains Neutral on Marathon Petroleum, Raises Price Target to $457",
-          "summary": "",
-          "published": "2026-10-08T11:24:21Z",
+          "published": "2026-10-14T13:23:01Z",
           "source": "benzinga"
         }
       ],
@@ -1241,3262 +1222,3461 @@
     }
   },
   "full_scores": {
-    "SDGR": {
-      "score": 0.3912,
-      "rs_60d": 73.32,
-      "dip_5d": -16.32,
-      "rsi": 52.4,
-      "price": 27.28
+    "MRNA": {
+      "score": 1.1876,
+      "rs_60d": 299.91,
+      "dip_5d": 2.0,
+      "rsi": 61.7,
+      "price": 218.01
+    },
+    "P": {
+      "score": 0.373,
+      "rs_60d": 63.03,
+      "dip_5d": -20.15,
+      "rsi": 45.6,
+      "price": 124.01
     },
     "EFOR": {
-      "score": 0.3593,
-      "rs_60d": 95.47,
-      "dip_5d": 3.76,
-      "rsi": 65.8,
-      "price": 37.5
-    },
-    "RNG": {
-      "score": 0.3468,
-      "rs_60d": 87.1,
-      "dip_5d": 0.27,
-      "rsi": 62.2,
-      "price": 79.27
-    },
-    "SMCI": {
-      "score": 0.292,
-      "rs_60d": 68.35,
-      "dip_5d": -3.09,
-      "rsi": 53.8,
-      "price": 41.85
+      "score": 0.3166,
+      "rs_60d": 82.92,
+      "dip_5d": 2.51,
+      "rsi": 64.3,
+      "price": 38.36
     },
     "CVI": {
-      "score": 0.2303,
-      "rs_60d": 60.41,
-      "dip_5d": 1.9,
-      "rsi": 73.6,
-      "price": 58.02
+      "score": 0.2957,
+      "rs_60d": 80.33,
+      "dip_5d": 4.26,
+      "rsi": 73.3,
+      "price": 61.42
     },
-    "AZTA": {
-      "score": 0.2253,
-      "rs_60d": 38.73,
-      "dip_5d": -11.72,
-      "rsi": 58.4,
-      "price": 37.72
-    },
-    "ILMN": {
-      "score": 0.2089,
-      "rs_60d": 44.29,
-      "dip_5d": -5.28,
-      "rsi": 62.8,
-      "price": 278.17
-    },
-    "SMTC": {
-      "score": 0.1978,
-      "rs_60d": 45.14,
-      "dip_5d": -2.87,
-      "rsi": 59.0,
-      "price": 187.3
+    "PLTR": {
+      "score": 0.2581,
+      "rs_60d": 48.05,
+      "dip_5d": -10.99,
+      "rsi": 46.2,
+      "price": 186.03
     },
     "PAYC": {
-      "score": 0.1918,
-      "rs_60d": 52.22,
-      "dip_5d": 2.85,
-      "rsi": 61.4,
-      "price": 232.22
+      "score": 0.2369,
+      "rs_60d": 69.84,
+      "dip_5d": 7.08,
+      "rsi": 73.7,
+      "price": 251.64
     },
-    "HZO": {
-      "score": 0.1876,
-      "rs_60d": 46.96,
-      "dip_5d": 0.04,
-      "rsi": 70.4,
-      "price": 52.37
+    "OKTA": {
+      "score": 0.2329,
+      "rs_60d": 31.91,
+      "dip_5d": -17.54,
+      "rsi": 41.5,
+      "price": 187.26
     },
-    "HPE": {
-      "score": 0.1775,
-      "rs_60d": 55.58,
-      "dip_5d": 7.46,
-      "rsi": 71.4,
-      "price": 73.46
-    },
-    "LITE": {
-      "score": 0.1768,
-      "rs_60d": 45.82,
-      "dip_5d": 1.07,
-      "rsi": 62.6,
-      "price": 1103.36
-    },
-    "ANF": {
-      "score": 0.1748,
-      "rs_60d": 44.96,
-      "dip_5d": 0.83,
-      "rsi": 60.2,
-      "price": 142.58
-    },
-    "MXL": {
-      "score": 0.1695,
-      "rs_60d": 29.11,
-      "dip_5d": -8.84,
-      "rsi": 57.3,
-      "price": 96.16
-    },
-    "TWLO": {
-      "score": 0.1638,
-      "rs_60d": 35.24,
-      "dip_5d": -3.8,
-      "rsi": 59.3,
-      "price": 289.47
+    "RNG": {
+      "score": 0.2324,
+      "rs_60d": 52.87,
+      "dip_5d": -3.49,
+      "rsi": 50.1,
+      "price": 75.44
     },
     "VEEV": {
-      "score": 0.1604,
-      "rs_60d": 46.82,
-      "dip_5d": 4.47,
-      "rsi": 69.3,
-      "price": 296.13
+      "score": 0.224,
+      "rs_60d": 63.35,
+      "dip_5d": 4.9,
+      "rsi": 71.2,
+      "price": 310.36
     },
-    "COHU": {
-      "score": 0.1589,
-      "rs_60d": 28.46,
-      "dip_5d": -7.51,
-      "rsi": 59.8,
-      "price": 68.19
+    "DT": {
+      "score": 0.2122,
+      "rs_60d": 43.54,
+      "dip_5d": -6.34,
+      "rsi": 57.6,
+      "price": 61.11
     },
-    "MRVL": {
-      "score": 0.1557,
-      "rs_60d": 41.15,
-      "dip_5d": 1.49,
-      "rsi": 61.5,
-      "price": 275.28
+    "ANF": {
+      "score": 0.2101,
+      "rs_60d": 60.08,
+      "dip_5d": 5.04,
+      "rsi": 69.6,
+      "price": 153.26
     },
-    "RVTY": {
-      "score": 0.153,
-      "rs_60d": 35.23,
-      "dip_5d": -2.02,
-      "rsi": 65.8,
-      "price": 154.18
+    "HAE": {
+      "score": 0.206,
+      "rs_60d": 46.85,
+      "dip_5d": -3.1,
+      "rsi": 66.3,
+      "price": 118.28
     },
-    "SWKS": {
-      "score": 0.1496,
-      "rs_60d": 23.9,
-      "dip_5d": -9.01,
-      "rsi": 41.3,
-      "price": 76.35
+    "FIVN": {
+      "score": 0.2023,
+      "rs_60d": 36.11,
+      "dip_5d": -9.64,
+      "rsi": 44.2,
+      "price": 32.23
     },
-    "FORM": {
-      "score": 0.1439,
-      "rs_60d": 27.55,
-      "dip_5d": -5.62,
-      "rsi": 60.4,
-      "price": 139.67
-    },
-    "LPG": {
-      "score": 0.1429,
-      "rs_60d": 35.74,
-      "dip_5d": 0.0,
-      "rsi": 61.5,
-      "price": 57.64
-    },
-    "ELF": {
-      "score": 0.1422,
-      "rs_60d": 43.48,
-      "dip_5d": 5.28,
-      "rsi": 66.6,
-      "price": 109.23
+    "DOCS": {
+      "score": 0.1858,
+      "rs_60d": 48.37,
+      "dip_5d": 1.28,
+      "rsi": 66.3,
+      "price": 30.97
     },
     "ZBRA": {
-      "score": 0.1418,
-      "rs_60d": 40.05,
-      "dip_5d": 3.07,
-      "rsi": 67.6,
-      "price": 387.18
+      "score": 0.1843,
+      "rs_60d": 38.68,
+      "dip_5d": -4.92,
+      "rsi": 48.8,
+      "price": 369.01
     },
-    "INSP": {
-      "score": 0.1414,
-      "rs_60d": 31.4,
-      "dip_5d": -2.63,
-      "rsi": 51.5,
-      "price": 68.89
-    },
-    "BLFS": {
-      "score": 0.14,
-      "rs_60d": 32.66,
-      "dip_5d": -1.56,
-      "rsi": 60.5,
-      "price": 38.61
-    },
-    "TER": {
-      "score": 0.1372,
-      "rs_60d": 20.17,
-      "dip_5d": -9.41,
-      "rsi": 52.5,
-      "price": 402.68
-    },
-    "HALO": {
-      "score": 0.137,
-      "rs_60d": 37.16,
-      "dip_5d": 1.95,
-      "rsi": 53.8,
-      "price": 110.42
-    },
-    "CRL": {
-      "score": 0.1364,
-      "rs_60d": 29.77,
-      "dip_5d": -2.89,
-      "rsi": 58.9,
-      "price": 301.79
-    },
-    "DELL": {
-      "score": 0.1358,
-      "rs_60d": 43.12,
-      "dip_5d": 6.11,
-      "rsi": 61.7,
-      "price": 586.06
+    "PI": {
+      "score": 0.1831,
+      "rs_60d": 34.2,
+      "dip_5d": -7.72,
+      "rsi": 45.4,
+      "price": 175.37
     },
     "MPC": {
-      "score": 0.1334,
-      "rs_60d": 40.82,
-      "dip_5d": 4.97,
-      "rsi": 73.5,
-      "price": 455.03
+      "score": 0.18,
+      "rs_60d": 51.3,
+      "dip_5d": 4.2,
+      "rsi": 74.7,
+      "price": 478.07
+    },
+    "HPE": {
+      "score": 0.1789,
+      "rs_60d": 12.31,
+      "dip_5d": -21.61,
+      "rsi": 37.4,
+      "price": 55.13
+    },
+    "TWLO": {
+      "score": 0.1787,
+      "rs_60d": 24.34,
+      "dip_5d": -13.55,
+      "rsi": 39.9,
+      "price": 244.37
+    },
+    "PENG": {
+      "score": 0.1782,
+      "rs_60d": 2.74,
+      "dip_5d": -27.86,
+      "rsi": 44.8,
+      "price": 57.1
+    },
+    "SEI": {
+      "score": 0.1765,
+      "rs_60d": 12.83,
+      "dip_5d": -20.86,
+      "rsi": 41.5,
+      "price": 62.74
+    },
+    "ACN": {
+      "score": 0.1705,
+      "rs_60d": 52.96,
+      "dip_5d": 6.89,
+      "rsi": 72.2,
+      "price": 229.68
+    },
+    "INSP": {
+      "score": 0.1689,
+      "rs_60d": 36.55,
+      "dip_5d": -3.78,
+      "rsi": 50.4,
+      "price": 68.79
+    },
+    "CRWD": {
+      "score": 0.1644,
+      "rs_60d": 20.78,
+      "dip_5d": -13.54,
+      "rsi": 38.3,
+      "price": 227.39
+    },
+    "HZO": {
+      "score": 0.163,
+      "rs_60d": 40.86,
+      "dip_5d": 0.08,
+      "rsi": 68.6,
+      "price": 52.37
+    },
+    "VLO": {
+      "score": 0.1629,
+      "rs_60d": 43.72,
+      "dip_5d": 2.0,
+      "rsi": 66.4,
+      "price": 444.71
+    },
+    "NTAP": {
+      "score": 0.1616,
+      "rs_60d": 18.21,
+      "dip_5d": -14.79,
+      "rsi": 43.6,
+      "price": 203.8
+    },
+    "QLYS": {
+      "score": 0.1615,
+      "rs_60d": 28.4,
+      "dip_5d": -7.99,
+      "rsi": 46.0,
+      "price": 181.05
+    },
+    "MANH": {
+      "score": 0.161,
+      "rs_60d": 43.19,
+      "dip_5d": 1.96,
+      "rsi": 61.9,
+      "price": 222.17
+    },
+    "AMPH": {
+      "score": 0.1596,
+      "rs_60d": 34.9,
+      "dip_5d": -3.33,
+      "rsi": 55.9,
+      "price": 25.87
+    },
+    "BE": {
+      "score": 0.1594,
+      "rs_60d": 16.41,
+      "dip_5d": -15.62,
+      "rsi": 36.5,
+      "price": 221.31
+    },
+    "ILMN": {
+      "score": 0.1585,
+      "rs_60d": 31.98,
+      "dip_5d": -5.11,
+      "rsi": 53.1,
+      "price": 262.54
+    },
+    "CRM": {
+      "score": 0.1577,
+      "rs_60d": 43.78,
+      "dip_5d": 2.9,
+      "rsi": 55.8,
+      "price": 240.7
+    },
+    "MSFT": {
+      "score": 0.1547,
+      "rs_60d": 35.31,
+      "dip_5d": -2.24,
+      "rsi": 57.3,
+      "price": 529.05
+    },
+    "NOW": {
+      "score": 0.1547,
+      "rs_60d": 40.43,
+      "dip_5d": 1.18,
+      "rsi": 55.5,
+      "price": 141.97
+    },
+    "ELF": {
+      "score": 0.1543,
+      "rs_60d": 43.48,
+      "dip_5d": 3.27,
+      "rsi": 66.5,
+      "price": 113.54
     },
     "NSIT": {
-      "score": 0.1326,
-      "rs_60d": 37.12,
-      "dip_5d": 2.64,
-      "rsi": 61.8,
-      "price": 163.6
+      "score": 0.1528,
+      "rs_60d": 33.1,
+      "dip_5d": -3.39,
+      "rsi": 50.9,
+      "price": 160.47
+    },
+    "RVTY": {
+      "score": 0.151,
+      "rs_60d": 34.88,
+      "dip_5d": -1.91,
+      "rsi": 59.3,
+      "price": 152.64
+    },
+    "DOCU": {
+      "score": 0.1477,
+      "rs_60d": 44.71,
+      "dip_5d": 5.19,
+      "rsi": 62.6,
+      "price": 74.65
+    },
+    "BLFS": {
+      "score": 0.1458,
+      "rs_60d": 34.11,
+      "dip_5d": -1.56,
+      "rsi": 60.6,
+      "price": 38.61
+    },
+    "AZTA": {
+      "score": 0.1435,
+      "rs_60d": 21.26,
+      "dip_5d": -9.74,
+      "rsi": 45.4,
+      "price": 34.09
+    },
+    "DINO": {
+      "score": 0.1428,
+      "rs_60d": 38.6,
+      "dip_5d": 1.94,
+      "rsi": 71.2,
+      "price": 125.29
+    },
+    "WDAY": {
+      "score": 0.1426,
+      "rs_60d": 37.69,
+      "dip_5d": 1.36,
+      "rsi": 52.1,
+      "price": 190.81
+    },
+    "MRVL": {
+      "score": 0.1419,
+      "rs_60d": 14.01,
+      "dip_5d": -14.3,
+      "rsi": 37.5,
+      "price": 227.83
+    },
+    "SPSC": {
+      "score": 0.1398,
+      "rs_60d": 36.1,
+      "dip_5d": 0.77,
+      "rsi": 58.8,
+      "price": 85.25
+    },
+    "PBF": {
+      "score": 0.1389,
+      "rs_60d": 33.85,
+      "dip_5d": -0.59,
+      "rsi": 55.9,
+      "price": 84.52
+    },
+    "IT": {
+      "score": 0.1367,
+      "rs_60d": 42.87,
+      "dip_5d": 5.8,
+      "rsi": 63.2,
+      "price": 205.35
+    },
+    "SMTC": {
+      "score": 0.1337,
+      "rs_60d": 5.29,
+      "dip_5d": -18.75,
+      "rsi": 34.4,
+      "price": 136.73
+    },
+    "SMCI": {
+      "score": 0.1325,
+      "rs_60d": 1.79,
+      "dip_5d": -20.89,
+      "rsi": 30.2,
+      "price": 31.63
+    },
+    "INSW": {
+      "score": 0.1323,
+      "rs_60d": 15.9,
+      "dip_5d": -11.46,
+      "rsi": 46.8,
+      "price": 109.99
+    },
+    "NTNX": {
+      "score": 0.1316,
+      "rs_60d": 18.33,
+      "dip_5d": -9.71,
+      "rsi": 38.3,
+      "price": 66.94
+    },
+    "SNPS": {
+      "score": 0.1309,
+      "rs_60d": 18.44,
+      "dip_5d": -9.53,
+      "rsi": 49.8,
+      "price": 454.63
     },
     "QRVO": {
-      "score": 0.1242,
-      "rs_60d": 28.3,
+      "score": 0.13,
+      "rs_60d": 29.76,
       "dip_5d": -1.83,
       "rsi": 55.9,
       "price": 114.17
     },
-    "NTAP": {
-      "score": 0.124,
-      "rs_60d": 39.96,
-      "dip_5d": 5.98,
-      "rsi": 74.6,
-      "price": 237.15
-    },
-    "CACI": {
-      "score": 0.1232,
-      "rs_60d": 27.55,
-      "dip_5d": -2.17,
-      "rsi": 49.3,
-      "price": 610.65
-    },
-    "CORT": {
-      "score": 0.1207,
-      "rs_60d": 29.14,
-      "dip_5d": -0.69,
-      "rsi": 59.2,
-      "price": 121.19
-    },
-    "VLO": {
-      "score": 0.1207,
-      "rs_60d": 35.33,
-      "dip_5d": 3.44,
-      "rsi": 69.8,
-      "price": 433.75
-    },
-    "ACN": {
-      "score": 0.1204,
-      "rs_60d": 40.87,
-      "dip_5d": 7.18,
-      "rsi": 63.5,
-      "price": 209.06
-    },
-    "CRM": {
-      "score": 0.1194,
-      "rs_60d": 29.43,
-      "dip_5d": -0.29,
-      "rsi": 48.0,
-      "price": 229.13
-    },
-    "CRWD": {
-      "score": 0.1175,
-      "rs_60d": 30.69,
-      "dip_5d": 0.87,
-      "rsi": 62.6,
-      "price": 275.04
-    },
-    "PBF": {
-      "score": 0.1174,
-      "rs_60d": 29.55,
-      "dip_5d": 0.13,
-      "rsi": 60.4,
-      "price": 84.27
-    },
-    "INSW": {
-      "score": 0.1169,
-      "rs_60d": 33.36,
-      "dip_5d": 2.76,
-      "rsi": 70.9,
-      "price": 119.82
-    },
-    "BE": {
-      "score": 0.1158,
-      "rs_60d": 25.74,
-      "dip_5d": -2.15,
-      "rsi": 54.0,
-      "price": 280.5
-    },
-    "IT": {
-      "score": 0.1156,
-      "rs_60d": 31.6,
-      "dip_5d": 1.81,
-      "rsi": 54.5,
-      "price": 191.15
-    },
-    "PI": {
-      "score": 0.1148,
-      "rs_60d": 32.3,
-      "dip_5d": 2.4,
-      "rsi": 60.1,
-      "price": 189.63
-    },
-    "FIVN": {
-      "score": 0.1148,
-      "rs_60d": 37.55,
-      "dip_5d": 5.91,
-      "rsi": 58.3,
-      "price": 36.4
-    },
-    "MSFT": {
-      "score": 0.1132,
-      "rs_60d": 31.12,
-      "dip_5d": 1.88,
-      "rsi": 67.5,
-      "price": 535.07
-    },
-    "NTNX": {
-      "score": 0.113,
-      "rs_60d": 30.75,
-      "dip_5d": 1.66,
-      "rsi": 73.4,
-      "price": 74.63
-    },
-    "THC": {
-      "score": 0.1124,
-      "rs_60d": 30.59,
-      "dip_5d": 1.66,
-      "rsi": 55.7,
-      "price": 263.78
-    },
-    "BLKB": {
-      "score": 0.1124,
-      "rs_60d": 35.62,
-      "dip_5d": 5.01,
-      "rsi": 59.2,
-      "price": 45.48
-    },
-    "MTRN": {
-      "score": 0.1115,
-      "rs_60d": 9.67,
-      "dip_5d": -12.13,
-      "rsi": 54.5,
-      "price": 280.45
-    },
-    "DOCU": {
-      "score": 0.1111,
-      "rs_60d": 30.03,
-      "dip_5d": 1.5,
-      "rsi": 60.4,
-      "price": 71.08
-    },
-    "ITGR": {
-      "score": 0.111,
-      "rs_60d": 27.94,
-      "dip_5d": 0.13,
-      "rsi": 74.8,
-      "price": 126.61
-    },
-    "DOCS": {
-      "score": 0.1076,
-      "rs_60d": 36.98,
-      "dip_5d": 6.72,
-      "rsi": 69.5,
-      "price": 30.5
-    },
-    "VICR": {
-      "score": 0.1065,
-      "rs_60d": 7.23,
-      "dip_5d": -12.94,
-      "rsi": 53.6,
-      "price": 266.07
-    },
-    "NOW": {
-      "score": 0.1057,
-      "rs_60d": 31.69,
-      "dip_5d": 3.51,
-      "rsi": 57.6,
-      "price": 140.86
-    },
-    "SITM": {
-      "score": 0.1049,
-      "rs_60d": 5.6,
-      "dip_5d": -13.76,
-      "rsi": 45.0,
-      "price": 612.37
-    },
-    "OLLI": {
-      "score": 0.1047,
-      "rs_60d": 23.55,
-      "dip_5d": -1.75,
-      "rsi": 58.5,
-      "price": 85.33
-    },
-    "WDAY": {
-      "score": 0.1041,
-      "rs_60d": 24.13,
-      "dip_5d": -1.25,
-      "rsi": 48.1,
-      "price": 186.59
-    },
-    "RGEN": {
-      "score": 0.1028,
-      "rs_60d": 13.34,
-      "dip_5d": -8.24,
-      "rsi": 47.8,
-      "price": 173.88
-    },
-    "A": {
-      "score": 0.1026,
-      "rs_60d": 24.98,
-      "dip_5d": -0.44,
-      "rsi": 62.2,
-      "price": 170.54
-    },
-    "IDCC": {
-      "score": 0.102,
-      "rs_60d": 22.46,
-      "dip_5d": -2.03,
-      "rsi": 50.0,
-      "price": 331.31
+    "DELL": {
+      "score": 0.1299,
+      "rs_60d": -0.04,
+      "dip_5d": -21.68,
+      "rsi": 33.2,
+      "price": 451.71
     },
     "PSX": {
-      "score": 0.1001,
-      "rs_60d": 29.73,
-      "dip_5d": 3.14,
-      "rsi": 69.6,
-      "price": 278.18
+      "score": 0.129,
+      "rs_60d": 38.49,
+      "dip_5d": 4.16,
+      "rsi": 70.7,
+      "price": 293.17
     },
-    "CTSH": {
-      "score": 0.0993,
-      "rs_60d": 27.48,
-      "dip_5d": 1.77,
-      "rsi": 50.9,
-      "price": 59.2
+    "HALO": {
+      "score": 0.1236,
+      "rs_60d": 45.42,
+      "dip_5d": 9.69,
+      "rsi": 70.3,
+      "price": 121.84
     },
-    "IQV": {
-      "score": 0.099,
-      "rs_60d": 21.25,
-      "dip_5d": -2.33,
-      "rsi": 47.9,
-      "price": 259.88
+    "LITE": {
+      "score": 0.1221,
+      "rs_60d": 4.72,
+      "dip_5d": -17.21,
+      "rsi": 37.4,
+      "price": 824.13
     },
-    "DINO": {
-      "score": 0.097,
-      "rs_60d": 32.18,
-      "dip_5d": 5.28,
-      "rsi": 74.4,
-      "price": 121.3
+    "COHU": {
+      "score": 0.1202,
+      "rs_60d": -3.07,
+      "dip_5d": -22.08,
+      "rsi": 32.5,
+      "price": 50.81
     },
-    "NEM": {
-      "score": 0.096,
-      "rs_60d": 26.62,
-      "dip_5d": 1.74,
-      "rsi": 47.7,
-      "price": 117.84
-    },
-    "AMD": {
-      "score": 0.0941,
-      "rs_60d": 17.91,
-      "dip_5d": -3.74,
-      "rsi": 57.2,
-      "price": 608.1
-    },
-    "TMO": {
-      "score": 0.0919,
-      "rs_60d": 18.83,
-      "dip_5d": -2.77,
-      "rsi": 54.4,
-      "price": 658.02
-    },
-    "HPQ": {
-      "score": 0.0915,
-      "rs_60d": 16.83,
-      "dip_5d": -4.04,
-      "rsi": 42.8,
-      "price": 30.2
-    },
-    "SNDK": {
-      "score": 0.0911,
-      "rs_60d": 12.01,
-      "dip_5d": -7.18,
-      "rsi": 43.8,
-      "price": 1581.82
-    },
-    "AMPH": {
-      "score": 0.0907,
-      "rs_60d": 30.07,
-      "dip_5d": 4.93,
-      "rsi": 65.6,
-      "price": 26.62
-    },
-    "CAKE": {
-      "score": 0.09,
-      "rs_60d": 21.7,
-      "dip_5d": -0.53,
-      "rsi": 56.9,
-      "price": 108.45
-    },
-    "EXLS": {
-      "score": 0.0887,
-      "rs_60d": 25.9,
-      "dip_5d": 2.48,
-      "rsi": 59.2,
-      "price": 36.79
-    },
-    "MU": {
-      "score": 0.0856,
-      "rs_60d": 16.46,
-      "dip_5d": -3.29,
-      "rsi": 50.2,
-      "price": 1029.0
-    },
-    "SNPS": {
-      "score": 0.0854,
-      "rs_60d": 27.97,
-      "dip_5d": 4.41,
-      "rsi": 74.7,
-      "price": 509.99
-    },
-    "MANH": {
-      "score": 0.0849,
-      "rs_60d": 20.81,
-      "dip_5d": -0.27,
-      "rsi": 49.8,
-      "price": 204.89
-    },
-    "BIO": {
-      "score": 0.0838,
-      "rs_60d": 15.56,
-      "dip_5d": -3.6,
-      "rsi": 46.6,
-      "price": 366.16
-    },
-    "AVT": {
-      "score": 0.0836,
-      "rs_60d": 11.26,
-      "dip_5d": -6.43,
-      "rsi": 51.1,
-      "price": 99.36
-    },
-    "INTC": {
-      "score": 0.081,
-      "rs_60d": 5.42,
-      "dip_5d": -9.89,
-      "rsi": 43.4,
-      "price": 104.7
-    },
-    "QLYS": {
-      "score": 0.0776,
-      "rs_60d": 22.22,
-      "dip_5d": 1.88,
-      "rsi": 64.2,
-      "price": 202.42
-    },
-    "FCX": {
-      "score": 0.0769,
-      "rs_60d": 21.48,
-      "dip_5d": 1.5,
-      "rsi": 56.1,
-      "price": 73.69
-    },
-    "VIAV": {
-      "score": 0.0761,
-      "rs_60d": 14.38,
-      "dip_5d": -3.09,
-      "rsi": 61.6,
-      "price": 45.46
-    },
-    "SEI": {
-      "score": 0.0747,
-      "rs_60d": 22.0,
-      "dip_5d": 2.21,
-      "rsi": 61.4,
-      "price": 76.4
-    },
-    "APA": {
-      "score": 0.0743,
-      "rs_60d": 25.52,
-      "dip_5d": 4.63,
-      "rsi": 61.7,
-      "price": 45.88
-    },
-    "EPAM": {
-      "score": 0.074,
-      "rs_60d": 22.98,
-      "dip_5d": 2.99,
-      "rsi": 53.7,
-      "price": 113.24
-    },
-    "RGLD": {
-      "score": 0.0739,
-      "rs_60d": 20.13,
-      "dip_5d": 1.11,
-      "rsi": 44.6,
-      "price": 236.23
-    },
-    "MTSI": {
-      "score": 0.0716,
-      "rs_60d": 18.71,
-      "dip_5d": 0.54,
-      "rsi": 62.6,
-      "price": 330.06
-    },
-    "ROG": {
-      "score": 0.071,
-      "rs_60d": 6.73,
-      "dip_5d": -7.35,
-      "rsi": 56.3,
-      "price": 147.41
-    },
-    "COHR": {
-      "score": 0.0693,
-      "rs_60d": 7.87,
-      "dip_5d": -6.3,
-      "rsi": 51.6,
-      "price": 312.62
-    },
-    "KEYS": {
-      "score": 0.0679,
-      "rs_60d": 16.42,
-      "dip_5d": -0.37,
-      "rsi": 66.6,
-      "price": 382.75
-    },
-    "DIOD": {
-      "score": 0.0672,
-      "rs_60d": 4.35,
-      "dip_5d": -8.3,
-      "rsi": 47.9,
-      "price": 94.94
-    },
-    "ANET": {
-      "score": 0.0667,
-      "rs_60d": 23.8,
-      "dip_5d": 4.76,
-      "rsi": 64.8,
-      "price": 216.74
-    },
-    "DLB": {
-      "score": 0.0661,
-      "rs_60d": 14.96,
-      "dip_5d": -1.04,
-      "rsi": 47.0,
-      "price": 58.74
-    },
-    "SPSC": {
-      "score": 0.0661,
-      "rs_60d": 24.22,
-      "dip_5d": 5.13,
-      "rsi": 60.3,
-      "price": 84.59
-    },
-    "COIN": {
-      "score": 0.0659,
-      "rs_60d": 9.43,
-      "dip_5d": -4.69,
-      "rsi": 47.9,
-      "price": 179.39
-    },
-    "ENTG": {
-      "score": 0.0631,
-      "rs_60d": 14.75,
-      "dip_5d": -0.68,
-      "rsi": 65.2,
-      "price": 165.79
-    },
-    "VGNT": {
-      "score": 0.0619,
-      "rs_60d": 5.7,
-      "dip_5d": -6.52,
-      "rsi": 42.6,
-      "price": 44.19
-    },
-    "WAT": {
-      "score": 0.0599,
-      "rs_60d": 12.81,
-      "dip_5d": -1.44,
-      "rsi": 56.1,
-      "price": 433.77
-    },
-    "ONTO": {
-      "score": 0.0589,
-      "rs_60d": 0.5,
-      "dip_5d": -9.49,
-      "rsi": 51.1,
-      "price": 294.53
-    },
-    "WHD": {
-      "score": 0.0588,
-      "rs_60d": 11.64,
-      "dip_5d": -2.04,
-      "rsi": 41.9,
-      "price": 63.43
+    "CRL": {
+      "score": 0.1201,
+      "rs_60d": 29.18,
+      "dip_5d": -0.57,
+      "rsi": 55.6,
+      "price": 300.15
     },
     "AMR": {
-      "score": 0.0585,
-      "rs_60d": 21.52,
-      "dip_5d": 4.59,
-      "rsi": 49.8,
-      "price": 181.57
-    },
-    "NVDA": {
-      "score": 0.0574,
-      "rs_60d": 8.31,
-      "dip_5d": -4.03,
-      "rsi": 52.9,
-      "price": 229.28
-    },
-    "WAY": {
-      "score": 0.0557,
-      "rs_60d": 15.06,
-      "dip_5d": 0.76,
-      "rsi": 58.8,
-      "price": 26.68
-    },
-    "SXT": {
-      "score": 0.0539,
-      "rs_60d": 14.8,
-      "dip_5d": 0.89,
-      "rsi": 50.3,
-      "price": 130.37
-    },
-    "ARW": {
-      "score": 0.053,
-      "rs_60d": 5.56,
-      "dip_5d": -5.13,
-      "rsi": 52.6,
-      "price": 227.9
-    },
-    "HRMY": {
-      "score": 0.0527,
-      "rs_60d": 14.53,
-      "dip_5d": 0.9,
-      "rsi": 50.9,
-      "price": 40.28
-    },
-    "CNK": {
-      "score": 0.0525,
-      "rs_60d": 14.91,
-      "dip_5d": 1.2,
-      "rsi": 51.6,
-      "price": 36.4
-    },
-    "VCTR": {
-      "score": 0.0523,
-      "rs_60d": 9.38,
-      "dip_5d": -2.46,
-      "rsi": 55.0,
-      "price": 112.44
-    },
-    "SN": {
-      "score": 0.0523,
-      "rs_60d": 14.96,
-      "dip_5d": 1.25,
-      "rsi": 62.5,
-      "price": 184.98
-    },
-    "MMSI": {
-      "score": 0.052,
-      "rs_60d": 13.12,
-      "dip_5d": 0.08,
-      "rsi": 53.1,
-      "price": 87.21
-    },
-    "HP": {
-      "score": 0.052,
-      "rs_60d": 12.07,
-      "dip_5d": -0.62,
-      "rsi": 48.6,
-      "price": 39.88
-    },
-    "DE": {
-      "score": 0.0508,
-      "rs_60d": -0.78,
-      "dip_5d": -8.98,
-      "rsi": 33.3,
-      "price": 620.93
-    },
-    "PARR": {
-      "score": 0.0492,
-      "rs_60d": 2.65,
-      "dip_5d": -6.43,
-      "rsi": 49.5,
-      "price": 81.89
-    },
-    "AAMI": {
-      "score": 0.0491,
-      "rs_60d": 8.44,
-      "dip_5d": -2.55,
-      "rsi": 53.8,
-      "price": 93.71
-    },
-    "HCC": {
-      "score": 0.0477,
-      "rs_60d": 13.2,
-      "dip_5d": 0.85,
-      "rsi": 50.7,
-      "price": 93.07
-    },
-    "GRMN": {
-      "score": 0.0472,
-      "rs_60d": 2.79,
-      "dip_5d": -6.01,
-      "rsi": 35.6,
-      "price": 268.36
-    },
-    "EMR": {
-      "score": 0.0468,
-      "rs_60d": 11.23,
-      "dip_5d": -0.31,
-      "rsi": 61.0,
-      "price": 161.83
-    },
-    "NDSN": {
-      "score": 0.0465,
-      "rs_60d": 8.82,
-      "dip_5d": -1.87,
-      "rsi": 56.9,
-      "price": 328.17
-    },
-    "ISRG": {
-      "score": 0.0462,
-      "rs_60d": 17.99,
-      "dip_5d": 4.3,
-      "rsi": 66.7,
-      "price": 423.96
-    },
-    "UHS": {
-      "score": 0.0459,
-      "rs_60d": 12.58,
-      "dip_5d": 0.74,
-      "rsi": 54.1,
-      "price": 177.35
-    },
-    "DGII": {
-      "score": 0.0457,
-      "rs_60d": 13.57,
-      "dip_5d": 1.44,
-      "rsi": 54.2,
-      "price": 75.63
-    },
-    "WCC": {
-      "score": 0.0453,
-      "rs_60d": 6.79,
-      "dip_5d": -3.02,
-      "rsi": 52.7,
-      "price": 365.69
-    },
-    "VIRT": {
-      "score": 0.0452,
-      "rs_60d": -1.52,
-      "dip_5d": -8.54,
-      "rsi": 47.9,
-      "price": 57.51
-    },
-    "DOCN": {
-      "score": 0.0451,
-      "rs_60d": 8.63,
-      "dip_5d": -1.76,
-      "rsi": 53.1,
-      "price": 134.82
-    },
-    "HCA": {
-      "score": 0.0448,
-      "rs_60d": 16.78,
-      "dip_5d": 3.72,
-      "rsi": 65.8,
-      "price": 451.09
-    },
-    "AVNT": {
-      "score": 0.0448,
-      "rs_60d": -2.53,
-      "dip_5d": -9.16,
-      "rsi": 29.1,
-      "price": 37.79
-    },
-    "META": {
-      "score": 0.0448,
-      "rs_60d": 6.5,
-      "dip_5d": -3.13,
-      "rsi": 56.8,
-      "price": 718.67
-    },
-    "MEDP": {
-      "score": 0.0445,
-      "rs_60d": 9.07,
-      "dip_5d": -1.36,
-      "rsi": 52.4,
-      "price": 612.05
-    },
-    "HOOD": {
-      "score": 0.044,
-      "rs_60d": 4.32,
-      "dip_5d": -4.46,
-      "rsi": 45.8,
-      "price": 109.02
-    },
-    "PCTY": {
-      "score": 0.043,
-      "rs_60d": 17.44,
-      "dip_5d": 4.46,
-      "rsi": 64.1,
-      "price": 153.96
-    },
-    "LFUS": {
-      "score": 0.043,
-      "rs_60d": 2.48,
-      "dip_5d": -5.52,
-      "rsi": 49.4,
-      "price": 426.5
-    },
-    "SANM": {
-      "score": 0.0423,
-      "rs_60d": 5.52,
-      "dip_5d": -3.37,
-      "rsi": 52.7,
-      "price": 217.49
-    },
-    "MPWR": {
-      "score": 0.0416,
-      "rs_60d": 0.92,
-      "dip_5d": -6.32,
-      "rsi": 55.2,
-      "price": 1386.29
-    },
-    "BOX": {
-      "score": 0.0407,
-      "rs_60d": 14.64,
-      "dip_5d": 2.97,
-      "rsi": 66.4,
-      "price": 36.39
-    },
-    "SNX": {
-      "score": 0.0402,
-      "rs_60d": 7.93,
-      "dip_5d": -1.41,
-      "rsi": 54.6,
-      "price": 273.37
-    },
-    "DXCM": {
-      "score": 0.0392,
-      "rs_60d": 4.99,
-      "dip_5d": -3.21,
-      "rsi": 42.1,
-      "price": 84.11
-    },
-    "TMDX": {
-      "score": 0.0391,
-      "rs_60d": 0.51,
-      "dip_5d": -6.17,
-      "rsi": 39.0,
-      "price": 77.87
-    },
-    "BTU": {
-      "score": 0.0377,
-      "rs_60d": 7.24,
-      "dip_5d": -1.45,
-      "rsi": 44.8,
-      "price": 25.13
-    },
-    "MHK": {
-      "score": 0.0375,
-      "rs_60d": 1.15,
-      "dip_5d": -5.49,
-      "rsi": 38.4,
-      "price": 118.07
-    },
-    "APPF": {
-      "score": 0.037,
-      "rs_60d": 7.76,
-      "dip_5d": -1.0,
-      "rsi": 46.4,
-      "price": 202.2
-    },
-    "WS": {
-      "score": 0.0363,
-      "rs_60d": -2.71,
-      "dip_5d": -7.85,
-      "rsi": 51.6,
-      "price": 36.05
-    },
-    "KN": {
-      "score": 0.0355,
-      "rs_60d": 1.87,
-      "dip_5d": -4.67,
-      "rsi": 52.6,
-      "price": 37.56
-    },
-    "BDX": {
-      "score": 0.0355,
-      "rs_60d": 11.43,
-      "dip_5d": 1.7,
-      "rsi": 55.6,
-      "price": 183.75
-    },
-    "CON": {
-      "score": 0.0354,
-      "rs_60d": 12.91,
-      "dip_5d": 2.71,
-      "rsi": 68.5,
-      "price": 37.19
-    },
-    "GME": {
-      "score": 0.035,
-      "rs_60d": 16.59,
-      "dip_5d": 5.23,
-      "rsi": 72.5,
-      "price": 26.56
-    },
-    "LRCX": {
-      "score": 0.0349,
-      "rs_60d": -2.98,
-      "dip_5d": -7.8,
-      "rsi": 51.2,
-      "price": 318.84
-    },
-    "CHEF": {
-      "score": 0.0345,
-      "rs_60d": 13.01,
-      "dip_5d": 2.93,
-      "rsi": 57.5,
-      "price": 114.32
-    },
-    "RDNT": {
-      "score": 0.0342,
-      "rs_60d": 9.28,
-      "dip_5d": 0.48,
-      "rsi": 48.3,
-      "price": 70.91
-    },
-    "ORCL": {
-      "score": 0.033,
-      "rs_60d": 7.11,
-      "dip_5d": -0.76,
-      "rsi": 48.2,
-      "price": 141.4
-    },
-    "HNI": {
-      "score": 0.033,
-      "rs_60d": 7.55,
-      "dip_5d": -0.47,
-      "rsi": 50.1,
-      "price": 46.86
-    },
-    "HAS": {
-      "score": 0.0326,
-      "rs_60d": 9.69,
-      "dip_5d": 1.02,
-      "rsi": 60.1,
-      "price": 93.32
-    },
-    "BRKR": {
-      "score": 0.0324,
-      "rs_60d": -3.7,
-      "dip_5d": -7.86,
-      "rsi": 46.3,
-      "price": 58.84
-    },
-    "ADI": {
-      "score": 0.0324,
-      "rs_60d": 3.47,
-      "dip_5d": -3.08,
-      "rsi": 60.4,
-      "price": 406.19
-    },
-    "ALLE": {
-      "score": 0.0321,
-      "rs_60d": 4.9,
-      "dip_5d": -2.08,
-      "rsi": 42.5,
-      "price": 150.48
-    },
-    "VSXY": {
-      "score": 0.0319,
-      "rs_60d": -3.0,
-      "dip_5d": -7.31,
-      "rsi": 47.1,
-      "price": 82.87
-    },
-    "PANW": {
-      "score": 0.0303,
-      "rs_60d": 12.01,
-      "dip_5d": 2.96,
-      "rsi": 63.1,
-      "price": 418.78
-    },
-    "DBX": {
-      "score": 0.03,
-      "rs_60d": 7.47,
-      "dip_5d": -0.03,
-      "rsi": 51.0,
-      "price": 34.36
-    },
-    "WAB": {
-      "score": 0.0299,
-      "rs_60d": 4.16,
-      "dip_5d": -2.2,
-      "rsi": 48.5,
-      "price": 285.43
-    },
-    "CNMD": {
-      "score": 0.0292,
-      "rs_60d": -1.92,
-      "dip_5d": -6.15,
-      "rsi": 40.8,
-      "price": 44.42
-    },
-    "ABNB": {
-      "score": 0.0289,
-      "rs_60d": 8.88,
-      "dip_5d": 1.1,
-      "rsi": 51.8,
-      "price": 165.87
-    },
-    "BHE": {
-      "score": 0.0287,
-      "rs_60d": -0.9,
-      "dip_5d": -5.39,
-      "rsi": 52.4,
-      "price": 81.47
-    },
-    "FTNT": {
-      "score": 0.0284,
-      "rs_60d": 15.76,
-      "dip_5d": 5.77,
-      "rsi": 72.7,
-      "price": 194.75
-    },
-    "EL": {
-      "score": 0.028,
-      "rs_60d": 14.64,
-      "dip_5d": 5.09,
-      "rsi": 56.7,
-      "price": 98.05
-    },
-    "URBN": {
-      "score": 0.0272,
-      "rs_60d": 7.86,
-      "dip_5d": 0.71,
-      "rsi": 63.6,
-      "price": 82.18
-    },
-    "JCI": {
-      "score": 0.0271,
-      "rs_60d": 7.34,
-      "dip_5d": 0.38,
-      "rsi": 64.1,
-      "price": 157.44
-    },
-    "LDOS": {
-      "score": 0.0269,
-      "rs_60d": 9.53,
-      "dip_5d": 1.87,
-      "rsi": 45.8,
-      "price": 121.68
-    },
-    "FAST": {
-      "score": 0.0266,
-      "rs_60d": 6.82,
-      "dip_5d": 0.12,
-      "rsi": 55.8,
-      "price": 50.75
-    },
-    "SCSC": {
-      "score": 0.0266,
-      "rs_60d": 6.46,
-      "dip_5d": -0.13,
-      "rsi": 59.7,
-      "price": 60.93
-    },
-    "TPC": {
-      "score": 0.0264,
-      "rs_60d": 1.28,
-      "dip_5d": -3.55,
-      "rsi": 43.7,
-      "price": 83.36
-    },
-    "ULTA": {
-      "score": 0.0262,
-      "rs_60d": 14.19,
-      "dip_5d": 5.09,
-      "rsi": 63.3,
-      "price": 570.37
-    },
-    "GEO": {
-      "score": 0.0261,
-      "rs_60d": 0.92,
-      "dip_5d": -3.74,
-      "rsi": 50.5,
-      "price": 31.13
-    },
-    "MSI": {
-      "score": 0.0256,
-      "rs_60d": 2.72,
-      "dip_5d": -2.46,
-      "rsi": 38.8,
-      "price": 444.18
-    },
-    "EQH": {
-      "score": 0.0251,
-      "rs_60d": 3.28,
-      "dip_5d": -2.0,
-      "rsi": 51.9,
-      "price": 52.92
-    },
-    "CXW": {
-      "score": 0.025,
-      "rs_60d": 2.69,
-      "dip_5d": -2.37,
-      "rsi": 49.8,
-      "price": 32.93
-    },
-    "PDFS": {
-      "score": 0.0245,
-      "rs_60d": 1.63,
-      "dip_5d": -3.0,
-      "rsi": 62.1,
-      "price": 54.4
-    },
-    "LECO": {
-      "score": 0.0244,
-      "rs_60d": -1.42,
-      "dip_5d": -5.02,
-      "rsi": 43.8,
-      "price": 261.13
-    },
-    "RMD": {
-      "score": 0.0241,
-      "rs_60d": 10.86,
-      "dip_5d": 3.23,
-      "rsi": 60.4,
-      "price": 230.05
-    },
-    "VECO": {
-      "score": 0.024,
-      "rs_60d": -4.73,
-      "dip_5d": -7.16,
-      "rsi": 56.6,
-      "price": 52.28
-    },
-    "CNR": {
-      "score": 0.024,
-      "rs_60d": 1.81,
-      "dip_5d": -2.8,
-      "rsi": 42.3,
-      "price": 88.46
-    },
-    "TRMB": {
-      "score": 0.0239,
-      "rs_60d": 9.23,
-      "dip_5d": 2.18,
-      "rsi": 58.4,
-      "price": 60.09
-    },
-    "INVX": {
-      "score": 0.0238,
-      "rs_60d": 4.1,
-      "dip_5d": -1.23,
-      "rsi": 48.3,
-      "price": 28.06
-    },
-    "BDC": {
-      "score": 0.0235,
-      "rs_60d": 2.91,
-      "dip_5d": -1.98,
-      "rsi": 43.7,
-      "price": 109.15
-    },
-    "PLXS": {
-      "score": 0.0234,
-      "rs_60d": 0.01,
-      "dip_5d": -3.89,
-      "rsi": 52.7,
-      "price": 262.54
-    },
-    "PAHC": {
-      "score": 0.023,
-      "rs_60d": 10.23,
-      "dip_5d": 2.98,
-      "rsi": 63.3,
-      "price": 38.3
-    },
-    "FOXA": {
-      "score": 0.023,
-      "rs_60d": 3.57,
-      "dip_5d": -1.45,
-      "rsi": 44.2,
-      "price": 62.41
-    },
-    "DGX": {
-      "score": 0.0228,
-      "rs_60d": 4.88,
-      "dip_5d": -0.54,
-      "rsi": 44.2,
-      "price": 230.97
-    },
-    "FOX": {
-      "score": 0.0226,
-      "rs_60d": 3.5,
-      "dip_5d": -1.43,
-      "rsi": 44.6,
-      "price": 55.89
-    },
-    "FFIV": {
-      "score": 0.0223,
-      "rs_60d": 12.54,
-      "dip_5d": 4.65,
-      "rsi": 70.0,
-      "price": 479.83
-    },
-    "COP": {
-      "score": 0.022,
-      "rs_60d": 12.16,
-      "dip_5d": 4.44,
-      "rsi": 59.8,
-      "price": 134.1
-    },
-    "CPAY": {
-      "score": 0.0218,
-      "rs_60d": 4.04,
-      "dip_5d": -0.95,
-      "rsi": 48.0,
-      "price": 397.92
-    },
-    "JOE": {
-      "score": 0.0217,
-      "rs_60d": 2.37,
-      "dip_5d": -2.04,
-      "rsi": 46.2,
-      "price": 64.86
-    },
-    "CRBG": {
-      "score": 0.0217,
-      "rs_60d": 2.19,
-      "dip_5d": -2.15,
-      "rsi": 50.6,
-      "price": 34.09
-    },
-    "XOM": {
-      "score": 0.0215,
-      "rs_60d": 9.9,
-      "dip_5d": 3.01,
-      "rsi": 64.2,
-      "price": 168.94
-    },
-    "TDW": {
-      "score": 0.021,
-      "rs_60d": 7.92,
-      "dip_5d": 1.78,
-      "rsi": 49.0,
-      "price": 85.42
-    },
-    "SM": {
-      "score": 0.0202,
-      "rs_60d": 13.39,
-      "dip_5d": 5.56,
-      "rsi": 57.5,
-      "price": 37.0
-    },
-    "RMBS": {
-      "score": 0.0202,
-      "rs_60d": 1.2,
-      "dip_5d": -2.57,
-      "rsi": 58.5,
-      "price": 107.47
-    },
-    "PLAB": {
-      "score": 0.0197,
-      "rs_60d": -2.08,
-      "dip_5d": -4.67,
-      "rsi": 46.7,
-      "price": 29.62
-    },
-    "FLS": {
-      "score": 0.0196,
-      "rs_60d": 0.83,
-      "dip_5d": -2.72,
-      "rsi": 44.2,
-      "price": 72.28
-    },
-    "TGT": {
-      "score": 0.0187,
-      "rs_60d": 5.31,
-      "dip_5d": 0.42,
-      "rsi": 45.4,
-      "price": 153.64
-    },
-    "DVN": {
-      "score": 0.0179,
-      "rs_60d": 5.36,
-      "dip_5d": 0.58,
-      "rsi": 52.6,
-      "price": 48.26
-    },
-    "CVX": {
-      "score": 0.0175,
-      "rs_60d": 8.38,
-      "dip_5d": 2.67,
-      "rsi": 59.7,
-      "price": 211.98
-    },
-    "DUOL": {
-      "score": 0.0175,
-      "rs_60d": 7.26,
-      "dip_5d": 1.92,
-      "rsi": 54.2,
-      "price": 149.92
-    },
-    "LOPE": {
-      "score": 0.0173,
-      "rs_60d": 9.04,
-      "dip_5d": 3.14,
-      "rsi": 66.0,
-      "price": 159.8
-    },
-    "VAL": {
-      "score": 0.017,
-      "rs_60d": 4.54,
-      "dip_5d": 0.19,
-      "rsi": 52.7,
-      "price": 83.65
-    },
-    "AMGN": {
-      "score": 0.0164,
-      "rs_60d": 8.52,
-      "dip_5d": 2.95,
-      "rsi": 54.8,
-      "price": 414.87
-    },
-    "DHR": {
-      "score": 0.0162,
-      "rs_60d": 3.09,
-      "dip_5d": -0.63,
-      "rsi": 55.1,
-      "price": 219.81
-    },
-    "WOR": {
-      "score": 0.0161,
-      "rs_60d": 7.23,
-      "dip_5d": 2.14,
-      "rsi": 59.8,
-      "price": 62.45
-    },
-    "OII": {
-      "score": 0.0161,
-      "rs_60d": 1.24,
-      "dip_5d": -1.86,
-      "rsi": 42.8,
-      "price": 44.81
-    },
-    "EXPO": {
-      "score": 0.0158,
-      "rs_60d": 6.27,
-      "dip_5d": 1.54,
-      "rsi": 58.7,
-      "price": 69.81
-    },
-    "CME": {
-      "score": 0.0156,
-      "rs_60d": 9.74,
-      "dip_5d": 3.9,
-      "rsi": 62.4,
-      "price": 280.56
-    },
-    "SOLV": {
-      "score": 0.0155,
-      "rs_60d": 2.61,
-      "dip_5d": -0.84,
-      "rsi": 45.8,
-      "price": 87.29
-    },
-    "LH": {
-      "score": 0.0149,
-      "rs_60d": 5.41,
-      "dip_5d": 1.13,
-      "rsi": 47.6,
-      "price": 312.15
-    },
-    "ETN": {
-      "score": 0.0148,
-      "rs_60d": 2.67,
-      "dip_5d": -0.68,
-      "rsi": 51.3,
-      "price": 429.65
-    },
-    "SIG": {
-      "score": 0.0145,
-      "rs_60d": 10.06,
-      "dip_5d": 4.29,
-      "rsi": 62.4,
-      "price": 105.22
-    },
-    "LSCC": {
-      "score": 0.0143,
-      "rs_60d": -4.09,
-      "dip_5d": -5.12,
-      "rsi": 52.8,
-      "price": 126.05
-    },
-    "ECHO": {
-      "score": 0.014,
-      "rs_60d": -1.66,
-      "dip_5d": -3.43,
-      "rsi": 54.0,
-      "price": 94.84
-    },
-    "BIIB": {
-      "score": 0.0136,
-      "rs_60d": 4.83,
-      "dip_5d": 0.95,
-      "rsi": 56.5,
-      "price": 225.71
-    },
-    "SLB": {
-      "score": 0.0136,
-      "rs_60d": -0.58,
-      "dip_5d": -2.65,
-      "rsi": 39.0,
-      "price": 48.95
-    },
-    "ITT": {
-      "score": 0.0135,
-      "rs_60d": -0.14,
-      "dip_5d": -2.34,
-      "rsi": 46.7,
-      "price": 201.37
-    },
-    "PFE": {
-      "score": 0.0135,
-      "rs_60d": 8.15,
-      "dip_5d": 3.17,
-      "rsi": 55.8,
-      "price": 28.28
-    },
-    "MLI": {
-      "score": 0.0132,
-      "rs_60d": -2.07,
-      "dip_5d": -3.59,
-      "rsi": 43.7,
-      "price": 60.71
-    },
-    "ICE": {
-      "score": 0.0125,
-      "rs_60d": 7.1,
-      "dip_5d": 2.66,
-      "rsi": 54.6,
-      "price": 156.19
-    },
-    "CHRD": {
-      "score": 0.0125,
-      "rs_60d": 5.75,
-      "dip_5d": 1.75,
-      "rsi": 51.9,
-      "price": 141.54
-    },
-    "JXN": {
-      "score": 0.0125,
-      "rs_60d": -1.52,
-      "dip_5d": -3.09,
-      "rsi": 45.3,
-      "price": 129.71
-    },
-    "NVT": {
-      "score": 0.0124,
-      "rs_60d": 3.33,
-      "dip_5d": 0.16,
-      "rsi": 55.7,
-      "price": 167.43
-    },
-    "TEL": {
-      "score": 0.0122,
-      "rs_60d": 2.62,
-      "dip_5d": -0.29,
-      "rsi": 57.3,
-      "price": 218.29
-    },
-    "GWRE": {
-      "score": 0.0121,
-      "rs_60d": 6.79,
-      "dip_5d": 2.51,
-      "rsi": 58.0,
-      "price": 167.32
-    },
-    "MCK": {
-      "score": 0.012,
-      "rs_60d": 6.84,
-      "dip_5d": 2.56,
-      "rsi": 64.1,
-      "price": 938.84
-    },
-    "STEP": {
-      "score": 0.0118,
-      "rs_60d": -3.48,
-      "dip_5d": -4.3,
-      "rsi": 41.7,
-      "price": 44.1
-    },
-    "MRK": {
-      "score": 0.0117,
-      "rs_60d": 9.45,
-      "dip_5d": 4.34,
-      "rsi": 51.6,
-      "price": 145.6
-    },
-    "MSA": {
-      "score": 0.0116,
-      "rs_60d": 0.91,
-      "dip_5d": -1.32,
-      "rsi": 47.7,
-      "price": 180.71
-    },
-    "GEF": {
-      "score": 0.0115,
-      "rs_60d": 2.46,
-      "dip_5d": -0.28,
-      "rsi": 45.7,
-      "price": 81.82
-    },
-    "G": {
-      "score": 0.0107,
-      "rs_60d": 6.62,
-      "dip_5d": 2.63,
-      "rsi": 51.0,
-      "price": 34.4
-    },
-    "SAIC": {
-      "score": 0.0106,
-      "rs_60d": 11.83,
-      "dip_5d": 6.12,
-      "rsi": 60.8,
-      "price": 134.66
-    },
-    "PWR": {
-      "score": 0.0105,
-      "rs_60d": 7.57,
-      "dip_5d": 3.3,
-      "rsi": 62.7,
-      "price": 705.94
-    },
-    "BSY": {
-      "score": 0.0097,
-      "rs_60d": 3.39,
-      "dip_5d": 0.63,
-      "rsi": 58.0,
-      "price": 34.97
-    },
-    "CDNS": {
-      "score": 0.0096,
-      "rs_60d": 2.14,
-      "dip_5d": -0.18,
-      "rsi": 66.1,
-      "price": 352.84
-    },
-    "COKE": {
-      "score": 0.0092,
-      "rs_60d": 3.83,
-      "dip_5d": 1.02,
-      "rsi": 55.6,
-      "price": 196.24
-    },
-    "EHC": {
-      "score": 0.0089,
-      "rs_60d": 5.16,
-      "dip_5d": 1.95,
-      "rsi": 54.9,
-      "price": 123.33
-    },
-    "AME": {
-      "score": 0.0085,
-      "rs_60d": 0.14,
-      "dip_5d": -1.33,
-      "rsi": 54.7,
-      "price": 248.58
-    },
-    "FIVE": {
-      "score": 0.0082,
-      "rs_60d": 1.23,
-      "dip_5d": -0.56,
-      "rsi": 40.8,
-      "price": 214.73
-    },
-    "QCOM": {
-      "score": 0.0072,
-      "rs_60d": -2.58,
-      "dip_5d": -2.93,
-      "rsi": 44.4,
-      "price": 175.5
-    },
-    "AVY": {
-      "score": 0.0072,
-      "rs_60d": -0.13,
-      "dip_5d": -1.28,
-      "rsi": 42.2,
-      "price": 167.82
-    },
-    "SHOO": {
-      "score": 0.0072,
-      "rs_60d": -2.72,
-      "dip_5d": -3.02,
-      "rsi": 49.6,
-      "price": 44.3
-    },
-    "NUE": {
-      "score": 0.0068,
-      "rs_60d": 1.05,
-      "dip_5d": -0.43,
-      "rsi": 51.6,
-      "price": 250.33
-    },
-    "WST": {
-      "score": 0.0068,
-      "rs_60d": -2.58,
-      "dip_5d": -2.86,
-      "rsi": 52.5,
-      "price": 366.0
-    },
-    "FRPT": {
-      "score": 0.0067,
-      "rs_60d": 8.37,
-      "dip_5d": 4.47,
-      "rsi": 55.3,
-      "price": 64.07
-    },
-    "MORN": {
-      "score": 0.0067,
-      "rs_60d": 13.79,
-      "dip_5d": 8.08,
-      "rsi": 56.6,
-      "price": 204.45
-    },
-    "EXPD": {
-      "score": 0.0066,
-      "rs_60d": 0.96,
-      "dip_5d": -0.45,
-      "rsi": 57.3,
-      "price": 193.24
-    },
-    "ECPG": {
-      "score": 0.0066,
-      "rs_60d": 4.49,
-      "dip_5d": 1.89,
-      "rsi": 55.9,
-      "price": 99.77
-    },
-    "GTES": {
-      "score": 0.0065,
-      "rs_60d": -4.52,
-      "dip_5d": -4.1,
-      "rsi": 50.4,
-      "price": 26.67
-    },
-    "ROKU": {
-      "score": 0.0065,
-      "rs_60d": 1.08,
-      "dip_5d": -0.37,
-      "rsi": 48.0,
-      "price": 152.85
-    },
-    "TTC": {
-      "score": 0.0059,
-      "rs_60d": -3.3,
-      "dip_5d": -3.18,
-      "rsi": 47.4,
-      "price": 95.79
-    },
-    "ALRM": {
-      "score": 0.0057,
-      "rs_60d": -0.14,
-      "dip_5d": -1.05,
-      "rsi": 55.3,
-      "price": 55.65
-    },
-    "ASO": {
-      "score": 0.0057,
-      "rs_60d": 5.79,
-      "dip_5d": 2.9,
-      "rsi": 65.8,
-      "price": 53.49
-    },
-    "REGN": {
-      "score": 0.0057,
-      "rs_60d": 5.58,
-      "dip_5d": 2.76,
-      "rsi": 42.1,
-      "price": 746.54
-    },
-    "GGG": {
-      "score": 0.0051,
-      "rs_60d": 0.11,
-      "dip_5d": -0.79,
-      "rsi": 51.4,
-      "price": 78.21
+      "score": 0.1145,
+      "rs_60d": 13.35,
+      "dip_5d": -10.18,
+      "rsi": 40.0,
+      "price": 166.73
+    },
+    "EXLS": {
+      "score": 0.1127,
+      "rs_60d": 39.52,
+      "dip_5d": 7.55,
+      "rsi": 72.8,
+      "price": 39.52
+    },
+    "RGEN": {
+      "score": 0.1085,
+      "rs_60d": 29.64,
+      "dip_5d": 1.69,
+      "rsi": 48.8,
+      "price": 175.42
     },
     "PEGA": {
-      "score": 0.005,
-      "rs_60d": 6.11,
-      "dip_5d": 3.24,
-      "rsi": 55.9,
-      "price": 35.65
-    },
-    "WTS": {
-      "score": 0.0049,
-      "rs_60d": -2.93,
-      "dip_5d": -2.76,
-      "rsi": 45.7,
-      "price": 352.72
-    },
-    "AEIS": {
-      "score": 0.0049,
-      "rs_60d": -3.12,
-      "dip_5d": -2.9,
-      "rsi": 51.9,
-      "price": 288.66
-    },
-    "RAL": {
-      "score": 0.0045,
-      "rs_60d": -0.43,
-      "dip_5d": -1.03,
-      "rsi": 63.9,
-      "price": 73.2
-    },
-    "QTWO": {
-      "score": 0.0043,
-      "rs_60d": 2.07,
-      "dip_5d": 0.67,
-      "rsi": 51.0,
-      "price": 58.6
-    },
-    "GILD": {
-      "score": 0.0042,
-      "rs_60d": 7.83,
-      "dip_5d": 4.52,
-      "rsi": 59.0,
-      "price": 151.17
-    },
-    "IFF": {
-      "score": 0.0042,
-      "rs_60d": 3.37,
-      "dip_5d": 1.55,
-      "rsi": 51.5,
-      "price": 84.55
-    },
-    "CNXC": {
-      "score": 0.004,
-      "rs_60d": 1.48,
-      "dip_5d": 0.31,
-      "rsi": 46.4,
-      "price": 25.95
-    },
-    "AMN": {
-      "score": 0.0036,
-      "rs_60d": -0.4,
-      "dip_5d": -0.87,
-      "rsi": 60.0,
-      "price": 36.52
-    },
-    "TILE": {
-      "score": 0.0035,
-      "rs_60d": 0.3,
-      "dip_5d": -0.37,
-      "rsi": 44.7,
-      "price": 34.73
-    },
-    "GPN": {
-      "score": 0.0034,
-      "rs_60d": 0.88,
-      "dip_5d": 0.02,
-      "rsi": 43.5,
-      "price": 82.2
-    },
-    "TXN": {
-      "score": 0.0033,
-      "rs_60d": -4.85,
-      "dip_5d": -3.78,
-      "rsi": 55.7,
-      "price": 283.74
-    },
-    "TTEK": {
-      "score": 0.003,
-      "rs_60d": 0.79,
-      "dip_5d": 0.03,
-      "rsi": 40.9,
-      "price": 33.34
-    },
-    "EPAC": {
-      "score": 0.0029,
-      "rs_60d": -3.82,
-      "dip_5d": -3.03,
-      "rsi": 42.2,
-      "price": 34.93
-    },
-    "MDT": {
-      "score": 0.0029,
-      "rs_60d": 1.6,
-      "dip_5d": 0.58,
-      "rsi": 48.3,
-      "price": 88.48
-    },
-    "FDS": {
-      "score": 0.0028,
-      "rs_60d": 6.52,
-      "dip_5d": 3.89,
-      "rsi": 55.4,
-      "price": 287.18
-    },
-    "KO": {
-      "score": 0.0022,
-      "rs_60d": 3.21,
-      "dip_5d": 1.78,
-      "rsi": 54.3,
-      "price": 88.05
-    },
-    "KNTK": {
-      "score": 0.002,
-      "rs_60d": 1.58,
-      "dip_5d": 0.72,
-      "rsi": 53.0,
-      "price": 53.46
-    },
-    "AWI": {
-      "score": 0.002,
-      "rs_60d": -0.96,
-      "dip_5d": -0.98,
-      "rsi": 42.7,
-      "price": 161.87
-    },
-    "J": {
-      "score": 0.0014,
-      "rs_60d": 0.87,
-      "dip_5d": 0.35,
-      "rsi": 47.3,
-      "price": 139.15
-    },
-    "WEX": {
-      "score": 0.001,
-      "rs_60d": 0.2,
-      "dip_5d": -0.03,
-      "rsi": 40.0,
-      "price": 172.43
-    },
-    "SYNA": {
-      "score": 0.0008,
-      "rs_60d": 0.32,
-      "dip_5d": 0.08,
-      "rsi": 69.2,
-      "price": 119.82
-    },
-    "OXY": {
-      "score": 0.0008,
-      "rs_60d": 4.82,
-      "dip_5d": 3.09,
-      "rsi": 57.6,
-      "price": 60.11
-    },
-    "CVSA": {
-      "score": 0.0005,
-      "rs_60d": 4.9,
-      "dip_5d": 3.18,
-      "rsi": 56.9,
-      "price": 129.38
-    },
-    "MATX": {
-      "score": 0.0003,
-      "rs_60d": -3.18,
-      "dip_5d": -2.16,
-      "rsi": 50.1,
-      "price": 225.67
-    },
-    "IEX": {
-      "score": 0.0002,
-      "rs_60d": -0.59,
-      "dip_5d": -0.43,
-      "rsi": 58.4,
-      "price": 234.29
-    },
-    "MAN": {
-      "score": 0.0001,
-      "rs_60d": -3.91,
-      "dip_5d": -2.62,
-      "rsi": 38.2,
-      "price": 52.78
-    },
-    "IRDM": {
-      "score": -0.0002,
-      "rs_60d": -3.05,
-      "dip_5d": -2.0,
-      "rsi": 46.1,
-      "price": 47.47
-    },
-    "CLH": {
-      "score": -0.0007,
-      "rs_60d": -2.7,
-      "dip_5d": -1.69,
-      "rsi": 51.9,
-      "price": 316.93
-    },
-    "VNT": {
-      "score": -0.0007,
-      "rs_60d": 1.48,
-      "dip_5d": 1.1,
-      "rsi": 53.0,
-      "price": 32.24
-    },
-    "MSM": {
-      "score": -0.0008,
-      "rs_60d": -0.95,
-      "dip_5d": -0.5,
-      "rsi": 64.5,
-      "price": 129.51
-    },
-    "LAUR": {
-      "score": -0.0008,
-      "rs_60d": 3.54,
-      "dip_5d": 2.49,
-      "rsi": 66.0,
-      "price": 39.47
-    },
-    "SHAK": {
-      "score": -0.0009,
-      "rs_60d": 10.6,
-      "dip_5d": 7.21,
-      "rsi": 61.7,
-      "price": 66.9
-    },
-    "EXEL": {
-      "score": -0.0011,
-      "rs_60d": 2.3,
-      "dip_5d": 1.72,
-      "rsi": 62.2,
-      "price": 59.86
-    },
-    "BR": {
-      "score": -0.0015,
-      "rs_60d": 5.62,
-      "dip_5d": 4.0,
-      "rsi": 51.7,
-      "price": 165.45
-    },
-    "MP": {
-      "score": -0.0021,
-      "rs_60d": -2.76,
-      "dip_5d": -1.49,
-      "rsi": 40.9,
-      "price": 46.14
-    },
-    "GEHC": {
-      "score": -0.0021,
-      "rs_60d": -0.51,
-      "dip_5d": 0.0,
-      "rsi": 48.2,
-      "price": 65.74
-    },
-    "DDOG": {
-      "score": -0.0021,
-      "rs_60d": 8.62,
-      "dip_5d": 6.09,
-      "rsi": 73.3,
-      "price": 293.26
-    },
-    "DIS": {
-      "score": -0.0022,
-      "rs_60d": 5.88,
-      "dip_5d": 4.29,
-      "rsi": 59.3,
-      "price": 108.05
-    },
-    "CBRL": {
-      "score": -0.0024,
-      "rs_60d": 2.44,
-      "dip_5d": 2.02,
-      "rsi": 63.3,
-      "price": 57.46
-    },
-    "EME": {
-      "score": -0.0025,
-      "rs_60d": 1.34,
-      "dip_5d": 1.32,
-      "rsi": 54.7,
-      "price": 789.45
-    },
-    "ROIV": {
-      "score": -0.0025,
-      "rs_60d": -2.05,
-      "dip_5d": -0.95,
-      "rsi": 43.8,
-      "price": 35.44
-    },
-    "GKOS": {
-      "score": -0.0025,
-      "rs_60d": 0.9,
-      "dip_5d": 1.02,
-      "rsi": 50.0,
-      "price": 165.69
-    },
-    "GM": {
-      "score": -0.0027,
-      "rs_60d": 4.01,
-      "dip_5d": 3.12,
-      "rsi": 50.5,
-      "price": 82.73
-    },
-    "LXP": {
-      "score": -0.0028,
-      "rs_60d": -0.49,
-      "dip_5d": 0.13,
-      "rsi": 64.4,
-      "price": 61.0
-    },
-    "ATI": {
-      "score": -0.0029,
-      "rs_60d": -1.7,
-      "dip_5d": -0.65,
-      "rsi": 48.3,
-      "price": 191.84
-    },
-    "WSM": {
-      "score": -0.0033,
-      "rs_60d": 1.11,
-      "dip_5d": 1.29,
-      "rsi": 61.5,
-      "price": 241.78
-    },
-    "MUR": {
-      "score": -0.0034,
-      "rs_60d": 0.28,
-      "dip_5d": 0.76,
-      "rsi": 56.7,
-      "price": 38.68
-    },
-    "GLW": {
-      "score": -0.0035,
-      "rs_60d": -3.41,
-      "dip_5d": -1.69,
-      "rsi": 49.7,
-      "price": 156.68
-    },
-    "DAN": {
-      "score": -0.0036,
-      "rs_60d": 5.72,
-      "dip_5d": 4.41,
-      "rsi": 53.5,
-      "price": 29.34
-    },
-    "RS": {
-      "score": -0.0039,
-      "rs_60d": -3.1,
-      "dip_5d": -1.42,
-      "rsi": 55.7,
-      "price": 402.45
-    },
-    "DLR": {
-      "score": -0.0041,
-      "rs_60d": -1.94,
-      "dip_5d": -0.62,
-      "rsi": 45.4,
-      "price": 178.76
-    },
-    "ELV": {
-      "score": -0.0042,
-      "rs_60d": 5.86,
-      "dip_5d": 4.61,
-      "rsi": 59.2,
-      "price": 412.7
-    },
-    "GDDY": {
-      "score": -0.0043,
-      "rs_60d": 5.85,
-      "dip_5d": 4.62,
-      "rsi": 59.0,
-      "price": 104.35
-    },
-    "THG": {
-      "score": -0.0046,
-      "rs_60d": -1.89,
-      "dip_5d": -0.49,
-      "rsi": 46.4,
-      "price": 219.33
-    },
-    "EGBN": {
-      "score": -0.0047,
-      "rs_60d": -1.72,
-      "dip_5d": -0.35,
-      "rsi": 52.1,
-      "price": 28.22
-    },
-    "URI": {
-      "score": -0.0047,
-      "rs_60d": -3.68,
-      "dip_5d": -1.67,
-      "rsi": 53.1,
-      "price": 1056.37
-    },
-    "VRSN": {
-      "score": -0.005,
-      "rs_60d": 4.65,
-      "dip_5d": 3.93,
-      "rsi": 62.9,
-      "price": 303.74
-    },
-    "SEIC": {
-      "score": -0.0054,
-      "rs_60d": 0.74,
-      "dip_5d": 1.39,
-      "rsi": 50.3,
-      "price": 104.7
-    },
-    "OVV": {
-      "score": -0.0057,
-      "rs_60d": 5.79,
-      "dip_5d": 4.81,
-      "rsi": 58.4,
-      "price": 63.88
-    },
-    "ZD": {
-      "score": -0.006,
-      "rs_60d": -0.04,
-      "dip_5d": 0.96,
-      "rsi": 52.7,
-      "price": 56.52
-    },
-    "BKR": {
-      "score": -0.0065,
-      "rs_60d": -3.41,
-      "dip_5d": -1.19,
-      "rsi": 44.4,
-      "price": 56.7
-    },
-    "VRTX": {
-      "score": -0.0067,
-      "rs_60d": 0.28,
-      "dip_5d": 1.31,
-      "rsi": 45.6,
-      "price": 510.08
-    },
-    "IBM": {
-      "score": -0.0068,
-      "rs_60d": 2.05,
-      "dip_5d": 2.5,
-      "rsi": 48.3,
-      "price": 227.13
-    },
-    "FLR": {
-      "score": -0.0068,
-      "rs_60d": -1.49,
-      "dip_5d": 0.14,
-      "rsi": 45.5,
-      "price": 50.68
-    },
-    "MMM": {
-      "score": -0.0068,
-      "rs_60d": -4.67,
-      "dip_5d": -1.98,
-      "rsi": 36.5,
-      "price": 159.96
-    },
-    "DASH": {
-      "score": -0.0069,
-      "rs_60d": 1.97,
-      "dip_5d": 2.47,
-      "rsi": 50.8,
-      "price": 196.5
-    },
-    "PH": {
-      "score": -0.007,
-      "rs_60d": -3.77,
-      "dip_5d": -1.34,
-      "rsi": 48.7,
-      "price": 962.56
-    },
-    "CVLT": {
-      "score": -0.0072,
-      "rs_60d": 1.64,
-      "dip_5d": 2.29,
-      "rsi": 63.8,
-      "price": 157.25
-    },
-    "RGA": {
-      "score": -0.0073,
-      "rs_60d": 1.12,
-      "dip_5d": 1.97,
-      "rsi": 63.5,
-      "price": 255.98
-    },
-    "STLD": {
-      "score": -0.0075,
-      "rs_60d": -3.53,
-      "dip_5d": -1.1,
-      "rsi": 52.7,
-      "price": 238.38
-    },
-    "ICUI": {
-      "score": -0.0078,
-      "rs_60d": -2.96,
-      "dip_5d": -0.67,
-      "rsi": 47.6,
-      "price": 160.32
-    },
-    "VLTO": {
-      "score": -0.0079,
-      "rs_60d": -1.42,
-      "dip_5d": 0.37,
-      "rsi": 54.7,
-      "price": 96.93
-    },
-    "NE": {
-      "score": -0.008,
-      "rs_60d": -2.67,
-      "dip_5d": -0.45,
-      "rsi": 45.9,
-      "price": 42.36
-    },
-    "HLNE": {
-      "score": -0.0084,
-      "rs_60d": -4.96,
-      "dip_5d": -1.9,
-      "rsi": 36.0,
-      "price": 85.67
-    },
-    "EAT": {
-      "score": -0.0085,
-      "rs_60d": -2.36,
-      "dip_5d": -0.15,
-      "rsi": 42.1,
-      "price": 193.87
-    },
-    "DMC": {
-      "score": -0.0085,
-      "rs_60d": -4.24,
-      "dip_5d": -1.4,
-      "rsi": 37.5,
-      "price": 29.48
-    },
-    "SLAB": {
-      "score": -0.0085,
-      "rs_60d": -2.65,
-      "dip_5d": -0.34,
-      "rsi": 59.3,
-      "price": 222.04
-    },
-    "RRC": {
-      "score": -0.0085,
-      "rs_60d": 6.49,
-      "dip_5d": 5.74,
-      "rsi": 59.3,
-      "price": 40.89
-    },
-    "ABBV": {
-      "score": -0.0086,
-      "rs_60d": 3.89,
-      "dip_5d": 4.03,
-      "rsi": 71.2,
-      "price": 276.47
-    },
-    "TYL": {
-      "score": -0.0087,
-      "rs_60d": -1.6,
-      "dip_5d": 0.37,
-      "rsi": 46.9,
-      "price": 329.55
-    },
-    "BBY": {
-      "score": -0.0089,
-      "rs_60d": -2.87,
-      "dip_5d": -0.43,
-      "rsi": 46.5,
-      "price": 87.01
-    },
-    "MET": {
-      "score": -0.0095,
-      "rs_60d": -0.14,
-      "dip_5d": 1.5,
-      "rsi": 57.7,
-      "price": 98.33
-    },
-    "SJM": {
-      "score": -0.0096,
-      "rs_60d": 2.24,
-      "dip_5d": 3.1,
-      "rsi": 48.5,
-      "price": 119.83
-    },
-    "FIX": {
-      "score": -0.01,
-      "rs_60d": -2.26,
-      "dip_5d": 0.15,
-      "rsi": 54.4,
-      "price": 1715.69
-    },
-    "OFG": {
-      "score": -0.0102,
-      "rs_60d": -3.81,
-      "dip_5d": -0.84,
-      "rsi": 40.8,
-      "price": 50.54
-    },
-    "AMG": {
-      "score": -0.0105,
-      "rs_60d": -0.03,
-      "dip_5d": 1.72,
-      "rsi": 64.8,
-      "price": 387.26
-    },
-    "MTCH": {
-      "score": -0.0105,
-      "rs_60d": 0.21,
-      "dip_5d": 1.88,
-      "rsi": 50.8,
-      "price": 41.09
-    },
-    "MA": {
-      "score": -0.0116,
-      "rs_60d": 3.63,
-      "dip_5d": 4.35,
-      "rsi": 64.9,
-      "price": 589.14
-    },
-    "TXNM": {
-      "score": -0.0117,
-      "rs_60d": -2.66,
-      "dip_5d": 0.17,
-      "rsi": 58.7,
-      "price": 58.61
-    },
-    "GPOR": {
-      "score": -0.0118,
-      "rs_60d": 1.63,
-      "dip_5d": 3.05,
-      "rsi": 50.5,
-      "price": 162.66
-    },
-    "STRA": {
-      "score": -0.0119,
-      "rs_60d": 2.91,
-      "dip_5d": 3.92,
-      "rsi": 58.2,
-      "price": 82.39
-    },
-    "BAH": {
-      "score": -0.012,
-      "rs_60d": 8.64,
-      "dip_5d": 7.77,
-      "rsi": 53.7,
-      "price": 73.94
-    },
-    "APG": {
-      "score": -0.012,
-      "rs_60d": -4.25,
-      "dip_5d": -0.84,
-      "rsi": 56.9,
-      "price": 40.32
-    },
-    "AR": {
-      "score": -0.0122,
-      "rs_60d": 2.19,
-      "dip_5d": 3.49,
-      "rsi": 50.8,
-      "price": 35.9
-    },
-    "TRGP": {
-      "score": -0.0122,
-      "rs_60d": -3.41,
-      "dip_5d": -0.24,
-      "rsi": 53.1,
-      "price": 286.7
-    },
-    "EOG": {
-      "score": -0.0123,
-      "rs_60d": 1.17,
-      "dip_5d": 2.83,
-      "rsi": 58.8,
-      "price": 148.16
-    },
-    "LTC": {
-      "score": -0.0126,
-      "rs_60d": -3.05,
-      "dip_5d": 0.07,
-      "rsi": 52.0,
-      "price": 42.46
-    },
-    "EQT": {
-      "score": -0.0127,
-      "rs_60d": 1.85,
-      "dip_5d": 3.35,
-      "rsi": 55.9,
-      "price": 52.83
-    },
-    "NWSA": {
-      "score": -0.0128,
-      "rs_60d": -2.32,
-      "dip_5d": 0.59,
-      "rsi": 49.9,
-      "price": 29.12
-    },
-    "BKE": {
-      "score": -0.0129,
-      "rs_60d": -0.77,
-      "dip_5d": 1.63,
-      "rsi": 62.7,
-      "price": 44.16
-    },
-    "ENSG": {
-      "score": -0.014,
-      "rs_60d": -4.44,
-      "dip_5d": -0.63,
-      "rsi": 46.3,
-      "price": 171.8
-    },
-    "FTDR": {
-      "score": -0.0141,
-      "rs_60d": 0.68,
-      "dip_5d": 2.81,
-      "rsi": 55.8,
-      "price": 79.8
-    },
-    "PGR": {
-      "score": -0.0143,
-      "rs_60d": -0.19,
-      "dip_5d": 2.26,
-      "rsi": 56.6,
-      "price": 217.43
-    },
-    "V": {
-      "score": -0.0145,
-      "rs_60d": 2.75,
-      "dip_5d": 4.26,
-      "rsi": 67.6,
-      "price": 385.45
-    },
-    "AXTA": {
-      "score": -0.0145,
-      "rs_60d": -3.85,
-      "dip_5d": -0.15,
-      "rsi": 43.8,
-      "price": 32.63
-    },
-    "CAH": {
-      "score": -0.0146,
-      "rs_60d": -0.79,
-      "dip_5d": 1.91,
-      "rsi": 59.5,
-      "price": 237.57
-    },
-    "ACA": {
-      "score": -0.0148,
-      "rs_60d": -3.25,
-      "dip_5d": 0.29,
-      "rsi": 68.4,
-      "price": 147.18
-    },
-    "COR": {
-      "score": -0.0153,
-      "rs_60d": 0.43,
-      "dip_5d": 2.83,
-      "rsi": 58.6,
-      "price": 323.85
-    },
-    "GPC": {
-      "score": -0.0156,
-      "rs_60d": -2.98,
-      "dip_5d": 0.62,
-      "rsi": 44.8,
-      "price": 127.02
-    },
-    "ABM": {
-      "score": -0.0159,
-      "rs_60d": -0.44,
-      "dip_5d": 2.35,
-      "rsi": 56.1,
-      "price": 49.63
-    },
-    "TECH": {
-      "score": -0.0161,
-      "rs_60d": -4.28,
-      "dip_5d": -0.17,
-      "rsi": 54.9,
-      "price": 72.46
-    },
-    "ECL": {
-      "score": -0.0161,
-      "rs_60d": -1.45,
-      "dip_5d": 1.72,
-      "rsi": 56.8,
-      "price": 281.83
-    },
-    "MSGS": {
-      "score": -0.0165,
-      "rs_60d": -3.38,
-      "dip_5d": 0.49,
-      "rsi": 51.3,
-      "price": 402.3
-    },
-    "CRC": {
-      "score": -0.0174,
-      "rs_60d": -4.5,
-      "dip_5d": -0.09,
-      "rsi": 50.0,
-      "price": 52.96
-    },
-    "NSSC": {
-      "score": -0.0174,
-      "rs_60d": -4.69,
-      "dip_5d": -0.22,
-      "rsi": 50.6,
-      "price": 36.14
-    },
-    "VAC": {
-      "score": -0.0176,
-      "rs_60d": 0.61,
-      "dip_5d": 3.35,
-      "rsi": 53.0,
-      "price": 105.34
-    },
-    "EQIX": {
-      "score": -0.0181,
-      "rs_60d": -4.15,
-      "dip_5d": 0.26,
-      "rsi": 48.8,
-      "price": 1026.06
-    },
-    "UNM": {
-      "score": -0.0188,
-      "rs_60d": -1.8,
-      "dip_5d": 1.93,
-      "rsi": 49.9,
-      "price": 91.67
-    },
-    "ADP": {
-      "score": -0.019,
-      "rs_60d": 1.37,
-      "dip_5d": 4.08,
-      "rsi": 55.0,
-      "price": 270.88
-    },
-    "ROP": {
-      "score": -0.0191,
-      "rs_60d": -4.48,
-      "dip_5d": 0.2,
+      "score": 0.1083,
+      "rs_60d": 25.49,
+      "dip_5d": -1.06,
+      "rsi": 49.1,
+      "price": 34.54
+    },
+    "LPG": {
+      "score": 0.1077,
+      "rs_60d": 14.98,
+      "dip_5d": -7.97,
       "rsi": 44.3,
-      "price": 364.09
+      "price": 53.6
     },
-    "UGI": {
-      "score": -0.0191,
-      "rs_60d": -3.38,
-      "dip_5d": 0.92,
-      "rsi": 51.4,
-      "price": 37.12
+    "FORM": {
+      "score": 0.1069,
+      "rs_60d": -2.36,
+      "dip_5d": -19.4,
+      "rsi": 33.3,
+      "price": 105.01
     },
-    "ADBE": {
-      "score": -0.0193,
-      "rs_60d": -2.63,
-      "dip_5d": 1.46,
-      "rsi": 46.8,
-      "price": 242.27
+    "FTNT": {
+      "score": 0.1049,
+      "rs_60d": 7.71,
+      "dip_5d": -12.34,
+      "rsi": 40.7,
+      "price": 169.13
     },
-    "WKC": {
-      "score": -0.0196,
-      "rs_60d": -4.99,
-      "dip_5d": -0.05,
-      "rsi": 54.2,
-      "price": 36.41
+    "MXL": {
+      "score": 0.1045,
+      "rs_60d": -3.67,
+      "dip_5d": -19.86,
+      "rsi": 38.3,
+      "price": 71.32
     },
-    "NDAQ": {
-      "score": -0.0197,
-      "rs_60d": -2.55,
-      "dip_5d": 1.58,
-      "rsi": 52.1,
-      "price": 93.65
+    "CORT": {
+      "score": 0.1035,
+      "rs_60d": 12.23,
+      "dip_5d": -9.1,
+      "rsi": 40.5,
+      "price": 110.16
     },
-    "AMZN": {
-      "score": -0.0207,
-      "rs_60d": 1.4,
-      "dip_5d": 4.39,
-      "rsi": 59.0,
-      "price": 262.43
+    "GME": {
+      "score": 0.1027,
+      "rs_60d": 23.35,
+      "dip_5d": -1.54,
+      "rsi": 65.5,
+      "price": 26.81
     },
-    "TSCO": {
-      "score": -0.0207,
-      "rs_60d": 5.71,
-      "dip_5d": 7.26,
-      "rsi": 57.4,
-      "price": 33.7
+    "OLLI": {
+      "score": 0.1021,
+      "rs_60d": 37.23,
+      "dip_5d": 7.8,
+      "rsi": 67.4,
+      "price": 93.18
     },
-    "TT": {
-      "score": -0.021,
-      "rs_60d": -3.26,
-      "dip_5d": 1.32,
-      "rsi": 65.6,
-      "price": 476.98
+    "PANW": {
+      "score": 0.1012,
+      "rs_60d": 2.33,
+      "dip_5d": -15.31,
+      "rsi": 37.0,
+      "price": 342.0
     },
-    "LYB": {
-      "score": -0.0214,
-      "rs_60d": -3.29,
-      "dip_5d": 1.37,
-      "rsi": 47.6,
-      "price": 60.03
+    "APA": {
+      "score": 0.1011,
+      "rs_60d": 32.67,
+      "dip_5d": 4.93,
+      "rsi": 69.7,
+      "price": 49.15
     },
-    "LMT": {
-      "score": -0.0218,
-      "rs_60d": -4.59,
-      "dip_5d": 0.58,
-      "rsi": 39.8,
-      "price": 509.59
+    "ITGR": {
+      "score": 0.0999,
+      "rs_60d": 25.18,
+      "dip_5d": 0.14,
+      "rsi": 73.9,
+      "price": 126.7
     },
-    "PEN": {
-      "score": -0.022,
-      "rs_60d": -4.41,
-      "dip_5d": 0.72,
-      "rsi": 51.7,
-      "price": 319.4
+    "SN": {
+      "score": 0.0998,
+      "rs_60d": 22.22,
+      "dip_5d": -1.83,
+      "rsi": 56.6,
+      "price": 186.51
     },
-    "GOOGL": {
-      "score": -0.0223,
-      "rs_60d": -3.34,
-      "dip_5d": 1.5,
-      "rsi": 56.3,
-      "price": 351.66
+    "IDCC": {
+      "score": 0.0975,
+      "rs_60d": 20.32,
+      "dip_5d": -2.69,
+      "rsi": 42.2,
+      "price": 319.3
     },
-    "AAPL": {
-      "score": -0.0223,
-      "rs_60d": -3.88,
-      "dip_5d": 1.13,
-      "rsi": 56.1,
-      "price": 336.64
+    "CAKE": {
+      "score": 0.0968,
+      "rs_60d": 32.36,
+      "dip_5d": 5.43,
+      "rsi": 65.3,
+      "price": 114.92
     },
-    "BILL": {
-      "score": -0.0225,
-      "rs_60d": -4.48,
-      "dip_5d": 0.76,
-      "rsi": 47.0,
-      "price": 44.83
+    "ENTG": {
+      "score": 0.0963,
+      "rs_60d": 4.13,
+      "dip_5d": -13.29,
+      "rsi": 37.8,
+      "price": 138.74
     },
-    "JBL": {
-      "score": -0.0226,
-      "rs_60d": -3.0,
-      "dip_5d": 1.77,
-      "rsi": 49.4,
-      "price": 306.28
+    "ISRG": {
+      "score": 0.0939,
+      "rs_60d": 23.14,
+      "dip_5d": -0.22,
+      "rsi": 64.7,
+      "price": 426.7
     },
-    "C": {
-      "score": -0.0232,
-      "rs_60d": -4.53,
-      "dip_5d": 0.85,
-      "rsi": 44.7,
-      "price": 129.64
+    "CACI": {
+      "score": 0.0917,
+      "rs_60d": 22.91,
+      "dip_5d": -0.01,
+      "rsi": 50.9,
+      "price": 614.31
     },
-    "UTHR": {
-      "score": -0.0232,
-      "rs_60d": -2.23,
-      "dip_5d": 2.38,
-      "rsi": 60.2,
-      "price": 549.16
+    "META": {
+      "score": 0.0907,
+      "rs_60d": 15.88,
+      "dip_5d": -4.53,
+      "rsi": 50.2,
+      "price": 709.33
+    },
+    "ANET": {
+      "score": 0.0902,
+      "rs_60d": -1.57,
+      "dip_5d": -16.08,
+      "rsi": 31.6,
+      "price": 176.98
+    },
+    "IQV": {
+      "score": 0.0892,
+      "rs_60d": 25.0,
+      "dip_5d": 1.79,
+      "rsi": 54.8,
+      "price": 266.9
+    },
+    "NEM": {
+      "score": 0.0885,
+      "rs_60d": 23.98,
+      "dip_5d": 1.24,
+      "rsi": 51.0,
+      "price": 118.6
+    },
+    "EPAM": {
+      "score": 0.0822,
+      "rs_60d": 32.7,
+      "dip_5d": 8.09,
+      "rsi": 65.0,
+      "price": 122.19
+    },
+    "EL": {
+      "score": 0.0807,
+      "rs_60d": 26.91,
+      "dip_5d": 4.5,
+      "rsi": 63.7,
+      "price": 104.54
+    },
+    "A": {
+      "score": 0.0804,
+      "rs_60d": 21.53,
+      "dip_5d": 0.96,
+      "rsi": 62.3,
+      "price": 172.97
+    },
+    "FFIV": {
+      "score": 0.0775,
+      "rs_60d": 9.41,
+      "dip_5d": -6.64,
+      "rsi": 48.0,
+      "price": 442.03
     },
     "TSLA": {
-      "score": -0.0233,
-      "rs_60d": -4.26,
-      "dip_5d": 1.05,
-      "rsi": 59.7,
-      "price": 382.7
+      "score": 0.0771,
+      "rs_60d": 10.03,
+      "dip_5d": -6.17,
+      "rsi": 42.2,
+      "price": 354.72
     },
-    "ASH": {
-      "score": -0.0234,
-      "rs_60d": -1.93,
-      "dip_5d": 2.6,
-      "rsi": 52.1,
-      "price": 70.57
+    "KEYS": {
+      "score": 0.0764,
+      "rs_60d": 0.64,
+      "dip_5d": -12.31,
+      "rsi": 37.1,
+      "price": 331.21
     },
-    "RNR": {
-      "score": -0.0235,
-      "rs_60d": -2.17,
-      "dip_5d": 2.47,
-      "rsi": 57.5,
-      "price": 331.38
+    "SWKS": {
+      "score": 0.0762,
+      "rs_60d": 29.08,
+      "dip_5d": 6.69,
+      "rsi": 48.6,
+      "price": 79.7
     },
-    "MD": {
-      "score": -0.0236,
-      "rs_60d": -2.79,
-      "dip_5d": 2.07,
-      "rsi": 56.1,
-      "price": 26.64
+    "DUOL": {
+      "score": 0.075,
+      "rs_60d": 12.68,
+      "dip_5d": -4.05,
+      "rsi": 46.6,
+      "price": 141.76
     },
-    "GOOG": {
-      "score": -0.024,
-      "rs_60d": -4.24,
-      "dip_5d": 1.17,
-      "rsi": 55.9,
-      "price": 347.86
+    "ORCL": {
+      "score": 0.0729,
+      "rs_60d": 8.22,
+      "dip_5d": -6.67,
+      "rsi": 39.7,
+      "price": 128.23
     },
-    "BFH": {
-      "score": -0.0241,
-      "rs_60d": -3.47,
-      "dip_5d": 1.7,
-      "rsi": 45.6,
-      "price": 100.58
+    "SHAK": {
+      "score": 0.0715,
+      "rs_60d": 19.28,
+      "dip_5d": 0.94,
+      "rsi": 63.0,
+      "price": 69.99
     },
-    "BLK": {
-      "score": -0.0242,
-      "rs_60d": -3.8,
-      "dip_5d": 1.49,
-      "rsi": 50.8,
-      "price": 1082.39
+    "DDOG": {
+      "score": 0.0712,
+      "rs_60d": -3.19,
+      "dip_5d": -13.99,
+      "rsi": 41.8,
+      "price": 247.11
     },
-    "PTGX": {
-      "score": -0.0242,
-      "rs_60d": -2.75,
-      "dip_5d": 2.2,
-      "rsi": 52.6,
-      "price": 143.73
+    "MMSI": {
+      "score": 0.0706,
+      "rs_60d": 16.73,
+      "dip_5d": -0.61,
+      "rsi": 57.1,
+      "price": 89.2
     },
-    "KDP": {
-      "score": -0.0249,
-      "rs_60d": -2.0,
-      "dip_5d": 2.82,
-      "rsi": 54.2,
-      "price": 31.76
+    "BDX": {
+      "score": 0.0683,
+      "rs_60d": 19.34,
+      "dip_5d": 1.51,
+      "rsi": 63.7,
+      "price": 191.75
     },
-    "ADSK": {
-      "score": -0.0252,
-      "rs_60d": 3.04,
-      "dip_5d": 6.22,
-      "rsi": 59.8,
-      "price": 235.35
+    "DXCM": {
+      "score": 0.0671,
+      "rs_60d": 16.98,
+      "dip_5d": 0.14,
+      "rsi": 50.3,
+      "price": 86.04
     },
-    "FCFS": {
-      "score": -0.0255,
-      "rs_60d": -4.7,
+    "HCA": {
+      "score": 0.0667,
+      "rs_60d": 16.76,
+      "dip_5d": 0.05,
+      "rsi": 63.1,
+      "price": 458.84
+    },
+    "RMD": {
+      "score": 0.0652,
+      "rs_60d": 19.09,
+      "dip_5d": 1.86,
+      "rsi": 66.5,
+      "price": 238.97
+    },
+    "DBX": {
+      "score": 0.0622,
+      "rs_60d": 18.57,
+      "dip_5d": 2.01,
+      "rsi": 55.5,
+      "price": 35.57
+    },
+    "FCX": {
+      "score": 0.0619,
+      "rs_60d": 7.8,
+      "dip_5d": -5.12,
+      "rsi": 43.5,
+      "price": 69.54
+    },
+    "HCC": {
+      "score": 0.0616,
+      "rs_60d": 9.04,
+      "dip_5d": -4.24,
+      "rsi": 44.5,
+      "price": 89.94
+    },
+    "APPF": {
+      "score": 0.0614,
+      "rs_60d": 25.23,
+      "dip_5d": 6.59,
+      "rsi": 55.3,
+      "price": 212.13
+    },
+    "GWRE": {
+      "score": 0.0605,
+      "rs_60d": 18.87,
+      "dip_5d": 2.5,
+      "rsi": 56.4,
+      "price": 168.86
+    },
+    "HOOD": {
+      "score": 0.0604,
+      "rs_60d": 0.88,
+      "dip_5d": -9.48,
+      "rsi": 36.8,
+      "price": 98.87
+    },
+    "ULTA": {
+      "score": 0.0588,
+      "rs_60d": 21.44,
+      "dip_5d": 4.49,
+      "rsi": 64.6,
+      "price": 592.94
+    },
+    "NOG": {
+      "score": 0.0587,
+      "rs_60d": 24.94,
+      "dip_5d": 6.85,
+      "rsi": 66.1,
+      "price": 27.16
+    },
+    "CON": {
+      "score": 0.0585,
+      "rs_60d": 18.63,
+      "dip_5d": 2.66,
+      "rsi": 70.3,
+      "price": 38.54
+    },
+    "MORN": {
+      "score": 0.0584,
+      "rs_60d": 16.85,
+      "dip_5d": 1.5,
+      "rsi": 58.5,
+      "price": 207.37
+    },
+    "AMD": {
+      "score": 0.0582,
+      "rs_60d": -1.99,
+      "dip_5d": -11.02,
+      "rsi": 37.8,
+      "price": 528.75
+    },
+    "RGLD": {
+      "score": 0.0578,
+      "rs_60d": 15.17,
+      "dip_5d": 0.48,
+      "rsi": 49.2,
+      "price": 238.05
+    },
+    "WAY": {
+      "score": 0.057,
+      "rs_60d": 18.25,
+      "dip_5d": 2.66,
+      "rsi": 59.2,
+      "price": 27.36
+    },
+    "RDNT": {
+      "score": 0.0564,
+      "rs_60d": 8.45,
+      "dip_5d": -3.76,
+      "rsi": 43.3,
+      "price": 68.8
+    },
+    "BIO": {
+      "score": 0.0544,
+      "rs_60d": 9.19,
+      "dip_5d": -2.94,
+      "rsi": 39.5,
+      "price": 353.7
+    },
+    "URBN": {
+      "score": 0.0536,
+      "rs_60d": 20.43,
+      "dip_5d": 4.69,
+      "rsi": 70.0,
+      "price": 86.57
+    },
+    "SNX": {
+      "score": 0.051,
+      "rs_60d": -1.71,
+      "dip_5d": -9.64,
+      "rsi": 37.9,
+      "price": 246.75
+    },
+    "HPQ": {
+      "score": 0.0502,
+      "rs_60d": 13.25,
+      "dip_5d": 0.47,
+      "rsi": 43.1,
+      "price": 30.01
+    },
+    "MTRN": {
+      "score": 0.0491,
+      "rs_60d": -1.46,
+      "dip_5d": -9.15,
+      "rsi": 39.8,
+      "price": 245.44
+    },
+    "THC": {
+      "score": 0.0486,
+      "rs_60d": 11.31,
+      "dip_5d": -0.56,
+      "rsi": 55.0,
+      "price": 267.25
+    },
+    "COIN": {
+      "score": 0.0485,
+      "rs_60d": 6.1,
+      "dip_5d": -4.01,
+      "rsi": 45.0,
+      "price": 173.16
+    },
+    "DLB": {
+      "score": 0.0484,
+      "rs_60d": 16.95,
+      "dip_5d": 3.24,
+      "rsi": 54.0,
+      "price": 59.95
+    },
+    "TMO": {
+      "score": 0.0474,
+      "rs_60d": 18.13,
+      "dip_5d": 4.19,
+      "rsi": 64.0,
+      "price": 690.0
+    },
+    "REGN": {
+      "score": 0.047,
+      "rs_60d": 17.25,
+      "dip_5d": 3.66,
+      "rsi": 57.2,
+      "price": 790.74
+    },
+    "GILD": {
+      "score": 0.047,
+      "rs_60d": 17.5,
+      "dip_5d": 3.83,
+      "rsi": 63.4,
+      "price": 156.19
+    },
+    "WHD": {
+      "score": 0.0467,
+      "rs_60d": 8.66,
+      "dip_5d": -2.0,
+      "rsi": 38.8,
+      "price": 61.71
+    },
+    "WAT": {
+      "score": 0.0466,
+      "rs_60d": 13.33,
       "dip_5d": 1.12,
-      "rsi": 47.9,
-      "price": 213.7
+      "rsi": 55.9,
+      "price": 436.95
     },
-    "CSCO": {
-      "score": -0.0256,
-      "rs_60d": 1.02,
-      "dip_5d": 4.94,
-      "rsi": 64.8,
-      "price": 118.39
+    "VCTR": {
+      "score": 0.0465,
+      "rs_60d": 8.44,
+      "dip_5d": -2.12,
+      "rsi": 46.4,
+      "price": 108.6
     },
-    "JNJ": {
-      "score": -0.0259,
-      "rs_60d": -1.43,
-      "dip_5d": 3.36,
-      "rsi": 46.7,
-      "price": 261.44
+    "ROG": {
+      "score": 0.0463,
+      "rs_60d": -1.24,
+      "dip_5d": -8.55,
+      "rsi": 39.9,
+      "price": 133.37
     },
-    "BJ": {
-      "score": -0.0274,
-      "rs_60d": 0.8,
-      "dip_5d": 5.1,
-      "rsi": 60.8,
-      "price": 98.58
+    "DGII": {
+      "score": 0.0462,
+      "rs_60d": 1.12,
+      "dip_5d": -6.95,
+      "rsi": 38.4,
+      "price": 69.9
     },
-    "GNRC": {
-      "score": -0.0275,
-      "rs_60d": -0.08,
-      "dip_5d": 4.53,
-      "rsi": 63.9,
-      "price": 224.94
+    "AAMI": {
+      "score": 0.0457,
+      "rs_60d": 10.66,
+      "dip_5d": -0.51,
+      "rsi": 49.4,
+      "price": 92.16
     },
-    "TOST": {
-      "score": -0.028,
-      "rs_60d": -0.66,
-      "dip_5d": 4.23,
-      "rsi": 52.0,
-      "price": 31.31
+    "CHEF": {
+      "score": 0.045,
+      "rs_60d": 16.43,
+      "dip_5d": 3.45,
+      "rsi": 54.4,
+      "price": 113.57
+    },
+    "PWR": {
+      "score": 0.045,
+      "rs_60d": -2.33,
+      "dip_5d": -9.06,
+      "rsi": 42.3,
+      "price": 631.86
+    },
+    "EXPO": {
+      "score": 0.0446,
+      "rs_60d": 13.65,
+      "dip_5d": 1.67,
+      "rsi": 63.7,
+      "price": 71.85
+    },
+    "PFE": {
+      "score": 0.0441,
+      "rs_60d": 17.25,
+      "dip_5d": 4.15,
+      "rsi": 69.7,
+      "price": 29.58
+    },
+    "DHR": {
+      "score": 0.044,
+      "rs_60d": 16.31,
+      "dip_5d": 3.54,
+      "rsi": 62.5,
+      "price": 229.04
+    },
+    "LOPE": {
+      "score": 0.0438,
+      "rs_60d": 12.17,
+      "dip_5d": 0.81,
+      "rsi": 67.0,
+      "price": 161.58
+    },
+    "HNI": {
+      "score": 0.0427,
+      "rs_60d": 9.3,
+      "dip_5d": -0.91,
+      "rsi": 49.6,
+      "price": 46.86
+    },
+    "ABNB": {
+      "score": 0.0418,
+      "rs_60d": 19.81,
+      "dip_5d": 6.24,
+      "rsi": 60.9,
+      "price": 173.7
+    },
+    "DIS": {
+      "score": 0.0416,
+      "rs_60d": 13.3,
+      "dip_5d": 1.94,
+      "rsi": 65.4,
+      "price": 110.59
+    },
+    "UHS": {
+      "score": 0.0412,
+      "rs_60d": 15.55,
+      "dip_5d": 3.51,
+      "rsi": 63.4,
+      "price": 185.1
+    },
+    "DASH": {
+      "score": 0.0401,
+      "rs_60d": 6.1,
+      "dip_5d": -2.62,
+      "rsi": 45.5,
+      "price": 189.15
+    },
+    "TDW": {
+      "score": 0.04,
+      "rs_60d": -2.07,
+      "dip_5d": -8.04,
+      "rsi": 37.6,
+      "price": 79.5
+    },
+    "AMZN": {
+      "score": 0.0397,
+      "rs_60d": 4.42,
+      "dip_5d": -3.67,
+      "rsi": 45.0,
+      "price": 250.0
     },
     "HUM": {
-      "score": -0.0284,
-      "rs_60d": 3.22,
-      "dip_5d": 6.88,
-      "rsi": 66.2,
-      "price": 431.87
+      "score": 0.0395,
+      "rs_60d": 2.83,
+      "dip_5d": -4.69,
+      "rsi": 54.3,
+      "price": 413.16
     },
-    "KR": {
-      "score": -0.029,
-      "rs_60d": 0.05,
-      "dip_5d": 4.87,
-      "rsi": 60.5,
-      "price": 61.64
+    "BIIB": {
+      "score": 0.0386,
+      "rs_60d": 11.77,
+      "dip_5d": 1.41,
+      "rsi": 61.5,
+      "price": 232.65
     },
-    "CDW": {
-      "score": -0.0291,
-      "rs_60d": 1.96,
+    "NDSN": {
+      "score": 0.0375,
+      "rs_60d": 5.68,
+      "dip_5d": -2.46,
+      "rsi": 46.4,
+      "price": 322.31
+    },
+    "FRPT": {
+      "score": 0.0374,
+      "rs_60d": 12.51,
+      "dip_5d": 2.1,
+      "rsi": 59.9,
+      "price": 66.63
+    },
+    "HIMS": {
+      "score": 0.0369,
+      "rs_60d": -3.36,
+      "dip_5d": -8.39,
+      "rsi": 45.8,
+      "price": 28.07
+    },
+    "FOX": {
+      "score": 0.0368,
+      "rs_60d": 12.52,
+      "dip_5d": 2.22,
+      "rsi": 52.0,
+      "price": 57.22
+    },
+    "TRMB": {
+      "score": 0.0367,
+      "rs_60d": 9.09,
+      "dip_5d": -0.05,
+      "rsi": 52.3,
+      "price": 59.46
+    },
+    "FOXA": {
+      "score": 0.0358,
+      "rs_60d": 12.69,
+      "dip_5d": 2.49,
+      "rsi": 52.8,
+      "price": 64.15
+    },
+    "TYL": {
+      "score": 0.0357,
+      "rs_60d": 18.15,
       "dip_5d": 6.16,
+      "rsi": 64.4,
+      "price": 360.87
+    },
+    "TGT": {
+      "score": 0.0355,
+      "rs_60d": 9.49,
+      "dip_5d": 0.42,
+      "rsi": 47.6,
+      "price": 154.26
+    },
+    "COP": {
+      "score": 0.0351,
+      "rs_60d": 18.54,
+      "dip_5d": 6.51,
+      "rsi": 74.7,
+      "price": 146.51
+    },
+    "RXO": {
+      "score": 0.0351,
+      "rs_60d": 8.3,
+      "dip_5d": -0.31,
+      "rsi": 73.9,
+      "price": 28.6
+    },
+    "CVSA": {
+      "score": 0.0344,
+      "rs_60d": 6.13,
+      "dip_5d": -1.65,
+      "rsi": 49.9,
+      "price": 126.75
+    },
+    "ZD": {
+      "score": 0.0343,
+      "rs_60d": 7.46,
+      "dip_5d": -0.75,
       "rsi": 53.1,
-      "price": 142.17
+      "price": 57.15
+    },
+    "FDS": {
+      "score": 0.0342,
+      "rs_60d": 15.31,
+      "dip_5d": 4.5,
+      "rsi": 62.8,
+      "price": 301.67
+    },
+    "SAIC": {
+      "score": 0.0341,
+      "rs_60d": 8.54,
+      "dip_5d": 0.02,
+      "rsi": 56.7,
+      "price": 133.07
+    },
+    "SM": {
+      "score": 0.0341,
+      "rs_60d": 15.72,
+      "dip_5d": 4.8,
+      "rsi": 64.8,
+      "price": 39.5
     },
     "CART": {
-      "score": -0.0295,
-      "rs_60d": -0.51,
-      "dip_5d": 4.58,
-      "rsi": 58.9,
-      "price": 47.76
+      "score": 0.034,
+      "rs_60d": 14.76,
+      "dip_5d": 4.18,
+      "rsi": 62.1,
+      "price": 49.83
     },
-    "HRB": {
-      "score": -0.0295,
-      "rs_60d": -0.06,
-      "dip_5d": 4.88,
-      "rsi": 49.4,
-      "price": 44.05
+    "BSY": {
+      "score": 0.0337,
+      "rs_60d": 9.35,
+      "dip_5d": 0.63,
+      "rsi": 57.7,
+      "price": 35.37
     },
-    "MTDR": {
-      "score": -0.0298,
-      "rs_60d": -3.85,
-      "dip_5d": 2.4,
-      "rsi": 49.3,
-      "price": 54.28
+    "EQH": {
+      "score": 0.0337,
+      "rs_60d": 7.56,
+      "dip_5d": -0.58,
+      "rsi": 52.7,
+      "price": 53.21
     },
-    "KBR": {
-      "score": -0.0302,
-      "rs_60d": -3.98,
-      "dip_5d": 2.38,
-      "rsi": 48.4,
-      "price": 35.34
+    "GOOGL": {
+      "score": 0.0336,
+      "rs_60d": 3.23,
+      "dip_5d": -3.44,
+      "rsi": 44.4,
+      "price": 340.59
     },
-    "HOG": {
-      "score": -0.0304,
-      "rs_60d": -3.54,
-      "dip_5d": 2.71,
-      "rsi": 55.6,
-      "price": 26.9
+    "AVT": {
+      "score": 0.0335,
+      "rs_60d": -2.61,
+      "dip_5d": -7.33,
+      "rsi": 37.0,
+      "price": 90.03
     },
-    "EXE": {
-      "score": -0.031,
-      "rs_60d": -4.64,
-      "dip_5d": 2.07,
-      "rsi": 45.7,
-      "price": 88.22
+    "NVDA": {
+      "score": 0.0332,
+      "rs_60d": 0.23,
+      "dip_5d": -5.39,
+      "rsi": 37.5,
+      "price": 214.13
     },
-    "TGTX": {
-      "score": -0.0316,
-      "rs_60d": -3.84,
-      "dip_5d": 2.71,
-      "rsi": 52.5,
-      "price": 55.37
+    "ECPG": {
+      "score": 0.033,
+      "rs_60d": 9.49,
+      "dip_5d": 0.82,
+      "rsi": 55.7,
+      "price": 101.68
     },
-    "COST": {
-      "score": -0.0316,
-      "rs_60d": -4.1,
-      "dip_5d": 2.53,
-      "rsi": 62.4,
-      "price": 946.92
+    "ELV": {
+      "score": 0.0316,
+      "rs_60d": 10.1,
+      "dip_5d": 1.46,
+      "rsi": 67.0,
+      "price": 428.26
     },
-    "TDC": {
-      "score": -0.0317,
-      "rs_60d": -4.52,
-      "dip_5d": 2.27,
-      "rsi": 61.0,
-      "price": 30.59
+    "CNXC": {
+      "score": 0.0313,
+      "rs_60d": 21.97,
+      "dip_5d": 9.42,
+      "rsi": 53.6,
+      "price": 27.87
     },
-    "CBOE": {
-      "score": -0.0317,
-      "rs_60d": 6.5,
-      "dip_5d": 9.62,
-      "rsi": 65.3,
-      "price": 304.16
-    },
-    "WTW": {
-      "score": -0.0321,
-      "rs_60d": -3.78,
-      "dip_5d": 2.83,
-      "rsi": 41.8,
-      "price": 296.26
-    },
-    "HLT": {
-      "score": -0.0323,
-      "rs_60d": -3.12,
-      "dip_5d": 3.3,
-      "rsi": 60.7,
-      "price": 326.56
-    },
-    "SOLS": {
-      "score": -0.0326,
-      "rs_60d": 0.34,
-      "dip_5d": 5.67,
-      "rsi": 57.9,
-      "price": 61.35
-    },
-    "TRV": {
-      "score": -0.0326,
-      "rs_60d": -4.81,
-      "dip_5d": 2.23,
-      "rsi": 54.1,
-      "price": 368.75
-    },
-    "HUBS": {
-      "score": -0.0327,
-      "rs_60d": -2.94,
-      "dip_5d": 3.49,
-      "rsi": 52.6,
-      "price": 228.3
-    },
-    "FLEX": {
-      "score": -0.0328,
-      "rs_60d": -4.26,
-      "dip_5d": 2.63,
-      "rsi": 56.8,
-      "price": 119.83
-    },
-    "CHD": {
-      "score": -0.0342,
-      "rs_60d": -4.71,
-      "dip_5d": 2.56,
-      "rsi": 59.0,
-      "price": 98.11
+    "CNK": {
+      "score": 0.0312,
+      "rs_60d": 14.35,
+      "dip_5d": 4.37,
+      "rsi": 62.9,
+      "price": 38.48
     },
     "PRDO": {
-      "score": -0.0344,
-      "rs_60d": 1.73,
-      "dip_5d": 6.88,
-      "rsi": 62.7,
-      "price": 33.71
+      "score": 0.0312,
+      "rs_60d": 7.81,
+      "dip_5d": 0.0,
+      "rsi": 61.2,
+      "price": 33.73
     },
-    "VSAT": {
-      "score": -0.0351,
-      "rs_60d": -4.0,
-      "dip_5d": 3.18,
-      "rsi": 49.5,
-      "price": 72.01
+    "JCI": {
+      "score": 0.0311,
+      "rs_60d": -1.83,
+      "dip_5d": -6.4,
+      "rsi": 42.6,
+      "price": 145.47
     },
-    "ORLY": {
-      "score": -0.0354,
-      "rs_60d": -4.28,
-      "dip_5d": 3.04,
-      "rsi": 51.9,
-      "price": 86.45
+    "FCFS": {
+      "score": 0.0309,
+      "rs_60d": 7.06,
+      "dip_5d": -0.43,
+      "rsi": 49.4,
+      "price": 215.26
     },
-    "WRB": {
-      "score": -0.0357,
-      "rs_60d": -4.33,
-      "dip_5d": 3.07,
-      "rsi": 64.6,
-      "price": 71.91
+    "WCC": {
+      "score": 0.0309,
+      "rs_60d": -0.76,
+      "dip_5d": -5.66,
+      "rsi": 41.1,
+      "price": 340.89
     },
-    "NFLX": {
-      "score": -0.036,
-      "rs_60d": -2.79,
-      "dip_5d": 4.15,
-      "rsi": 43.9,
-      "price": 70.3
-    },
-    "USFD": {
-      "score": -0.0361,
-      "rs_60d": -4.58,
-      "dip_5d": 2.96,
-      "rsi": 52.1,
-      "price": 97.43
-    },
-    "MAR": {
-      "score": -0.0362,
-      "rs_60d": -4.84,
-      "dip_5d": 2.81,
-      "rsi": 62.9,
-      "price": 365.88
-    },
-    "WMG": {
-      "score": -0.0371,
-      "rs_60d": -3.37,
-      "dip_5d": 3.94,
-      "rsi": 59.3,
-      "price": 28.72
-    },
-    "KMI": {
-      "score": -0.0373,
-      "rs_60d": -4.16,
-      "dip_5d": 3.44,
-      "rsi": 61.5,
-      "price": 32.49
-    },
-    "PG": {
-      "score": -0.0374,
-      "rs_60d": -3.91,
-      "dip_5d": 3.62,
-      "rsi": 62.1,
-      "price": 151.23
-    },
-    "LLY": {
-      "score": -0.0379,
-      "rs_60d": -4.73,
-      "dip_5d": 3.16,
-      "rsi": 54.2,
-      "price": 1179.27
-    },
-    "CCL": {
-      "score": -0.0384,
-      "rs_60d": -4.97,
-      "dip_5d": 3.09,
-      "rsi": 64.1,
-      "price": 26.35
-    },
-    "PM": {
-      "score": -0.0389,
-      "rs_60d": -0.49,
-      "dip_5d": 6.15,
-      "rsi": 66.9,
-      "price": 201.19
-    },
-    "INTU": {
-      "score": -0.041,
-      "rs_60d": -0.74,
-      "dip_5d": 6.35,
-      "rsi": 50.9,
-      "price": 302.75
-    },
-    "CI": {
-      "score": -0.0422,
-      "rs_60d": -4.4,
-      "dip_5d": 4.11,
-      "rsi": 57.6,
-      "price": 282.43
-    },
-    "CNX": {
-      "score": -0.0433,
-      "rs_60d": -2.49,
-      "dip_5d": 5.55,
+    "SCSC": {
+      "score": 0.0307,
+      "rs_60d": 6.07,
+      "dip_5d": -1.07,
       "rsi": 53.5,
-      "price": 34.03
+      "price": 60.02
     },
-    "EXPE": {
-      "score": -0.0433,
-      "rs_60d": -2.72,
-      "dip_5d": 5.4,
-      "rsi": 48.7,
-      "price": 274.22
+    "HP": {
+      "score": 0.0305,
+      "rs_60d": 2.62,
+      "dip_5d": -3.33,
+      "rsi": 38.2,
+      "price": 37.43
     },
-    "EBAY": {
-      "score": -0.0468,
-      "rs_60d": -4.63,
-      "dip_5d": 4.71,
-      "rsi": 62.7,
-      "price": 112.19
+    "WOR": {
+      "score": 0.0304,
+      "rs_60d": 11.42,
+      "dip_5d": 2.55,
+      "rsi": 63.2,
+      "price": 64.24
+    },
+    "MRK": {
+      "score": 0.0302,
+      "rs_60d": 8.06,
+      "dip_5d": 0.34,
+      "rsi": 51.9,
+      "price": 145.95
+    },
+    "CVLT": {
+      "score": 0.0301,
+      "rs_60d": 1.49,
+      "dip_5d": -4.03,
+      "rsi": 50.0,
+      "price": 149.11
+    },
+    "GEHC": {
+      "score": 0.03,
+      "rs_60d": 11.55,
+      "dip_5d": 2.7,
+      "rsi": 61.0,
+      "price": 69.57
+    },
+    "GOOG": {
+      "score": 0.0299,
+      "rs_60d": 2.29,
+      "dip_5d": -3.46,
+      "rsi": 44.0,
+      "price": 336.91
+    },
+    "CRBG": {
+      "score": 0.0296,
+      "rs_60d": 6.74,
+      "dip_5d": -0.43,
+      "rsi": 53.0,
+      "price": 34.43
+    },
+    "CNR": {
+      "score": 0.0295,
+      "rs_60d": 5.3,
+      "dip_5d": -1.39,
+      "rsi": 48.6,
+      "price": 90.35
+    },
+    "CEG": {
+      "score": 0.0285,
+      "rs_60d": -4.38,
+      "dip_5d": -7.66,
+      "rsi": 47.1,
+      "price": 271.37
+    },
+    "ADI": {
+      "score": 0.0282,
+      "rs_60d": 3.05,
+      "dip_5d": -2.66,
+      "rsi": 49.7,
+      "price": 395.44
+    },
+    "WST": {
+      "score": 0.0281,
+      "rs_60d": 13.72,
+      "dip_5d": 4.47,
+      "rsi": 65.6,
+      "price": 384.02
+    },
+    "ADSK": {
+      "score": 0.028,
+      "rs_60d": 11.08,
+      "dip_5d": 2.72,
+      "rsi": 59.9,
+      "price": 239.9
+    },
+    "JXN": {
+      "score": 0.0279,
+      "rs_60d": 6.18,
+      "dip_5d": -0.53,
+      "rsi": 47.4,
+      "price": 130.58
+    },
+    "GKOS": {
+      "score": 0.0275,
+      "rs_60d": 4.04,
+      "dip_5d": -1.89,
+      "rsi": 48.8,
+      "price": 164.84
+    },
+    "EMR": {
+      "score": 0.0271,
+      "rs_60d": 5.85,
+      "dip_5d": -0.61,
+      "rsi": 57.7,
+      "price": 161.47
+    },
+    "EZPW": {
+      "score": 0.0271,
+      "rs_60d": 8.42,
+      "dip_5d": 1.1,
+      "rsi": 60.6,
+      "price": 33.0
+    },
+    "FAST": {
+      "score": 0.0263,
+      "rs_60d": 5.22,
+      "dip_5d": -0.91,
+      "rsi": 54.2,
+      "price": 51.02
+    },
+    "BAX": {
+      "score": 0.0262,
+      "rs_60d": 9.57,
+      "dip_5d": 2.02,
+      "rsi": 59.5,
+      "price": 25.28
+    },
+    "EXPD": {
+      "score": 0.0261,
+      "rs_60d": 8.47,
+      "dip_5d": 1.29,
+      "rsi": 58.9,
+      "price": 195.91
+    },
+    "BR": {
+      "score": 0.0258,
+      "rs_60d": 14.3,
+      "dip_5d": 5.23,
+      "rsi": 66.7,
+      "price": 175.11
+    },
+    "AMGN": {
+      "score": 0.0254,
+      "rs_60d": 11.72,
+      "dip_5d": 3.57,
+      "rsi": 62.5,
+      "price": 432.49
+    },
+    "KR": {
+      "score": 0.0241,
+      "rs_60d": 8.6,
+      "dip_5d": 1.71,
+      "rsi": 62.9,
+      "price": 63.63
+    },
+    "IFF": {
+      "score": 0.0241,
+      "rs_60d": 16.12,
+      "dip_5d": 6.73,
+      "rsi": 73.1,
+      "price": 90.68
+    },
+    "MDT": {
+      "score": 0.0239,
+      "rs_60d": 10.58,
+      "dip_5d": 3.07,
+      "rsi": 64.1,
+      "price": 94.75
+    },
+    "VAC": {
+      "score": 0.0238,
+      "rs_60d": 14.23,
+      "dip_5d": 5.52,
+      "rsi": 59.9,
+      "price": 110.93
+    },
+    "EHC": {
+      "score": 0.0233,
+      "rs_60d": 9.98,
+      "dip_5d": 2.77,
+      "rsi": 65.9,
+      "price": 127.87
+    },
+    "SOLV": {
+      "score": 0.0233,
+      "rs_60d": 6.71,
+      "dip_5d": 0.59,
+      "rsi": 42.4,
+      "price": 85.81
+    },
+    "UBER": {
+      "score": 0.0232,
+      "rs_60d": 3.4,
+      "dip_5d": -1.61,
+      "rsi": 48.4,
+      "price": 70.35
+    },
+    "AMT": {
+      "score": 0.0226,
+      "rs_60d": 7.87,
+      "dip_5d": 1.48,
+      "rsi": 67.8,
+      "price": 185.27
+    },
+    "NWSA": {
+      "score": 0.0224,
+      "rs_60d": 8.93,
+      "dip_5d": 2.21,
+      "rsi": 59.1,
+      "price": 30.03
+    },
+    "STRA": {
+      "score": 0.0215,
+      "rs_60d": 4.23,
+      "dip_5d": -0.76,
+      "rsi": 52.7,
+      "price": 81.33
+    },
+    "FTDR": {
+      "score": 0.021,
+      "rs_60d": 7.21,
+      "dip_5d": 1.31,
+      "rsi": 53.4,
+      "price": 79.0
+    },
+    "HRMY": {
+      "score": 0.021,
+      "rs_60d": 4.15,
+      "dip_5d": -0.73,
+      "rsi": 40.6,
+      "price": 37.95
+    },
+    "CVX": {
+      "score": 0.021,
+      "rs_60d": 12.21,
+      "dip_5d": 4.65,
+      "rsi": 70.8,
+      "price": 224.99
+    },
+    "ARW": {
+      "score": 0.0208,
+      "rs_60d": -2.19,
+      "dip_5d": -4.92,
+      "rsi": 41.1,
+      "price": 214.61
+    },
+    "PAHC": {
+      "score": 0.0208,
+      "rs_60d": 10.77,
+      "dip_5d": 3.71,
+      "rsi": 62.9,
+      "price": 38.82
+    },
+    "TLN": {
+      "score": 0.0206,
+      "rs_60d": -4.71,
+      "dip_5d": -6.57,
+      "rsi": 56.7,
+      "price": 354.81
+    },
+    "GDDY": {
+      "score": 0.0204,
+      "rs_60d": 10.45,
+      "dip_5d": 3.56,
+      "rsi": 59.5,
+      "price": 105.96
+    },
+    "HOG": {
+      "score": 0.0201,
+      "rs_60d": 1.69,
+      "dip_5d": -2.23,
+      "rsi": 51.7,
+      "price": 26.76
+    },
+    "TSCO": {
+      "score": 0.0196,
+      "rs_60d": 3.61,
+      "dip_5d": -0.87,
+      "rsi": 52.0,
+      "price": 33.16
+    },
+    "VRSN": {
+      "score": 0.0195,
+      "rs_60d": 4.69,
+      "dip_5d": -0.12,
+      "rsi": 59.6,
+      "price": 302.33
+    },
+    "MTCH": {
+      "score": 0.0193,
+      "rs_60d": 10.0,
+      "dip_5d": 3.44,
+      "rsi": 59.1,
+      "price": 42.95
+    },
+    "KDP": {
+      "score": 0.0192,
+      "rs_60d": 13.35,
+      "dip_5d": 5.71,
+      "rsi": 69.7,
+      "price": 34.62
+    },
+    "XOM": {
+      "score": 0.0192,
+      "rs_60d": 10.75,
+      "dip_5d": 3.97,
+      "rsi": 73.0,
+      "price": 178.98
+    },
+    "LAUR": {
+      "score": 0.0191,
+      "rs_60d": 1.06,
+      "dip_5d": -2.48,
+      "rsi": 54.4,
+      "price": 38.61
+    },
+    "V": {
+      "score": 0.019,
+      "rs_60d": 9.88,
+      "dip_5d": 3.43,
+      "rsi": 73.6,
+      "price": 402.61
+    },
+    "TDC": {
+      "score": 0.0189,
+      "rs_60d": 3.16,
+      "dip_5d": -1.04,
+      "rsi": 55.1,
+      "price": 30.36
+    },
+    "TEL": {
+      "score": 0.0188,
+      "rs_60d": 1.49,
+      "dip_5d": -2.14,
+      "rsi": 49.5,
+      "price": 212.64
+    },
+    "ABBV": {
+      "score": 0.0178,
+      "rs_60d": 6.76,
+      "dip_5d": 1.53,
+      "rsi": 71.1,
+      "price": 285.42
+    },
+    "RGA": {
+      "score": 0.0177,
+      "rs_60d": 8.36,
+      "dip_5d": 2.62,
+      "rsi": 73.4,
+      "price": 266.75
+    },
+    "HUBS": {
+      "score": 0.0174,
+      "rs_60d": 9.42,
+      "dip_5d": 3.39,
+      "rsi": 53.2,
+      "price": 230.94
+    },
+    "KNTK": {
+      "score": 0.017,
+      "rs_60d": 6.37,
+      "dip_5d": 1.41,
+      "rsi": 58.5,
+      "price": 55.3
+    },
+    "CCI": {
+      "score": 0.0169,
+      "rs_60d": 6.54,
+      "dip_5d": 1.54,
+      "rsi": 72.5,
+      "price": 82.26
+    },
+    "TOST": {
+      "score": 0.0166,
+      "rs_60d": 5.59,
+      "dip_5d": 0.96,
+      "rsi": 53.2,
+      "price": 31.62
+    },
+    "UNM": {
+      "score": 0.0165,
+      "rs_60d": 3.68,
+      "dip_5d": -0.3,
+      "rsi": 51.5,
+      "price": 92.23
+    },
+    "LDOS": {
+      "score": 0.0161,
+      "rs_60d": 8.04,
+      "dip_5d": 2.67,
+      "rsi": 52.2,
+      "price": 124.85
+    },
+    "KO": {
+      "score": 0.016,
+      "rs_60d": 10.87,
+      "dip_5d": 4.58,
+      "rsi": 75.0,
+      "price": 93.9
+    },
+    "ADP": {
+      "score": 0.0158,
+      "rs_60d": 12.23,
+      "dip_5d": 5.51,
+      "rsi": 71.3,
+      "price": 288.9
+    },
+    "PARR": {
+      "score": 0.0158,
+      "rs_60d": 4.5,
+      "dip_5d": 0.36,
+      "rsi": 50.3,
+      "price": 83.42
+    },
+    "DVN": {
+      "score": 0.0157,
+      "rs_60d": 9.34,
+      "dip_5d": 3.62,
+      "rsi": 61.8,
+      "price": 50.73
+    },
+    "ROKU": {
+      "score": 0.0155,
+      "rs_60d": 5.56,
+      "dip_5d": 1.13,
+      "rsi": 55.4,
+      "price": 154.54
+    },
+    "HLNE": {
+      "score": 0.0155,
+      "rs_60d": -4.88,
+      "dip_5d": -5.83,
+      "rsi": 33.1,
+      "price": 81.84
+    },
+    "INVX": {
+      "score": 0.0153,
+      "rs_60d": 1.14,
+      "dip_5d": -1.79,
+      "rsi": 48.6,
+      "price": 28.03
+    },
+    "DMC": {
+      "score": 0.0152,
+      "rs_60d": 1.27,
+      "dip_5d": -1.69,
+      "rsi": 41.4,
+      "price": 29.6
+    },
+    "CPAY": {
+      "score": 0.0151,
+      "rs_60d": 4.6,
+      "dip_5d": 0.55,
+      "rsi": 50.1,
+      "price": 399.84
+    },
+    "GRMN": {
+      "score": 0.015,
+      "rs_60d": 13.89,
+      "dip_5d": 6.76,
+      "rsi": 54.4,
+      "price": 284.79
+    },
+    "ALRM": {
+      "score": 0.0146,
+      "rs_60d": 7.5,
+      "dip_5d": 2.57,
+      "rsi": 64.1,
+      "price": 57.37
+    },
+    "ICE": {
+      "score": 0.0143,
+      "rs_60d": 7.53,
+      "dip_5d": 2.63,
+      "rsi": 63.8,
+      "price": 161.56
+    },
+    "VRTX": {
+      "score": 0.0142,
+      "rs_60d": 1.4,
+      "dip_5d": -1.43,
+      "rsi": 43.8,
+      "price": 499.74
+    },
+    "BMI": {
+      "score": 0.0141,
+      "rs_60d": -3.16,
+      "dip_5d": -4.46,
+      "rsi": 45.3,
+      "price": 126.48
+    },
+    "MATX": {
+      "score": 0.014,
+      "rs_60d": 8.31,
+      "dip_5d": 3.21,
+      "rsi": 58.5,
+      "price": 234.99
+    },
+    "TRUP": {
+      "score": 0.0139,
+      "rs_60d": 13.92,
+      "dip_5d": 6.96,
+      "rsi": 67.9,
+      "price": 28.12
+    },
+    "VSXY": {
+      "score": 0.0134,
+      "rs_60d": 1.24,
+      "dip_5d": -1.41,
+      "rsi": 52.8,
+      "price": 87.34
+    },
+    "MTDR": {
+      "score": 0.0134,
+      "rs_60d": 9.91,
+      "dip_5d": 4.37,
+      "rsi": 59.4,
+      "price": 57.52
+    },
+    "VAL": {
+      "score": 0.0133,
+      "rs_60d": 3.99,
+      "dip_5d": 0.45,
+      "rsi": 55.6,
+      "price": 85.32
+    },
+    "NWS": {
+      "score": 0.0132,
+      "rs_60d": 5.62,
+      "dip_5d": 1.54,
+      "rsi": 55.0,
+      "price": 32.88
+    },
+    "SYNA": {
+      "score": 0.0128,
+      "rs_60d": 0.41,
+      "dip_5d": -1.86,
+      "rsi": 63.4,
+      "price": 117.18
+    },
+    "QTWO": {
+      "score": 0.0128,
+      "rs_60d": 10.11,
+      "dip_5d": 4.61,
+      "rsi": 64.2,
+      "price": 61.93
+    },
+    "G": {
+      "score": 0.0128,
+      "rs_60d": 15.9,
+      "dip_5d": 8.47,
+      "rsi": 64.9,
+      "price": 37.26
+    },
+    "ASH": {
+      "score": 0.0123,
+      "rs_60d": 3.86,
+      "dip_5d": 0.52,
+      "rsi": 53.0,
+      "price": 71.15
+    },
+    "AMG": {
+      "score": 0.0122,
+      "rs_60d": 3.82,
+      "dip_5d": 0.51,
+      "rsi": 58.7,
+      "price": 383.76
+    },
+    "EXEL": {
+      "score": 0.0122,
+      "rs_60d": 9.1,
+      "dip_5d": 4.03,
+      "rsi": 67.9,
+      "price": 62.23
+    },
+    "CME": {
+      "score": 0.0113,
+      "rs_60d": 11.81,
+      "dip_5d": 6.0,
+      "rsi": 71.3,
+      "price": 293.87
+    },
+    "SEIC": {
+      "score": 0.0111,
+      "rs_60d": 1.93,
+      "dip_5d": -0.57,
+      "rsi": 48.2,
+      "price": 104.4
+    },
+    "BJ": {
+      "score": 0.011,
+      "rs_60d": 7.48,
+      "dip_5d": 3.16,
+      "rsi": 67.3,
+      "price": 102.95
+    },
+    "LH": {
+      "score": 0.0108,
+      "rs_60d": 3.85,
+      "dip_5d": 0.77,
+      "rsi": 53.1,
+      "price": 317.95
+    },
+    "LGND": {
+      "score": 0.0103,
+      "rs_60d": -4.95,
+      "dip_5d": -5.01,
+      "rsi": 48.5,
+      "price": 295.54
+    },
+    "OXY": {
+      "score": 0.01,
+      "rs_60d": 5.57,
+      "dip_5d": 2.04,
+      "rsi": 63.6,
+      "price": 62.38
+    },
+    "IEX": {
+      "score": 0.0094,
+      "rs_60d": 2.21,
+      "dip_5d": -0.09,
+      "rsi": 57.4,
+      "price": 235.55
+    },
+    "AGYS": {
+      "score": 0.0092,
+      "rs_60d": 8.24,
+      "dip_5d": 3.96,
+      "rsi": 58.9,
+      "price": 109.9
+    },
+    "SBAC": {
+      "score": 0.0089,
+      "rs_60d": 4.48,
+      "dip_5d": 1.51,
+      "rsi": 64.2,
+      "price": 187.06
+    },
+    "UTHR": {
+      "score": 0.0089,
+      "rs_60d": -2.41,
+      "dip_5d": -3.09,
+      "rsi": 53.1,
+      "price": 533.12
+    },
+    "VLTO": {
+      "score": 0.0087,
+      "rs_60d": 6.51,
+      "dip_5d": 2.89,
+      "rsi": 68.8,
+      "price": 101.04
+    },
+    "TILE": {
+      "score": 0.0087,
+      "rs_60d": 6.56,
+      "dip_5d": 2.93,
+      "rsi": 59.6,
+      "price": 36.23
+    },
+    "CDW": {
+      "score": 0.0086,
+      "rs_60d": 9.16,
+      "dip_5d": 4.67,
+      "rsi": 58.9,
+      "price": 150.48
+    },
+    "MET": {
+      "score": 0.0083,
+      "rs_60d": 2.96,
+      "dip_5d": 0.59,
+      "rsi": 63.2,
+      "price": 100.76
     },
     "DG": {
-      "score": -0.0541,
-      "rs_60d": -3.57,
-      "dip_5d": 6.63,
+      "score": 0.0082,
+      "rs_60d": 11.32,
+      "dip_5d": 6.18,
+      "rsi": 66.6,
+      "price": 134.36
+    },
+    "MSI": {
+      "score": 0.0076,
+      "rs_60d": 7.56,
+      "dip_5d": 3.77,
       "rsi": 57.8,
-      "price": 127.23
+      "price": 463.15
     },
-    "LW": {
-      "score": -0.0542,
-      "rs_60d": -2.44,
-      "dip_5d": 7.4,
-      "rsi": 53.2,
-      "price": 47.87
+    "ECL": {
+      "score": 0.0071,
+      "rs_60d": 4.2,
+      "dip_5d": 1.61,
+      "rsi": 63.4,
+      "price": 288.89
     },
-    "PVH": {
-      "score": -0.0543,
-      "rs_60d": -0.65,
-      "dip_5d": 8.61,
-      "rsi": 66.0,
-      "price": 81.35
+    "QCOM": {
+      "score": 0.0071,
+      "rs_60d": -0.21,
+      "dip_5d": -1.33,
+      "rsi": 43.1,
+      "price": 172.11
+    },
+    "IBM": {
+      "score": 0.0068,
+      "rs_60d": 5.09,
+      "dip_5d": 2.26,
+      "rsi": 53.8,
+      "price": 232.14
+    },
+    "CELH": {
+      "score": 0.0068,
+      "rs_60d": 0.65,
+      "dip_5d": -0.7,
+      "rsi": 49.8,
+      "price": 28.19
+    },
+    "CNMD": {
+      "score": 0.0067,
+      "rs_60d": 6.17,
+      "dip_5d": 3.0,
+      "rsi": 52.9,
+      "price": 46.72
+    },
+    "MSA": {
+      "score": 0.0066,
+      "rs_60d": -0.77,
+      "dip_5d": -1.62,
+      "rsi": 43.6,
+      "price": 179.05
+    },
+    "CLH": {
+      "score": 0.0064,
+      "rs_60d": 2.08,
+      "dip_5d": 0.33,
+      "rsi": 56.1,
+      "price": 320.06
+    },
+    "HAS": {
+      "score": 0.0062,
+      "rs_60d": 7.94,
+      "dip_5d": 4.25,
+      "rsi": 71.3,
+      "price": 98.76
+    },
+    "GPOR": {
+      "score": 0.0053,
+      "rs_60d": 2.26,
+      "dip_5d": 0.63,
+      "rsi": 54.1,
+      "price": 166.0
+    },
+    "HRB": {
+      "score": 0.0048,
+      "rs_60d": 15.91,
+      "dip_5d": 9.81,
+      "rsi": 66.9,
+      "price": 48.67
+    },
+    "ADBE": {
+      "score": 0.0047,
+      "rs_60d": 5.63,
+      "dip_5d": 2.96,
+      "rsi": 50.1,
+      "price": 245.2
+    },
+    "EW": {
+      "score": 0.0046,
+      "rs_60d": 1.51,
+      "dip_5d": 0.24,
+      "rsi": 49.2,
+      "price": 86.6
+    },
+    "RRC": {
+      "score": 0.0044,
+      "rs_60d": 7.61,
+      "dip_5d": 4.35,
+      "rsi": 66.4,
+      "price": 43.22
+    },
+    "ICUI": {
+      "score": 0.0043,
+      "rs_60d": 0.23,
+      "dip_5d": -0.56,
+      "rsi": 50.9,
+      "price": 162.99
+    },
+    "ABM": {
+      "score": 0.0039,
+      "rs_60d": 3.9,
+      "dip_5d": 1.95,
+      "rsi": 65.3,
+      "price": 51.15
+    },
+    "CNC": {
+      "score": 0.0039,
+      "rs_60d": 5.78,
+      "dip_5d": 3.19,
+      "rsi": 62.4,
+      "price": 69.16
+    },
+    "SHOO": {
+      "score": 0.0029,
+      "rs_60d": 2.6,
+      "dip_5d": 1.25,
+      "rsi": 54.1,
+      "price": 45.27
+    },
+    "TTEK": {
+      "score": 0.0028,
+      "rs_60d": 6.2,
+      "dip_5d": 3.67,
+      "rsi": 54.8,
+      "price": 34.72
+    },
+    "PM": {
+      "score": 0.0026,
+      "rs_60d": 3.03,
+      "dip_5d": 1.58,
+      "rsi": 63.8,
+      "price": 205.2
+    },
+    "COKE": {
+      "score": 0.0025,
+      "rs_60d": 10.59,
+      "dip_5d": 6.65,
+      "rsi": 67.6,
+      "price": 210.33
+    },
+    "ITT": {
+      "score": 0.0024,
+      "rs_60d": -1.98,
+      "dip_5d": -1.72,
+      "rsi": 43.1,
+      "price": 198.42
+    },
+    "WS": {
+      "score": 0.0013,
+      "rs_60d": 6.99,
+      "dip_5d": 4.45,
+      "rsi": 62.3,
+      "price": 39.68
+    },
+    "AME": {
+      "score": 0.0012,
+      "rs_60d": -0.73,
+      "dip_5d": -0.69,
+      "rsi": 52.8,
+      "price": 248.17
+    },
+    "AVNT": {
+      "score": 0.0012,
+      "rs_60d": 0.38,
+      "dip_5d": 0.05,
+      "rsi": 40.0,
+      "price": 38.98
+    },
+    "BDC": {
+      "score": 0.0011,
+      "rs_60d": -3.22,
+      "dip_5d": -2.34,
+      "rsi": 37.4,
+      "price": 102.83
+    },
+    "VGNT": {
+      "score": 0.0007,
+      "rs_60d": 2.88,
+      "dip_5d": 1.8,
+      "rsi": 45.6,
+      "price": 44.22
+    },
+    "PGR": {
+      "score": 0.0004,
+      "rs_60d": -1.11,
+      "dip_5d": -0.81,
+      "rsi": 55.1,
+      "price": 218.49
+    },
+    "WSM": {
+      "score": -0.0002,
+      "rs_60d": 7.04,
+      "dip_5d": 4.73,
+      "rsi": 66.2,
+      "price": 250.16
+    },
+    "MEDP": {
+      "score": -0.0003,
+      "rs_60d": -0.45,
+      "dip_5d": -0.25,
+      "rsi": 53.6,
+      "price": 618.47
+    },
+    "FIVE": {
+      "score": -0.0004,
+      "rs_60d": 6.32,
+      "dip_5d": 4.28,
+      "rsi": 49.5,
+      "price": 222.72
+    },
+    "J": {
+      "score": -0.0009,
+      "rs_60d": 1.55,
+      "dip_5d": 1.18,
+      "rsi": 51.1,
+      "price": 141.08
+    },
+    "ITRI": {
+      "score": -0.001,
+      "rs_60d": -4.69,
+      "dip_5d": -2.96,
+      "rsi": 32.2,
+      "price": 83.04
+    },
+    "MSCI": {
+      "score": -0.001,
+      "rs_60d": 0.03,
+      "dip_5d": 0.19,
+      "rsi": 56.8,
+      "price": 569.08
+    },
+    "EPC": {
+      "score": -0.0011,
+      "rs_60d": -2.28,
+      "dip_5d": -1.34,
+      "rsi": 52.7,
+      "price": 27.91
+    },
+    "LECO": {
+      "score": -0.0018,
+      "rs_60d": 0.94,
+      "dip_5d": 0.93,
+      "rsi": 46.6,
+      "price": 262.1
+    },
+    "GPC": {
+      "score": -0.0019,
+      "rs_60d": 4.56,
+      "dip_5d": 3.35,
+      "rsi": 60.8,
+      "price": 133.96
+    },
+    "MOH": {
+      "score": -0.0021,
+      "rs_60d": 1.67,
+      "dip_5d": 1.47,
+      "rsi": 58.4,
+      "price": 207.36
+    },
+    "COR": {
+      "score": -0.0024,
+      "rs_60d": 6.72,
+      "dip_5d": 4.88,
+      "rsi": 70.1,
+      "price": 340.92
+    },
+    "MSGS": {
+      "score": -0.0027,
+      "rs_60d": -3.37,
+      "dip_5d": -1.8,
+      "rsi": 44.7,
+      "price": 396.1
+    },
+    "EBAY": {
+      "score": -0.0028,
+      "rs_60d": 6.66,
+      "dip_5d": 4.91,
+      "rsi": 70.0,
+      "price": 120.28
+    },
+    "TRGP": {
+      "score": -0.0029,
+      "rs_60d": 1.53,
+      "dip_5d": 1.5,
+      "rsi": 58.1,
+      "price": 294.9
+    },
+    "NDAQ": {
+      "score": -0.003,
+      "rs_60d": -1.25,
+      "dip_5d": -0.34,
+      "rsi": 52.9,
+      "price": 93.97
+    },
+    "MHK": {
+      "score": -0.0031,
+      "rs_60d": 2.91,
+      "dip_5d": 2.46,
+      "rsi": 44.9,
+      "price": 120.29
+    },
+    "TDS": {
+      "score": -0.0033,
+      "rs_60d": -4.66,
+      "dip_5d": -2.56,
+      "rsi": 41.5,
+      "price": 33.9
+    },
+    "SLAB": {
+      "score": -0.0037,
+      "rs_60d": -1.39,
+      "dip_5d": -0.32,
+      "rsi": 48.9,
+      "price": 221.0
+    },
+    "APG": {
+      "score": -0.0037,
+      "rs_60d": -1.83,
+      "dip_5d": -0.59,
+      "rsi": 54.1,
+      "price": 40.15
+    },
+    "WLY": {
+      "score": -0.0039,
+      "rs_60d": 3.11,
+      "dip_5d": 2.73,
+      "rsi": 63.3,
+      "price": 52.72
+    },
+    "NSSC": {
+      "score": -0.0046,
+      "rs_60d": -3.77,
+      "dip_5d": -1.74,
+      "rsi": 46.7,
+      "price": 35.57
+    },
+    "AVY": {
+      "score": -0.0048,
+      "rs_60d": 5.66,
+      "dip_5d": 4.57,
+      "rsi": 60.4,
+      "price": 175.31
+    },
+    "AAPL": {
+      "score": -0.005,
+      "rs_60d": -0.16,
+      "dip_5d": 0.73,
+      "rsi": 62.1,
+      "price": 343.46
     },
     "NWE": {
-      "score": -0.0544,
-      "rs_60d": -1.85,
-      "dip_5d": 7.84,
-      "rsi": 67.0,
-      "price": 74.15
+      "score": -0.0056,
+      "rs_60d": -0.74,
+      "dip_5d": 0.44,
+      "rsi": 64.6,
+      "price": 74.72
     },
-    "FN": {
-      "score": -0.0553,
-      "rs_60d": -3.1,
-      "dip_5d": 7.15,
-      "rsi": 63.1,
-      "price": 486.28
+    "MSM": {
+      "score": -0.006,
+      "rs_60d": 0.48,
+      "dip_5d": 1.33,
+      "rsi": 61.1,
+      "price": 130.38
+    },
+    "TXN": {
+      "score": -0.0064,
+      "rs_60d": -4.4,
+      "dip_5d": -1.87,
+      "rsi": 47.5,
+      "price": 276.48
+    },
+    "MD": {
+      "score": -0.0064,
+      "rs_60d": 0.97,
+      "dip_5d": 1.71,
+      "rsi": 60.3,
+      "price": 27.38
+    },
+    "ACA": {
+      "score": -0.0066,
+      "rs_60d": -1.87,
+      "dip_5d": -0.14,
+      "rsi": 64.3,
+      "price": 147.06
+    },
+    "CCL": {
+      "score": -0.0066,
+      "rs_60d": -4.92,
+      "dip_5d": -2.19,
+      "rsi": 56.5,
+      "price": 25.9
+    },
+    "DGX": {
+      "score": -0.0067,
+      "rs_60d": -0.16,
+      "dip_5d": 1.02,
+      "rsi": 50.7,
+      "price": 235.0
+    },
+    "CBOE": {
+      "score": -0.0067,
+      "rs_60d": 7.2,
+      "dip_5d": 5.92,
+      "rsi": 66.8,
+      "price": 314.98
+    },
+    "SPNT": {
+      "score": -0.0069,
+      "rs_60d": -4.2,
+      "dip_5d": -1.64,
+      "rsi": 54.9,
+      "price": 25.12
+    },
+    "STE": {
+      "score": -0.0072,
+      "rs_60d": 0.72,
+      "dip_5d": 1.68,
+      "rsi": 62.0,
+      "price": 222.66
+    },
+    "DAN": {
+      "score": -0.0074,
+      "rs_60d": 3.73,
+      "dip_5d": 3.72,
+      "rsi": 51.6,
+      "price": 28.97
+    },
+    "EAT": {
+      "score": -0.0074,
+      "rs_60d": 5.89,
+      "dip_5d": 5.16,
+      "rsi": 50.9,
+      "price": 204.14
+    },
+    "WTS": {
+      "score": -0.0076,
+      "rs_60d": 0.27,
+      "dip_5d": 1.44,
+      "rsi": 51.1,
+      "price": 356.7
+    },
+    "EPAC": {
+      "score": -0.0077,
+      "rs_60d": -1.85,
+      "dip_5d": 0.06,
+      "rsi": 46.4,
+      "price": 35.17
+    },
+    "LTC": {
+      "score": -0.0077,
+      "rs_60d": 0.26,
+      "dip_5d": 1.46,
+      "rsi": 62.1,
+      "price": 43.68
+    },
+    "CAH": {
+      "score": -0.0078,
+      "rs_60d": 8.12,
+      "dip_5d": 6.71,
+      "rsi": 74.1,
+      "price": 254.06
+    },
+    "CHRD": {
+      "score": -0.0078,
+      "rs_60d": 8.42,
+      "dip_5d": 6.91,
+      "rsi": 68.0,
+      "price": 154.56
+    },
+    "TECH": {
+      "score": -0.0078,
+      "rs_60d": -1.94,
+      "dip_5d": 0.01,
+      "rsi": 58.5,
+      "price": 72.57
+    },
+    "RNR": {
+      "score": -0.0081,
+      "rs_60d": 3.38,
+      "dip_5d": 3.6,
+      "rsi": 73.1,
+      "price": 351.06
+    },
+    "VNT": {
+      "score": -0.0082,
+      "rs_60d": 5.03,
+      "dip_5d": 4.71,
+      "rsi": 61.7,
+      "price": 33.34
+    },
+    "BKE": {
+      "score": -0.0084,
+      "rs_60d": 6.2,
+      "dip_5d": 5.54,
+      "rsi": 73.9,
+      "price": 46.5
     },
     "BKH": {
-      "score": -0.0588,
-      "rs_60d": -2.78,
-      "dip_5d": 7.95,
-      "rsi": 66.9,
-      "price": 76.08
+      "score": -0.0085,
+      "rs_60d": -1.51,
+      "dip_5d": 0.41,
+      "rsi": 64.6,
+      "price": 76.63
+    },
+    "SXT": {
+      "score": -0.0085,
+      "rs_60d": 2.19,
+      "dip_5d": 2.88,
+      "rsi": 59.6,
+      "price": 133.74
+    },
+    "TTC": {
+      "score": -0.0085,
+      "rs_60d": 3.98,
+      "dip_5d": 4.07,
+      "rsi": 63.7,
+      "price": 100.58
+    },
+    "COST": {
+      "score": -0.0086,
+      "rs_60d": 2.49,
+      "dip_5d": 3.09,
+      "rsi": 72.5,
+      "price": 989.11
+    },
+    "BL": {
+      "score": -0.0087,
+      "rs_60d": 0.4,
+      "dip_5d": 1.71,
+      "rsi": 54.8,
+      "price": 29.8
+    },
+    "TREX": {
+      "score": -0.0088,
+      "rs_60d": 2.0,
+      "dip_5d": 2.81,
+      "rsi": 56.1,
+      "price": 45.73
+    },
+    "BAH": {
+      "score": -0.0088,
+      "rs_60d": -0.91,
+      "dip_5d": 0.86,
+      "rsi": 54.3,
+      "price": 74.26
+    },
+    "AR": {
+      "score": -0.0093,
+      "rs_60d": 6.26,
+      "dip_5d": 5.72,
+      "rsi": 63.3,
+      "price": 38.65
+    },
+    "SYF": {
+      "score": -0.0094,
+      "rs_60d": -2.22,
+      "dip_5d": 0.08,
+      "rsi": 50.1,
+      "price": 73.68
+    },
+    "WMT": {
+      "score": -0.0094,
+      "rs_60d": 5.24,
+      "dip_5d": 5.07,
+      "rsi": 73.0,
+      "price": 118.81
+    },
+    "NUE": {
+      "score": -0.0097,
+      "rs_60d": 0.24,
+      "dip_5d": 1.77,
+      "rsi": 56.5,
+      "price": 256.29
+    },
+    "PRGS": {
+      "score": -0.01,
+      "rs_60d": 4.61,
+      "dip_5d": 4.74,
+      "rsi": 55.1,
+      "price": 40.84
+    },
+    "NFLX": {
+      "score": -0.01,
+      "rs_60d": -2.66,
+      "dip_5d": -0.11,
+      "rsi": 45.5,
+      "price": 70.53
+    },
+    "FIZZ": {
+      "score": -0.0101,
+      "rs_60d": 10.58,
+      "dip_5d": 8.74,
+      "rsi": 72.4,
+      "price": 34.96
+    },
+    "PEN": {
+      "score": -0.0103,
+      "rs_60d": -2.62,
+      "dip_5d": -0.03,
+      "rsi": 56.4,
+      "price": 320.86
+    },
+    "BLK": {
+      "score": -0.0113,
+      "rs_60d": 4.16,
+      "dip_5d": 4.66,
+      "rsi": 63.6,
+      "price": 1134.38
+    },
+    "GPN": {
+      "score": -0.0113,
+      "rs_60d": 0.11,
+      "dip_5d": 1.96,
+      "rsi": 49.2,
+      "price": 83.67
+    },
+    "MDLZ": {
+      "score": -0.0113,
+      "rs_60d": 2.31,
+      "dip_5d": 3.43,
+      "rsi": 66.3,
+      "price": 63.91
+    },
+    "EOG": {
+      "score": -0.0113,
+      "rs_60d": 4.65,
+      "dip_5d": 4.98,
+      "rsi": 70.3,
+      "price": 158.01
+    },
+    "AXTA": {
+      "score": -0.0114,
+      "rs_60d": -1.22,
+      "dip_5d": 1.09,
+      "rsi": 51.0,
+      "price": 33.44
+    },
+    "LXP": {
+      "score": -0.0116,
+      "rs_60d": -2.88,
+      "dip_5d": 0.02,
+      "rsi": 65.3,
+      "price": 61.06
+    },
+    "INTU": {
+      "score": -0.0118,
+      "rs_60d": 6.43,
+      "dip_5d": 6.26,
+      "rsi": 60.9,
+      "price": 325.15
+    },
+    "OVV": {
+      "score": -0.0127,
+      "rs_60d": 6.53,
+      "dip_5d": 6.46,
+      "rsi": 71.1,
+      "price": 69.33
+    },
+    "PRSU": {
+      "score": -0.0131,
+      "rs_60d": 2.44,
+      "dip_5d": 3.81,
+      "rsi": 72.9,
+      "price": 55.02
+    },
+    "UGI": {
+      "score": -0.0132,
+      "rs_60d": -0.34,
+      "dip_5d": 1.96,
+      "rsi": 61.9,
+      "price": 38.43
+    },
+    "DE": {
+      "score": -0.0132,
+      "rs_60d": -1.11,
+      "dip_5d": 1.46,
+      "rsi": 42.5,
+      "price": 641.86
+    },
+    "APOG": {
+      "score": -0.0133,
+      "rs_60d": -1.72,
+      "dip_5d": 1.07,
+      "rsi": 61.8,
+      "price": 41.38
+    },
+    "BILL": {
+      "score": -0.0134,
+      "rs_60d": 1.51,
+      "dip_5d": 3.24,
+      "rsi": 51.2,
+      "price": 45.6
+    },
+    "TXNM": {
+      "score": -0.0134,
+      "rs_60d": -3.09,
+      "dip_5d": 0.17,
+      "rsi": 55.1,
+      "price": 58.52
+    },
+    "EGBN": {
+      "score": -0.0134,
+      "rs_60d": -3.61,
+      "dip_5d": -0.18,
+      "rsi": 53.6,
+      "price": 28.35
+    },
+    "ENSG": {
+      "score": -0.0141,
+      "rs_60d": -1.19,
+      "dip_5d": 1.56,
+      "rsi": 55.6,
+      "price": 176.63
+    },
+    "PVH": {
+      "score": -0.0143,
+      "rs_60d": 2.02,
+      "dip_5d": 3.72,
+      "rsi": 68.4,
+      "price": 84.68
+    },
+    "EXPE": {
+      "score": -0.0143,
+      "rs_60d": 7.87,
+      "dip_5d": 7.63,
+      "rsi": 58.5,
+      "price": 288.95
+    },
+    "RAMP": {
+      "score": -0.0145,
+      "rs_60d": -3.9,
+      "dip_5d": -0.19,
+      "rsi": 41.3,
+      "price": 37.44
+    },
+    "CALX": {
+      "score": -0.0146,
+      "rs_60d": -1.9,
+      "dip_5d": 1.16,
+      "rsi": 54.5,
+      "price": 36.5
+    },
+    "MTN": {
+      "score": -0.015,
+      "rs_60d": 0.34,
+      "dip_5d": 2.73,
+      "rsi": 60.7,
+      "price": 151.01
+    },
+    "ZBH": {
+      "score": -0.0156,
+      "rs_60d": 0.68,
+      "dip_5d": 3.05,
+      "rsi": 57.3,
+      "price": 94.98
+    },
+    "GMED": {
+      "score": -0.0157,
+      "rs_60d": -3.0,
+      "dip_5d": 0.62,
+      "rsi": 51.5,
+      "price": 76.71
+    },
+    "CRC": {
+      "score": -0.0158,
+      "rs_60d": -1.68,
+      "dip_5d": 1.51,
+      "rsi": 56.2,
+      "price": 54.33
+    },
+    "EQT": {
+      "score": -0.0158,
+      "rs_60d": -0.9,
+      "dip_5d": 2.03,
+      "rsi": 59.6,
+      "price": 54.3
+    },
+    "PYPL": {
+      "score": -0.0162,
+      "rs_60d": -2.31,
+      "dip_5d": 1.16,
+      "rsi": 59.7,
+      "price": 56.7
+    },
+    "PPC": {
+      "score": -0.0163,
+      "rs_60d": -0.68,
+      "dip_5d": 2.26,
+      "rsi": 56.4,
+      "price": 29.43
+    },
+    "THG": {
+      "score": -0.0166,
+      "rs_60d": 3.52,
+      "dip_5d": 5.11,
+      "rsi": 66.5,
+      "price": 232.97
+    },
+    "COF": {
+      "score": -0.0171,
+      "rs_60d": -3.83,
+      "dip_5d": 0.3,
+      "rsi": 51.6,
+      "price": 201.74
+    },
+    "KMI": {
+      "score": -0.0172,
+      "rs_60d": 0.79,
+      "dip_5d": 3.39,
+      "rsi": 69.1,
+      "price": 34.2
+    },
+    "XYZ": {
+      "score": -0.0177,
+      "rs_60d": -2.33,
+      "dip_5d": 1.39,
+      "rsi": 52.3,
+      "price": 77.89
+    },
+    "AWI": {
+      "score": -0.0179,
+      "rs_60d": 1.34,
+      "dip_5d": 3.89,
+      "rsi": 58.0,
+      "price": 168.16
+    },
+    "BBY": {
+      "score": -0.0184,
+      "rs_60d": 5.14,
+      "dip_5d": 6.48,
+      "rsi": 58.8,
+      "price": 92.63
+    },
+    "GM": {
+      "score": -0.0184,
+      "rs_60d": -1.69,
+      "dip_5d": 1.93,
+      "rsi": 53.4,
+      "price": 83.96
+    },
+    "RSG": {
+      "score": -0.0184,
+      "rs_60d": 3.45,
+      "dip_5d": 5.37,
+      "rsi": 74.3,
+      "price": 231.54
+    },
+    "LIVN": {
+      "score": -0.0187,
+      "rs_60d": -4.07,
+      "dip_5d": 0.4,
+      "rsi": 51.2,
+      "price": 77.58
+    },
+    "SHW": {
+      "score": -0.019,
+      "rs_60d": 2.28,
+      "dip_5d": 4.68,
+      "rsi": 58.7,
+      "price": 335.2
+    },
+    "CNO": {
+      "score": -0.019,
+      "rs_60d": -0.51,
+      "dip_5d": 2.82,
+      "rsi": 56.6,
+      "price": 54.71
+    },
+    "BSX": {
+      "score": -0.0194,
+      "rs_60d": -2.97,
+      "dip_5d": 1.25,
+      "rsi": 52.5,
+      "price": 44.39
+    },
+    "SJM": {
+      "score": -0.0194,
+      "rs_60d": 4.41,
+      "dip_5d": 6.17,
+      "rsi": 66.7,
+      "price": 127.43
+    },
+    "USFD": {
+      "score": -0.0196,
+      "rs_60d": 1.64,
+      "dip_5d": 4.36,
+      "rsi": 65.2,
+      "price": 101.96
+    },
+    "WTW": {
+      "score": -0.0198,
+      "rs_60d": 3.61,
+      "dip_5d": 5.72,
+      "rsi": 61.8,
+      "price": 315.49
+    },
+    "CNX": {
+      "score": -0.0199,
+      "rs_60d": 1.43,
+      "dip_5d": 4.27,
+      "rsi": 64.0,
+      "price": 35.91
+    },
+    "RL": {
+      "score": -0.0201,
+      "rs_60d": -0.1,
+      "dip_5d": 3.28,
+      "rsi": 66.4,
+      "price": 385.5
+    },
+    "MCO": {
+      "score": -0.0202,
+      "rs_60d": -0.41,
+      "dip_5d": 3.1,
+      "rsi": 60.7,
+      "price": 485.07
+    },
+    "WH": {
+      "score": -0.0203,
+      "rs_60d": -0.48,
+      "dip_5d": 3.07,
+      "rsi": 64.1,
+      "price": 75.6
+    },
+    "MUR": {
+      "score": -0.0205,
+      "rs_60d": 3.87,
+      "dip_5d": 5.99,
+      "rsi": 68.0,
+      "price": 41.74
+    },
+    "AFG": {
+      "score": -0.0205,
+      "rs_60d": 0.44,
+      "dip_5d": 3.72,
+      "rsi": 72.2,
+      "price": 149.13
+    },
+    "JKHY": {
+      "score": -0.0205,
+      "rs_60d": -1.56,
+      "dip_5d": 2.38,
+      "rsi": 52.5,
+      "price": 153.19
+    },
+    "HLT": {
+      "score": -0.0206,
+      "rs_60d": 2.91,
+      "dip_5d": 5.37,
+      "rsi": 72.9,
+      "price": 345.12
+    },
+    "PFG": {
+      "score": -0.0207,
+      "rs_60d": -3.83,
+      "dip_5d": 0.9,
+      "rsi": 41.0,
+      "price": 108.81
+    },
+    "OKE": {
+      "score": -0.0209,
+      "rs_60d": -3.13,
+      "dip_5d": 1.4,
+      "rsi": 56.3,
+      "price": 93.31
+    },
+    "ZTS": {
+      "score": -0.0214,
+      "rs_60d": 2.06,
+      "dip_5d": 4.93,
+      "rsi": 69.4,
+      "price": 79.38
+    },
+    "NE": {
+      "score": -0.0215,
+      "rs_60d": -1.4,
+      "dip_5d": 2.65,
+      "rsi": 54.8,
+      "price": 44.08
+    },
+    "ROP": {
+      "score": -0.0216,
+      "rs_60d": 0.89,
+      "dip_5d": 4.19,
+      "rsi": 58.7,
+      "price": 382.71
+    },
+    "GEF": {
+      "score": -0.0216,
+      "rs_60d": 1.16,
+      "dip_5d": 4.37,
+      "rsi": 51.8,
+      "price": 82.12
+    },
+    "LW": {
+      "score": -0.0216,
+      "rs_60d": 4.8,
+      "dip_5d": 6.8,
+      "rsi": 66.3,
+      "price": 53.59
+    },
+    "EVTC": {
+      "score": -0.0221,
+      "rs_60d": 1.62,
+      "dip_5d": 4.77,
+      "rsi": 67.1,
+      "price": 31.19
+    },
+    "DFIN": {
+      "score": -0.0222,
+      "rs_60d": 4.06,
+      "dip_5d": 6.41,
+      "rsi": 62.7,
+      "price": 51.81
+    },
+    "PBH": {
+      "score": -0.0223,
+      "rs_60d": -2.77,
+      "dip_5d": 1.88,
+      "rsi": 60.4,
+      "price": 49.92
+    },
+    "DRI": {
+      "score": -0.0226,
+      "rs_60d": 6.92,
+      "dip_5d": 8.39,
+      "rsi": 62.2,
+      "price": 216.35
+    },
+    "ORLY": {
+      "score": -0.0227,
+      "rs_60d": -1.15,
+      "dip_5d": 3.02,
+      "rsi": 62.7,
+      "price": 89.27
+    },
+    "CTAS": {
+      "score": -0.0228,
+      "rs_60d": 0.49,
+      "dip_5d": 4.12,
+      "rsi": 71.6,
+      "price": 213.69
+    },
+    "NSP": {
+      "score": -0.0235,
+      "rs_60d": 2.98,
+      "dip_5d": 5.89,
+      "rsi": 58.9,
+      "price": 51.38
+    },
+    "GFF": {
+      "score": -0.0241,
+      "rs_60d": -0.83,
+      "dip_5d": 3.47,
+      "rsi": 45.9,
+      "price": 92.85
+    },
+    "ABT": {
+      "score": -0.0242,
+      "rs_60d": -1.52,
+      "dip_5d": 3.02,
+      "rsi": 59.0,
+      "price": 104.89
+    },
+    "HSIC": {
+      "score": -0.0242,
+      "rs_60d": -2.23,
+      "dip_5d": 2.55,
+      "rsi": 52.7,
+      "price": 86.38
+    },
+    "YUM": {
+      "score": -0.0243,
+      "rs_60d": -2.22,
+      "dip_5d": 2.56,
+      "rsi": 65.4,
+      "price": 150.51
+    },
+    "GGG": {
+      "score": -0.0248,
+      "rs_60d": -0.16,
+      "dip_5d": 4.04,
+      "rsi": 67.9,
+      "price": 81.99
+    },
+    "RS": {
+      "score": -0.0249,
+      "rs_60d": -2.47,
+      "dip_5d": 2.51,
+      "rsi": 61.6,
+      "price": 411.17
+    },
+    "BFH": {
+      "score": -0.0254,
+      "rs_60d": -4.97,
+      "dip_5d": 0.92,
+      "rsi": 51.3,
+      "price": 102.56
+    },
+    "CL": {
+      "score": -0.0259,
+      "rs_60d": 0.41,
+      "dip_5d": 4.59,
+      "rsi": 73.2,
+      "price": 94.11
+    },
+    "WTRG": {
+      "score": -0.0266,
+      "rs_60d": -0.21,
+      "dip_5d": 4.29,
+      "rsi": 60.9,
+      "price": 40.83
     },
     "MMS": {
-      "score": -0.0664,
+      "score": -0.0276,
+      "rs_60d": -0.27,
+      "dip_5d": 4.42,
+      "rsi": 67.6,
+      "price": 61.47
+    },
+    "AIG": {
+      "score": -0.0281,
+      "rs_60d": -1.17,
+      "dip_5d": 3.91,
+      "rsi": 71.7,
+      "price": 80.74
+    },
+    "HAL": {
+      "score": -0.0281,
+      "rs_60d": -2.87,
+      "dip_5d": 2.76,
+      "rsi": 53.1,
+      "price": 33.5
+    },
+    "LLY": {
+      "score": -0.0305,
+      "rs_60d": 1.81,
+      "dip_5d": 6.29,
+      "rsi": 68.6,
+      "price": 1257.03
+    },
+    "ALLE": {
+      "score": -0.0309,
+      "rs_60d": -1.22,
+      "dip_5d": 4.33,
+      "rsi": 56.5,
+      "price": 156.54
+    },
+    "PLMR": {
+      "score": -0.0312,
+      "rs_60d": -1.82,
+      "dip_5d": 3.99,
+      "rsi": 67.3,
+      "price": 139.59
+    },
+    "WEX": {
+      "score": -0.0323,
+      "rs_60d": 0.04,
+      "dip_5d": 5.42,
+      "rsi": 54.2,
+      "price": 182.01
+    },
+    "OFG": {
+      "score": -0.0326,
+      "rs_60d": -2.83,
+      "dip_5d": 3.54,
+      "rsi": 61.1,
+      "price": 52.64
+    },
+    "STZ": {
+      "score": -0.033,
+      "rs_60d": -2.38,
+      "dip_5d": 3.92,
+      "rsi": 70.9,
+      "price": 131.35
+    },
+    "SWK": {
+      "score": -0.0337,
+      "rs_60d": -1.95,
+      "dip_5d": 4.32,
+      "rsi": 55.1,
+      "price": 92.48
+    },
+    "DLTR": {
+      "score": -0.0343,
+      "rs_60d": -0.19,
+      "dip_5d": 5.59,
+      "rsi": 61.5,
+      "price": 124.18
+    },
+    "MGY": {
+      "score": -0.0347,
+      "rs_60d": -3.21,
+      "dip_5d": 3.64,
+      "rsi": 53.8,
+      "price": 25.35
+    },
+    "LYB": {
+      "score": -0.0352,
+      "rs_60d": 2.83,
+      "dip_5d": 7.74,
+      "rsi": 62.9,
+      "price": 64.01
+    },
+    "SPGI": {
+      "score": -0.0355,
+      "rs_60d": -2.53,
+      "dip_5d": 4.23,
+      "rsi": 65.4,
+      "price": 429.64
+    },
+    "ACT": {
+      "score": -0.0357,
+      "rs_60d": -4.32,
+      "dip_5d": 3.07,
+      "rsi": 48.3,
+      "price": 46.28
+    },
+    "CI": {
+      "score": -0.0357,
+      "rs_60d": 1.1,
+      "dip_5d": 6.69,
+      "rsi": 73.0,
+      "price": 302.3
+    },
+    "EG": {
+      "score": -0.0357,
+      "rs_60d": -2.26,
+      "dip_5d": 4.45,
+      "rsi": 66.7,
+      "price": 389.1
+    },
+    "OMC": {
+      "score": -0.0358,
+      "rs_60d": -2.16,
+      "dip_5d": 4.53,
+      "rsi": 60.6,
+      "price": 80.56
+    },
+    "EXE": {
+      "score": -0.036,
+      "rs_60d": -1.23,
+      "dip_5d": 5.18,
+      "rsi": 60.8,
+      "price": 93.41
+    },
+    "MRSH": {
+      "score": -0.0365,
+      "rs_60d": 0.92,
+      "dip_5d": 6.69,
+      "rsi": 71.3,
+      "price": 188.35
+    },
+    "AIZ": {
+      "score": -0.0368,
+      "rs_60d": -0.99,
+      "dip_5d": 5.46,
+      "rsi": 61.5,
+      "price": 283.31
+    },
+    "VNOM": {
+      "score": -0.037,
+      "rs_60d": -3.53,
+      "dip_5d": 3.8,
+      "rsi": 63.6,
+      "price": 45.02
+    },
+    "AZO": {
+      "score": -0.037,
+      "rs_60d": 2.23,
+      "dip_5d": 7.65,
+      "rsi": 66.9,
+      "price": 3120.59
+    },
+    "KNSL": {
+      "score": -0.0371,
+      "rs_60d": 1.33,
+      "dip_5d": 7.07,
+      "rsi": 62.5,
+      "price": 365.24
+    },
+    "AWK": {
+      "score": -0.0373,
+      "rs_60d": -3.08,
+      "dip_5d": 4.16,
+      "rsi": 59.3,
+      "price": 134.94
+    },
+    "SR": {
+      "score": -0.0378,
+      "rs_60d": -4.79,
+      "dip_5d": 3.1,
+      "rsi": 65.1,
+      "price": 82.03
+    },
+    "CB": {
+      "score": -0.0387,
+      "rs_60d": -3.28,
+      "dip_5d": 4.27,
+      "rsi": 72.9,
+      "price": 359.79
+    },
+    "CWST": {
+      "score": -0.0391,
+      "rs_60d": -4.85,
+      "dip_5d": 3.29,
+      "rsi": 56.0,
+      "price": 88.0
+    },
+    "KBR": {
+      "score": -0.0394,
+      "rs_60d": -4.78,
+      "dip_5d": 3.38,
+      "rsi": 56.9,
+      "price": 36.38
+    },
+    "TRV": {
+      "score": -0.0396,
+      "rs_60d": -2.7,
+      "dip_5d": 4.81,
+      "rsi": 72.6,
+      "price": 389.54
+    },
+    "TFX": {
+      "score": -0.0408,
+      "rs_60d": -4.56,
+      "dip_5d": 3.76,
+      "rsi": 57.5,
+      "price": 130.43
+    },
+    "CXT": {
+      "score": -0.0415,
+      "rs_60d": 0.23,
+      "dip_5d": 7.06,
+      "rsi": 70.6,
+      "price": 54.72
+    },
+    "FERG": {
+      "score": -0.0416,
       "rs_60d": -2.88,
-      "dip_5d": 9.15,
-      "rsi": 64.6,
-      "price": 59.39
+      "dip_5d": 5.01,
+      "rsi": 61.7,
+      "price": 231.61
+    },
+    "FANG": {
+      "score": -0.0418,
+      "rs_60d": -3.65,
+      "dip_5d": 4.53,
+      "rsi": 64.3,
+      "price": 203.95
+    },
+    "CSL": {
+      "score": -0.0426,
+      "rs_60d": -3.94,
+      "dip_5d": 4.47,
+      "rsi": 53.4,
+      "price": 333.86
+    },
+    "OLED": {
+      "score": -0.0426,
+      "rs_60d": -4.96,
+      "dip_5d": 3.79,
+      "rsi": 50.0,
+      "price": 77.95
+    },
+    "KMPR": {
+      "score": -0.0429,
+      "rs_60d": -1.69,
+      "dip_5d": 6.01,
+      "rsi": 68.1,
+      "price": 29.27
+    },
+    "IDXX": {
+      "score": -0.0431,
+      "rs_60d": -0.34,
+      "dip_5d": 6.95,
+      "rsi": 66.0,
+      "price": 560.36
+    },
+    "CE": {
+      "score": -0.0435,
+      "rs_60d": -1.01,
+      "dip_5d": 6.58,
+      "rsi": 59.4,
+      "price": 47.49
+    },
+    "ED": {
+      "score": -0.0441,
+      "rs_60d": -3.95,
+      "dip_5d": 4.72,
+      "rsi": 74.4,
+      "price": 112.26
+    },
+    "APD": {
+      "score": -0.0441,
+      "rs_60d": -2.71,
+      "dip_5d": 5.54,
+      "rsi": 65.3,
+      "price": 299.59
+    },
+    "SYY": {
+      "score": -0.0443,
+      "rs_60d": -4.36,
+      "dip_5d": 4.47,
+      "rsi": 64.0,
+      "price": 82.22
+    },
+    "CPRT": {
+      "score": -0.0457,
+      "rs_60d": -3.54,
+      "dip_5d": 5.25,
+      "rsi": 47.4,
+      "price": 27.87
+    },
+    "SCI": {
+      "score": -0.0458,
+      "rs_60d": -4.46,
+      "dip_5d": 4.67,
+      "rsi": 63.7,
+      "price": 81.37
+    },
+    "ROST": {
+      "score": -0.0459,
+      "rs_60d": -4.13,
+      "dip_5d": 4.89,
+      "rsi": 60.0,
+      "price": 236.89
+    },
+    "ALV": {
+      "score": -0.0484,
+      "rs_60d": -4.57,
+      "dip_5d": 5.02,
+      "rsi": 52.8,
+      "price": 115.99
+    },
+    "ESNT": {
+      "score": -0.0489,
+      "rs_60d": -4.89,
+      "dip_5d": 4.9,
+      "rsi": 53.7,
+      "price": 64.7
+    },
+    "DOW": {
+      "score": -0.0506,
+      "rs_60d": -2.99,
+      "dip_5d": 6.44,
+      "rsi": 60.0,
+      "price": 29.93
+    },
+    "AMCR": {
+      "score": -0.0521,
+      "rs_60d": -4.84,
+      "dip_5d": 5.46,
+      "rsi": 59.5,
+      "price": 43.85
+    },
+    "AJG": {
+      "score": -0.0554,
+      "rs_60d": -0.42,
+      "dip_5d": 8.96,
+      "rsi": 65.5,
+      "price": 254.88
+    },
+    "BRO": {
+      "score": -0.0571,
+      "rs_60d": -0.72,
+      "dip_5d": 9.03,
+      "rsi": 66.6,
+      "price": 69.4
+    },
+    "OTIS": {
+      "score": -0.0577,
+      "rs_60d": -4.13,
+      "dip_5d": 6.86,
+      "rsi": 65.0,
+      "price": 71.33
+    },
+    "BALL": {
+      "score": -0.0578,
+      "rs_60d": -4.29,
+      "dip_5d": 6.77,
+      "rsi": 70.9,
+      "price": 63.2
+    },
+    "PAYX": {
+      "score": -0.06,
+      "rs_60d": -4.98,
+      "dip_5d": 6.68,
+      "rsi": 58.5,
+      "price": 111.63
+    },
+    "RLI": {
+      "score": -0.0657,
+      "rs_60d": -4.66,
+      "dip_5d": 7.84,
+      "rsi": 64.3,
+      "price": 61.07
     }
   },
   "valuation_rejected": [
     {
-      "symbol": "SDGR",
+      "symbol": "MRNA",
       "verdict": "reject",
-      "ps": 7.88,
+      "ps": 39.07,
       "sector": "Healthcare",
       "sector_median": 1.8,
-      "ratio": 4.38,
-      "reason": "P/S 7.9 = 4.4x Healthcare median 1.8 (cap 2.5x)"
+      "ratio": 21.7,
+      "reason": "P/S 39.1 = 21.7x Healthcare median 1.8 (cap 2.5x)"
     },
     {
-      "symbol": "ILMN",
+      "symbol": "PLTR",
       "verdict": "reject",
-      "ps": 9.35,
-      "sector": "Healthcare",
-      "sector_median": 1.8,
-      "ratio": 5.19,
-      "reason": "P/S 9.3 = 5.2x Healthcare median 1.8 (cap 2.5x)"
-    },
-    {
-      "symbol": "LITE",
-      "verdict": "reject",
-      "ps": 33.16,
+      "ps": 72.62,
       "sector": "Technology",
       "sector_median": 6.0,
-      "ratio": 5.53,
-      "reason": "P/S 33.2 = 5.5x Technology median 6.0 (cap 2.5x)"
-    },
-    {
-      "symbol": "MXL",
-      "verdict": "reject",
-      "ps": 15.33,
-      "sector": "Technology",
-      "sector_median": 6.0,
-      "ratio": 2.55,
-      "reason": "P/S 15.3 = 2.6x Technology median 6.0 (cap 2.5x)"
+      "ratio": 12.1,
+      "reason": "P/S 72.6 = 12.1x Technology median 6.0 (cap 2.5x)"
     },
     {
       "symbol": "VEEV",
       "verdict": "reject",
-      "ps": 13.86,
+      "ps": 14.53,
       "sector": "Healthcare",
       "sector_median": 1.8,
-      "ratio": 7.7,
-      "reason": "P/S 13.9 = 7.7x Healthcare median 1.8 (cap 2.5x)"
+      "ratio": 8.07,
+      "reason": "P/S 14.5 = 8.1x Healthcare median 1.8 (cap 2.5x)"
     },
     {
-      "symbol": "MRVL",
+      "symbol": "DOCS",
       "verdict": "reject",
-      "ps": 26.18,
-      "sector": "Technology",
-      "sector_median": 6.0,
-      "ratio": 4.36,
-      "reason": "P/S 26.2 = 4.4x Technology median 6.0 (cap 2.5x)"
-    },
-    {
-      "symbol": "RVTY",
-      "verdict": "reject",
-      "ps": 5.91,
+      "ps": 8.42,
       "sector": "Healthcare",
       "sector_median": 1.8,
-      "ratio": 3.28,
-      "reason": "P/S 5.9 = 3.3x Healthcare median 1.8 (cap 2.5x)"
+      "ratio": 4.68,
+      "reason": "P/S 8.4 = 4.7x Healthcare median 1.8 (cap 2.5x)"
+    },
+    {
+      "symbol": "SEI",
+      "verdict": "reject",
+      "ps": 8.28,
+      "sector": "Energy",
+      "sector_median": 1.2,
+      "ratio": 6.9,
+      "reason": "P/S 8.3 = 6.9x Energy median 1.2 (cap 2.5x)"
     }
   ]
 }
