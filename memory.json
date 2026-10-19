@@ -2,6 +2,32 @@
   "trade_history": [],
   "weekly_summaries": [
     {
+      "week_of": "2026-10-19",
+      "generated_at": "2026-10-19T00:00:00Z",
+      "equity_start_approx": 94791.14,
+      "equity_end_approx": null,
+      "net_pl_dollar_approx": null,
+      "net_pl_pct_approx": null,
+      "api_available": false,
+      "api_note": "Alpaca API blocked (ENOTFOUND — 5th consecutive week). bars_raw.json is stale (Aug-Sep 2026 data). scores supplemented by WebSearch.",
+      "plan_summary": {
+        "close": ["DD"],
+        "hold": ["AMAT", "LLY", "NVDA"],
+        "buy": [],
+        "rationale": "SOX fell 11.4% week of Oct 12-16 (worst since 2008). Semiconductor rebound Oct 19 premarket (+1% Nasdaq 100 futures). Closing DD (non-universe, +3%, long overdue). Reversing LLY close to maintain defensive ballast. Hold AMAT (Strong Buy, earnings Nov 12) and NVDA (Blackwell demand intact). No new buys — AMD still earnings blackout Nov 3, MU recovered to $931 (no longer dip setup). Big-tech earnings this week: META, TSLA.",
+        "execution_status": "UNVERIFIED — API blocked"
+      },
+      "top_candidates_scores": {
+        "AMD": 0.2338,
+        "MU": 0.2009,
+        "NVDA": 0.1101,
+        "CRWD": 0.0496,
+        "AMAT": 0.0341
+      },
+      "market_context": "SOX -11.4% week of Oct 12-16, worst week since 2008. AI profitability concerns, China CXMT competition, hot inflation data. Portfolio down ~-5.8% WTD to ~$94.8k. Semiconductor rebound starting Oct 19. META/TSLA earnings this week.",
+      "data_quality_note": "bars_raw.json is stale Aug-Sep 2026 data. Key price discrepancies: AMD $435 in data vs ~$634 actual; MU $820 in data vs $931 actual (Oct 16). CRWD 4:1 split July 2 makes $480 data unreliable. Scoring directionally valid but prices should not be used for order sizing."
+    },
+    {
       "week_of": "2026-10-12",
       "generated_at": "2026-10-16T19:09:21Z",
       "equity_start_approx": 100673.82,
@@ -404,6 +430,6 @@
       "vs_spy_pct": -0.63
     }
   ],
-  "last_monitor_run": "2026-10-14T14:06:34.401852-04:00",
+  "last_monitor_run": "2026-10-19T00:00:00Z",
   "last_friday_cleanup": "2026-10-16T19:09:21Z"
 }
