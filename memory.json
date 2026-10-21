@@ -9,7 +9,7 @@
       "net_pl_dollar_approx": null,
       "net_pl_pct_approx": null,
       "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND — 5th consecutive week). bars_raw.json is stale (Aug-Sep 2026 data). scores supplemented by WebSearch.",
+      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 5th consecutive week). bars_raw.json is stale (Aug-Sep 2026 data). scores supplemented by WebSearch.",
       "plan_summary": {
         "close": [
           "DD"
@@ -20,8 +20,8 @@
           "NVDA"
         ],
         "buy": [],
-        "rationale": "SOX fell 11.4% week of Oct 12-16 (worst since 2008). Semiconductor rebound Oct 19 premarket (+1% Nasdaq 100 futures). Closing DD (non-universe, +3%, long overdue). Reversing LLY close to maintain defensive ballast. Hold AMAT (Strong Buy, earnings Nov 12) and NVDA (Blackwell demand intact). No new buys — AMD still earnings blackout Nov 3, MU recovered to $931 (no longer dip setup). Big-tech earnings this week: META, TSLA.",
-        "execution_status": "UNVERIFIED — API blocked"
+        "rationale": "SOX fell 11.4% week of Oct 12-16 (worst since 2008). Semiconductor rebound Oct 19 premarket (+1% Nasdaq 100 futures). Closing DD (non-universe, +3%, long overdue). Reversing LLY close to maintain defensive ballast. Hold AMAT (Strong Buy, earnings Nov 12) and NVDA (Blackwell demand intact). No new buys \u2014 AMD still earnings blackout Nov 3, MU recovered to $931 (no longer dip setup). Big-tech earnings this week: META, TSLA.",
+        "execution_status": "UNVERIFIED \u2014 API blocked"
       },
       "top_candidates_scores": {
         "AMD": 0.2338,
@@ -41,7 +41,7 @@
       "net_pl_dollar_approx": -4361.64,
       "net_pl_pct_approx": -0.0433,
       "api_available": false,
-      "api_note": "Alpaca API blocked week of Oct 12 (ENOTFOUND — 4th consecutive week). End equity is Oct 15 EOD value; Oct 16 intraday unavailable. Trade plan execution unverified (plan called to close DD+LLY, buy MU; Oct 14 snapshot still showed DD+LLY open).",
+      "api_note": "Alpaca API blocked week of Oct 12 (ENOTFOUND \u2014 4th consecutive week). End equity is Oct 15 EOD value; Oct 16 intraday unavailable. Trade plan execution unverified (plan called to close DD+LLY, buy MU; Oct 14 snapshot still showed DD+LLY open).",
       "plan_summary": {
         "close": [
           "DD",
@@ -55,7 +55,7 @@
           "MU"
         ],
         "rationale": "Rotating LLY (underperforming, RSI 70.3) and DD (weak, not in universe) into MU (dip buy, RSI 34.7, RS60 +54%, Micron HBM sold out 2026). AMD skipped despite #1 score due to Nov 3 earnings and +5% run. Market at all-time highs with poor breadth; maintaining defensive 3-position cap.",
-        "execution_status": "UNVERIFIED — Alpaca API blocked all week. Commit '4a931a1' claims trades executed but Oct 14 API snapshot still shows DD and LLY. Needs verification when API restored."
+        "execution_status": "UNVERIFIED \u2014 Alpaca API blocked all week. Commit '4a931a1' claims trades executed but Oct 14 API snapshot still shows DD and LLY. Needs verification when API restored."
       },
       "top_candidates_scores": {
         "AMD": 0.2338,
@@ -103,7 +103,7 @@
       ],
       "closes_triggered": 0,
       "close_rule": "unrealized_plpc < -0.02",
-      "notable_events": "Oct 8 portfolio dropped -1.98% ($2,029.67) — worst single day of week; market-wide weakness. No per-position entry-based stop triggered. All positions held into week of Oct 12."
+      "notable_events": "Oct 8 portfolio dropped -1.98% ($2,029.67) \u2014 worst single day of week; market-wide weakness. No per-position entry-based stop triggered. All positions held into week of Oct 12."
     }
   ],
   "portfolio_snapshots": [
@@ -116,7 +116,7 @@
       "time": "2026-10-07T09:00:00-04:00",
       "portfolio_value": 102734.0,
       "buying_power": null,
-      "note": "Alpaca API blocked — portfolio estimated from Oct 6 equity $102,865.65 adjusted for Oct 7 intraday moves (AMD +1.38%, NVDA -2.34%, MU +0.32%)",
+      "note": "Alpaca API blocked \u2014 portfolio estimated from Oct 6 equity $102,865.65 adjusted for Oct 7 intraday moves (AMD +1.38%, NVDA -2.34%, MU +0.32%)",
       "positions_summary": {
         "AMD": {
           "entry_price": 565.0,
@@ -174,7 +174,7 @@
       "buying_power": null,
       "is_friday_close": true,
       "api_available": false,
-      "note": "Friday close snapshot — Alpaca API blocked (EGRESS_BLOCKED). Last confirmed equity $100,673.82 on 2026-10-08. No positions breached -2% close threshold based on last known data. All 4 positions (AMAT +23.3%, DD +5.4%, LLY +19.5%, NVDA +14.6% from entry) held into week of Oct 12.",
+      "note": "Friday close snapshot \u2014 Alpaca API blocked (EGRESS_BLOCKED). Last confirmed equity $100,673.82 on 2026-10-08. No positions breached -2% close threshold based on last known data. All 4 positions (AMAT +23.3%, DD +5.4%, LLY +19.5%, NVDA +14.6% from entry) held into week of Oct 12.",
       "positions_summary": {
         "AMAT": {
           "pl_pct_from_entry": 0.2332,
@@ -281,7 +281,7 @@
       "buying_power": null,
       "is_friday_close": true,
       "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND — 4th consecutive week). Last confirmed equity $96,312.18 on 2026-10-15 EOD.",
+      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 4th consecutive week). Last confirmed equity $96,312.18 on 2026-10-15 EOD.",
       "last_confirmed_equity": 96312.18,
       "last_confirmed_date": "2026-10-15",
       "positions_summary": {
@@ -333,7 +333,7 @@
       "portfolio_value": null,
       "buying_power": null,
       "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND — 6th consecutive week). Last confirmed equity $96,561.52 on 2026-10-20 close.",
+      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 6th consecutive week). Last confirmed equity $96,561.52 on 2026-10-20 close.",
       "last_confirmed_equity": 96561.52,
       "last_confirmed_date": "2026-10-20",
       "is_midweek": true,
@@ -371,7 +371,7 @@
           "note": "Blackwell demand intact, AI infrastructure thesis holds. Oct 20 +1.87% portfolio recovery driven in part by semis rebound."
         }
       },
-      "midweek_notes": "Portfolio recovering from Oct 16 low ($94,791) to $96,561 (+1.86% recovery). Oct 20 was a strong day (+1.87% vs SPY +0.34%, outperforming by +1.53%). No position estimated down >8% from entry (all positive from Oct 14 snapshot). LLY flagged as strong hold (>10%). DD close remains urgently overdue — planned 3 weeks ago, unverified. Stop losses cannot be verified (API blocked). Thesis intact for AMAT, LLY, NVDA.",
+      "midweek_notes": "Portfolio recovering from Oct 16 low ($94,791) to $96,561 (+1.86% recovery). Oct 20 was a strong day (+1.87% vs SPY +0.34%, outperforming by +1.53%). No position estimated down >8% from entry (all positive from Oct 14 snapshot). LLY flagged as strong hold (>10%). DD close remains urgently overdue \u2014 planned 3 weeks ago, unverified. Stop losses cannot be verified (API blocked). Thesis intact for AMAT, LLY, NVDA.",
       "concern_flags": [
         "api_blocked_6th_consecutive",
         "stop_loss_unverifiable",
@@ -383,6 +383,34 @@
         "wtd_change_dollar": 1770.38,
         "wtd_change_pct": 1.86
       }
+    },
+    {
+      "time": "2026-10-21T14:10:13.508657-04:00",
+      "portfolio_value": 96035.96,
+      "buying_power": 274570.58,
+      "positions": [
+        {
+          "symbol": "AMAT",
+          "pl_pct": -2.81,
+          "pl_dollar": -850.87
+        },
+        {
+          "symbol": "DD",
+          "pl_pct": 8.55,
+          "pl_dollar": 625.99
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 28.0,
+          "pl_dollar": 8057.45
+        },
+        {
+          "symbol": "NVDA",
+          "pl_pct": 7.06,
+          "pl_dollar": 1124.2
+        }
+      ],
+      "is_friday_close": false
     }
   ],
   "daily_pnl": [
@@ -519,6 +547,6 @@
       "vs_spy_pct": 1.53
     }
   ],
-  "last_monitor_run": "2026-10-19T00:00:00Z",
+  "last_monitor_run": "2026-10-21T14:10:13.508657-04:00",
   "last_friday_cleanup": "2026-10-16T19:09:21Z"
 }
