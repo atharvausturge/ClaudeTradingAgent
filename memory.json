@@ -3,26 +3,57 @@
   "weekly_summaries": [
     {
       "week_of": "2026-10-19",
-      "generated_at": "2026-10-19T00:00:00Z",
+      "generated_at": "2026-10-23T00:00:00Z",
       "equity_start_approx": 94791.14,
-      "equity_end_approx": null,
-      "net_pl_dollar_approx": null,
-      "net_pl_pct_approx": null,
+      "equity_end_approx": 93988.98,
+      "net_pl_dollar_approx": -802.16,
+      "net_pl_pct_approx": -0.00847,
       "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 5th consecutive week). bars_raw.json is stale (Aug-Sep 2026 data). scores supplemented by WebSearch.",
+      "api_note": "Alpaca API blocked (ENOTFOUND — 7th consecutive week). Last confirmed EOD equity $93,988.98 on 2026-10-22. Oct 23 live data unavailable.",
       "plan_summary": {
         "close": [
-          "DD"
+          "AMAT"
         ],
         "hold": [
-          "AMAT",
+          "DD",
           "LLY",
           "NVDA"
         ],
         "buy": [],
-        "rationale": "SOX fell 11.4% week of Oct 12-16 (worst since 2008). Semiconductor rebound Oct 19 premarket (+1% Nasdaq 100 futures). Closing DD (non-universe, +3%, long overdue). Reversing LLY close to maintain defensive ballast. Hold AMAT (Strong Buy, earnings Nov 12) and NVDA (Blackwell demand intact). No new buys \u2014 AMD still earnings blackout Nov 3, MU recovered to $931 (no longer dip setup). Big-tech earnings this week: META, TSLA.",
-        "execution_status": "UNVERIFIED \u2014 API blocked"
+        "rationale": "AMAT fell to -2.81% from entry (Oct 21 14:10 snapshot), breaching the -2% Friday close threshold. DD +8.55%, LLY +28.0%, NVDA +7.06% — all above threshold, hold into next week. Week started with strong Oct 20 recovery (+1.87%) but reversed Oct 21-22. DD close still pending (not in scoring universe, slated for close since Oct 12).",
+        "execution_status": "UNVERIFIED — API blocked"
       },
+      "positions_final": [
+        {
+          "symbol": "AMAT",
+          "pl_pct_from_entry": -0.0281,
+          "pl_dollar": -850.87,
+          "snapshot_date": "2026-10-21",
+          "decision": "close",
+          "note": "Below -2% Friday close threshold. Stop-loss rule triggered."
+        },
+        {
+          "symbol": "DD",
+          "pl_pct_from_entry": 0.0855,
+          "pl_dollar": 625.99,
+          "snapshot_date": "2026-10-21",
+          "decision": "hold"
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct_from_entry": 0.28,
+          "pl_dollar": 8057.45,
+          "snapshot_date": "2026-10-21",
+          "decision": "hold"
+        },
+        {
+          "symbol": "NVDA",
+          "pl_pct_from_entry": 0.0706,
+          "pl_dollar": 1124.20,
+          "snapshot_date": "2026-10-21",
+          "decision": "hold"
+        }
+      ],
       "top_candidates_scores": {
         "AMD": 0.2338,
         "MU": 0.2009,
@@ -30,8 +61,11 @@
         "CRWD": 0.0496,
         "AMAT": 0.0341
       },
-      "market_context": "SOX -11.4% week of Oct 12-16, worst week since 2008. AI profitability concerns, China CXMT competition, hot inflation data. Portfolio down ~-5.8% WTD to ~$94.8k. Semiconductor rebound starting Oct 19. META/TSLA earnings this week.",
-      "data_quality_note": "bars_raw.json is stale Aug-Sep 2026 data. Key price discrepancies: AMD $435 in data vs ~$634 actual; MU $820 in data vs $931 actual (Oct 16). CRWD 4:1 split July 2 makes $480 data unreliable. Scoring directionally valid but prices should not be used for order sizing."
+      "market_context": "Week Oct 19-23. Oct 20 strong recovery (+1.87% vs SPY +0.34%). Oct 21-22 reversal: -0.89% and -2.12%. AMAT semiconductor position hit stop. LLY defensive ballast +28% held well.",
+      "closes_triggered": 1,
+      "close_rule": "unrealized_plpc < -0.02",
+      "notable_events": "AMAT breached -2% stop threshold (Oct 21 snapshot: -2.81%). 7th consecutive week of API blockage. DD close urgently overdue (5th week pending). Oct 22 portfolio down -2.12%.",
+      "data_quality_note": "bars_raw.json is stale Aug-Sep 2026 data. Scoring directionally valid but prices should not be used for order sizing. Position P&L estimates based on Oct 21 14:10 intraday snapshot."
     },
     {
       "week_of": "2026-10-12",
@@ -41,7 +75,7 @@
       "net_pl_dollar_approx": -4361.64,
       "net_pl_pct_approx": -0.0433,
       "api_available": false,
-      "api_note": "Alpaca API blocked week of Oct 12 (ENOTFOUND \u2014 4th consecutive week). End equity is Oct 15 EOD value; Oct 16 intraday unavailable. Trade plan execution unverified (plan called to close DD+LLY, buy MU; Oct 14 snapshot still showed DD+LLY open).",
+      "api_note": "Alpaca API blocked week of Oct 12 (ENOTFOUND — 4th consecutive week). End equity is Oct 15 EOD value; Oct 16 intraday unavailable. Trade plan execution unverified (plan called to close DD+LLY, buy MU; Oct 14 snapshot still showed DD+LLY open).",
       "plan_summary": {
         "close": [
           "DD",
@@ -55,7 +89,7 @@
           "MU"
         ],
         "rationale": "Rotating LLY (underperforming, RSI 70.3) and DD (weak, not in universe) into MU (dip buy, RSI 34.7, RS60 +54%, Micron HBM sold out 2026). AMD skipped despite #1 score due to Nov 3 earnings and +5% run. Market at all-time highs with poor breadth; maintaining defensive 3-position cap.",
-        "execution_status": "UNVERIFIED \u2014 Alpaca API blocked all week. Commit '4a931a1' claims trades executed but Oct 14 API snapshot still shows DD and LLY. Needs verification when API restored."
+        "execution_status": "UNVERIFIED — Alpaca API blocked all week. Commit '4a931a1' claims trades executed but Oct 14 API snapshot still shows DD and LLY. Needs verification when API restored."
       },
       "top_candidates_scores": {
         "AMD": 0.2338,
@@ -103,7 +137,7 @@
       ],
       "closes_triggered": 0,
       "close_rule": "unrealized_plpc < -0.02",
-      "notable_events": "Oct 8 portfolio dropped -1.98% ($2,029.67) \u2014 worst single day of week; market-wide weakness. No per-position entry-based stop triggered. All positions held into week of Oct 12."
+      "notable_events": "Oct 8 portfolio dropped -1.98% ($2,029.67) — worst single day of week; market-wide weakness. No per-position entry-based stop triggered. All positions held into week of Oct 12."
     }
   ],
   "portfolio_snapshots": [
@@ -116,7 +150,7 @@
       "time": "2026-10-07T09:00:00-04:00",
       "portfolio_value": 102734.0,
       "buying_power": null,
-      "note": "Alpaca API blocked \u2014 portfolio estimated from Oct 6 equity $102,865.65 adjusted for Oct 7 intraday moves (AMD +1.38%, NVDA -2.34%, MU +0.32%)",
+      "note": "Alpaca API blocked — portfolio estimated from Oct 6 equity $102,865.65 adjusted for Oct 7 intraday moves (AMD +1.38%, NVDA -2.34%, MU +0.32%)",
       "positions_summary": {
         "AMD": {
           "entry_price": 565.0,
@@ -174,7 +208,7 @@
       "buying_power": null,
       "is_friday_close": true,
       "api_available": false,
-      "note": "Friday close snapshot \u2014 Alpaca API blocked (EGRESS_BLOCKED). Last confirmed equity $100,673.82 on 2026-10-08. No positions breached -2% close threshold based on last known data. All 4 positions (AMAT +23.3%, DD +5.4%, LLY +19.5%, NVDA +14.6% from entry) held into week of Oct 12.",
+      "note": "Friday close snapshot — Alpaca API blocked (EGRESS_BLOCKED). Last confirmed equity $100,673.82 on 2026-10-08. No positions breached -2% close threshold based on last known data. All 4 positions (AMAT +23.3%, DD +5.4%, LLY +19.5%, NVDA +14.6% from entry) held into week of Oct 12.",
       "positions_summary": {
         "AMAT": {
           "pl_pct_from_entry": 0.2332,
@@ -281,7 +315,7 @@
       "buying_power": null,
       "is_friday_close": true,
       "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 4th consecutive week). Last confirmed equity $96,312.18 on 2026-10-15 EOD.",
+      "api_note": "Alpaca API blocked (ENOTFOUND — 4th consecutive week). Last confirmed equity $96,312.18 on 2026-10-15 EOD.",
       "last_confirmed_equity": 96312.18,
       "last_confirmed_date": "2026-10-15",
       "positions_summary": {
@@ -333,7 +367,7 @@
       "portfolio_value": null,
       "buying_power": null,
       "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 6th consecutive week). Last confirmed equity $96,561.52 on 2026-10-20 close.",
+      "api_note": "Alpaca API blocked (ENOTFOUND — 6th consecutive week). Last confirmed equity $96,561.52 on 2026-10-20 close.",
       "last_confirmed_equity": 96561.52,
       "last_confirmed_date": "2026-10-20",
       "is_midweek": true,
@@ -371,7 +405,7 @@
           "note": "Blackwell demand intact, AI infrastructure thesis holds. Oct 20 +1.87% portfolio recovery driven in part by semis rebound."
         }
       },
-      "midweek_notes": "Portfolio recovering from Oct 16 low ($94,791) to $96,561 (+1.86% recovery). Oct 20 was a strong day (+1.87% vs SPY +0.34%, outperforming by +1.53%). No position estimated down >8% from entry (all positive from Oct 14 snapshot). LLY flagged as strong hold (>10%). DD close remains urgently overdue \u2014 planned 3 weeks ago, unverified. Stop losses cannot be verified (API blocked). Thesis intact for AMAT, LLY, NVDA.",
+      "midweek_notes": "Portfolio recovering from Oct 16 low ($94,791) to $96,561 (+1.86% recovery). Oct 20 was a strong day (+1.87% vs SPY +0.34%, outperforming by +1.53%). No position estimated down >8% from entry (all positive from Oct 14 snapshot). LLY flagged as strong hold (>10%). DD close remains urgently overdue — planned 3 weeks ago, unverified. Stop losses cannot be verified (API blocked). Thesis intact for AMAT, LLY, NVDA.",
       "concern_flags": [
         "api_blocked_6th_consecutive",
         "stop_loss_unverifiable",
@@ -411,6 +445,56 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-10-23T00:00:00Z",
+      "portfolio_value": null,
+      "buying_power": null,
+      "is_friday_close": true,
+      "api_available": false,
+      "api_note": "Alpaca API blocked (ENOTFOUND — 7th consecutive week). Last confirmed EOD equity $93,988.98 on 2026-10-22.",
+      "last_confirmed_equity": 93988.98,
+      "last_confirmed_date": "2026-10-22",
+      "positions_summary": {
+        "AMAT": {
+          "pl_pct_from_entry": -0.0281,
+          "pl_dollar": -850.87,
+          "snapshot_date": "2026-10-21",
+          "decision": "close",
+          "note": "Below -2% Friday close threshold (-2.81%). Friday close rule triggered. GitHub Actions to execute."
+        },
+        "DD": {
+          "pl_pct_from_entry": 0.0855,
+          "pl_dollar": 625.99,
+          "snapshot_date": "2026-10-21",
+          "decision": "hold",
+          "note": "Up +8.55% from entry — hold into next week"
+        },
+        "LLY": {
+          "pl_pct_from_entry": 0.28,
+          "pl_dollar": 8057.45,
+          "snapshot_date": "2026-10-21",
+          "decision": "hold",
+          "note": "Up +28.0% from entry — strong hold. Defensive ballast."
+        },
+        "NVDA": {
+          "pl_pct_from_entry": 0.0706,
+          "pl_dollar": 1124.20,
+          "snapshot_date": "2026-10-21",
+          "decision": "hold",
+          "note": "Up +7.06% from entry — hold. Blackwell AI thesis intact."
+        }
+      },
+      "weekly_pl": {
+        "equity_start": 94791.14,
+        "equity_end_approx": 93988.98,
+        "net_pl_dollar": -802.16,
+        "net_pl_pct": -0.00847,
+        "note": "Week started with Oct 20 recovery (+1.87%) then Oct 21-22 reversal. AMAT hit -2% stop trigger."
+      },
+      "closes_triggered": 1,
+      "close_rule": "unrealized_plpc < -0.02",
+      "notable_events": "AMAT at -2.81% from entry (Oct 21 14:10 snapshot) triggers Friday close rule. 7th consecutive week of API blockage. DD close pending 5th consecutive week."
     }
   ],
   "daily_pnl": [
@@ -570,5 +654,5 @@
     }
   ],
   "last_monitor_run": "2026-10-21T14:10:13.508657-04:00",
-  "last_friday_cleanup": "2026-10-16T19:09:21Z"
+  "last_friday_cleanup": "2026-10-23T00:00:00Z"
 }
