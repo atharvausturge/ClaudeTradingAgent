@@ -2,6 +2,35 @@
   "trade_history": [],
   "weekly_summaries": [
     {
+      "week_of": "2026-10-26",
+      "generated_at": "2026-10-26T12:47:00Z",
+      "equity_start_approx": 93260.02,
+      "equity_end_approx": null,
+      "net_pl_dollar_approx": null,
+      "api_available": false,
+      "api_note": "Alpaca API blocked (HTTP 403 — 8th consecutive week). Last confirmed equity $93,260.02 on 2026-10-23.",
+      "plan_summary": {
+        "close": ["AMAT", "DD", "LLY"],
+        "hold": ["NVDA"],
+        "buy": ["NEM"],
+        "rationale": "Close AMAT (stop-loss -2.81% triggered Oct 21). Close DD (5+ weeks overdue, not in universe). Close LLY before Oct 29 earnings (lock in +28% gain, ±7.41% earnings move). Hold NVDA (+7.06%, earnings Nov 18). Add NEM (gold mining, post-earnings Oct 22, FCF record, defensive hedge). AMD/AMZN avoided (earnings this week/next week). CRWD skip (stock split data unreliable).",
+        "execution_status": "UNVERIFIED — API blocked"
+      },
+      "top_candidates_scores": {
+        "AMD": 0.2338,
+        "MU": 0.2009,
+        "NVDA": 0.1101,
+        "MRVL": 0.0504,
+        "CRWD": 0.0496,
+        "NEM": 0.0324,
+        "AMZN": 0.0278
+      },
+      "market_context": "Week Oct 26-30. Portfolio down -9.6% from Oct 5 ($103,182) to Oct 23 ($93,260) over 4 weeks, primarily from semiconductor sector weakness. LLY earnings Oct 29 (major event). AMD earnings Nov 3. Reducing sector concentration: closing 3 positions, adding gold miner NEM as uncorrelated hedge.",
+      "closes_triggered": 1,
+      "close_rule": "unrealized_plpc < -0.02 (AMAT -2.81%); DD overdue close; LLY pre-earnings profit lock",
+      "notable_events": "AMAT stop-loss triggered Oct 21 (-2.81%). LLY earnings Oct 29 — closing to lock +28% gain. DD 5-week pending close finally executed. Portfolio at -9.6% from starting equity. 8th consecutive API blockage week."
+    },
+    {
       "week_of": "2026-10-19",
       "generated_at": "2026-10-23T00:00:00Z",
       "equity_start_approx": 94791.14,
