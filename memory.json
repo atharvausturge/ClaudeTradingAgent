@@ -8,13 +8,21 @@
       "equity_end_approx": null,
       "net_pl_dollar_approx": null,
       "api_available": false,
-      "api_note": "Alpaca API blocked (HTTP 403 — 8th consecutive week). Last confirmed equity $93,260.02 on 2026-10-23.",
+      "api_note": "Alpaca API blocked (HTTP 403 \u2014 8th consecutive week). Last confirmed equity $93,260.02 on 2026-10-23.",
       "plan_summary": {
-        "close": ["AMAT", "DD", "LLY"],
-        "hold": ["NVDA"],
-        "buy": ["NEM"],
-        "rationale": "Close AMAT (stop-loss -2.81% triggered Oct 21). Close DD (5+ weeks overdue, not in universe). Close LLY before Oct 29 earnings (lock in +28% gain, ±7.41% earnings move). Hold NVDA (+7.06%, earnings Nov 18). Add NEM (gold mining, post-earnings Oct 22, FCF record, defensive hedge). AMD/AMZN avoided (earnings this week/next week). CRWD skip (stock split data unreliable).",
-        "execution_status": "UNVERIFIED — API blocked"
+        "close": [
+          "AMAT",
+          "DD",
+          "LLY"
+        ],
+        "hold": [
+          "NVDA"
+        ],
+        "buy": [
+          "NEM"
+        ],
+        "rationale": "Close AMAT (stop-loss -2.81% triggered Oct 21). Close DD (5+ weeks overdue, not in universe). Close LLY before Oct 29 earnings (lock in +28% gain, \u00b17.41% earnings move). Hold NVDA (+7.06%, earnings Nov 18). Add NEM (gold mining, post-earnings Oct 22, FCF record, defensive hedge). AMD/AMZN avoided (earnings this week/next week). CRWD skip (stock split data unreliable).",
+        "execution_status": "UNVERIFIED \u2014 API blocked"
       },
       "top_candidates_scores": {
         "AMD": 0.2338,
@@ -28,7 +36,7 @@
       "market_context": "Week Oct 26-30. Portfolio down -9.6% from Oct 5 ($103,182) to Oct 23 ($93,260) over 4 weeks, primarily from semiconductor sector weakness. LLY earnings Oct 29 (major event). AMD earnings Nov 3. Reducing sector concentration: closing 3 positions, adding gold miner NEM as uncorrelated hedge.",
       "closes_triggered": 1,
       "close_rule": "unrealized_plpc < -0.02 (AMAT -2.81%); DD overdue close; LLY pre-earnings profit lock",
-      "notable_events": "AMAT stop-loss triggered Oct 21 (-2.81%). LLY earnings Oct 29 — closing to lock +28% gain. DD 5-week pending close finally executed. Portfolio at -9.6% from starting equity. 8th consecutive API blockage week."
+      "notable_events": "AMAT stop-loss triggered Oct 21 (-2.81%). LLY earnings Oct 29 \u2014 closing to lock +28% gain. DD 5-week pending close finally executed. Portfolio at -9.6% from starting equity. 8th consecutive API blockage week."
     },
     {
       "week_of": "2026-10-19",
@@ -524,6 +532,11 @@
       "closes_triggered": 1,
       "close_rule": "unrealized_plpc < -0.02",
       "notable_events": "AMAT at -2.81% from entry (Oct 21 14:10 snapshot) triggers Friday close rule. 7th consecutive week of API blockage. DD close pending 5th consecutive week."
+    },
+    {
+      "time": "2026-10-26T15:30:23.861817-04:00",
+      "portfolio_value": 94594.04,
+      "buying_power": 270533.19
     }
   ],
   "daily_pnl": [
