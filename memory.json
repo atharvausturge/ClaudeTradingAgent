@@ -175,6 +175,70 @@
       "closes_triggered": 0,
       "close_rule": "unrealized_plpc < -0.02",
       "notable_events": "Oct 8 portfolio dropped -1.98% ($2,029.67) \u2014 worst single day of week; market-wide weakness. No per-position entry-based stop triggered. All positions held into week of Oct 12."
+    },
+    {
+      "week_of": "2026-10-30",
+      "generated_at": "2026-10-30T00:00:00Z",
+      "equity_start_approx": 93260.02,
+      "equity_end_approx": 98664.11,
+      "net_pl_dollar_approx": 5404.09,
+      "net_pl_pct_approx": 0.058,
+      "api_available": false,
+      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 10th consecutive week). Last confirmed equity $98,664.11 on 2026-10-29 (daily_pnl). Last confirmed positions from Oct 28 14:59 snapshot.",
+      "plan_summary": {
+        "close": [],
+        "hold": ["AMAT", "DD", "LLY", "NVDA"],
+        "buy": [],
+        "rationale": "No positions triggered -2% Friday close rule (Oct 28 snapshot: AMAT -0.87%, DD +11.23%, LLY +30.35%, NVDA +4.43%). LLY earnings Oct 29 produced strong positive portfolio reaction (+1.92% vs SPY -0.38%). Strategic closes from Oct 26 plan (AMAT/DD/LLY) remain unverified. All positions held.",
+        "execution_status": "UNVERIFIED \u2014 API blocked"
+      },
+      "positions_final": [
+        {
+          "symbol": "AMAT",
+          "pl_pct_from_entry": -0.0087,
+          "pl_dollar": -264.43,
+          "snapshot_date": "2026-10-28",
+          "decision": "hold",
+          "note": "Recovered from -2.81% (Oct 21) to -0.87% (Oct 28). Above -2% threshold. Strategic close from prior week unverified."
+        },
+        {
+          "symbol": "DD",
+          "pl_pct_from_entry": 0.1123,
+          "pl_dollar": 822.46,
+          "snapshot_date": "2026-10-28",
+          "decision": "hold",
+          "note": "Up +11.23% from entry. Close pending 6+ consecutive weeks (not in universe). Strategic close unverified."
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct_from_entry": 0.3035,
+          "pl_dollar": 8731.63,
+          "snapshot_date": "2026-10-28",
+          "decision": "hold",
+          "note": "Up +30.35% from entry. LLY Q3 earnings Oct 29 \u2014 portfolio +1.92% on day vs SPY -0.38%. Strong positive reaction. Pre-earnings close unverified."
+        },
+        {
+          "symbol": "NVDA",
+          "pl_pct_from_entry": 0.0443,
+          "pl_dollar": 706.08,
+          "snapshot_date": "2026-10-28",
+          "decision": "hold",
+          "note": "Up +4.43% from entry. Core hold. Earnings Nov 18."
+        }
+      ],
+      "closes_triggered": 0,
+      "close_rule": "unrealized_plpc < -0.02",
+      "notable_events": "Best recovery week since initial drawdown: +$5,404 (+5.8%) WTD, from $93,260 (Oct 23 low) to $98,664 (Oct 29). LLY Q3 earnings Oct 29 positive \u2014 portfolio outperformed SPY by +2.3% on earnings day. No positions below -2% stop. 10th consecutive week of API blockage. All Oct 26 trades (close AMAT/DD/LLY, buy NEM, hold NVDA) remain unverified. Cumulative drawdown from Oct 5 high: -$4,519 (-4.4%).",
+      "weekly_performance": {
+        "equity_mon_oct26": 94949.87,
+        "equity_tue_oct27": 95387.26,
+        "equity_wed_oct28": 96828.22,
+        "equity_thu_oct29": 98664.11,
+        "equity_fri_oct30": null,
+        "wtd_gain_dollar": 5404.09,
+        "wtd_gain_pct": 5.8,
+        "note": "Strong recovery week. LLY earnings catalyst on Oct 29 drove outperformance."
+      }
     }
   ],
   "portfolio_snapshots": [
@@ -636,6 +700,55 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-10-30T00:00:00Z",
+      "portfolio_value": null,
+      "buying_power": null,
+      "is_friday_close": true,
+      "api_available": false,
+      "api_note": "Alpaca API blocked (ENOTFOUND — 10th consecutive week). Last confirmed equity $98,664.11 on 2026-10-29 (daily_pnl). Last confirmed positions Oct 28 14:59.",
+      "last_confirmed_equity": 98664.11,
+      "last_confirmed_date": "2026-10-29",
+      "positions_summary": {
+        "AMAT": {
+          "pl_pct_from_entry": -0.0087,
+          "pl_dollar": -264.43,
+          "snapshot_date": "2026-10-28",
+          "decision": "hold",
+          "note": "Above -2% threshold. Recovered from Oct 21 stop trigger."
+        },
+        "DD": {
+          "pl_pct_from_entry": 0.1123,
+          "pl_dollar": 822.46,
+          "snapshot_date": "2026-10-28",
+          "decision": "hold",
+          "note": "Up +11.23%. Close pending 6+ weeks (unverified)."
+        },
+        "LLY": {
+          "pl_pct_from_entry": 0.3035,
+          "pl_dollar": 8731.63,
+          "snapshot_date": "2026-10-28",
+          "decision": "hold",
+          "note": "Up +30.35%. LLY earnings Oct 29 positive reaction. Pre-earnings close unverified."
+        },
+        "NVDA": {
+          "pl_pct_from_entry": 0.0443,
+          "pl_dollar": 706.08,
+          "snapshot_date": "2026-10-28",
+          "decision": "hold",
+          "note": "Up +4.43%. Core hold into NVDA earnings Nov 18."
+        }
+      },
+      "closes_triggered": 0,
+      "close_rule": "unrealized_plpc < -0.02",
+      "weekly_pl": {
+        "equity_start": 93260.02,
+        "equity_end_approx": 98664.11,
+        "net_pl_dollar": 5404.09,
+        "net_pl_pct": 0.058,
+        "note": "Best week: +5.8% recovery. LLY earnings Oct 29 drove strong outperformance vs SPY."
+      }
     }
   ],
   "daily_pnl": [
@@ -847,8 +960,22 @@
       "invested_pct": 95.2,
       "spy_daily_pct": -0.38,
       "vs_spy_pct": 2.3
+    },
+    {
+      "date": "2026-10-30",
+      "equity": null,
+      "daily_pl_dollar": null,
+      "daily_pl_pct": null,
+      "open_positions": 4,
+      "realized_today_dollar": 0,
+      "invested_pct": null,
+      "spy_daily_pct": null,
+      "vs_spy_pct": null,
+      "api_available": false,
+      "api_note": "Alpaca API blocked (ENOTFOUND — 10th consecutive week). Friday Oct 30 live data unavailable. No -2% close triggered based on Oct 28 snapshot.",
+      "friday_close": true
     }
   ],
-  "last_monitor_run": "2026-10-28T14:59:21.545173-04:00",
-  "last_friday_cleanup": "2026-10-23T00:00:00Z"
+  "last_monitor_run": "2026-10-30T00:00:00Z",
+  "last_friday_cleanup": "2026-10-30T00:00:00Z"
 }
