@@ -187,7 +187,12 @@
       "api_note": "Alpaca API blocked (ENOTFOUND \u2014 10th consecutive week). Last confirmed equity $98,664.11 on 2026-10-29 (daily_pnl). Last confirmed positions from Oct 28 14:59 snapshot.",
       "plan_summary": {
         "close": [],
-        "hold": ["AMAT", "DD", "LLY", "NVDA"],
+        "hold": [
+          "AMAT",
+          "DD",
+          "LLY",
+          "NVDA"
+        ],
         "buy": [],
         "rationale": "No positions triggered -2% Friday close rule (Oct 28 snapshot: AMAT -0.87%, DD +11.23%, LLY +30.35%, NVDA +4.43%). LLY earnings Oct 29 produced strong positive portfolio reaction (+1.92% vs SPY -0.38%). Strategic closes from Oct 26 plan (AMAT/DD/LLY) remain unverified. All positions held.",
         "execution_status": "UNVERIFIED \u2014 API blocked"
@@ -707,7 +712,7 @@
       "buying_power": null,
       "is_friday_close": true,
       "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND — 10th consecutive week). Last confirmed equity $98,664.11 on 2026-10-29 (daily_pnl). Last confirmed positions Oct 28 14:59.",
+      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 10th consecutive week). Last confirmed equity $98,664.11 on 2026-10-29 (daily_pnl). Last confirmed positions Oct 28 14:59.",
       "last_confirmed_equity": 98664.11,
       "last_confirmed_date": "2026-10-29",
       "positions_summary": {
@@ -972,8 +977,19 @@
       "spy_daily_pct": null,
       "vs_spy_pct": null,
       "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND — 10th consecutive week). Friday Oct 30 live data unavailable. No -2% close triggered based on Oct 28 snapshot.",
+      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 10th consecutive week). Friday Oct 30 live data unavailable. No -2% close triggered based on Oct 28 snapshot.",
       "friday_close": true
+    },
+    {
+      "date": "2026-10-30",
+      "equity": 98096.64,
+      "daily_pl_dollar": -1571.12,
+      "daily_pl_pct": -1.58,
+      "open_positions": 4,
+      "realized_today_dollar": 0,
+      "invested_pct": 95.2,
+      "spy_daily_pct": -1.77,
+      "vs_spy_pct": 0.19
     }
   ],
   "last_monitor_run": "2026-10-30T00:00:00Z",
