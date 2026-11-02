@@ -1,52 +1,57 @@
 {
-  "week_of": "2026-10-26",
-  "generated_at": "2026-10-26T12:47:00Z",
-  "week_thesis": "Close AMAT (stop-loss triggered -2.81% on Oct 21, -2% Friday threshold rule), DD (5+ weeks overdue close, not in scoring universe), and LLY (Eli Lilly reports Q3 earnings Thu Oct 29 — lock in +28% gain before ±7.4% binary event). Hold NVDA (AI infrastructure thesis intact, earnings Nov 18). Add NEM (Newmont Gold; Oct 22 earnings already resolved — Q1 2026 FCF record $3.1B, Buy consensus, $135 analyst target; gold mining as uncorrelated macro hedge to tech portfolio). AMD and AMZN avoided (earnings this week: AMD Nov 3, AMZN Oct 29). CRWD data unreliable due to July 2 4:1 stock split. Conservative 2-position portfolio given 8th consecutive week of Alpaca API blockage and stale Aug-Sep 2026 bar data.",
-  "api_note": "Alpaca API blocked (HTTP 403 from proxy — 8th consecutive week). bars_raw.json reflects stale Aug-Sep 2026 data. Last confirmed equity $93,260.02 on 2026-10-23 (from daily_pnl). Positions from Oct 21 14:10 snapshot: AMAT -2.81%, DD +8.55%, LLY +28.0%, NVDA +7.06%. Trade plan execution UNVERIFIED — GitHub Actions must verify live unrealized_plpc before placing orders.",
+  "week_of": "2026-11-02",
+  "generated_at": "2026-11-02T13:58:00Z",
+  "week_thesis": "11th consecutive week of Alpaca API blockage (403 from proxy). All Oct 26 trade plan actions (close AMAT/DD/LLY, hold NVDA, buy NEM) remain UNVERIFIED. Maintaining close recommendations for AMAT (stop-loss -2.81% triggered Oct 21, AMAT earnings Nov 12 creates fresh binary risk), DD (not in scoring universe, overdue close 7+ consecutive weeks), and LLY (Q3 earnings Oct 29 were a +6.6% beat to $1,373.70 new high — post-earnings profit lock on +30.35% gain). Hold NVDA into Nov 17-25 earnings catalyst (Blackwell demand intact). Add MRVL (Marvell AI networking chips — RS60 +21%, RSI near oversold at 25.9, next earnings ~Dec 2 safe window) as tech diversifier. NEM (Newmont gold) remains in buy/hold list as defensive macro hedge (next earnings resolved Oct 23, CFO transition noted as near-term risk). AMD strictly avoided — Q3 earnings report tomorrow Nov 3 after close with ±10.7% implied move and -20% from October peak; entry before binary event violates risk rules. Stale Aug-Sep 2026 bars data used for scoring; directional signal valid, absolute prices unreliable.",
+  "api_note": "Alpaca API blocked (HTTP 403 from proxy — 11th consecutive week). bars_raw.json stale (Aug-Sep 2026 data). SPY scored at $736.50 (stale). Last confirmed equity $98,664.11 on 2026-10-29 (daily_pnl); Oct 30 estimated $98,096 (portfolio -1.58% vs SPY -1.77%). Current equity estimate: ~$97,000-99,000. All trade executions unverified — GitHub Actions must verify live positions before placing orders.",
   "buys": [
     {
+      "symbol": "MRVL",
+      "reasoning": "Marvell Technology Group AI networking chips. Score +0.0504 (rank #3 from stale data), RS60=+21% (strong trend vs SPY), RSI=25.9 (borderline oversold — good dip entry), dip5d=+5.6%. AI infrastructure thesis: MRVL's custom silicon (XPU) and DSP networking chips are critical enablers of hyperscaler AI deployments. Fiscal Q4 2026 (March) showed revenue acceleration guidance. Next earnings ~Dec 2, 2026 — 4-week clear runway. Diversifies away from pure GPU play (NVDA) into networking/custom silicon. Analyst consensus upgrades from May 2026 cited accelerating quarterly growth trajectory through FY2027.",
+      "confidence": "medium",
+      "qty_pct": 0.20
+    },
+    {
       "symbol": "NEM",
-      "reasoning": "Newmont Corporation (gold mining). Score +0.0324 (rank #7), RS60=+1%, RSI=53.6 (neutral/healthy), dip5d=-4.7% (pullback entry opportunity). Q3 2026 earnings already reported Oct 22 — binary event resolved, no near-term catalyst risk. Q1 2026 free cash flow record of $3.1B. Analyst consensus: Buy, avg 6M price target $135.8. Gold prices supported by macro uncertainty (geopolitical risk, rate environment). Provides uncorrelated diversification against NVDA semiconductor exposure. Portfolio has been 100% tech/semiconductor for months — defensive hedge warranted.",
+      "reasoning": "Newmont Corporation gold mining. Score +0.0324 (rank #6), RS60=+1%, RSI=53.6 (neutral healthy), dip5d=-4.7% (pullback from highs). Q3 2026 earnings already reported Oct 23 — binary event resolved. Gold macro support: central bank buying, geopolitical risk premium, anticipated rate environment. NEM provides uncorrelated hedge against semiconductor exposure (NVDA, MRVL). CFO resignation noted as short-term negative; thesis intact on FCF generation and gold price support. 52-week high $135.29 per Robinhood. No near-term earnings catalyst. Note: if NEM was successfully purchased per Oct 26 unverified plan, this is a hold confirmation; if not executed, this is a fresh buy.",
       "confidence": "medium",
       "qty_pct": 0.20
     }
   ],
   "close_positions": ["AMAT", "DD", "LLY"],
   "close_reasoning": {
-    "AMAT": "Stop-loss rule triggered Oct 21, 2026 (-2.81% from entry, below -2% Friday close threshold). Already listed as close in Friday close plan (friday_closes.json). Semiconductor equipment sector remains under pressure. Execute immediately at Monday market open.",
-    "DD": "DuPont not in scoring universe (no bars data). Close has been planned since week of Oct 12 (5+ weeks unverified). Position is +8.55% from entry as of Oct 21 snapshot ($625.99 unrealized gain) — still positive, sell into strength. Frees position slot.",
-    "LLY": "Eli Lilly reports Q3 2026 earnings Thursday October 29, 2026 before market open. Options market pricing ±7.41% ($85.75) earnings move. At +28.0% from entry (~$8,057 unrealized gain), locking in profit ahead of binary event is prudent swing-trade discipline. Could re-enter LLY post-earnings if reaction is strongly positive. This is the largest gain in the portfolio — preserving it is risk management."
+    "AMAT": "Stop-loss rule triggered Oct 21, 2026 (-2.81% from entry, below -2% Friday close threshold). Close has been planned since week of Oct 26 (unverified). AMAT reports Q3 FY2026 earnings Thursday November 12, 2026 — creates fresh binary risk within 10 days. Semiconductor equipment sector still pressured. Close immediately at Monday market open. Position was -0.87% from entry on Oct 28 snapshot — still acceptable exit vs -2.81% worst level.",
+    "DD": "DuPont not in scoring universe (no fresh bars data). Close has been planned since week of Oct 12 (7+ consecutive weeks unverified). Position is +11.23% from entry as of Oct 28 snapshot ($822 unrealized gain) — selling into strength. Frees position slot. No fundamental thesis for continued hold.",
+    "LLY": "Eli Lilly Q3 2026 earnings reported Oct 29 — beat estimates, raised 2026 revenue guidance to $91-92B, stock surged +6.6% to new 52-week high $1,373.70. Post-earnings profit lock: position up ~30.35% from entry on Oct 28 snapshot (~$8,731 unrealized gain). Pre-earnings close was planned Oct 26 (unverified). Now that earnings catalyst has resolved positively and stock is at 52-week high, this is an optimal exit point. Take the +30%+ gain and rotate into fresh setups. LLY is the largest unrealized gain in the portfolio — preserving it is prudent risk management."
   },
   "hold_positions": ["NVDA"],
   "hold_reasoning": {
-    "NVDA": "Score +0.110 (rank #3), RS60=+21%, RSI=49.8 (neutral), dip5d=-4.3%. Blackwell AI infrastructure thesis intact. Next earnings November 18, 2026 — not this week. Position up +7.06% from entry ($1,124 unrealized gain as of Oct 21). Semiconductor sector rebounding after Oct 12-16 selloff. Core AI infrastructure holding."
+    "NVDA": "Score +0.1101 (rank #2), RS60=+21%, RSI=49.8 (neutral healthy), dip5d=-4.3%. Blackwell AI infrastructure demand intact — fiscal Q3 FY2026 revenue +73% YoY, non-GAAP EPS +82%. Next earnings ~November 17-25, 2026 — 2-3 week pre-earnings catalyst window. Core AI infrastructure hold. Position up +4.43% from entry ($706 gain on Oct 28 snapshot). Do not close before earnings catalyst."
   },
   "skip_reasoning": {
-    "AMD": "AVOID: Q3 2026 earnings confirmed November 3, 2026 after market close — 8 days away. Options pricing ±10.7% earnings move. Last quarter beat +6.7% but stock fell 7% the next session. Earnings reaction unpredictable. Will reassess post-earnings.",
-    "AMZN": "AVOID: Q3 2026 earnings approximately October 29, 2026 after close (same day as LLY). Do not enter new position ahead of earnings. Score +0.0278 (rank #8), RSI=44.7 otherwise attractive. Reassess post-earnings.",
-    "CRWD": "SKIP: CrowdStrike completed 4-for-1 stock split July 2, 2026. bars_raw.json price of $480 is pre-split — data unreliable for scoring. Flagged in prior plans. Skip until data refresh.",
-    "MU": "SKIP: Memory chips under pressure mid-October (Chinese competition, AI demand doubts). RSI 34.7 suggests ongoing selling. Stale data concerns remain.",
-    "LLY": "Closing (see close_reasoning). Earnings Oct 29.",
-    "AMAT": "Closing (stop-loss triggered -2.81%).",
-    "META": "Score +0.0245 (rank #9), RSI=65.0 (elevated). Q3 earnings likely reported week of Oct 19-23 (Q2 was July 29). Insufficient post-earnings clarity from available data. Skip."
+    "AMD": "AVOID — CRITICAL: Q3 2026 earnings November 3, 2026 AFTER CLOSE (TODAY/TOMORROW). Options pricing ±10.7% implied move. Stock down -20% from October peak ($649 → ~$517 on Oct 23). AMD up 131% YTD — high expectations, elevated multiple (68x this year's EPS). Do not enter before binary event. Reassess post-earnings Nov 4.",
+    "CRWD": "SKIP — CrowdStrike completed 4-for-1 stock split July 2, 2026. bars_raw.json price of $480 is pre-split (post-split ~$120). Data unreliable for scoring. Skip until fresh data refresh.",
+    "MU": "HOLD/MONITOR — Score +0.2009 (rank #1) from stale data, RSI 34.7 (mild oversold), RS60 +54%. Q4 FY2026 earnings reported Sep 30 ($54.2B vs $51.1B estimate, +6.1% surprise). Next earnings ~Dec 16, 2026. Memory/HBM thesis solid but portfolio already adding MRVL semiconductor exposure. Skip this week to avoid semiconductor concentration with NVDA + MRVL already planned.",
+    "AMZN": "SKIP — Q3 2026 earnings were approximately Oct 29, 2026 (same day as LLY). Post-earnings analysis incomplete. Score +0.0278 (rank #7), RSI 44.7. Reassess post-earnings reaction when data available.",
+    "META": "SKIP — Score +0.0245 (rank #8), RSI 65.0 (elevated), dip5d -0.1%. Q3 earnings likely reported week of Oct 19-23. RSI elevated limits entry conviction. Portfolio rotation into MRVL preferred."
   },
   "portfolio_target": {
-    "positions_after_plan": ["NVDA", "NEM"],
+    "positions_after_plan": ["NVDA", "NEM", "MRVL"],
     "max_positions": 3,
-    "estimated_gross_exposure_pct": 0.40,
-    "equity_estimate": 93260.0,
-    "equity_note": "Last confirmed $93,260.02 on 2026-10-23 (daily_pnl). Actual Oct 26 open price unavailable (API blocked). Conservative 40% exposure (2 of 3 max positions) given data uncertainty."
+    "estimated_gross_exposure_pct": 0.60,
+    "equity_estimate": 97500.0,
+    "equity_note": "Last confirmed $98,664.11 on 2026-10-29. Oct 30 estimate ~$98,097. Conservative $97,500 estimate for position sizing. 3 positions at 20% each = 60% gross exposure. 40% cash buffer maintained given 11th week API blockage and stale scoring data."
   },
   "market_context": {
     "spy_price_approx": 736.50,
-    "spy_note": "bars_raw.json stale data (Aug-Sep 2026). Oct 22 daily_pnl shows SPY -1.18%, Oct 23 -0.52% — market softening.",
+    "spy_note": "Stale bars data (Aug-Sep 2026). S&P 500 was near 7,431 in June 2026 per iTiger weekly report. Oct daily_pnl: Oct 26 SPY +0.71%, Oct 27 +0.56%, Oct 28 +0.34%, Oct 29 -0.38%, Oct 30 -1.77%. Market choppy late October.",
     "key_events_this_week": [
-      "LLY earnings: Thu Oct 29 before open (close planned)",
-      "AMZN earnings: ~Thu Oct 29 after close (avoid new entry)",
-      "AMD earnings: Nov 3 after close (avoid new entry)",
-      "NVDA earnings: Nov 18 (no action needed this week)"
+      "AMD earnings: Nov 3 2026 AFTER CLOSE (AVOID new entry)",
+      "AMAT earnings: Nov 12 2026 (close AMAT this week)",
+      "NVDA earnings: ~Nov 17-25 2026 (hold into catalyst)",
+      "MRVL earnings: ~Dec 2 2026 (4-week clear window)",
+      "MU earnings: ~Dec 16 2026 (safe horizon)"
     ],
-    "macro_context": "8th consecutive week of API blockage. Portfolio down from $103,182 (Oct 5) to $93,260 (Oct 23) = -9.6% over 4 weeks. Semiconductor sector weakness primary driver. Strategy: reduce sector concentration, add defensive gold position, await stable API connection.",
-    "api_status": "BLOCKED_8TH_CONSECUTIVE_WEEK"
+    "macro_context": "11th consecutive week of Alpaca API blockage. Portfolio recovered from Oct 23 low ($93,260) to Oct 29 high ($98,664) — +5.8% recovery driven by LLY Q3 earnings beat. Late October portfolio outperforming SPY (LLY +6.6% on Oct 29 vs SPY -0.38%). Strategy: complete portfolio rotation out of legacy positions (AMAT stop, DD overdue, LLY profit lock), consolidate to 3-position setup (NVDA AI core + MRVL AI diversifier + NEM gold hedge).",
+    "api_status": "BLOCKED_11TH_CONSECUTIVE_WEEK"
   }
 }

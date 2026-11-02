@@ -1,14 +1,5 @@
 [
   {
-    "symbol": "AMD",
-    "score": 0.2338,
-    "rs_60d": 66.0,
-    "dip_5d": 5.04,
-    "rsi": 52.8,
-    "price": 435.0,
-    "earnings_blackout": false
-  },
-  {
     "symbol": "MU",
     "score": 0.2009,
     "rs_60d": 54.0,
@@ -177,6 +168,15 @@
     "dip_5d": 2.67,
     "rsi": 70.3,
     "price": 1064.59,
+    "earnings_blackout": false
+  },
+  {
+    "symbol": "COST",
+    "score": -0.0256,
+    "rs_60d": -4.0,
+    "dip_5d": 1.6,
+    "rsi": 63.1,
+    "price": 975.0,
     "earnings_blackout": false
   }
 ]
