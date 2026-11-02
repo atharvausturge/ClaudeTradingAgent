@@ -8,13 +8,22 @@
       "equity_end_approx": null,
       "net_pl_dollar_approx": null,
       "api_available": false,
-      "api_note": "Alpaca API blocked (HTTP 403 from proxy — 11th consecutive week). Last confirmed equity $98,664.11 on 2026-10-29 (daily_pnl). Oct 30 daily_pnl shows $98,096.64 (-$1,571 / -1.58% vs SPY -1.77%). All prior plan executions still UNVERIFIED.",
+      "api_note": "Alpaca API blocked (HTTP 403 from proxy \u2014 11th consecutive week). Last confirmed equity $98,664.11 on 2026-10-29 (daily_pnl). Oct 30 daily_pnl shows $98,096.64 (-$1,571 / -1.58% vs SPY -1.77%). All prior plan executions still UNVERIFIED.",
       "plan_summary": {
-        "close": ["AMAT", "DD", "LLY"],
-        "hold": ["NVDA"],
-        "buy": ["MRVL", "NEM"],
-        "rationale": "Close AMAT (stop-loss -2.81% triggered Oct 21; AMAT earnings Nov 12 creates fresh binary risk). Close DD (not in universe, 7+ weeks overdue). Close LLY (Q3 Oct 29 earnings beat +6.6% to $1,373.70 52W high; post-earnings profit lock on +30.35% gain). Hold NVDA (Blackwell thesis intact, earnings ~Nov 17-25). Add MRVL (AI networking, RS60 +21%, RSI near oversold 25.9, Dec 2 earnings safe window). NEM held/bought (gold hedge, post-Oct 23 earnings, no near-term binary risk). AMD avoided: earnings TOMORROW Nov 3 ±10.7% binary.",
-        "execution_status": "UNVERIFIED — API blocked"
+        "close": [
+          "AMAT",
+          "DD",
+          "LLY"
+        ],
+        "hold": [
+          "NVDA"
+        ],
+        "buy": [
+          "MRVL",
+          "NEM"
+        ],
+        "rationale": "Close AMAT (stop-loss -2.81% triggered Oct 21; AMAT earnings Nov 12 creates fresh binary risk). Close DD (not in universe, 7+ weeks overdue). Close LLY (Q3 Oct 29 earnings beat +6.6% to $1,373.70 52W high; post-earnings profit lock on +30.35% gain). Hold NVDA (Blackwell thesis intact, earnings ~Nov 17-25). Add MRVL (AI networking, RS60 +21%, RSI near oversold 25.9, Dec 2 earnings safe window). NEM held/bought (gold hedge, post-Oct 23 earnings, no near-term binary risk). AMD avoided: earnings TOMORROW Nov 3 \u00b110.7% binary.",
+        "execution_status": "UNVERIFIED \u2014 API blocked"
       },
       "top_candidates_scores": {
         "MU": 0.2009,
@@ -26,14 +35,38 @@
         "AMZN": 0.0278,
         "META": 0.0245
       },
-      "market_context": "Week Nov 2-6. Portfolio recovered from $93,260 (Oct 23 low) to $98,664 (Oct 29) on LLY Q3 beat. AMD earnings Nov 3 (tomorrow, ±10.7%). AMAT earnings Nov 12. NVDA earnings ~Nov 17-25. Late Oct portfolio outperforming SPY (LLY +6.6% earnings day vs SPY -0.38%). Oct 30 pullback: portfolio -1.58% vs SPY -1.77%, outperforming on down day.",
-      "notable_events": "LLY Q3 earnings Oct 29 beat: +6.6% to $1,373.70 52-week high, raised 2026 guidance to $91-92B. AMD reports Q3 Nov 3 after close (±10.7% implied, AVOID). AMAT reports Nov 12. NVDA reports ~Nov 17-25. 11th consecutive week Alpaca API blocked. All prior plan trades (Oct 26: close AMAT/DD/LLY, buy NEM, hold NVDA) remain unverified. Oct 28 snapshot: AMAT -0.87%, DD +11.23%, LLY +30.35%, NVDA +4.43%.",
+      "market_context": "Week Nov 2-6. Portfolio recovered from $93,260 (Oct 23 low) to $98,664 (Oct 29) on LLY Q3 beat. AMD earnings Nov 3 (tomorrow, \u00b110.7%). AMAT earnings Nov 12. NVDA earnings ~Nov 17-25. Late Oct portfolio outperforming SPY (LLY +6.6% earnings day vs SPY -0.38%). Oct 30 pullback: portfolio -1.58% vs SPY -1.77%, outperforming on down day.",
+      "notable_events": "LLY Q3 earnings Oct 29 beat: +6.6% to $1,373.70 52-week high, raised 2026 guidance to $91-92B. AMD reports Q3 Nov 3 after close (\u00b110.7% implied, AVOID). AMAT reports Nov 12. NVDA reports ~Nov 17-25. 11th consecutive week Alpaca API blocked. All prior plan trades (Oct 26: close AMAT/DD/LLY, buy NEM, hold NVDA) remain unverified. Oct 28 snapshot: AMAT -0.87%, DD +11.23%, LLY +30.35%, NVDA +4.43%.",
       "positions_entering_week": {
-        "AMAT": {"pl_pct_from_entry": -0.0087, "pl_dollar_est": -264.43, "snapshot_date": "2026-10-28", "plan": "close"},
-        "DD": {"pl_pct_from_entry": 0.1123, "pl_dollar_est": 822.46, "snapshot_date": "2026-10-28", "plan": "close"},
-        "LLY": {"pl_pct_from_entry": 0.3035, "pl_dollar_est": 8731.63, "snapshot_date": "2026-10-28", "plan": "close", "note": "LLY up ~6.6% on Oct 29 earnings — actual P&L from entry likely ~+37%"},
-        "NVDA": {"pl_pct_from_entry": 0.0443, "pl_dollar_est": 706.08, "snapshot_date": "2026-10-28", "plan": "hold"},
-        "NEM": {"plan": "buy_if_not_held", "note": "Oct 26 plan unverified; re-recommend buy or hold confirmation"}
+        "AMAT": {
+          "pl_pct_from_entry": -0.0087,
+          "pl_dollar_est": -264.43,
+          "snapshot_date": "2026-10-28",
+          "plan": "close"
+        },
+        "DD": {
+          "pl_pct_from_entry": 0.1123,
+          "pl_dollar_est": 822.46,
+          "snapshot_date": "2026-10-28",
+          "plan": "close"
+        },
+        "LLY": {
+          "pl_pct_from_entry": 0.3035,
+          "pl_dollar_est": 8731.63,
+          "snapshot_date": "2026-10-28",
+          "plan": "close",
+          "note": "LLY up ~6.6% on Oct 29 earnings \u2014 actual P&L from entry likely ~+37%"
+        },
+        "NVDA": {
+          "pl_pct_from_entry": 0.0443,
+          "pl_dollar_est": 706.08,
+          "snapshot_date": "2026-10-28",
+          "plan": "hold"
+        },
+        "NEM": {
+          "plan": "buy_if_not_held",
+          "note": "Oct 26 plan unverified; re-recommend buy or hold confirmation"
+        }
       }
     },
     {
@@ -789,6 +822,11 @@
         "net_pl_pct": 0.058,
         "note": "Best week: +5.8% recovery. LLY earnings Oct 29 drove strong outperformance vs SPY."
       }
+    },
+    {
+      "time": "2026-11-02T17:26:44.888044-05:00",
+      "portfolio_value": 96841.34,
+      "buying_power": 276825.63
     }
   ],
   "daily_pnl": [
