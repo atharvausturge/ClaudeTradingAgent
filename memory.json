@@ -827,6 +827,68 @@
       "time": "2026-11-02T17:26:44.888044-05:00",
       "portfolio_value": 96841.34,
       "buying_power": 276825.63
+    },
+    {
+      "time": "2026-11-04T12:00:00Z",
+      "portfolio_value": 97497.26,
+      "buying_power": 277500.0,
+      "is_midweek": true,
+      "api_available": false,
+      "api_note": "Alpaca API blocked (ENOTFOUND — 12th consecutive week). Portfolio estimate from daily_pnl Nov 3: equity $97,497.26 (+1.03% day, outperformed SPY +0.30%). open_positions=4 on Nov 2 and Nov 3 suggests no trades executed since Oct 28.",
+      "last_confirmed_equity": 97497.26,
+      "last_confirmed_date": "2026-11-03",
+      "positions_summary": {
+        "execution_status": "UNVERIFIED — all Oct 26 plan trades (close AMAT/DD/LLY, buy NEM/MRVL, hold NVDA) still unconfirmed; open_positions=4 on Nov 2 and Nov 3 suggests no trades executed",
+        "NVDA": {
+          "pl_pct_from_entry_est": 0.0443,
+          "snapshot_date": "2026-10-28",
+          "flag": "hold",
+          "thesis_intact": true,
+          "note": "Blackwell AI thesis intact. Earnings ~Nov 17-25. Core hold."
+        },
+        "AMAT": {
+          "pl_pct_from_entry_est": -0.0087,
+          "snapshot_date": "2026-10-28",
+          "flag": "URGENT_CLOSE",
+          "thesis_intact": false,
+          "note": "AMAT earnings Thu Nov 12 in 8 days — binary risk. Stop-loss triggered Oct 21 at -2.81%. Close IMMEDIATELY."
+        },
+        "DD": {
+          "pl_pct_from_entry_est": 0.1123,
+          "snapshot_date": "2026-10-28",
+          "flag": "close_overdue_7_weeks",
+          "thesis_intact": false,
+          "note": "7+ week pending close, unverified. +11.23% from entry — exit while in profit."
+        },
+        "LLY": {
+          "pl_pct_from_entry_est": 0.37,
+          "snapshot_date": "2026-10-29 estimate",
+          "flag": "close_overdue_profit_lock",
+          "thesis_intact": false,
+          "note": "Post-earnings profit lock est ~+37% from entry. Close planned Oct 26, unverified. Q3 beat +6.6% to $1,373.70 on Oct 29."
+        }
+      },
+      "stop_loss_check": {
+        "api_blocked": true,
+        "positions_above_minus_8pct": true,
+        "positions_above_plus_10pct": "DD +11.23%, LLY ~+37% (profit lock / strong hold)"
+      },
+      "midweek_notes": "12th consecutive week of Alpaca API blockage. Portfolio $97,497 (Nov 3 daily_pnl close). Down -$1,167 (-1.18%) from Oct 29 peak of $98,664. Week-to-date vs Oct 30 close ($98,097): -$599 (-0.61%). AMD Q3 earnings Nov 3 after close — no direct portfolio impact (AMD avoided per plan). AMAT earnings Nov 12 in 8 days — URGENT close needed. NVDA earnings ~Nov 17-25 — hold into catalyst. No position estimated below -8% from entry. LLY and DD both flagged above +10%.",
+      "concern_flags": [
+        "api_blocked_12th_consecutive",
+        "amat_earnings_nov12_urgent_8_days",
+        "all_oct26_trades_unverified",
+        "stop_loss_unverifiable",
+        "nvda_earnings_approaching_nov17_25"
+      ],
+      "wtd_context": {
+        "equity_mon_nov02": 97180.03,
+        "equity_tue_nov03": 97497.26,
+        "wtd_vs_oct30_close": -599.38,
+        "wtd_pct_vs_oct30": -0.61,
+        "spy_wtd_estimate": null,
+        "note": "Nov 2 SPY -0.48%, Nov 3 SPY +0.30%. Portfolio WTD -0.61%; SPY WTD approx -0.18%."
+      }
     }
   ],
   "daily_pnl": [
