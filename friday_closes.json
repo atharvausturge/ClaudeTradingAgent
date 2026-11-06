@@ -1,43 +1,44 @@
 {
-  "week_of": "2026-10-30",
-  "generated_at": "2026-10-30T00:00:00Z",
-  "api_status": "BLOCKED_10TH_CONSECUTIVE_WEEK",
-  "api_note": "Alpaca API unreachable (ENOTFOUND — 10th consecutive week). All decisions based on Oct 28 14:59 snapshot (most recent confirmed position data). unrealized_plpc as of Oct 28: AMAT -0.87%, DD +11.23%, LLY +30.35%, NVDA +4.43%.",
+  "week_of": "2026-11-06",
+  "generated_at": "2026-11-06T00:00:00Z",
+  "api_status": "BLOCKED_13TH_CONSECUTIVE_WEEK",
+  "api_note": "Alpaca API blocked (ENOTFOUND — 13th consecutive week). Last confirmed position snapshot: Nov 4 15:29 EST. Last confirmed equity: $90,697.54 on 2026-11-05 (daily_pnl, -6.25% day vs SPY -4.41%). Friday Nov 6 live data unavailable.",
   "close_rule": "unrealized_plpc < -0.02",
-  "closes": [],
-  "holds": [
+  "closes": [
     {
       "symbol": "AMAT",
-      "last_known_plpc": -0.0087,
-      "last_known_pl_dollar": -264.43,
-      "snapshot_date": "2026-10-28",
-      "reason": "Recovered to -0.87% by Oct 28 snapshot — above the -2% close threshold. Trade plan called for strategic close (stop-loss triggered at -2.81% on Oct 21) but that execution remains unverified; by Oct 28 position had recovered above stop threshold.",
-      "action_note": "If trade plan close from week of Oct 26 was NOT yet executed by GitHub Actions, AMAT should still be closed per strategic plan (not in scoring universe, weak position). However, by pure Friday rule it does not trigger today."
-    },
-    {
-      "symbol": "DD",
-      "last_known_plpc": 0.1123,
-      "last_known_pl_dollar": 822.46,
-      "snapshot_date": "2026-10-28",
-      "reason": "Up +11.23% from entry — well above -2% threshold. Hold into next week. Strategic close from Oct 26 plan unverified.",
-      "action_note": "5+ consecutive weeks planned for close (not in scoring universe). GitHub Actions should verify and execute the strategic close from last week's trade plan if not yet done."
-    },
-    {
-      "symbol": "LLY",
-      "last_known_plpc": 0.3035,
-      "last_known_pl_dollar": 8731.63,
-      "snapshot_date": "2026-10-28",
-      "reason": "Up +30.35% from entry. LLY Q3 earnings were Oct 29 before open. Portfolio +1.92% on Oct 29 (vs SPY -0.38%) suggests LLY earnings reaction was positive. Position is a strong winner — hold into next week.",
-      "action_note": "Pre-earnings close from Oct 26 plan may not have executed (execution unverified). Post-earnings position likely still strong (+30%+). Hold and reassess next week."
+      "last_known_plpc": -0.1342,
+      "last_known_pl_dollar": -4069.27,
+      "snapshot_date": "2026-11-04",
+      "reason": "down 13.42% — far below Friday -2% threshold. AMAT earnings Nov 12 (6 days) creates urgent binary risk; cut losses before catalyst.",
+      "strategic_note": "Stop-loss rule originally triggered Oct 21 at -2.81%. Oct 26 close plan unverified for 2 weeks. Position deteriorated sharply to -13.42% by Nov 4. With Q3 earnings on Nov 12 and ongoing API blockage preventing live order verification, closing this week is mandatory."
     },
     {
       "symbol": "NVDA",
-      "last_known_plpc": 0.0443,
-      "last_known_pl_dollar": 706.08,
-      "snapshot_date": "2026-10-28",
-      "reason": "Up +4.43% from entry — above -2% threshold. Hold into next week. NVDA earnings Nov 18. Blackwell AI thesis intact.",
-      "action_note": "Core hold. Monitor into earnings Nov 18."
+      "last_known_plpc": -0.0236,
+      "last_known_pl_dollar": -376.53,
+      "snapshot_date": "2026-11-04",
+      "reason": "down 2.36% — breaches Friday -2% close threshold. Nov 5 market drop (-4.41% SPY, portfolio -6.25%) likely worsened position further.",
+      "strategic_note": "Previously held as core AI position with earnings ~Nov 17-25. Friday rule now triggered at -2.36%. Portfolio already under severe stress (Nov 5: -6.25% worst day). Close per rule to protect remaining capital."
     }
   ],
-  "summary": "No positions triggered the -2% Friday close rule based on Oct 28 snapshot data (last available before API blockage). All 4 positions (AMAT -0.87%, DD +11.23%, LLY +30.35%, NVDA +4.43%) are above stop threshold. Strategic closes from prior week plan (AMAT/DD/LLY) remain unverified — GitHub Actions must check live unrealized_plpc before executing any orders. Portfolio recovered strongly this week: +$5,404 (+5.8%) WTD from $93,260 to $98,664."
+  "holds": [
+    {
+      "symbol": "DD",
+      "last_known_plpc": 0.2352,
+      "last_known_pl_dollar": 1722.51,
+      "snapshot_date": "2026-11-04",
+      "reason": "up 23.52% — above -2% threshold. Hold into next week.",
+      "action_note": "Strategic close remains overdue (8+ consecutive weeks, not in scoring universe). Above stop threshold, rule-based hold. GitHub Actions may execute strategic close per trade_plan.json."
+    },
+    {
+      "symbol": "LLY",
+      "last_known_plpc": 0.4315,
+      "last_known_pl_dollar": 12416.51,
+      "snapshot_date": "2026-11-04",
+      "reason": "up 43.15% — strong winner. Hold into next week.",
+      "action_note": "Post-earnings profit lock (+43.15% from entry after Oct 29 Q3 beat). Strategic close planned Oct 26 (unverified). Largest gain in portfolio — holding preserves unrealized P&L through any further position adjustments."
+    }
+  ],
+  "summary": "Closing AMAT (-13.42%) and NVDA (-2.36%) per Friday -2% stop rule. AMAT also faces AMAT earnings binary risk Nov 12. Holding DD (+23.52%) and LLY (+43.15%) as winners. Catastrophic week: portfolio -6.25% on Nov 5 vs SPY -4.41%. Estimated WTD loss ~-$6,144 (-6.35%) from $96,841 to $90,698."
 }

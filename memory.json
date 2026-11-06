@@ -3,6 +3,81 @@
   "weekly_summaries": [
     {
       "week_of": "2026-11-02",
+      "generated_at": "2026-11-06T00:00:00Z",
+      "equity_start_approx": 96841.34,
+      "equity_end_approx": 90697.54,
+      "net_pl_dollar_approx": -6143.80,
+      "net_pl_pct_approx": -0.0635,
+      "api_available": false,
+      "api_note": "Alpaca API blocked (ENOTFOUND — 13th consecutive week). Last confirmed equity $90,697.54 on 2026-11-05 (daily_pnl). Last confirmed positions: Nov 4 15:29 snapshot. Friday Nov 6 live data unavailable.",
+      "plan_summary": {
+        "close": ["AMAT", "NVDA"],
+        "hold": ["DD", "LLY"],
+        "buy": [],
+        "rationale": "Friday -2% close rule triggered for AMAT (-13.42%) and NVDA (-2.36%). AMAT also has URGENT binary risk — earnings Nov 12. NVDA breached stop after Nov 5 market selloff (-6.25% portfolio, -4.41% SPY). DD (+23.52%) and LLY (+43.15%) above threshold — hold. No new buys (portfolio under stress, API blocked).",
+        "execution_status": "PENDING — awaiting GitHub Actions friday-execute-on-push.yml on friday_closes.json push"
+      },
+      "positions_final": [
+        {
+          "symbol": "AMAT",
+          "pl_pct_from_entry": -0.1342,
+          "pl_dollar": -4069.27,
+          "snapshot_date": "2026-11-04",
+          "decision": "close",
+          "note": "Friday rule triggered: -13.42% from entry, far below -2% threshold. AMAT earnings Nov 12 binary risk. Close immediately."
+        },
+        {
+          "symbol": "DD",
+          "pl_pct_from_entry": 0.2352,
+          "pl_dollar": 1722.51,
+          "snapshot_date": "2026-11-04",
+          "decision": "hold",
+          "note": "Up +23.52% — above threshold. Strategic close overdue 8+ weeks but rule-based hold."
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct_from_entry": 0.4315,
+          "pl_dollar": 12416.51,
+          "snapshot_date": "2026-11-04",
+          "decision": "hold",
+          "note": "Up +43.15% — largest winner. Post-Oct 29 earnings run. Hold into next week."
+        },
+        {
+          "symbol": "NVDA",
+          "pl_pct_from_entry": -0.0236,
+          "pl_dollar": -376.53,
+          "snapshot_date": "2026-11-04",
+          "decision": "close",
+          "note": "Friday rule triggered: -2.36% from entry, below -2% threshold. Nov 5 market stress (-6.25% portfolio day) likely worsened position."
+        }
+      ],
+      "top_candidates_scores": {
+        "MU": 0.2009,
+        "NVDA": 0.1101,
+        "MRVL": 0.0504,
+        "CRWD": 0.0496,
+        "AMAT": 0.0341,
+        "NEM": 0.0324,
+        "AMZN": 0.0278,
+        "META": 0.0245
+      },
+      "market_context": "Week Nov 2-6. Catastrophic week: Nov 5 portfolio -6.25% vs SPY -4.41% (-1.84% underperformance). AMAT deteriorated from -0.87% (Oct 28) to -13.42% (Nov 4), a -12.55% swing in one week. NVDA turned negative at -2.36%. LLY and DD remain strong winners. Portfolio from $96,841 (Nov 2) to $90,698 (Nov 5 close), -$6,144 WTD (-6.35%). AMAT earnings Nov 12 urgent close trigger.",
+      "weekly_performance": {
+        "equity_mon_nov02": 97180.03,
+        "equity_tue_nov03": 97497.26,
+        "equity_wed_nov04": 96053.09,
+        "equity_thu_nov05": 90697.54,
+        "equity_fri_nov06": null,
+        "wtd_gain_dollar": -6143.80,
+        "wtd_gain_pct": -6.35,
+        "note": "Worst week in portfolio history. AMAT collapse and market selloff Nov 5 drove losses."
+      },
+      "closes_triggered": 2,
+      "close_rule": "unrealized_plpc < -0.02",
+      "notable_events": "AMAT -13.42% from entry (Nov 4 snapshot) — worst position in portfolio history. NVDA -2.36% from entry — stop rule triggered. Nov 5: portfolio -6.25% (worst single day, -1.84% vs SPY). 13th consecutive week of Alpaca API blockage. AMAT earnings Nov 12 (next week) — binary risk justifies urgent close. DD and LLY remain strong: +23.52% and +43.15% respectively. Prior Oct 26 trade plan closes (AMAT/DD/LLY) remain UNVERIFIED after 2+ weeks."
+    },
+    {
+      "week_of": "2026-11-02_original",
       "generated_at": "2026-11-02T13:58:00Z",
       "equity_start_approx": 98664.11,
       "equity_end_approx": null,
@@ -917,6 +992,56 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-11-06T00:00:00Z",
+      "portfolio_value": null,
+      "buying_power": null,
+      "is_friday_close": true,
+      "api_available": false,
+      "api_note": "Alpaca API blocked (ENOTFOUND — 13th consecutive week). Last confirmed equity $90,697.54 on 2026-11-05 (daily_pnl). Last confirmed positions: Nov 4 15:29 snapshot.",
+      "last_confirmed_equity": 90697.54,
+      "last_confirmed_date": "2026-11-05",
+      "positions_summary": {
+        "AMAT": {
+          "pl_pct_from_entry": -0.1342,
+          "pl_dollar": -4069.27,
+          "snapshot_date": "2026-11-04",
+          "decision": "close",
+          "note": "Friday rule triggered: -13.42%. AMAT earnings Nov 12 binary risk. Close immediately."
+        },
+        "DD": {
+          "pl_pct_from_entry": 0.2352,
+          "pl_dollar": 1722.51,
+          "snapshot_date": "2026-11-04",
+          "decision": "hold",
+          "note": "Up +23.52%. Above threshold. Strategic close still overdue."
+        },
+        "LLY": {
+          "pl_pct_from_entry": 0.4315,
+          "pl_dollar": 12416.51,
+          "snapshot_date": "2026-11-04",
+          "decision": "hold",
+          "note": "Up +43.15%. Largest portfolio winner. Hold."
+        },
+        "NVDA": {
+          "pl_pct_from_entry": -0.0236,
+          "pl_dollar": -376.53,
+          "snapshot_date": "2026-11-04",
+          "decision": "close",
+          "note": "Friday rule triggered: -2.36%. Close per stop rule."
+        }
+      },
+      "closes_triggered": 2,
+      "close_rule": "unrealized_plpc < -0.02",
+      "weekly_pl": {
+        "equity_start": 96841.34,
+        "equity_end_approx": 90697.54,
+        "net_pl_dollar": -6143.80,
+        "net_pl_pct": -0.0635,
+        "note": "Worst week: -6.35% WTD. AMAT collapse -13.42% and Nov 5 market selloff (-6.25% portfolio day)."
+      },
+      "notable_events": "AMAT -13.42% from entry triggers Friday close rule. NVDA -2.36% also triggers. AMAT earnings Nov 12 (6 days). Nov 5 portfolio -6.25% worst single day vs SPY -4.41%. 13th consecutive API blockage week."
     }
   ],
   "daily_pnl": [
@@ -1200,5 +1325,5 @@
     }
   ],
   "last_monitor_run": "2026-11-04T15:29:42.546749-05:00",
-  "last_friday_cleanup": "2026-10-30T00:00:00Z"
+  "last_friday_cleanup": "2026-11-06T00:00:00Z"
 }
