@@ -1114,6 +1114,11 @@
         "note": "Worst week: -6.35% WTD. AMAT collapse -13.42% and Nov 5 market selloff (-6.25% portfolio day)."
       },
       "notable_events": "AMAT -13.42% from entry triggers Friday close rule. NVDA -2.36% also triggers. AMAT earnings Nov 12 (6 days). Nov 5 portfolio -6.25% worst single day vs SPY -4.41%. 13th consecutive API blockage week."
+    },
+    {
+      "time": "2026-11-09T18:06:45.591455-05:00",
+      "portfolio_value": 95441.64,
+      "buying_power": 272906.47
     }
   ],
   "daily_pnl": [
