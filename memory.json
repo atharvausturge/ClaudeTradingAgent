@@ -393,6 +393,72 @@
         "wtd_gain_pct": 5.8,
         "note": "Strong recovery week. LLY earnings catalyst on Oct 29 drove outperformance."
       }
+    },
+    {
+      "week_of": "2026-11-09",
+      "generated_at": "2026-11-09T00:00:00Z",
+      "equity_start_approx": 91284.98,
+      "equity_end_approx": null,
+      "net_pl_dollar_approx": null,
+      "api_available": false,
+      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 14th consecutive week). Last confirmed equity $91,284.98 on 2026-11-06. NVDA down ~5%% premarket Nov 9 on CEO spy probe.",
+      "plan_summary": {
+        "close": [
+          "AMAT",
+          "NVDA",
+          "DD"
+        ],
+        "hold": [
+          "LLY"
+        ],
+        "buy": [
+          "MRVL"
+        ],
+        "rationale": "URGENT: AMAT earnings Nov 12 (3 days) + already -13.42% from entry. NVDA CEO Jensen Huang under board investigation for affair with alleged Chinese spy \u2014 Congressional testimony Nov 18, earnings Nov 17. Triple risk on NVDA; close immediately. DD overdue close (8+ weeks), lock +23.52% gain. LLY +43.15% \u2014 hold into Dec 7 Innovation Day. MRVL dip-buy: AI networking, RSI near oversold, Dec 2 earnings safe runway. AMAT closed at $319.25 (Nov 5) vs 52-week high $723.00. 14th consecutive week of API blockage.",
+        "execution_status": "PENDING \u2014 awaiting GitHub Actions on trade_plan.json push"
+      },
+      "top_candidates_scores": {
+        "AMD": 0.2338,
+        "MU": 0.2009,
+        "NVDA": 0.1101,
+        "MRVL": 0.0504,
+        "CRWD": 0.0496,
+        "AMAT": 0.0341,
+        "NEM": 0.0324,
+        "AMZN": 0.0278
+      },
+      "market_context": "Week Nov 9-13. NVDA governance crisis: CEO Huang admits affair with alleged Chinese spy (Alice Huang). Board investigation launched Nov 8. NVDA -5%% premarket. AMAT earnings Thu Nov 12 \u2014 close before open. S&P 500 ~7,542-7,744 (GS target 8,000). Election rally Nov 4 (+1.72%). CPI/PPI data this week. AI sector choppy.",
+      "positions_entering_week": {
+        "AMAT": {
+          "pl_pct_from_entry": -0.1342,
+          "pl_dollar": -4069.27,
+          "snapshot_date": "2026-11-04",
+          "decision": "close",
+          "note": "URGENT: earnings Nov 12. Closed at $319.25 Nov 5 (52-week high $723). Close immediately."
+        },
+        "DD": {
+          "pl_pct_from_entry": 0.2352,
+          "pl_dollar": 1722.51,
+          "snapshot_date": "2026-11-04",
+          "decision": "close",
+          "note": "8+ weeks overdue, +23.52% gain. Lock in profit."
+        },
+        "LLY": {
+          "pl_pct_from_entry": 0.4315,
+          "pl_dollar": 12416.51,
+          "snapshot_date": "2026-11-04",
+          "decision": "hold",
+          "note": "Up +43.15%. Hold into Dec 7 Innovation Day."
+        },
+        "NVDA": {
+          "pl_pct_from_entry": -0.0236,
+          "pl_dollar": -376.53,
+          "snapshot_date": "2026-11-04",
+          "decision": "close",
+          "note": "CEO spy investigation, earnings Nov 17, Congress Nov 18. Close immediately. Down ~5%% more premarket Nov 9."
+        }
+      },
+      "notable_events": "NVDA CEO Jensen Huang admits affair with Alice Huang (alleged Chinese spy per U.S. officials). Board investigation Nov 8. Congress testimony demand Nov 18. NVDA -5%% premarket Nov 9, -27%% from 52-week high. AMAT earnings Nov 12 \u2014 15th consecutive week past close recommendation (triggered stop Oct 21). Portfolio down from $103,182 (Oct 5) to $91,285 (Nov 6) = -11.5%% cumulative drawdown. Election rally Nov 4 chip recovery: MRVL +4%%, AMD +10%%. 14th consecutive week API blockage."
     }
   ],
   "portfolio_snapshots": [
@@ -1341,6 +1407,6 @@
       "vs_spy_pct": 1.32
     }
   ],
-  "last_monitor_run": "2026-11-04T15:29:42.546749-05:00",
+  "last_monitor_run": "2026-11-09T00:00:00Z",
   "last_friday_cleanup": "2026-11-06T00:00:00Z"
 }
