@@ -1119,6 +1119,82 @@
       "time": "2026-11-09T18:06:45.591455-05:00",
       "portfolio_value": 95441.64,
       "buying_power": 272906.47
+    },
+    {
+      "time": "2026-11-11T00:00:00Z",
+      "portfolio_value": null,
+      "buying_power": null,
+      "is_midweek": true,
+      "api_available": false,
+      "api_note": "Alpaca API blocked (ENOTFOUND — 15th consecutive week). Last confirmed equity $95,966.49 on 2026-11-10 (daily_pnl). open_positions=4 on Nov 9-10 — no trade plan execution confirmed since Oct 28.",
+      "last_confirmed_equity": 95966.49,
+      "last_confirmed_date": "2026-11-10",
+      "positions_summary": {
+        "execution_status": "UNVERIFIED — Nov 9 plan (close AMAT/NVDA/DD, buy MRVL) pending. open_positions=4 through Nov 10 suggests no trades executed.",
+        "AMAT": {
+          "pl_pct_from_entry_est": -0.1342,
+          "pl_dollar_est": -4069.27,
+          "snapshot_date": "2026-11-04",
+          "flag": "CRITICAL_EARNINGS_TOMORROW",
+          "thesis_intact": false,
+          "note": "AMAT earnings Thu Nov 12 TOMORROW after close. Already -13.42% from entry — breaches >8% concern threshold. Close IMMEDIATELY before binary earnings event."
+        },
+        "DD": {
+          "pl_pct_from_entry_est": 0.2352,
+          "pl_dollar_est": 1722.51,
+          "snapshot_date": "2026-11-04",
+          "flag": "close_overdue_profit_lock",
+          "thesis_intact": false,
+          "note": "Up +23.52% — strong hold flag (>10%). Close pending 9+ weeks unverified. Lock profit before thesis reverses."
+        },
+        "LLY": {
+          "pl_pct_from_entry_est": 0.4315,
+          "pl_dollar_est": 12416.51,
+          "snapshot_date": "2026-11-04",
+          "flag": "strong_hold",
+          "thesis_intact": true,
+          "note": "Up +43.15% — largest winner. No near-term binary event. Hold into Dec 7 Innovation Day."
+        },
+        "NVDA": {
+          "pl_pct_from_entry_est": -0.0236,
+          "pl_dollar_est": -376.53,
+          "snapshot_date": "2026-11-04",
+          "flag": "close_governance_crisis",
+          "thesis_intact": false,
+          "note": "CEO spy investigation ongoing. Earnings Nov 17 (6 days). -2.36% from entry. Close before earnings binary."
+        }
+      },
+      "stop_loss_check": {
+        "api_blocked": true,
+        "positions_below_minus_8pct": "AMAT -13.42% from entry — CONCERN FLAG (>8% down)",
+        "positions_above_plus_10pct": "DD +23.52%, LLY +43.15% (strong hold flags)"
+      },
+      "thesis_check": {
+        "AMAT": "BREACHED — earnings tomorrow Nov 12, -13.42% from entry",
+        "DD": "BREACHED — not in universe, overdue close 9+ weeks",
+        "LLY": "INTACT — strong winner, Dec 7 Innovation Day catalyst ahead",
+        "NVDA": "BREACHED — CEO governance crisis, earnings Nov 17"
+      },
+      "concern_flags": [
+        "CRITICAL_amat_earnings_TOMORROW_nov12",
+        "api_blocked_15th_consecutive",
+        "nvda_governance_crisis_earnings_nov17",
+        "stop_loss_unverifiable",
+        "nov09_trade_plan_unverified"
+      ],
+      "midweek_notes": "CRITICAL: AMAT earnings TOMORROW Nov 12 after close. Position -13.42% from entry already breaches 8%+ concern threshold. Portfolio recovered strongly WTD: +$4,681 (+5.1%) from Nov 6 close ($91,285) to Nov 10 ($95,966). Outperforming SPY by est. +3.1% WTD. open_positions=4 through Nov 10 — Nov 9 plan (close AMAT/DD/NVDA, buy MRVL) remains unverified/unexecuted. 15th consecutive week of Alpaca API blockage.",
+      "wtd_context": {
+        "equity_fri_nov06": 91284.98,
+        "equity_mon_nov09": 95076.23,
+        "equity_tue_nov10": 95966.49,
+        "wtd_change_dollar": 4681.51,
+        "wtd_change_pct": 5.13,
+        "spy_mon_nov09_pct": 2.37,
+        "spy_tue_nov10_pct": -0.37,
+        "spy_wtd_approx": 2.0,
+        "vs_spy_wtd_est": 3.13,
+        "note": "Portfolio strongly outperforming SPY WTD. Recovery likely driven by LLY and market rebound."
+      }
     }
   ],
   "daily_pnl": [
@@ -1434,6 +1510,6 @@
       "vs_spy_pct": 1.11
     }
   ],
-  "last_monitor_run": "2026-11-09T00:00:00Z",
+  "last_monitor_run": "2026-11-11T00:00:00Z",
   "last_friday_cleanup": "2026-11-06T00:00:00Z"
 }
