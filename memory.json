@@ -1547,6 +1547,17 @@
       "invested_pct": 95.1,
       "spy_daily_pct": 1.32,
       "vs_spy_pct": -0.17
+    },
+    {
+      "date": "2026-11-12",
+      "equity": 96026.28,
+      "daily_pl_dollar": -1383.99,
+      "daily_pl_pct": -1.42,
+      "open_positions": 4,
+      "realized_today_dollar": 0,
+      "invested_pct": 95.1,
+      "spy_daily_pct": -0.35,
+      "vs_spy_pct": -1.07
     }
   ],
   "last_monitor_run": "2026-11-11T15:17:20.284183-05:00",
