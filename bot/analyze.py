@@ -95,7 +95,7 @@ def plan_exits(positions, buy_dates, config, now):
     """Deterministic exit rules so the portfolio can't freeze at full exposure.
 
     - below the stop level (-stop_loss_pct) → close (the GTC stop is missing or gapped through)
-    - held longer than max_hold_weeks → close (time stop for a 1-2 week swing strategy)
+    - held longer than max_hold_weeks AND not in profit → close (time stop; winners keep running)
     """
     stop_loss_pct = config.get("stop_loss_pct", 0.05)
     max_hold_days = int(config.get("max_hold_weeks", 4) * 7)
@@ -107,8 +107,9 @@ def plan_exits(positions, buy_dates, config, now):
         days = (now - bought).days if bought else None
         if pl <= -stop_loss_pct:
             closes[sym] = f"{pl*100:+.1f}% — below the -{stop_loss_pct:.0%} stop level"
-        elif days is not None and days > max_hold_days:
-            closes[sym] = f"held {days} days ({pl*100:+.1f}%) — past the {max_hold_days}-day time stop"
+        elif days is not None and days > max_hold_days and pl <= 0:
+            # Time stop applies only to positions that aren't in profit; winners ride.
+            closes[sym] = f"held {days} days ({pl*100:+.1f}%) — not in profit after the {max_hold_days}-day time stop"
         else:
             holds[sym] = f"{pl*100:+.1f}%" + (f", held {days} days" if days is not None else "")
     return closes, holds

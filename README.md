@@ -40,7 +40,7 @@ Friday at 3pm: closes any position down more than 2%, holds winners into next we
 
 **Portfolio rules:**
 - Max 5 positions, 18% of portfolio each, ≤95% gross exposure (see `config.json`)
-- Sunday plan closes any position below the stop level or held longer than `max_hold_weeks` (4)
+- Sunday plan closes any position below the stop level, or held longer than `max_hold_weeks` (4) while not in profit — winners keep running
 - 5% stop loss attached as GTC order (auto-triggers even when bot isn't running)
 - Max 2 entries per symbol per month
 - Friday: close losers (down >2%), hold winners into next week
