@@ -1,4 +1,5 @@
 import os
+import sys
 import requests
 
 WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL", "")
@@ -11,9 +12,11 @@ def _send(title, description, color, fields=None):
     if fields:
         embed["fields"] = fields
     try:
-        requests.post(WEBHOOK_URL, json={"embeds": [embed]}, timeout=5)
-    except Exception:
-        pass
+        r = requests.post(WEBHOOK_URL, json={"embeds": [embed]}, timeout=10)
+        if r.status_code >= 300:
+            print(f"Discord webhook returned {r.status_code}: {r.text[:200]}", file=sys.stderr)
+    except Exception as e:
+        print(f"Discord webhook failed: {e}", file=sys.stderr)
 
 
 def trade_buy(symbol, qty, price, stop_price, reasoning, confidence, portfolio_value, buying_power):
@@ -131,3 +134,21 @@ def midweek_ok(portfolio_value, positions):
         description=f"Portfolio: **${portfolio_value:,.2f}**\n\n{lines}",
         color=3447003,
     )
+
+
+def job_failed(job_name, details):
+    _send(title=f"🚨 {job_name} — needs attention", description=details[:4000], color=15158332)
+
+
+def bot_warning(title, details):
+    _send(title=f"⚠️ {title}", description=details[:4000], color=15105570)
+
+
+if __name__ == "__main__":
+    # Used by workflows: python -m bot.notify failure "<workflow name>" "<run url>"
+    if len(sys.argv) >= 3 and sys.argv[1] == "failure":
+        url = sys.argv[3] if len(sys.argv) > 3 else ""
+        job_failed(sys.argv[2], f"The workflow failed. Logs: {url}" if url else "The workflow failed.")
+    else:
+        print("usage: python -m bot.notify failure <workflow> [run_url]", file=sys.stderr)
+        sys.exit(2)

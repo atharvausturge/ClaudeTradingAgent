@@ -12,5 +12,9 @@
   "max_entries_per_symbol_per_month": 2,
   "tech_weight": 0.5,
   "sentiment_weight": 0.5,
-  "paper": true
+  "paper": true,
+  "max_hold_weeks": 4,
+  "groq_models": [
+    "llama-3.3-70b-versatile"
+  ]
 }

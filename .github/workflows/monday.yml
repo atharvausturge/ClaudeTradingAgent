@@ -2,12 +2,17 @@ name: Monday — Execute Trades
 
 on:
   schedule:
-    - cron: "30 13 * * 1"   # Monday 1:30pm UTC = 9:30am ET (summer) / 8:30am ET (winter)
-  workflow_dispatch:         # allows manual trigger from GitHub UI
+    - cron: "7,37 13-19 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: trading-bot-${{ github.workflow }}
+  cancel-in-progress: false
 
 jobs:
   execute:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: write
 
@@ -22,17 +27,29 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # GitHub cron runs late, so there are many attempts; bot.schedule_guard
+      # makes only the first one during market hours do anything.
       - name: Execute trades
         env:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
         run: python -m bot.execute
 
-      - name: Commit memory
+      - name: Commit results
+        if: always()
         run: |
           git config user.name "Trading Agent"
           git config user.email "trading-agent@github-actions"
           git add memory.json
-          git diff --staged --quiet || git commit -m "Monday $(date +%Y-%m-%d): trades executed"
-          git push
+          if git diff --staged --quiet; then echo "Nothing to commit"; exit 0; fi
+          git commit -m "Monday: trades executed $(date +%Y-%m-%d)"
+          for i in 1 2 3; do git pull --rebase --autostash origin main && git push && exit 0; sleep 5; done
+          exit 1
+
+      - name: Alert Discord on failure
+        if: failure()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python -m bot.notify failure "${{ github.workflow }}" "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

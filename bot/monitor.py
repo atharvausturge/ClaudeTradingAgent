@@ -4,9 +4,10 @@ Wednesday: moves stop losses to breakeven for positions up >3%.
 Friday: closes positions down more than the config threshold, holds winners.
 """
 import os
+import sys
 import json
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, time as dtime
 from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
@@ -19,6 +20,8 @@ from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
 from . import notify
+from .orders import close_symbol, open_orders, is_stop_sell, enum_val, cancel_open_orders, has_live_stop
+from .schedule_guard import should_run, mark_ran
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
@@ -27,6 +30,7 @@ ET = ZoneInfo("America/New_York")
 MEMORY_FILE = "memory.json"
 CONFIG_FILE = "config.json"
 BREAKEVEN_THRESHOLD_PCT = 3.0  # move stop to breakeven when position is up this %
+FRIDAY_EARLIEST_ET = dtime(13, 0)  # Friday cleanup only in the afternoon session
 
 
 def load_json(path, default=None):
@@ -80,39 +84,29 @@ def get_entry_price(memory, symbol):
     return None
 
 
+def replace_stop(trading, symbol, qty, stop_price):
+    """Cancel the symbol's open orders (shares are held by them) and place a fresh GTC stop."""
+    cancel_open_orders(trading, symbol)
+    trading.submit_order(StopOrderRequest(
+        symbol=symbol, qty=int(float(qty)), side=OrderSide.SELL,
+        time_in_force=TimeInForce.GTC, stop_price=round(stop_price, 2),
+    ))
+
+
 def move_stop_to_breakeven(trading, symbol, entry_price, qty):
-    """Cancel the existing stop loss and replace it at entry price (risk-free)."""
+    """Raise the stop to entry price (risk-free). Places one if none exists."""
     try:
-        open_orders = trading.get_orders(filter=GetOrdersRequest(symbols=[symbol], status="open"))
-        stop_orders = [
-            o for o in open_orders
-            if str(o.order_type) in ("stop", "stop_limit") and str(o.side) == "sell"
-        ]
-
-        if not stop_orders:
-            log.warning(f"  {symbol}: no open stop order found")
+        stop_orders = [o for o in open_orders(trading, symbol) if is_stop_sell(o)]
+        current = max((float(o.stop_price or 0) for o in stop_orders), default=None)
+        if current is not None and current >= entry_price:
+            log.info(f"  {symbol}: stop already at ${current:.2f} (>= entry ${entry_price:.2f}), no change")
             return False
-
-        for stop_order in stop_orders:
-            current_stop = float(stop_order.stop_price or 0)
-            if current_stop >= entry_price:
-                log.info(f"  {symbol}: stop already at ${current_stop:.2f} (>= entry ${entry_price:.2f}), no change")
-                return False
-
-            trading.cancel_order_by_id(stop_order.id)
-            trading.submit_order(StopOrderRequest(
-                symbol=symbol,
-                qty=int(float(qty)),
-                side=OrderSide.SELL,
-                time_in_force=TimeInForce.GTC,
-                stop_price=round(entry_price, 2),
-            ))
-            log.info(f"  {symbol}: stop moved from ${current_stop:.2f} → breakeven ${entry_price:.2f}")
-            return True
-
+        replace_stop(trading, symbol, qty, entry_price)
+        log.info(f"  {symbol}: stop {'moved from $%.2f' % current if current else 'placed'} → breakeven ${entry_price:.2f}")
+        return True
     except Exception as e:
         log.error(f"  {symbol}: failed to move stop — {e}")
-    return False
+        raise
 
 
 def detect_auto_closed_positions(trading, memory, now):
@@ -142,9 +136,9 @@ def detect_auto_closed_positions(trading, memory, now):
 
     triggered = []
     for order in orders:
-        if str(order.side) != "OrderSide.SELL" and str(order.side) != "sell":
+        if enum_val(order.side) != "sell":
             continue
-        if str(order.status) not in ("filled", "OrderStatus.FILLED"):
+        if enum_val(order.status) != "filled":
             continue
         symbol = order.symbol
         if symbol in already_notified:
@@ -156,8 +150,8 @@ def detect_auto_closed_positions(trading, memory, now):
         pl_pct = round((fill_price - entry_price) / entry_price * 100, 2) if entry_price else None
         pl_dollar = round((fill_price - entry_price) * qty, 2) if entry_price else None
 
-        reason = "stop loss triggered" if str(order.order_type) in ("stop", "OrderType.STOP") else "auto-closed"
-        log.info(f"  {symbol}: {reason} @ ${fill_price:.2f} ({pl_pct:+.2f}% | ${pl_dollar:+.2f})")
+        reason = "stop loss triggered" if enum_val(order.order_type) in ("stop", "stop_limit", "trailing_stop") else "auto-closed"
+        log.info(f"  {symbol}: {reason} @ ${fill_price:.2f} (P&L {pl_pct}% | ${pl_dollar})")
         notify.trade_close(symbol, reason, pl_pct)
         memory["trade_history"].append({
             "time": now.isoformat(),
@@ -181,19 +175,23 @@ def main():
     config = load_json(CONFIG_FILE, {"friday_close_threshold": -0.02})
     memory = load_json(MEMORY_FILE, {"trade_history": [], "portfolio_snapshots": []})
 
-    clock = trading.get_clock()
-    if not clock.is_open:
-        log.info("Market is closed. Skipping monitor.")
-        return
-
     now = datetime.now(ET)
+    is_friday = now.weekday() == 4
+    job = "monitor_friday" if is_friday else "monitor_midweek"
+    if not should_run(job, memory, trading.get_clock(), now,
+                      earliest_et=FRIDAY_EARLIEST_ET if is_friday else None):
+        return 0
+    mark_ran(job, memory, now)
+    memory.setdefault("trade_history", [])
+    memory.setdefault("portfolio_snapshots", [])
+    errors = []
 
     # Notify on any stop-losses that triggered since the last run
     auto_closed = detect_auto_closed_positions(trading, memory, now)
     if auto_closed:
         log.info(f"Auto-closed positions detected: {', '.join(auto_closed)}")
-    is_friday = now.weekday() == 4
     close_threshold = config.get("friday_close_threshold", -0.02)
+    stop_loss_pct = config.get("stop_loss_pct", 0.05)
     account = trading.get_account()
     positions = trading.get_all_positions()
 
@@ -227,7 +225,7 @@ def main():
         if is_friday:
             if pl_pct < close_threshold * 100:
                 try:
-                    trading.close_position(symbol)
+                    close_symbol(trading, symbol)
                     log.info(f"  → CLOSED {symbol} (Friday loser: {pl_pct:+.2f}%)")
                     notify.trade_close(symbol, "end-of-week loser purge", pl_pct)
                     closed.append({"symbol": symbol, "pl_pct": pl_pct})
@@ -240,16 +238,21 @@ def main():
                     })
                 except Exception as e:
                     log.error(f"  Failed to close {symbol}: {e}")
+                    errors.append(f"close {symbol}: {e}")
             else:
                 log.info(f"  → HOLDING {symbol} into next week ({pl_pct:+.2f}%)")
                 held.append({"symbol": symbol, "pl_pct": pl_pct})
 
         else:
             # Wednesday: move stop to breakeven for positions up > threshold
+            entry_price = get_entry_price(memory, symbol) or float(pos.avg_entry_price)
             if pl_pct >= BREAKEVEN_THRESHOLD_PCT:
-                entry_price = get_entry_price(memory, symbol)
                 if entry_price:
-                    moved = move_stop_to_breakeven(trading, symbol, entry_price, pos.qty)
+                    try:
+                        moved = move_stop_to_breakeven(trading, symbol, entry_price, pos.qty)
+                    except Exception as e:
+                        moved = False
+                        errors.append(f"breakeven stop {symbol}: {e}")
                     if moved:
                         memory["trade_history"].append({
                             "time": now.isoformat(),
@@ -259,7 +262,22 @@ def main():
                             "new_stop": entry_price,
                         })
                 else:
-                    log.warning(f"  {symbol}: up {pl_pct:+.2f}% but no entry price in memory")
+                    log.warning(f"  {symbol}: up {pl_pct:+.2f}% but no entry price available")
+            elif not has_live_stop(trading, symbol):
+                # Every position should carry a stop. Add the standard one if price allows.
+                stop_price = round(entry_price * (1 - stop_loss_pct), 2)
+                current_price = float(pos.current_price)
+                if current_price > stop_price:
+                    try:
+                        replace_stop(trading, symbol, pos.qty, stop_price)
+                        log.info(f"  {symbol}: had NO stop — placed GTC stop @ ${stop_price:.2f}")
+                    except Exception as e:
+                        errors.append(f"add missing stop {symbol}: {e}")
+                else:
+                    msg = (f"{symbol} has no stop and is already below its stop level "
+                           f"(${current_price:.2f} < ${stop_price:.2f}) — Friday cleanup will close it")
+                    log.warning("  " + msg)
+                    errors.append(msg)
 
     if is_friday:
         portfolio_value = float(account.portfolio_value)
@@ -284,6 +302,12 @@ def main():
     save_json(MEMORY_FILE, memory)
     log.info("Monitor complete. Memory updated.")
 
+    if errors:
+        notify.job_failed("Friday — Close Losers" if is_friday else "Wednesday — Midweek Check",
+                          "\n".join(f"• {e}" for e in errors))
+        return 1
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -1,466 +1,592 @@
 {
-  "trade_history": [],
-  "weekly_summaries": [
+  "trade_history": [
     {
-      "week_of": "2026-11-02",
-      "generated_at": "2026-11-06T00:00:00Z",
-      "equity_start_approx": 96841.34,
-      "equity_end_approx": 90697.54,
-      "net_pl_dollar_approx": -6143.8,
-      "net_pl_pct_approx": -0.0635,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 13th consecutive week). Last confirmed equity $90,697.54 on 2026-11-05 (daily_pnl). Last confirmed positions: Nov 4 15:29 snapshot. Friday Nov 6 live data unavailable.",
-      "plan_summary": {
-        "close": [
-          "AMAT",
-          "NVDA"
-        ],
-        "hold": [
-          "DD",
-          "LLY"
-        ],
-        "buy": [],
-        "rationale": "Friday -2% close rule triggered for AMAT (-13.42%) and NVDA (-2.36%). AMAT also has URGENT binary risk \u2014 earnings Nov 12. NVDA breached stop after Nov 5 market selloff (-6.25% portfolio, -4.41% SPY). DD (+23.52%) and LLY (+43.15%) above threshold \u2014 hold. No new buys (portfolio under stress, API blocked).",
-        "execution_status": "PENDING \u2014 awaiting GitHub Actions friday-execute-on-push.yml on friday_closes.json push"
-      },
-      "positions_final": [
-        {
-          "symbol": "AMAT",
-          "pl_pct_from_entry": -0.1342,
-          "pl_dollar": -4069.27,
-          "snapshot_date": "2026-11-04",
-          "decision": "close",
-          "note": "Friday rule triggered: -13.42% from entry, far below -2% threshold. AMAT earnings Nov 12 binary risk. Close immediately."
-        },
-        {
-          "symbol": "DD",
-          "pl_pct_from_entry": 0.2352,
-          "pl_dollar": 1722.51,
-          "snapshot_date": "2026-11-04",
-          "decision": "hold",
-          "note": "Up +23.52% \u2014 above threshold. Strategic close overdue 8+ weeks but rule-based hold."
-        },
-        {
-          "symbol": "LLY",
-          "pl_pct_from_entry": 0.4315,
-          "pl_dollar": 12416.51,
-          "snapshot_date": "2026-11-04",
-          "decision": "hold",
-          "note": "Up +43.15% \u2014 largest winner. Post-Oct 29 earnings run. Hold into next week."
-        },
-        {
-          "symbol": "NVDA",
-          "pl_pct_from_entry": -0.0236,
-          "pl_dollar": -376.53,
-          "snapshot_date": "2026-11-04",
-          "decision": "close",
-          "note": "Friday rule triggered: -2.36% from entry, below -2% threshold. Nov 5 market stress (-6.25% portfolio day) likely worsened position."
-        }
-      ],
-      "top_candidates_scores": {
-        "MU": 0.2009,
-        "NVDA": 0.1101,
-        "MRVL": 0.0504,
-        "CRWD": 0.0496,
-        "AMAT": 0.0341,
-        "NEM": 0.0324,
-        "AMZN": 0.0278,
-        "META": 0.0245
-      },
-      "market_context": "Week Nov 2-6. Catastrophic week: Nov 5 portfolio -6.25% vs SPY -4.41% (-1.84% underperformance). AMAT deteriorated from -0.87% (Oct 28) to -13.42% (Nov 4), a -12.55% swing in one week. NVDA turned negative at -2.36%. LLY and DD remain strong winners. Portfolio from $96,841 (Nov 2) to $90,698 (Nov 5 close), -$6,144 WTD (-6.35%). AMAT earnings Nov 12 urgent close trigger.",
-      "weekly_performance": {
-        "equity_mon_nov02": 97180.03,
-        "equity_tue_nov03": 97497.26,
-        "equity_wed_nov04": 96053.09,
-        "equity_thu_nov05": 90697.54,
-        "equity_fri_nov06": null,
-        "wtd_gain_dollar": -6143.8,
-        "wtd_gain_pct": -6.35,
-        "note": "Worst week in portfolio history. AMAT collapse and market selloff Nov 5 drove losses."
-      },
-      "closes_triggered": 2,
-      "close_rule": "unrealized_plpc < -0.02",
-      "notable_events": "AMAT -13.42% from entry (Nov 4 snapshot) \u2014 worst position in portfolio history. NVDA -2.36% from entry \u2014 stop rule triggered. Nov 5: portfolio -6.25% (worst single day, -1.84% vs SPY). 13th consecutive week of Alpaca API blockage. AMAT earnings Nov 12 (next week) \u2014 binary risk justifies urgent close. DD and LLY remain strong: +23.52% and +43.15% respectively. Prior Oct 26 trade plan closes (AMAT/DD/LLY) remain UNVERIFIED after 2+ weeks."
+      "time": "2026-05-11T09:31:58.015102-04:00",
+      "action": "BUY",
+      "symbol": "INTC",
+      "qty": 191.0,
+      "price": 130.85,
+      "filled": true,
+      "source": "alpaca_rebuild"
     },
     {
-      "week_of": "2026-11-02_original",
-      "generated_at": "2026-11-02T13:58:00Z",
-      "equity_start_approx": 98664.11,
-      "equity_end_approx": null,
-      "net_pl_dollar_approx": null,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (HTTP 403 from proxy \u2014 11th consecutive week). Last confirmed equity $98,664.11 on 2026-10-29 (daily_pnl). Oct 30 daily_pnl shows $98,096.64 (-$1,571 / -1.58% vs SPY -1.77%). All prior plan executions still UNVERIFIED.",
-      "plan_summary": {
-        "close": [
-          "AMAT",
-          "DD",
-          "LLY"
-        ],
-        "hold": [
-          "NVDA"
-        ],
-        "buy": [
-          "MRVL",
-          "NEM"
-        ],
-        "rationale": "Close AMAT (stop-loss -2.81% triggered Oct 21; AMAT earnings Nov 12 creates fresh binary risk). Close DD (not in universe, 7+ weeks overdue). Close LLY (Q3 Oct 29 earnings beat +6.6% to $1,373.70 52W high; post-earnings profit lock on +30.35% gain). Hold NVDA (Blackwell thesis intact, earnings ~Nov 17-25). Add MRVL (AI networking, RS60 +21%, RSI near oversold 25.9, Dec 2 earnings safe window). NEM held/bought (gold hedge, post-Oct 23 earnings, no near-term binary risk). AMD avoided: earnings TOMORROW Nov 3 \u00b110.7% binary.",
-        "execution_status": "UNVERIFIED \u2014 API blocked"
-      },
-      "top_candidates_scores": {
-        "MU": 0.2009,
-        "NVDA": 0.1101,
-        "MRVL": 0.0504,
-        "CRWD": 0.0496,
-        "AMAT": 0.0341,
-        "NEM": 0.0324,
-        "AMZN": 0.0278,
-        "META": 0.0245
-      },
-      "market_context": "Week Nov 2-6. Portfolio recovered from $93,260 (Oct 23 low) to $98,664 (Oct 29) on LLY Q3 beat. AMD earnings Nov 3 (tomorrow, \u00b110.7%). AMAT earnings Nov 12. NVDA earnings ~Nov 17-25. Late Oct portfolio outperforming SPY (LLY +6.6% earnings day vs SPY -0.38%). Oct 30 pullback: portfolio -1.58% vs SPY -1.77%, outperforming on down day.",
-      "notable_events": "LLY Q3 earnings Oct 29 beat: +6.6% to $1,373.70 52-week high, raised 2026 guidance to $91-92B. AMD reports Q3 Nov 3 after close (\u00b110.7% implied, AVOID). AMAT reports Nov 12. NVDA reports ~Nov 17-25. 11th consecutive week Alpaca API blocked. All prior plan trades (Oct 26: close AMAT/DD/LLY, buy NEM, hold NVDA) remain unverified. Oct 28 snapshot: AMAT -0.87%, DD +11.23%, LLY +30.35%, NVDA +4.43%.",
-      "positions_entering_week": {
-        "AMAT": {
-          "pl_pct_from_entry": -0.0087,
-          "pl_dollar_est": -264.43,
-          "snapshot_date": "2026-10-28",
-          "plan": "close"
-        },
-        "DD": {
-          "pl_pct_from_entry": 0.1123,
-          "pl_dollar_est": 822.46,
-          "snapshot_date": "2026-10-28",
-          "plan": "close"
-        },
-        "LLY": {
-          "pl_pct_from_entry": 0.3035,
-          "pl_dollar_est": 8731.63,
-          "snapshot_date": "2026-10-28",
-          "plan": "close",
-          "note": "LLY up ~6.6% on Oct 29 earnings \u2014 actual P&L from entry likely ~+37%"
-        },
-        "NVDA": {
-          "pl_pct_from_entry": 0.0443,
-          "pl_dollar_est": 706.08,
-          "snapshot_date": "2026-10-28",
-          "plan": "hold"
-        },
-        "NEM": {
-          "plan": "buy_if_not_held",
-          "note": "Oct 26 plan unverified; re-recommend buy or hold confirmation"
-        }
-      }
+      "time": "2026-05-11T09:32:21.668969-04:00",
+      "action": "BUY",
+      "symbol": "AMD",
+      "qty": 75.0,
+      "price": 464.7,
+      "filled": true,
+      "source": "alpaca_rebuild"
     },
     {
-      "week_of": "2026-10-26",
-      "generated_at": "2026-10-26T12:47:00Z",
-      "equity_start_approx": 93260.02,
-      "equity_end_approx": null,
-      "net_pl_dollar_approx": null,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (HTTP 403 \u2014 8th consecutive week). Last confirmed equity $93,260.02 on 2026-10-23.",
-      "plan_summary": {
-        "close": [
-          "AMAT",
-          "DD",
-          "LLY"
-        ],
-        "hold": [
-          "NVDA"
-        ],
-        "buy": [
-          "NEM"
-        ],
-        "rationale": "Close AMAT (stop-loss -2.81% triggered Oct 21). Close DD (5+ weeks overdue, not in universe). Close LLY before Oct 29 earnings (lock in +28% gain, \u00b17.41% earnings move). Hold NVDA (+7.06%, earnings Nov 18). Add NEM (gold mining, post-earnings Oct 22, FCF record, defensive hedge). AMD/AMZN avoided (earnings this week/next week). CRWD skip (stock split data unreliable).",
-        "execution_status": "UNVERIFIED \u2014 API blocked"
-      },
-      "top_candidates_scores": {
-        "AMD": 0.2338,
-        "MU": 0.2009,
-        "NVDA": 0.1101,
-        "MRVL": 0.0504,
-        "CRWD": 0.0496,
-        "NEM": 0.0324,
-        "AMZN": 0.0278
-      },
-      "market_context": "Week Oct 26-30. Portfolio down -9.6% from Oct 5 ($103,182) to Oct 23 ($93,260) over 4 weeks, primarily from semiconductor sector weakness. LLY earnings Oct 29 (major event). AMD earnings Nov 3. Reducing sector concentration: closing 3 positions, adding gold miner NEM as uncorrelated hedge.",
-      "closes_triggered": 1,
-      "close_rule": "unrealized_plpc < -0.02 (AMAT -2.81%); DD overdue close; LLY pre-earnings profit lock",
-      "notable_events": "AMAT stop-loss triggered Oct 21 (-2.81%). LLY earnings Oct 29 \u2014 closing to lock +28% gain. DD 5-week pending close finally executed. Portfolio at -9.6% from starting equity. 8th consecutive API blockage week."
+      "time": "2026-05-11T09:32:23.554203-04:00",
+      "action": "BUY",
+      "symbol": "PLTR",
+      "qty": 290.0,
+      "price": 135.03,
+      "filled": true,
+      "source": "alpaca_rebuild"
     },
     {
-      "week_of": "2026-10-19",
-      "generated_at": "2026-10-23T00:00:00Z",
-      "equity_start_approx": 94791.14,
-      "equity_end_approx": 93988.98,
-      "net_pl_dollar_approx": -802.16,
-      "net_pl_pct_approx": -0.00847,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 7th consecutive week). Last confirmed EOD equity $93,988.98 on 2026-10-22. Oct 23 live data unavailable.",
-      "plan_summary": {
-        "close": [
-          "AMAT"
-        ],
-        "hold": [
-          "DD",
-          "LLY",
-          "NVDA"
-        ],
-        "buy": [],
-        "rationale": "AMAT fell to -2.81% from entry (Oct 21 14:10 snapshot), breaching the -2% Friday close threshold. DD +8.55%, LLY +28.0%, NVDA +7.06% \u2014 all above threshold, hold into next week. Week started with strong Oct 20 recovery (+1.87%) but reversed Oct 21-22. DD close still pending (not in scoring universe, slated for close since Oct 12).",
-        "execution_status": "UNVERIFIED \u2014 API blocked"
-      },
-      "positions_final": [
-        {
-          "symbol": "AMAT",
-          "pl_pct_from_entry": -0.0281,
-          "pl_dollar": -850.87,
-          "snapshot_date": "2026-10-21",
-          "decision": "close",
-          "note": "Below -2% Friday close threshold. Stop-loss rule triggered."
-        },
-        {
-          "symbol": "DD",
-          "pl_pct_from_entry": 0.0855,
-          "pl_dollar": 625.99,
-          "snapshot_date": "2026-10-21",
-          "decision": "hold"
-        },
-        {
-          "symbol": "LLY",
-          "pl_pct_from_entry": 0.28,
-          "pl_dollar": 8057.45,
-          "snapshot_date": "2026-10-21",
-          "decision": "hold"
-        },
-        {
-          "symbol": "NVDA",
-          "pl_pct_from_entry": 0.0706,
-          "pl_dollar": 1124.2,
-          "snapshot_date": "2026-10-21",
-          "decision": "hold"
-        }
-      ],
-      "top_candidates_scores": {
-        "AMD": 0.2338,
-        "MU": 0.2009,
-        "NVDA": 0.1101,
-        "CRWD": 0.0496,
-        "AMAT": 0.0341
-      },
-      "market_context": "Week Oct 19-23. Oct 20 strong recovery (+1.87% vs SPY +0.34%). Oct 21-22 reversal: -0.89% and -2.12%. AMAT semiconductor position hit stop. LLY defensive ballast +28% held well.",
-      "closes_triggered": 1,
-      "close_rule": "unrealized_plpc < -0.02",
-      "notable_events": "AMAT breached -2% stop threshold (Oct 21 snapshot: -2.81%). 7th consecutive week of API blockage. DD close urgently overdue (5th week pending). Oct 22 portfolio down -2.12%.",
-      "data_quality_note": "bars_raw.json is stale Aug-Sep 2026 data. Scoring directionally valid but prices should not be used for order sizing. Position P&L estimates based on Oct 21 14:10 intraday snapshot."
+      "time": "2026-05-11T10:54:22.153452-04:00",
+      "action": "CLOSE",
+      "symbol": "PLTR",
+      "qty": 290.0,
+      "price": 134.801034,
+      "filled": true,
+      "source": "alpaca_rebuild"
     },
     {
-      "week_of": "2026-10-12",
-      "generated_at": "2026-10-16T19:09:21Z",
-      "equity_start_approx": 100673.82,
-      "equity_end_approx": 96312.18,
-      "net_pl_dollar_approx": -4361.64,
-      "net_pl_pct_approx": -0.0433,
-      "api_available": false,
-      "api_note": "Alpaca API blocked week of Oct 12 (ENOTFOUND \u2014 4th consecutive week). End equity is Oct 15 EOD value; Oct 16 intraday unavailable. Trade plan execution unverified (plan called to close DD+LLY, buy MU; Oct 14 snapshot still showed DD+LLY open).",
-      "plan_summary": {
-        "close": [
-          "DD",
-          "LLY"
-        ],
-        "hold": [
-          "AMAT",
-          "NVDA"
-        ],
-        "buy": [
-          "MU"
-        ],
-        "rationale": "Rotating LLY (underperforming, RSI 70.3) and DD (weak, not in universe) into MU (dip buy, RSI 34.7, RS60 +54%, Micron HBM sold out 2026). AMD skipped despite #1 score due to Nov 3 earnings and +5% run. Market at all-time highs with poor breadth; maintaining defensive 3-position cap.",
-        "execution_status": "UNVERIFIED \u2014 Alpaca API blocked all week. Commit '4a931a1' claims trades executed but Oct 14 API snapshot still shows DD and LLY. Needs verification when API restored."
-      },
-      "top_candidates_scores": {
-        "AMD": 0.2338,
-        "MU": 0.2009,
-        "NVDA": 0.1101,
-        "CRWD": 0.0496,
-        "AMAT": 0.0341
-      },
-      "market_context": "S&P 500 at ~7,750 (ATH) entering Oct 2026. Poor market breadth flagged by analysts. Rising bond yields. Bank earnings week (JPM, GS, WFC, BAC, UNH Oct 13-14)."
+      "time": "2026-05-11T10:54:23.679292-04:00",
+      "action": "CLOSE",
+      "symbol": "AMD",
+      "qty": 75.0,
+      "price": 459.61,
+      "filled": true,
+      "source": "alpaca_rebuild"
     },
     {
-      "week_of": "2026-10-05",
-      "generated_at": "2026-10-09T19:09:18Z",
-      "equity_start": 103182.82,
-      "equity_end_approx": 100673.82,
-      "net_pl_dollar_approx": -2509.0,
-      "net_pl_pct_approx": -0.0243,
-      "api_available": false,
-      "api_note": "Alpaca API blocked all week (network egress proxy). Live prices unavailable; all P&L estimates based on last successful snapshot 2026-10-07T15:26:43-04:00.",
-      "positions_final": [
-        {
-          "symbol": "AMAT",
-          "pl_pct_from_entry": 0.2332,
-          "pl_dollar": 7072.01,
-          "decision": "hold"
-        },
-        {
-          "symbol": "DD",
-          "pl_pct_from_entry": 0.0543,
-          "pl_dollar": 397.95,
-          "decision": "hold"
-        },
-        {
-          "symbol": "LLY",
-          "pl_pct_from_entry": 0.1951,
-          "pl_dollar": 5612.97,
-          "decision": "hold"
-        },
-        {
-          "symbol": "NVDA",
-          "pl_pct_from_entry": 0.1459,
-          "pl_dollar": 2323.86,
-          "decision": "hold"
-        }
-      ],
-      "closes_triggered": 0,
-      "close_rule": "unrealized_plpc < -0.02",
-      "notable_events": "Oct 8 portfolio dropped -1.98% ($2,029.67) \u2014 worst single day of week; market-wide weakness. No per-position entry-based stop triggered. All positions held into week of Oct 12."
+      "time": "2026-05-11T10:54:28.299016-04:00",
+      "action": "CLOSE",
+      "symbol": "INTC",
+      "qty": 191.0,
+      "price": 126.860052,
+      "filled": true,
+      "source": "alpaca_rebuild"
     },
     {
-      "week_of": "2026-10-30",
-      "generated_at": "2026-10-30T00:00:00Z",
-      "equity_start_approx": 93260.02,
-      "equity_end_approx": 98664.11,
-      "net_pl_dollar_approx": 5404.09,
-      "net_pl_pct_approx": 0.058,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 10th consecutive week). Last confirmed equity $98,664.11 on 2026-10-29 (daily_pnl). Last confirmed positions from Oct 28 14:59 snapshot.",
-      "plan_summary": {
-        "close": [],
-        "hold": [
-          "AMAT",
-          "DD",
-          "LLY",
-          "NVDA"
-        ],
-        "buy": [],
-        "rationale": "No positions triggered -2% Friday close rule (Oct 28 snapshot: AMAT -0.87%, DD +11.23%, LLY +30.35%, NVDA +4.43%). LLY earnings Oct 29 produced strong positive portfolio reaction (+1.92% vs SPY -0.38%). Strategic closes from Oct 26 plan (AMAT/DD/LLY) remain unverified. All positions held.",
-        "execution_status": "UNVERIFIED \u2014 API blocked"
-      },
-      "positions_final": [
-        {
-          "symbol": "AMAT",
-          "pl_pct_from_entry": -0.0087,
-          "pl_dollar": -264.43,
-          "snapshot_date": "2026-10-28",
-          "decision": "hold",
-          "note": "Recovered from -2.81% (Oct 21) to -0.87% (Oct 28). Above -2% threshold. Strategic close from prior week unverified."
-        },
-        {
-          "symbol": "DD",
-          "pl_pct_from_entry": 0.1123,
-          "pl_dollar": 822.46,
-          "snapshot_date": "2026-10-28",
-          "decision": "hold",
-          "note": "Up +11.23% from entry. Close pending 6+ consecutive weeks (not in universe). Strategic close unverified."
-        },
-        {
-          "symbol": "LLY",
-          "pl_pct_from_entry": 0.3035,
-          "pl_dollar": 8731.63,
-          "snapshot_date": "2026-10-28",
-          "decision": "hold",
-          "note": "Up +30.35% from entry. LLY Q3 earnings Oct 29 \u2014 portfolio +1.92% on day vs SPY -0.38%. Strong positive reaction. Pre-earnings close unverified."
-        },
-        {
-          "symbol": "NVDA",
-          "pl_pct_from_entry": 0.0443,
-          "pl_dollar": 706.08,
-          "snapshot_date": "2026-10-28",
-          "decision": "hold",
-          "note": "Up +4.43% from entry. Core hold. Earnings Nov 18."
-        }
-      ],
-      "closes_triggered": 0,
-      "close_rule": "unrealized_plpc < -0.02",
-      "notable_events": "Best recovery week since initial drawdown: +$5,404 (+5.8%) WTD, from $93,260 (Oct 23 low) to $98,664 (Oct 29). LLY Q3 earnings Oct 29 positive \u2014 portfolio outperformed SPY by +2.3% on earnings day. No positions below -2% stop. 10th consecutive week of API blockage. All Oct 26 trades (close AMAT/DD/LLY, buy NEM, hold NVDA) remain unverified. Cumulative drawdown from Oct 5 high: -$4,519 (-4.4%).",
-      "weekly_performance": {
-        "equity_mon_oct26": 94949.87,
-        "equity_tue_oct27": 95387.26,
-        "equity_wed_oct28": 96828.22,
-        "equity_thu_oct29": 98664.11,
-        "equity_fri_oct30": null,
-        "wtd_gain_dollar": 5404.09,
-        "wtd_gain_pct": 5.8,
-        "note": "Strong recovery week. LLY earnings catalyst on Oct 29 drove outperformance."
-      }
+      "time": "2026-05-11T10:57:13.478171-04:00",
+      "action": "BUY",
+      "symbol": "PLTR",
+      "qty": 292.0,
+      "price": 135.135685,
+      "filled": true,
+      "source": "alpaca_rebuild"
     },
     {
-      "week_of": "2026-11-09",
-      "generated_at": "2026-11-09T00:00:00Z",
-      "equity_start_approx": 91284.98,
-      "equity_end_approx": null,
-      "net_pl_dollar_approx": null,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 14th consecutive week). Last confirmed equity $91,284.98 on 2026-11-06. NVDA down ~5%% premarket Nov 9 on CEO spy probe.",
-      "plan_summary": {
-        "close": [
-          "AMAT",
-          "NVDA",
-          "DD"
-        ],
-        "hold": [
-          "LLY"
-        ],
-        "buy": [
-          "MRVL"
-        ],
-        "rationale": "URGENT: AMAT earnings Nov 12 (3 days) + already -13.42% from entry. NVDA CEO Jensen Huang under board investigation for affair with alleged Chinese spy \u2014 Congressional testimony Nov 18, earnings Nov 17. Triple risk on NVDA; close immediately. DD overdue close (8+ weeks), lock +23.52% gain. LLY +43.15% \u2014 hold into Dec 7 Innovation Day. MRVL dip-buy: AI networking, RSI near oversold, Dec 2 earnings safe runway. AMAT closed at $319.25 (Nov 5) vs 52-week high $723.00. 14th consecutive week of API blockage.",
-        "execution_status": "PENDING \u2014 awaiting GitHub Actions on trade_plan.json push"
-      },
-      "top_candidates_scores": {
-        "AMD": 0.2338,
-        "MU": 0.2009,
-        "NVDA": 0.1101,
-        "MRVL": 0.0504,
-        "CRWD": 0.0496,
-        "AMAT": 0.0341,
-        "NEM": 0.0324,
-        "AMZN": 0.0278
-      },
-      "market_context": "Week Nov 9-13. NVDA governance crisis: CEO Huang admits affair with alleged Chinese spy (Alice Huang). Board investigation launched Nov 8. NVDA -5%% premarket. AMAT earnings Thu Nov 12 \u2014 close before open. S&P 500 ~7,542-7,744 (GS target 8,000). Election rally Nov 4 (+1.72%). CPI/PPI data this week. AI sector choppy.",
-      "positions_entering_week": {
-        "AMAT": {
-          "pl_pct_from_entry": -0.1342,
-          "pl_dollar": -4069.27,
-          "snapshot_date": "2026-11-04",
-          "decision": "close",
-          "note": "URGENT: earnings Nov 12. Closed at $319.25 Nov 5 (52-week high $723). Close immediately."
-        },
-        "DD": {
-          "pl_pct_from_entry": 0.2352,
-          "pl_dollar": 1722.51,
-          "snapshot_date": "2026-11-04",
-          "decision": "close",
-          "note": "8+ weeks overdue, +23.52% gain. Lock in profit."
-        },
-        "LLY": {
-          "pl_pct_from_entry": 0.4315,
-          "pl_dollar": 12416.51,
-          "snapshot_date": "2026-11-04",
-          "decision": "hold",
-          "note": "Up +43.15%. Hold into Dec 7 Innovation Day."
-        },
-        "NVDA": {
-          "pl_pct_from_entry": -0.0236,
-          "pl_dollar": -376.53,
-          "snapshot_date": "2026-11-04",
-          "decision": "close",
-          "note": "CEO spy investigation, earnings Nov 17, Congress Nov 18. Close immediately. Down ~5%% more premarket Nov 9."
-        }
-      },
-      "notable_events": "NVDA CEO Jensen Huang admits affair with Alice Huang (alleged Chinese spy per U.S. officials). Board investigation Nov 8. Congress testimony demand Nov 18. NVDA -5%% premarket Nov 9, -27%% from 52-week high. AMAT earnings Nov 12 \u2014 15th consecutive week past close recommendation (triggered stop Oct 21). Portfolio down from $103,182 (Oct 5) to $91,285 (Nov 6) = -11.5%% cumulative drawdown. Election rally Nov 4 chip recovery: MRVL +4%%, AMD +10%%. 14th consecutive week API blockage."
+      "time": "2026-05-11T10:57:14.712651-04:00",
+      "action": "BUY",
+      "symbol": "AMD",
+      "qty": 75.0,
+      "price": 457.85,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-05-11T10:57:17.599273-04:00",
+      "action": "BUY",
+      "symbol": "INTC",
+      "qty": 195.0,
+      "price": 126.050308,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-05-12T10:31:19.480747-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "INTC",
+      "qty": 195.0,
+      "price": 119.815846,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-05-12T11:28:33.239018-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "AMD",
+      "qty": 75.0,
+      "price": 435.59,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-05-18T09:37:01.583066-04:00",
+      "action": "BUY",
+      "symbol": "AMAT",
+      "qty": 76.0,
+      "price": 431.45829,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-05-18T09:38:07.310329-04:00",
+      "action": "BUY",
+      "symbol": "LLY",
+      "qty": 33.0,
+      "price": 992.169393,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-05-18T09:38:14.100030-04:00",
+      "action": "BUY",
+      "symbol": "EOG",
+      "qty": 204.0,
+      "price": 138.583284,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-05-18T12:28:16.076367-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "AMAT",
+      "qty": 76.0,
+      "price": 409.67,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-05-18T12:39:45.551055-04:00",
+      "action": "BUY",
+      "symbol": "AMAT",
+      "qty": 80.0,
+      "price": 411.45,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-05-26T09:32:22.457698-04:00",
+      "action": "BUY",
+      "symbol": "FLEX",
+      "qty": 112.0,
+      "price": 137.73,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-05-26T09:35:02.217832-04:00",
+      "action": "BUY",
+      "symbol": "VECO",
+      "qty": 23.0,
+      "price": 60.58,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-05-26T09:39:40.591467-04:00",
+      "action": "BUY",
+      "symbol": "VIAV",
+      "qty": 301.0,
+      "price": 50.64,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-05-26T09:41:51.406473-04:00",
+      "action": "BUY",
+      "symbol": "ASTH",
+      "qty": 393.0,
+      "price": 39.040942,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-01T15:11:11.468563-04:00",
+      "action": "BUY",
+      "symbol": "TTMI",
+      "qty": 93.0,
+      "price": 173.87,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-01T15:11:17.380999-04:00",
+      "action": "BUY",
+      "symbol": "SMTC",
+      "qty": 2.0,
+      "price": 149.36,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-01T15:11:17.961250-04:00",
+      "action": "BUY",
+      "symbol": "ACLS",
+      "qty": 31.0,
+      "price": 150.18,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-01T15:11:20.535862-04:00",
+      "action": "BUY",
+      "symbol": "AOSL",
+      "qty": 2.0,
+      "price": 43.73,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-08T12:57:03.118950-04:00",
+      "action": "BUY",
+      "symbol": "MXL",
+      "qty": 201.0,
+      "price": 80.8,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-08T12:57:05.608135-04:00",
+      "action": "BUY",
+      "symbol": "DELL",
+      "qty": 40.0,
+      "price": 400.58,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-08T12:57:08.743618-04:00",
+      "action": "BUY",
+      "symbol": "COHU",
+      "qty": 301.0,
+      "price": 53.83,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-09T10:17:16.045353-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "MXL",
+      "qty": 201.0,
+      "price": 76.63,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-09T10:42:45.678243-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "AOSL",
+      "qty": 2.0,
+      "price": 41.47,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-09T11:28:35.757877-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "DELL",
+      "qty": 40.0,
+      "price": 379.693751,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-09T12:20:25.885954-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "PLTR",
+      "qty": 292.0,
+      "price": 128.29,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-09T12:30:59.043285-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "TTMI",
+      "qty": 93.0,
+      "price": 164.506774,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-15T09:34:24.257911-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "EOG",
+      "qty": 204.0,
+      "price": 130.418235,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-15T14:11:09.480349-04:00",
+      "action": "CLOSE",
+      "symbol": "ASTH",
+      "qty": 393.0,
+      "price": 37.65,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-15T14:11:10.443826-04:00",
+      "action": "CLOSE",
+      "symbol": "VIAV",
+      "qty": 301.0,
+      "price": 53.66,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-15T14:11:13.113926-04:00",
+      "action": "CLOSE",
+      "symbol": "FLEX",
+      "qty": 112.0,
+      "price": 148.82,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-15T14:11:14.145076-04:00",
+      "action": "CLOSE",
+      "symbol": "ACLS",
+      "qty": 4.0,
+      "price": 188.34,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-15T14:11:14.895359-04:00",
+      "action": "CLOSE",
+      "symbol": "AMAT",
+      "qty": 8.0,
+      "price": 589.71,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-15T14:11:19.857054-04:00",
+      "action": "CLOSE",
+      "symbol": "COHU",
+      "qty": 30.0,
+      "price": 63.92,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-15T14:11:20.261824-04:00",
+      "action": "CLOSE",
+      "symbol": "FLEX",
+      "qty": 5.0,
+      "price": 148.82,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-15T14:11:22.355954-04:00",
+      "action": "CLOSE",
+      "symbol": "LLY",
+      "qty": 4.0,
+      "price": 1125.7,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-15T14:11:23.544903-04:00",
+      "action": "CLOSE",
+      "symbol": "SMTC",
+      "qty": 1.0,
+      "price": 174.18,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-06-15T14:11:25.741405-04:00",
+      "action": "CLOSE",
+      "symbol": "VECO",
+      "qty": 3.0,
+      "price": 85.84,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-07-01T10:57:58.709514-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "SMTC",
+      "qty": 1.0,
+      "price": 141.6,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-07-02T13:13:38.502853-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "VECO",
+      "qty": 20.0,
+      "price": 57.4,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-07-02T14:01:18.849388-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "ACLS",
+      "qty": 27.0,
+      "price": 142.07,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-07-06T12:40:07.499377-04:00",
+      "action": "BUY",
+      "symbol": "MU",
+      "qty": 13.0,
+      "price": 1002.318462,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-07-07T09:50:46.502669-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "FLEX",
+      "qty": 45.0,
+      "price": 130.75,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-07-07T11:04:26.133113-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "COHU",
+      "qty": 271.0,
+      "price": 50.97,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-07-13T12:06:08.541967-04:00",
+      "action": "BUY",
+      "symbol": "DELL",
+      "qty": 45.0,
+      "price": 430.44,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-07-15T10:35:49.390303-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "DELL",
+      "qty": 45.0,
+      "price": 408.616,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-07-20T11:30:14.746294-04:00",
+      "action": "BUY",
+      "symbol": "PENG",
+      "qty": 341.0,
+      "price": 54.38,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-07-27T10:25:29.892170-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "PENG",
+      "qty": 341.0,
+      "price": 51.63,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-07-27T12:00:06.365175-04:00",
+      "action": "BUY",
+      "symbol": "PENG",
+      "qty": 359.0,
+      "price": 51.29,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-07-28T09:38:09.247300-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "PENG",
+      "qty": 359.0,
+      "price": 48.02,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-08-03T12:04:16.482722-04:00",
+      "action": "BUY",
+      "symbol": "NVDA",
+      "qty": 77.0,
+      "price": 206.91,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-08-03T12:04:16.526686-04:00",
+      "action": "BUY",
+      "symbol": "FLEX",
+      "qty": 50.0,
+      "price": 115.99,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-08-07T15:52:40.245941-04:00",
+      "action": "CLOSE",
+      "symbol": "MU",
+      "qty": 13.0,
+      "price": 874.09,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-08-10T10:38:32.008349-04:00",
+      "action": "BUY",
+      "symbol": "DD",
+      "qty": 53.0,
+      "price": 142.3,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-08-10T10:38:34.957651-04:00",
+      "action": "BUY",
+      "symbol": "MAN",
+      "qty": 1.0,
+      "price": 56.08,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-08-25T11:19:09.779950-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "DD",
+      "qty": 53.0,
+      "price": 135.09,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-08-31T15:35:10.806574-04:00",
+      "action": "BUY",
+      "symbol": "DD",
+      "qty": 56.0,
+      "price": 134.13,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-09-10T09:38:01.211709-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "DD",
+      "qty": 56.0,
+      "price": 127.095714,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-09-14T14:49:58.598346-04:00",
+      "action": "BUY",
+      "symbol": "DD",
+      "qty": 59.0,
+      "price": 124.12,
+      "filled": true,
+      "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-10-06T11:57:30.859983-04:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "MAN",
+      "qty": 1.0,
+      "price": 53.01,
+      "filled": true,
+      "source": "alpaca_rebuild"
     }
   ],
+  "weekly_summaries": [],
   "portfolio_snapshots": [
     {
       "time": "2026-10-05T17:12:47.485854-04:00",
@@ -524,83 +650,9 @@
       "is_friday_close": false
     },
     {
-      "time": "2026-10-09T19:09:18Z",
-      "portfolio_value": null,
-      "buying_power": null,
-      "is_friday_close": true,
-      "api_available": false,
-      "note": "Friday close snapshot \u2014 Alpaca API blocked (EGRESS_BLOCKED). Last confirmed equity $100,673.82 on 2026-10-08. No positions breached -2% close threshold based on last known data. All 4 positions (AMAT +23.3%, DD +5.4%, LLY +19.5%, NVDA +14.6% from entry) held into week of Oct 12.",
-      "positions_summary": {
-        "AMAT": {
-          "pl_pct_from_entry": 0.2332,
-          "pl_dollar": 7072.01,
-          "decision": "hold"
-        },
-        "DD": {
-          "pl_pct_from_entry": 0.0543,
-          "pl_dollar": 397.95,
-          "decision": "hold"
-        },
-        "LLY": {
-          "pl_pct_from_entry": 0.1951,
-          "pl_dollar": 5612.97,
-          "decision": "hold"
-        },
-        "NVDA": {
-          "pl_pct_from_entry": 0.1459,
-          "pl_dollar": 2323.86,
-          "decision": "hold"
-        }
-      }
-    },
-    {
       "time": "2026-10-12T17:49:52.418197-04:00",
       "portfolio_value": 99857.26,
       "buying_power": 285270.21
-    },
-    {
-      "time": "2026-10-14T00:00:00Z",
-      "portfolio_value": null,
-      "buying_power": null,
-      "api_available": false,
-      "api_note": "Alpaca API blocked midweek Oct 14 (ENOTFOUND). Third consecutive blocked API occurrence.",
-      "last_confirmed_equity": 97362.13,
-      "last_confirmed_date": "2026-10-13",
-      "positions_summary": {
-        "scenario_note": "Plan called to close DD/LLY and buy MU week of Oct 12. Unclear if executed; daily_pnl shows 4 open positions Oct 12-13.",
-        "AMAT": {
-          "pl_pct_from_entry_est": 0.18,
-          "flag": "hold",
-          "thesis_intact": true
-        },
-        "NVDA": {
-          "pl_pct_from_entry_est": 0.096,
-          "flag": "watch_declining",
-          "thesis_intact": true
-        },
-        "position_3_unknown": {
-          "candidates": [
-            "DD (not closed, ~0% from entry)",
-            "MU (bought ~$820 per plan, may be down)"
-          ],
-          "flag": "concern_unverifiable"
-        },
-        "position_4_unknown": {
-          "candidates": [
-            "LLY (not closed, ~14.5% from entry est)",
-            "closed per plan"
-          ],
-          "flag": "unverifiable"
-        }
-      },
-      "midweek_notes": "CONCERN: Portfolio down -3.3% WTD from ~$100.7k to $97.4k in 2 trading days. Severely underperforming SPY: Oct 12 -1.70% vs SPY, Oct 13 -2.53% vs SPY. Semiconductor sector weakness driving losses. Cannot verify stop loss orders or exact positions via API. No position estimated down >8% from entry yet, but trajectory is worrying. Portfolio at -2.6% from $100k starting equity. Stop loss verification urgently needed when API restored.",
-      "wtd_pl_dollar_est": -3295.69,
-      "wtd_pl_pct_est": -0.033,
-      "concern_flags": [
-        "severe_spy_underperformance",
-        "api_blocked_3rd_consecutive",
-        "stop_loss_unverifiable"
-      ]
     },
     {
       "time": "2026-10-14T14:06:34.401852-04:00",
@@ -631,113 +683,9 @@
       "is_friday_close": false
     },
     {
-      "time": "2026-10-16T19:09:21Z",
-      "portfolio_value": null,
-      "buying_power": null,
-      "is_friday_close": true,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 4th consecutive week). Last confirmed equity $96,312.18 on 2026-10-15 EOD.",
-      "last_confirmed_equity": 96312.18,
-      "last_confirmed_date": "2026-10-15",
-      "positions_summary": {
-        "AMAT": {
-          "pl_pct_from_entry": 0.0638,
-          "pl_dollar": 1934.81,
-          "snapshot_date": "2026-10-14",
-          "decision": "hold"
-        },
-        "DD": {
-          "pl_pct_from_entry": 0.0301,
-          "pl_dollar": 220.37,
-          "snapshot_date": "2026-10-14",
-          "decision": "hold",
-          "note": "Plan called to close Oct 12; execution unverified"
-        },
-        "LLY": {
-          "pl_pct_from_entry": 0.2238,
-          "pl_dollar": 6438.38,
-          "snapshot_date": "2026-10-14",
-          "decision": "hold",
-          "note": "Plan called to close Oct 12; execution unverified"
-        },
-        "NVDA": {
-          "pl_pct_from_entry": 0.0669,
-          "pl_dollar": 1066.45,
-          "snapshot_date": "2026-10-14",
-          "decision": "hold"
-        }
-      },
-      "weekly_pl": {
-        "equity_start": 100673.82,
-        "equity_end_approx": 96312.18,
-        "net_pl_dollar": -4361.64,
-        "net_pl_pct": -0.0433,
-        "note": "Worst week of year; semiconductor weakness Oct 12-13 drove -4.4% WTD. Severe SPY underperformance. API blocked prevented stop-loss verification."
-      },
-      "closes_triggered": 0,
-      "close_rule": "unrealized_plpc < -0.02",
-      "notable_events": "4th consecutive week of API blockage. All positions above -2% entry stop based on Oct 14 snapshot. Week down -4.3% primarily from semiconductor sector decline Oct 12-13."
-    },
-    {
       "time": "2026-10-19T15:26:02.473242-04:00",
       "portfolio_value": 95352.24,
       "buying_power": 272656.15
-    },
-    {
-      "time": "2026-10-21T00:00:00Z",
-      "portfolio_value": null,
-      "buying_power": null,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 6th consecutive week). Last confirmed equity $96,561.52 on 2026-10-20 close.",
-      "last_confirmed_equity": 96561.52,
-      "last_confirmed_date": "2026-10-20",
-      "is_midweek": true,
-      "positions_summary": {
-        "AMAT": {
-          "pl_pct_from_entry_est": 0.0638,
-          "pl_dollar_est": 1934.81,
-          "snapshot_date": "2026-10-14",
-          "flag": "hold",
-          "thesis_intact": true,
-          "note": "Semiconductor equipment thesis intact; AMAT earnings Nov 12 catalyst. Stop loss unverifiable via API."
-        },
-        "DD": {
-          "pl_pct_from_entry_est": 0.0301,
-          "pl_dollar_est": 220.37,
-          "snapshot_date": "2026-10-14",
-          "flag": "close_pending",
-          "thesis_intact": false,
-          "note": "Planned close since Oct 12 (3rd consecutive week unverified). Not in scoring universe. Should be closed ASAP when API available."
-        },
-        "LLY": {
-          "pl_pct_from_entry_est": 0.2238,
-          "pl_dollar_est": 6438.38,
-          "snapshot_date": "2026-10-14",
-          "flag": "strong_hold",
-          "thesis_intact": true,
-          "note": "LLY +22.4% from entry qualifies as strong hold (>10%). Defensive ballast preserved portfolio during semiconductor selloff. Oral GLP-1 Foundayo approved."
-        },
-        "NVDA": {
-          "pl_pct_from_entry_est": 0.0669,
-          "pl_dollar_est": 1066.45,
-          "snapshot_date": "2026-10-14",
-          "flag": "hold",
-          "thesis_intact": true,
-          "note": "Blackwell demand intact, AI infrastructure thesis holds. Oct 20 +1.87% portfolio recovery driven in part by semis rebound."
-        }
-      },
-      "midweek_notes": "Portfolio recovering from Oct 16 low ($94,791) to $96,561 (+1.86% recovery). Oct 20 was a strong day (+1.87% vs SPY +0.34%, outperforming by +1.53%). No position estimated down >8% from entry (all positive from Oct 14 snapshot). LLY flagged as strong hold (>10%). DD close remains urgently overdue \u2014 planned 3 weeks ago, unverified. Stop losses cannot be verified (API blocked). Thesis intact for AMAT, LLY, NVDA.",
-      "concern_flags": [
-        "api_blocked_6th_consecutive",
-        "stop_loss_unverifiable",
-        "dd_close_unverified_3_weeks"
-      ],
-      "wtd_context": {
-        "equity_mon_oct19": 95352.24,
-        "equity_tue_oct20": 96561.52,
-        "wtd_change_dollar": 1770.38,
-        "wtd_change_pct": 1.86
-      }
     },
     {
       "time": "2026-10-21T14:10:13.508657-04:00",
@@ -768,130 +716,9 @@
       "is_friday_close": false
     },
     {
-      "time": "2026-10-23T00:00:00Z",
-      "portfolio_value": null,
-      "buying_power": null,
-      "is_friday_close": true,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 7th consecutive week). Last confirmed EOD equity $93,988.98 on 2026-10-22.",
-      "last_confirmed_equity": 93988.98,
-      "last_confirmed_date": "2026-10-22",
-      "positions_summary": {
-        "AMAT": {
-          "pl_pct_from_entry": -0.0281,
-          "pl_dollar": -850.87,
-          "snapshot_date": "2026-10-21",
-          "decision": "close",
-          "note": "Below -2% Friday close threshold (-2.81%). Friday close rule triggered. GitHub Actions to execute."
-        },
-        "DD": {
-          "pl_pct_from_entry": 0.0855,
-          "pl_dollar": 625.99,
-          "snapshot_date": "2026-10-21",
-          "decision": "hold",
-          "note": "Up +8.55% from entry \u2014 hold into next week"
-        },
-        "LLY": {
-          "pl_pct_from_entry": 0.28,
-          "pl_dollar": 8057.45,
-          "snapshot_date": "2026-10-21",
-          "decision": "hold",
-          "note": "Up +28.0% from entry \u2014 strong hold. Defensive ballast."
-        },
-        "NVDA": {
-          "pl_pct_from_entry": 0.0706,
-          "pl_dollar": 1124.2,
-          "snapshot_date": "2026-10-21",
-          "decision": "hold",
-          "note": "Up +7.06% from entry \u2014 hold. Blackwell AI thesis intact."
-        }
-      },
-      "weekly_pl": {
-        "equity_start": 94791.14,
-        "equity_end_approx": 93988.98,
-        "net_pl_dollar": -802.16,
-        "net_pl_pct": -0.00847,
-        "note": "Week started with Oct 20 recovery (+1.87%) then Oct 21-22 reversal. AMAT hit -2% stop trigger."
-      },
-      "closes_triggered": 1,
-      "close_rule": "unrealized_plpc < -0.02",
-      "notable_events": "AMAT at -2.81% from entry (Oct 21 14:10 snapshot) triggers Friday close rule. 7th consecutive week of API blockage. DD close pending 5th consecutive week."
-    },
-    {
       "time": "2026-10-26T15:30:23.861817-04:00",
       "portfolio_value": 94594.04,
       "buying_power": 270533.19
-    },
-    {
-      "time": "2026-10-28T13:52:36Z",
-      "portfolio_value": null,
-      "buying_power": null,
-      "is_midweek": true,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 9th consecutive week, midweek Oct 28). Last confirmed equity $95,387.26 on 2026-10-27 (daily_pnl).",
-      "last_confirmed_equity": 95387.26,
-      "last_confirmed_date": "2026-10-27",
-      "positions_summary": {
-        "execution_status": "UNVERIFIED \u2014 all Oct 26 plan trades (close AMAT/DD/LLY, buy NEM, hold NVDA) unconfirmed due to API blockage",
-        "NVDA": {
-          "pl_pct_from_entry_est": 0.0706,
-          "pl_dollar_est": 1124.2,
-          "snapshot_date": "2026-10-21",
-          "flag": "hold",
-          "thesis_intact": true,
-          "note": "Blackwell AI thesis intact. Earnings Nov 18 \u2014 no near-term catalyst risk. Oct 26 plan: hold. Oct 26-27 portfolio recovery (+3.04% WTD) suggests semis rebound."
-        },
-        "NEM": {
-          "pl_pct_from_entry_est": null,
-          "flag": "buy_planned_unverified",
-          "thesis_intact": true,
-          "note": "Buy planned Oct 26 per trade_plan.json (20% allocation, gold mining hedge). Execution unverified. NEM earnings already resolved (Oct 22 \u2014 Q1 2026 FCF record $3.1B)."
-        },
-        "AMAT": {
-          "pl_pct_from_entry": -0.0281,
-          "flag": "close_planned_unverified",
-          "note": "Close planned Oct 26 (stop-loss -2.81% triggered Oct 21). Execution unverified."
-        },
-        "DD": {
-          "pl_pct_from_entry": 0.0855,
-          "flag": "close_planned_unverified",
-          "note": "Close planned Oct 26 (5+ weeks overdue, not in universe). Execution unverified."
-        },
-        "LLY": {
-          "pl_pct_from_entry": 0.28,
-          "flag": "close_URGENT_earnings_tomorrow",
-          "note": "URGENT: LLY reports Q3 earnings Thu Oct 29 before market open. Close was planned Oct 26. If not yet executed, must close TODAY (Oct 28) to protect +28% gain ($8,057) before \u00b17.41% binary event."
-        }
-      },
-      "thesis_check": {
-        "NVDA": "INTACT \u2014 Blackwell demand, AI infrastructure, earnings Nov 18",
-        "NEM": "INTACT \u2014 Gold macro hedge, post-earnings, FCF record",
-        "AMAT": "BREACHED \u2014 stop-loss -2.81%, close planned",
-        "DD": "BREACHED \u2014 not in universe, close overdue 5+ weeks",
-        "LLY": "CLOSE \u2014 earnings tomorrow creates binary risk on +28% position"
-      },
-      "stop_loss_check": {
-        "api_blocked": true,
-        "note": "Cannot verify open stop orders. NVDA stop unverifiable. LLY/AMAT/DD close orders unverifiable.",
-        "positions_above_minus_8pct": "All known positions above -8% from entry (AMAT worst at -2.81%)",
-        "positions_above_plus_10pct": "LLY +28% (STRONG HOLD flag \u2014 but close planned due to earnings)"
-      },
-      "midweek_notes": "Portfolio recovering strongly this week: Oct 26 +1.97% (+$1,757 vs SPY +0.71%), Oct 27 +1.05% (+$990 vs SPY +0.56%). WTD gain est +$2,127 (+2.3%) vs SPY +1.27% \u2014 outperforming by +1.0%. Last confirmed equity $95,387.26 recovering from $93,260 (Oct 23 low). CRITICAL EVENT: LLY earnings Thursday Oct 29 before open \u2014 if LLY close not yet executed, it must be done today. No position estimated down >8% from entry. API blocked 9th consecutive week; all Oct 26 trade executions unverified.",
-      "concern_flags": [
-        "api_blocked_9th_consecutive",
-        "lly_earnings_tomorrow_oct29_close_unverified",
-        "stop_loss_unverifiable",
-        "all_oct26_trades_unverified"
-      ],
-      "wtd_context": {
-        "equity_fri_oct23": 93260.02,
-        "equity_mon_oct26": 94949.87,
-        "equity_tue_oct27": 95387.26,
-        "wtd_change_dollar": 2127.24,
-        "wtd_change_pct": 2.28,
-        "spy_wtd_approx": 1.27,
-        "vs_spy_wtd": 1.01
-      }
     },
     {
       "time": "2026-10-28T14:59:21.545173-04:00",
@@ -922,120 +749,9 @@
       "is_friday_close": false
     },
     {
-      "time": "2026-10-30T00:00:00Z",
-      "portfolio_value": null,
-      "buying_power": null,
-      "is_friday_close": true,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 10th consecutive week). Last confirmed equity $98,664.11 on 2026-10-29 (daily_pnl). Last confirmed positions Oct 28 14:59.",
-      "last_confirmed_equity": 98664.11,
-      "last_confirmed_date": "2026-10-29",
-      "positions_summary": {
-        "AMAT": {
-          "pl_pct_from_entry": -0.0087,
-          "pl_dollar": -264.43,
-          "snapshot_date": "2026-10-28",
-          "decision": "hold",
-          "note": "Above -2% threshold. Recovered from Oct 21 stop trigger."
-        },
-        "DD": {
-          "pl_pct_from_entry": 0.1123,
-          "pl_dollar": 822.46,
-          "snapshot_date": "2026-10-28",
-          "decision": "hold",
-          "note": "Up +11.23%. Close pending 6+ weeks (unverified)."
-        },
-        "LLY": {
-          "pl_pct_from_entry": 0.3035,
-          "pl_dollar": 8731.63,
-          "snapshot_date": "2026-10-28",
-          "decision": "hold",
-          "note": "Up +30.35%. LLY earnings Oct 29 positive reaction. Pre-earnings close unverified."
-        },
-        "NVDA": {
-          "pl_pct_from_entry": 0.0443,
-          "pl_dollar": 706.08,
-          "snapshot_date": "2026-10-28",
-          "decision": "hold",
-          "note": "Up +4.43%. Core hold into NVDA earnings Nov 18."
-        }
-      },
-      "closes_triggered": 0,
-      "close_rule": "unrealized_plpc < -0.02",
-      "weekly_pl": {
-        "equity_start": 93260.02,
-        "equity_end_approx": 98664.11,
-        "net_pl_dollar": 5404.09,
-        "net_pl_pct": 0.058,
-        "note": "Best week: +5.8% recovery. LLY earnings Oct 29 drove strong outperformance vs SPY."
-      }
-    },
-    {
       "time": "2026-11-02T17:26:44.888044-05:00",
       "portfolio_value": 96841.34,
       "buying_power": 276825.63
-    },
-    {
-      "time": "2026-11-04T12:00:00Z",
-      "portfolio_value": 97497.26,
-      "buying_power": 277500.0,
-      "is_midweek": true,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 12th consecutive week). Portfolio estimate from daily_pnl Nov 3: equity $97,497.26 (+1.03% day, outperformed SPY +0.30%). open_positions=4 on Nov 2 and Nov 3 suggests no trades executed since Oct 28.",
-      "last_confirmed_equity": 97497.26,
-      "last_confirmed_date": "2026-11-03",
-      "positions_summary": {
-        "execution_status": "UNVERIFIED \u2014 all Oct 26 plan trades (close AMAT/DD/LLY, buy NEM/MRVL, hold NVDA) still unconfirmed; open_positions=4 on Nov 2 and Nov 3 suggests no trades executed",
-        "NVDA": {
-          "pl_pct_from_entry_est": 0.0443,
-          "snapshot_date": "2026-10-28",
-          "flag": "hold",
-          "thesis_intact": true,
-          "note": "Blackwell AI thesis intact. Earnings ~Nov 17-25. Core hold."
-        },
-        "AMAT": {
-          "pl_pct_from_entry_est": -0.0087,
-          "snapshot_date": "2026-10-28",
-          "flag": "URGENT_CLOSE",
-          "thesis_intact": false,
-          "note": "AMAT earnings Thu Nov 12 in 8 days \u2014 binary risk. Stop-loss triggered Oct 21 at -2.81%. Close IMMEDIATELY."
-        },
-        "DD": {
-          "pl_pct_from_entry_est": 0.1123,
-          "snapshot_date": "2026-10-28",
-          "flag": "close_overdue_7_weeks",
-          "thesis_intact": false,
-          "note": "7+ week pending close, unverified. +11.23% from entry \u2014 exit while in profit."
-        },
-        "LLY": {
-          "pl_pct_from_entry_est": 0.37,
-          "snapshot_date": "2026-10-29 estimate",
-          "flag": "close_overdue_profit_lock",
-          "thesis_intact": false,
-          "note": "Post-earnings profit lock est ~+37% from entry. Close planned Oct 26, unverified. Q3 beat +6.6% to $1,373.70 on Oct 29."
-        }
-      },
-      "stop_loss_check": {
-        "api_blocked": true,
-        "positions_above_minus_8pct": true,
-        "positions_above_plus_10pct": "DD +11.23%, LLY ~+37% (profit lock / strong hold)"
-      },
-      "midweek_notes": "12th consecutive week of Alpaca API blockage. Portfolio $97,497 (Nov 3 daily_pnl close). Down -$1,167 (-1.18%) from Oct 29 peak of $98,664. Week-to-date vs Oct 30 close ($98,097): -$599 (-0.61%). AMD Q3 earnings Nov 3 after close \u2014 no direct portfolio impact (AMD avoided per plan). AMAT earnings Nov 12 in 8 days \u2014 URGENT close needed. NVDA earnings ~Nov 17-25 \u2014 hold into catalyst. No position estimated below -8% from entry. LLY and DD both flagged above +10%.",
-      "concern_flags": [
-        "api_blocked_12th_consecutive",
-        "amat_earnings_nov12_urgent_8_days",
-        "all_oct26_trades_unverified",
-        "stop_loss_unverifiable",
-        "nvda_earnings_approaching_nov17_25"
-      ],
-      "wtd_context": {
-        "equity_mon_nov02": 97180.03,
-        "equity_tue_nov03": 97497.26,
-        "wtd_vs_oct30_close": -599.38,
-        "wtd_pct_vs_oct30": -0.61,
-        "spy_wtd_estimate": null,
-        "note": "Nov 2 SPY -0.48%, Nov 3 SPY +0.30%. Portfolio WTD -0.61%; SPY WTD approx -0.18%."
-      }
     },
     {
       "time": "2026-11-04T15:29:42.546749-05:00",
@@ -1066,135 +782,9 @@
       "is_friday_close": false
     },
     {
-      "time": "2026-11-06T00:00:00Z",
-      "portfolio_value": null,
-      "buying_power": null,
-      "is_friday_close": true,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 13th consecutive week). Last confirmed equity $90,697.54 on 2026-11-05 (daily_pnl). Last confirmed positions: Nov 4 15:29 snapshot.",
-      "last_confirmed_equity": 90697.54,
-      "last_confirmed_date": "2026-11-05",
-      "positions_summary": {
-        "AMAT": {
-          "pl_pct_from_entry": -0.1342,
-          "pl_dollar": -4069.27,
-          "snapshot_date": "2026-11-04",
-          "decision": "close",
-          "note": "Friday rule triggered: -13.42%. AMAT earnings Nov 12 binary risk. Close immediately."
-        },
-        "DD": {
-          "pl_pct_from_entry": 0.2352,
-          "pl_dollar": 1722.51,
-          "snapshot_date": "2026-11-04",
-          "decision": "hold",
-          "note": "Up +23.52%. Above threshold. Strategic close still overdue."
-        },
-        "LLY": {
-          "pl_pct_from_entry": 0.4315,
-          "pl_dollar": 12416.51,
-          "snapshot_date": "2026-11-04",
-          "decision": "hold",
-          "note": "Up +43.15%. Largest portfolio winner. Hold."
-        },
-        "NVDA": {
-          "pl_pct_from_entry": -0.0236,
-          "pl_dollar": -376.53,
-          "snapshot_date": "2026-11-04",
-          "decision": "close",
-          "note": "Friday rule triggered: -2.36%. Close per stop rule."
-        }
-      },
-      "closes_triggered": 2,
-      "close_rule": "unrealized_plpc < -0.02",
-      "weekly_pl": {
-        "equity_start": 96841.34,
-        "equity_end_approx": 90697.54,
-        "net_pl_dollar": -6143.8,
-        "net_pl_pct": -0.0635,
-        "note": "Worst week: -6.35% WTD. AMAT collapse -13.42% and Nov 5 market selloff (-6.25% portfolio day)."
-      },
-      "notable_events": "AMAT -13.42% from entry triggers Friday close rule. NVDA -2.36% also triggers. AMAT earnings Nov 12 (6 days). Nov 5 portfolio -6.25% worst single day vs SPY -4.41%. 13th consecutive API blockage week."
-    },
-    {
       "time": "2026-11-09T18:06:45.591455-05:00",
       "portfolio_value": 95441.64,
       "buying_power": 272906.47
-    },
-    {
-      "time": "2026-11-11T00:00:00Z",
-      "portfolio_value": null,
-      "buying_power": null,
-      "is_midweek": true,
-      "api_available": false,
-      "api_note": "Alpaca API blocked (ENOTFOUND \u2014 15th consecutive week). Last confirmed equity $95,966.49 on 2026-11-10 (daily_pnl). open_positions=4 on Nov 9-10 \u2014 no trade plan execution confirmed since Oct 28.",
-      "last_confirmed_equity": 95966.49,
-      "last_confirmed_date": "2026-11-10",
-      "positions_summary": {
-        "execution_status": "UNVERIFIED \u2014 Nov 9 plan (close AMAT/NVDA/DD, buy MRVL) pending. open_positions=4 through Nov 10 suggests no trades executed.",
-        "AMAT": {
-          "pl_pct_from_entry_est": -0.1342,
-          "pl_dollar_est": -4069.27,
-          "snapshot_date": "2026-11-04",
-          "flag": "CRITICAL_EARNINGS_TOMORROW",
-          "thesis_intact": false,
-          "note": "AMAT earnings Thu Nov 12 TOMORROW after close. Already -13.42% from entry \u2014 breaches >8% concern threshold. Close IMMEDIATELY before binary earnings event."
-        },
-        "DD": {
-          "pl_pct_from_entry_est": 0.2352,
-          "pl_dollar_est": 1722.51,
-          "snapshot_date": "2026-11-04",
-          "flag": "close_overdue_profit_lock",
-          "thesis_intact": false,
-          "note": "Up +23.52% \u2014 strong hold flag (>10%). Close pending 9+ weeks unverified. Lock profit before thesis reverses."
-        },
-        "LLY": {
-          "pl_pct_from_entry_est": 0.4315,
-          "pl_dollar_est": 12416.51,
-          "snapshot_date": "2026-11-04",
-          "flag": "strong_hold",
-          "thesis_intact": true,
-          "note": "Up +43.15% \u2014 largest winner. No near-term binary event. Hold into Dec 7 Innovation Day."
-        },
-        "NVDA": {
-          "pl_pct_from_entry_est": -0.0236,
-          "pl_dollar_est": -376.53,
-          "snapshot_date": "2026-11-04",
-          "flag": "close_governance_crisis",
-          "thesis_intact": false,
-          "note": "CEO spy investigation ongoing. Earnings Nov 17 (6 days). -2.36% from entry. Close before earnings binary."
-        }
-      },
-      "stop_loss_check": {
-        "api_blocked": true,
-        "positions_below_minus_8pct": "AMAT -13.42% from entry \u2014 CONCERN FLAG (>8% down)",
-        "positions_above_plus_10pct": "DD +23.52%, LLY +43.15% (strong hold flags)"
-      },
-      "thesis_check": {
-        "AMAT": "BREACHED \u2014 earnings tomorrow Nov 12, -13.42% from entry",
-        "DD": "BREACHED \u2014 not in universe, overdue close 9+ weeks",
-        "LLY": "INTACT \u2014 strong winner, Dec 7 Innovation Day catalyst ahead",
-        "NVDA": "BREACHED \u2014 CEO governance crisis, earnings Nov 17"
-      },
-      "concern_flags": [
-        "CRITICAL_amat_earnings_TOMORROW_nov12",
-        "api_blocked_15th_consecutive",
-        "nvda_governance_crisis_earnings_nov17",
-        "stop_loss_unverifiable",
-        "nov09_trade_plan_unverified"
-      ],
-      "midweek_notes": "CRITICAL: AMAT earnings TOMORROW Nov 12 after close. Position -13.42% from entry already breaches 8%+ concern threshold. Portfolio recovered strongly WTD: +$4,681 (+5.1%) from Nov 6 close ($91,285) to Nov 10 ($95,966). Outperforming SPY by est. +3.1% WTD. open_positions=4 through Nov 10 \u2014 Nov 9 plan (close AMAT/DD/NVDA, buy MRVL) remains unverified/unexecuted. 15th consecutive week of Alpaca API blockage.",
-      "wtd_context": {
-        "equity_fri_nov06": 91284.98,
-        "equity_mon_nov09": 95076.23,
-        "equity_tue_nov10": 95966.49,
-        "wtd_change_dollar": 4681.51,
-        "wtd_change_pct": 5.13,
-        "spy_mon_nov09_pct": 2.37,
-        "spy_tue_nov10_pct": -0.37,
-        "spy_wtd_approx": 2.0,
-        "vs_spy_wtd_est": 3.13,
-        "note": "Portfolio strongly outperforming SPY WTD. Recovery likely driven by LLY and market rebound."
-      }
     },
     {
       "time": "2026-11-11T15:17:20.284183-05:00",

@@ -8,7 +8,8 @@ The AI is a scorer, not a picker — the math makes the final call.
 import json
 import os
 import re
-from datetime import datetime
+import sys
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
@@ -16,6 +17,8 @@ load_dotenv()
 
 from groq import Groq
 from alpaca.trading.client import TradingClient
+from alpaca.trading.requests import GetOrdersRequest
+from alpaca.trading.enums import QueryOrderStatus, OrderSide
 from . import notify
 
 ET = ZoneInfo("America/New_York")
@@ -68,6 +71,73 @@ Return ONLY a valid JSON object, no markdown:
   },
   "week_thesis": "2-3 sentences: what's the macro this week, which sectors are leading, what themes stand out"
 }"""
+
+
+DEFAULT_GROQ_MODELS = ["llama-3.3-70b-versatile"]
+
+
+def last_buy_dates(trading, symbols):
+    """Most recent filled BUY time per symbol, from Alpaca order history (memory.json can't be trusted)."""
+    if not symbols:
+        return {}
+    orders = trading.get_orders(filter=GetOrdersRequest(
+        status=QueryOrderStatus.CLOSED, side=OrderSide.BUY, symbols=list(symbols),
+        after=datetime.now(ET) - timedelta(days=365), limit=500,
+    ))
+    out = {}
+    for o in orders:
+        if o.filled_at and (o.symbol not in out or o.filled_at > out[o.symbol]):
+            out[o.symbol] = o.filled_at
+    return out
+
+
+def plan_exits(positions, buy_dates, config, now):
+    """Deterministic exit rules so the portfolio can't freeze at full exposure.
+
+    - below the stop level (-stop_loss_pct) → close (the GTC stop is missing or gapped through)
+    - held longer than max_hold_weeks → close (time stop for a 1-2 week swing strategy)
+    """
+    stop_loss_pct = config.get("stop_loss_pct", 0.05)
+    max_hold_days = int(config.get("max_hold_weeks", 4) * 7)
+    closes, holds = {}, {}
+    for p in positions:
+        sym = p.symbol
+        pl = float(p.unrealized_plpc)
+        bought = buy_dates.get(sym)
+        days = (now - bought).days if bought else None
+        if pl <= -stop_loss_pct:
+            closes[sym] = f"{pl*100:+.1f}% — below the -{stop_loss_pct:.0%} stop level"
+        elif days is not None and days > max_hold_days:
+            closes[sym] = f"held {days} days ({pl*100:+.1f}%) — past the {max_hold_days}-day time stop"
+        else:
+            holds[sym] = f"{pl*100:+.1f}%" + (f", held {days} days" if days is not None else "")
+    return closes, holds
+
+
+def score_with_groq(client, models, candidates, recent_summaries):
+    """Try each configured model. Returns (result_dict, error_string_or_None)."""
+    last_err = None
+    for model in models:
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                max_tokens=4096,
+                temperature=0.2,
+                response_format={"type": "json_object"},
+                messages=[
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": build_scoring_prompt(candidates, recent_summaries)},
+                ],
+            )
+            choice = response.choices[0]
+            if choice.finish_reason == "length":
+                raise ValueError("response truncated (hit max_tokens)")
+            print(f"  Groq model {model} OK")
+            return extract_json(choice.message.content), None
+        except Exception as e:
+            last_err = f"{model}: {type(e).__name__}: {e}"
+            print(f"  Groq scoring failed — {last_err}")
+    return None, last_err
 
 
 def build_scoring_prompt(candidates: dict, recent_summaries: list) -> str:
@@ -169,16 +239,20 @@ def main():
     # never re-propose a name we're already in. execute.py is the hard gate;
     # this just keeps the weekly Discord plan honest. Degrades gracefully if
     # Alpaca is unreachable (falls back to the full position cap).
-    held_symbols: set = set()
-    open_slots = max_positions
+    trading = TradingClient(os.environ["ALPACA_API_KEY"], os.environ["ALPACA_SECRET_KEY"], paper=True)
+    held = trading.get_all_positions()
+    held_symbols = {p.symbol for p in held}
     try:
-        trading = TradingClient(os.environ["ALPACA_API_KEY"], os.environ["ALPACA_SECRET_KEY"], paper=True)
-        held = trading.get_all_positions()
-        held_symbols = {p.symbol for p in held}
-        open_slots = max(max_positions - len(held), 0)
-        print(f"Currently holding {len(held)} position(s): {sorted(held_symbols) or 'none'} → {open_slots} open slot(s)")
+        buy_dates = last_buy_dates(trading, held_symbols)
     except Exception as e:
-        print(f"Could not fetch current positions ({e}) — planning against full cap of {max_positions}")
+        print(f"Could not fetch order history ({e}) — time stop disabled this week")
+        buy_dates = {}
+    close_reasoning, hold_reasoning = plan_exits(held, buy_dates, config, datetime.now(ET))
+    open_slots = max(max_positions - (len(held) - len(close_reasoning)), 0)
+    print(f"Holding {len(held)}: {sorted(held_symbols) or 'none'} | closing {sorted(close_reasoning) or 'none'} "
+          f"→ {open_slots} open slot(s)")
+    for sym, why in close_reasoning.items():
+        print(f"  CLOSE {sym}: {why}")
 
     tech_weight = config.get("tech_weight", 0.5)
     sentiment_weight = config.get("sentiment_weight", 0.5)
@@ -192,34 +266,28 @@ def main():
         with open(PLAN_FILE, "w") as f:
             json.dump({
                 "week_of": today, "week_thesis": empty_thesis,
-                "buys": [], "close_positions": [], "close_reasoning": {},
-                "hold_positions": [], "skip_reasoning": {},
+                "buys": [], "close_positions": sorted(close_reasoning), "close_reasoning": close_reasoning,
+                "hold_positions": sorted(hold_reasoning), "hold_reasoning": hold_reasoning,
+                "skip_reasoning": {},
             }, f, indent=2)
-        notify.weekly_plan(week_of=today, thesis=empty_thesis, buys=[], holds=[], closes=[])
-        return
+        notify.weekly_plan(week_of=today, thesis=empty_thesis, buys=[],
+                           holds=sorted(hold_reasoning), closes=sorted(close_reasoning))
+        return 0
 
     # --- Step 1: Groq scores each candidate's news + sentiment (1–10) ---
     client = Groq(api_key=api_key)
-    print(f"Scoring {len(candidates)} candidates on news + sentiment (Groq llama-3.3-70b)...")
+    models = config.get("groq_models", DEFAULT_GROQ_MODELS)
+    print(f"Scoring {len(candidates)} candidates on news + sentiment (Groq: {', '.join(models)})...")
 
     ai_scores = {}
     week_thesis = "AI scoring unavailable this week. Trades selected on technical signal only."
-
-    try:
-        response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            max_tokens=1024,
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": build_scoring_prompt(candidates, recent_summaries)},
-            ],
-        )
-        result = extract_json(response.choices[0].message.content)
+    result, groq_error = score_with_groq(client, models, candidates, recent_summaries)
+    if result:
         ai_scores = result.get("scores", {})
         week_thesis = result.get("week_thesis", week_thesis)
         print(f"  Groq scored {len(ai_scores)} of {len(candidates)} candidates")
-    except Exception as e:
-        print(f"  Groq scoring failed ({e}) — falling back to pure technical ranking")
+    else:
+        print("  Falling back to pure technical ranking")
 
     # --- Step 2: Normalize technical and sentiment scores independently ---
     tech_raw = {sym: data["technicals"]["score"] for sym, data in candidates.items()}
@@ -284,9 +352,10 @@ def main():
         "week_of": today,
         "week_thesis": week_thesis,
         "buys": buys,
-        "close_positions": [],
-        "close_reasoning": {},
-        "hold_positions": [],
+        "close_positions": sorted(close_reasoning),
+        "close_reasoning": close_reasoning,
+        "hold_positions": sorted(hold_reasoning),
+        "hold_reasoning": hold_reasoning,
         "skip_reasoning": skip_reasoning,
         "scoring_breakdown": {
             sym: {
@@ -309,8 +378,15 @@ def main():
     if skip_reasoning:
         print(f"  Skipped: {skip_reasoning}")
 
-    notify.weekly_plan(week_of=today, thesis=week_thesis, buys=buys, holds=[], closes=[])
+    notify.weekly_plan(week_of=today, thesis=week_thesis, buys=buys,
+                       holds=sorted(hold_reasoning), closes=sorted(close_reasoning))
+
+    if groq_error:
+        # Plan is still written (technical fallback), but fail loudly so it gets fixed.
+        notify.job_failed("Sunday — Groq AI scoring", f"Groq failed, plan used technicals only.\n`{groq_error[:900]}`")
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

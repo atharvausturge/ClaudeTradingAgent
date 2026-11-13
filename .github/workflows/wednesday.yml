@@ -2,12 +2,17 @@ name: Wednesday — Midweek Check
 
 on:
   schedule:
-    - cron: "30 13 * * 3"   # 9:30am ET
+    - cron: "7,37 13-19 * * 3"
   workflow_dispatch:
+
+concurrency:
+  group: trading-bot-${{ github.workflow }}
+  cancel-in-progress: false
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: write
 
@@ -27,12 +32,22 @@ jobs:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
         run: python -m bot.monitor
 
-      - name: Commit snapshot
+      - name: Commit results
+        if: always()
         run: |
           git config user.name "Trading Agent"
           git config user.email "trading-agent@github-actions"
           git add memory.json
-          git diff --staged --quiet || git commit -m "Midweek check $(date +%Y-%m-%d)"
-          git push
+          if git diff --staged --quiet; then echo "Nothing to commit"; exit 0; fi
+          git commit -m "Midweek check $(date +%Y-%m-%d)"
+          for i in 1 2 3; do git pull --rebase --autostash origin main && git push && exit 0; sleep 5; done
+          exit 1
+
+      - name: Alert Discord on failure
+        if: failure()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python -m bot.notify failure "${{ github.workflow }}" "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

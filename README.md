@@ -1,6 +1,6 @@
 # Autonomous Swing Trading Bot
 
-A fully autonomous weekly swing trading bot that scans 254 large-cap stocks, uses AI to pick the best setups, and executes trades automatically on Alpaca — with Discord alerts.
+A fully autonomous weekly swing trading bot that scans the S&P 1500 (large, mid and small caps), uses AI to pick the best setups, and executes trades automatically on Alpaca — with Discord alerts.
 
 Runs entirely on GitHub Actions. No server required.
 
@@ -10,7 +10,7 @@ Runs entirely on GitHub Actions. No server required.
 
 Every Monday at 8:30am ET, the bot:
 
-1. Scans 254 large-cap stocks across all S&P 500 sectors
+1. Scans the S&P 1500 (S&P 500 + 400 + 600, scraped from Wikipedia, cached 7 days)
 2. Scores each on a **Trend + Dip** signal (60-day relative strength vs SPY + 5-day pullback)
 3. Pulls **Alpaca News** and **Stocktwits sentiment** for the top 20 candidates
 4. Sends the research to **Groq (Llama 3.3 70B)** for AI analysis
@@ -24,7 +24,7 @@ Friday at 3pm: closes any position down more than 2%, holds winners into next we
 
 ## Strategy
 
-**Signal: Trend + Dip on 254 stocks**
+**Signal: Trend + Dip on the S&P 1500**
 
 | Filter | Rule |
 |--------|------|
@@ -39,7 +39,8 @@ Friday at 3pm: closes any position down more than 2%, holds winners into next we
 - Stocktwits (retail social sentiment — bull%, bear%, recent posts)
 
 **Portfolio rules:**
-- Max 3 positions, 20% of portfolio each
+- Max 5 positions, 18% of portfolio each, ≤95% gross exposure (see `config.json`)
+- Sunday plan closes any position below the stop level or held longer than `max_hold_weeks` (4)
 - 5% stop loss attached as GTC order (auto-triggers even when bot isn't running)
 - Max 2 entries per symbol per month
 - Friday: close losers (down >2%), hold winners into next week
@@ -71,7 +72,9 @@ bot/                       # production code (invoked via `python -m bot.<name>`
 ├── monitor.py             # Wed/Fri checks — closes losers, snapshots portfolio
 ├── daily_pnl.py           # Mon–Fri post-close daily P&L Discord post
 ├── notify.py              # Discord webhook notifications
-├── universe.py            # 254 large-cap stocks across all S&P 500 sectors
+├── universe.py            # S&P 1500 constituents (fallback: hardcoded large caps)
+├── orders.py              # close_symbol(): cancels the GTC stop, then closes
+├── schedule_guard.py      # run-once-per-day guard for the retrying workflows
 ├── valuation.py           # Per-symbol valuation guard
 ├── market_research.py     # Sector-ETF momentum + earnings-calendar enrichment
 └── reddit_sentiment.py    # Reddit (wsb/stocks/investing/StockMarket) sentiment
@@ -95,11 +98,15 @@ memory.json                # Persistent trade history, snapshots, daily P&L
 
 | Workflow | Schedule | Does |
 |----------|----------|------|
-| `sunday.yml` | Sun 7pm ET | `bot.research` + `bot.analyze` → commits research + trade plan |
-| `monday.yml` | Mon 9:30am ET | `bot.execute` — places Alpaca orders + Discord alerts |
-| `wednesday.yml` | Wed 9:30am ET | `bot.monitor` — midweek snapshot + breakeven stops |
-| `friday.yml` | Fri 3pm ET | `bot.monitor` — close losers + Discord weekly wrap |
-| `daily-pnl.yml` | Mon–Fri 4:05pm ET | `bot.daily_pnl` — post-close P&L embed to Discord |
+| `sunday.yml` | Sun ~5–6pm ET | `bot.research` + `bot.analyze` → commits research + trade plan |
+| `monday.yml` | Mon, attempts every 30 min in market hours; first one while open runs | `bot.execute` — places Alpaca orders + Discord alerts |
+| `wednesday.yml` | Wed, same retry window | `bot.monitor` — midweek snapshot + breakeven stops |
+| `friday.yml` | Fri, attempts after 1pm ET; first one runs | `bot.monitor` — close losers + Discord weekly wrap |
+| `daily-pnl.yml` | Mon–Fri after close | `bot.daily_pnl` — post-close P&L embed to Discord |
+
+GitHub's cron often fires hours late, so market-hours jobs schedule many attempts and `bot/schedule_guard.py` lets only the first one that lands while the market is open do the work (recorded in `memory.json` → `last_runs`). A manual "Run workflow" sets `FORCE_RUN=1` to bypass the once-per-day check. Any failure posts a 🚨 alert to Discord.
+
+> GitHub Actions is the **only** system that should trade this account. Do not run Claude cloud routines against this repo — their sandbox cannot reach Alpaca.
 
 ---
 
