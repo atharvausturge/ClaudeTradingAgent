@@ -13,7 +13,7 @@ Every Monday at 8:30am ET, the bot:
 1. Scans the S&P 1500 (S&P 500 + 400 + 600, scraped from Wikipedia, cached 7 days)
 2. Scores each on a **Trend + Dip** signal (60-day relative strength vs SPY + 5-day pullback)
 3. Pulls **Alpaca News** and **Stocktwits sentiment** for the top 20 candidates
-4. Sends the research to **Groq (Llama 3.3 70B)** for AI analysis
+4. Sends the research to **Groq (gpt-oss-120b, with fallbacks — see `groq_models` in config.json)** for AI analysis
 5. Places **market buy orders + GTC stop losses** on Alpaca Paper Trading
 6. Sends a full trade plan to **Discord**
 
@@ -163,6 +163,6 @@ And update your Alpaca API keys to your live account keys.
 ## Dependencies
 
 - [alpaca-py](https://github.com/alpacahq/alpaca-py) — trading + market data
-- [groq](https://console.groq.com) — free AI inference (Llama 3.3 70B)
+- [groq](https://console.groq.com) — free AI inference (gpt-oss-120b)
 - pandas, numpy — technical analysis
 - requests — Stocktwits sentiment

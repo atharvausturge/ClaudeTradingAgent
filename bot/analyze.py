@@ -73,7 +73,8 @@ Return ONLY a valid JSON object, no markdown:
 }"""
 
 
-DEFAULT_GROQ_MODELS = ["llama-3.3-70b-versatile"]
+# llama-3.3-70b-versatile was retired by Groq (404 model_not_found) — the real cause of weeks of failures.
+DEFAULT_GROQ_MODELS = ["openai/gpt-oss-120b", "qwen/qwen3.8-27b", "openai/gpt-oss-20b"]
 
 
 def last_buy_dates(trading, symbols):
