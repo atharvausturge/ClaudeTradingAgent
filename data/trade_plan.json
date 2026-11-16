@@ -1,197 +1,192 @@
 {
-  "week_of": "2026-11-08",
-  "week_thesis": "AI scoring unavailable this week. Trades selected on technical signal only.",
+  "week_of": "2026-11-15",
+  "week_thesis": "This week the market favors defensive and consumer\u2011cyclical themes as the XLV healthcare ETF outperforms (+9.6% vs SPY) and XLY consumer stocks hold modest gains, while technology (XLK) and industrials (XLI) lag behind. Traders should look for short\u2011term swing opportunities in consumer and healthcare names with solid analyst upside, but stay wary of post\u2011earnings chase risk and the broader tech weakness.",
   "buys": [
     {
-      "symbol": "ANF",
-      "combined_score": 0.75,
-      "tech_score": 1.0,
-      "sentiment_score": 0.5,
-      "reasoning": "selected by technical score",
+      "symbol": "GME",
+      "combined_score": 0.745,
+      "tech_score": 0.49,
+      "sentiment_score": 1.0,
+      "reasoning": "large analyst upside >15% adds +1, sector modestly ahead",
       "confidence": "high",
       "qty_pct": 0.18
     },
     {
-      "symbol": "ACN",
-      "combined_score": 0.6735,
-      "tech_score": 0.847,
-      "sentiment_score": 0.5,
-      "reasoning": "selected by technical score",
+      "symbol": "ACHC",
+      "combined_score": 0.7201,
+      "tech_score": 0.44,
+      "sentiment_score": 1.0,
+      "reasoning": "healthcare sector +9.6% gives +1, modest upside",
       "confidence": "high",
       "qty_pct": 0.18
     },
     {
-      "symbol": "DFIN",
-      "combined_score": 0.5062,
-      "tech_score": 0.512,
-      "sentiment_score": 0.5,
-      "reasoning": "selected by technical score",
-      "confidence": "medium",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "AMN",
-      "combined_score": 0.4666,
-      "tech_score": 0.433,
-      "sentiment_score": 0.5,
-      "reasoning": "selected by technical score",
-      "confidence": "medium",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "IT",
-      "combined_score": 0.42,
-      "tech_score": 0.34,
-      "sentiment_score": 0.5,
-      "reasoning": "selected by technical score",
-      "confidence": "medium",
+      "symbol": "AMPH",
+      "combined_score": 0.6677,
+      "tech_score": 0.335,
+      "sentiment_score": 1.0,
+      "reasoning": "healthcare sector +9.6% gives +1, chase risk caps at 6",
+      "confidence": "high",
       "qty_pct": 0.18
     }
   ],
-  "close_positions": [],
-  "close_reasoning": {},
-  "hold_positions": [],
+  "close_positions": [
+    "AMAT",
+    "NVDA"
+  ],
+  "close_reasoning": {
+    "AMAT": "-14.0% \u2014 below the -5% stop level",
+    "NVDA": "-21.9% \u2014 below the -5% stop level"
+  },
+  "hold_positions": [
+    "DD",
+    "LLY"
+  ],
+  "hold_reasoning": {
+    "DD": "+23.9%, held 62 days",
+    "LLY": "+45.6%, held 181 days"
+  },
   "skip_reasoning": {},
   "scoring_breakdown": {
-    "ANF": {
-      "combined": 0.75,
+    "ASO": {
+      "combined": 0.5,
       "tech_norm": 1.0,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "ACN": {
-      "combined": 0.6735,
-      "tech_norm": 0.847,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "DFIN": {
-      "combined": 0.5062,
-      "tech_norm": 0.512,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "AMN": {
-      "combined": 0.4666,
-      "tech_norm": 0.433,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "IT": {
-      "combined": 0.42,
-      "tech_norm": 0.34,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "BOX": {
-      "combined": 0.4053,
-      "tech_norm": 0.311,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "neutral valuation, sector modestly ahead, no upside >15% or chase risk"
     },
     "SIG": {
-      "combined": 0.403,
-      "tech_norm": 0.306,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
+      "combined": 0.3402,
+      "tech_norm": 0.68,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "neutral valuation, sector modestly ahead, upside <15%"
     },
-    "DOCU": {
-      "combined": 0.397,
-      "tech_norm": 0.294,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "HAE": {
-      "combined": 0.3938,
-      "tech_norm": 0.288,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "PTC": {
-      "combined": 0.3449,
-      "tech_norm": 0.19,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "KMPR": {
-      "combined": 0.332,
-      "tech_norm": 0.164,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
+    "EPAM": {
+      "combined": 0.269,
+      "tech_norm": 0.538,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "tech sector lagging, chase risk caps score, no large upside"
     },
     "GME": {
-      "combined": 0.3297,
-      "tech_norm": 0.159,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
+      "combined": 0.745,
+      "tech_norm": 0.49,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "large analyst upside >15% adds +1, sector modestly ahead"
     },
-    "MANH": {
-      "combined": 0.3196,
-      "tech_norm": 0.139,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
+    "ANF": {
+      "combined": 0.245,
+      "tech_norm": 0.49,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "moderate upside <15%, sector modestly ahead"
+    },
+    "DFIN": {
+      "combined": 0.238,
+      "tech_norm": 0.476,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "tech sector lagging caps score, no large upside"
+    },
+    "ACHC": {
+      "combined": 0.7201,
+      "tech_norm": 0.44,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "healthcare sector +9.6% gives +1, modest upside"
+    },
+    "ACN": {
+      "combined": 0.1934,
+      "tech_norm": 0.387,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "tech sector lagging, analyst downside"
     },
     "AMPH": {
-      "combined": 0.3164,
-      "tech_norm": 0.133,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
+      "combined": 0.6677,
+      "tech_norm": 0.335,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "healthcare sector +9.6% gives +1, chase risk caps at 6"
+    },
+    "QRVO": {
+      "combined": 0.1638,
+      "tech_norm": 0.328,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "tech sector lagging, chase risk caps score"
+    },
+    "VSXY": {
+      "combined": 0.1332,
+      "tech_norm": 0.266,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "analyst downside, sector modestly ahead"
+    },
+    "OPCH": {
+      "combined": 0.6279,
+      "tech_norm": 0.256,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "healthcare sector +9.6% gives +1"
+    },
+    "UPBD": {
+      "combined": 0.0795,
+      "tech_norm": 0.159,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "tech sector lagging, modest upside"
     },
     "OKTA": {
-      "combined": 0.3053,
-      "tech_norm": 0.111,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
+      "combined": 0.5773,
+      "tech_norm": 0.155,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "tech sector lagging caps score, analyst upside >15% adds +1"
     },
-    "ASO": {
-      "combined": 0.2956,
-      "tech_norm": 0.091,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
+    "CROX": {
+      "combined": 0.0769,
+      "tech_norm": 0.154,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "neutral metrics, no upside >15%"
     },
-    "CNXC": {
-      "combined": 0.2873,
-      "tech_norm": 0.075,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
+    "HAS": {
+      "combined": 0.0511,
+      "tech_norm": 0.102,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "analyst downside, sector modestly ahead"
     },
-    "PAYC": {
-      "combined": 0.2583,
-      "tech_norm": 0.017,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
-    },
-    "MPC": {
-      "combined": 0.2578,
-      "tech_norm": 0.016,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
+    "TREX": {
+      "combined": 0.5266,
+      "tech_norm": 0.053,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "industrials lagging caps score, analyst upside >15% adds +1"
     },
     "ULTA": {
-      "combined": 0.25,
+      "combined": 0.0223,
+      "tech_norm": 0.045,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "analyst downside, sector modestly ahead"
+    },
+    "PTC": {
+      "combined": 0.0035,
+      "tech_norm": 0.007,
+      "sentiment_norm": 0.0,
+      "ai_raw_score": 5,
+      "ai_reason": "tech sector lagging, modest upside"
+    },
+    "CVLT": {
+      "combined": 0.5,
       "tech_norm": 0.0,
-      "sentiment_norm": 0.5,
-      "ai_raw_score": null,
-      "ai_reason": null
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "tech sector lagging caps score, analyst upside >15% adds +1"
     }
   }
 }
