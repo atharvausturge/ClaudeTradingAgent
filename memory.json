@@ -584,9 +584,66 @@
       "price": 53.01,
       "filled": true,
       "source": "alpaca_rebuild"
+    },
+    {
+      "time": "2026-11-16T12:00:11.167304-05:00",
+      "action": "CLOSE",
+      "symbol": "AMAT",
+      "reason": "-14.0% \u2014 below the -5% stop level"
+    },
+    {
+      "time": "2026-11-16T12:00:11.167304-05:00",
+      "action": "CLOSE",
+      "symbol": "NVDA",
+      "reason": "-21.9% \u2014 below the -5% stop level"
+    },
+    {
+      "time": "2026-11-16T12:00:11.167304-05:00",
+      "action": "BUY",
+      "symbol": "GME",
+      "qty": 642,
+      "price": 26.233381,
+      "stop_price": 24.92,
+      "reasoning": "large analyst upside >15% adds +1, sector modestly ahead",
+      "confidence": "high",
+      "filled": true
+    },
+    {
+      "time": "2026-11-16T12:00:11.167304-05:00",
+      "action": "BUY",
+      "symbol": "ACHC",
+      "qty": 439,
+      "price": 38.48,
+      "stop_price": 36.56,
+      "reasoning": "healthcare sector +9.6% gives +1, modest upside",
+      "confidence": "high",
+      "filled": true
+    },
+    {
+      "time": "2026-11-16T12:00:11.167304-05:00",
+      "action": "BUY",
+      "symbol": "AMPH",
+      "qty": 143,
+      "price": 29.82,
+      "stop_price": 28.33,
+      "reasoning": "healthcare sector +9.6% gives +1, chase risk caps at 6",
+      "confidence": "high",
+      "filled": true
     }
   ],
-  "weekly_summaries": [],
+  "weekly_summaries": [
+    {
+      "week_of": "2026-11-15",
+      "thesis": "This week the market favors defensive and consumer\u2011cyclical themes as the XLV healthcare ETF outperforms (+9.6% vs SPY) and XLY consumer stocks hold modest gains, while technology (XLK) and industrials (XLI) lag behind. Traders should look for short\u2011term swing opportunities in consumer and healthcare names with solid analyst upside, but stay wary of post\u2011earnings chase risk and the broader tech weakness.",
+      "actions": [
+        "CLOSED AMAT: -14.0% \u2014 below the -5% stop level",
+        "CLOSED NVDA: -21.9% \u2014 below the -5% stop level",
+        "BUY 642 GME @ $26.23 | stop $24.92",
+        "BUY 439 ACHC @ $38.48 | stop $36.56",
+        "BUY 143 AMPH @ $29.82 | stop $28.33"
+      ]
+    }
+  ],
   "portfolio_snapshots": [
     {
       "time": "2026-10-05T17:12:47.485854-04:00",
@@ -813,6 +870,11 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-11-16T12:00:11.167304-05:00",
+      "portfolio_value": 93582.86,
+      "buying_power": 220519.47
     }
   ],
   "daily_pnl": [
@@ -1151,5 +1213,8 @@
     }
   ],
   "last_monitor_run": "2026-11-11T15:17:20.284183-05:00",
-  "last_friday_cleanup": "2026-11-06T00:00:00Z"
+  "last_friday_cleanup": "2026-11-06T00:00:00Z",
+  "last_runs": {
+    "execute": "2026-11-16"
+  }
 }
