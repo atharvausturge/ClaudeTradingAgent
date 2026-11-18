@@ -629,6 +629,29 @@
       "reasoning": "healthcare sector +9.6% gives +1, chase risk caps at 6",
       "confidence": "high",
       "filled": true
+    },
+    {
+      "time": "2026-11-18T09:46:30.689993-05:00",
+      "action": "STOP_TRIGGERED",
+      "symbol": "AMPH",
+      "fill_price": 28.227972,
+      "pl_pct": -5.34,
+      "pl_dollar": -227.66,
+      "reason": "stop loss triggered"
+    },
+    {
+      "time": "2026-11-18T09:46:30.689993-05:00",
+      "action": "STOP_TO_BREAKEVEN",
+      "symbol": "DD",
+      "pl_pct": 19.71,
+      "new_stop": 124.12
+    },
+    {
+      "time": "2026-11-18T09:46:30.689993-05:00",
+      "action": "STOP_TO_BREAKEVEN",
+      "symbol": "LLY",
+      "pl_pct": 42.78,
+      "new_stop": 992.169393
     }
   ],
   "weekly_summaries": [
@@ -875,6 +898,34 @@
       "time": "2026-11-16T12:00:11.167304-05:00",
       "portfolio_value": 93582.86,
       "buying_power": 220519.47
+    },
+    {
+      "time": "2026-11-18T09:46:30.689993-05:00",
+      "portfolio_value": 91747.83,
+      "buying_power": 220925.29,
+      "positions": [
+        {
+          "symbol": "ACHC",
+          "pl_pct": -1.75,
+          "pl_dollar": -296.32
+        },
+        {
+          "symbol": "DD",
+          "pl_pct": 19.71,
+          "pl_dollar": 1443.73
+        },
+        {
+          "symbol": "GME",
+          "pl_pct": -1.54,
+          "pl_dollar": -258.97
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 42.78,
+          "pl_dollar": 12309.36
+        }
+      ],
+      "is_friday_close": false
     }
   ],
   "daily_pnl": [
@@ -1234,9 +1285,10 @@
       "vs_spy_pct": -0.49
     }
   ],
-  "last_monitor_run": "2026-11-11T15:17:20.284183-05:00",
+  "last_monitor_run": "2026-11-18T09:46:30.689993-05:00",
   "last_friday_cleanup": "2026-11-06T00:00:00Z",
   "last_runs": {
-    "execute": "2026-11-16"
+    "execute": "2026-11-16",
+    "monitor_midweek": "2026-11-18"
   }
 }
