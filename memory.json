@@ -926,6 +926,29 @@
         }
       ],
       "is_friday_close": false
+    },
+    {
+      "time": "2026-11-20T13:15:05.460458-05:00",
+      "portfolio_value": 89925.07,
+      "buying_power": 233230.05,
+      "positions": [
+        {
+          "symbol": "DD",
+          "pl_pct": 18.59,
+          "pl_dollar": 1361.42
+        },
+        {
+          "symbol": "GME",
+          "pl_pct": 2.33,
+          "pl_dollar": 392.66
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 36.44,
+          "pl_dollar": 10486.13
+        }
+      ],
+      "is_friday_close": true
     }
   ],
   "daily_pnl": [
@@ -1307,10 +1330,11 @@
       "vs_spy_pct": 0.67
     }
   ],
-  "last_monitor_run": "2026-11-18T09:46:30.689993-05:00",
+  "last_monitor_run": "2026-11-20T13:15:05.460458-05:00",
   "last_friday_cleanup": "2026-11-06T00:00:00Z",
   "last_runs": {
     "execute": "2026-11-16",
-    "monitor_midweek": "2026-11-18"
+    "monitor_midweek": "2026-11-18",
+    "monitor_friday": "2026-11-20"
   }
 }
