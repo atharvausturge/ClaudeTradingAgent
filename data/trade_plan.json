@@ -1,192 +1,179 @@
 {
-  "week_of": "2026-11-15",
-  "week_thesis": "This week the market favors defensive and consumer\u2011cyclical themes as the XLV healthcare ETF outperforms (+9.6% vs SPY) and XLY consumer stocks hold modest gains, while technology (XLK) and industrials (XLI) lag behind. Traders should look for short\u2011term swing opportunities in consumer and healthcare names with solid analyst upside, but stay wary of post\u2011earnings chase risk and the broader tech weakness.",
+  "week_of": "2026-11-22",
+  "week_thesis": "This week defensive and consumer\u2011cyclical names, especially healthcare (XLV) and consumer discretionary (XLY), are leading as they outpace the market, while technology (XLK) remains weak. Swing\u2011trade setups favor stocks in the strong sectors with analyst upside and no earnings\u2011chase risk, whereas tech\u2011heavy names are limited by sector lag.",
   "buys": [
     {
-      "symbol": "GME",
-      "combined_score": 0.745,
-      "tech_score": 0.49,
+      "symbol": "ASO",
+      "combined_score": 1.0,
+      "tech_score": 1.0,
       "sentiment_score": 1.0,
-      "reasoning": "large analyst upside >15% adds +1, sector modestly ahead",
+      "reasoning": "Sector XLY +6.3% vs SPY gives +1 to base 5",
       "confidence": "high",
       "qty_pct": 0.18
     },
     {
-      "symbol": "ACHC",
-      "combined_score": 0.7201,
-      "tech_score": 0.44,
+      "symbol": "DFIN",
+      "combined_score": 0.7471,
+      "tech_score": 0.494,
       "sentiment_score": 1.0,
-      "reasoning": "healthcare sector +9.6% gives +1, modest upside",
-      "confidence": "high",
-      "qty_pct": 0.18
-    },
-    {
-      "symbol": "AMPH",
-      "combined_score": 0.6677,
-      "tech_score": 0.335,
-      "sentiment_score": 1.0,
-      "reasoning": "healthcare sector +9.6% gives +1, chase risk caps at 6",
+      "reasoning": "Sector XLK -9.4% caps score at 6 despite analyst upside",
       "confidence": "high",
       "qty_pct": 0.18
     }
   ],
-  "close_positions": [
-    "AMAT",
-    "NVDA"
-  ],
-  "close_reasoning": {
-    "AMAT": "-14.0% \u2014 below the -5% stop level",
-    "NVDA": "-21.9% \u2014 below the -5% stop level"
-  },
+  "close_positions": [],
+  "close_reasoning": {},
   "hold_positions": [
     "DD",
+    "GME",
     "LLY"
   ],
   "hold_reasoning": {
-    "DD": "+23.9%, held 62 days",
-    "LLY": "+45.6%, held 181 days"
+    "DD": "+17.2%, held 69 days",
+    "GME": "+1.5%, held 6 days",
+    "LLY": "+36.9%, held 188 days"
   },
   "skip_reasoning": {},
   "scoring_breakdown": {
     "ASO": {
-      "combined": 0.5,
+      "combined": 1.0,
       "tech_norm": 1.0,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 5,
-      "ai_reason": "neutral valuation, sector modestly ahead, no upside >15% or chase risk"
-    },
-    "SIG": {
-      "combined": 0.3402,
-      "tech_norm": 0.68,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 5,
-      "ai_reason": "neutral valuation, sector modestly ahead, upside <15%"
-    },
-    "EPAM": {
-      "combined": 0.269,
-      "tech_norm": 0.538,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 5,
-      "ai_reason": "tech sector lagging, chase risk caps score, no large upside"
-    },
-    "GME": {
-      "combined": 0.745,
-      "tech_norm": 0.49,
       "sentiment_norm": 1.0,
       "ai_raw_score": 6,
-      "ai_reason": "large analyst upside >15% adds +1, sector modestly ahead"
-    },
-    "ANF": {
-      "combined": 0.245,
-      "tech_norm": 0.49,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 5,
-      "ai_reason": "moderate upside <15%, sector modestly ahead"
+      "ai_reason": "Sector XLY +6.3% vs SPY gives +1 to base 5"
     },
     "DFIN": {
-      "combined": 0.238,
-      "tech_norm": 0.476,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 5,
-      "ai_reason": "tech sector lagging caps score, no large upside"
+      "combined": 0.7471,
+      "tech_norm": 0.494,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLK -9.4% caps score at 6 despite analyst upside"
+    },
+    "AZTA": {
+      "combined": 0.7207,
+      "tech_norm": 0.441,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLV +13.9% adds +1 to base 5"
+    },
+    "PGNY": {
+      "combined": 0.7131,
+      "tech_norm": 0.426,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLV +13.9% adds +1 to base 5"
+    },
+    "EPAM": {
+      "combined": 0.6863,
+      "tech_norm": 0.373,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLK -9.4% caps score at 6"
     },
     "ACHC": {
-      "combined": 0.7201,
-      "tech_norm": 0.44,
+      "combined": 0.6201,
+      "tech_norm": 0.24,
       "sentiment_norm": 1.0,
       "ai_raw_score": 6,
-      "ai_reason": "healthcare sector +9.6% gives +1, modest upside"
-    },
-    "ACN": {
-      "combined": 0.1934,
-      "tech_norm": 0.387,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 5,
-      "ai_reason": "tech sector lagging, analyst downside"
-    },
-    "AMPH": {
-      "combined": 0.6677,
-      "tech_norm": 0.335,
-      "sentiment_norm": 1.0,
-      "ai_raw_score": 6,
-      "ai_reason": "healthcare sector +9.6% gives +1, chase risk caps at 6"
+      "ai_reason": "Sector XLV +13.9% adds +1 to base 5"
     },
     "QRVO": {
-      "combined": 0.1638,
-      "tech_norm": 0.328,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 5,
-      "ai_reason": "tech sector lagging, chase risk caps score"
+      "combined": 0.6002,
+      "tech_norm": 0.2,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLK -9.4% caps score at 6"
     },
-    "VSXY": {
-      "combined": 0.1332,
-      "tech_norm": 0.266,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 5,
-      "ai_reason": "analyst downside, sector modestly ahead"
+    "OLLI": {
+      "combined": 0.5964,
+      "tech_norm": 0.193,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLP +16.2% adds +1 to base 5"
+    },
+    "SWKS": {
+      "combined": 0.5757,
+      "tech_norm": 0.151,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLK -9.4% caps score at 6"
+    },
+    "SIG": {
+      "combined": 0.5704,
+      "tech_norm": 0.141,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLY +6.3% adds +1 to base 5"
+    },
+    "AMPH": {
+      "combined": 0.5589,
+      "tech_norm": 0.118,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLV +13.9% adds +1 to base 5"
+    },
+    "VNT": {
+      "combined": 0.5581,
+      "tech_norm": 0.116,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLK -9.4% caps score at 6"
     },
     "OPCH": {
-      "combined": 0.6279,
-      "tech_norm": 0.256,
+      "combined": 0.5536,
+      "tech_norm": 0.107,
       "sentiment_norm": 1.0,
       "ai_raw_score": 6,
-      "ai_reason": "healthcare sector +9.6% gives +1"
+      "ai_reason": "Sector XLV +13.9% adds +1 to base 5"
     },
-    "UPBD": {
-      "combined": 0.0795,
-      "tech_norm": 0.159,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 5,
-      "ai_reason": "tech sector lagging, modest upside"
-    },
-    "OKTA": {
-      "combined": 0.5773,
-      "tech_norm": 0.155,
+    "ACN": {
+      "combined": 0.5532,
+      "tech_norm": 0.106,
       "sentiment_norm": 1.0,
       "ai_raw_score": 6,
-      "ai_reason": "tech sector lagging caps score, analyst upside >15% adds +1"
+      "ai_reason": "Sector XLK -9.4% caps score at 6"
     },
     "CROX": {
-      "combined": 0.0769,
-      "tech_norm": 0.154,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 5,
-      "ai_reason": "neutral metrics, no upside >15%"
-    },
-    "HAS": {
-      "combined": 0.0511,
-      "tech_norm": 0.102,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 5,
-      "ai_reason": "analyst downside, sector modestly ahead"
-    },
-    "TREX": {
-      "combined": 0.5266,
-      "tech_norm": 0.053,
+      "combined": 0.5352,
+      "tech_norm": 0.07,
       "sentiment_norm": 1.0,
       "ai_raw_score": 6,
-      "ai_reason": "industrials lagging caps score, analyst upside >15% adds +1"
+      "ai_reason": "Sector XLY +6.3% adds +1 to base 5"
     },
-    "ULTA": {
-      "combined": 0.0223,
-      "tech_norm": 0.045,
-      "sentiment_norm": 0.0,
-      "ai_raw_score": 5,
-      "ai_reason": "analyst downside, sector modestly ahead"
+    "YOU": {
+      "combined": 0.523,
+      "tech_norm": 0.046,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLK -9.4% caps score at 6"
     },
-    "PTC": {
-      "combined": 0.0035,
+    "COLM": {
+      "combined": 0.5199,
+      "tech_norm": 0.04,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLY +6.3% adds +1 to base 5"
+    },
+    "HAS": {
+      "combined": 0.5111,
+      "tech_norm": 0.022,
+      "sentiment_norm": 1.0,
+      "ai_raw_score": 6,
+      "ai_reason": "Sector XLY +6.3% adds +1 to base 5"
+    },
+    "RXO": {
+      "combined": 0.0034,
       "tech_norm": 0.007,
       "sentiment_norm": 0.0,
       "ai_raw_score": 5,
-      "ai_reason": "tech sector lagging, modest upside"
+      "ai_reason": "Neutral sector XLI (-1.4%) gives no adjustment, base 5"
     },
-    "CVLT": {
+    "UPBD": {
       "combined": 0.5,
       "tech_norm": 0.0,
       "sentiment_norm": 1.0,
       "ai_raw_score": 6,
-      "ai_reason": "tech sector lagging caps score, analyst upside >15% adds +1"
+      "ai_reason": "Sector XLK -9.4% caps score at 6"
     }
   }
 }
