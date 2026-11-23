@@ -652,6 +652,28 @@
       "symbol": "LLY",
       "pl_pct": 42.78,
       "new_stop": 992.169393
+    },
+    {
+      "time": "2026-11-23T10:17:12.044316-05:00",
+      "action": "BUY",
+      "symbol": "ASO",
+      "qty": 235,
+      "price": 69.49,
+      "stop_price": 66.02,
+      "reasoning": "Sector XLY +6.3% vs SPY gives +1 to base 5",
+      "confidence": "high",
+      "filled": true
+    },
+    {
+      "time": "2026-11-23T10:17:12.044316-05:00",
+      "action": "BUY",
+      "symbol": "DFIN",
+      "qty": 60,
+      "price": 65.37,
+      "stop_price": 62.1,
+      "reasoning": "Sector XLK -9.4% caps score at 6 despite analyst upside",
+      "confidence": "high",
+      "filled": true
     }
   ],
   "weekly_summaries": [
@@ -664,6 +686,14 @@
         "BUY 642 GME @ $26.23 | stop $24.92",
         "BUY 439 ACHC @ $38.48 | stop $36.56",
         "BUY 143 AMPH @ $29.82 | stop $28.33"
+      ]
+    },
+    {
+      "week_of": "2026-11-22",
+      "thesis": "This week defensive and consumer\u2011cyclical names, especially healthcare (XLV) and consumer discretionary (XLY), are leading as they outpace the market, while technology (XLK) remains weak. Swing\u2011trade setups favor stocks in the strong sectors with analyst upside and no earnings\u2011chase risk, whereas tech\u2011heavy names are limited by sector lag.",
+      "actions": [
+        "BUY 235 ASO @ $69.49 | stop $66.02",
+        "BUY 60 DFIN @ $65.37 | stop $62.10"
       ]
     }
   ],
@@ -949,6 +979,11 @@
         }
       ],
       "is_friday_close": true
+    },
+    {
+      "time": "2026-11-23T10:17:12.044316-05:00",
+      "portfolio_value": 90688.17,
+      "buying_power": 210910.96
     }
   ],
   "daily_pnl": [
@@ -1344,7 +1379,7 @@
   "last_monitor_run": "2026-11-20T13:15:05.460458-05:00",
   "last_friday_cleanup": "2026-11-06T00:00:00Z",
   "last_runs": {
-    "execute": "2026-11-16",
+    "execute": "2026-11-23",
     "monitor_midweek": "2026-11-18",
     "monitor_friday": "2026-11-20"
   }
