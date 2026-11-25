@@ -984,6 +984,39 @@
       "time": "2026-11-23T10:17:12.044316-05:00",
       "portfolio_value": 90688.17,
       "buying_power": 210910.96
+    },
+    {
+      "time": "2026-11-25T09:45:08.373908-05:00",
+      "portfolio_value": 90909.72,
+      "buying_power": 211998.83,
+      "positions": [
+        {
+          "symbol": "ASO",
+          "pl_pct": 1.88,
+          "pl_dollar": 306.68
+        },
+        {
+          "symbol": "DD",
+          "pl_pct": 19.53,
+          "pl_dollar": 1429.87
+        },
+        {
+          "symbol": "DFIN",
+          "pl_pct": -0.15,
+          "pl_dollar": -6.0
+        },
+        {
+          "symbol": "GME",
+          "pl_pct": 1.66,
+          "pl_dollar": 280.31
+        },
+        {
+          "symbol": "LLY",
+          "pl_pct": 38.95,
+          "pl_dollar": 11206.49
+        }
+      ],
+      "is_friday_close": false
     }
   ],
   "daily_pnl": [
@@ -1398,11 +1431,11 @@
       "vs_spy_pct": 2.98
     }
   ],
-  "last_monitor_run": "2026-11-20T13:15:05.460458-05:00",
+  "last_monitor_run": "2026-11-25T09:45:08.373908-05:00",
   "last_friday_cleanup": "2026-11-06T00:00:00Z",
   "last_runs": {
     "execute": "2026-11-23",
-    "monitor_midweek": "2026-11-18",
+    "monitor_midweek": "2026-11-25",
     "monitor_friday": "2026-11-20"
   }
 }
